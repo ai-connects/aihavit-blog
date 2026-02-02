@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Connect | HAVIT - The Future of Sustainable Wellness</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="css/theme.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <style>/* Avatar Videos Container */.avatar-videos { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 2rem; width: 100%; padding: 1rem; } .avatar-video { width: 300px; height: 300px; object-fit: contain; border-radius: 16px; background: transparent; } /* Responsive: Stack on mobile */@media (max-width: 768px) { .avatar-videos {  flex-direction: column;  gap: 1.5rem; }  .avatar-video {  width: 100%;  max-width: 300px;  height: auto;  aspect-ratio: 1 / 1; } }</style>
+        <style>:root { --bg-primary: #0a0a0a; --bg-secondary: #0f0f0f; --bg-tertiary: #141414; --bg-card: #1a1a1a; --text-primary: #f5f5f5; --text-secondary: #a8a8a8; --text-muted: #666666; --accent-lime: #ccff00; --accent-blurple: #5865F2; --accent-coral: #ff6b6b; --accent-teal: #00d4aa; --border-subtle: #1f1f1f; --border-light: #2a2a2a; --glass-bg: rgba(10, 10, 10, 0.85); --glass-border: rgba(255, 255, 255, 0.06); --gradient-lime: linear-gradient(135deg, #ccff00 0%, #9fcc00 100%); --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1); --font-display: 'Poppins', sans-serif; --font-body: 'DM Sans', sans-serif; } *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; } html { scroll-behavior: smooth; font-size: 16px; } body { font-family: var(--font-body); background-color: var(--bg-primary); color: var(--text-primary); line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased; } ::selection { background: var(--accent-lime); color: var(--bg-primary); } h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height: 1.1; letter-spacing: -0.03em; } h1 { font-size: clamp(2.5rem, 8vw, 5.5rem); } h2 { font-size: clamp(2rem, 5vw, 3.5rem); } h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); } p { font-size: clamp(1rem, 1.2vw, 1.125rem); color: var(--text-secondary); } a { text-decoration: none; color: inherit; transition: all 0.3s var(--transition-smooth); } .container { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 clamp(1.5rem, 5vw, 4rem); } section { padding: clamp(5rem, 12vw, 10rem) 0; position: relative; } .text-gradient { background: var(--gradient-lime); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; } /* Navbar */.navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1.25rem 0; background: transparent; transition: all 0.4s var(--transition-smooth); } .navbar.scrolled { padding: 0.875rem 0; background: var(--glass-bg); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border-bottom: 1px solid var(--glass-border); } .navbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; } .logo { display: flex; align-items: center; gap: 0.75rem; font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; } .logo-mark { width: 40px; height: 40px; background: var(--gradient-lime); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; color: var(--bg-primary); font-weight: 900; } .nav-links { display: flex; align-items: center; gap: clamp(1.5rem, 3vw, 2.5rem); list-style: none; } .nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); position: relative; padding: 0.5rem 0; } .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--accent-lime); transition: width 0.3s; } .nav-links a:hover { color: var(--text-primary); } .nav-links a:hover::after { width: 100%; } .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.875rem 1.75rem; font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; border-radius: 100px; cursor: pointer; transition: all 0.3s var(--transition-smooth); border: none; } .btn-primary { background: var(--gradient-lime); color: var(--bg-primary); } .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(204, 255, 0, 0.35); } .btn-outline { background: transparent; color: var(--text-primary); border: 1px solid var(--border-light); } .btn-outline:hover { border-color: var(--accent-lime); color: var(--accent-lime); background: rgba(204, 255, 0, 0.05); } .btn-large { padding: 1.125rem 2.25rem; font-size: 1rem; } .menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; } .menu-toggle span { width: 24px; height: 2px; background: var(--text-primary); transition: all 0.3s; } .mobile-menu { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg-primary); z-index: 999; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2rem; opacity: 0; visibility: hidden; transition: all 0.4s var(--transition-smooth); } .mobile-menu.active { opacity: 1; visibility: visible; } .mobile-menu a { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--text-primary); } .mobile-menu a:hover { color: var(--accent-lime); } /* Hero */.hero { min-height: 100vh; display: flex; align-items: center; position: relative; padding-top: 6rem; overflow: hidden; } .hero-bg { position: absolute; inset: 0; pointer-events: none; overflow: hidden; } .hero-bg::before { content: ''; position: absolute; top: -30%; right: -15%; width: 70%; height: 140%; background: radial-gradient(ellipse at center, rgba(204, 255, 0, 0.1) 0%, transparent 60%); animation: pulse 8s ease-in-out infinite; } .hero-bg::after { content: ''; position: absolute; bottom: -20%; left: -15%; width: 50%; height: 100%; background: radial-gradient(ellipse at center, rgba(88, 101, 242, 0.08) 0%, transparent 60%); animation: pulse 10s ease-in-out infinite reverse; } @keyframes pulse { 0%, 100% {  opacity: 0.6;  transform: scale(1); }  50% {  opacity: 1;  transform: scale(1.1); } } .hero-content { max-width: 800px; position: relative; z-index: 1; } .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.625rem 1.25rem; background: rgba(204, 255, 0, 0.1); border: 1px solid rgba(204, 255, 0, 0.2); border-radius: 100px; font-size: 0.85rem; font-weight: 500; color: var(--accent-lime); margin-bottom: 2rem; opacity: 0; animation: fadeInUp 0.8s forwards; } .hero-badge-dot { width: 8px; height: 8px; background: var(--accent-lime); border-radius: 50%; animation: blink 2s ease-in-out infinite; } @keyframes blink { 0%, 100% {  opacity: 1; }  50% {  opacity: 0.3; } } .hero h1 { margin-bottom: 1.5rem; opacity: 0; animation: fadeInUp 0.8s 0.1s forwards; } .hero h1 .line { display: block; } .hero-description { font-size: clamp(1.125rem, 2vw, 1.375rem); max-width: 600px; margin-bottom: 2.5rem; opacity: 0; animation: fadeInUp 0.8s 0.2s forwards; } .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 4rem; opacity: 0; animation: fadeInUp 0.8s 0.3s forwards; } .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; padding-top: 2.5rem; border-top: 1px solid var(--border-subtle); opacity: 0; animation: fadeInUp 0.8s 0.4s forwards; } .stat-item { text-align: left; } .stat-value { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1; margin-bottom: 0.5rem; } .stat-value .unit { font-size: 0.6em; color: var(--accent-lime); } .stat-label { font-size: 0.9rem; color: var(--text-muted); } @keyframes fadeInUp { from {  opacity: 0;  transform: translateY(30px); }  to {  opacity: 1;  transform: translateY(0); } } /* Section Header */.section-header { text-align: center; max-width: 800px; margin: 0 auto 4rem; } .section-label { display: inline-block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent-lime); margin-bottom: 1rem; padding: 0.5rem 1rem; background: rgba(204, 255, 0, 0.1); border-radius: 100px; } .section-header h2 { margin-bottom: 1rem; } /* Problem Section */.problem { background: var(--bg-secondary); position: relative; } .problem::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--border-light), transparent); } .problem-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-bottom: 4rem; } .problem-stat-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 24px; padding: 2.5rem; text-align: center; position: relative; overflow: hidden; transition: all 0.4s var(--transition-smooth); } .problem-stat-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gradient-lime); transform: scaleX(0); transition: transform 0.4s; } .problem-stat-card:hover { transform: translateY(-5px); border-color: var(--border-light); } .problem-stat-card:hover::before { transform: scaleX(1); } .problem-stat-number { font-family: var(--font-display); font-size: clamp(3rem, 6vw, 4.5rem); font-weight: 900; background: var(--gradient-lime); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 1rem; } .problem-stat-desc { font-size: 1.1rem; } .pain-points { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; } .pain-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 20px; padding: 2rem; position: relative; overflow: hidden; transition: all 0.4s var(--transition-smooth); } .pain-card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(255, 107, 107, 0.05) 0%, transparent 60%); opacity: 0; transition: opacity 0.4s; } .pain-card:hover { transform: translateY(-5px); border-color: var(--accent-coral); } .pain-card:hover::after { opacity: 1; } .pain-number { font-family: var(--font-display); font-size: 3rem; font-weight: 900; color: var(--border-light); line-height: 1; margin-bottom: 1rem; } .pain-card h4 { color: var(--accent-coral); margin-bottom: 0.75rem; font-weight: 600; } .pain-card p { font-size: 0.95rem; position: relative; z-index: 1; } /* Solution Section */.solution { position: relative; overflow: hidden; } .solution-bg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 800px; background: radial-gradient(circle, rgba(204, 255, 0, 0.08) 0%, transparent 60%); pointer-events: none; } .solution-intro { text-align: center; margin-bottom: 5rem; } .brand-logo { font-family: var(--font-display); font-size: clamp(4rem, 10vw, 8rem); font-weight: 900; letter-spacing: -0.04em; margin-bottom: 1.5rem; } .brand-logo span { color: var(--accent-lime); } .brand-meaning { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; } .meaning-item { display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 100px; font-size: 0.9rem; } .meaning-item strong { color: var(--accent-lime); font-weight: 700; } .solution-flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 5rem; position: relative; } .solution-flow::before { content: ''; position: absolute; top: 60px; left: 12.5%; right: 12.5%; height: 2px; background: linear-gradient(90deg, var(--accent-lime), var(--accent-blurple)); opacity: 0.3; } .flow-step { text-align: center; position: relative; } .flow-icon { width: 80px; height: 80px; margin: 0 auto 1.5rem; background: var(--bg-card); border: 2px solid var(--border-subtle); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; position: relative; z-index: 1; transition: all 0.4s var(--transition-smooth); } .flow-step:hover .flow-icon { border-color: var(--accent-lime); transform: scale(1.1); box-shadow: 0 0 30px rgba(204, 255, 0, 0.2); } .flow-step h4 { color: var(--text-primary); margin-bottom: 0.5rem; } .flow-step p { font-size: 0.9rem; } /* Features Bento Grid */.features { background: var(--bg-secondary); } .bento-grid { display: grid; grid-template-columns: repeat(12, 1fr); grid-template-rows: repeat(3, auto); gap: 1.5rem; } .bento-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 24px; padding: clamp(1.5rem, 3vw, 2.5rem); position: relative; overflow: hidden; transition: all 0.4s var(--transition-smooth); } .bento-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--accent-lime), transparent); opacity: 0; transition: opacity 0.4s; } .bento-card:hover { transform: translateY(-5px); border-color: var(--border-light); } .bento-card:hover::before { opacity: 0.6; } .bento-card.featured { grid-column: span 8; grid-row: span 2; display: flex; flex-direction: column; } .bento-card.tall { grid-column: span 4; grid-row: span 2; } .bento-card.wide { grid-column: span 6; } .bento-card.medium { grid-column: span 4; } .bento-icon { width: 56px; height: 56px; background: rgba(204, 255, 0, 0.1); border: 1px solid rgba(204, 255, 0, 0.2); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.5rem; } .bento-card h3 { margin-bottom: 0.75rem; color: var(--text-primary); } .bento-card p { font-size: 0.95rem; line-height: 1.7; } .bento-visual { flex: 1; margin-top: 2rem; background: var(--bg-secondary); border-radius: 16px; display: flex; align-items: center; justify-content: center; min-height: 200px; position: relative; overflow: hidden; } .bento-number { position: absolute; bottom: 1.5rem; right: 1.5rem; font-family: var(--font-display); font-size: 4rem; font-weight: 900; color: var(--border-subtle); line-height: 1; } /* Avatar Animation */.avatar-container { position: relative; width: 140px; height: 180px; } .avatar-body { width: 100%; height: 100%; background: linear-gradient(135deg, var(--accent-blurple) 0%, #7c3aed 100%); border-radius: 70px 70px 50px 50px; position: relative; animation: float 3s ease-in-out infinite; } .avatar-face { position: absolute; top: 25px; left: 50%; transform: translateX(-50%); width: 90px; height: 90px; background: #ffd9b3; border-radius: 50%; } .avatar-eyes { position: absolute; top: 30px; left: 50%; transform: translateX(-50%); display: flex; gap: 20px; } .avatar-eye { width: 12px; height: 12px; background: #333; border-radius: 50%; animation: blink 3s ease-in-out infinite; } .avatar-mouth { position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); width: 30px; height: 15px; background: #ff6b6b; border-radius: 0 0 15px 15px; } .avatar-status { position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); padding: 0.5rem 1rem; background: var(--accent-lime); color: var(--bg-primary); border-radius: 100px; font-size: 0.75rem; font-weight: 700; white-space: nowrap; } @keyframes float { 0%, 100% {  transform: translateY(0); }  50% {  transform: translateY(-15px); } } /* Types Grid */.types-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.5rem; width: 100%; padding: 1rem; } .type-cell { aspect-ratio: 1; background: var(--bg-card); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: var(--text-muted); transition: all 0.3s; } .type-cell.active { background: var(--accent-lime); color: var(--bg-primary); font-weight: 700; } .type-cell:hover { transform: scale(1.1); background: var(--accent-lime); color: var(--bg-primary); } /* Market Section */.market { position: relative; } .market-visual { margin-top: 4rem; } .chart-container { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 24px; padding: 2.5rem; margin-bottom: 2rem; } .chart-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem; } .chart-title { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; } .chart-legend { display: flex; gap: 1.5rem; } .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-secondary); } .legend-dot { width: 12px; height: 12px; border-radius: 50%; } .legend-dot.lime { background: var(--accent-lime); } .legend-dot.blurple { background: var(--accent-blurple); } .chart-bars { display: flex; align-items: flex-end; justify-content: space-between; height: 300px; gap: 1rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-subtle); } .chart-bar-group { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; height: 100%; } .chart-bar { width: 100%; max-width: 60px; background: var(--accent-lime); border-radius: 8px 8px 0 0; position: relative; transition: all 0.6s var(--transition-smooth); opacity: 0; transform: scaleY(0); transform-origin: bottom; } .chart-bar.animated { opacity: 1; transform: scaleY(1); } .chart-bar-value { position: absolute; top: -30px; left: 50%; transform: translateX(-50%); font-family: var(--font-display); font-size: 0.85rem; font-weight: 700; color: var(--text-primary); white-space: nowrap; } .chart-bar-label { font-size: 0.8rem; color: var(--text-muted); margin-top: auto; } .tam-sam-som { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; } .tam-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 20px; padding: 2rem; text-align: center; position: relative; overflow: hidden; transition: all 0.4s var(--transition-smooth); } .tam-card:hover { transform: translateY(-5px); border-color: var(--border-light); } .tam-card.highlight { border-color: var(--accent-lime); background: linear-gradient(135deg, rgba(204, 255, 0, 0.05) 0%, transparent 60%); } .tam-label { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--accent-lime); margin-bottom: 0.5rem; } .tam-value { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; color: var(--text-primary); margin-bottom: 0.5rem; } .tam-desc { font-size: 0.9rem; color: var(--text-secondary); } /* Competitive Section */.competitive { background: var(--bg-secondary); } .competitive-table { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 24px; overflow: hidden; } .table-header { display: grid; grid-template-columns: 2fr repeat(5, 1fr); background: var(--bg-tertiary); padding: 1.25rem 2rem; border-bottom: 1px solid var(--border-subtle); gap: 1rem; } .table-header span { font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); text-align: center; } .table-header span:first-child { text-align: left; } .table-header .highlight { color: var(--accent-lime); } .table-row { display: grid; grid-template-columns: 2fr repeat(5, 1fr); padding: 1.25rem 2rem; border-bottom: 1px solid var(--border-subtle); gap: 1rem; transition: background 0.3s; } .table-row:last-child { border-bottom: none; } .table-row:hover { background: rgba(204, 255, 0, 0.02); } .table-row span { font-size: 0.9rem; color: var(--text-secondary); text-align: center; display: flex; align-items: center; justify-content: center; } .table-row span:first-child { justify-content: flex-start; font-weight: 500; color: var(--text-primary); } .check { color: var(--accent-lime); font-size: 1.25rem; } .partial { color: var(--accent-coral); font-size: 1.25rem; } .cross { color: var(--text-muted); font-size: 1.25rem; } .gen-badge { display: inline-block; padding: 0.25rem 0.75rem; background: rgba(204, 255, 0, 0.15); color: var(--accent-lime); border-radius: 100px; font-size: 0.75rem; font-weight: 600; } /* Team Section */.team { position: relative; } .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; } .team-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 24px; padding: 2rem; text-align: center; transition: all 0.4s var(--transition-smooth); } .team-card:hover { transform: translateY(-8px); border-color: var(--accent-lime); } .team-card.featured { grid-column: span 3; display: grid; grid-template-columns: auto 1fr; gap: 2rem; text-align: left; padding: 2.5rem; } .team-avatar { width: 100px; height: 100px; background: linear-gradient(135deg, var(--accent-lime), var(--accent-blurple)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 2rem; font-weight: 900; color: var(--bg-primary); margin: 0 auto 1.5rem; } .team-card.featured .team-avatar { width: 120px; height: 120px; margin: 0; } .team-name { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.25rem; } .team-role { font-size: 0.9rem; color: var(--accent-lime); margin-bottom: 1rem; } .team-bio { font-size: 0.9rem; color: var(--text-secondary); } .team-logos { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; } .team-logo { padding: 0.5rem 0.75rem; background: var(--bg-secondary); border-radius: 8px; font-size: 0.75rem; color: var(--text-muted); } /* CTA Section */.cta { text-align: center; position: relative; overflow: hidden; } .cta-bg { position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(204, 255, 0, 0.1) 0%, transparent 60%); pointer-events: none; } .cta h2 { font-size: clamp(2.5rem, 7vw, 5rem); margin-bottom: 1.5rem; position: relative; } .cta p { font-size: 1.25rem; max-width: 600px; margin: 0 auto 2.5rem; } /* Footer */.footer { padding: 4rem 0 2rem; border-top: 1px solid var(--border-subtle); } .footer-top { display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 3rem; margin-bottom: 4rem; } .footer-brand h3 { font-size: 1.5rem; margin-bottom: 1rem; } .footer-brand p { font-size: 0.95rem; max-width: 300px; margin-bottom: 1.5rem; } .footer-contact { font-size: 0.9rem; color: var(--text-muted); } .footer-contact a { color: var(--accent-lime); } .footer-col h4 { font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1.25rem; } .footer-col ul { list-style: none; } .footer-col li { margin-bottom: 0.75rem; } .footer-col a { font-size: 0.9rem; color: var(--text-muted); } .footer-col a:hover { color: var(--accent-lime); } .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid var(--border-subtle); flex-wrap: wrap; gap: 1rem; } .footer-copyright { font-size: 0.85rem; color: var(--text-muted); } .footer-socials { display: flex; gap: 1rem; } .social-link { width: 44px; height: 44px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-secondary); transition: all 0.3s; } .social-link:hover { background: var(--accent-lime); border-color: var(--accent-lime); color: var(--bg-primary); } /* Animations */.fade-in { opacity: 0; transform: translateY(40px); transition: all 0.8s var(--transition-smooth); } .fade-in.visible { opacity: 1; transform: translateY(0); } .scale-in { opacity: 0; transform: scale(0.9); transition: all 0.8s var(--transition-smooth); } .scale-in.visible { opacity: 1; transform: scale(1); } /* Responsive */@media (max-width: 1200px) { .bento-card.featured {  grid-column: span 12; }  .bento-card.tall {  grid-column: span 6; }  .bento-card.wide {  grid-column: span 6; }  .bento-card.medium {  grid-column: span 6; } } @media (max-width: 1024px) { .solution-flow {  grid-template-columns: repeat(2, 1fr); }  .solution-flow::before {  display: none; }  .table-header, .table-row {  grid-template-columns: 2fr repeat(3, 1fr); }  .table-header span:nth-child(n+5), .table-row span:nth-child(n+5) {  display: none; }  .footer-top {  grid-template-columns: repeat(2, 1fr); } } @media (max-width: 768px) { .nav-links, .btn-nav {  display: none; }  .menu-toggle {  display: flex; }  .hero-stats {  grid-template-columns: repeat(3, 1fr);  gap: 1.5rem; }  .problem-stats {  grid-template-columns: 1fr; }  .pain-points {  grid-template-columns: 1fr; }  .bento-grid {  display: flex;  flex-direction: column; }  .bento-card.featured, .bento-card.tall, .bento-card.wide, .bento-card.medium {  grid-column: span 1; }  .tam-sam-som {  grid-template-columns: 1fr; }  .team-grid {  grid-template-columns: 1fr; }  .team-card.featured {  grid-column: span 1;  grid-template-columns: 1fr;  text-align: center; }  .team-card.featured .team-avatar {  margin: 0 auto 1.5rem; }  .footer-top {  grid-template-columns: 1fr; }  .footer-bottom {  flex-direction: column;  text-align: center; }  .competitive-table {  overflow-x: auto; }  .table-header, .table-row {  min-width: 600px; } } @media (max-width: 480px) { .hero-buttons {  flex-direction: column; }  .hero-buttons .btn {  width: 100%; }  .hero-stats {  grid-template-columns: 1fr;  gap: 1.5rem; }  .brand-meaning {  flex-direction: column; }  .solution-flow {  grid-template-columns: 1fr; }  .chart-bars {  height: 200px; } } /* Noise Texture */body::after { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.025; z-index: 10000; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); }</style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container navbar-inner">
+                <a href="#" class="logo"><span class="logo-mark">H</span>HAVIT</a>
+                <ul class="nav-links">
+                    <li><a href="#problem">The Problem</a>
+                    </li>
+                    <li><a href="#solution">Our Solution</a>
+                    </li>
+                    <li><a href="#features">Features</a>
+                    </li>
+                    <li></li>
+                    <li><a href="#team">Team</a>
+                    </li>
+                </ul>
+                <a href="#contact" class="btn btn-primary btn-nav">Get Early Access</a>
+                <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#problem" onclick="closeMobileMenu()">The Problem</a>
+            <a href="#solution" onclick="closeMobileMenu()">Our Solution</a>
+            <a href="#features" onclick="closeMobileMenu()">Features</a>
+            <a href="#market" onclick="closeMobileMenu()">Market</a>
+            <a href="#team" onclick="closeMobileMenu()">Team</a>
+            <a href="#contact" class="btn btn-primary" onclick="closeMobileMenu()">Get Early Access</a>
+        </div>
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge"><span class="hero-badge-dot"></span>K-Diet × AI × Gamification
+                    </div>
+                    <h1><span class="line">Redefining the</span><span class="line">Journey to a</span><span class="line"><span class="text-gradient">Healthier Life.</span></span></h1>
+                    <p class="hero-description">AI-powered body composition analysis, 126 personalized user types, and a Bio-synced avatar system — all without hardware. Zero yo-yo effect.</p>
+                    <div class="hero-buttons">
+                        <a href="#solution" class="btn btn-primary btn-large">Explore Our Solution</a>
+                        <a href="#contact" class="btn btn-outline btn-large">Partner With Us</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">126<span class="unit">+</span>
+                            </div>
+                            <div class="stat-label">User Type Classifications</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">2K<span class="unit">+</span>
+                            </div>
+                            <div class="stat-label">Solution Library Items</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">0<span class="unit">%</span>
+                            </div>
+                            <div class="stat-label">Hardware Required</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="problem" id="problem">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-label">The Problem</span>
+                    <h2>Diet is a <span class="text-gradient">Lifelong Challenge</span></h2>
+                    <p>For more than half the population, weight management remains an unsolved puzzle with repeated failures and frustration.</p>
+                </div>
+                <div class="problem-stats">
+                    <div class="problem-stat-card fade-in">
+                        <div class="problem-stat-number" data-count="61">0%</div>
+                        <p class="problem-stat-desc">of American women want to lose weight right now</p>
+                    </div>
+                    <div class="problem-stat-card fade-in">
+                        <div class="problem-stat-number" data-count="48">0%</div>
+                        <p class="problem-stat-desc">of American men actively seeking weight loss solutions</p>
+                    </div>
+                </div>
+                <div class="pain-points">
+                    <div class="pain-card fade-in">
+                        <div class="pain-number">01</div>
+                        <h4>One-Size-Fits-All</h4>
+                        <p>Generic methods ignore individual metabolism, body type, and fat distribution patterns — leading to ineffective results.</p>
+                    </div>
+                    <div class="pain-card fade-in">
+                        <div class="pain-number">02</div>
+                        <h4>Unsustainable Plans</h4>
+                        <p>Extreme fasting and excessive exercise cause muscle loss, metabolic slowdown, and inevitable yo-yo rebound.</p>
+                    </div>
+                    <div class="pain-card fade-in">
+                        <div class="pain-number">03</div>
+                        <h4>Willpower Alone</h4>
+                        <p>Without real-time support and motivation systems, people face plateau periods and psychological burnout alone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="solution" id="solution">
+            <div class="solution-bg"></div>
+            <div class="container">
+                <div class="solution-intro fade-in">
+                    <span class="section-label">Our Solution</span>
+                    <div class="brand-logo">H<span>A</span>VIT
+                    </div>
+                    <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto;">"Have It" + "Habit" — The power to make healthy habits yours. Combining proven K-Diet expertise with cutting-edge AI and immersive gamification.</p>
+                    <div class="brand-meaning">
+</div>
+                </div>
+                <div class="solution-flow">
+                    <div class="flow-step fade-in">
+                        <div class="flow-icon">🔬</div>
+                        <h4>Diagnosis</h4>
+                        <p>AI-based body composition & lifestyle analysis without hardware</p>
+                    </div>
+                    <div class="flow-step fade-in">
+                        <div class="flow-icon">📋</div>
+                        <h4>Prescription</h4>
+                        <p>126+ type classification with personalized 12-week programs</p>
+                    </div>
+                    <div class="flow-step fade-in">
+                        <div class="flow-icon">🎮</div>
+                        <h4>Solution</h4>
+                        <p>Gamified daily quests with Bio-synced avatar system</p>
+                    </div>
+                    <div class="flow-step fade-in">
+                        <div class="flow-icon">🚀</div>
+                        <h4>Management</h4>
+                        <p>AI coaching with real-time feedback & habit formation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-label">Key Features</span>
+                    <h2>4th Generation <span class="text-gradient">AI Wellness</span></h2>
+                    <p>Going beyond simple tracking to deliver an end-to-end weight management experience powered by proprietary AI technology.</p>
+                </div>
+                <div class="bento-grid">
+                    <div class="bento-card featured scale-in">
+                        <div class="bento-icon">🎮</div>
+                        <h3>Bio-Synced Avatar System</h3>
+                        <p>Your digital twin that reflects your real-world health journey. Watch your avatar transform as you achieve goals, complete quests, and build lasting habits. The avatar's appearance changes based on body composition, while its condition reflects your lifestyle habits.</p>
+                        <div class="bento-visual">
+                            <div class="avatar-videos">
+                                <video class="avatar-video" autoplay loop muted playsinline>
+                                    <source src="assets/avatar_alpha.webm" type="video/webm">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video class="avatar-video" autoplay loop muted playsinline>
+                                    <source src="assets/avatar_comeon.webm" type="video/webm">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bento-card tall scale-in">
+                        <div class="bento-icon">🧬</div>
+                        <h3>126 User Type Classification</h3>
+                        <p>Hyper-personalized programs based on metabolic profiles, behavioral patterns, and lifestyle factors. No two users receive the same plan.</p>
+                        <div class="bento-visual">
+                            <div class="types-grid" id="typesGrid"></div>
+                        </div>
+                    </div>
+                    <div class="bento-card wide fade-in">
+                        <div class="bento-icon">🔬</div>
+                        <h3>AI Body Composition Analysis</h3>
+                        <p>No hardware needed. Our proprietary AI predicts body fat percentage, muscle mass, and visceral fat with InBody-level accuracy using only visual and survey inputs.</p>
+                    </div>
+                    <div class="bento-card wide fade-in">
+                        <div class="bento-icon">⚡</div>
+                        <h3>Gamified Quest System</h3>
+                        <p>2K+ solution library with daily missions tailored to your profile. Build healthy habits through engaging challenges with immediate rewards and feedback.</p>
+                    </div>
+                    <div class="bento-card medium fade-in">
+                        <div class="bento-icon">🤖</div>
+                        <h3>AI Concierge Coaching</h3>
+                        <p>Real-time nudges, dynamic difficulty adjustment, and CBT-based behavioral science for sustainable change.</p>
+                    </div>
+                    <div class="bento-card medium fade-in">
+                        <div class="bento-icon">📊</div>
+                        <h3>6-Level Habit Diagnostics</h3>
+                        <p>Activity, nutrition, sleep, hydration, mindfulness, and alcohol — comprehensive lifestyle risk modeling.</p>
+                    </div>
+                    <div class="bento-card medium fade-in">
+                        <div class="bento-icon">🌏</div>
+                        <h3>Global Day-1 Ready</h3>
+                        <p>Architecture designed for international scalability — not locked to any specific culture or region.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="competitive" id="competitive">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-label">Competitive Edge</span>
+                    <h2>The <span class="text-gradient">4th Generation</span> Advantage</h2>
+                    <p>From simple tracking to comprehensive AI-powered wellness — we're not just better, we're different.</p>
+                </div>
+                <div class="competitive-table fade-in">
+                    <div class="table-header">
+                        <span>Feature</span>
+                        <span class="highlight">HAVIT (4th Gen)</span>
+                        <span>MyFitnessPal</span>
+                        <span>Noom</span>
+                        <span>Simple.Life</span>
+                        <span>WeightWatchers</span>
+                    </div>
+                    <div class="table-row"><span>Generation</span><span><span class="gen-badge">4th Gen AI</span></span><span>1st Gen</span><span>2nd Gen</span><span>3rd Gen</span><span>2nd Gen</span>
+                    </div>
+                    <div class="table-row"><span>AI Body Composition</span><span class="check">✓</span><span class="cross">✗</span><span class="cross">✗</span><span class="cross">✗</span><span class="cross">✗</span>
+                    </div>
+                    <div class="table-row"><span>Hyper-Personalization (126+ types)</span><span class="check">✓</span><span class="cross">✗</span><span class="partial">△</span><span class="partial">△</span><span class="partial">△</span>
+                    </div>
+                    <div class="table-row"><span>Bio-Synced Avatar Gamification</span><span class="check">✓</span><span class="cross">✗</span><span class="cross">✗</span><span class="partial">△</span><span class="cross">✗</span>
+                    </div>
+                    <div class="table-row"><span>Real-time AI Coaching</span><span class="check">✓</span><span class="cross">✗</span><span class="partial">△</span><span class="check">✓</span><span class="partial">△</span>
+                    </div>
+                    <div class="table-row"><span>End-to-End Management</span><span class="check">✓</span><span class="cross">✗</span><span class="partial">△</span><span class="partial">△</span><span class="check">✓</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team" id="team">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-label">Our Team</span>
+                    <h2>Led by <span class="text-gradient">Global Veterans</span></h2>
+                    <p>A team with proven track records in scaling global services from 0 to millions of users.</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card featured fade-in">
+                        <div class="team-avatar">HW</div>
+                        <div class="team-info">
+                            <h3 class="team-name">Ryan Yun (윤희욱)</h3>
+                            <p class="team-role">CEO & CPO</p>
+                            <p class="team-bio">Serial entrepreneur with A-to-Z experience launching 9 services across 244 countries. Former JUVIS subsidiary CEO, achieving CES 2023 Innovation Awards and #1 Healthcare App. Track record includes Polaris Office (40M downloads in 18 months), Fatal Raid (beat Lineage), Fortnite Korea launch, and League of Legends K-POP collaboration.</p>
+                            <div class="team-logos">
+                                <span class="team-logo">Deloitte</span>
+                                <span class="team-logo">Riot Games</span>
+                                <span class="team-logo">Epic Games</span>
+                                <span class="team-logo">SK Holdings</span>
+                                <span class="team-logo">Riiid</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card fade-in">
+                        <div class="team-avatar">WH</div>
+                        <h3 class="team-name">Wonho Lim</h3>
+                        <p class="team-role">CTO (17 years exp.)</p>
+                        <p class="team-bio">Ex-Coupang & Techtaka. Flutter architecture, A/B testing, clean architecture expert.</p>
+                    </div>
+                    <div class="team-card fade-in">
+                        <div class="team-avatar">MJ</div>
+                        <h3 class="team-name">Minjeong Gu</h3>
+                        <p class="team-role">AI Researcher (10 years)</p>
+                        <p class="team-bio">Ex-Deloitte & KPMG modeling consultant. Designed body composition prediction models.</p>
+                    </div>
+                    <div class="team-card fade-in">
+                        <div class="team-avatar">KH</div>
+                        <h3 class="team-name">Kihyuk Jung</h3>
+                        <p class="team-role">Product Manager (6 years)</p>
+                        <p class="team-bio">Ex-QANDA & KAIST. Senior PM with design engineering background.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta" id="contact">
+            <div class="cta-bg"></div>
+            <div class="container">
+                <h2 class="fade-in">Let's Build the Future<br>of Wellness <span class="text-gradient">Together</span></h2>
+                <p class="fade-in">Join us in revolutionizing how the world approaches sustainable health transformation.</p>
+                <div class="fade-in"><a href="mailto:ryan.yun@aiconnects.me" class="btn btn-primary btn-large">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <h3>AI Connect</h3>
+                        <p>Combining proven K-Diet expertise with AI and gamification for sustainable health transformation.</p>
+                        <div class="footer-contact">
+                            <p><a href="mailto:help@aiconnects.me">help@aiconnects.me</a></p>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a>
+                            </li>
+                            <li><a href="#">Terms of Service</a>
+                            </li>
+                            <li><a href="#">Cookie Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="footer-copyright">© 2025 AI Connect Inc. All rights reserved.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    if (entry.target.id === 'marketChart') {
+                        entry.target.querySelectorAll('.chart-bar').forEach((bar, i) => {
+                            setTimeout(() => bar.classList.add('animated'), i * 150);
+                        });
+                    }
+                    if (entry.target.classList.contains('problem-stat-card')) {
+                        const counter = entry.target.querySelector('.problem-stat-number');
+                        if (counter?.dataset.count) animateCounter(counter, parseInt(counter.dataset.count));
+                    }
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in, .scale-in').forEach(el => observer.observe(el));
+        const marketChart = document.getElementById('marketChart');
+        if (marketChart) observer.observe(marketChart);
+
+        function animateCounter(element, target) {
+            let current = 0;
+            const step = target / 125;
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) { element.textContent = target + '%'; clearInterval(timer); }
+                else element.textContent = Math.floor(current) + '%';
+            }, 16);
+        }
+
+        const typesGrid = document.getElementById('typesGrid');
+        if (typesGrid) {
+            for (let i = 1; i <= 36; i++) {
+                const cell = document.createElement('div');
+                cell.className = 'type-cell' + (Math.random() > 0.7 ? ' active' : '');
+                cell.textContent = i;
+                typesGrid.appendChild(cell);
+            }
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const hero = document.querySelector('.hero-bg');
+            if (hero && window.pageYOffset < window.innerHeight) {
+       
