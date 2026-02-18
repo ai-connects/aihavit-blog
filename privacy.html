@@ -28,7 +28,7 @@
             <h1>HAVIT Privacy Policy</h1>
 
             <div class="legal-meta">
-                <p><strong>Version 2.0</strong></p>
+                <p><strong>Version 2.1</strong></p>
                 <p><strong>Effective Date:</strong> 2026.03.01</p>
                 <p><strong>Last Updated:</strong> 2026.02.18</p>
             </div>
@@ -74,7 +74,7 @@
                     <tr><th>Purpose of collection and processing</th><th>Data categories</th><th>Collection means</th><th>Legal basis</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>To create and manage your account with HAVIT</td><td>Nickname/display name, email address, country/region of residence, unique user ID, device data, subscription data</td><td>You provide it to us; unique user ID assigned automatically; device data collected automatically</td><td>Contract</td></tr>
+                    <tr><td>To create and manage your account with HAVIT</td><td>Nickname/display name, email address, country/region of residence, preferred language/locale, unique user ID, device data, subscription data</td><td>You provide it to us; preferred language is detected from your device settings or selected by you; unique user ID assigned automatically; device data collected automatically</td><td>Contract</td></tr>
                     <tr><td>We match the data about you with user ID as a means of pseudonymization</td><td>User ID</td><td>We generate it automatically</td><td>Legitimate interest</td></tr>
                 </tbody>
             </table>
@@ -131,7 +131,7 @@
                     <tr><th>Purpose of collection and processing</th><th>Data categories</th><th>Collection means</th><th>Legal basis</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>AI coaching safeguards to prevent harm and personalize responses</td><td>Your name, S-L-M profile type, current achievement rates, streak days, current mood, all tracking logs (meal, exercise, steps, water, sleep, weight, fasting, feeling), onboarding questionnaire responses, health conditions, medication status (M-Type), target calories/protein/hydration/steps/sleep goals, weight predictions, body composition estimates</td><td>Collected from your account data and tracking logs; provided as context to AI service</td><td>Contract; Consent for special category data</td></tr>
+                    <tr><td>AI coaching safeguards to prevent harm and personalize responses</td><td>Your name, S-L-M profile type, current achievement rates, streak days, current mood, all tracking logs (meal, exercise, steps, water, sleep, weight, fasting, feeling), health conditions, medication status (M-Type), target calories/protein/hydration/steps/sleep goals, weight predictions, body composition estimates (such as BMI, body fat percentage, muscle mass, visceral fat level, waist circumference, metabolic rate), health and wellness scores (such as Health Score, Biological Age), lifestyle wellness indicators, and your selected AI coach character preference</td><td>Collected from your account data and tracking logs; provided as context to AI service</td><td>Contract; Consent for special category data</td></tr>
                     <tr><td>Messages exchanged with Havi AI coach</td><td>Conversation content (your questions, AI responses), conversation history within session</td><td>You provide it to us</td><td>Contract</td></tr>
                 </tbody>
             </table>
@@ -211,7 +211,7 @@
                 <tbody>
                     <tr><td>Anthropic (Claude) — USA</td><td>Data Processor</td><td>Primary AI engine for Havi coach conversations, body composition diagnostic insights, personalized coaching messages, and nutritional analysis</td><td>Anthropic's Data Processing Agreement; data not used for model training; data deleted after processing</td></tr>
                     <tr><td>OpenAI — USA</td><td>Data Processor</td><td>Supplementary AI engine for specific coaching scenarios and natural language processing</td><td>OpenAI's Data Processing Agreement (API/Business tier); zero data retention policy; data not used for model training</td></tr>
-                    <tr><td>Google — USA</td><td>Data Processor</td><td>AI features for specific analytical functions</td><td>Google Cloud Data Processing Terms; data processed in accordance with their DPA</td></tr>
+                    <tr><td>Google — USA</td><td>Data Processor</td><td>AI features for specific analytical functions</td><td>Google Cloud Data Processing Terms; data not used for model training; data processed in accordance with their DPA</td></tr>
                 </tbody>
             </table>
 
@@ -220,19 +220,22 @@
 
             <h4>Category A — Profile Context (sent with each AI interaction):</h4>
             <ul>
-                <li>Your display name</li>
+                <li>Your display name and preferred language</li>
                 <li>Biological sex, age, height (cm), current weight (kg)</li>
                 <li>Ethnic background classification (for ethnicity-specific health thresholds)</li>
+                <li>AI-estimated body composition metrics (such as BMI, body fat percentage, muscle mass, visceral fat level, waist circumference, metabolic rate)</li>
+                <li>Health and wellness scores (such as Health Score, Biological Age)</li>
                 <li>S-L-M profile classification (body type / lifestyle pattern / medical-medication status)</li>
                 <li>M-Type medication status (M0: no medication, M1: active GLP-1, M2: past GLP-1)</li>
                 <li>Target weight, target calories, target protein, target hydration, target steps, target sleep hours</li>
                 <li>Current Power Score, streak days, achievement rate</li>
+                <li>Other system-generated wellness indicators and classifications used to personalize coaching</li>
             </ul>
 
             <h4>Category B — Tracking Log Context (sent when relevant to the coaching scenario):</h4>
             <ul>
-                <li>Recent meal logs (meal type, calories, protein, time, ultra-processed food indicators)</li>
-                <li>Recent exercise logs (exercise type, duration, calories burned, mood/efficiency ratings)</li>
+                <li>Recent meal logs (meal type, estimated calories, estimated protein/carb/fat/fiber, meal time, ultra-processed food indicators, emotional eating indicators)</li>
+                <li>Recent exercise logs (exercise category, exercise type, duration, calories burned, mood/efficiency/intensity ratings)</li>
                 <li>Recent step count data</li>
                 <li>Recent water intake data (volume, beverage type, hydration ratio)</li>
                 <li>Recent sleep data (hours, quality, bedtime/wake time)</li>
@@ -276,8 +279,8 @@
             <h3>2.5 Your Consent and Control</h3>
             <ul>
                 <li><strong>Explicit consent required:</strong> Before your data is shared with any AI service provider, we obtain your explicit consent through a dedicated in-app consent screen during onboarding (separate from general Terms of Service acceptance).</li>
-                <li><strong>Withdraw consent:</strong> You can withdraw your consent for AI data sharing at any time by contacting us at <a href="mailto:support@aiconnects.me">support@aiconnects.me</a>. Withdrawing consent will disable AI-powered features including Havi coach conversations, AI nutritional analysis from food photos, and personalized coaching messages.</li>
-                <li><strong>Delete conversations:</strong> You can delete all your Havi conversation history at any time by contacting us at <a href="mailto:support@aiconnects.me">support@aiconnects.me</a>.</li>
+                <li><strong>Withdraw consent:</strong> You can withdraw your consent for AI data sharing at any time by contacting us at <a href="mailto:privacy@aiconnects.me">privacy@aiconnects.me</a>. Withdrawing consent will disable AI-powered features including Havi coach conversations, AI nutritional analysis from food photos, and personalized coaching messages.</li>
+                <li><strong>Delete conversations:</strong> You can delete all your Havi conversation history at any time by contacting us at <a href="mailto:privacy@aiconnects.me">privacy@aiconnects.me</a>.</li>
             </ul>
 
             <h3>2.6 HAVIT Staff Access to AI Conversations</h3>
@@ -286,7 +289,7 @@
             <hr>
 
             <h2>3. Inferences and Calculated Data</h2>
-            <p>Based on information you provide, we generate the following derived metrics. These calculations are performed on our servers (not by AI providers) and are used to personalize your experience:</p>
+            <p>Based on information you provide, we generate the following derived metrics. These calculations are performed on our servers (not by AI providers). The resulting values are used to personalize your experience and are shared with AI service providers as part of your Profile Context (see Section 2.2, Category A) to enable personalized coaching responses:</p>
 
             <h3>3.1 Body Composition Estimates</h3>
             <table>
@@ -387,7 +390,7 @@
             </table>
 
             <h3>4.3 Data Destruction</h3>
-            <p>At any time, you can delete your account and all associated personal data by sending a request to <a href="mailto:support@aiconnects.me">support@aiconnects.me</a>. We will address your deletion request within one month. It may take up to 90 days for full erasure from backup systems. When data is deleted:</p>
+            <p>At any time, you can delete your account and all associated personal data by sending a request to <a href="mailto:privacy@aiconnects.me">privacy@aiconnects.me</a>. We will address your deletion request within one month. It may take up to 90 days for full erasure from backup systems. When data is deleted:</p>
             <ul>
                 <li><strong>Primary systems:</strong> Data is removed within 30 days</li>
                 <li><strong>Backup systems:</strong> Data is removed within 90 days</li>
@@ -436,7 +439,7 @@
                     <tr><td>Amazon Web Services (USA)</td><td>Data Processor</td><td>Cloud infrastructure and data storage</td><td>All data (encrypted at rest and in transit)</td></tr>
                     <tr><td>Anthropic (USA)</td><td>Data Processor</td><td>Primary Havi AI coach engine and AI-powered features</td><td>See Section 2.2 (Categories A–D)</td></tr>
                     <tr><td>OpenAI (USA)</td><td>Data Processor</td><td>Supplementary AI coaching and NLP</td><td>See Section 2.2 (Categories A–D)</td></tr>
-                    <tr><td>Google (USA)</td><td>Data Processor</td><td>AI features for specific analytical functions</td><td>Selected data for specific features</td></tr>
+                    <tr><td>Google (USA)</td><td>Data Processor</td><td>AI features for specific analytical functions</td><td>See Section 2.2 (Categories A–D) for applicable features</td></tr>
                     <tr><td>Payment processors (e.g., Stripe, Apple IAP, Google Play Billing)</td><td>Data Processor / Controller</td><td>Subscription and payment processing</td><td>Payment details (not health data)</td></tr>
                     <tr><td>Email delivery providers</td><td>Data Processor</td><td>Transactional and marketing emails</td><td>Email address, name</td></tr>
                     <tr><td>Analytics providers</td><td>Data Processor</td><td>Service improvement</td><td>Anonymized usage data only</td></tr>
@@ -458,7 +461,7 @@
             <p>If you use social features, certain information may be visible to other users:</p>
             <p><strong>If your account is public</strong> (default): Your display name, avatar, achievement badges, leaderboard rankings, challenge participation, streaks, XP, and step count may be visible to other users and may appear in leaderboards.</p>
             <p><strong>If your account is private</strong>: No other user can view your activity.</p>
-            <p>You may change your privacy settings and/or opt out of appearing on leaderboards at any time by contacting <a href="mailto:support@aiconnects.me">support@aiconnects.me</a>.</p>
+            <p>You may change your privacy settings and/or opt out of appearing on leaderboards at any time by contacting <a href="mailto:privacy@aiconnects.me">privacy@aiconnects.me</a>.</p>
             <p>Your account may be shared with others via a link which includes your handle (e.g., aihavit.com/user/@my_handle). If your account is public, people using the link can view your username, avatar, handle, and activity indicators. If private, only your username, avatar, and handle are visible.</p>
 
             <h3>6.4 Other Disclosures</h3>
@@ -619,7 +622,7 @@
                 </thead>
                 <tbody>
                     <tr><td>Essential cookies</td><td>App functionality</td><td>Cannot be disabled</td></tr>
-                    <tr><td>Analytics SDKs</td><td>Service improvement (anonymized data only)</td><td>Can opt-out in settings</td></tr>
+                    <tr><td>Analytics SDKs</td><td>Service improvement (anonymized data only)</td><td>Can opt-out via device settings (see Section 12.2)</td></tr>
                     <tr><td>Session storage</td><td>Temporary data</td><td>Cleared on logout</td></tr>
                 </tbody>
             </table>
@@ -704,7 +707,8 @@
                 <li>Right to restrict processing</li>
                 <li>Right not to be subject to automated decision-making with legal effects</li>
             </ul>
-            <p><strong>Supervisory authority:</strong> You may contact your local data protection authority or the Irish Data Protection Commission.</p>
+            <p><strong>Note on automated processing:</strong> HAVIT does not make automated decisions that produce legal or similarly significant effects on you. AI-generated body composition estimates, personalized recommendations, and coaching messages are provided as wellness guidance only and do not constitute medical, legal, or financial decisions.</p>
+            <p><strong>Supervisory authority:</strong> You may contact your local data protection authority.</p>
 
             <h3>16.2 United States (CCPA/CPRA — California Residents)</h3>
             <p><strong>Categories of personal information collected:</strong></p>
@@ -766,10 +770,10 @@
                     <tr><th>수탁업체</th><th>위탁업무</th><th>연락처</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Amazon Web Services</td><td>클라우드 인프라</td><td>aws.amazon.com</td></tr>
-                    <tr><td>Anthropic</td><td>AI 코칭 처리 (주 엔진)</td><td>anthropic.com</td></tr>
-                    <tr><td>OpenAI</td><td>AI 코칭 처리 (보조 엔진)</td><td>openai.com</td></tr>
-                    <tr><td>Google</td><td>AI 처리</td><td>google.com</td></tr>
+                    <tr><td>Amazon Web Services</td><td>클라우드 인프라 및 데이터 저장</td><td>aws.amazon.com</td></tr>
+                    <tr><td>Anthropic</td><td>AI 기반 개인화 코칭 메시지 생성 및 영양 분석 (주 엔진)</td><td>anthropic.com</td></tr>
+                    <tr><td>OpenAI</td><td>AI 기반 코칭 메시지 생성 및 자연어 처리 (보조 엔진)</td><td>openai.com</td></tr>
+                    <tr><td>Google</td><td>AI 기반 분석 기능 처리</td><td>google.com</td></tr>
                 </tbody>
             </table>
 
@@ -811,7 +815,8 @@
                 <tbody>
                     <tr><td>1.0</td><td>2025.12.01</td><td>Initial release</td></tr>
                     <tr><td>1.1</td><td>2026.02.01</td><td>Social login data, gamification features</td></tr>
-                    <tr><td><strong>2.0</strong></td><td><strong>2026.03.01</strong></td><td><strong>Comprehensive AI data sharing disclosure (Section 2); explicit AI consent mechanism; detailed data collection tables; connected health apps section; enhanced regional supplements</strong></td></tr>
+                    <tr><td>2.0</td><td>2026.02.18</td><td>Comprehensive AI data sharing disclosure (Section 2); explicit AI consent mechanism; detailed data collection tables; connected health apps section; enhanced regional supplements</td></tr>
+                    <tr><td><strong>2.1</strong></td><td><strong>2026.02.18</strong></td><td><strong>AI-estimated body composition metrics and health scores added to Category A disclosure; Section 3 clarification on AI data sharing; tracking log details enhanced (Category B); email contacts unified; analytics opt-out and regional supplements corrected</strong></td></tr>
                 </tbody>
             </table>
             <p>Previous versions of this Privacy Policy are available upon request at <a href="mailto:privacy@aiconnects.me">privacy@aiconnects.me</a>.</p>
@@ -830,7 +835,7 @@
                 </thead>
                 <tbody>
                     <tr><td>Document Title</td><td>HAVIT Privacy Policy</td></tr>
-                    <tr><td>Version</td><td>2.0</td></tr>
+                    <tr><td>Version</td><td>2.1</td></tr>
                     <tr><td>Effective Date</td><td>2026.03.01</td></tr>
                     <tr><td>Last Updated</td><td>2026.02.18</td></tr>
                     <tr><td>Approved By</td><td>AI CONNECT Inc.</td></tr>
