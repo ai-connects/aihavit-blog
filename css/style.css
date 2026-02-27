@@ -200,6 +200,55 @@ body {
     border-color: var(--text-secondary);
 }
 
+.btn-store {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.btn-store svg {
+    flex-shrink: 0;
+}
+
+.btn-store .store-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.btn-store .store-label {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+.btn-store .store-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-store:hover {
+    transform: translateY(-2px);
+    background: #f0f0f0;
+}
+
+.btn-store.light {
+    background: #fff;
+    color: #000;
+}
+
+.btn-store.light:hover {
+    background: #f0f0f0;
+}
+
 .hero-stats {
     display: flex;
     gap: 48px;
@@ -791,7 +840,7 @@ section {
         align-items: center;
     }
     
-    .btn-primary, .btn-secondary {
+    .btn-primary, .btn-secondary, .btn-store {
         width: 100%;
         max-width: 280px;
         justify-content: center;
