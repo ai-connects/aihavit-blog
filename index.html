@@ -1,335 +1,837 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAVIT - AI-Powered Weight Loss & Wellness Coach</title>
-    <meta name="description" content="Transform your health journey with HAVIT's AI-powered personalized coaching. Scientific diagnosis, gamified challenges, and 24/7 adaptive coaching in 33 languages.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAVIT — The Duolingo for Healthier Living</title>
+<meta name="description" content="Transform your health journey with HAVIT's AI-powered personalized coaching. Metabolic science diagnosis, gamified challenges, and 24/7 adaptive coaching in 35 languages.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <span class="logo-text">Havit</span>
-            </a>
-            <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#contact" class="btn-nav">Contact Us</a>
-            </div>
+<body class="lang-ko">
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-img">Havit</div>
+  </a>
+  <div class="nav-center-links">
+    <a href="#how" class="ko-only">작동 방식</a>
+    <a href="#how" class="en-only">How it works</a>
+    <a href="#features" class="ko-only">기능</a>
+    <a href="#features" class="en-only">Features</a>
+    <a href="#proof" class="ko-only">검증</a>
+    <a href="#proof" class="en-only">Validation</a>
+    <a href="https://www.aiconnects.me" target="_blank" class="ko-only">회사 소개</a>
+    <a href="https://www.aiconnects.me" target="_blank" class="en-only">About Us</a>
+  </div>
+  <div class="nav-right">
+    <div class="lang-select-wrap" id="langWrap">
+      <button class="lang-select-btn" id="langBtn" onclick="toggleLangDrop()">
+        <span class="lang-flag" id="langFlag">🇰🇷</span>
+        <span class="lang-code" id="langCode">KO</span>
+        <span class="lang-chevron">▾</span>
+      </button>
+      <div class="lang-dropdown" id="langDrop">
+        <!-- East Asia -->
+        <div class="lang-group-label">East Asia</div>
+        <div class="lang-opt active" onclick="setLang('ko-KR')" data-ui="ko"><span class="lo-flag">🇰🇷</span><span class="lo-name">한국어</span><span class="lo-code">KO</span></div>
+        <div class="lang-opt" onclick="setLang('ja-JP')" data-ui="en"><span class="lo-flag">🇯🇵</span><span class="lo-name">日本語</span><span class="lo-code">JA</span></div>
+        <div class="lang-opt" onclick="setLang('zh-TW')" data-ui="en"><span class="lo-flag">🇹🇼</span><span class="lo-name">繁體中文</span><span class="lo-code">ZH-TW</span></div>
+        <div class="lang-opt" onclick="setLang('zh-CN')" data-ui="en"><span class="lo-flag">🇨🇳</span><span class="lo-name">简体中文</span><span class="lo-code">ZH-CN</span></div>
+        <!-- Southeast Asia -->
+        <div class="lang-group-label">Southeast Asia</div>
+        <div class="lang-opt" onclick="setLang('th-TH')" data-ui="en"><span class="lo-flag">🇹🇭</span><span class="lo-name">ภาษาไทย</span><span class="lo-code">TH</span></div>
+        <div class="lang-opt" onclick="setLang('vi-VN')" data-ui="en"><span class="lo-flag">🇻🇳</span><span class="lo-name">Tiếng Việt</span><span class="lo-code">VI</span></div>
+        <div class="lang-opt" onclick="setLang('id-ID')" data-ui="en"><span class="lo-flag">🇮🇩</span><span class="lo-name">Bahasa Indonesia</span><span class="lo-code">ID</span></div>
+        <div class="lang-opt" onclick="setLang('ms-MY')" data-ui="en"><span class="lo-flag">🇲🇾</span><span class="lo-name">Bahasa Melayu</span><span class="lo-code">MS</span></div>
+        <!-- Americas & UK -->
+        <div class="lang-group-label">Americas &amp; UK</div>
+        <div class="lang-opt" onclick="setLang('en-US')" data-ui="en"><span class="lo-flag">🇺🇸</span><span class="lo-name">English (US)</span><span class="lo-code">EN-US</span></div>
+        <div class="lang-opt" onclick="setLang('en-GB')" data-ui="en"><span class="lo-flag">🇬🇧</span><span class="lo-name">English (UK)</span><span class="lo-code">EN-GB</span></div>
+        <!-- Europe -->
+        <div class="lang-group-label">Europe</div>
+        <div class="lang-opt" onclick="setLang('ru-RU')" data-ui="en"><span class="lo-flag">🇷🇺</span><span class="lo-name">Русский</span><span class="lo-code">RU</span></div>
+        <div class="lang-opt" onclick="setLang('fr-FR')" data-ui="en"><span class="lo-flag">🇫🇷</span><span class="lo-name">Français</span><span class="lo-code">FR</span></div>
+        <div class="lang-opt" onclick="setLang('es-ES')" data-ui="en"><span class="lo-flag">🇪🇸</span><span class="lo-name">Español</span><span class="lo-code">ES</span></div>
+        <div class="lang-opt" onclick="setLang('pt-PT')" data-ui="en"><span class="lo-flag">🇵🇹</span><span class="lo-name">Português</span><span class="lo-code">PT</span></div>
+        <div class="lang-opt" onclick="setLang('de-DE')" data-ui="en"><span class="lo-flag">🇩🇪</span><span class="lo-name">Deutsch</span><span class="lo-code">DE</span></div>
+        <div class="lang-opt" onclick="setLang('it-IT')" data-ui="en"><span class="lo-flag">🇮🇹</span><span class="lo-name">Italiano</span><span class="lo-code">IT</span></div>
+        <div class="lang-opt" onclick="setLang('nl-NL')" data-ui="en"><span class="lo-flag">🇳🇱</span><span class="lo-name">Nederlands</span><span class="lo-code">NL</span></div>
+        <div class="lang-opt" onclick="setLang('sv-SE')" data-ui="en"><span class="lo-flag">🇸🇪</span><span class="lo-name">Svenska</span><span class="lo-code">SV</span></div>
+        <div class="lang-opt" onclick="setLang('nb-NO')" data-ui="en"><span class="lo-flag">🇳🇴</span><span class="lo-name">Norsk</span><span class="lo-code">NB</span></div>
+        <div class="lang-opt" onclick="setLang('da-DK')" data-ui="en"><span class="lo-flag">🇩🇰</span><span class="lo-name">Dansk</span><span class="lo-code">DA</span></div>
+        <div class="lang-opt" onclick="setLang('pl-PL')" data-ui="en"><span class="lo-flag">🇵🇱</span><span class="lo-name">Polski</span><span class="lo-code">PL</span></div>
+        <div class="lang-opt" onclick="setLang('tr-TR')" data-ui="en"><span class="lo-flag">🇹🇷</span><span class="lo-name">Türkçe</span><span class="lo-code">TR</span></div>
+        <div class="lang-opt" onclick="setLang('el-GR')" data-ui="en"><span class="lo-flag">🇬🇷</span><span class="lo-name">Ελληνικά</span><span class="lo-code">EL</span></div>
+        <div class="lang-opt" onclick="setLang('ro-RO')" data-ui="en"><span class="lo-flag">🇷🇴</span><span class="lo-name">Română</span><span class="lo-code">RO</span></div>
+        <div class="lang-opt" onclick="setLang('sk-SK')" data-ui="en"><span class="lo-flag">🇸🇰</span><span class="lo-name">Slovenčina</span><span class="lo-code">SK</span></div>
+        <div class="lang-opt" onclick="setLang('cs-CZ')" data-ui="en"><span class="lo-flag">🇨🇿</span><span class="lo-name">Čeština</span><span class="lo-code">CS</span></div>
+        <div class="lang-opt" onclick="setLang('ca-ES')" data-ui="en"><span class="lo-flag">🏴󠁥󠁳󠁣󠁴󠁿</span><span class="lo-name">Català</span><span class="lo-code">CA</span></div>
+        <div class="lang-opt" onclick="setLang('hr-HR')" data-ui="en"><span class="lo-flag">🇭🇷</span><span class="lo-name">Hrvatski</span><span class="lo-code">HR</span></div>
+        <div class="lang-opt" onclick="setLang('fi-FI')" data-ui="en"><span class="lo-flag">🇫🇮</span><span class="lo-name">Suomi</span><span class="lo-code">FI</span></div>
+        <div class="lang-opt" onclick="setLang('hu-HU')" data-ui="en"><span class="lo-flag">🇭🇺</span><span class="lo-name">Magyar</span><span class="lo-code">HU</span></div>
+        <div class="lang-opt" onclick="setLang('uk-UA')" data-ui="en"><span class="lo-flag">🇺🇦</span><span class="lo-name">Українська</span><span class="lo-code">UK</span></div>
+        <!-- Middle East & Central Asia -->
+        <div class="lang-group-label">Middle East &amp; Central Asia</div>
+        <div class="lang-opt" onclick="setLang('ar-AE')" data-ui="en"><span class="lo-flag">🇦🇪</span><span class="lo-name">العربية</span><span class="lo-code">AR</span></div>
+        <div class="lang-opt" onclick="setLang('he-IL')" data-ui="en"><span class="lo-flag">🇮🇱</span><span class="lo-name">עברית</span><span class="lo-code">HE</span></div>
+        <div class="lang-opt" onclick="setLang('uz-Cyrl-UZ')" data-ui="en"><span class="lo-flag">🇺🇿</span><span class="lo-name">Ўзбекча</span><span class="lo-code">UZ</span></div>
+        <!-- South Asia -->
+        <div class="lang-group-label">South Asia</div>
+        <div class="lang-opt" onclick="setLang('hi-IN')" data-ui="en"><span class="lo-flag">🇮🇳</span><span class="lo-name">हिन्दी</span><span class="lo-code">HI</span></div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-glow"></div>
+  <div class="hero-bg-grid"></div>
+
+  <div class="hero-text" style="position:relative;z-index:1">
+    <div class="hero-eyebrow reveal">
+      <div class="hero-eyebrow-dot"></div>
+      <span class="ko-only">국내 No.1 대사 클리닉 JUVIS 출신이 만든 앱</span>
+      <span class="en-only">Built by the team behind Korea's No.1 metabolic clinic JUVIS</span>
+    </div>
+
+    <h1 class="hero-h1 reveal reveal-d1 ko-only">
+      당신의 건강과<br>다이어트를 위한<br>
+      <span class="accent">AI 코디네이터</span>
+    </h1>
+    <h1 class="hero-h1 reveal reveal-d1 en-only">
+      Your Personal AI Coordinator<br>for Health &amp;<br>
+      <span class="accent">Weight Management</span>
+    </h1>
+
+    <p class="hero-sub reveal reveal-d2 ko-only">
+      <span class="hero-powered">Powered by Metabolic Science</span>
+      대사(Metabolism) 과학 기반의 정밀 진단부터<br>
+      개인화 처방, 전담 AI 코칭까지.<br>
+      클리닉 수준의 케어를 스마트폰으로.
+    </p>
+    <p class="hero-sub reveal reveal-d2 en-only">
+      <span class="hero-powered">Powered by Metabolic Science</span>
+      Precision metabolic diagnosis, personalized prescription,<br>
+      and dedicated AI coaching —<br>clinic-grade care through your smartphone.
+    </p>
+
+    <div class="hero-store-badges reveal reveal-d3">
+      <a href="https://apps.apple.com/kr/app/%ED%95%98%EB%B9%84%ED%8A%B8-ai-%EA%B1%B4%EA%B0%95-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-%EC%BD%94%EC%B9%98/id6755166023" target="_blank" rel="noopener noreferrer" class="store-badge">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <div class="store-badge-text">
+          <span class="store-badge-sub ko-only">App Store에서 다운로드</span>
+          <span class="store-badge-sub en-only">Download on the</span>
+          <span class="store-badge-name">App Store</span>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-badge">🔥 AI-Powered Wellness</div>
-            <h1>Your Personal AI Coach for<br><span class="gradient-text">Lasting Weight Loss</span></h1>
-            <p class="hero-subtitle">
-                Daily 'small wins' powered by AI, scientific data, and proven K-Diet expertise. 
-                Transform your health journey with personalized coaching in 33 languages.
-            </p>
-            <div class="hero-cta">
-                <a href="https://apps.apple.com/kr/app/%ED%95%98%EB%B9%84%ED%8A%B8-ai-%EA%B1%B4%EA%B0%95-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-%EC%BD%94%EC%B9%98/id6755166023" class="btn-store" target="_blank" rel="noopener noreferrer">
-                    <svg width="20" height="24" viewBox="0 0 384 512" fill="currentColor">
-                        <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
-                    </svg>
-                    <div class="store-text">
-                        <span class="store-label">Download on the</span>
-                        <span class="store-name">App Store</span>
-                    </div>
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.aiconnects.havitWellness" class="btn-store" target="_blank" rel="noopener noreferrer">
-                    <svg width="20" height="22" viewBox="0 0 512 512" fill="currentColor">
-                        <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
-                    </svg>
-                    <div class="store-text">
-                        <span class="store-label">GET IT ON</span>
-                        <span class="store-name">Google Play</span>
-                    </div>
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">33</span>
-                    <span class="stat-label">Languages</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">175</span>
-                    <span class="stat-label">Countries</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">2K+</span>
-                    <span class="stat-label">Solutions</span>
-                </div>
-            </div>
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.aiconnects.havitWellness" target="_blank" rel="noopener noreferrer" class="store-badge">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M3.18 23.49c-.36-.17-.59-.52-.59-.92V1.43c0-.4.23-.75.59-.92l10.6 11.49L3.18 23.49zm14.76-8.33l-3.07-1.77L12.5 12l2.37-1.39 3.07-1.77 3.43 1.98c.97.56.97 1.48 0 2.04l-3.43 1.3zm-3.92-3.16L4.18.56l9.84 5.67v5.77zm0 0L4.18 23.44l9.84-5.67V12z"/></svg>
+        <div class="store-badge-text">
+          <span class="store-badge-sub ko-only">Google Play에서 다운로드</span>
+          <span class="store-badge-sub en-only">Get it on</span>
+          <span class="store-badge-name">Google Play</span>
         </div>
-        <div class="hero-visual">
-            <div class="phone-mockup">
-                <img src="assets/Home_mission.png" alt="HAVIT App Home Screen" class="hero-phone">
-            </div>
+      </a>
+    </div>
+
+    <div class="hero-trust reveal reveal-d4">
+      <div class="hero-trust-item"><strong>35</strong> <span class="ko-only">개 언어 지원</span><span class="en-only">languages</span></div>
+      <div class="hero-trust-sep"></div>
+      <div class="hero-trust-item"><strong>175</strong> <span class="ko-only">개국</span><span class="en-only">countries</span></div>
+      <div class="hero-trust-sep"></div>
+      <div class="hero-trust-item"><strong>2,000+</strong> <span class="ko-only">솔루션</span><span class="en-only">solutions</span></div>
+    </div>
+  </div>
+
+  <div class="hero-visual reveal reveal-d2">
+    <div class="hero-phones">
+      <div class="hero-glow-phones"></div>
+      <img class="hero-phone-main app-screen ko-only" src="assets/hero_home_ko.png" alt="HAVIT Home">
+      <img class="hero-phone-main app-screen en-only" src="assets/hero_home_en.png" alt="HAVIT Home">
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div id="statsbar">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-item reveal">
+        <div class="stat-num">35</div>
+        <div class="stat-lbl ko-only">지원 언어</div>
+        <div class="stat-lbl en-only">supported languages</div>
+      </div>
+      <div class="stat-item reveal reveal-d1">
+        <div class="stat-num">175</div>
+        <div class="stat-lbl ko-only">서비스 국가</div>
+        <div class="stat-lbl en-only">countries served</div>
+      </div>
+      <div class="stat-item reveal reveal-d2">
+        <div class="stat-num">13:40</div>
+        <div class="stat-lbl ko-only">평균 세션 시간</div>
+        <div class="stat-lbl en-only">avg. session time</div>
+      </div>
+      <div class="stat-item reveal reveal-d3">
+        <div class="stat-num">126+</div>
+        <div class="stat-lbl ko-only">대사 아키타입</div>
+        <div class="stat-lbl en-only">metabolic archetypes</div>
+      </div>
+      <div class="stat-item reveal reveal-d4">
+        <div class="stat-num">Free</div>
+        <div class="stat-lbl ko-only">무료로 시작</div>
+        <div class="stat-lbl en-only">to get started</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EMPATHY -->
+<section id="empathy">
+  <div class="container center">
+    <span class="label reveal">SOUND FAMILIAR?</span>
+    <h2 class="reveal reveal-d1 ko-only">매번 이렇게 끝나지 않았나요?</h2>
+    <h2 class="reveal reveal-d1 en-only">You've been here before.</h2>
+    <p class="empathy-sub reveal reveal-d2 ko-only">의지력의 문제가 아닙니다. 방법이 없었던 겁니다.</p>
+    <p class="empathy-sub reveal reveal-d2 en-only">It's not a willpower problem. You just didn't have the right system.</p>
+
+    <div class="empathy-cards">
+      <div class="empathy-card reveal">
+        <div class="empathy-icon">😩</div>
+        <div class="empathy-quote ko-only">"다이어트 시작할 건데, 뭘 먹어야 하는지 뭘 해야 하는지 아직도 모르겠어요"</div>
+        <div class="empathy-quote en-only">"I want to eat better, but I genuinely don't know where to start."</div>
+        <div class="empathy-answer ko-only">→ 대사 진단이 먼저입니다</div>
+        <div class="empathy-answer en-only">→ Start with your metabolic diagnosis</div>
+      </div>
+      <div class="empathy-card reveal reveal-d1">
+        <div class="empathy-icon">📱</div>
+        <div class="empathy-quote ko-only">"앱 써봤는데 일주일 하다 그냥 지워요. 매일 기록이 너무 귀찮아요"</div>
+        <div class="empathy-quote en-only">"I've tried every app. I use it for a week, then delete it."</div>
+        <div class="empathy-answer ko-only">→ 기록이 게임이 되면 다릅니다</div>
+        <div class="empathy-answer en-only">→ When tracking becomes a game, everything changes</div>
+      </div>
+      <div class="empathy-card reveal reveal-d2">
+        <div class="empathy-icon">💸</div>
+        <div class="empathy-quote ko-only">"PT 받고 싶은데 한 달에 50만 원은 너무 부담돼요"</div>
+        <div class="empathy-quote en-only">"Personal training costs are just too much every month."</div>
+        <div class="empathy-answer ko-only">→ 클리닉 수준의 케어, 무료로</div>
+        <div class="empathy-answer en-only">→ Clinic-grade care, starting free</div>
+      </div>
+    </div>
+
+    <div class="empathy-close reveal">
+      <h3 class="ko-only">문제는 당신이 아닙니다.<br><span style="color:var(--accent)">시스템이 없었던 겁니다.</span></h3>
+      <h3 class="en-only">The problem isn't you.<br><span style="color:var(--accent)">You just need the right system.</span></h3>
+      <p class="ko-only">HAVIT은 대한민국 최고 대사 전문가들이 만든 시스템입니다.</p>
+      <p class="en-only">HAVIT is the system built by Korea's top metabolic experts.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PREMIUM EXPERTISE -->
+<section id="expertise">
+  <div class="container">
+    <div class="expertise-split">
+      <div class="reveal">
+        <div class="expertise-label">PREMIUM EXPERTISE</div>
+        <h2 class="expertise-h2 ko-only">
+          국내 최고 전문가들의<br>노하우를 담았습니다
+        </h2>
+        <h2 class="expertise-h2 en-only">
+          Built with expertise from<br>Korea's top specialists
+        </h2>
+        <p class="expertise-body ko-only">
+          HAVIT은 단순한 앱이 아닙니다.<br><br>
+          국내 No.1 대사 다이어트 클리닉의 자회사 CEO,
+          Noom 시니어 헬스 코치, KPMG·딜로이트 AI 모델링 전문가,
+          그리고 Riot Games·Epic Games에서 수억 명을 매일 앱으로 불러들인
+          게임 전문가가 함께 만든 제품입니다.<br><br>
+          국내 최고 클리닉에서 검증된 방법론을<br>
+          AI로 디지털화해 담았습니다.
+        </p>
+        <p class="expertise-body en-only">
+          HAVIT is not just an app.<br><br>
+          It was built by the former CEO of Korea's No.1 metabolic clinic subsidiary,
+          a 15-year Noom senior health coach, AI modeling specialists from KPMG and Deloitte,
+          and game industry veterans from Riot Games and Epic Games
+          who brought hundreds of millions back to apps, daily.<br><br>
+          The proven methodology of Korea's leading clinics —
+          digitalized through AI.
+        </p>
+      </div>
+
+      <div class="expertise-pillars reveal reveal-d2">
+        <div class="pillar">
+          <div class="pillar-icon">🏥</div>
+          <div>
+            <div class="pillar-title ko-only">국내 No.1 대사 클리닉 방법론</div>
+            <div class="pillar-title en-only">Korea's No.1 Metabolic Clinic Methodology</div>
+            <div class="pillar-desc ko-only">국내 최대 대사 중심 체중 관리 클리닉의 검증된 4단계 방법론. 측정 → 처방 → 코칭 → 변화 관리를 그대로 디지털화했습니다.</div>
+            <div class="pillar-desc en-only">The proven 4-step methodology of Korea's largest metabolic weight management clinic. Diagnosis → Prescription → Coaching → Change Management — fully digitalized.</div>
+          </div>
         </div>
-    </section>
-
-    <!-- Problem Section -->
-    <section class="problem-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">The Challenge</span>
-                <h2>Why Diets Fail</h2>
-                <p>For over half the population, weight loss is a lifelong struggle. But it doesn't have to be.</p>
-            </div>
-            <div class="problem-grid">
-                <div class="problem-card">
-                    <div class="problem-icon">📊</div>
-                    <h3>One-Size-Fits-All</h3>
-                    <p>Generic methods ignore your unique metabolism, body type, and lifestyle patterns.</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">⚡</div>
-                    <h3>Unsustainable Plans</h3>
-                    <p>Extreme fasting and intense workouts lead to burnout, muscle loss, and rebound weight gain.</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🧠</div>
-                    <h3>Willpower Alone</h3>
-                    <p>Without proper support and motivation, 70% quit within 3 months.</p>
-                </div>
-            </div>
+        <div class="pillar">
+          <div class="pillar-icon">🤖</div>
+          <div>
+            <div class="pillar-title ko-only">Big 4 컨설팅 출신 AI 모델링</div>
+            <div class="pillar-title en-only">AI Modeling from Big 4 Consulting</div>
+            <div class="pillar-desc ko-only">KPMG·딜로이트 출신 전문가가 설계한 126가지 대사 아키타입 기반 정밀 개인화 AI.</div>
+            <div class="pillar-desc en-only">Precision personalization AI built by KPMG &amp; Deloitte specialists — 126 metabolic archetypes.</div>
+          </div>
         </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section class="solution-section" id="features">
-        <div class="container">
-            <div class="section-header light">
-                <span class="section-badge">Our Solution</span>
-                <h2>AI + K-Diet Expertise = Results</h2>
-                <p>Combining proven Korean diet methodology with cutting-edge AI for personalized, lasting transformation.</p>
-            </div>
-            
-            <!-- Feature 1: AI Diagnosis -->
-            <div class="feature-block">
-                <div class="feature-content">
-                    <div class="feature-tag">🔬 Scientific Assessment</div>
-                    <h3>AI Body Composition Analysis</h3>
-                    <p>No expensive equipment needed. Our AI precisely estimates your body composition—body fat, muscle mass, visceral fat—and identifies your unique metabolic profile.</p>
-                    <ul class="feature-list">
-                        <li>10 body composition metrics</li>
-                        <li>6-level lifestyle habit analysis</li>
-                        <li>126+ personalized archetypes</li>
-                        <li>Ethnicity & age-adjusted standards</li>
-                    </ul>
-                </div>
-                <div class="feature-visual">
-                    <div class="phone-stack">
-                        <img src="assets/dignosis_1.png" alt="Health Analysis" class="phone-img phone-back">
-                        <img src="assets/dignosis_2.png" alt="Body Composition" class="phone-img phone-front">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Feature 2: Personalized Plan -->
-            <div class="feature-block reverse">
-                <div class="feature-content">
-                    <div class="feature-tag">🎯 Personalized Journey</div>
-                    <h3>Your 12-Week Transformation</h3>
-                    <p>Based on your diagnosis, we create a scientifically-calibrated 12-week program with realistic milestones that adapt to your progress.</p>
-                    <ul class="feature-list">
-                        <li>Dynamic goal calibration</li>
-                        <li>Weekly weight targets</li>
-                        <li>Metabolic lifestyle coaching</li>
-                        <li>GLP-1 medication support</li>
-                    </ul>
-                </div>
-                <div class="feature-visual">
-                    <img src="assets/12weeks_program.png" alt="12 Week Program" class="phone-img single">
-                </div>
-            </div>
-
-            <!-- Feature 3: Gamification -->
-            <div class="feature-block">
-                <div class="feature-content">
-                    <div class="feature-tag">🎮 Gamified Experience</div>
-                    <h3>Make Health Fun, Not a Chore</h3>
-                    <p>Your avatar grows healthier as you do. Complete daily quests, unlock rewards, and watch your character transform alongside your real progress.</p>
-                    <ul class="feature-list">
-                        <li>Bio-synced avatar system</li>
-                        <li>Daily missions & challenges</li>
-                        <li>Rewards & unlockables</li>
-                        <li>Community challenges</li>
-                    </ul>
-                </div>
-                <div class="feature-visual">
-                    <div class="phone-stack">
-                        <img src="assets/Havit_power.png" alt="Havit Power" class="phone-img phone-back">
-                        <img src="assets/Challenge.png" alt="Challenges" class="phone-img phone-front">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Feature 4: AI Coaching -->
-            <div class="feature-block reverse">
-                <div class="feature-content">
-                    <div class="feature-tag">💬 24/7 AI Coach</div>
-                    <h3>Your Personal Health Concierge</h3>
-                    <p>Coach Havi understands your medications, conditions, and goals. Get instant, personalized advice anytime—powered by 2,000+ expert solutions.</p>
-                    <ul class="feature-list">
-                        <li>Real-time nudges & feedback</li>
-                        <li>Medication-aware coaching</li>
-                        <li>Dynamic difficulty adjustment</li>
-                        <li>Evidence-based recommendations</li>
-                    </ul>
-                </div>
-                <div class="feature-visual">
-                    <img src="assets/coaching.png" alt="AI Coaching" class="phone-img single">
-                </div>
-            </div>
+        <div class="pillar">
+          <div class="pillar-icon">🎮</div>
+          <div>
+            <div class="pillar-title ko-only">AAA 게임 전문가의 행동 설계</div>
+            <div class="pillar-title en-only">Behavioral Design by AAA Game Veterans</div>
+            <div class="pillar-desc ko-only">Riot Games·Epic Games에서 수억 명을 매일 앱으로 불러들인 게이미피케이션 기술.</div>
+            <div class="pillar-desc en-only">Gamification from veterans who kept hundreds of millions coming back daily at Riot &amp; Epic Games.</div>
+          </div>
         </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="how-section" id="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Getting Started</span>
-                <h2>How HAVIT Works</h2>
-            </div>
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <h3>Quick Assessment</h3>
-                    <p>Complete a 5-minute survey. Our AI analyzes your body composition, habits, and goals.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <h3>Get Your Plan</h3>
-                    <p>Receive your personalized 12-week program with daily quests tailored just for you.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <h3>Track & Grow</h3>
-                    <p>Complete missions, chat with Havi, and watch your avatar (and yourself) transform.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">4</div>
-                    <h3>Achieve Results</h3>
-                    <p>Build lasting habits with adaptive coaching that evolves with your progress.</p>
-                </div>
-            </div>
+        <div class="pillar">
+          <div class="pillar-icon">🧬</div>
+          <div>
+            <div class="pillar-title ko-only">Noom 시니어 코치의 코칭 설계</div>
+            <div class="pillar-title en-only">Coaching by Noom Senior Coach</div>
+            <div class="pillar-desc ko-only">15년 경력 Noom 시니어 헬스 코치가 설계한 심리 기반 행동 변화 코칭 프레임워크.</div>
+            <div class="pillar-desc en-only">Psychology-based behavior change framework designed by a 15-year Noom senior health coach.</div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- App Screenshots Gallery -->
-    <section class="gallery-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">App Preview</span>
-                <h2>Explore HAVIT</h2>
-            </div>
-            <div class="gallery-scroll">
-                <div class="gallery-track">
-                    <img src="assets/Home_mission.png" alt="Home" class="gallery-img">
-                    <img src="assets/dignosis_3.png" alt="Habit Analysis" class="gallery-img">
-                    <img src="assets/dignosis_4.png" alt="Waist Target" class="gallery-img">
-                    <img src="assets/Avartar.png" alt="Avatar Selection" class="gallery-img">
-                    <img src="assets/discovery.png" alt="Discovery" class="gallery-img">
-                    <img src="assets/article.png" alt="Articles" class="gallery-img">
-                    <img src="assets/action.png" alt="Actions" class="gallery-img">
-                </div>
-            </div>
+<div class="divider"></div>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="container">
+    <div class="how-header">
+      <span class="label reveal">HOW IT WORKS</span>
+      <h2 class="reveal reveal-d1 ko-only">
+        클리닉의 4단계를<br>스마트폰에서
+      </h2>
+      <h2 class="reveal reveal-d1 en-only">
+        The clinic's 4-step methodology<br>on your phone
+      </h2>
+    </div>
+
+    <div class="steps">
+      <!-- Step 1 -->
+      <div class="step">
+        <div class="reveal">
+          <div class="step-number">STEP 01</div>
+          <h3 class="ko-only">전문 장비 수준의<br>대사(Metabolism) 진단</h3>
+          <h3 class="en-only">Clinical-Grade<br>Metabolic Diagnosis</h3>
+          <p class="step-body ko-only">
+            기존에는 InBody 같은 고가 장비가 있는 클리닉에 가야만
+            체지방, 골격근량, 내장지방, 생물학적 나이를 알 수 있었습니다.<br><br>
+            HAVIT은 스마트폰 카메라만으로 12가지 대사 지표를 측정합니다.
+            InBody 대비 92.9% 정확도.
+          </p>
+          <p class="step-body en-only">
+            Until now, knowing your body fat, muscle mass, visceral fat,
+            and biological age required an InBody machine at a clinic.<br><br>
+            HAVIT measures 12 metabolic markers using just your phone camera.
+            92.9% accuracy vs. InBody.
+          </p>
+          <div class="step-stat ko-only">✓ 92.9% 정확도 (InBody 대비, n=70)</div>
+          <div class="step-stat en-only">✓ 92.9% accuracy vs. InBody (n=70)</div>
         </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section" id="contact">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Transform Your Health?</h2>
-                <p>Download HAVIT now and start your personalized wellness journey.</p>
-                <div class="cta-buttons">
-                    <a href="https://apps.apple.com/kr/app/%ED%95%98%EB%B9%84%ED%8A%B8-ai-%EA%B1%B4%EA%B0%95-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-%EC%BD%94%EC%B9%98/id6755166023" class="btn-store light" target="_blank" rel="noopener noreferrer">
-                        <svg width="20" height="24" viewBox="0 0 384 512" fill="currentColor">
-                            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
-                        </svg>
-                        <div class="store-text">
-                            <span class="store-label">Download on the</span>
-                            <span class="store-name">App Store</span>
-                        </div>
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.aiconnects.havitWellness" class="btn-store light" target="_blank" rel="noopener noreferrer">
-                        <svg width="20" height="22" viewBox="0 0 512 512" fill="currentColor">
-                            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
-                        </svg>
-                        <div class="store-text">
-                            <span class="store-label">GET IT ON</span>
-                            <span class="store-name">Google Play</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
+        <div class="step-visual reveal reveal-d2">
+          <img class="app-screen ko-only" src="assets/step1_diagnosis_ko.png" alt="Metabolic Diagnosis">
+          <img class="app-screen en-only" src="assets/step1_diagnosis_en.png" alt="Metabolic Diagnosis">
         </div>
-    </section>
+      </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-main">
-                <div class="footer-brand">
-                    <span class="logo-text">Havit</span>
-                    <p>AI-powered wellness coaching for lasting transformation.</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Product</h4>
-                        <a href="#features">Features</a>
-                        <a href="#how-it-works">How It Works</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <a href="mailto:help@aiconnects.me">Contact</a>
-                        <a href="mailto:ryan.yun@aiconnects.me">Partnerships</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <a href="privacy.html">Privacy Policy</a>
-                        <a href="terms.html">Terms of Service</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 AI Connect Inc. All rights reserved.</p>
-                <p>Seoul, South Korea | <a href="mailto:help@aiconnects.me">help@aiconnects.me</a></p>
-            </div>
+      <!-- Step 2 -->
+      <div class="step flip">
+        <div class="reveal">
+          <div class="step-number">STEP 02</div>
+          <h3 class="ko-only">126가지 아키타입 기반<br>개인화 처방</h3>
+          <h3 class="en-only">Personalized Prescription<br>from 126 Archetypes</h3>
+          <p class="step-body ko-only">
+            같은 체중이라도 대사 유형은 완전히 다릅니다.<br><br>
+            HAVIT은 체성분, 생활습관, 신체 조건을 조합한
+            126가지 대사 아키타입으로 나누고,
+            각 유형에 맞는 목표, 식이, 활동을 처방합니다.
+          </p>
+          <p class="step-body en-only">
+            Even at the same weight, metabolic profiles vary dramatically.<br><br>
+            HAVIT classifies you into one of 126 metabolic archetypes
+            based on body composition, lifestyle, and physical conditions —
+            then prescribes goals, diet, and activities matched to your type.
+          </p>
+          <div class="step-stat ko-only">✓ 126가지 아키타입 맞춤 처방</div>
+          <div class="step-stat en-only">✓ 126 archetype-matched prescriptions</div>
         </div>
-    </footer>
+        <div class="step-visual reveal reveal-d2">
+          <img class="app-screen ko-only" src="assets/step2_prescription_ko.png" alt="Personalized Prescription">
+          <img class="app-screen en-only" src="assets/step2_prescription_en.png" alt="Personalized Prescription">
+        </div>
+      </div>
 
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+      <!-- Step 3 -->
+      <div class="step">
+        <div class="reveal">
+          <div class="step-number">STEP 03</div>
+          <h3 class="ko-only">매일 바뀌는<br>전담 AI 코디네이터</h3>
+          <h3 class="en-only">Your Dedicated<br>AI Coordinator — Daily</h3>
+          <p class="step-body ko-only">
+            PT 트레이너처럼, 하지만 24시간.<br><br>
+            HAVIT의 AI 코디네이터 HAVI는 매일 당신의 상태를 파악하고,
+            오늘 무엇을 먹고, 어떤 활동을 하고, 어떤 습관을 고쳐야 하는지
+            실시간으로 코칭합니다.
+          </p>
+          <p class="step-body en-only">
+            Like a personal trainer — but 24/7.<br><br>
+            HAVIT's AI coordinator HAVI checks in daily,
+            coaching you in real-time on what to eat,
+            how to move, and which habits to adjust.
+          </p>
+          <div class="step-stat ko-only">✓ 2,000+ 전문가 솔루션 기반</div>
+          <div class="step-stat en-only">✓ Based on 2,000+ expert solutions</div>
+        </div>
+        <div class="step-visual reveal reveal-d2">
+          <img class="app-screen ko-only" src="assets/step3_coaching_ko.png" alt="AI Coordinator">
+          <img class="app-screen en-only" src="assets/step3_coaching_en.png" alt="AI Coordinator">
+        </div>
+      </div>
 
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-    </script>
+      <!-- Step 4 -->
+      <div class="step flip">
+        <div class="reveal">
+          <div class="step-number">STEP 04</div>
+          <h3 class="ko-only">게임처럼 즐기는<br>변화 관리</h3>
+          <h3 class="en-only">Change Management<br>That Feels Like a Game</h3>
+          <p class="step-body ko-only">
+            습관은 의지가 아니라 시스템이 만듭니다.<br><br>
+            스트릭, 데일리 미션, 아바타 성장, 커뮤니티 챌린지.
+            Riot Games·Epic Games 출신이 설계한 게이미피케이션이
+            꾸준한 실천을 만들어냅니다.
+          </p>
+          <p class="step-body en-only">
+            Habits aren't built by willpower — they're built by systems.<br><br>
+            Streaks, daily missions, avatar growth, and community challenges.
+            Gamification designed by Riot &amp; Epic Games veterans
+            to keep you coming back.
+          </p>
+          <div class="step-stat ko-only">✓ 72.1% 재방문율 (업계 75th: 30.3%)</div>
+          <div class="step-stat en-only">✓ 72.1% re-use rate (industry 75th pct: 30.3%)</div>
+        </div>
+        <div class="step-visual reveal reveal-d2">
+          <img class="app-screen ko-only" src="assets/step4_change_ko.png" alt="Change Management">
+          <img class="app-screen en-only" src="assets/step4_change_en.png" alt="Change Management">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="container center">
+    <span class="label reveal">FEATURES</span>
+    <h2 class="reveal reveal-d1 ko-only">HAVIT 안에 있는 것들</h2>
+    <h2 class="reveal reveal-d1 en-only">Everything inside HAVIT</h2>
+    <p class="feat-sub reveal reveal-d2 ko-only">진단부터 변화 관리까지. 하나의 앱에서.</p>
+    <p class="feat-sub reveal reveal-d2 en-only">From diagnosis to change management. In one app.</p>
+
+    <div class="features-grid reveal reveal-d2">
+      <div class="feat-card large">
+        <img class="feat-img ko-only" src="assets/feat_food_scan_ko.png" alt="AI Food Scan">
+        <img class="feat-img en-only" src="assets/feat_food_scan_en.png" alt="AI Food Scan">
+        <div class="feat-info" style="text-align:left">
+          <div class="feat-tag">AI Scan</div>
+          <h3 class="ko-only">AI 음식 스캔</h3>
+          <h3 class="en-only">AI Food Scan</h3>
+          <p class="ko-only">사진 한 장으로 칼로리, 단백질, 탄수화물 자동 계산. 아이스 라떼 한 잔도 놓치지 않습니다.</p>
+          <p class="en-only">One photo auto-calculates calories, protein, and carbs. Not even your iced latte escapes notice.</p>
+        </div>
+      </div>
+      <div class="feat-card">
+        <img class="feat-img ko-only" src="assets/feat_article_ko.png" alt="Daily Coaching">
+        <img class="feat-img en-only" src="assets/feat_article_en.png" alt="Daily Coaching">
+        <div class="feat-info" style="text-align:left">
+          <div class="feat-tag">Daily Coaching</div>
+          <h3 class="ko-only">맞춤 일일 코칭</h3>
+          <h3 class="en-only">Daily Personalized Coaching</h3>
+          <p class="ko-only">왜 해야 하는지, 어떻게 해야 하는지. 과학적 근거와 함께 매일 코칭합니다.</p>
+          <p class="en-only">Why and how — science-backed daily coaching for every action.</p>
+        </div>
+      </div>
+      <div class="feat-card">
+        <img class="feat-img ko-only" src="assets/feat_coaching_ko.png" alt="Health Content">
+        <img class="feat-img en-only" src="assets/feat_coaching_en.png" alt="Health Content">
+        <div class="feat-info" style="text-align:left">
+          <div class="feat-tag">Discovery</div>
+          <h3 class="ko-only">나를 위한 건강 콘텐츠</h3>
+          <h3 class="en-only">Health Content for You</h3>
+          <p class="ko-only">내 상태에 맞는 건강 정보와 GLP-1 가이드를 매일 큐레이션합니다.</p>
+          <p class="en-only">Daily-curated health content and GLP-1 guides matched to your metabolic state.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROOF -->
+<section id="proof">
+  <div class="container center">
+    <span class="label reveal">EARLY VALIDATION</span>
+    <h2 class="reveal reveal-d1 ko-only">써본 사람들이<br>계속 돌아옵니다</h2>
+    <h2 class="reveal reveal-d1 en-only">People who tried it<br>keep coming back</h2>
+    <p class="proof-sub reveal reveal-d2 ko-only">게임 시스템도 없었던 오픈베타. 방법론만으로 만들어낸 수치입니다.</p>
+    <p class="proof-sub reveal reveal-d2 en-only">Open Beta without gamification. These numbers come from the methodology alone.</p>
+
+    <div class="proof-stats">
+      <div class="proof-stat reveal">
+        <div class="proof-num" data-target="72.1" data-suffix="%">0%</div>
+        <div class="proof-lbl ko-only">재방문율</div>
+        <div class="proof-lbl en-only">Re-use rate</div>
+        <div class="proof-bench ko-only">업계 75th 퍼센타일: 30.3%</div>
+        <div class="proof-bench en-only">Industry 75th pct: 30.3%</div>
+      </div>
+      <div class="proof-stat reveal reveal-d1">
+        <div class="proof-num">13:40</div>
+        <div class="proof-lbl ko-only">평균 세션</div>
+        <div class="proof-lbl en-only">Avg. session</div>
+        <div class="proof-bench ko-only">업계 중간값: 37초</div>
+        <div class="proof-bench en-only">Industry median: 37 sec</div>
+      </div>
+      <div class="proof-stat reveal reveal-d2">
+        <div class="proof-num" data-target="92.9" data-suffix="%">0%</div>
+        <div class="proof-lbl ko-only">체성분 정확도</div>
+        <div class="proof-lbl en-only">Body accuracy</div>
+        <div class="proof-bench">vs. InBody (n=70)</div>
+      </div>
+    </div>
+    <p class="proof-footnote reveal ko-only">오픈베타 2026.02.27–03.05 · n=596 · 게이미피케이션 도입 전</p>
+    <p class="proof-footnote reveal en-only">Open Beta Feb 27–Mar 5, 2026 · n=596 · pre-gamification</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container center">
+    <span class="label reveal">USER STORIES</span>
+    <h2 class="reveal reveal-d1 ko-only">써본 사람들의 이야기</h2>
+    <h2 class="reveal reveal-d1 en-only">From people who've tried it</h2>
+    <p class="reveal reveal-d2" style="font-size:17px;color:var(--muted);margin-bottom:72px">
+      <span class="ko-only">오픈베타 참여자들의 실제 후기입니다.</span>
+      <span class="en-only">Real feedback from our Open Beta users.</span>
+    </p>
+
+    <!-- Featured Review -->
+    <div class="review-featured reveal">
+      <div class="quote-mark">"</div>
+      <p class="review-text ko-only">
+        3주 만에 처음으로 내 몸이 어떤 상태인지 제대로 알게 됐어요.
+        체중계 숫자만 보다가, 근육량이랑 내장지방까지 보니까
+        진짜 뭘 해야 할지 명확해지더라고요.
+      </p>
+      <p class="review-text en-only">
+        For the first time in 3 weeks, I actually understood
+        what was going on with my body. I'd only ever tracked my weight —
+        seeing my muscle mass and visceral fat made everything click.
+      </p>
+      <div class="review-author">
+        <div class="review-avatar">👤</div>
+        <div>
+          <div class="review-name ko-only">김지수 · 30대 · 직장인</div>
+          <div class="review-name en-only">Jisoo K. · 30s · Office worker</div>
+          <div class="review-role ko-only">오픈베타 참여자</div>
+          <div class="review-role en-only">Open Beta participant</div>
+        </div>
+        <div style="margin-left:auto" class="review-stars">★★★★★</div>
+      </div>
+    </div>
+
+    <!-- Review Grid -->
+    <div class="review-grid">
+      <div class="review-card reveal">
+        <div class="stars"><span class="review-stars">★★★★★</span></div>
+        <p class="review-text ko-only">"앱 자체가 게임같아서 매일 켜게 돼요. 스트릭 끊기기 싫어서 운동하게 되는 게 신기해요 😂"</p>
+        <p class="review-text en-only">"The app feels like a game — I open it every day. The streak system is genuinely making me work out. 😂"</p>
+        <div class="review-author">
+          <div class="review-avatar small">👤</div>
+          <div>
+            <div class="review-name ko-only" style="font-size:13px">박민준 · 20대</div>
+            <div class="review-name en-only" style="font-size:13px">Minjun P. · 20s</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal reveal-d1">
+        <div class="stars"><span class="review-stars">★★★★★</span></div>
+        <p class="review-text ko-only">"다른 앱은 뭘 먹었는지만 기록하는데, HAVIT은 왜 먹으면 안 되는지를 설명해줘서 진짜 도움이 돼요."</p>
+        <p class="review-text en-only">"Other apps just track what you eat. HAVIT explains the science behind why — that actually helped me change."</p>
+        <div class="review-author">
+          <div class="review-avatar small">👤</div>
+          <div>
+            <div class="review-name ko-only" style="font-size:13px">이수연 · 30대</div>
+            <div class="review-name en-only" style="font-size:13px">Suyeon L. · 30s</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal reveal-d2">
+        <div class="stars"><span class="review-stars">★★★★★</span></div>
+        <p class="review-text ko-only">"PT 받기엔 비싸고 혼자 하기엔 막막했는데, AI 코디네이터가 매일 챙겨주니까 혼자가 아닌 느낌이에요."</p>
+        <p class="review-text en-only">"Personal training was too expensive, going solo felt impossible. Having an AI coordinator check in daily makes me feel less alone in it."</p>
+        <div class="review-author">
+          <div class="review-avatar small">👤</div>
+          <div>
+            <div class="review-name ko-only" style="font-size:13px">최동훈 · 40대</div>
+            <div class="review-name en-only" style="font-size:13px">Donghun C. · 40s</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal reveal-d1">
+        <div class="stars"><span class="review-stars">★★★★☆</span></div>
+        <p class="review-text ko-only">"체성분 진단이 진짜 신기해요. 처음엔 반신반의했는데 나중에 인바디 재봤더니 거의 비슷하더라고요."</p>
+        <p class="review-text en-only">"The body composition scan genuinely surprised me. I was skeptical — then checked against InBody and it was almost identical."</p>
+        <div class="review-author">
+          <div class="review-avatar small">👤</div>
+          <div>
+            <div class="review-name ko-only" style="font-size:13px">강예린 · 20대</div>
+            <div class="review-name en-only" style="font-size:13px">Yerin K. · 20s</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal reveal-d2">
+        <div class="stars"><span class="review-stars">★★★★★</span></div>
+        <p class="review-text ko-only">"위고비 쓰면서 뭘 먹어야 할지 몰랐는데, GLP-1 가이드가 있어서 너무 도움됐어요."</p>
+        <p class="review-text en-only">"I was on Wegovy and had no idea what to eat alongside it. The GLP-1 guide was exactly what I needed."</p>
+        <div class="review-author">
+          <div class="review-avatar small">👤</div>
+          <div>
+            <div class="review-name ko-only" style="font-size:13px">윤성민 · 50대</div>
+            <div class="review-name en-only" style="font-size:13px">Seongmin Y. · 50s</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal reveal-d3">
+        <div class="stars"><span class="review-stars">★★★★★</span></div>
+        <p class="review-text ko-only">"14일 연속 출석했어요. 이런 앱에서 이런 습관이 생긴 건 HAVIT이 처음이에요."</p>
+        <p class="review-text en-only">"14-day streak. First time I've ever built a habit like this from an app."</p>
+        <div class="review-author">
+          <div class="review-avatar small">👤</div>
+          <div>
+            <div class="review-name ko-only" style="font-size:13px">정하늘 · 30대</div>
+            <div class="review-name en-only" style="font-size:13px">Haneul J. · 30s</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="reveal" style="font-size:12px;color:var(--faint);font-style:italic">
+      <span class="ko-only">* 오픈베타 참여자 후기 기반. 실제 사용 경험은 개인마다 다를 수 있습니다.</span>
+      <span class="en-only">* Based on Open Beta participant feedback. Individual results may vary.</span>
+    </p>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section id="download">
+  <div class="download-glow"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <div class="center">
+      <span class="label reveal">GET STARTED</span>
+      <h2 class="reveal reveal-d1 ko-only">
+        오늘부터 시작하세요.<br>
+        <span style="color:var(--accent)">무료로.</span>
+      </h2>
+      <h2 class="reveal reveal-d1 en-only">
+        Start today.<br>
+        <span style="color:var(--accent)">For free.</span>
+      </h2>
+      <p class="dl-sub reveal reveal-d2 ko-only">
+        국내 최고 클리닉의 방법론. 스마트폰으로. 지금 바로.
+      </p>
+      <p class="dl-sub reveal reveal-d2 en-only">
+        Korea's top clinic methodology. On your phone. Right now.
+      </p>
+      <div class="dl-buttons reveal reveal-d3">
+        <a href="https://apps.apple.com/kr/app/%ED%95%98%EB%B9%84%ED%8A%B8-ai-%EA%B1%B4%EA%B0%95-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-%EC%BD%94%EC%B9%98/id6755166023" target="_blank" rel="noopener noreferrer" class="btn-store">
+          <div class="btn-store-icon">🍎</div>
+          <div class="btn-store-text">
+            <span class="btn-store-sub ko-only">App Store에서 다운로드</span>
+            <span class="btn-store-sub en-only">Download on the</span>
+            <span class="btn-store-name">App Store</span>
+          </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.aiconnects.havitWellness" target="_blank" rel="noopener noreferrer" class="btn-store">
+          <div class="btn-store-icon">▶</div>
+          <div class="btn-store-text">
+            <span class="btn-store-sub ko-only">Google Play에서 다운로드</span>
+            <span class="btn-store-sub en-only">Get it on</span>
+            <span class="btn-store-name">Google Play</span>
+          </div>
+        </a>
+      </div>
+      <p class="dl-note reveal reveal-d4 ko-only">신용카드 없이 시작 · 언제든 취소 가능</p>
+      <p class="dl-note reveal reveal-d4 en-only">No credit card required · Cancel anytime</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Havit</div>
+  <div class="footer-links">
+    <a href="https://www.aiconnects.me" target="_blank">AI Connect</a>
+    <a href="mailto:help@aiconnects.me">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 AI Connect Inc. All Rights Reserved.</div>
+</footer>
+
+<script>
+// Language Data
+const LANGS = {
+  'ko-KR':       { flag:'🇰🇷', name:'한국어',           code:'KO',    ui:'ko' },
+  'ja-JP':       { flag:'🇯🇵', name:'日本語',            code:'JA',    ui:'en' },
+  'zh-TW':       { flag:'🇹🇼', name:'繁體中文',          code:'ZH-TW', ui:'en' },
+  'zh-CN':       { flag:'🇨🇳', name:'简体中文',          code:'ZH-CN', ui:'en' },
+  'th-TH':       { flag:'🇹🇭', name:'ภาษาไทย',          code:'TH',    ui:'en' },
+  'vi-VN':       { flag:'🇻🇳', name:'Tiếng Việt',        code:'VI',    ui:'en' },
+  'id-ID':       { flag:'🇮🇩', name:'Bahasa Indonesia',  code:'ID',    ui:'en' },
+  'ms-MY':       { flag:'🇲🇾', name:'Bahasa Melayu',     code:'MS',    ui:'en' },
+  'en-US':       { flag:'🇺🇸', name:'English (US)',      code:'EN',    ui:'en' },
+  'en-GB':       { flag:'🇬🇧', name:'English (UK)',      code:'EN-GB', ui:'en' },
+  'ru-RU':       { flag:'🇷🇺', name:'Русский',           code:'RU',    ui:'en' },
+  'fr-FR':       { flag:'🇫🇷', name:'Français',          code:'FR',    ui:'en' },
+  'es-ES':       { flag:'🇪🇸', name:'Español',           code:'ES',    ui:'en' },
+  'pt-PT':       { flag:'🇵🇹', name:'Português',         code:'PT',    ui:'en' },
+  'de-DE':       { flag:'🇩🇪', name:'Deutsch',           code:'DE',    ui:'en' },
+  'it-IT':       { flag:'🇮🇹', name:'Italiano',          code:'IT',    ui:'en' },
+  'nl-NL':       { flag:'🇳🇱', name:'Nederlands',        code:'NL',    ui:'en' },
+  'sv-SE':       { flag:'🇸🇪', name:'Svenska',           code:'SV',    ui:'en' },
+  'nb-NO':       { flag:'🇳🇴', name:'Norsk',             code:'NB',    ui:'en' },
+  'da-DK':       { flag:'🇩🇰', name:'Dansk',             code:'DA',    ui:'en' },
+  'pl-PL':       { flag:'🇵🇱', name:'Polski',            code:'PL',    ui:'en' },
+  'tr-TR':       { flag:'🇹🇷', name:'Türkçe',            code:'TR',    ui:'en' },
+  'el-GR':       { flag:'🇬🇷', name:'Ελληνικά',          code:'EL',    ui:'en' },
+  'ro-RO':       { flag:'🇷🇴', name:'Română',            code:'RO',    ui:'en' },
+  'sk-SK':       { flag:'🇸🇰', name:'Slovenčina',        code:'SK',    ui:'en' },
+  'cs-CZ':       { flag:'🇨🇿', name:'Čeština',           code:'CS',    ui:'en' },
+  'ca-ES':       { flag:'🏴',  name:'Català',             code:'CA',    ui:'en' },
+  'hr-HR':       { flag:'🇭🇷', name:'Hrvatski',          code:'HR',    ui:'en' },
+  'fi-FI':       { flag:'🇫🇮', name:'Suomi',             code:'FI',    ui:'en' },
+  'hu-HU':       { flag:'🇭🇺', name:'Magyar',            code:'HU',    ui:'en' },
+  'uk-UA':       { flag:'🇺🇦', name:'Українська',        code:'UK',    ui:'en' },
+  'ar-AE':       { flag:'🇦🇪', name:'العربية',           code:'AR',    ui:'en' },
+  'he-IL':       { flag:'🇮🇱', name:'עברית',             code:'HE',    ui:'en' },
+  'uz-Cyrl-UZ':  { flag:'🇺🇿', name:'Ўзбекча',          code:'UZ',    ui:'en' },
+  'hi-IN':       { flag:'🇮🇳', name:'हिन्दी',             code:'HI',    ui:'en' },
+};
+
+let currentLang = 'ko-KR';
+
+function setLang(langCode) {
+  const l = LANGS[langCode] || LANGS['en-US'];
+  currentLang = langCode;
+  document.body.className = 'lang-' + l.ui;
+  document.getElementById('langFlag').textContent = l.flag;
+  document.getElementById('langCode').textContent = l.code;
+  document.querySelectorAll('.lang-opt').forEach(opt => {
+    opt.classList.toggle('active', opt.getAttribute('onclick').includes("'" + langCode + "'"));
+  });
+  document.getElementById('langDrop').classList.remove('open');
+  document.getElementById('langBtn').setAttribute('aria-expanded','false');
+  const rtlLangs = ['ar-AE','he-IL'];
+  document.documentElement.setAttribute('dir', rtlLangs.includes(langCode) ? 'rtl' : 'ltr');
+  try { localStorage.setItem('havit_lang', langCode); } catch(e) {}
+}
+
+function toggleLangDrop() {
+  const drop = document.getElementById('langDrop');
+  const btn  = document.getElementById('langBtn');
+  const isOpen = drop.classList.toggle('open');
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+
+// Close on outside click
+document.addEventListener('click', e => {
+  if (!document.getElementById('langWrap').contains(e.target)) {
+    document.getElementById('langDrop').classList.remove('open');
+    document.getElementById('langBtn').setAttribute('aria-expanded','false');
+  }
+});
+
+// Auto-detect language
+(function() {
+  let preferred = null;
+  try { preferred = localStorage.getItem('havit_lang'); } catch(e) {}
+  if (preferred && LANGS[preferred]) { setLang(preferred); return; }
+  const nav = navigator.language || navigator.languages?.[0] || 'ko-KR';
+  const navLow = nav.toLowerCase();
+  for (const code of Object.keys(LANGS)) {
+    if (navLow === code.toLowerCase()) { setLang(code); return; }
+  }
+  const prefix = navLow.split('-')[0];
+  for (const code of Object.keys(LANGS)) {
+    if (code.toLowerCase().startsWith(prefix)) { setLang(code); return; }
+  }
+  setLang('ko-KR');
+})();
+
+// Navbar scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Scroll reveal
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, {threshold: 0.12});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// Count-up animation
+const cobs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting && !e.target.dataset.done) {
+      e.target.dataset.done = '1';
+      const target = parseFloat(e.target.dataset.target);
+      const suffix = e.target.dataset.suffix || '';
+      const start = performance.now();
+      const dur = 1500;
+      (function update(now) {
+        const p = Math.min((now - start) / dur, 1);
+        const ease = 1 - Math.pow(1 - p, 4);
+        e.target.textContent = (ease * target).toFixed(1) + suffix;
+        if(p < 1) requestAnimationFrame(update);
+        else e.target.textContent = target + suffix;
+      })(performance.now());
+    }
+  });
+}, {threshold: 0.3});
+document.querySelectorAll('[data-target]').forEach(el => cobs.observe(el));
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior:'smooth', block:'start' });
+  });
+});
+</script>
 </body>
 </html>
