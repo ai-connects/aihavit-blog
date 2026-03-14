@@ -213,11 +213,15 @@ nav.scrolled {
 ═══════════════════════════════ */
 #hero {
   min-height:100vh;
-  display:grid; grid-template-columns:1fr 1fr;
-  align-items:center; gap:60px;
-  padding:130px 80px 80px;
+  display:flex; align-items:center; justify-content:center;
+  padding:130px 48px 80px;
   background:var(--bg3);
   position:relative; overflow:hidden;
+}
+.hero-inner {
+  display:grid; grid-template-columns:1fr 1fr;
+  align-items:center; gap:48px;
+  max-width:1100px; width:100%;
 }
 .hero-bg-glow {
   position:absolute; top:-200px; right:-100px;
@@ -392,28 +396,28 @@ nav.scrolled {
 #features { padding:120px 0; background:var(--bg2); }
 #features h2 { font-size:clamp(28px,3.5vw,46px); font-weight:800; line-height:1.1; margin-bottom:16px; }
 #features .feat-sub { font-size:17px; color:var(--muted); margin-bottom:72px; }
-.features-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.features-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
 .feat-card {
   background:var(--surface); border:1px solid var(--border);
   border-radius:24px; overflow:hidden;
   transition:all 0.25s; cursor:default;
+  display:flex; flex-direction:column;
 }
 .feat-card:hover { border-color:rgba(190,255,0,0.25); transform:translateY(-4px); }
-.feat-card.large { grid-row:span 2; }
+.feat-card.large { grid-row:auto; }
 .feat-img {
-  width:100%; aspect-ratio:9/16; object-fit:cover;
-  object-position:top; max-height:360px;
+  width:100%; object-fit:contain;
+  background:var(--bg2);
 }
-.feat-card.large .feat-img { max-height:none; aspect-ratio:9/14; }
-.feat-info { padding:28px 32px; }
+.feat-info { padding:24px 28px; flex:1; }
 .feat-tag {
   display:inline-block; font-size:10px; font-weight:700;
   letter-spacing:2px; text-transform:uppercase;
   color:var(--accent); background:var(--accent-dim);
   padding:4px 10px; border-radius:6px; margin-bottom:12px;
 }
-.feat-info h3 { font-size:20px; font-weight:700; margin-bottom:8px; line-height:1.3; }
-.feat-info p { font-size:14px; color:var(--muted); line-height:1.7; }
+.feat-info h3 { font-size:18px; font-weight:700; margin-bottom:8px; line-height:1.3; }
+.feat-info p { font-size:13px; color:var(--muted); line-height:1.7; }
 
 /* ═══════════════════════════════
    PROOF / SOCIAL
@@ -537,11 +541,15 @@ footer {
    RESPONSIVE
 ═══════════════════════════════ */
 @media (max-width:1024px) {
-  #hero { grid-template-columns:1fr; padding:120px 48px 60px; text-align:center; }
+  #hero { padding:120px 32px 60px; }
+  .hero-inner { grid-template-columns:1fr; text-align:center; }
   .hero-sub { margin:0 auto 40px; }
   .hero-store-badges { justify-content:center; }
   .hero-visual { margin-top:40px; }
+  .hero-trust { justify-content:center; }
   .expertise-split { grid-template-columns:1fr; gap:48px; }
+  .features-grid { grid-template-columns:1fr 1fr; }
+  .feat-card.large { grid-column:auto; }
   .step { grid-template-columns:1fr; gap:40px; }
   .step.flip { direction:ltr; }
   .step-visual { min-height:400px; }
@@ -551,20 +559,23 @@ footer {
   nav { padding:14px 20px; }
   .nav-center-links { display:none; }
   .container { padding:0 20px; }
-  #hero { padding:100px 20px 40px; gap:32px; }
+  #hero { padding:100px 20px 40px; }
+  .hero-inner { gap:32px; }
   .hero-h1 { font-size:clamp(32px,8vw,48px); }
   .empathy-cards { grid-template-columns:1fr; }
   .stats-row { flex-direction:column; gap:20px; }
   .stat-item { border-right:none; border-bottom:1px solid var(--border); padding:16px 0; }
   .stat-item:last-child { border-bottom:none; }
-  .features-grid { grid-template-columns:1fr; }
-  .feat-card.large { grid-row:auto; }
   .proof-stats { grid-template-columns:1fr; }
   .review-grid { grid-template-columns:1fr; }
   .review-featured { padding:32px 24px; }
   .dl-buttons { flex-direction:column; align-items:center; }
   footer { flex-direction:column; text-align:center; padding:32px 20px; }
   .footer-links { flex-wrap:wrap; justify-content:center; }
+}
+
+@media (max-width:560px) {
+  .features-grid { grid-template-columns:1fr; }
 }
 
 @media (max-width:480px) {
