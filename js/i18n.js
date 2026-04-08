@@ -5,7 +5,7 @@ const I18N = {
     nav_validation: '검증 결과',
     nav_about: '회사 소개',
     hero_eyebrow: '대한민국 No.1 대사 클리닉 쥬비스가 만든 팀',
-    hero_h1: 'AI가 매일 관리해주는<br>나만의 건강 &amp;<br><span class="accent">체중 관리 코디네이터</span>',
+    hero_h1: 'AI가 매일 관리해주는<br>나만의 건강 &amp; <span class="accent">체중 관리</span><br><span class="accent">코디네이터</span>',
     hero_sub: '정밀 대사 진단, 맞춤 처방,<br>그리고 매일 챙겨주는 AI 코칭까지 —<br>클리닉 수준의 케어를 스마트폰으로.',
     hero_trust_lang: '개 언어',
     hero_trust_countries: '개국',
