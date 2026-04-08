@@ -29,17 +29,10 @@ body {
 /* ═══════════════════════════════
    LANGUAGE TOGGLE
 ═══════════════════════════════ */
-body .ko-only, body .en-only { display:none; }
+/* Images only: ko-only / en-only toggling */
+.ko-only, .en-only { display:none; }
 body.lang-ko .ko-only { display:block; }
 body.lang-en .en-only { display:block; }
-body span.ko-only, body span.en-only { display:none; }
-body.lang-ko span.ko-only { display:inline; }
-body.lang-en span.en-only { display:inline; }
-/* inline-flex elements: preserve layout when visible */
-body.lang-ko .step-stat.ko-only,
-body.lang-en .step-stat.en-only { display:inline-flex; }
-body.lang-ko .hero-eyebrow .ko-only,
-body.lang-en .hero-eyebrow .en-only { display:inline; }
 
 /* step-visual language toggle */
 .step-visual { position:relative; min-height:560px; }
