@@ -25,14 +25,15 @@ export default function Footer({ lang }: { lang: LangKey }) {
           <div>
             <div className="font-semibold text-sm uppercase tracking-wide text-gray-500 mb-3">Company</div>
             <ul className="space-y-2 text-sm">
-              <li><a href="/privacy" className="hover:underline">Privacy</a></li>
-              <li><a href="/terms" className="hover:underline">Terms</a></li>
-              <li><a href="https://www.aihavit.com" className="hover:underline">www.aihavit.com</a></li>
+              <li><a href="https://app.aihavit.com/" className="hover:underline font-semibold">📱 HAVIT 앱 시작하기</a></li>
+              <li><a href="https://aihavit.com" className="hover:underline">aihavit.com</a></li>
+              <li><a href="https://aihavit.com/privacy.html" className="hover:underline">Privacy</a></li>
+              <li><a href="https://aihavit.com/terms.html" className="hover:underline">Terms</a></li>
             </ul>
           </div>
         </div>
         <div className="mt-10 pt-6 border-t border-gray-200 dark:border-gray-800 text-xs text-gray-500">
-          © 2026 HAVIT · Prototype — not production.
+          © 2026 HAVIT — AI-powered wellness for 35 languages. <a href="https://app.aihavit.com/" className="ml-2 underline">앱 시작하기</a>
         </div>
       </div>
     </footer>

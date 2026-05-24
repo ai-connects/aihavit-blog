@@ -13,7 +13,7 @@ interface Props {
  * inline: 화면당 1개. sticky: mobile only (md:hidden), 화면당 1개. 합계 ≤ 2.
  */
 export default function InstallCTA({ lang, articleId, variant = 'inline' }: Props) {
-  const universalLink = `https://aihavit.com/app/article/${articleId}`;
+  const universalLink = 'https://app.aihavit.com/';
 
   function handleClick() {
     // PRD §10.3 GA4 click_install_cta — mock
