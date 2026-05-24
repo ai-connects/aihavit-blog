@@ -18,7 +18,6 @@ export default function Footer({ lang }: { lang: LangKey }) {
             <ul className="space-y-2.5 text-sm">
               <li><a href="https://app.aihavit.com/" target="_blank" rel="noopener" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">📱 App</a></li>
               <li><Link href={`/${shortLang}`} className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">📝 Blog</Link></li>
-              <li><Link href="/sitemap.xml" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">🗺️ Sitemap</Link></li>
               <li><Link href="/rss.xml" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">📡 RSS</Link></li>
             </ul>
           </div>
