@@ -58,7 +58,7 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
           </a>
           <span className="text-gray-300 dark:text-gray-700">|</span>
           <Link href={`/${shortLang}`} className="flex items-center gap-2" aria-label="HAVIT Blog Home">
-            <div className="h-8 w-8 rounded-lg bg-primary-500 flex items-center justify-center text-gray-900 font-bold">H</div>
+            <img src="/favicon-192.png" alt="HAVIT" className="h-8 w-8 rounded-lg" />
             <span className="font-bold text-lg hidden sm:inline">HAVIT</span>
             <span className="text-sm text-gray-500 dark:text-gray-400 hidden md:inline">{t(lang, 'blog')}</span>
           </Link>
