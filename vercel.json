@@ -22,10 +22,16 @@
     }
   ],
   "redirects": [
+    { "source": "/blog", "destination": "/ko", "permanent": true },
+    { "source": "/blog/seo-batch-1", "destination": "/ko", "permanent": true },
+    { "source": "/blog/seo-batch-2", "destination": "/ko", "permanent": true },
+    { "source": "/blog/sample", "destination": "/ko", "permanent": true },
+    { "source": "/blog/seo-sample", "destination": "/ko", "permanent": true },
+    { "source": "/blog/g", "destination": "/ko", "permanent": true },
     { "source": "/blog/seo-batch-2/:slug", "destination": "/ko/:slug", "permanent": true },
     { "source": "/blog/g/:slug", "destination": "/ko/:slug", "permanent": true },
     { "source": "/blog/:lang/:slug", "destination": "/:lang/:slug", "permanent": true },
-    { "source": "/blog/:lang/c/:catSlug", "destination": "/:lang/c/:catSlug", "permanent": true },
-    { "source": "/blog/:lang/search", "destination": "/:lang/search", "permanent": true }
+    { "source": "/blog/:lang/c/:catSlug", "destination": "/:lang", "permanent": true },
+    { "source": "/blog/:lang/search", "destination": "/:lang", "permanent": true }
   ]
 }

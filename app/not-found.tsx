@@ -1,14 +1,11 @@
 import Link from 'next/link';
-import { getAllArticles, resolveContent } from '@/lib/articles';
+import { listArticlesForLang } from '@/lib/articles-v2';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ArticleCard from '@/components/ArticleCard';
+import ArticleCardV2 from '@/components/ArticleCardV2';
 
-// PRD §8.1 — S-004 404 페이지: 추천 article 6개 + 카테고리 홈 링크.
 export default function NotFound() {
-  const recommended = getAllArticles()
-    .sort((a, b) => b.published_at.localeCompare(a.published_at))
-    .slice(0, 6);
+  const recommended = listArticlesForLang('en', 6);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -20,16 +17,20 @@ export default function NotFound() {
           <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-6">
             The page you’re looking for doesn’t exist or has been moved.
           </p>
-          <Link href="/blog?lang=en" className="btn-primary">
+          <Link href="/en" className="btn-primary">
             ← Back to Blog
           </Link>
         </div>
-        <h2 className="text-xl font-bold mb-4">You might like these</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-          {recommended.map((a) => (
-            <ArticleCard key={a.article_id} article={a} lang="en_us" />
-          ))}
-        </div>
+        {recommended.length > 0 && (
+          <>
+            <h2 className="text-xl font-bold mb-4">You might like these</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+              {recommended.map((item) => (
+                <ArticleCardV2 key={item.slug} item={item} shortLang="en" />
+              ))}
+            </div>
+          </>
+        )}
       </main>
       <Footer lang="en_us" />
     </div>

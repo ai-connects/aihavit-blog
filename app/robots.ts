@@ -10,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/', '/admin/'],
       },
     ],
-    sitemap: 'https://www.aihavit.com/sitemap.xml',
+    sitemap: 'https://blog.aihavit.com/sitemap.xml',
   };
 }

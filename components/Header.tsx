@@ -67,7 +67,7 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-1 text-sm">
           <Link href={`/${shortLang}`} className="btn-ghost">{t(lang, 'home')}</Link>
-          <Link href={`/${shortLang}/search`} className="btn-ghost">{t(lang, 'search')}</Link>
+          <a href="https://app.aihavit.com/" target="_blank" rel="noopener" className="btn-ghost">📱 App</a>
         </nav>
 
         <div className="flex items-center gap-1">
@@ -90,7 +90,7 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
                 role="listbox"
               >
                 <div className="px-3 py-2 text-xs text-gray-500">
-                  35 SUPPORTED_LANGS · {availableLangs?.length ?? '-'} with content
+                  {t(lang, 'language')}
                 </div>
                 {SUPPORTED_LANGS.map((k) => {
                   const has = isContentAvailable(k);
@@ -143,7 +143,7 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
         <div className="md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-3 flex flex-col gap-2">
           <a href={process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://aihavit.com'} className="py-2 text-gray-600 dark:text-gray-400">← HAVIT</a>
           <Link href={`/${shortLang}`} className="py-2">{t(lang, 'home')}</Link>
-          <Link href={`/${shortLang}/search`} className="py-2">{t(lang, 'search')}</Link>
+          <a href="https://app.aihavit.com/" target="_blank" rel="noopener" className="py-2">📱 App</a>
         </div>
       )}
     </header>

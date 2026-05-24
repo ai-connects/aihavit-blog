@@ -1,29 +1,26 @@
 import { NextResponse } from 'next/server';
-import { getAllArticles, resolveContent } from '@/lib/articles';
+import { getAllArticles, resolveContent } from '@/lib/articles-v2';
 
-const SITE = 'https://www.aihavit.com';
+const SITE = 'https://blog.aihavit.com';
 
-/**
- * PRD §6.8 — RSS 최신 50개 article (en_us 기준 v1).
- */
 export const revalidate = 600;
 
 export function GET() {
   const items = getAllArticles()
-    .sort((a, b) => b.updated_at.localeCompare(a.updated_at))
     .slice(0, 50)
     .map((a) => {
-      const r = resolveContent(a, 'en_us');
+      const r = resolveContent(a, 'en');
       if (!r) return null;
-      const url = `${SITE}/blog/en/${a.slug}`;
+      const url = `${SITE}/en/${a.slug}`;
+      const summary = r.content.tldr ?? r.content.meta_description ?? '';
       return `
     <item>
       <title><![CDATA[${escapeXml(r.content.title)}]]></title>
       <link>${url}</link>
       <guid isPermaLink="true">${url}</guid>
-      <pubDate>${new Date(a.published_at).toUTCString()}</pubDate>
+      <pubDate>${new Date(a.published_at ?? a.updated_at ?? Date.now()).toUTCString()}</pubDate>
       <category>${escapeXml(a.category)}</category>
-      <description><![CDATA[${escapeXml(r.content.summary ?? '')}]]></description>
+      <description><![CDATA[${escapeXml(summary)}]]></description>
     </item>`;
     })
     .filter(Boolean)
@@ -34,7 +31,7 @@ export function GET() {
   <channel>
     <title>HAVIT Blog</title>
     <link>${SITE}</link>
-    <description>Wellness, science, and habit guidance from HAVIT.</description>
+    <description>Evidence-based wellness guides on habits, sleep, nutrition, and movement.</description>
     <language>en-US</language>
     <atom:link href="${SITE}/rss.xml" rel="self" type="application/rss+xml" />
     ${items}

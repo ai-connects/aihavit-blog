@@ -4,22 +4,21 @@ import CookieConsent from '@/components/CookieConsent';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.aihavit.com'),
+  metadataBase: new URL('https://blog.aihavit.com'),
   title: {
-    default: 'HAVIT Blog — Wellness, Science, Habits',
+    default: 'HAVIT Blog — Science-backed wellness guidance',
     template: '%s',
   },
   description:
-    'HAVIT Wellness Blog — 12 categories × 35 languages of science-backed habit guidance. Prototype based on LOCKED PRD v0.3.0.',
+    'Evidence-based guides on habits, sleep, nutrition, and movement. From the HAVIT wellness team.',
   applicationName: 'HAVIT',
   authors: [{ name: 'HAVIT Editorial' }],
-  generator: 'Next.js 14',
   keywords: ['wellness', 'habits', 'nutrition', 'sleep', 'exercise', 'health', 'HAVIT'],
   robots: { index: true, follow: true },
   openGraph: {
     type: 'website',
-    siteName: 'HAVIT',
-    url: 'https://www.aihavit.com',
+    siteName: 'HAVIT Blog',
+    url: 'https://blog.aihavit.com',
   },
 };
 
