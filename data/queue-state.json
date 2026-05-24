@@ -1,8 +1,8 @@
 {
   "total": 965,
-  "completed": 489,
+  "completed": 579,
   "in_progress": 0,
-  "pending": 476,
+  "pending": 386,
   "failed": 0,
   "items": [
     {
@@ -13712,10 +13712,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:07:35.743Z"
     },
     {
       "slug": "thunderstorm-asthma-outdoor-exercise-pollen-surge-2026",
@@ -13733,10 +13740,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:07:09.242Z"
     },
     {
       "slug": "post-covid-return-to-exercise-gradual-protocol-2026",
@@ -13754,10 +13768,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:07:21.052Z"
     },
     {
       "slug": "daylight-saving-time-adjustment-sleep-schedule-protocol-2026",
@@ -13775,10 +13796,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:07:14.844Z"
     },
     {
       "slug": "business-dinner-healthy-choices-client-entertainment-2026",
@@ -13796,10 +13824,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:07:20.542Z"
     },
     {
       "slug": "camping-sleep-quality-optimization-outdoor-environment-2026",
@@ -13817,10 +13852,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:07:31.122Z"
     },
     {
       "slug": "emotional-eating-trigger-moment-intervention-techniques-2026",
@@ -13838,10 +13880,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:07:30.796Z"
     },
     {
       "slug": "high-altitude-city-visit-exercise-adjustment-denver-mexico-2026",
@@ -13859,10 +13908,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:07:20.420Z"
     },
     {
       "slug": "overnight-guest-sleep-routine-maintenance-tips-2026",
@@ -13880,10 +13936,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:07:51.188Z"
     },
     {
       "slug": "power-outage-medication-refrigeration-emergency-protocol-2026",
@@ -13901,10 +13964,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:07:04.940Z"
     },
     {
       "slug": "jet-lag-circadian-reset-melatonin-light-protocol-2026",
@@ -13922,10 +13992,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:12:09.998Z"
     },
     {
       "slug": "office-air-quality-cognitive-performance-ventilation-2026",
@@ -13943,10 +14020,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:12:10.432Z"
     },
     {
       "slug": "post-argument-cortisol-recovery-relationship-stress-2026",
@@ -13964,10 +14048,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:11:49.171Z"
     },
     {
       "slug": "grocery-shopping-hungry-impulse-control-strategies-2026",
@@ -13985,10 +14076,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:11:37.278Z"
     },
     {
       "slug": "public-speaking-anxiety-beta-blocker-alternative-2026",
@@ -14006,10 +14104,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:12:08.631Z"
     },
     {
       "slug": "night-shift-meal-timing-metabolic-protection-2026",
@@ -14027,10 +14132,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:11:53.863Z"
     },
     {
       "slug": "post-vacation-routine-reintegration-habit-preservation-2026",
@@ -14048,10 +14160,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:11:55.504Z"
     },
     {
       "slug": "crying-episode-physiological-benefits-recovery-2026",
@@ -14069,10 +14188,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:12:45.404Z"
     },
     {
       "slug": "first-day-new-job-stress-performance-optimization-2026",
@@ -14090,10 +14216,16 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:18:19.956Z"
     },
     {
       "slug": "waiting-room-anxiety-medical-appointment-calm-2026",
@@ -14111,10 +14243,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:11:51.202Z"
     },
     {
       "slug": "moving-house-stress-timeline-health-protection-2026",
@@ -14132,10 +14271,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:22:57.669Z"
     },
     {
       "slug": "awkward-silence-social-anxiety-physiological-reset-2026",
@@ -14153,10 +14299,17 @@
         ],
         "reading_time_min": 7
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:22:25.811Z"
     },
     {
       "slug": "birthday-diet-break-psychological-permission-protocol-2026",
@@ -14174,10 +14327,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:22:01.865Z"
     },
     {
       "slug": "leucine-threshold-per-meal-muscle-protein-synthesis-2026",
@@ -14195,10 +14355,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:22:11.458Z"
     },
     {
       "slug": "glycemic-index-vs-glycemic-load-practical-difference-2026",
@@ -14216,10 +14383,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:21:52.830Z"
     },
     {
       "slug": "omega-3-to-omega-6-ratio-inflammation-optimization-2026",
@@ -14237,10 +14411,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:22:00.556Z"
     },
     {
       "slug": "resistant-starch-types-blood-sugar-gut-health-2026",
@@ -14258,10 +14439,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:22:33.465Z"
     },
     {
       "slug": "meal-frequency-metabolism-three-vs-six-meals-2026",
@@ -14279,10 +14467,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:22:17.173Z"
     },
     {
       "slug": "choline-intake-brain-health-deficiency-signs-2026",
@@ -14300,10 +14495,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:22:51.866Z"
     },
     {
       "slug": "anti-nutrient-phytate-oxalate-reduce-absorption-2026",
@@ -14321,10 +14523,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:22:16.667Z"
     },
     {
       "slug": "magnesium-forms-absorption-glycinate-citrate-comparison-2026",
@@ -14342,10 +14551,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:28:14.259Z"
     },
     {
       "slug": "thermic-effect-food-protein-fat-carbs-comparison-2026",
@@ -14363,10 +14579,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:26:38.176Z"
     },
     {
       "slug": "potassium-sodium-ratio-blood-pressure-optimization-2026",
@@ -14384,10 +14607,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:26:33.509Z"
     },
     {
       "slug": "iron-absorption-enhancers-inhibitors-meal-planning-2026",
@@ -14405,10 +14635,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:26:48.124Z"
     },
     {
       "slug": "collagen-peptide-absorption-skin-joint-evidence-2026",
@@ -14426,10 +14663,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:30:30.691Z"
     },
     {
       "slug": "vitamin-d3-k2-synergy-calcium-metabolism-2026",
@@ -14447,10 +14691,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:26:47.099Z"
     },
     {
       "slug": "liquid-calories-satiety-weight-gain-mechanism-2026",
@@ -14468,10 +14719,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:26:26.168Z"
     },
     {
       "slug": "eating-speed-satiety-hormones-slow-eating-benefits-2026",
@@ -14489,10 +14747,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:26:59.252Z"
     },
     {
       "slug": "postprandial-glucose-spike-prevention-food-order-2026",
@@ -14510,10 +14775,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:26:48.791Z"
     },
     {
       "slug": "zinc-copper-balance-supplementation-ratio-2026",
@@ -14531,10 +14803,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:26:10.468Z"
     },
     {
       "slug": "protein-digestibility-score-pdcaas-diaas-explained-2026",
@@ -14552,10 +14831,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:34:27.783Z"
     },
     {
       "slug": "nightshade-vegetables-inflammation-arthritis-evidence-2026",
@@ -14573,10 +14859,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:34:20.799Z"
     },
     {
       "slug": "caffeine-half-life-sleep-cutoff-time-calculation-2026",
@@ -14594,10 +14887,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:34:36.300Z"
     },
     {
       "slug": "histamine-intolerance-foods-symptoms-low-histamine-diet-2026",
@@ -14615,10 +14915,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:34:55.761Z"
     },
     {
       "slug": "creatine-monohydrate-food-sources-supplementation-need-2026",
@@ -14636,10 +14943,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:33:27.372Z"
     },
     {
       "slug": "beta-glucan-cholesterol-lowering-oat-barley-dose-2026",
@@ -14657,10 +14971,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:34:21.967Z"
     },
     {
       "slug": "artificial-sweetener-gut-microbiome-insulin-response-2026",
@@ -14678,10 +14999,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:34:11.115Z"
     },
     {
       "slug": "polyphenol-rich-foods-bioavailability-absorption-tips-2026",
@@ -14699,10 +15027,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:34:36.598Z"
     },
     {
       "slug": "fodmap-elimination-reintroduction-protocol-ibs-2026",
@@ -14720,10 +15055,17 @@
         ],
         "reading_time_min": 14
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:35:01.475Z"
     },
     {
       "slug": "iodine-deficiency-thyroid-function-food-sources-2026",
@@ -14741,10 +15083,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:34:42.362Z"
     },
     {
       "slug": "protein-combining-complete-protein-vegetarian-myth-2026",
@@ -14762,10 +15111,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:38:26.114Z"
     },
     {
       "slug": "alcohol-metabolism-nutrient-depletion-recovery-nutrition-2026",
@@ -14783,10 +15139,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:39:05.148Z"
     },
     {
       "slug": "satiety-index-foods-ranking-hunger-control-2026",
@@ -14804,10 +15167,16 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:44:33.203Z"
     },
     {
       "slug": "ferritin-levels-energy-fatigue-iron-optimization-2026",
@@ -14825,10 +15194,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:38:55.239Z"
     },
     {
       "slug": "resistant-starch-cooling-carbs-blood-sugar-2026",
@@ -14846,10 +15222,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:38:54.052Z"
     },
     {
       "slug": "choline-deficiency-symptoms-egg-liver-intake-2026",
@@ -14867,10 +15250,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:39:08.223Z"
     },
     {
       "slug": "protein-leverage-hypothesis-appetite-overeating-2026",
@@ -14888,10 +15278,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:38:49.853Z"
     },
     {
       "slug": "anti-nutrient-phytate-oxalate-concern-evidence-2026",
@@ -14909,10 +15306,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:39:26.940Z"
     },
     {
       "slug": "vitamin-d-food-sources-supplementation-threshold-2026",
@@ -14930,10 +15334,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:38:49.911Z"
     },
     {
       "slug": "postprandial-glucose-spike-reduction-food-order-2026",
@@ -14951,10 +15362,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:39:50.298Z"
     },
     {
       "slug": "histamine-intolerance-foods-symptoms-management-2026",
@@ -14972,10 +15390,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:48:22.683Z"
     },
     {
       "slug": "sodium-potassium-ratio-blood-pressure-balance-2026",
@@ -14993,10 +15418,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:48:06.096Z"
     },
     {
       "slug": "dairy-inflammation-evidence-individual-response-2026",
@@ -15014,10 +15446,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:48:19.953Z"
     },
     {
       "slug": "cruciferous-vegetables-thyroid-goitrogen-concern-2026",
@@ -15035,10 +15474,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:48:16.288Z"
     },
     {
       "slug": "magnesium-forms-absorption-glycinate-citrate-2026",
@@ -15056,10 +15502,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:48:18.305Z"
     },
     {
       "slug": "gluten-sensitivity-non-celiac-fodmap-confusion-2026",
@@ -15077,10 +15530,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:48:32.957Z"
     },
     {
       "slug": "collagen-supplement-absorption-skin-joint-evidence-2026",
@@ -15098,10 +15558,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:51:05.292Z"
     },
     {
       "slug": "apple-cider-vinegar-blood-sugar-weight-evidence-2026",
@@ -15119,10 +15586,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:49:33.996Z"
     },
     {
       "slug": "omega-3-omega-6-ratio-inflammation-modern-diet-2026",
@@ -15140,10 +15614,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:48:24.495Z"
     },
     {
       "slug": "lectins-plant-paradox-claim-scientific-reality-2026",
@@ -15161,10 +15642,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:48:41.315Z"
     },
     {
       "slug": "caffeine-metabolism-genetics-slow-fast-metabolizer-2026",
@@ -15182,10 +15670,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:54:45.312Z"
     },
     {
       "slug": "artificial-sweeteners-gut-microbiome-glucose-response-2026",
@@ -15203,10 +15698,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:54:47.983Z"
     },
     {
       "slug": "red-meat-cancer-risk-dose-response-evidence-2026",
@@ -15224,10 +15726,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:54:50.120Z"
     },
     {
       "slug": "zinc-copper-ratio-supplementation-imbalance-risk-2026",
@@ -15245,10 +15754,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:54:50.607Z"
     },
     {
       "slug": "breakfast-skipping-metabolism-intermittent-fasting-2026",
@@ -15266,10 +15782,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:54:53.474Z"
     },
     {
       "slug": "polyphenol-bioavailability-food-combinations-absorption-2026",
@@ -15287,10 +15810,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:54:45.156Z"
     },
     {
       "slug": "iodine-deficiency-thyroid-seaweed-salt-intake-2026",
@@ -15308,10 +15838,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:54:48.369Z"
     },
     {
       "slug": "bone-broth-collagen-gelatin-health-claims-evidence-2026",
@@ -15329,10 +15866,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:55:34.087Z"
     },
     {
       "slug": "fodmap-stacking-portion-tolerance-threshold-2026",
@@ -15350,10 +15894,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:55:03.458Z"
     },
     {
       "slug": "satiety-index-foods-hunger-control-ranking-2026",
@@ -15371,10 +15922,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:56:23.466Z"
     },
     {
       "slug": "electrolyte-balance-sodium-potassium-ratio-optimal-hydration-2026",
@@ -15392,10 +15950,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T12:00:16.071Z"
     },
     {
       "slug": "coffee-dehydration-myth-caffeine-diuretic-effect-truth-2026",
@@ -15413,10 +15978,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T12:02:13.861Z"
     },
     {
       "slug": "morning-hydration-cortisol-window-optimal-timing-2026",
@@ -15434,10 +16006,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T12:00:12.304Z"
     },
     {
       "slug": "sparkling-water-bone-health-carbonation-calcium-myth-2026",
@@ -15455,10 +16034,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:59:57.718Z"
     },
     {
       "slug": "urine-color-hydration-chart-accuracy-limitations-2026",
@@ -15476,10 +16062,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:59:50.763Z"
     },
     {
       "slug": "coconut-water-vs-sports-drinks-electrolyte-comparison-2026",
@@ -15497,10 +16090,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:59:46.964Z"
     },
     {
       "slug": "green-tea-catechins-hydration-metabolism-boost-2026",
@@ -15518,10 +16118,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:59:47.220Z"
     },
     {
       "slug": "alcohol-dehydration-recovery-timeline-rehydration-protocol-2026",
@@ -15539,10 +16146,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T12:00:25.745Z"
     },
     {
       "slug": "cold-water-vs-room-temperature-absorption-speed-2026",
@@ -15560,10 +16174,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T11:59:44.149Z"
     },
     {
       "slug": "herbal-tea-caffeine-free-hydration-sleep-quality-2026",
@@ -15581,10 +16202,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T12:00:03.569Z"
     },
     {
       "slug": "hydrogen-water-antioxidant-claims-evidence-review-2026",
@@ -23694,5 +24322,5 @@
     }
   ],
   "started_at": "2026-05-24T06:16:00.047Z",
-  "last_run": "2026-05-24T11:03:36.275Z"
+  "last_run": "2026-05-24T12:02:13.861Z"
 }
