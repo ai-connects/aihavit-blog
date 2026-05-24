@@ -242,7 +242,7 @@ passed = true ONLY if all N1-N8 pass AND no compliance violations.`;
  * Phase 5 — Article Rewriter (REJECT 차원 콕 집어 재작성)
  */
 export async function rewriteArticle(content: LangContent, review: NaturalnessReview, lang: Lang): Promise<LangContent> {
-  const langLabel: Record<Lang, string> = { en: 'English', ko: '한국어', ja: '日本語', zh: '简体中文', es: 'Español' };
+  const langLabel: Record<Lang, string> = { en: 'English', ko: '한국어', ja: '日本語', 'zh-CN': '简体中文', 'zh-TW': '繁體中文', es: 'Español' };
 
   const system = `You are an article rewriter. The previous version FAILED on specific naturalness dimensions. Rewrite ONLY the failing parts while preserving all stats, sources, and structure.`;
 
