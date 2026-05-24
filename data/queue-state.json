@@ -1,8 +1,8 @@
 {
   "total": 965,
-  "completed": 689,
+  "completed": 965,
   "in_progress": 0,
-  "pending": 276,
+  "pending": 0,
   "failed": 0,
   "items": [
     {
@@ -19308,10 +19308,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:22:44.391Z"
     },
     {
       "slug": "post-viral-fatigue-syndrome-recovery-timeline-2026",
@@ -19329,10 +19336,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:22:30.244Z"
     },
     {
       "slug": "iron-deficiency-without-anemia-symptoms-ferritin-2026",
@@ -19350,10 +19364,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:22:47.670Z"
     },
     {
       "slug": "orthostatic-intolerance-standing-dizziness-pots-2026",
@@ -19371,10 +19392,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:22:55.970Z"
     },
     {
       "slug": "vitamin-d-deficiency-immune-function-optimal-range-2026",
@@ -19392,10 +19420,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:22:30.094Z"
     },
     {
       "slug": "silent-reflux-lpr-throat-symptoms-different-gerd-2026",
@@ -19413,10 +19448,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:23:30.689Z"
     },
     {
       "slug": "subclinical-hypothyroidism-borderline-tsh-symptoms-2026",
@@ -19434,10 +19476,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:22:18.005Z"
     },
     {
       "slug": "chronic-hives-urticaria-autoimmune-trigger-2026",
@@ -19455,10 +19504,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:22:09.350Z"
     },
     {
       "slug": "peripheral-neuropathy-tingling-hands-feet-causes-2026",
@@ -19476,10 +19532,17 @@
         ],
         "reading_time_min": 14
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:22:40.399Z"
     },
     {
       "slug": "hypermobility-spectrum-disorder-joint-pain-eds-2026",
@@ -19497,10 +19560,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:26:07.942Z"
     },
     {
       "slug": "raynauds-phenomenon-cold-fingers-white-circulation-2026",
@@ -19518,10 +19588,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:29:48.631Z"
     },
     {
       "slug": "mast-cell-activation-syndrome-mcas-symptoms-2026",
@@ -19539,10 +19616,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:31:34.389Z"
     },
     {
       "slug": "benign-fasciculation-syndrome-muscle-twitching-anxiety-2026",
@@ -19560,10 +19644,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:30:48.032Z"
     },
     {
       "slug": "exocrine-pancreatic-insufficiency-digestive-symptoms-2026",
@@ -19581,10 +19672,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:30:16.165Z"
     },
     {
       "slug": "central-sensitization-chronic-pain-amplification-2026",
@@ -19602,10 +19700,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:30:39.714Z"
     },
     {
       "slug": "bile-acid-malabsorption-chronic-diarrhea-cause-2026",
@@ -19623,10 +19728,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:30:14.940Z"
     },
     {
       "slug": "occult-celiac-disease-atypical-symptoms-screening-2026",
@@ -19644,10 +19756,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:30:03.992Z"
     },
     {
       "slug": "small-intestinal-bacterial-overgrowth-sibo-bloating-2026",
@@ -19665,10 +19784,17 @@
         ],
         "reading_time_min": 14
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:30:23.973Z"
     },
     {
       "slug": "median-arcuate-ligament-syndrome-mals-abdominal-pain-2026",
@@ -19686,10 +19812,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:32:23.648Z"
     },
     {
       "slug": "autoimmune-gastritis-b12-deficiency-pernicious-anemia-2026",
@@ -19707,10 +19840,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:29:40.044Z"
     },
     {
       "slug": "glp1-alcohol-interaction-safety-limits-2026",
@@ -19728,10 +19868,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:36:16.176Z"
     },
     {
       "slug": "glp1-missed-dose-protocol-timing-guide-2026",
@@ -19749,10 +19896,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:36:07.867Z"
     },
     {
       "slug": "glp1-injection-site-rotation-absorption-2026",
@@ -19770,10 +19924,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:35:38.006Z"
     },
     {
       "slug": "glp1-nausea-management-evidence-based-strategies-2026",
@@ -19791,10 +19952,17 @@
         ],
         "reading_time_min": 14
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:36:41.637Z"
     },
     {
       "slug": "glp1-thyroid-monitoring-when-necessary-2026",
@@ -19812,10 +19980,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:36:15.269Z"
     },
     {
       "slug": "glp1-exercise-timing-medication-effectiveness-2026",
@@ -19833,10 +20008,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:35:45.241Z"
     },
     {
       "slug": "glp1-constipation-fiber-strategy-balance-2026",
@@ -19854,10 +20036,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:36:28.980Z"
     },
     {
       "slug": "glp1-hair-loss-protein-intake-connection-2026",
@@ -19875,10 +20064,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:36:07.505Z"
     },
     {
       "slug": "glp1-caffeine-interaction-appetite-effects-2026",
@@ -19896,10 +20092,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:35:43.782Z"
     },
     {
       "slug": "glp1-traveling-storage-temperature-guide-2026",
@@ -19917,10 +20120,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:36:29.315Z"
     },
     {
       "slug": "glp1-gallbladder-risk-prevention-strategies-2026",
@@ -19938,10 +20148,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:40:30.802Z"
     },
     {
       "slug": "glp1-dose-escalation-timing-optimization-2026",
@@ -19959,10 +20176,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:40:40.111Z"
     },
     {
       "slug": "glp1-surgery-preparation-withholding-protocol-2026",
@@ -19980,10 +20204,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:40:41.589Z"
     },
     {
       "slug": "glp1-rebound-weight-gain-prevention-2026",
@@ -20001,10 +20232,17 @@
         ],
         "reading_time_min": 15
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:42:52.828Z"
     },
     {
       "slug": "glp1-pancreatitis-warning-signs-action-2026",
@@ -20022,10 +20260,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:40:30.165Z"
     },
     {
       "slug": "glp1-mental-health-effects-depression-anxiety-2026",
@@ -20043,10 +20288,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:41:43.139Z"
     },
     {
       "slug": "glp1-birth-control-effectiveness-interaction-2026",
@@ -20064,10 +20316,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:40:03.643Z"
     },
     {
       "slug": "glp1-muscle-loss-prevention-protein-timing-2026",
@@ -20085,10 +20344,17 @@
         ],
         "reading_time_min": 14
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:41:20.356Z"
     },
     {
       "slug": "glp1-hypoglycemia-risk-non-diabetic-users-2026",
@@ -20106,10 +20372,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:40:14.057Z"
     },
     {
       "slug": "glp1-kidney-function-monitoring-requirements-2026",
@@ -20127,10 +20400,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:40:48.812Z"
     },
     {
       "slug": "glp1-injection-technique-pain-reduction-2026",
@@ -20148,10 +20428,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:46:04.095Z"
     },
     {
       "slug": "glp1-food-aversion-development-management-2026",
@@ -20169,10 +20456,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:46:21.156Z"
     },
     {
       "slug": "glp1-vitamin-absorption-deficiency-prevention-2026",
@@ -20190,10 +20484,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:47:15.968Z"
     },
     {
       "slug": "glp1-sleep-quality-changes-mechanisms-2026",
@@ -20211,10 +20512,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:46:38.729Z"
     },
     {
       "slug": "glp1-long-term-safety-data-review-2026",
@@ -20232,10 +20540,17 @@
         ],
         "reading_time_min": 15
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:46:35.249Z"
     },
     {
       "slug": "glp1-switching-brands-equivalence-guide-2026",
@@ -20253,10 +20568,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:46:47.256Z"
     },
     {
       "slug": "glp1-gastroparesis-symptoms-recognition-2026",
@@ -20274,10 +20596,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:46:56.984Z"
     },
     {
       "slug": "glp1-compounded-medication-safety-concerns-2026",
@@ -20295,10 +20624,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:46:52.087Z"
     },
     {
       "slug": "glp1-facial-aging-volume-loss-management-2026",
@@ -20316,10 +20652,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:48:08.136Z"
     },
     {
       "slug": "glp1-immune-function-effects-infection-risk-2026",
@@ -20337,10 +20680,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:46:24.781Z"
     },
     {
       "slug": "glp1-medication-timing-circadian-rhythm-optimization-2026",
@@ -20358,10 +20708,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:52:14.863Z"
     },
     {
       "slug": "glp1-alcohol-interaction-liver-metabolism-safety-2026",
@@ -20379,10 +20736,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:52:01.579Z"
     },
     {
       "slug": "glp1-thyroid-function-monitoring-protocol-2026",
@@ -20400,10 +20764,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:52:25.717Z"
     },
     {
       "slug": "glp1-dental-health-dry-mouth-prevention-2026",
@@ -20421,10 +20792,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:52:21.331Z"
     },
     {
       "slug": "glp1-vitamin-b12-deficiency-prevention-supplementation-2026",
@@ -20442,10 +20820,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:52:33.339Z"
     },
     {
       "slug": "glp1-injection-site-rotation-lipohypertrophy-prevention-2026",
@@ -20463,10 +20848,17 @@
         ],
         "reading_time_min": 7
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:51:51.634Z"
     },
     {
       "slug": "glp1-surgery-preparation-perioperative-protocol-2026",
@@ -20484,10 +20876,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:51:50.184Z"
     },
     {
       "slug": "glp1-menstrual-cycle-changes-fertility-considerations-2026",
@@ -20505,10 +20904,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:52:00.264Z"
     },
     {
       "slug": "glp1-caffeine-sensitivity-interaction-management-2026",
@@ -20526,10 +20932,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:51:24.266Z"
     },
     {
       "slug": "glp1-blood-pressure-medication-adjustment-protocol-2026",
@@ -20547,10 +20960,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:51:46.287Z"
     },
     {
       "slug": "glp1-oral-contraceptive-absorption-interaction-2026",
@@ -20568,10 +20988,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:56:12.486Z"
     },
     {
       "slug": "glp1-nsaid-pain-reliever-gastrointestinal-risk-2026",
@@ -20589,10 +21016,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:56:30.740Z"
     },
     {
       "slug": "glp1-gallbladder-symptoms-recognition-prevention-2026",
@@ -20610,10 +21044,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:56:13.600Z"
     },
     {
       "slug": "glp1-medication-storage-temperature-travel-guide-2026",
@@ -20631,10 +21072,17 @@
         ],
         "reading_time_min": 7
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:56:29.640Z"
     },
     {
       "slug": "glp1-proton-pump-inhibitor-combination-safety-2026",
@@ -20652,10 +21100,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:55:43.385Z"
     },
     {
       "slug": "glp1-skin-elasticity-support-collagen-protocol-2026",
@@ -20673,10 +21128,16 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:01:58.108Z"
     },
     {
       "slug": "glp1-metformin-combination-therapy-synergy-2026",
@@ -20694,10 +21155,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:55:55.407Z"
     },
     {
       "slug": "glp1-missed-dose-protocol-efficacy-maintenance-2026",
@@ -20715,10 +21183,17 @@
         ],
         "reading_time_min": 7
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:55:53.220Z"
     },
     {
       "slug": "glp1-anxiety-mood-changes-neurological-effects-2026",
@@ -20736,10 +21211,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:56:32.067Z"
     },
     {
       "slug": "glp1-iron-supplement-absorption-timing-optimization-2026",
@@ -20757,10 +21239,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T13:56:23.915Z"
     },
     {
       "slug": "glp1-diabetes-medication-hypoglycemia-risk-adjustment-2026",
@@ -20778,10 +21267,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:05:57.053Z"
     },
     {
       "slug": "glp1-hair-loss-telogen-effluvium-management-2026",
@@ -20799,10 +21295,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:06:02.653Z"
     },
     {
       "slug": "glp1-levothyroxine-thyroid-medication-interaction-2026",
@@ -20820,10 +21323,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:05:55.253Z"
     },
     {
       "slug": "glp1-constipation-management-fiber-hydration-protocol-2026",
@@ -20841,10 +21351,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:05:56.237Z"
     },
     {
       "slug": "glp1-electrolyte-imbalance-prevention-monitoring-2026",
@@ -20862,10 +21379,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:06:26.700Z"
     },
     {
       "slug": "glp1-antidepressant-ssri-interaction-serotonin-2026",
@@ -20883,10 +21407,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:05:40.830Z"
     },
     {
       "slug": "glp1-kidney-function-monitoring-hydration-protocol-2026",
@@ -20904,10 +21435,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:06:52.384Z"
     },
     {
       "slug": "glp1-statin-cholesterol-medication-synergy-2026",
@@ -20925,10 +21463,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:05:31.406Z"
     },
     {
       "slug": "glp1-antibiotic-absorption-infection-treatment-2026",
@@ -20946,10 +21491,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:05:40.532Z"
     },
     {
       "slug": "glp1-pancreatitis-warning-signs-risk-reduction-2026",
@@ -20967,10 +21519,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:06:14.393Z"
     },
     {
       "slug": "sleep-latency-under-15-minutes-natural-techniques-2026",
@@ -20988,10 +21547,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:10:50.354Z"
     },
     {
       "slug": "adenosine-clearance-optimization-morning-grogginess-2026",
@@ -21009,10 +21575,17 @@
         ],
         "reading_time_min": 14
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:11:03.772Z"
     },
     {
       "slug": "circadian-rhythm-shift-work-adaptation-protocol-2026",
@@ -21030,10 +21603,16 @@
         ],
         "reading_time_min": 15
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:16:58.510Z"
     },
     {
       "slug": "sleep-spindle-enhancement-memory-consolidation-2026",
@@ -21051,10 +21630,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:12:01.884Z"
     },
     {
       "slug": "alcohol-rem-suppression-recovery-timeline-2026",
@@ -21072,10 +21658,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:11:07.168Z"
     },
     {
       "slug": "orthosomnia-sleep-tracker-anxiety-management-2026",
@@ -21093,10 +21686,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:10:50.950Z"
     },
     {
       "slug": "body-temperature-nadir-timing-sleep-quality-2026",
@@ -21114,10 +21714,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:10:57.715Z"
     },
     {
       "slug": "post-exercise-insomnia-evening-workout-solutions-2026",
@@ -21135,10 +21742,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:10:52.584Z"
     },
     {
       "slug": "biphasic-sleep-schedule-modern-implementation-2026",
@@ -21156,10 +21770,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:10:57.222Z"
     },
     {
       "slug": "melatonin-timing-window-chronotype-specific-2026",
@@ -21177,10 +21798,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:10:43.984Z"
     },
     {
       "slug": "sleep-pressure-accumulation-strategic-napping-2026",
@@ -21198,10 +21826,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:20:49.342Z"
     },
     {
       "slug": "mouth-breathing-sleep-quality-intervention-2026",
@@ -21219,10 +21854,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:20:52.087Z"
     },
     {
       "slug": "first-sleep-cycle-protection-evening-routine-2026",
@@ -21240,10 +21882,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:20:47.338Z"
     },
     {
       "slug": "social-jetlag-calculation-weekend-correction-2026",
@@ -21261,10 +21910,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:21:35.432Z"
     },
     {
       "slug": "sleep-fragmentation-index-continuous-sleep-strategies-2026",
@@ -21282,10 +21938,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:21:36.914Z"
     },
     {
       "slug": "revenge-bedtime-procrastination-behavioral-intervention-2026",
@@ -21303,10 +21966,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:21:27.818Z"
     },
     {
       "slug": "heart-rate-variability-sleep-quality-predictor-2026",
@@ -21324,10 +21994,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:21:08.625Z"
     },
     {
       "slug": "blue-light-timing-nuance-evening-exposure-2026",
@@ -21345,10 +22022,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:20:43.027Z"
     },
     {
       "slug": "slow-wave-sleep-enhancement-without-supplements-2026",
@@ -21366,10 +22050,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:21:04.094Z"
     },
     {
       "slug": "caffeine-half-life-individual-variation-timing-2026",
@@ -21387,10 +22078,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:20:47.805Z"
     },
     {
       "slug": "weekend-sleep-extension-metabolic-recovery-2026",
@@ -21408,10 +22106,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:25:48.083Z"
     },
     {
       "slug": "pillow-height-cervical-alignment-sleep-position-2026",
@@ -21429,10 +22134,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:24:37.691Z"
     },
     {
       "slug": "pre-sleep-worry-time-scheduling-technique-2026",
@@ -21450,10 +22162,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:25:31.573Z"
     },
     {
       "slug": "magnesium-forms-sleep-specific-absorption-2026",
@@ -21471,10 +22190,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:25:30.339Z"
     },
     {
       "slug": "sleep-onset-association-disorder-adult-solutions-2026",
@@ -21492,10 +22218,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:25:46.313Z"
     },
     {
       "slug": "humidity-level-optimal-sleep-respiratory-health-2026",
@@ -21513,10 +22246,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:25:10.158Z"
     },
     {
       "slug": "sleep-divorce-separate-beds-relationship-research-2026",
@@ -21534,10 +22274,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:25:30.803Z"
     },
     {
       "slug": "glycine-sleep-quality-body-temperature-mechanism-2026",
@@ -21555,10 +22302,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:25:38.117Z"
     },
     {
       "slug": "sleep-stage-cycling-90-minute-rule-accuracy-2026",
@@ -21576,10 +22330,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:25:06.318Z"
     },
     {
       "slug": "sleep-inertia-duration-morning-grogginess-reduction-2026",
@@ -21597,10 +22358,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:25:32.280Z"
     },
     {
       "slug": "sleep-talking-causes-adult-onset-somniloquy-2026",
@@ -21618,10 +22386,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:29:42.539Z"
     },
     {
       "slug": "temperature-regulation-during-sleep-night-sweats-2026",
@@ -21639,10 +22414,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:29:39.878Z"
     },
     {
       "slug": "sleep-paralysis-prevention-techniques-evidence-2026",
@@ -21660,10 +22442,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:29:07.628Z"
     },
     {
       "slug": "sleep-bruxism-night-grinding-protection-2026",
@@ -21681,10 +22470,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:29:59.347Z"
     },
     {
       "slug": "hypnic-jerk-falling-sensation-sleep-onset-2026",
@@ -21702,10 +22498,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:29:33.390Z"
     },
     {
       "slug": "polyphasic-sleep-schedules-safety-evidence-2026",
@@ -21723,10 +22526,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:29:57.906Z"
     },
     {
       "slug": "sleep-onset-latency-too-fast-sleep-debt-sign-2026",
@@ -21744,10 +22554,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:29:19.826Z"
     },
     {
       "slug": "revenge-bedtime-procrastination-psychology-solutions-2026",
@@ -21765,10 +22582,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:29:44.644Z"
     },
     {
       "slug": "second-wind-late-night-energy-circadian-disruption-2026",
@@ -21786,10 +22610,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:29:35.794Z"
     },
     {
       "slug": "sleep-divorce-separate-beds-relationship-quality-2026",
@@ -21807,10 +22638,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:29:52.790Z"
     },
     {
       "slug": "positional-sleep-apnea-side-sleeping-effectiveness-2026",
@@ -21828,10 +22666,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:33:45.182Z"
     },
     {
       "slug": "sleep-fragmentation-vs-duration-health-impact-2026",
@@ -21849,10 +22694,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:34:07.409Z"
     },
     {
       "slug": "sleep-spindles-memory-consolidation-enhancement-2026",
@@ -21870,10 +22722,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:34:02.773Z"
     },
     {
       "slug": "glymphatic-system-sleep-brain-cleaning-optimization-2026",
@@ -21891,10 +22750,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:33:33.102Z"
     },
     {
       "slug": "first-night-effect-new-environment-sleep-quality-2026",
@@ -21912,10 +22778,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:33:48.093Z"
     },
     {
       "slug": "sleep-pressure-adenosine-buildup-timing-2026",
@@ -21933,10 +22806,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:34:00.912Z"
     },
     {
       "slug": "weekend-sleep-timing-shift-social-jetlag-recovery-2026",
@@ -21954,10 +22834,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:34:05.167Z"
     },
     {
       "slug": "sleep-stages-wearable-accuracy-interpretation-2026",
@@ -21975,10 +22862,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:33:27.753Z"
     },
     {
       "slug": "sleep-quality-vs-quantity-which-matters-more-2026",
@@ -21996,10 +22890,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:33:34.973Z"
     },
     {
       "slug": "sleep-after-exercise-timing-window-optimization-2026",
@@ -22017,10 +22918,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:33:37.264Z"
     },
     {
       "slug": "sleep-architecture-changes-with-age-adaptation-2026",
@@ -22038,10 +22946,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:37:46.220Z"
     },
     {
       "slug": "sleep-and-immune-function-infection-risk-2026",
@@ -22059,10 +22974,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:37:25.534Z"
     },
     {
       "slug": "dream-recall-frequency-meaning-improvement-2026",
@@ -22080,10 +23002,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:38:10.919Z"
     },
     {
       "slug": "mouth-breathing-during-sleep-health-effects-2026",
@@ -22101,10 +23030,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:37:52.234Z"
     },
     {
       "slug": "sleep-talking-recording-what-it-reveals-2026",
@@ -22122,10 +23058,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:37:47.722Z"
     },
     {
       "slug": "weighted-blanket-deep-pressure-sleep-evidence-2026",
@@ -22143,10 +23086,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:37:46.007Z"
     },
     {
       "slug": "chronotype-mismatch-work-schedule-health-impact-2026",
@@ -22164,10 +23114,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:38:29.298Z"
     },
     {
       "slug": "sleep-extension-athletic-performance-protocol-2026",
@@ -22185,10 +23142,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:37:54.305Z"
     },
     {
       "slug": "eccentric-training-tendon-health-collagen-synthesis-2026",
@@ -22206,10 +23170,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:38:20.652Z"
     },
     {
       "slug": "grip-strength-mortality-predictor-training-protocol-2026",
@@ -22227,10 +23198,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:37:55.258Z"
     },
     {
       "slug": "cold-water-immersion-post-workout-hypertrophy-interference-2026",
@@ -22248,10 +23226,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:41:45.906Z"
     },
     {
       "slug": "blood-flow-restriction-training-low-load-muscle-gain-2026",
@@ -22269,10 +23254,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:42:39.972Z"
     },
     {
       "slug": "stair-climbing-cardiovascular-fitness-snack-exercise-2026",
@@ -22290,10 +23282,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:41:55.735Z"
     },
     {
       "slug": "exercise-order-compound-isolation-optimal-sequence-2026",
@@ -22311,10 +23310,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:42:24.205Z"
     },
     {
       "slug": "lactate-threshold-training-endurance-performance-2026",
@@ -22332,10 +23338,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:42:40.687Z"
     },
     {
       "slug": "daily-step-goal-beyond-10000-diminishing-returns-2026",
@@ -22353,10 +23366,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:42:05.283Z"
     },
     {
       "slug": "concurrent-training-interference-effect-minimization-2026",
@@ -22374,10 +23394,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:42:15.403Z"
     },
     {
       "slug": "breathing-patterns-lifting-intra-abdominal-pressure-2026",
@@ -22395,10 +23422,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:42:34.774Z"
     },
     {
       "slug": "deload-week-frequency-strength-plateau-prevention-2026",
@@ -22416,10 +23450,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:42:08.552Z"
     },
     {
       "slug": "hip-hinge-pattern-lower-back-protection-deadlift-2026",
@@ -22437,10 +23478,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:42:43.496Z"
     },
     {
       "slug": "tempo-training-time-under-tension-hypertrophy-2026",
@@ -22458,10 +23506,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:46:37.436Z"
     },
     {
       "slug": "morning-versus-evening-workout-performance-circadian-2026",
@@ -22479,10 +23534,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:46:25.137Z"
     },
     {
       "slug": "progressive-overload-methods-beyond-adding-weight-2026",
@@ -22500,10 +23562,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:47:07.965Z"
     },
     {
       "slug": "unilateral-training-muscle-imbalance-correction-2026",
@@ -22521,10 +23590,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:47:07.029Z"
     },
     {
       "slug": "rest-pause-training-time-efficient-hypertrophy-2026",
@@ -22542,10 +23618,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:46:05.386Z"
     },
     {
       "slug": "isometric-holds-joint-angle-specific-strength-2026",
@@ -22563,10 +23646,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:46:25.901Z"
     },
     {
       "slug": "plyometric-training-bone-density-adults-over-40-2026",
@@ -22584,10 +23674,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:46:49.522Z"
     },
     {
       "slug": "exercise-induced-bronchoconstriction-management-2026",
@@ -22605,10 +23702,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:46:09.845Z"
     },
     {
       "slug": "active-recovery-day-intensity-threshold-benefits-2026",
@@ -22626,10 +23730,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:46:38.029Z"
     },
     {
       "slug": "cluster-set-training-power-output-maintenance-2026",
@@ -22647,10 +23758,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:46:33.670Z"
     },
     {
       "slug": "standing-desk-calorie-burn-reality-check-2026",
@@ -22668,10 +23786,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:51:47.299Z"
     },
     {
       "slug": "drop-set-training-hypertrophy-fatigue-tradeoff-2026",
@@ -22689,10 +23814,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:50:50.437Z"
     },
     {
       "slug": "ankle-mobility-squat-depth-improvement-protocol-2026",
@@ -22710,10 +23842,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:56:54.302Z"
     },
     {
       "slug": "high-intensity-interval-training-session-frequency-limit-2026",
@@ -22731,10 +23870,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:51:05.975Z"
     },
     {
       "slug": "loaded-carry-exercises-core-stability-functional-strength-2026",
@@ -22752,10 +23898,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:51:38.442Z"
     },
     {
       "slug": "swimming-versus-running-joint-health-cardio-comparison-2026",
@@ -22773,10 +23926,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:54:02.993Z"
     },
     {
       "slug": "resistance-band-training-strength-gains-free-weights-comparison-2026",
@@ -22794,10 +23954,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:51:23.718Z"
     },
     {
       "slug": "rpe-autoregulation-training-load-adjustment-2026",
@@ -22815,10 +23982,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:51:27.261Z"
     },
     {
       "slug": "grip-strength-longevity-predictor-training-protocol-2026",
@@ -22836,10 +24010,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:51:06.794Z"
     },
     {
       "slug": "blood-flow-restriction-training-low-load-muscle-growth-2026",
@@ -22857,10 +24038,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T14:51:28.109Z"
     },
     {
       "slug": "exercise-snacks-metabolic-benefits-sedentary-breaks-2026",
@@ -22878,10 +24066,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:00:29.753Z"
     },
     {
       "slug": "backwards-walking-knee-health-quad-strengthening-2026",
@@ -22899,10 +24094,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:01:02.504Z"
     },
     {
       "slug": "swimming-vs-running-joint-impact-cardiovascular-comparison-2026",
@@ -22920,10 +24122,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:00:44.528Z"
     },
     {
       "slug": "stair-climbing-vo2-max-improvement-practical-protocol-2026",
@@ -22941,10 +24150,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:05:29.405Z"
     },
     {
       "slug": "cold-water-immersion-recovery-timing-temperature-protocol-2026",
@@ -22962,10 +24178,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:00:45.260Z"
     },
     {
       "slug": "hiking-incline-calorie-burn-muscle-activation-terrain-2026",
@@ -22983,10 +24206,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:00:40.009Z"
     },
     {
       "slug": "isometric-exercise-blood-pressure-reduction-protocol-2026",
@@ -23004,10 +24234,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:00:34.255Z"
     },
     {
       "slug": "balance-training-fall-prevention-proprioception-exercises-2026",
@@ -23025,10 +24262,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:03:26.371Z"
     },
     {
       "slug": "rowing-machine-technique-common-mistakes-injury-prevention-2026",
@@ -23046,10 +24290,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:05:21.321Z"
     },
     {
       "slug": "morning-vs-evening-workout-circadian-performance-optimization-2026",
@@ -23067,10 +24318,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:00:59.344Z"
     },
     {
       "slug": "jump-rope-cardio-efficiency-bone-density-benefits-2026",
@@ -23088,10 +24346,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:32:04.074Z"
     },
     {
       "slug": "desk-stretches-hip-flexor-release-sitting-counteraction-2026",
@@ -23109,10 +24374,17 @@
         ],
         "reading_time_min": 7
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:31:53.348Z"
     },
     {
       "slug": "kettlebell-swing-hip-hinge-posterior-chain-activation-2026",
@@ -23130,10 +24402,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:34:27.550Z"
     },
     {
       "slug": "active-recovery-day-activities-adaptation-enhancement-2026",
@@ -23151,10 +24430,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:31:30.580Z"
     },
     {
       "slug": "plank-progression-core-stability-advanced-variations-2026",
@@ -23172,10 +24458,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:37:47.312Z"
     },
     {
       "slug": "cycling-cadence-efficiency-knee-stress-optimal-rpm-2026",
@@ -23193,10 +24486,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:31:58.674Z"
     },
     {
       "slug": "tempo-training-time-under-tension-hypertrophy-protocol-2026",
@@ -23214,10 +24514,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:31:56.859Z"
     },
     {
       "slug": "foam-rolling-myofascial-release-actual-mechanism-benefits-2026",
@@ -23235,10 +24542,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:35:01.919Z"
     },
     {
       "slug": "single-leg-exercises-imbalance-correction-unilateral-training-2026",
@@ -23256,10 +24570,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:32:37.550Z"
     },
     {
       "slug": "breathing-technique-exercise-performance-diaphragmatic-control-2026",
@@ -23277,10 +24598,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:32:38.500Z"
     },
     {
       "slug": "high-intensity-interval-training-duration-frequency-minimum-dose-2026",
@@ -23298,10 +24626,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:41:26.830Z"
     },
     {
       "slug": "resistance-band-training-strength-gains-home-workout-2026",
@@ -23319,10 +24654,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:42:29.338Z"
     },
     {
       "slug": "deadlift-variations-back-pain-hip-dominant-alternatives-2026",
@@ -23340,10 +24682,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:42:25.739Z"
     },
     {
       "slug": "walking-speed-health-indicator-improvement-strategies-2026",
@@ -23361,10 +24710,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:42:03.841Z"
     },
     {
       "slug": "push-up-progression-zero-to-fifty-strength-building-2026",
@@ -23382,10 +24738,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:41:45.804Z"
     },
     {
       "slug": "split-squat-vs-lunge-quad-glute-activation-comparison-2026",
@@ -23403,10 +24766,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:40:56.543Z"
     },
     {
       "slug": "workout-frequency-muscle-group-optimal-training-split-2026",
@@ -23424,10 +24794,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:41:49.004Z"
     },
     {
       "slug": "exercise-snacks-metabolic-health-micro-workouts-2026",
@@ -23445,10 +24822,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:41:27.798Z"
     },
     {
       "slug": "cold-water-immersion-recovery-timing-optimization-2026",
@@ -23466,10 +24850,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:41:31.050Z"
     },
     {
       "slug": "walking-speed-biological-age-improvement-protocol-2026",
@@ -23487,10 +24878,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:41:58.092Z"
     },
     {
       "slug": "stair-climbing-cardiorespiratory-fitness-apartment-workout-2026",
@@ -23508,10 +24906,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:45:51.166Z"
     },
     {
       "slug": "resistance-band-progressive-overload-home-strength-2026",
@@ -23529,10 +24934,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:46:49.213Z"
     },
     {
       "slug": "concurrent-training-interference-effect-optimization-2026",
@@ -23550,10 +24962,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:46:15.970Z"
     },
     {
       "slug": "hip-hinge-pattern-deadlift-back-pain-prevention-2026",
@@ -23571,10 +24990,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:46:53.864Z"
     },
     {
       "slug": "plyometric-training-bone-density-jump-protocol-2026",
@@ -23592,10 +25018,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:46:41.439Z"
     },
     {
       "slug": "breathing-mechanics-core-stability-diaphragm-training-2026",
@@ -23613,10 +25046,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:46:27.566Z"
     },
     {
       "slug": "active-recovery-day-protocols-adaptation-optimization-2026",
@@ -23634,10 +25074,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:45:54.561Z"
     },
     {
       "slug": "single-leg-training-bilateral-deficit-strength-gains-2026",
@@ -23655,10 +25102,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:46:25.519Z"
     },
     {
       "slug": "swimming-joint-friendly-cardio-full-body-resistance-2026",
@@ -23676,10 +25130,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:46:28.534Z"
     },
     {
       "slug": "periodization-deload-week-supercompensation-timing-2026",
@@ -23697,10 +25158,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:46:21.364Z"
     },
     {
       "slug": "morning-vs-evening-workout-circadian-performance-2026",
@@ -23718,10 +25186,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:50:32.308Z"
     },
     {
       "slug": "farmers-walk-functional-strength-whole-body-exercise-2026",
@@ -23739,10 +25214,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:50:47.603Z"
     },
     {
       "slug": "movement-variability-injury-prevention-exercise-rotation-2026",
@@ -23760,10 +25242,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:50:34.193Z"
     },
     {
       "slug": "rpe-autoregulation-training-fatigue-management-2026",
@@ -23781,10 +25270,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:51:04.602Z"
     },
     {
       "slug": "ankle-mobility-squat-depth-injury-prevention-2026",
@@ -23802,10 +25298,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:54:47.736Z"
     },
     {
       "slug": "metabolic-conditioning-circuit-training-fat-oxidation-2026",
@@ -23823,10 +25326,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:51:01.937Z"
     },
     {
       "slug": "mind-muscle-connection-neural-drive-hypertrophy-2026",
@@ -23844,10 +25354,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:50:47.083Z"
     },
     {
       "slug": "heat-acclimation-endurance-performance-sauna-protocol-2026",
@@ -23865,10 +25382,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:50:45.934Z"
     },
     {
       "slug": "loaded-stretching-flexibility-strength-combined-2026",
@@ -23886,10 +25410,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:50:01.731Z"
     },
     {
       "slug": "nasal-breathing-exercise-performance-oxygen-efficiency-2026",
@@ -23907,10 +25438,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:50:44.387Z"
     },
     {
       "slug": "reverse-pyramid-training-strength-efficiency-protocol-2026",
@@ -23928,10 +25466,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:58:46.809Z"
     },
     {
       "slug": "eccentric-training-tendon-health-protocol-2026",
@@ -23949,10 +25494,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:58:57.487Z"
     },
     {
       "slug": "grip-strength-longevity-predictor-training-2026",
@@ -23970,10 +25522,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:59:11.616Z"
     },
     {
       "slug": "blood-flow-restriction-training-home-protocol-2026",
@@ -23991,10 +25550,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:59:11.626Z"
     },
     {
       "slug": "exercise-snacks-metabolic-health-protocol-2026",
@@ -24012,10 +25578,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:58:10.377Z"
     },
     {
       "slug": "stair-climbing-cardio-equivalent-calculation-2026",
@@ -24033,10 +25606,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:58:21.083Z"
     },
     {
       "slug": "cold-water-immersion-recovery-optimal-protocol-2026",
@@ -24054,10 +25634,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:58:48.785Z"
     },
     {
       "slug": "deload-week-timing-signs-protocol-2026",
@@ -24075,10 +25662,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:02:26.888Z"
     },
     {
       "slug": "swimming-joint-health-low-impact-benefits-2026",
@@ -24096,10 +25690,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:58:36.136Z"
     },
     {
       "slug": "tempo-training-time-under-tension-muscle-growth-2026",
@@ -24117,10 +25718,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T15:59:00.000Z"
     },
     {
       "slug": "isometric-exercise-blood-pressure-reduction-2026",
@@ -24138,10 +25746,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:05:56.298Z"
     },
     {
       "slug": "hiking-vs-treadmill-incline-calorie-difference-2026",
@@ -24159,10 +25774,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:05:48.824Z"
     },
     {
       "slug": "active-recovery-vs-rest-day-comparison-2026",
@@ -24180,10 +25802,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:06:07.494Z"
     },
     {
       "slug": "exercise-order-compound-isolation-sequence-2026",
@@ -24201,10 +25830,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:06:24.588Z"
     },
     {
       "slug": "morning-vs-evening-workout-chronotype-matching-2026",
@@ -24222,10 +25858,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:06:52.324Z"
     },
     {
       "slug": "resistance-band-progressive-overload-home-2026",
@@ -24243,10 +25886,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:06:31.284Z"
     },
     {
       "slug": "jump-rope-hiit-protocol-coordination-cardio-2026",
@@ -24264,10 +25914,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:08:27.006Z"
     },
     {
       "slug": "breathing-technique-lifting-valsalva-safety-2026",
@@ -24285,10 +25942,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:06:14.526Z"
     },
     {
       "slug": "standing-desk-movement-breaks-sedentary-offset-2026",
@@ -24306,10 +25970,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:06:05.515Z"
     },
     {
       "slug": "plyometric-training-bone-density-adults-2026",
@@ -24327,10 +25998,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:06:20.907Z"
     },
     {
       "slug": "workout-split-frequency-natural-lifter-2026",
@@ -24348,10 +26026,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:12:09.391Z"
     },
     {
       "slug": "foam-rolling-pre-workout-performance-effects-2026",
@@ -24369,10 +26054,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:11:35.882Z"
     },
     {
       "slug": "cycling-knee-health-patellofemoral-pain-2026",
@@ -24390,10 +26082,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:12:46.653Z"
     },
     {
       "slug": "dead-hang-shoulder-health-decompression-2026",
@@ -24411,10 +26110,17 @@
         ],
         "reading_time_min": 8
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:12:15.124Z"
     },
     {
       "slug": "rpe-autoregulation-training-load-management-2026",
@@ -24432,10 +26138,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:13:04.244Z"
     },
     {
       "slug": "walking-speed-health-indicator-improvement-2026",
@@ -24453,10 +26166,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:12:40.115Z"
     },
     {
       "slug": "concurrent-training-interference-minimization-2026",
@@ -24474,10 +26194,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:12:09.763Z"
     },
     {
       "slug": "nad-precursor-supplements-nmn-nr-comparison-2026",
@@ -24495,10 +26222,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:12:28.339Z"
     },
     {
       "slug": "autophagy-activation-without-fasting-methods-2026",
@@ -24516,10 +26250,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:12:34.533Z"
     },
     {
       "slug": "epigenetic-clock-reversal-lifestyle-interventions-2026",
@@ -24537,10 +26278,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:13:05.255Z"
     },
     {
       "slug": "centenarian-gut-microbiome-unique-bacteria-species-2026",
@@ -24558,10 +26306,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:17:15.923Z"
     },
     {
       "slug": "mitochondrial-biogenesis-cold-exposure-protocol-2026",
@@ -24579,10 +26334,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:21:20.841Z"
     },
     {
       "slug": "senolytic-foods-natural-senolytics-quercetin-fisetin-2026",
@@ -24600,10 +26362,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:16:53.602Z"
     },
     {
       "slug": "telomere-length-preservation-evidence-based-strategies-2026",
@@ -24621,10 +26390,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:16:55.346Z"
     },
     {
       "slug": "muscle-mass-loss-after-40-prevention-protocol-2026",
@@ -24642,10 +26418,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:17:33.808Z"
     },
     {
       "slug": "cognitive-reserve-building-activities-dementia-prevention-2026",
@@ -24663,10 +26446,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:17:39.948Z"
     },
     {
       "slug": "inflammaging-markers-reduction-anti-inflammatory-lifestyle-2026",
@@ -24684,10 +26474,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:17:41.016Z"
     },
     {
       "slug": "rapamycin-mimetics-natural-mtor-inhibitors-foods-2026",
@@ -24705,10 +26502,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:16:59.246Z"
     },
     {
       "slug": "sleep-architecture-changes-aging-optimization-strategies-2026",
@@ -24726,10 +26530,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:17:09.893Z"
     },
     {
       "slug": "bone-density-loss-prevention-beyond-calcium-vitamin-d-2026",
@@ -24747,10 +26558,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:17:32.434Z"
     },
     {
       "slug": "cardiovascular-age-reversal-arterial-stiffness-reduction-2026",
@@ -24768,10 +26586,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:25:31.038Z"
     },
     {
       "slug": "stem-cell-function-decline-lifestyle-preservation-2026",
@@ -24789,10 +26614,17 @@
         ],
         "reading_time_min": 13
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:25:34.102Z"
     },
     {
       "slug": "hearing-loss-prevention-noise-nutrition-strategies-2026",
@@ -24810,10 +26642,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:25:08.359Z"
     },
     {
       "slug": "glycation-age-formation-prevention-diet-cooking-2026",
@@ -24831,10 +26670,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:25:13.139Z"
     },
     {
       "slug": "balance-training-fall-prevention-protocol-over-50-2026",
@@ -24852,10 +26698,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:26:02.473Z"
     },
     {
       "slug": "hormone-optimization-natural-methods-aging-men-women-2026",
@@ -24873,10 +26726,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:25:49.939Z"
     },
     {
       "slug": "brain-derived-neurotrophic-factor-boosting-activities-2026",
@@ -24894,10 +26754,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:25:10.938Z"
     },
     {
       "slug": "skin-aging-prevention-internal-factors-collagen-elastin-2026",
@@ -24915,10 +26782,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:25:29.520Z"
     },
     {
       "slug": "metabolic-flexibility-restoration-aging-protocol-2026",
@@ -24936,10 +26810,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:25:47.012Z"
     },
     {
       "slug": "social-connection-longevity-isolation-health-impact-2026",
@@ -24957,10 +26838,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:25:14.449Z"
     },
     {
       "slug": "vision-preservation-macular-degeneration-prevention-2026",
@@ -24978,10 +26866,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:30:04.668Z"
     },
     {
       "slug": "kidney-function-preservation-aging-hydration-protein-2026",
@@ -24999,10 +26894,17 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:30:33.124Z"
     },
     {
       "slug": "heat-shock-proteins-sauna-longevity-protocol-2026",
@@ -25020,10 +26922,17 @@
         ],
         "reading_time_min": 10
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:29:32.980Z"
     },
     {
       "slug": "circadian-rhythm-aging-disruption-restoration-strategies-2026",
@@ -25041,10 +26950,17 @@
         ],
         "reading_time_min": 12
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:30:26.361Z"
     },
     {
       "slug": "protein-quality-aging-leucine-threshold-muscle-2026",
@@ -25062,10 +26978,17 @@
         ],
         "reading_time_min": 9
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:30:03.103Z"
     },
     {
       "slug": "longevity-biomarkers-tracking-home-testing-guide-2026",
@@ -25083,12 +27006,19 @@
         ],
         "reading_time_min": 11
       },
-      "status": "pending",
-      "attempts": 0,
-      "langs_completed": [],
-      "updated_at": "2026-05-24T06:16:00.047Z"
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-24T16:30:20.939Z"
     }
   ],
   "started_at": "2026-05-24T06:16:00.047Z",
-  "last_run": "2026-05-24T13:18:30.895Z"
+  "last_run": "2026-05-24T16:30:33.124Z"
 }
