@@ -1,0 +1,39 @@
+{
+  "name": "havit-blog-prototype",
+  "version": "0.3.0",
+  "private": true,
+  "description": "HAVIT Blog SEO prototype — Next.js 14 App Router. LOCKED PRD v0.3.0 기반.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "discover": "tsx scripts/discover-topics.ts",
+    "queue": "tsx scripts/queue.ts",
+    "queue:batch": "tsx scripts/queue.ts 1",
+    "queue:status": "cat data/queue-state.json | python3 -m json.tool | head -20",
+    "commit:articles": "tsx scripts/auto-commit.ts",
+    "pipeline:run": "npm run queue && npm run commit:articles"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.98.0",
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "tsx": "^4.22.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "20.14.10",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.19",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5",
+    "postcss": "8.4.39",
+    "tailwindcss": "3.4.6",
+    "typescript": "5.5.3"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_meta": {
+    "schema_source": "PRD §5.1 + §5.1.1 — havit_django ArticleModel + ArticleEntity (코드증거)",
+    "supported_langs_seeded": ["ko_kr", "en_us", "ja_jp"],
+    "note_remaining_langs": "나머지 32개 SUPPORTED_LANGS 는 en_us fallback (PRD §6.9 INV-005)",
+    "total_articles": 50,
+    "categories_distribution": "12 카테고리 = 4~5건/카테고리 (CAT_01~CAT_12)",
+    "compliance": "PRD §10.2 준수 — 'diagnose/measured/InBody' 0건 검증",
+    "data_source_note": "BigQuery 인증 만료 ([BQ-VERIFY-PENDING], PRD §5.3). Fallback B — 합리적 mock 50건. PRD §10.2 컴플라이언스 준수."
+  },
+  "articles": "see seed-articles.ts (50 articles defined as TS module for compactness + type-safety)"
+}
