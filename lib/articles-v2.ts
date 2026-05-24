@@ -65,7 +65,13 @@ function loadAll(): ArticleV2[] {
         const raw = readFileSync(full, 'utf-8');
         const parsed = JSON.parse(raw) as ArticleV2;
         if (!parsed.updated_at) {
-          parsed.updated_at = statSync(full).mtime.toISOString();
+          const fromContent =
+            parsed.langs?.en?.last_updated ??
+            parsed.langs?.ko?.last_updated ??
+            null;
+          parsed.updated_at = fromContent
+            ? new Date(fromContent).toISOString()
+            : statSync(full).mtime.toISOString();
         }
         if (!parsed.published_at) parsed.published_at = parsed.updated_at;
         out.push(parsed);
