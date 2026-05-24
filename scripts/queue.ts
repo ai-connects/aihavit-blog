@@ -163,6 +163,19 @@ export async function runQueue(options: { maxBatches?: number; batchSize?: numbe
   }
 
   console.log(`\n[queue] finished. ${state.completed} done, ${state.failed} failed, ${state.pending} pending.`);
+
+  try {
+    const { execSync } = require('child_process');
+    const path = require('path');
+    const cwd = path.resolve(__dirname, '..');
+    execSync('git add data/articles/ data/queue-state.json', { cwd, stdio: 'inherit' });
+    const msg = `content: queue complete (${state.completed}/${state.total})`;
+    execSync(`git commit -m "${msg}"`, { cwd, stdio: 'inherit' });
+    execSync('git push origin main', { cwd, stdio: 'inherit' });
+    console.log('[queue] auto-pushed. Vercel will rebuild + sitemap will refresh.');
+  } catch (err) {
+    console.error('[queue] auto-push failed (push manually):', (err as Error).message);
+  }
 }
 
 // CLI entry

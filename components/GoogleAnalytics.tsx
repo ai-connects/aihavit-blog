@@ -27,7 +27,7 @@ export default function GoogleAnalytics() {
           gtag('config', '${GA_ID}', {
             page_path: window.location.pathname,
             linker: {
-              domains: ['aihavit.com', 'www.aihavit.com', 'blog.aihavit.com', 'app.aihavit.com']
+              domains: ['aihavit.com', 'www.aihavit.com', 'blog.aihavit.com', 'app.aihavit.com', 'aiconnects.me', 'www.aiconnects.me']
             }
           });
         `}
