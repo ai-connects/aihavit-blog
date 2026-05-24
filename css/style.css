@@ -65,15 +65,11 @@ nav.scrolled {
   border-bottom: 1px solid var(--border);
 }
 .nav-logo {
-  display:flex; align-items:center; gap:10px;
+  display:flex; align-items:center;
   text-decoration:none;
 }
-.nav-logo-icon {
-  width:32px; height:32px; border-radius:8px; display:block;
-}
 .nav-logo-img {
-  font-family:'Pretendard',sans-serif; font-weight:800; font-size:22px;
-  color: var(--accent); letter-spacing:-0.5px;
+  height:34px; width:auto; display:block;
 }
 .nav-center-links {
   display: flex; gap: 32px; align-items: center;
