@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   authors: [{ name: 'HAVIT Editorial' }],
   keywords: ['wellness', 'habits', 'nutrition', 'sleep', 'exercise', 'health', 'HAVIT'],
   robots: { index: true, follow: true },
+  verification: {
+    other: {
+      'naver-site-verification': '0533a1862dda218c0632edc4109743f9138bf2ad',
+    },
+  },
   openGraph: {
     type: 'website',
     siteName: 'HAVIT Blog',
