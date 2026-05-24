@@ -23,6 +23,11 @@
   ],
   "redirects": [
     { "source": "/", "destination": "/blog?lang=ko", "permanent": false },
-    { "source": "/blog", "destination": "/blog?lang=ko", "permanent": false }
+    {
+      "source": "/blog",
+      "missing": [{ "type": "query", "key": "lang" }],
+      "destination": "/blog?lang=ko",
+      "permanent": false
+    }
   ]
 }
