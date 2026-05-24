@@ -513,26 +513,49 @@ nav.scrolled {
 .dl-note { font-size:13px; color:var(--faint); margin-top:24px; position:relative; }
 
 /* ═══════════════════════════════
-   FOOTER
+   FOOTER (unified — index/privacy/terms/blog)
 ═══════════════════════════════ */
-footer {
+footer.havit-footer {
   border-top:1px solid var(--border);
-  padding:40px 48px;
-  display:flex; justify-content:space-between; align-items:center;
-  flex-wrap:wrap; gap:20px;
+  padding:64px 48px 32px;
+  background:transparent;
 }
-.footer-logo { font-size:18px; font-weight:800; color:var(--accent); }
-.footer-links {
-  display:flex; gap:24px; align-items:center;
+.footer-grid {
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr;
+  gap:48px;
+  max-width:1200px;
+  margin:0 auto;
 }
-.footer-links a {
-  font-size:13px; color:var(--muted);
+.footer-brand .footer-logo {
+  font-size:22px; font-weight:800; color:var(--accent);
+  letter-spacing:-0.02em; margin-bottom:12px;
+}
+.footer-tagline {
+  font-size:14px; color:var(--muted);
+  line-height:1.6; max-width:320px;
+}
+.footer-col-title {
+  font-size:12px; font-weight:700;
+  text-transform:uppercase; letter-spacing:0.08em;
+  color:var(--muted); margin-bottom:16px;
+}
+.footer-col-links {
+  list-style:none; padding:0; margin:0;
+  display:flex; flex-direction:column; gap:10px;
+}
+.footer-col-links a {
+  font-size:14px; color:var(--text);
   text-decoration:none; transition:color 0.2s;
 }
-.footer-links a:hover { color:var(--text); }
+.footer-col-links a:hover { color:var(--accent); }
 .footer-copy {
+  margin:48px auto 0;
+  padding-top:24px;
+  border-top:1px solid var(--border);
+  text-align:center;
   font-size:12px; color:var(--faint);
-  width:100%; text-align:center; margin-top:16px;
+  max-width:1200px;
 }
 
 /* ═══════════════════════════════
@@ -568,8 +591,9 @@ footer {
   .review-grid { grid-template-columns:1fr; }
   .review-featured { padding:32px 24px; }
   .dl-buttons { flex-direction:column; align-items:center; }
-  footer { flex-direction:column; text-align:center; padding:32px 20px; }
-  .footer-links { flex-wrap:wrap; justify-content:center; }
+  footer.havit-footer { padding:40px 20px 24px; }
+  .footer-grid { grid-template-columns:1fr; gap:32px; }
+  .footer-copy { margin-top:32px; }
 }
 
 @media (max-width:560px) {
