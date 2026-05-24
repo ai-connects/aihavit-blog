@@ -22,12 +22,10 @@
     }
   ],
   "redirects": [
-    { "source": "/", "destination": "/blog?lang=ko", "permanent": false },
-    {
-      "source": "/blog",
-      "missing": [{ "type": "query", "key": "lang" }],
-      "destination": "/blog?lang=ko",
-      "permanent": false
-    }
+    { "source": "/blog/seo-batch-2/:slug", "destination": "/ko/:slug", "permanent": true },
+    { "source": "/blog/g/:slug", "destination": "/ko/:slug", "permanent": true },
+    { "source": "/blog/:lang/:slug", "destination": "/:lang/:slug", "permanent": true },
+    { "source": "/blog/:lang/c/:catSlug", "destination": "/:lang/c/:catSlug", "permanent": true },
+    { "source": "/blog/:lang/search", "destination": "/:lang/search", "permanent": true }
   ]
 }

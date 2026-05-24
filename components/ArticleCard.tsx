@@ -8,19 +8,22 @@ interface Props {
   article: Article;
   lang: LangKey;
   featured?: boolean;
+  /** 새 URL 구조: /ko, /en 등. 미지정 시 /{shortLang} 사용 */
+  basePath?: string;
 }
 
-export default function ArticleCard({ article, lang, featured = false }: Props) {
+export default function ArticleCard({ article, lang, featured = false, basePath }: Props) {
   const resolved = resolveContent(article, lang);
   if (!resolved) return null;
   const { content, fallback } = resolved;
   const short = toShortLang(lang);
   const publishedDate = new Date(article.published_at);
   const minRead = Math.max(2, Math.round((content.deep_dive?.blocks ?? []).reduce((sum, b) => sum + b.body.length, 0) / 1200));
+  const href = `${basePath ?? `/${short}`}/${article.slug}`;
 
   return (
     <Link
-      href={`/blog/${short}/${article.slug}`}
+      href={href}
       className={`article-card group ${featured ? 'md:col-span-2 md:row-span-2' : ''}`}
       aria-label={content.title}
     >

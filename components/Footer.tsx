@@ -16,7 +16,7 @@ export default function Footer({ lang }: { lang: LangKey }) {
           <div>
             <div className="font-semibold text-sm uppercase tracking-wide text-gray-500 mb-3">Resources</div>
             <ul className="space-y-2 text-sm">
-              <li><Link href={`/blog?lang=${shortLang}`} className="hover:underline">Blog</Link></li>
+              <li><Link href={`/${shortLang}`} className="hover:underline">Blog</Link></li>
               <li><Link href="/sitemap.xml" className="hover:underline">Sitemap</Link></li>
               <li><Link href="/rss.xml" className="hover:underline">RSS</Link></li>
               <li><Link href="/robots.txt" className="hover:underline">robots.txt</Link></li>

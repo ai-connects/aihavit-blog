@@ -35,9 +35,9 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
 
   function langHref(target: LangKey): string {
     const short = toShortLang(target);
-    if (currentSlug) return `/blog/${short}/${currentSlug}`;
-    if (currentCategorySlug) return `/blog/${short}/c/${currentCategorySlug}`;
-    return `/blog?lang=${short}`;
+    if (currentSlug) return `/${short}/${currentSlug}`;
+    if (currentCategorySlug) return `/${short}/c/${currentCategorySlug}`;
+    return `/${short}`;
   }
 
   const shortLang = toShortLang(lang);
@@ -57,7 +57,7 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
             <span className="hidden sm:inline">HAVIT</span>
           </a>
           <span className="text-gray-300 dark:text-gray-700">|</span>
-          <Link href={`/blog?lang=${shortLang}`} className="flex items-center gap-2" aria-label="HAVIT Blog Home">
+          <Link href={`/${shortLang}`} className="flex items-center gap-2" aria-label="HAVIT Blog Home">
             <div className="h-8 w-8 rounded-lg bg-primary-500 flex items-center justify-center text-gray-900 font-bold">H</div>
             <span className="font-bold text-lg hidden sm:inline">HAVIT</span>
             <span className="text-sm text-gray-500 dark:text-gray-400 hidden md:inline">{t(lang, 'blog')}</span>
@@ -66,8 +66,8 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-1 text-sm">
-          <Link href={`/blog?lang=${shortLang}`} className="btn-ghost">{t(lang, 'home')}</Link>
-          <Link href={`/blog/${shortLang}/search`} className="btn-ghost">{t(lang, 'search')}</Link>
+          <Link href={`/${shortLang}`} className="btn-ghost">{t(lang, 'home')}</Link>
+          <Link href={`/${shortLang}/search`} className="btn-ghost">{t(lang, 'search')}</Link>
         </nav>
 
         <div className="flex items-center gap-1">
@@ -142,8 +142,8 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
       {mobileMenu && (
         <div className="md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-3 flex flex-col gap-2">
           <a href={process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://aihavit.com'} className="py-2 text-gray-600 dark:text-gray-400">← HAVIT</a>
-          <Link href={`/blog?lang=${shortLang}`} className="py-2">{t(lang, 'home')}</Link>
-          <Link href={`/blog/${shortLang}/search`} className="py-2">{t(lang, 'search')}</Link>
+          <Link href={`/${shortLang}`} className="py-2">{t(lang, 'home')}</Link>
+          <Link href={`/${shortLang}/search`} className="py-2">{t(lang, 'search')}</Link>
         </div>
       )}
     </header>
