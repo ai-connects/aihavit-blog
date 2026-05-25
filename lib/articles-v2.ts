@@ -1,6 +1,14 @@
 /**
  * V2 article data layer — reads data/articles/*.json (the live content pipeline output).
  * Each JSON file is one article with 6-lang content + SEO/GEO fields.
+ *
+ * BLOG_AUTHORITY v1.0.0 (PRD §5.2.1 / §6.1 / §7.1 Step 1):
+ *   - ArticleAuthor / ArticleReviewer interface 신규
+ *   - ArticleV2.author / .reviewer 확장 (선택, default 런타임 주입)
+ *   - DEFAULT_AUTHOR / DEFAULT_REVIEWER 상수 (HAVIT Editorial Team / Medical Advisory)
+ *   - ALLOWED_CATEGORIES_V2 15-enum guard (E-004 — 빌드 차단)
+ *   - YMYL_CATEGORIES_V2 10-set (T1 payload 분기 SSOT)
+ *   - data/articles/*.json 파일 1바이트도 변경 없음 (P7 무손실, INV-006)
  */
 
 import { readdirSync, readFileSync, statSync } from 'fs';
@@ -23,6 +31,20 @@ export interface ArticleV2LangContent {
   last_updated?: string;
 }
 
+/** PRD §5.2.1 — 저자 메타 */
+export interface ArticleAuthor {
+  name: string;
+  type: 'Organization' | 'Person';
+  url?: string;
+}
+
+/** PRD §5.2.1 — 검수자 메타 */
+export interface ArticleReviewer {
+  name: string;
+  credential: string;
+  url?: string;
+}
+
 export interface ArticleV2 {
   article_id: string;
   slug: string;
@@ -35,6 +57,64 @@ export interface ArticleV2 {
   langs: Record<string, ArticleV2LangContent>;
   published_at?: string;
   updated_at?: string;
+  /** PRD §5.2.1 — 런타임 default 주입 (loadAll). JSON 파일에는 없음. */
+  author?: ArticleAuthor;
+  /** PRD §5.2.1 — 런타임 default 주입 (loadAll). JSON 파일에는 없음. */
+  reviewer?: ArticleReviewer;
+}
+
+/** PRD §6.4 — DEFAULT_AUTHOR / DEFAULT_REVIEWER */
+export const DEFAULT_AUTHOR: ArticleAuthor = {
+  name: 'HAVIT Editorial Team',
+  type: 'Organization',
+};
+
+export const DEFAULT_REVIEWER: ArticleReviewer = {
+  name: 'HAVIT Medical Advisory',
+  credential: 'Editorial Medical Review Board',
+};
+
+/**
+ * PRD §6.1 — 15 카테고리 enum SSOT (실DB 1,086건 전수 카운트 기반).
+ * E-004 빌드 차단: category가 이 set 외면 throw → 신규 카테고리 무허가 추가 방지.
+ */
+export const ALLOWED_CATEGORIES_V2: ReadonlySet<string> = new Set([
+  'Tracking & Insights',
+  'Mindset & Motivation',
+  'Weight & Metabolism',
+  'Lifestyle Habits',
+  'Personalized Strategies',
+  'Situational Tips',
+  'Diet & Nutrition',
+  'Hydration & Beverages',
+  'Health & Conditions',
+  'Medication Guide',
+  'Sleep & Recovery',
+  'Exercise & Activity',
+  'Mental Health & Stress',
+  'Gut Health & Microbiome',
+  'Longevity & Healthy Aging',
+]);
+
+/**
+ * PRD §6.1 / §6.4 — YMYL 10 카테고리 set.
+ * JSON-LD T1 (Article + MedicalWebPage) 분기 SSOT.
+ */
+export const YMYL_CATEGORIES_V2: ReadonlySet<string> = new Set([
+  'Weight & Metabolism',
+  'Diet & Nutrition',
+  'Hydration & Beverages',
+  'Health & Conditions',
+  'Medication Guide',
+  'Sleep & Recovery',
+  'Exercise & Activity',
+  'Mental Health & Stress',
+  'Gut Health & Microbiome',
+  'Longevity & Healthy Aging',
+]);
+
+export function isYmylCategory(category: string): boolean {
+  return YMYL_CATEGORIES_V2.has(category);
 }
 
 export const PRIMARY_LANGS = ['en', 'ko', 'ja', 'zh-CN', 'zh-TW', 'es'] as const;
@@ -74,6 +154,16 @@ function loadAll(): ArticleV2[] {
             : statSync(full).mtime.toISOString();
         }
         if (!parsed.published_at) parsed.published_at = parsed.updated_at;
+        // PRD §6.1 / E-004 — 15-enum guard (빌드 차단, 무허가 카테고리 추가 방지)
+        if (!ALLOWED_CATEGORIES_V2.has(parsed.category)) {
+          throw new Error(
+            `Unknown category in ${f}: "${parsed.category}". ` +
+              `Allowed: ${Array.from(ALLOWED_CATEGORIES_V2).join(', ')}`,
+          );
+        }
+        // PRD §5.2.1 / §7.1 Step 1 — default author/reviewer 런타임 주입 (JSON 무수정)
+        if (!parsed.author) parsed.author = DEFAULT_AUTHOR;
+        if (!parsed.reviewer) parsed.reviewer = DEFAULT_REVIEWER;
         out.push(parsed);
       } catch {
         // skip malformed
