@@ -4,6 +4,10 @@ import remarkGfm from 'remark-gfm';
 import type { ArticleV2, ArticleV2LangContent } from '@/lib/articles-v2';
 import InstallCTA from './InstallCTA';
 import { toFullLang } from '@/lib/i18n';
+// BLOG_AUTHORITY v1.0.0 (PRD §7.3) — 3 신규 import (기존 import 무변경)
+import ArticleAuthorBlock from './ArticleAuthorBlock';
+import MedicalDisclaimer from './MedicalDisclaimer';
+import MedicalArticleJsonLd from './MedicalArticleJsonLd';
 
 interface Props {
   article: ArticleV2;
@@ -80,7 +84,15 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
             🕓 {label('updated', shortLang)}: <strong>{content.last_updated}</strong>
           </div>
         )}
+
+        {/* BLOG_AUTHORITY v1.0.0 (PRD §7.3 Step 3a) — author/reviewer byline */}
+        <div className="mt-3">
+          <ArticleAuthorBlock article={article} shortLang={shortLang} />
+        </div>
       </header>
+
+      {/* BLOG_AUTHORITY v1.0.0 (PRD §7.3 Step 3b) — Medical disclaimer banner before body */}
+      <MedicalDisclaimer shortLang={shortLang} />
 
       <div className="prose prose-gray dark:prose-invert max-w-none prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-p:leading-relaxed prose-strong:text-gray-900 dark:prose-strong:text-gray-100">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{content.body_md}</ReactMarkdown>
@@ -162,21 +174,30 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
             {label('references', shortLang)}
           </h3>
           <ul className="space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
-            {references.map((r, i) => (
-              <li key={i} className="italic">
-                {r.url ? (
-                  <a href={r.url} target="_blank" rel="noopener" className="hover:underline">{r.text}</a>
-                ) : (
-                  r.text
-                )}
-              </li>
-            ))}
+            {references.map((r: any, i) => {
+              const refTitle = r.title ?? r.text ?? '';
+              const refSource = r.source ?? '';
+              const refUrl = r.url ?? null;
+              const display = refSource ? `${refTitle} — ${refSource}` : refTitle;
+              return (
+                <li key={i} className="italic">
+                  {refUrl ? (
+                    <a href={refUrl} target="_blank" rel="noopener" className="hover:underline">{display}</a>
+                  ) : (
+                    display
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </section>
       )}
 
       {/* Sticky CTA — mobile only */}
       <InstallCTA lang={langKey} articleId={article.article_id} variant="sticky" />
+
+      {/* BLOG_AUTHORITY v1.0.0 (PRD §7.3 Step 3e) — JSON-LD schema injection */}
+      <MedicalArticleJsonLd article={article} content={content} shortLang={shortLang} />
     </article>
   );
 }
