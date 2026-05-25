@@ -66,6 +66,7 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-1 text-sm">
           <Link href={`/${shortLang}`} className="btn-ghost">{t(lang, 'home')}</Link>
+          <Link href={`/${shortLang}/tools`} className="btn-ghost">🧮 Tools</Link>
           <a href="https://app.aihavit.com/" target="_blank" rel="noopener" className="btn-ghost">📱 App</a>
         </nav>
 
@@ -142,6 +143,7 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
         <div className="md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-3 flex flex-col gap-2">
           <a href={process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://aihavit.com'} className="py-2 text-gray-600 dark:text-gray-400">← HAVIT</a>
           <Link href={`/${shortLang}`} className="py-2">{t(lang, 'home')}</Link>
+          <Link href={`/${shortLang}/tools`} className="py-2">🧮 Tools</Link>
           <a href="https://app.aihavit.com/" target="_blank" rel="noopener" className="py-2">📱 App</a>
         </div>
       )}

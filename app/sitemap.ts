@@ -15,6 +15,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: lang === 'en' ? 1.0 : 0.9,
     });
+    entries.push({
+      url: `${SITE}/${lang}/tools`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    });
+    entries.push({
+      url: `${SITE}/${lang}/tools/bmr`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    });
   }
 
   for (const a of getAllArticles()) {
