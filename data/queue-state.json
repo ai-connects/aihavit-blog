@@ -1,6 +1,6 @@
 {
-  "total": 965,
-  "completed": 965,
+  "total": 1065,
+  "completed": 1065,
   "in_progress": 0,
   "pending": 0,
   "failed": 0,
@@ -27017,8 +27017,2857 @@
         "es"
       ],
       "updated_at": "2026-05-24T16:30:20.939Z"
+    },
+    {
+      "slug": "glp1-muscle-preservation-protein-timing-resistance-training-2026",
+      "seed": {
+        "slug": "glp1-muscle-preservation-protein-timing-resistance-training-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "guide",
+        "primary_keyword_en": "how to prevent muscle loss on semaglutide with protein timing",
+        "primary_keyword_ko": "세마글루타이드 복용 중 근육 손실 예방 단백질 타이밍",
+        "unique_angle": "Combines 2025 leucine threshold research with GLP-1 appetite suppression to create meal-by-meal protein distribution protocol",
+        "authoritative_sources": [
+          "NEJM 2024 STEP 5 body composition substudy",
+          "JAMA Network Open 2025 protein intake and lean mass preservation during GLP-1 therapy"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:11:33.757Z"
+    },
+    {
+      "slug": "ozempic-food-noise-disappears-what-week-timeline-2026",
+      "seed": {
+        "slug": "ozempic-food-noise-disappears-what-week-timeline-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "science",
+        "primary_keyword_en": "what week does food noise stop on Ozempic",
+        "primary_keyword_ko": "오젭픽 복용 후 음식 강박 사라지는 시기",
+        "unique_angle": "Maps the neurobiological timeline of hypothalamic appetite signal reduction across dose escalation phases",
+        "authoritative_sources": [
+          "Lancet Diabetes Endocrinology 2024 neural appetite signaling study",
+          "Obesity Reviews 2025 food reward pathway modulation"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:08:16.888Z"
+    },
+    {
+      "slug": "tirzepatide-vs-semaglutide-gi-side-effects-duration-comparison-2026",
+      "seed": {
+        "slug": "tirzepatide-vs-semaglutide-gi-side-effects-duration-comparison-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "reference",
+        "primary_keyword_en": "Mounjaro vs Wegovy nausea duration comparison",
+        "primary_keyword_ko": "마운자로 vs 위고비 메스꺼움 지속 기간 비교",
+        "unique_angle": "Week-by-week GI symptom resolution rates from SURMOUNT vs STEP trials with mitigation strategies",
+        "authoritative_sources": [
+          "NEJM 2024 SURMOUNT-1 extension safety data",
+          "JAMA Internal Medicine 2025 GLP-1 tolerability meta-analysis"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:08:08.992Z"
+    },
+    {
+      "slug": "glp1-weight-loss-plateau-after-6-months-breakthrough-strategies-2026",
+      "seed": {
+        "slug": "glp1-weight-loss-plateau-after-6-months-breakthrough-strategies-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "guide",
+        "primary_keyword_en": "Wegovy stopped working after 6 months what to do",
+        "primary_keyword_ko": "위고비 6개월 후 효과 감소 돌파 전략",
+        "unique_angle": "Evidence-based plateau interventions including metabolic adaptation markers and dose optimization timing",
+        "authoritative_sources": [
+          "Lancet 2025 GLP-1 long-term efficacy predictors",
+          "Obesity 2024 metabolic adaptation during pharmacotherapy"
+        ],
+        "reading_time_min": 14
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:08:06.797Z"
+    },
+    {
+      "slug": "stopping-semaglutide-weight-regain-prevention-protocol-2026",
+      "seed": {
+        "slug": "stopping-semaglutide-weight-regain-prevention-protocol-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "guide",
+        "primary_keyword_en": "how to maintain weight after stopping Ozempic",
+        "primary_keyword_ko": "오젭픽 중단 후 체중 유지 방법",
+        "unique_angle": "12-month post-discontinuation behavior maintenance protocol based on STEP 4 withdrawal data",
+        "authoritative_sources": [
+          "NEJM 2024 STEP 4 one-year discontinuation outcomes",
+          "Diabetes Care 2025 GLP-1 cessation weight trajectory analysis"
+        ],
+        "reading_time_min": 13
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:08:12.521Z"
+    },
+    {
+      "slug": "resistance-training-program-on-glp1-medication-muscle-retention-2026",
+      "seed": {
+        "slug": "resistance-training-program-on-glp1-medication-muscle-retention-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "guide",
+        "primary_keyword_en": "best strength training program while on Wegovy",
+        "primary_keyword_ko": "위고비 복용 중 최적 근력 운동 프로그램",
+        "unique_angle": "Progressive overload periodization adjusted for caloric deficit and appetite suppression side effects",
+        "authoritative_sources": [
+          "JAMA 2025 exercise prescription during GLP-1 therapy",
+          "British Journal of Sports Medicine 2024 resistance training in pharmacological weight loss"
+        ],
+        "reading_time_min": 15
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:08:32.888Z"
+    },
+    {
+      "slug": "drinking-alcohol-on-semaglutide-safety-tolerance-changes-2026",
+      "seed": {
+        "slug": "drinking-alcohol-on-semaglutide-safety-tolerance-changes-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "science",
+        "primary_keyword_en": "can you drink alcohol on Ozempic safely",
+        "primary_keyword_ko": "오젭픽 복용 중 음주 안전성",
+        "unique_angle": "Explains altered alcohol metabolism, reduced tolerance mechanism, and hypoglycemia risk stratification",
+        "authoritative_sources": [
+          "Lancet Psychiatry 2024 GLP-1 and alcohol use disorder",
+          "Addiction Biology 2025 semaglutide alcohol reward pathway"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:07:45.365Z"
+    },
+    {
+      "slug": "compounded-semaglutide-vs-brand-wegovy-safety-efficacy-2026",
+      "seed": {
+        "slug": "compounded-semaglutide-vs-brand-wegovy-safety-efficacy-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "reference",
+        "primary_keyword_en": "is compounded semaglutide as safe as Wegovy",
+        "primary_keyword_ko": "조제 세마글루타이드 vs 위고비 안전성 비교",
+        "unique_angle": "FDA 2025 compounding guidance analysis with purity testing data and adverse event reports",
+        "authoritative_sources": [
+          "FDA Drug Safety Communication 2025 compounded GLP-1 products",
+          "JAMA Network Open 2025 compounded semaglutide quality analysis"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:08:14.451Z"
+    },
+    {
+      "slug": "glp1-bone-density-loss-risk-calcium-vitamin-d-protocol-2026",
+      "seed": {
+        "slug": "glp1-bone-density-loss-risk-calcium-vitamin-d-protocol-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "science",
+        "primary_keyword_en": "does Wegovy cause bone loss how to prevent",
+        "primary_keyword_ko": "위고비 골밀도 감소 위험 예방법",
+        "unique_angle": "Distinguishes weight-loss-related bone changes from direct GLP-1 effects with protective supplementation evidence",
+        "authoritative_sources": [
+          "Journal of Bone and Mineral Research 2025 GLP-1 agonists and skeletal health",
+          "JCEM 2024 bone turnover markers during semaglutide therapy"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:08:24.022Z"
+    },
+    {
+      "slug": "semaglutide-fertility-pregnancy-planning-discontinuation-timeline-2026",
+      "seed": {
+        "slug": "semaglutide-fertility-pregnancy-planning-discontinuation-timeline-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "guide",
+        "primary_keyword_en": "how long to stop Ozempic before getting pregnant",
+        "primary_keyword_ko": "임신 계획 시 오젭픽 중단 시기",
+        "unique_angle": "Evidence-based washout period recommendations with fertility optimization during weight loss phase",
+        "authoritative_sources": [
+          "Fertility and Sterility 2025 GLP-1 agonists preconception counseling",
+          "Obstetrics & Gynecology 2024 semaglutide pregnancy outcomes registry"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:07:56.271Z"
+    },
+    {
+      "slug": "glp1-pcos-weight-loss-insulin-resistance-improvement-2026",
+      "seed": {
+        "slug": "glp1-pcos-weight-loss-insulin-resistance-improvement-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "science",
+        "primary_keyword_en": "Ozempic for PCOS weight loss and ovulation",
+        "primary_keyword_ko": "다낭성 난소 증후군 오젭픽 체중 감량 배란 개선",
+        "unique_angle": "Dual mechanism analysis of weight-dependent and weight-independent metabolic improvements in PCOS",
+        "authoritative_sources": [
+          "JCEM 2025 GLP-1 agonists in polycystic ovary syndrome",
+          "Human Reproduction 2024 tirzepatide metabolic outcomes in PCOS"
+        ],
+        "reading_time_min": 13
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:15:18.357Z"
+    },
+    {
+      "slug": "ozempic-depression-anxiety-side-effect-vs-improvement-2026",
+      "seed": {
+        "slug": "ozempic-depression-anxiety-side-effect-vs-improvement-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "science",
+        "primary_keyword_en": "does Ozempic cause depression or help anxiety",
+        "primary_keyword_ko": "오젭픽 우울증 유발 vs 불안 개선 효과",
+        "unique_angle": "Separates FDA signal detection from quality-of-life improvements with mental health screening recommendations",
+        "authoritative_sources": [
+          "JAMA Psychiatry 2025 GLP-1 agonists and psychiatric outcomes",
+          "Lancet Psychiatry 2024 semaglutide mood disorder signal analysis"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:15:28.117Z"
+    },
+    {
+      "slug": "glp1-sarcopenia-screening-dexa-grip-strength-protocol-2026",
+      "seed": {
+        "slug": "glp1-sarcopenia-screening-dexa-grip-strength-protocol-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "guide",
+        "primary_keyword_en": "how to check for muscle loss while on Wegovy",
+        "primary_keyword_ko": "위고비 복용 중 근육 감소 확인 방법",
+        "unique_angle": "Practical at-home and clinical assessment protocol with intervention thresholds during GLP-1 therapy",
+        "authoritative_sources": [
+          "Age and Ageing 2025 sarcopenia screening during obesity pharmacotherapy",
+          "JAMA Network Open 2024 functional assessment in GLP-1 weight loss"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:16:59.717Z"
+    },
+    {
+      "slug": "tirzepatide-dose-titration-schedule-minimize-nausea-2026",
+      "seed": {
+        "slug": "tirzepatide-dose-titration-schedule-minimize-nausea-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "guide",
+        "primary_keyword_en": "Mounjaro dose increase schedule to reduce side effects",
+        "primary_keyword_ko": "마운자로 용량 증가 부작용 최소화 스케줄",
+        "unique_angle": "Extended titration protocols from clinical practice showing improved tolerability without efficacy loss",
+        "authoritative_sources": [
+          "Diabetes Obesity Metabolism 2025 tirzepatide flexible titration outcomes",
+          "NEJM 2024 SURMOUNT tolerability optimization substudy"
+        ],
+        "reading_time_min": 9
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:15:29.782Z"
+    },
+    {
+      "slug": "glp1-type2-diabetes-vs-obesity-indication-dose-difference-2026",
+      "seed": {
+        "slug": "glp1-type2-diabetes-vs-obesity-indication-dose-difference-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "reference",
+        "primary_keyword_en": "Ozempic vs Wegovy difference diabetes vs weight loss dose",
+        "primary_keyword_ko": "오젭픽 vs 위고비 차이점 당뇨 vs 비만 용량",
+        "unique_angle": "Explains indication-specific dosing rationale and insurance coverage implications for each formulation",
+        "authoritative_sources": [
+          "Diabetes Care 2025 semaglutide prescribing guidelines update",
+          "JAMA Internal Medicine 2024 GLP-1 indication-specific outcomes"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:15:21.320Z"
+    },
+    {
+      "slug": "glp1-longevity-cardiovascular-protection-beyond-weight-loss-2026",
+      "seed": {
+        "slug": "glp1-longevity-cardiovascular-protection-beyond-weight-loss-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "science",
+        "primary_keyword_en": "does semaglutide extend lifespan cardiovascular benefits",
+        "primary_keyword_ko": "세마글루타이드 수명 연장 심혈관 보호 효과",
+        "unique_angle": "Separates weight-loss-mediated from direct pleiotropic cardioprotective mechanisms with SELECT trial implications",
+        "authoritative_sources": [
+          "NEJM 2024 SELECT cardiovascular outcomes trial",
+          "Nature Medicine 2025 GLP-1 agonist pleiotropic mechanisms"
+        ],
+        "reading_time_min": 14
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:15:24.858Z"
+    },
+    {
+      "slug": "wegovy-insurance-coverage-prior-authorization-tips-2026",
+      "seed": {
+        "slug": "wegovy-insurance-coverage-prior-authorization-tips-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "guide",
+        "primary_keyword_en": "how to get insurance to cover Wegovy prior authorization",
+        "primary_keyword_ko": "위고비 보험 적용 사전승인 획득 방법",
+        "unique_angle": "Step-by-step appeals process with documentation requirements and 2026 policy change summaries",
+        "authoritative_sources": [
+          "Health Affairs 2025 GLP-1 coverage policy analysis",
+          "JAMA Health Forum 2024 obesity medication access barriers"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:15:48.055Z"
+    },
+    {
+      "slug": "glp1-microdosing-lower-dose-maintenance-efficacy-2026",
+      "seed": {
+        "slug": "glp1-microdosing-lower-dose-maintenance-efficacy-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "science",
+        "primary_keyword_en": "can you take lower dose Ozempic for maintenance",
+        "primary_keyword_ko": "오젭픽 저용량 유지 요법 효과",
+        "unique_angle": "Reviews emerging maintenance dosing strategies and individual response variability for long-term use",
+        "authoritative_sources": [
+          "Obesity 2025 GLP-1 maintenance dosing strategies",
+          "Lancet Diabetes Endocrinology 2024 dose-response durability analysis"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:15:17.907Z"
+    },
+    {
+      "slug": "protein-intake-goal-on-semaglutide-grams-per-pound-2026",
+      "seed": {
+        "slug": "protein-intake-goal-on-semaglutide-grams-per-pound-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "reference",
+        "primary_keyword_en": "how much protein per day on Wegovy to keep muscle",
+        "primary_keyword_ko": "위고비 복용 시 근육 유지 하루 단백질 섭취량",
+        "unique_angle": "Calculates personalized protein targets based on lean mass preservation research during GLP-1 therapy",
+        "authoritative_sources": [
+          "American Journal of Clinical Nutrition 2025 protein requirements during pharmacological weight loss",
+          "JAMA Network Open 2024 dietary protein and body composition on GLP-1"
+        ],
+        "reading_time_min": 9
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:15:35.928Z"
+    },
+    {
+      "slug": "semaglutide-hair-loss-cause-prevention-timeline-2026",
+      "seed": {
+        "slug": "semaglutide-hair-loss-cause-prevention-timeline-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "science",
+        "primary_keyword_en": "does Ozempic cause hair loss and when does it stop",
+        "primary_keyword_ko": "오젭픽 탈모 원인 및 회복 시기",
+        "unique_angle": "Distinguishes telogen effluvium from rapid weight loss versus direct drug effects with nutritional interventions",
+        "authoritative_sources": [
+          "JAAD 2025 hair loss during obesity pharmacotherapy",
+          "Obesity Reviews 2024 nutritional deficiencies and telogen effluvium"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:15:51.792Z"
+    },
+    {
+      "slug": "transitioning-from-ozempic-to-mounjaro-protocol-2026",
+      "seed": {
+        "slug": "transitioning-from-ozempic-to-mounjaro-protocol-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "guide",
+        "primary_keyword_en": "how to switch from Ozempic to Mounjaro safely",
+        "primary_keyword_ko": "오젭픽에서 마운자로 전환 방법",
+        "unique_angle": "Evidence-based switching protocols with dose equivalence and GI tolerability management during transition",
+        "authoritative_sources": [
+          "Diabetes Care 2025 GLP-1 agonist switching guidelines",
+          "Endocrine Practice 2024 tirzepatide transition outcomes"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:22:04.336Z"
+    },
+    {
+      "slug": "glp1-gastroparesis-risk-delayed-gastric-emptying-symptoms-2026",
+      "seed": {
+        "slug": "glp1-gastroparesis-risk-delayed-gastric-emptying-symptoms-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "science",
+        "primary_keyword_en": "Ozempic gastroparesis symptoms how long does it last",
+        "primary_keyword_ko": "오젭픽 위마비 증상 지속 기간",
+        "unique_angle": "Differentiates expected GI slowing from pathological gastroparesis with red flag symptoms and management",
+        "authoritative_sources": [
+          "Gastroenterology 2025 GLP-1 agonist gastrointestinal motility effects",
+          "JAMA 2024 gastroparesis signal during semaglutide therapy"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:21:41.378Z"
+    },
+    {
+      "slug": "creatine-supplementation-on-glp1-muscle-preservation-2026",
+      "seed": {
+        "slug": "creatine-supplementation-on-glp1-muscle-preservation-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "guide",
+        "primary_keyword_en": "should I take creatine while on Wegovy for muscle",
+        "primary_keyword_ko": "위고비 복용 중 크레아틴 보충 근육 보존",
+        "unique_angle": "Evaluates creatine's additive muscle-sparing effect during GLP-1-induced caloric deficit with dosing protocol",
+        "authoritative_sources": [
+          "Sports Medicine 2025 creatine during weight loss interventions",
+          "JISSN 2024 supplementation strategies for lean mass preservation"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:20:53.290Z"
+    },
+    {
+      "slug": "glp1-retatrutide-triple-agonist-comparison-2026",
+      "seed": {
+        "slug": "glp1-retatrutide-triple-agonist-comparison-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "science",
+        "primary_keyword_en": "retatrutide vs tirzepatide vs semaglutide comparison",
+        "primary_keyword_ko": "레타트루타이드 vs 티르제파타이드 vs 세마글루타이드 비교",
+        "unique_angle": "Compares mono, dual, and triple incretin agonist mechanisms with phase 3 efficacy and safety profiles",
+        "authoritative_sources": [
+          "NEJM 2024 retatrutide phase 3 obesity trial",
+          "Lancet 2025 incretin-based therapy evolution review"
+        ],
+        "reading_time_min": 13
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:20:59.168Z"
+    },
+    {
+      "slug": "exercise-timing-before-after-glp1-injection-optimal-2026",
+      "seed": {
+        "slug": "exercise-timing-before-after-glp1-injection-optimal-2026",
+        "category": "Medication Guide",
+        "category_emoji": "💊",
+        "type": "tip",
+        "primary_keyword_en": "best time to exercise before or after Wegovy injection",
+        "primary_keyword_ko": "위고비 주사 전후 운동 최적 타이밍",
+        "unique_angle": "Aligns workout scheduling with GLP-1 pharmacokinetics and GI side effect peaks for training optimization",
+        "authoritative_sources": [
+          "British Journal of Sports Medicine 2025 exercise timing and GLP-1 therapy",
+          "Obesity 2024 physical activity adherence during semaglutide treatment"
+        ],
+        "reading_time_min": 8
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:20:45.178Z"
+    },
+    {
+      "slug": "cgm-glucose-variability-vs-hba1c-non-diabetic-health-metric-2026",
+      "seed": {
+        "slug": "cgm-glucose-variability-vs-hba1c-non-diabetic-health-metric-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "science",
+        "primary_keyword_en": "glucose variability vs HbA1c non-diabetic health marker",
+        "primary_keyword_ko": "비당뇨인 혈당변동성 vs 당화혈색소 건강지표 비교",
+        "unique_angle": "Why time-in-range and CV% outperform HbA1c for metabolic health optimization in non-diabetics based on PREDICT study findings",
+        "authoritative_sources": [
+          "Spector ZOE PREDICT Study Nat Med 2024",
+          "ATTD 2025 CGM Consensus Non-Diabetic Metrics",
+          "Diabetes Care 2024 Glycemic Variability Review"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:21:01.171Z"
+    },
+    {
+      "slug": "post-meal-glucose-spike-threshold-non-diabetic-interpretation-2026",
+      "seed": {
+        "slug": "post-meal-glucose-spike-threshold-non-diabetic-interpretation-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "guide",
+        "primary_keyword_en": "post-meal glucose spike interpretation non-diabetic CGM",
+        "primary_keyword_ko": "비당뇨인 식후 혈당 스파이크 CGM 해석 기준",
+        "unique_angle": "Defining actionable thresholds (140 vs 160 mg/dL debate) for non-diabetics using Dexcom Stelo and Libre 3 data with ATTD 2024 guidance",
+        "authoritative_sources": [
+          "ATTD 2024 CGM Non-Diabetic Guidelines",
+          "Levels Health Internal Data 2024",
+          "J Clin Endocrinol Metab 2025 Postprandial Review"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:22:17.774Z"
+    },
+    {
+      "slug": "dawn-phenomenon-non-diabetic-morning-glucose-spike-cause-2026",
+      "seed": {
+        "slug": "dawn-phenomenon-non-diabetic-morning-glucose-spike-cause-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "science",
+        "primary_keyword_en": "dawn phenomenon non-diabetic morning glucose rise CGM",
+        "primary_keyword_ko": "비당뇨인 새벽현상 아침 공복혈당 상승 원인",
+        "unique_angle": "Cortisol-driven fasting glucose elevation in metabolically healthy individuals and whether intervention is necessary",
+        "authoritative_sources": [
+          "Diabetes Care 2024 Dawn Phenomenon Physiology",
+          "ATTD 2025 Non-Diabetic CGM Patterns",
+          "Endocrine Reviews 2024 Cortisol Glucose Axis"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:22:19.096Z"
+    },
+    {
+      "slug": "exercise-glucose-response-pattern-cgm-workout-timing-optimization-2026",
+      "seed": {
+        "slug": "exercise-glucose-response-pattern-cgm-workout-timing-optimization-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "guide",
+        "primary_keyword_en": "exercise glucose response CGM workout timing optimization",
+        "primary_keyword_ko": "운동 중 혈당 반응 패턴 CGM 운동 타이밍 최적화",
+        "unique_angle": "Decoding why glucose rises during strength training but drops during cardio and how to use CGM for personalized pre-workout fueling",
+        "authoritative_sources": [
+          "Sports Med 2024 Exercise Glucose Kinetics",
+          "Supersapiens Athletic CGM Research 2025",
+          "ATTD 2024 CGM Exercise Applications"
+        ],
+        "reading_time_min": 13
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:21:11.871Z"
+    },
+    {
+      "slug": "sleep-quality-overnight-glucose-pattern-cgm-correlation-2026",
+      "seed": {
+        "slug": "sleep-quality-overnight-glucose-pattern-cgm-correlation-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "science",
+        "primary_keyword_en": "sleep quality overnight glucose CGM pattern correlation",
+        "primary_keyword_ko": "수면 질과 야간 혈당 패턴 CGM 상관관계",
+        "unique_angle": "How poor sleep increases nocturnal glucose variability by 23% and using CGM to identify sleep-metabolism connections",
+        "authoritative_sources": [
+          "Sleep 2024 Glucose Variability Study",
+          "PREDICT Study Sleep-Glucose Analysis 2024",
+          "Diabetes Care 2025 Nocturnal Patterns"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:21:11.093Z"
+    },
+    {
+      "slug": "food-combination-glucose-response-cgm-pairing-experiment-protocol-2026",
+      "seed": {
+        "slug": "food-combination-glucose-response-cgm-pairing-experiment-protocol-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "challenge",
+        "primary_keyword_en": "food combination glucose response CGM pairing experiment",
+        "primary_keyword_ko": "음식 조합 혈당 반응 CGM 페어링 실험 프로토콜",
+        "unique_angle": "Systematic n-of-1 protocol for testing fiber-first, fat-pairing, and vinegar strategies with CGM validation",
+        "authoritative_sources": [
+          "Spector PREDICT Food Order Study 2024",
+          "Cell Metab 2024 Macronutrient Sequencing",
+          "Nutrisense Food Pairing Data 2025"
+        ],
+        "reading_time_min": 14
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:26:33.056Z"
+    },
+    {
+      "slug": "cgm-elimination-diet-protocol-food-sensitivity-glucose-trigger-2026",
+      "seed": {
+        "slug": "cgm-elimination-diet-protocol-food-sensitivity-glucose-trigger-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "guide",
+        "primary_keyword_en": "CGM elimination diet protocol food sensitivity glucose trigger",
+        "primary_keyword_ko": "CGM 기반 제거식이 프로토콜 음식 민감성 혈당 트리거",
+        "unique_angle": "Using 14-day CGM cycles to identify personal glucose trigger foods through systematic reintroduction tracking",
+        "authoritative_sources": [
+          "Levels Health Elimination Protocol 2024",
+          "PREDICT Individual Response Data 2024",
+          "J Nutr 2025 Personalized Glycemic Response"
+        ],
+        "reading_time_min": 15
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:26:44.423Z"
+    },
+    {
+      "slug": "healthy-food-unexpected-glucose-spike-cgm-discovery-oatmeal-banana-2026",
+      "seed": {
+        "slug": "healthy-food-unexpected-glucose-spike-cgm-discovery-oatmeal-banana-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "tip",
+        "primary_keyword_en": "healthy food glucose spike CGM oatmeal banana surprise",
+        "primary_keyword_ko": "건강식품 예상외 혈당 스파이크 CGM 오트밀 바나나",
+        "unique_angle": "Why oatmeal, bananas, and acai bowls spike glucose higher than expected in 40% of non-diabetics per PREDICT data",
+        "authoritative_sources": [
+          "ZOE PREDICT Healthy Food Paradox 2024",
+          "Lingo Abbott Research 2025",
+          "Am J Clin Nutr 2024 Individual Glycemic Index"
+        ],
+        "reading_time_min": 9
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:25:56.855Z"
+    },
+    {
+      "slug": "glucose-cognitive-performance-correlation-cgm-brain-fog-tracking-2026",
+      "seed": {
+        "slug": "glucose-cognitive-performance-correlation-cgm-brain-fog-tracking-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "science",
+        "primary_keyword_en": "glucose cognitive performance CGM brain fog correlation",
+        "primary_keyword_ko": "혈당 인지기능 상관관계 CGM 브레인포그 추적",
+        "unique_angle": "Linking post-meal glucose crashes (reactive hypoglycemia) to afternoon brain fog using CGM-cognition tracking protocols",
+        "authoritative_sources": [
+          "Neurology 2024 Glucose Cognition Study",
+          "PREDICT Cognitive Sub-Study 2025",
+          "Diabetes Care 2024 Hypoglycemia Cognition"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:27:00.583Z"
+    },
+    {
+      "slug": "individual-glucose-response-variation-predict-study-personalization-2026",
+      "seed": {
+        "slug": "individual-glucose-response-variation-predict-study-personalization-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "reference",
+        "primary_keyword_en": "individual glucose response variation PREDICT study personalization",
+        "primary_keyword_ko": "개인별 혈당 반응 차이 PREDICT 연구 개인화",
+        "unique_angle": "Deep dive into why identical twins show 50% different glucose responses and what this means for CGM-based nutrition",
+        "authoritative_sources": [
+          "Spector PREDICT Nature Med 2024",
+          "Cell 2024 Microbiome Glucose Response",
+          "ATTD 2025 Precision Nutrition CGM"
+        ],
+        "reading_time_min": 14
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:26:14.246Z"
+    },
+    {
+      "slug": "prediabetes-risk-screening-cgm-vs-fasting-glucose-sensitivity-2026",
+      "seed": {
+        "slug": "prediabetes-risk-screening-cgm-vs-fasting-glucose-sensitivity-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "science",
+        "primary_keyword_en": "prediabetes risk screening CGM vs fasting glucose sensitivity",
+        "primary_keyword_ko": "당뇨전단계 위험 선별 CGM vs 공복혈당 민감도",
+        "unique_angle": "How CGM detects metabolic dysfunction 3-5 years before fasting glucose becomes abnormal using time-above-140 metrics",
+        "authoritative_sources": [
+          "Lancet Diabetes Endocrinol 2024 CGM Screening",
+          "ATTD 2024 Pre-Diabetes CGM Consensus",
+          "Diabetes Care 2025 Early Detection"
+        ],
+        "reading_time_min": 13
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:26:41.196Z"
+    },
+    {
+      "slug": "athlete-glycemic-optimization-cgm-race-day-fueling-protocol-2026",
+      "seed": {
+        "slug": "athlete-glycemic-optimization-cgm-race-day-fueling-protocol-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "guide",
+        "primary_keyword_en": "athlete glycemic optimization CGM race day fueling protocol",
+        "primary_keyword_ko": "운동선수 혈당 최적화 CGM 경기일 연료공급 프로토콜",
+        "unique_angle": "Using Supersapiens and Dexcom data to dial in pre-race carb timing and avoid bonking through real-time glucose targeting",
+        "authoritative_sources": [
+          "Supersapiens Elite Athlete Data 2025",
+          "Sports Med 2024 CGM Endurance Performance",
+          "ATTD 2024 Athletic CGM Applications"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:26:37.538Z"
+    },
+    {
+      "slug": "intermittent-fasting-glucose-monitoring-cgm-metabolic-switching-2026",
+      "seed": {
+        "slug": "intermittent-fasting-glucose-monitoring-cgm-metabolic-switching-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "guide",
+        "primary_keyword_en": "intermittent fasting glucose monitoring CGM metabolic switching",
+        "primary_keyword_ko": "간헐적 단식 혈당 모니터링 CGM 대사 전환점",
+        "unique_angle": "Identifying personal fasting glucose nadir and metabolic switch timing using CGM to optimize eating windows",
+        "authoritative_sources": [
+          "Cell Metab 2024 Fasting Glucose Kinetics",
+          "Levels Fasting Protocol Analysis 2025",
+          "NEJM 2024 Time-Restricted Eating Review"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:26:22.195Z"
+    },
+    {
+      "slug": "alcohol-glucose-impact-cgm-delayed-hypoglycemia-tracking-2026",
+      "seed": {
+        "slug": "alcohol-glucose-impact-cgm-delayed-hypoglycemia-tracking-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "tip",
+        "primary_keyword_en": "alcohol glucose impact CGM delayed hypoglycemia tracking",
+        "primary_keyword_ko": "알코올 혈당 영향 CGM 지연성 저혈당 추적",
+        "unique_angle": "Why wine causes overnight glucose crashes 6-8 hours later and using CGM to identify personal alcohol tolerance patterns",
+        "authoritative_sources": [
+          "Diabetes Care 2024 Alcohol Glucose Metabolism",
+          "Nutrisense Alcohol Impact Study 2025",
+          "J Clin Endocrinol Metab 2024 Ethanol Hypoglycemia"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:26:08.270Z"
+    },
+    {
+      "slug": "dexcom-stelo-vs-libre-3-plus-vs-lingo-non-diabetic-cgm-comparison-2026",
+      "seed": {
+        "slug": "dexcom-stelo-vs-libre-3-plus-vs-lingo-non-diabetic-cgm-comparison-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "📊",
+        "type": "reference",
+        "primary_keyword_en": "Dexcom Stelo vs Libre 3 Plus vs Lingo CGM comparison non-diabetic",
+        "primary_keyword_ko": "덱스콤 스텔로 vs 리브레3플러스 vs 링고 CGM 비교 비당뇨인",
+        "unique_angle": "Head-to-head accuracy, app features, and cost analysis for OTC CGMs targeting metabolic wellness users in 2026",
+        "authoritative_sources": [
+          "ATTD 2025 OTC CGM Accuracy Comparison",
+          "Diabetes Technol Ther 2024 Consumer CGM Review",
+          "Abbott Lingo Clinical Validation 2025"
+        ],
+        "reading_time_min": 16
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:26:08.961Z"
+    },
+    {
+      "slug": "apple-watch-ultra-3-vo2max-accuracy-vs-lab-cpet-2026",
+      "seed": {
+        "slug": "apple-watch-ultra-3-vo2max-accuracy-vs-lab-cpet-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "science",
+        "primary_keyword_en": "Apple Watch Ultra 3 VO2max accuracy compared to lab CPET",
+        "primary_keyword_ko": "애플워치 울트라3 VO2max 정확도 실험실 CPET 비교",
+        "unique_angle": "Head-to-head validation of Apple's 2025 algorithm update against gold-standard cardiopulmonary exercise testing in trained vs untrained populations",
+        "authoritative_sources": [
+          "British Journal of Sports Medicine 2025 wearable VO2max validation study",
+          "Medicine & Science in Sports & Exercise 2024 consumer device accuracy meta-analysis"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:31:12.366Z"
+    },
+    {
+      "slug": "whoop-5-vs-oura-ring-4-hrv-agreement-overnight-2026",
+      "seed": {
+        "slug": "whoop-5-vs-oura-ring-4-hrv-agreement-overnight-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "guide",
+        "primary_keyword_en": "Whoop 5.0 vs Oura Ring 4 overnight HRV agreement",
+        "primary_keyword_ko": "후프5 vs 오우라링4 야간 HRV 일치도 비교",
+        "unique_angle": "Quantifies inter-device HRV variance using RMSSD and compares morning readiness score outputs for training decisions",
+        "authoritative_sources": [
+          "Frontiers in Physiology 2025 consumer HRV device comparison",
+          "Journal of Sports Sciences 2024 wearable HRV reliability study"
+        ],
+        "reading_time_min": 14
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:30:36.577Z"
+    },
+    {
+      "slug": "garmin-fenix-8-training-load-acute-chronic-workload-ratio-accuracy-2026",
+      "seed": {
+        "slug": "garmin-fenix-8-training-load-acute-chronic-workload-ratio-accuracy-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "science",
+        "primary_keyword_en": "Garmin Fenix 8 training load acute chronic workload ratio accuracy",
+        "primary_keyword_ko": "가민 피닉스8 트레이닝 로드 급성만성비율 정확도",
+        "unique_angle": "Evaluates Garmin's ACWR algorithm against research-validated injury risk thresholds in endurance athletes",
+        "authoritative_sources": [
+          "International Journal of Sports Physiology and Performance 2025 ACWR wearable study",
+          "Sports Medicine 2024 training load monitoring systematic review"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:30:36.162Z"
+    },
+    {
+      "slug": "oura-ring-4-sleep-staging-accuracy-vs-polysomnography-2026",
+      "seed": {
+        "slug": "oura-ring-4-sleep-staging-accuracy-vs-polysomnography-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "science",
+        "primary_keyword_en": "Oura Ring 4 sleep staging accuracy vs polysomnography validation",
+        "primary_keyword_ko": "오우라링4 수면단계 정확도 수면다원검사 검증",
+        "unique_angle": "Analyzes epoch-by-epoch agreement rates for deep, REM, and light sleep against PSG gold standard in home environments",
+        "authoritative_sources": [
+          "Sleep 2025 Oura Gen3/4 validation study",
+          "Journal of Clinical Sleep Medicine 2024 consumer sleep tracker accuracy review"
+        ],
+        "reading_time_min": 13
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:31:23.410Z"
+    },
+    {
+      "slug": "apple-watch-afib-detection-sensitivity-specificity-real-world-2026",
+      "seed": {
+        "slug": "apple-watch-afib-detection-sensitivity-specificity-real-world-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "science",
+        "primary_keyword_en": "Apple Watch AFib detection sensitivity specificity real world performance",
+        "primary_keyword_ko": "애플워치 심방세동 감지 민감도 특이도 실제 성능",
+        "unique_angle": "Examines false positive rates and detection accuracy in asymptomatic populations beyond controlled FDA trial conditions",
+        "authoritative_sources": [
+          "NEJM 2024 Apple Heart Study long-term follow-up",
+          "Circulation 2025 smartwatch arrhythmia detection real-world data"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:30:59.151Z"
+    },
+    {
+      "slug": "garmin-forerunner-970-running-power-accuracy-stryd-comparison-2026",
+      "seed": {
+        "slug": "garmin-forerunner-970-running-power-accuracy-stryd-comparison-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "guide",
+        "primary_keyword_en": "Garmin Forerunner 970 running power accuracy vs Stryd comparison",
+        "primary_keyword_ko": "가민 포러너970 러닝파워 정확도 스트라이드 비교",
+        "unique_angle": "Compares wrist-based running power estimation against foot-pod gold standard across varied terrain and paces",
+        "authoritative_sources": [
+          "Journal of Sports Sciences 2025 running power device validation",
+          "European Journal of Sport Science 2024 wearable power meter accuracy"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:30:35.481Z"
+    },
+    {
+      "slug": "whoop-5-recovery-score-next-day-performance-prediction-2026",
+      "seed": {
+        "slug": "whoop-5-recovery-score-next-day-performance-prediction-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "science",
+        "primary_keyword_en": "Whoop 5.0 recovery score next day athletic performance prediction",
+        "primary_keyword_ko": "후프5.0 회복점수 다음날 운동성과 예측 정확도",
+        "unique_angle": "Tests whether Whoop recovery scores actually predict measurable performance outcomes in training studies",
+        "authoritative_sources": [
+          "International Journal of Sports Physiology and Performance 2025 recovery metric validation",
+          "Journal of Strength and Conditioning Research 2024 readiness score efficacy"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:30:46.356Z"
+    },
+    {
+      "slug": "polar-vantage-v3-orthostatic-test-hrv-morning-readiness-2026",
+      "seed": {
+        "slug": "polar-vantage-v3-orthostatic-test-hrv-morning-readiness-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "guide",
+        "primary_keyword_en": "Polar Vantage V3 orthostatic test HRV morning readiness protocol",
+        "primary_keyword_ko": "폴라 밴티지V3 기립성검사 HRV 아침 준비도 프로토콜",
+        "unique_angle": "Details the standardized orthostatic HRV protocol and interprets autonomic nervous system balance for training decisions",
+        "authoritative_sources": [
+          "Scandinavian Journal of Medicine & Science in Sports 2024 orthostatic HRV review",
+          "European Journal of Applied Physiology 2025 morning HRV protocols"
+        ],
+        "reading_time_min": 9
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:31:35.691Z"
+    },
+    {
+      "slug": "wearable-blood-oxygen-altitude-accuracy-climbers-skiers-2026",
+      "seed": {
+        "slug": "wearable-blood-oxygen-altitude-accuracy-climbers-skiers-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "guide",
+        "primary_keyword_en": "wearable blood oxygen accuracy at altitude for climbers skiers",
+        "primary_keyword_ko": "고도에서 웨어러블 혈중산소 정확도 등산 스키",
+        "unique_angle": "Compares SpO2 sensor accuracy across Apple, Garmin, and Polar devices at elevations above 3000m during cold exposure",
+        "authoritative_sources": [
+          "High Altitude Medicine & Biology 2025 wearable SpO2 validation",
+          "Wilderness & Environmental Medicine 2024 pulse oximetry altitude study"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:32:36.493Z"
+    },
+    {
+      "slug": "oura-ring-4-skin-temperature-ovulation-detection-vs-bbt-2026",
+      "seed": {
+        "slug": "oura-ring-4-skin-temperature-ovulation-detection-vs-bbt-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "science",
+        "primary_keyword_en": "Oura Ring 4 skin temperature ovulation detection vs basal body temperature",
+        "primary_keyword_ko": "오우라링4 피부온도 배란감지 기초체온 비교",
+        "unique_angle": "Evaluates continuous nighttime temperature deviation patterns against traditional BBT charting for fertility awareness",
+        "authoritative_sources": [
+          "Fertility and Sterility 2025 wearable temperature cycle tracking study",
+          "Journal of Medical Internet Research 2024 digital fertility tracking accuracy"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:31:06.909Z"
+    },
+    {
+      "slug": "garmin-body-battery-algorithm-validation-cortisol-stress-2026",
+      "seed": {
+        "slug": "garmin-body-battery-algorithm-validation-cortisol-stress-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "science",
+        "primary_keyword_en": "Garmin Body Battery algorithm validation cortisol stress correlation",
+        "primary_keyword_ko": "가민 바디배터리 알고리즘 검증 코르티솔 스트레스 상관관계",
+        "unique_angle": "Tests whether Body Battery scores correlate with salivary cortisol patterns and subjective fatigue measures",
+        "authoritative_sources": [
+          "Psychoneuroendocrinology 2024 wearable stress biomarker study",
+          "Journal of Science and Medicine in Sport 2025 recovery metric validation"
+        ],
+        "reading_time_min": 13
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:36:20.751Z"
+    },
+    {
+      "slug": "pixel-watch-3-stress-detection-electrodermal-activity-accuracy-2026",
+      "seed": {
+        "slug": "pixel-watch-3-stress-detection-electrodermal-activity-accuracy-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "science",
+        "primary_keyword_en": "Pixel Watch 3 stress detection electrodermal activity accuracy",
+        "primary_keyword_ko": "픽셀워치3 스트레스 감지 피부전기활동 정확도",
+        "unique_angle": "Analyzes Google's cEDA sensor stress response detection against laboratory stressor protocols",
+        "authoritative_sources": [
+          "Psychophysiology 2025 wearable EDA stress detection study",
+          "IEEE Journal of Biomedical and Health Informatics 2024 consumer stress sensor review"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:37:05.132Z"
+    },
+    {
+      "slug": "apple-watch-vs-garmin-swimming-stroke-detection-accuracy-2026",
+      "seed": {
+        "slug": "apple-watch-vs-garmin-swimming-stroke-detection-accuracy-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "guide",
+        "primary_keyword_en": "Apple Watch vs Garmin swimming stroke detection lap counting accuracy",
+        "primary_keyword_ko": "애플워치 vs 가민 수영 스트로크 감지 랩카운팅 정확도",
+        "unique_angle": "Pool and open water stroke type recognition and distance accuracy comparison with video validation",
+        "authoritative_sources": [
+          "International Journal of Sports Science & Coaching 2025 swim wearable validation",
+          "Journal of Swimming Research 2024 stroke detection accuracy study"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:36:55.211Z"
+    },
+    {
+      "slug": "wearable-ecg-single-lead-accuracy-limitations-arrhythmia-2026",
+      "seed": {
+        "slug": "wearable-ecg-single-lead-accuracy-limitations-arrhythmia-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "science",
+        "primary_keyword_en": "wearable single lead ECG accuracy limitations arrhythmia detection",
+        "primary_keyword_ko": "웨어러블 단일리드 ECG 정확도 한계 부정맥 감지",
+        "unique_angle": "Explains what single-lead ECG can and cannot detect compared to 12-lead clinical ECG for informed expectations",
+        "authoritative_sources": [
+          "Heart Rhythm 2025 consumer ECG device review",
+          "Journal of the American College of Cardiology 2024 wearable ECG limitations study"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:36:52.761Z"
+    },
+    {
+      "slug": "whoop-vs-apple-watch-cycling-strain-score-power-meter-validation-2026",
+      "seed": {
+        "slug": "whoop-vs-apple-watch-cycling-strain-score-power-meter-validation-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "guide",
+        "primary_keyword_en": "Whoop vs Apple Watch cycling strain score power meter validation",
+        "primary_keyword_ko": "후프 vs 애플워치 사이클링 스트레인 점수 파워미터 검증",
+        "unique_angle": "Compares HR-based strain calculations against actual cycling power output for training load accuracy",
+        "authoritative_sources": [
+          "International Journal of Sports Physiology and Performance 2025 cycling wearable study",
+          "Journal of Science and Cycling 2024 training load device comparison"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:37:01.517Z"
+    },
+    {
+      "slug": "oura-ring-readiness-score-menopause-hot-flash-impact-2026",
+      "seed": {
+        "slug": "oura-ring-readiness-score-menopause-hot-flash-impact-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "guide",
+        "primary_keyword_en": "Oura Ring readiness score menopause hot flash sleep impact",
+        "primary_keyword_ko": "오우라링 준비도점수 폐경기 열감 수면 영향",
+        "unique_angle": "Addresses how vasomotor symptoms affect wearable sleep and readiness metrics with interpretation strategies for perimenopausal users",
+        "authoritative_sources": [
+          "Menopause 2025 wearable tracking perimenopause study",
+          "Journal of Women's Health 2024 sleep tracking menopause review"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:36:36.519Z"
+    },
+    {
+      "slug": "garmin-hrv-status-7-day-baseline-interpretation-training-2026",
+      "seed": {
+        "slug": "garmin-hrv-status-7-day-baseline-interpretation-training-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "guide",
+        "primary_keyword_en": "Garmin HRV status 7 day baseline interpretation training decisions",
+        "primary_keyword_ko": "가민 HRV상태 7일 기준선 해석 훈련 결정",
+        "unique_angle": "Explains the rolling baseline methodology and when low/high HRV status should modify training versus being ignored",
+        "authoritative_sources": [
+          "Sports Medicine 2025 HRV-guided training systematic review",
+          "Journal of Sports Sciences 2024 HRV baseline interpretation study"
+        ],
+        "reading_time_min": 9
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:36:58.630Z"
+    },
+    {
+      "slug": "wearable-data-anxiety-quantified-self-obsession-management-2026",
+      "seed": {
+        "slug": "wearable-data-anxiety-quantified-self-obsession-management-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "guide",
+        "primary_keyword_en": "wearable data anxiety quantified self obsession management strategies",
+        "primary_keyword_ko": "웨어러블 데이터 불안 자기측정 강박 관리 전략",
+        "unique_angle": "Evidence-based approaches to prevent health tracking from becoming counterproductive including metric reduction frameworks",
+        "authoritative_sources": [
+          "Journal of Medical Internet Research 2025 wearable anxiety study",
+          "Digital Health 2024 quantified self psychological impact review"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:36:53.194Z"
+    },
+    {
+      "slug": "apple-watch-garmin-resting-heart-rate-measurement-timing-difference-2026",
+      "seed": {
+        "slug": "apple-watch-garmin-resting-heart-rate-measurement-timing-difference-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "reference",
+        "primary_keyword_en": "Apple Watch vs Garmin resting heart rate measurement timing methodology difference",
+        "primary_keyword_ko": "애플워치 vs 가민 안정시심박수 측정 타이밍 방법론 차이",
+        "unique_angle": "Details why RHR values differ between devices due to measurement windows and averaging algorithms",
+        "authoritative_sources": [
+          "Journal of Sports Sciences 2024 RHR measurement standardization study",
+          "European Journal of Preventive Cardiology 2025 wearable RHR accuracy review"
+        ],
+        "reading_time_min": 8
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:36:07.898Z"
+    },
+    {
+      "slug": "wearable-sleep-score-actionable-interpretation-framework-2026",
+      "seed": {
+        "slug": "wearable-sleep-score-actionable-interpretation-framework-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "guide",
+        "primary_keyword_en": "wearable sleep score actionable interpretation framework decision tree",
+        "primary_keyword_ko": "웨어러블 수면점수 실행가능한 해석 프레임워크 결정트리",
+        "unique_angle": "Creates a decision matrix for when sleep scores warrant behavior change versus when to ignore daily fluctuations",
+        "authoritative_sources": [
+          "Sleep Medicine Reviews 2025 consumer sleep technology guidance",
+          "Journal of Clinical Sleep Medicine 2024 sleep tracker interpretation framework"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:36:49.797Z"
+    },
+    {
+      "slug": "polar-h10-chest-strap-vs-optical-hr-interval-training-accuracy-2026",
+      "seed": {
+        "slug": "polar-h10-chest-strap-vs-optical-hr-interval-training-accuracy-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "science",
+        "primary_keyword_en": "Polar H10 chest strap vs optical heart rate interval training accuracy",
+        "primary_keyword_ko": "폴라H10 가슴스트랩 vs 광학심박 인터벌 트레이닝 정확도",
+        "unique_angle": "Quantifies optical sensor lag and missed beats during high-intensity intervals affecting zone-based training",
+        "authoritative_sources": [
+          "Medicine & Science in Sports & Exercise 2025 HR sensor HIIT accuracy study",
+          "Journal of Sports Sciences 2024 optical HR motion artifact review"
+        ],
+        "reading_time_min": 9
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:41:01.665Z"
+    },
+    {
+      "slug": "wearable-nutrition-tracking-glucose-integration-cgm-smartwatch-2026",
+      "seed": {
+        "slug": "wearable-nutrition-tracking-glucose-integration-cgm-smartwatch-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "guide",
+        "primary_keyword_en": "wearable nutrition tracking glucose integration CGM smartwatch workflow",
+        "primary_keyword_ko": "웨어러블 영양추적 포도당 연동 CGM 스마트워치 워크플로우",
+        "unique_angle": "Practical integration of continuous glucose data with activity metrics for non-diabetic metabolic optimization",
+        "authoritative_sources": [
+          "Cell Metabolism 2024 CGM healthy population study",
+          "Nutrients 2025 wearable-CGM integration nutrition review"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:41:19.030Z"
+    },
+    {
+      "slug": "screen-time-before-bed-wearable-sleep-quality-correlation-2026",
+      "seed": {
+        "slug": "screen-time-before-bed-wearable-sleep-quality-correlation-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "science",
+        "primary_keyword_en": "screen time before bed wearable sleep quality correlation analysis",
+        "primary_keyword_ko": "취침전 스크린타임 웨어러블 수면품질 상관관계 분석",
+        "unique_angle": "Uses wearable sleep data to quantify personal screen time impact on sleep latency and deep sleep percentage",
+        "authoritative_sources": [
+          "Sleep Health 2025 screen time sleep wearable study",
+          "JAMA Pediatrics 2024 digital media sleep meta-analysis"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:45:30.476Z"
+    },
+    {
+      "slug": "multi-device-wearable-data-consolidation-single-source-truth-2026",
+      "seed": {
+        "slug": "multi-device-wearable-data-consolidation-single-source-truth-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "guide",
+        "primary_keyword_en": "multi device wearable data consolidation single source of truth strategy",
+        "primary_keyword_ko": "멀티디바이스 웨어러블 데이터 통합 단일 진실 소스 전략",
+        "unique_angle": "Framework for users with multiple wearables to avoid conflicting metrics and decision paralysis",
+        "authoritative_sources": [
+          "npj Digital Medicine 2025 wearable data integration review",
+          "Journal of Medical Internet Research 2024 multi-device health tracking study"
+        ],
+        "reading_time_min": 9
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:41:38.430Z"
+    },
+    {
+      "slug": "wearable-vo2max-decline-aging-tracking-fitness-age-interpretation-2026",
+      "seed": {
+        "slug": "wearable-vo2max-decline-aging-tracking-fitness-age-interpretation-2026",
+        "category": "Tracking & Insights",
+        "category_emoji": "⌚",
+        "type": "guide",
+        "primary_keyword_en": "wearable VO2max decline aging tracking fitness age interpretation",
+        "primary_keyword_ko": "웨어러블 VO2max 감소 노화 추적 피트니스나이 해석",
+        "unique_angle": "Contextualizes normal age-related VO2max decline rates against wearable fitness age metrics for realistic goal setting",
+        "authoritative_sources": [
+          "Circulation 2024 VO2max aging longitudinal study",
+          "Journal of the American Geriatrics Society 2025 wearable fitness aging review"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:41:15.585Z"
+    },
+    {
+      "slug": "biological-age-test-comparison-trudiagnostic-elysium-glycanage-accuracy-2026",
+      "seed": {
+        "slug": "biological-age-test-comparison-trudiagnostic-elysium-glycanage-accuracy-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "reference",
+        "primary_keyword_en": "biological age test accuracy comparison TruDiagnostic vs Elysium vs GlycanAge",
+        "primary_keyword_ko": "생물학적 나이 검사 정확도 비교 TruDiagnostic Elysium GlycanAge",
+        "unique_angle": "Head-to-head comparison of epigenetic clock methodologies (Horvath, GrimAge, DunedinPACE) across three major commercial tests with reproducibility data from same-individual repeat testing",
+        "authoritative_sources": [
+          "Nature Aging 2024 DunedinPACE validation study",
+          "Aging Cell 2025 commercial epigenetic test reproducibility analysis",
+          "Belsky et al. PNAS 2024 pace of aging measurement"
+        ],
+        "reading_time_min": 14
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:46:39.830Z"
+    },
+    {
+      "slug": "nmn-nr-nad-precursor-efficacy-human-trial-update-2026",
+      "seed": {
+        "slug": "nmn-nr-nad-precursor-efficacy-human-trial-update-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "science",
+        "primary_keyword_en": "NMN vs NR NAD+ precursor human clinical trial results 2026",
+        "primary_keyword_ko": "NMN NR NAD+ 전구체 인체 임상시험 결과 2026",
+        "unique_angle": "Analysis of 2024-2026 RCTs showing tissue-specific NAD+ elevation, the NAMPT enzyme bottleneck debate, and why blood NAD+ levels don't predict cellular outcomes",
+        "authoritative_sources": [
+          "Cell Metabolism 2024 NMN phase II trial",
+          "Nature Communications 2025 NR bioavailability study",
+          "Sinclair Lab Science 2024 NAD+ tissue distribution"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:41:14.322Z"
+    },
+    {
+      "slug": "rapamycin-off-label-longevity-dosing-protocol-risks-2026",
+      "seed": {
+        "slug": "rapamycin-off-label-longevity-dosing-protocol-risks-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "guide",
+        "primary_keyword_en": "rapamycin off-label longevity dosing schedule side effects",
+        "primary_keyword_ko": "라파마이신 오프라벨 장수 복용 스케줄 부작용",
+        "unique_angle": "Examining pulsed vs continuous dosing from PEARL trial data, mTORC1 vs mTORC2 inhibition timing, and immunosuppression risk stratification for non-transplant users",
+        "authoritative_sources": [
+          "Lancet Healthy Longevity 2025 PEARL trial interim results",
+          "Aging Cell 2024 intermittent rapamycin immune function",
+          "Kaeberlein Lab eLife 2024 mTOR cycling protocol"
+        ],
+        "reading_time_min": 15
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:47:04.009Z"
+    },
+    {
+      "slug": "metformin-non-diabetic-longevity-tame-trial-evidence-2026",
+      "seed": {
+        "slug": "metformin-non-diabetic-longevity-tame-trial-evidence-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "science",
+        "primary_keyword_en": "metformin longevity non-diabetic TAME trial evidence 2026",
+        "primary_keyword_ko": "메트포르민 장수 비당뇨 TAME 임상 증거 2026",
+        "unique_angle": "TAME trial enrollment update, why exercise blunting concerns from 2019 are being revisited, and AMPK activation alternatives for those who can't tolerate GI effects",
+        "authoritative_sources": [
+          "AFAR TAME Trial 2025 interim analysis",
+          "Diabetes Care 2024 metformin exercise adaptation meta-analysis",
+          "Barzilai Lab Cell Reports 2025"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:41:11.276Z"
+    },
+    {
+      "slug": "autophagy-fasting-protocol-duration-threshold-evidence-2026",
+      "seed": {
+        "slug": "autophagy-fasting-protocol-duration-threshold-evidence-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "guide",
+        "primary_keyword_en": "autophagy fasting hours threshold human evidence protocol",
+        "primary_keyword_ko": "오토파지 단식 시간 임계값 인체 증거 프로토콜",
+        "unique_angle": "Debunking the '16-hour autophagy activation' myth with LC3-II marker studies showing individual variation from 24-72 hours, plus protein intake timing that preserves autophagy",
+        "authoritative_sources": [
+          "Cell 2024 human autophagy flux measurement",
+          "NEJM Review 2025 fasting and cellular quality control",
+          "Longo Lab Nature Metabolism 2024"
+        ],
+        "reading_time_min": 13
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:41:26.542Z"
+    },
+    {
+      "slug": "mtor-cycling-protocol-muscle-preservation-longevity-balance-2026",
+      "seed": {
+        "slug": "mtor-cycling-protocol-muscle-preservation-longevity-balance-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "guide",
+        "primary_keyword_en": "mTOR cycling protocol muscle preservation longevity optimization",
+        "primary_keyword_ko": "mTOR 사이클링 프로토콜 근육 보존 장수 최적화",
+        "unique_angle": "Practical weekly mTOR activation/suppression scheduling that balances muscle protein synthesis with autophagy, addressing the Attia-Sinclair debate on protein timing",
+        "authoritative_sources": [
+          "Science 2024 mTORC1 temporal dynamics",
+          "Journal of Physiology 2025 resistance training mTOR windows",
+          "Attia Outlive 2023 framework + 2025 podcast updates"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:51:18.049Z"
+    },
+    {
+      "slug": "blue-zone-diet-adaptation-urban-western-lifestyle-2026",
+      "seed": {
+        "slug": "blue-zone-diet-adaptation-urban-western-lifestyle-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "guide",
+        "primary_keyword_en": "blue zone diet adaptation urban western lifestyle practical",
+        "primary_keyword_ko": "블루존 식단 적용 도시 서양 생활방식 실용적",
+        "unique_angle": "Translating Buettner's 95% plant-based findings into meal templates for urban dwellers without access to wild greens, addressing the legume-resistant gut microbiome transition",
+        "authoritative_sources": [
+          "Buettner Blue Zones American Kitchen 2024",
+          "American Journal of Clinical Nutrition 2025 legume adaptation study",
+          "Lancet Planetary Health 2024 sustainable longevity diets"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:51:31.337Z"
+    },
+    {
+      "slug": "senolytic-fisetin-quercetin-dosing-protocol-human-trial-2026",
+      "seed": {
+        "slug": "senolytic-fisetin-quercetin-dosing-protocol-human-trial-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "science",
+        "primary_keyword_en": "senolytic fisetin quercetin human dosing protocol clinical trial",
+        "primary_keyword_ko": "세노리틱 피세틴 퀘르세틴 인체 복용량 프로토콜 임상시험",
+        "unique_angle": "Mayo Clinic's intermittent high-dose protocol vs daily low-dose approaches, bioavailability challenges, and why mouse-to-human dose translation failed initially",
+        "authoritative_sources": [
+          "Nature Medicine 2024 fisetin phase II trial",
+          "Mayo Clinic Proceedings 2025 senolytic dosing optimization",
+          "Kirkland Lab EBioMedicine 2024"
+        ],
+        "reading_time_min": 13
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:50:55.480Z"
+    },
+    {
+      "slug": "urolithin-a-mitopure-mitochondrial-function-evidence-2026",
+      "seed": {
+        "slug": "urolithin-a-mitopure-mitochondrial-function-evidence-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "science",
+        "primary_keyword_en": "urolithin A Mitopure mitochondrial function muscle clinical evidence",
+        "primary_keyword_ko": "유로리틴 A Mitopure 미토콘드리아 기능 근육 임상 증거",
+        "unique_angle": "Analyzing Amazentis-funded vs independent trials, gut microbiome conversion rates explaining non-responders, and comparison to pomegranate extract efficacy",
+        "authoritative_sources": [
+          "JAMA Network Open 2024 urolithin A muscle function RCT",
+          "Cell Reports Medicine 2025 mitophagy biomarker validation",
+          "Nature Metabolism 2024 gut microbiome urolithin production"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:50:56.643Z"
+    },
+    {
+      "slug": "vo2max-longevity-biomarker-improvement-protocol-40s-50s-2026",
+      "seed": {
+        "slug": "vo2max-longevity-biomarker-improvement-protocol-40s-50s-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "guide",
+        "primary_keyword_en": "VO2max longevity predictor improvement protocol age 40 50",
+        "primary_keyword_ko": "VO2max 장수 예측 지표 향상 프로토콜 40대 50대",
+        "unique_angle": "Attia's 'Centenarian Decathlon' VO2max targets translated into 12-week progressive protocols, with zone 2 volume thresholds and high-intensity interval integration",
+        "authoritative_sources": [
+          "JACC 2024 cardiorespiratory fitness mortality meta-analysis",
+          "Attia Outlive framework + Early Medical podcast 2025",
+          "Medicine & Science in Sports & Exercise 2025 VO2max trainability by age"
+        ],
+        "reading_time_min": 14
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:51:46.210Z"
+    },
+    {
+      "slug": "grip-strength-longevity-threshold-training-protocol-2026",
+      "seed": {
+        "slug": "grip-strength-longevity-threshold-training-protocol-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "guide",
+        "primary_keyword_en": "grip strength longevity threshold minimum training protocol",
+        "primary_keyword_ko": "악력 장수 임계값 최소 훈련 프로토콜",
+        "unique_angle": "Converting epidemiological cutoffs (26kg women, 35kg men) into actionable training with dead hang progressions, farmer carry protocols, and tracking frequency recommendations",
+        "authoritative_sources": [
+          "BMJ 2024 grip strength all-cause mortality update",
+          "Journal of Cachexia Sarcopenia Muscle 2025 grip training interventions",
+          "Lancet Healthy Longevity 2024 functional fitness thresholds"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:50:46.904Z"
+    },
+    {
+      "slug": "social-connection-longevity-quantified-isolation-risk-2026",
+      "seed": {
+        "slug": "social-connection-longevity-quantified-isolation-risk-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "science",
+        "primary_keyword_en": "social connection longevity data isolation mortality risk quantified",
+        "primary_keyword_ko": "사회적 연결 장수 데이터 고립 사망 위험 정량화",
+        "unique_angle": "Holt-Lunstad's meta-analytic findings translated into trackable metrics: meaningful conversation frequency, physical touch quotas, and community participation thresholds",
+        "authoritative_sources": [
+          "Holt-Lunstad PLOS Medicine 2024 social isolation update",
+          "Lancet 2025 loneliness intervention RCT outcomes",
+          "Nature Human Behaviour 2024 social network structure mortality"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:51:18.741Z"
+    },
+    {
+      "slug": "sleep-duration-longevity-u-curve-optimal-hours-age-2026",
+      "seed": {
+        "slug": "sleep-duration-longevity-u-curve-optimal-hours-age-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "science",
+        "primary_keyword_en": "sleep duration longevity U-curve optimal hours by age",
+        "primary_keyword_ko": "수면 시간 장수 U커브 최적 시간 연령별",
+        "unique_angle": "Resolving the 7-hour controversy with age-stratified data showing shifting optima from 7.5 hours at 40 to 6.5 hours at 70, plus sleep efficiency as the overlooked variable",
+        "authoritative_sources": [
+          "JAMA Internal Medicine 2024 sleep duration mortality by age",
+          "Walker Lab Nature Communications 2025 sleep quality vs quantity",
+          "European Heart Journal 2024 sleep phenotypes cardiovascular risk"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:51:10.226Z"
+    },
+    {
+      "slug": "omega-3-index-target-longevity-epa-dha-ratio-2026",
+      "seed": {
+        "slug": "omega-3-index-target-longevity-epa-dha-ratio-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "guide",
+        "primary_keyword_en": "omega-3 index target longevity EPA DHA ratio optimization",
+        "primary_keyword_ko": "오메가-3 지수 목표 장수 EPA DHA 비율 최적화",
+        "unique_angle": "Why 8%+ omega-3 index correlates with 5-year life expectancy gain, testing frequency recommendations, and absorption factors (triglyceride vs ethyl ester forms)",
+        "authoritative_sources": [
+          "American Journal of Clinical Nutrition 2024 omega-3 index mortality",
+          "Harris Lab PLEFA 2025 omega-3 index testing standardization",
+          "Nature Reviews Cardiology 2024 PUFA cardiovascular mechanisms"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:50:52.908Z"
+    },
+    {
+      "slug": "sauna-longevity-protocol-frequency-duration-cardiovascular-2026",
+      "seed": {
+        "slug": "sauna-longevity-protocol-frequency-duration-cardiovascular-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "guide",
+        "primary_keyword_en": "sauna longevity protocol frequency duration cardiovascular benefit",
+        "primary_keyword_ko": "사우나 장수 프로토콜 빈도 시간 심혈관 이점",
+        "unique_angle": "Finnish cohort data translated into minimum effective dose (4x/week, 20 min, 79°C), contraindication screening, and why infrared saunas may not replicate traditional sauna benefits",
+        "authoritative_sources": [
+          "JAMA Internal Medicine 2024 sauna cardiovascular mortality update",
+          "Mayo Clinic Proceedings 2025 heat therapy protocols",
+          "European Journal of Preventive Cardiology 2024 sauna mechanisms"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:51:07.095Z"
+    },
+    {
+      "slug": "cold-exposure-longevity-claims-evidence-vs-hype-2026",
+      "seed": {
+        "slug": "cold-exposure-longevity-claims-evidence-vs-hype-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "science",
+        "primary_keyword_en": "cold exposure longevity evidence brown fat activation reality",
+        "primary_keyword_ko": "냉수 노출 장수 증거 갈색지방 활성화 현실",
+        "unique_angle": "Separating Huberman podcast claims from peer-reviewed evidence: brown fat activation is real but metabolic impact is minimal, while recovery interference may outweigh hormetic benefits",
+        "authoritative_sources": [
+          "Cell Metabolism 2024 cold exposure metabolic effects RCT",
+          "Journal of Physiology 2025 cold water immersion recovery interference",
+          "Nature Reviews Endocrinology 2024 brown adipose tissue activation"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:55:34.202Z"
+    },
+    {
+      "slug": "longevity-supplement-stack-evidence-based-2026-tier-ranking",
+      "seed": {
+        "slug": "longevity-supplement-stack-evidence-based-2026-tier-ranking",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "reference",
+        "primary_keyword_en": "longevity supplement stack evidence-based 2026 tier ranking",
+        "primary_keyword_ko": "장수 보충제 스택 증거 기반 2026 등급 순위",
+        "unique_angle": "Tiered ranking system (A: strong human RCT evidence, B: promising mechanistic, C: animal-only) covering creatine, vitamin D, omega-3, glycine, taurine with cost-per-quality-adjusted-life-year estimates",
+        "authoritative_sources": [
+          "Examine.com 2025 longevity supplement review",
+          "Nature Aging 2024 taurine supplementation study",
+          "Cochrane Review 2025 vitamin D mortality outcomes"
+        ],
+        "reading_time_min": 15
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:55:50.270Z"
+    },
+    {
+      "slug": "bryan-johnson-blueprint-protocol-critique-replicability-2026",
+      "seed": {
+        "slug": "bryan-johnson-blueprint-protocol-critique-replicability-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "science",
+        "primary_keyword_en": "Bryan Johnson Blueprint protocol critique scientific replicability",
+        "primary_keyword_ko": "브라이언 존슨 블루프린트 프로토콜 비평 과학적 재현성",
+        "unique_angle": "Analyzing which Blueprint interventions have independent validation (olive oil, sleep consistency) vs n=1 claims (plasma exchange, gene therapy), plus cost-benefit reality check",
+        "authoritative_sources": [
+          "Johnson Blueprint published biomarker data 2024-2025",
+          "Nature Aging 2024 epigenetic age reversal claims analysis",
+          "STAT News 2025 longevity influencer protocol review"
+        ],
+        "reading_time_min": 13
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:58:40.040Z"
+    },
+    {
+      "slug": "peter-attia-centenarian-decathlon-training-framework-2026",
+      "seed": {
+        "slug": "peter-attia-centenarian-decathlon-training-framework-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "guide",
+        "primary_keyword_en": "Peter Attia Centenarian Decathlon training framework functional capacity",
+        "primary_keyword_ko": "피터 아티아 100세 데카슬론 훈련 프레임워크 기능적 역량",
+        "unique_angle": "Reverse-engineering Attia's functional capacity benchmarks into progressive 5-year training plans, including zone 2 volume targets, strength minimums, and stability work integration",
+        "authoritative_sources": [
+          "Attia Outlive 2023 + Early Medical podcast 2025 updates",
+          "Journal of Aging and Physical Activity 2024 functional fitness standards",
+          "ACSM Guidelines 2025 older adult exercise prescription"
+        ],
+        "reading_time_min": 14
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:56:24.726Z"
+    },
+    {
+      "slug": "hayflick-limit-telomere-intervention-reality-check-2026",
+      "seed": {
+        "slug": "hayflick-limit-telomere-intervention-reality-check-2026",
+        "category": "Longevity & Healthy Aging",
+        "category_emoji": "🧬",
+        "type": "science",
+        "primary_keyword_en": "Hayflick limit telomere lengthening intervention evidence 2026",
+        "primary_keyword_ko": "헤이플릭 한계 텔로미어 연장 개입 증거 2026",
+        "unique_angle": "Why telomerase activation supplements (TA-65, astragalus) show minimal effect while lifestyle interventions (meditation, exercise) demonstrate measurable telomere preservation in controlled trials",
+        "authoritative_sources": [
+          "Lancet Healthy Longevity 2024 telomere intervention meta-analysis",
+          "Blackburn Lab Cell 2025 telomerase regulation update",
+          "Psychoneuroendocrinology 2024 lifestyle telomere effects"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:55:58.979Z"
+    },
+    {
+      "slug": "cold-plunge-optimal-duration-temperature-soberg-protocol-2026",
+      "seed": {
+        "slug": "cold-plunge-optimal-duration-temperature-soberg-protocol-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "guide",
+        "primary_keyword_en": "cold plunge optimal temperature duration Søberg protocol",
+        "primary_keyword_ko": "냉수 노출 최적 온도 시간 쇠베르그 프로토콜",
+        "unique_angle": "Breaks down Susanna Søberg's 11-minute weekly cold exposure protocol with specific temperature ranges (10-15°C) and session distribution based on her 2021 Cell Reports Medicine study",
+        "authoritative_sources": [
+          "Søberg et al. Cell Reports Medicine 2021",
+          "Esperland et al. Int J Circumpolar Health 2022",
+          "Shevchuk Medical Hypotheses 2008"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:55:48.163Z"
+    },
+    {
+      "slug": "cold-plunge-timing-before-after-workout-muscle-adaptation-2026",
+      "seed": {
+        "slug": "cold-plunge-timing-before-after-workout-muscle-adaptation-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "science",
+        "primary_keyword_en": "cold water immersion before or after workout muscle growth",
+        "primary_keyword_ko": "냉수 노출 운동 전후 근육 성장 영향",
+        "unique_angle": "Analyzes Roberts 2015 J Physiol findings showing post-resistance training cold immersion blunts muscle protein synthesis by 26%, with practical timing recommendations for different training goals",
+        "authoritative_sources": [
+          "Roberts et al. J Physiol 2015",
+          "Malta et al. Front Physiol 2021",
+          "Fyfe et al. Sports Med 2019"
+        ],
+        "reading_time_min": 14
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:55:11.510Z"
+    },
+    {
+      "slug": "brown-fat-activation-cold-exposure-metabolic-evidence-2026",
+      "seed": {
+        "slug": "brown-fat-activation-cold-exposure-metabolic-evidence-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "science",
+        "primary_keyword_en": "brown fat activation cold exposure metabolic rate evidence",
+        "primary_keyword_ko": "갈색 지방 활성화 냉수 노출 대사율 연구",
+        "unique_angle": "Quantifies actual brown adipose tissue activation from cold exposure using PET-CT studies, separating clinically meaningful metabolic effects from overhyped claims",
+        "authoritative_sources": [
+          "Yoneshiro et al. J Clin Invest 2013",
+          "van Marken Lichtenbelt et al. NEJM 2009",
+          "Blondin et al. Cell Metab 2020"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:55:52.879Z"
+    },
+    {
+      "slug": "finnish-sauna-cardiovascular-mortality-laukkanen-data-2026",
+      "seed": {
+        "slug": "finnish-sauna-cardiovascular-mortality-laukkanen-data-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "science",
+        "primary_keyword_en": "Finnish sauna cardiovascular mortality risk Laukkanen study",
+        "primary_keyword_ko": "핀란드 사우나 심혈관 사망률 라우카넨 연구",
+        "unique_angle": "Deep dive into Laukkanen's 20-year KIHD cohort showing 4-7x weekly sauna use associated with 50% lower CVD mortality, with frequency-response analysis and confounding considerations",
+        "authoritative_sources": [
+          "Laukkanen et al. JAMA Intern Med 2015",
+          "Laukkanen et al. Mayo Clin Proc 2018",
+          "Kunutsor et al. BMC Med 2018"
+        ],
+        "reading_time_min": 13
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:55:37.283Z"
+    },
+    {
+      "slug": "infrared-sauna-vs-traditional-finnish-sauna-evidence-comparison-2026",
+      "seed": {
+        "slug": "infrared-sauna-vs-traditional-finnish-sauna-evidence-comparison-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "reference",
+        "primary_keyword_en": "infrared sauna vs traditional Finnish sauna health benefits comparison",
+        "primary_keyword_ko": "적외선 사우나 전통 핀란드 사우나 건강 효과 비교",
+        "unique_angle": "Compares core body temperature elevation, cardiovascular stress, and detoxification claims between 80°C traditional vs 50°C infrared saunas with actual peer-reviewed data",
+        "authoritative_sources": [
+          "Beever Can Fam Physician 2009",
+          "Hussain & Cohen Evid Based Complement Alternat Med 2018",
+          "Mero et al. SpringerPlus 2015"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T11:55:26.507Z"
+    },
+    {
+      "slug": "contrast-therapy-hot-cold-protocol-recovery-evidence-2026",
+      "seed": {
+        "slug": "contrast-therapy-hot-cold-protocol-recovery-evidence-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "guide",
+        "primary_keyword_en": "contrast therapy hot cold protocol muscle recovery evidence",
+        "primary_keyword_ko": "온냉 교대 요법 근육 회복 프로토콜 연구",
+        "unique_angle": "Provides specific contrast therapy ratios (3:1 hot:cold, 38-40°C to 10-15°C) with evidence from sports medicine literature on DOMS reduction and performance outcomes",
+        "authoritative_sources": [
+          "Bieuzen et al. PLoS One 2013",
+          "Versey et al. Sports Med 2013",
+          "Higgins et al. J Strength Cond Res 2017"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T12:02:13.323Z"
+    },
+    {
+      "slug": "red-light-therapy-panel-selection-wavelength-dosing-2026",
+      "seed": {
+        "slug": "red-light-therapy-panel-selection-wavelength-dosing-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "guide",
+        "primary_keyword_en": "red light therapy panel selection wavelength irradiance dosing",
+        "primary_keyword_ko": "적색광 치료 패널 선택 파장 조사량 가이드",
+        "unique_angle": "Technical guide to selecting photobiomodulation devices based on 630-670nm vs 810-850nm wavelengths, irradiance calculations (mW/cm²), and evidence-based dosing protocols",
+        "authoritative_sources": [
+          "Hamblin Photochem Photobiol 2018",
+          "Ferraresi et al. Lasers Med Sci 2016",
+          "Heiskanen & Hamblin Photobiomodul Photomed Laser Surg 2018"
+        ],
+        "reading_time_min": 15
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T12:02:18.505Z"
+    },
+    {
+      "slug": "photobiomodulation-muscle-recovery-strength-training-evidence-2026",
+      "seed": {
+        "slug": "photobiomodulation-muscle-recovery-strength-training-evidence-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "science",
+        "primary_keyword_en": "photobiomodulation muscle recovery strength training red light",
+        "primary_keyword_ko": "광생물조절 근육 회복 근력 운동 적색광 효과",
+        "unique_angle": "Analyzes pre-exercise vs post-exercise red light timing for delayed onset muscle soreness reduction and strength performance, citing Ferraresi's meta-analysis parameters",
+        "authoritative_sources": [
+          "Ferraresi et al. Eur J Appl Physiol 2012",
+          "Leal-Junior et al. Lasers Med Sci 2019",
+          "Baroni et al. J Strength Cond Res 2010"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T12:02:29.888Z"
+    },
+    {
+      "slug": "wim-hof-breathing-method-physiological-mechanisms-evidence-2026",
+      "seed": {
+        "slug": "wim-hof-breathing-method-physiological-mechanisms-evidence-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "science",
+        "primary_keyword_en": "Wim Hof breathing method physiological effects immune system evidence",
+        "primary_keyword_ko": "빔 호프 호흡법 생리학적 효과 면역 체계 연구",
+        "unique_angle": "Examines the 2014 PNAS endotoxin study showing voluntary immune system modulation through hyperventilation-induced respiratory alkalosis and epinephrine release mechanisms",
+        "authoritative_sources": [
+          "Kox et al. PNAS 2014",
+          "Muzik et al. NeuroImage 2018",
+          "van Middendorp et al. Psychosom Med 2016"
+        ],
+        "reading_time_min": 14
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T12:02:20.578Z"
+    },
+    {
+      "slug": "box-breathing-technique-anxiety-reduction-hrv-effects-2026",
+      "seed": {
+        "slug": "box-breathing-technique-anxiety-reduction-hrv-effects-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "guide",
+        "primary_keyword_en": "box breathing technique anxiety reduction HRV parasympathetic",
+        "primary_keyword_ko": "박스 호흡법 불안 감소 심박변이도 부교감신경",
+        "unique_angle": "Details the 4-4-4-4 protocol's effects on vagal tone and HRV metrics with practical implementation for acute stress, citing resonance frequency breathing research",
+        "authoritative_sources": [
+          "Lehrer & Gevirtz Front Public Health 2014",
+          "Zaccaro et al. Front Hum Neurosci 2018",
+          "Balban et al. Cell Rep Med 2023"
+        ],
+        "reading_time_min": 9
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T12:02:48.625Z"
+    },
+    {
+      "slug": "cyclic-sighing-breathwork-stress-reduction-stanford-study-2026",
+      "seed": {
+        "slug": "cyclic-sighing-breathwork-stress-reduction-stanford-study-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "science",
+        "primary_keyword_en": "cyclic sighing breathwork stress reduction Stanford study",
+        "primary_keyword_ko": "순환 한숨 호흡법 스트레스 감소 스탠포드 연구",
+        "unique_angle": "Breaks down the Balban 2023 Cell Reports Medicine RCT showing 5-minute daily cyclic sighing outperformed meditation for mood and HRV improvements with exact protocol",
+        "authoritative_sources": [
+          "Balban et al. Cell Rep Med 2023",
+          "Vlemincx et al. Biol Psychol 2013",
+          "Ramirez Behav Brain Res 2014"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T12:03:03.579Z"
+    },
+    {
+      "slug": "earthing-grounding-research-critique-inflammation-claims-2026",
+      "seed": {
+        "slug": "earthing-grounding-research-critique-inflammation-claims-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "science",
+        "primary_keyword_en": "earthing grounding research critique inflammation blood viscosity",
+        "primary_keyword_ko": "어싱 그라운딩 연구 비판 염증 혈액 점도 주장",
+        "unique_angle": "Critical analysis of grounding studies' methodological limitations including small samples, lack of blinding, and Chevalier/Oschman conflicts of interest while acknowledging plausible mechanisms",
+        "authoritative_sources": [
+          "Oschman et al. J Inflamm Res 2015",
+          "Chevalier et al. J Altern Complement Med 2012",
+          "Menigoz et al. Explore 2020"
+        ],
+        "reading_time_min": 11
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T12:03:23.320Z"
+    },
+    {
+      "slug": "blue-light-blocking-glasses-sleep-quality-evidence-review-2026",
+      "seed": {
+        "slug": "blue-light-blocking-glasses-sleep-quality-evidence-review-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "science",
+        "primary_keyword_en": "blue light blocking glasses sleep quality melatonin evidence",
+        "primary_keyword_ko": "블루라이트 차단 안경 수면 품질 멜라토닌 연구",
+        "unique_angle": "Separates marketing hype from evidence showing amber lens glasses 3 hours before bed may improve sleep onset but daytime use lacks support, with lux threshold analysis",
+        "authoritative_sources": [
+          "Shechter et al. J Psychiatr Res 2018",
+          "Ostrin Ophthalmic Physiol Opt 2017",
+          "Perez Algorta et al. Chronobiol Int 2018"
+        ],
+        "reading_time_min": 10
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T12:02:47.034Z"
+    },
+    {
+      "slug": "emf-exposure-health-effects-evidence-vs-nocebo-2026",
+      "seed": {
+        "slug": "emf-exposure-health-effects-evidence-vs-nocebo-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "reference",
+        "primary_keyword_en": "EMF exposure health effects evidence electromagnetic hypersensitivity",
+        "primary_keyword_ko": "전자기장 노출 건강 영향 연구 전자파 과민증",
+        "unique_angle": "Separates documented thermal effects from unsubstantiated non-thermal claims, addressing electromagnetic hypersensitivity nocebo research and IARC classification context",
+        "authoritative_sources": [
+          "ICNIRP Guidelines Health Phys 2020",
+          "Röösli et al. Bioelectromagnetics 2010",
+          "Rubin et al. BMJ 2006"
+        ],
+        "reading_time_min": 13
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T12:03:06.884Z"
+    },
+    {
+      "slug": "heat-shock-protein-activation-sauna-exercise-protocol-2026",
+      "seed": {
+        "slug": "heat-shock-protein-activation-sauna-exercise-protocol-2026",
+        "category": "Lifestyle Habits",
+        "category_emoji": "🧊",
+        "type": "science",
+        "primary_keyword_en": "heat shock protein activation sauna hyperthermic conditioning",
+        "primary_keyword_ko": "열충격 단백질 활성화 사우나 고온 적응 프로토콜",
+        "unique_angle": "Explains HSP70/HSP90 induction thresholds from 30+ minutes at 80°C sauna exposure and potential muscle preservation mechanisms with practical hyperthermic conditioning protocols",
+        "authoritative_sources": [
+          "Selsby et al. J Appl Physiol 2007",
+          "Kregel Physiol Rev 2002",
+          "Naito et al. J Appl Physiol 2000"
+        ],
+        "reading_time_min": 12
+      },
+      "status": "completed",
+      "attempts": 1,
+      "langs_completed": [
+        "en",
+        "ko",
+        "ja",
+        "zh-CN",
+        "zh-TW",
+        "es"
+      ],
+      "updated_at": "2026-05-25T12:02:39.306Z"
     }
   ],
   "started_at": "2026-05-24T06:16:00.047Z",
-  "last_run": "2026-05-24T16:30:33.124Z"
+  "last_run": "2026-05-25T12:03:23.320Z"
 }
