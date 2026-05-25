@@ -67,9 +67,6 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
         <nav className="hidden md:flex items-center gap-1 text-sm">
           <Link href={`/${shortLang}`} className="btn-ghost">{t(lang, 'home')}</Link>
           <Link href={`/${shortLang}/tools`} className="btn-ghost">🧮 Tools</Link>
-          {/* BLOG_AUTHORITY v1.0.0 (PRD §16.2 / INV-004 / INV-011) — About + Editorial Policy nav */}
-          <Link href={`/${shortLang}/about`} className="btn-ghost">About</Link>
-          <Link href={`/${shortLang}/editorial-policy`} className="btn-ghost">Editorial</Link>
           <a href="https://app.aihavit.com/" target="_blank" rel="noopener" className="btn-ghost">📱 App</a>
         </nav>
 
@@ -147,9 +144,6 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
           <a href={process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://aihavit.com'} className="py-2 text-gray-600 dark:text-gray-400">← HAVIT</a>
           <Link href={`/${shortLang}`} className="py-2">{t(lang, 'home')}</Link>
           <Link href={`/${shortLang}/tools`} className="py-2">🧮 Tools</Link>
-          {/* BLOG_AUTHORITY v1.0.0 (PRD §16.2 / INV-004 / INV-011) — About + Editorial Policy mobile nav */}
-          <Link href={`/${shortLang}/about`} className="py-2">About</Link>
-          <Link href={`/${shortLang}/editorial-policy`} className="py-2">Editorial</Link>
           <a href="https://app.aihavit.com/" target="_blank" rel="noopener" className="py-2">📱 App</a>
         </div>
       )}
