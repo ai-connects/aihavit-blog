@@ -21,12 +21,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     });
-    entries.push({
-      url: `${SITE}/${lang}/tools/bmr`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    });
+    for (const tool of ['bmr', 'protein', 'water', 'caffeine', 'sleep-cycle', 'exercise-calories']) {
+      entries.push({
+        url: `${SITE}/${lang}/tools/${tool}`,
+        lastModified: now,
+        changeFrequency: 'monthly',
+        priority: 0.8,
+      });
+    }
   }
 
   for (const a of getAllArticles()) {

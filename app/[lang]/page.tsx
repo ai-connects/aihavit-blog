@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ArticleCardV2 from '@/components/ArticleCardV2';
 import { listArticlesForLang, getAllArticles, resolveContent } from '@/lib/articles-v2';
+import { localizedCategory } from '@/lib/category-labels';
 import { toFullLang } from '@/lib/i18n';
 
 export const revalidate = 600;
@@ -168,7 +169,7 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
                   }`}
                 >
                   {info.emoji && <span aria-hidden className="mr-1">{info.emoji}</span>}
-                  {cat} ({info.count})
+                  {localizedCategory(cat, shortLang)} ({info.count})
                 </Link>
               );
             })}

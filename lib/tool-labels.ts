@@ -2,9 +2,19 @@
  * i18n labels for Wellness Tools — 6 primary languages.
  */
 
-import type { ActivityLevel } from './calculators';
+import type { ActivityLevel, ProteinGoal, Climate, ExerciseType } from './calculators';
 
 export type ToolLang = 'ko' | 'en' | 'ja' | 'zh' | 'zh-tw' | 'es';
+
+/** Shared: HAVIT app cross-promo on every calculator. */
+export const APP_CTA: Record<ToolLang, { title: string; body: string; button: string }> = {
+  ko: { title: '📱 더 정확한 측정은 HAVIT 앱', body: '체성분 (체지방률·근육량·내장지방) 정밀 측정과 일별 트렌드는 HAVIT 앱에서 1초 만에 확인하세요.', button: '앱 시작하기' },
+  en: { title: '📱 For precise tracking, use HAVIT app', body: 'Get exact body composition (body fat %, muscle, visceral fat) and daily trends in 1 second with HAVIT.', button: 'Open the app' },
+  ja: { title: '📱 より正確な測定はHAVITアプリ', body: '体組成(体脂肪率・筋肉量・内臓脂肪)の精密測定と日別トレンドはHAVITアプリで1秒。', button: 'アプリを開く' },
+  zh: { title: '📱 精确测量请用 HAVIT 应用', body: '体成分(体脂率、肌肉量、内脏脂肪)精确测量与每日趋势,HAVIT 一秒搞定。', button: '打开应用' },
+  'zh-tw': { title: '📱 精確測量請用 HAVIT 應用', body: '體組成(體脂率、肌肉量、內臟脂肪)精確測量與每日趨勢,HAVIT 一秒搞定。', button: '開啟應用' },
+  es: { title: '📱 Para mediciones precisas, usa HAVIT', body: 'Obtén la composición corporal exacta (% grasa, músculo, grasa visceral) y tendencias diarias en 1 segundo con HAVIT.', button: 'Abrir la app' },
+};
 
 export interface BmrLabels {
   pageTitle: string;
@@ -155,4 +165,124 @@ export const BMR_LABELS: Record<ToolLang, BmrLabels> = {
     formulaHeader: 'Fórmula',
     formulaBody: 'TMB (hombre): 10×kg + 6.25×cm − 5×edad + 5\nTMB (mujer): 10×kg + 6.25×cm − 5×edad − 161\nTDEE: TMB × factor de actividad (1.2 a 1.9)',
   },
+};
+
+/* ─── Protein labels ─── */
+export interface ProteinLabels {
+  pageTitle: string; pageIntro: string;
+  weight: string; goal: string; calculate: string;
+  goalLabels: Record<ProteinGoal, string>;
+  rangeLabel: string; perMealLabel: string; help: string;
+  aboutHeader: string; aboutBody: string;
+}
+export const PROTEIN_LABELS: Record<ToolLang, ProteinLabels> = {
+  ko: { pageTitle: '단백질 필요량 계산기', pageIntro: '체중과 목표에 따른 일일 단백질 g (ISSN 2017 기준).', weight: '체중 (kg)', goal: '목표', calculate: '계산하기',
+    goalLabels: { sedentary: '비활동 (좌식)', endurance: '지구력 운동 (러닝/사이클)', strength: '근력 운동 (웨이트)', cut: '다이어트 (근손실 방지)', older_adult: '60세 이상' },
+    rangeLabel: '일일 권장량', perMealLabel: '한 끼 단백질 (4식 기준)', help: 'g/day',
+    aboutHeader: '왜 단백질이 중요한가?', aboutBody: '단백질은 근육 합성·포만감·대사 유지의 핵심 영양소입니다. 다이어트 중에는 일반 권장량(0.8 g/kg)의 2배 이상이 필요해 근손실을 막습니다. 한 끼에 30g 이상이면 흡수율이 떨어지므로 4번에 나누어 섭취 권장 (ISSN 2017).' },
+  en: { pageTitle: 'Protein Needs Calculator', pageIntro: 'Daily protein grams by body weight and goal (ISSN 2017).', weight: 'Weight (kg)', goal: 'Goal', calculate: 'Calculate',
+    goalLabels: { sedentary: 'Sedentary (desk job)', endurance: 'Endurance (running, cycling)', strength: 'Strength training', cut: 'Cutting (muscle preservation)', older_adult: 'Adult 60+' },
+    rangeLabel: 'Daily range', perMealLabel: 'Per meal (4 meals/day)', help: 'g/day',
+    aboutHeader: 'Why protein matters', aboutBody: 'Protein drives muscle synthesis, satiety, and metabolic preservation. Cutting needs 2× the standard RDA (0.8 g/kg) to prevent muscle loss. Distribute across 4 meals — absorption plateaus above ~30g per sitting (ISSN 2017).' },
+  ja: { pageTitle: 'たんぱく質必要量計算機', pageIntro: '体重と目標別の1日たんぱく質g (ISSN 2017基準)。', weight: '体重 (kg)', goal: '目標', calculate: '計算',
+    goalLabels: { sedentary: '座位中心(運動なし)', endurance: '持久力(ランニング・サイクリング)', strength: '筋トレ', cut: '減量(筋肉保持)', older_adult: '60歳以上' },
+    rangeLabel: '1日推奨量', perMealLabel: '1食あたり(4食基準)', help: 'g/日',
+    aboutHeader: 'たんぱく質が重要な理由', aboutBody: 'たんぱく質は筋合成・満腹感・代謝維持の鍵。減量時は通常推奨量(0.8 g/kg)の2倍以上で筋肉減少を防ぎます。1食30g以上で吸収プラトーするため4食に分散推奨 (ISSN 2017)。' },
+  zh: { pageTitle: '蛋白质需求量计算器', pageIntro: '按体重和目标计算每日蛋白质克数 (ISSN 2017标准)。', weight: '体重 (kg)', goal: '目标', calculate: '计算',
+    goalLabels: { sedentary: '久坐(无运动)', endurance: '耐力训练(跑步/骑行)', strength: '力量训练', cut: '减脂(肌肉保持)', older_adult: '60岁以上' },
+    rangeLabel: '每日范围', perMealLabel: '每餐 (4餐/日)', help: 'g/日',
+    aboutHeader: '蛋白质为何重要', aboutBody: '蛋白质是肌肉合成、饱腹感与代谢维持的核心。减脂期需要标准推荐量(0.8 g/kg)的2倍以防止肌肉流失。单餐超过30g吸收率下降,建议分4餐摄入 (ISSN 2017)。' },
+  'zh-tw': { pageTitle: '蛋白質需求量計算機', pageIntro: '按體重和目標計算每日蛋白質克數 (ISSN 2017標準)。', weight: '體重 (kg)', goal: '目標', calculate: '計算',
+    goalLabels: { sedentary: '久坐(無運動)', endurance: '耐力訓練(跑步/騎行)', strength: '力量訓練', cut: '減脂(肌肉保持)', older_adult: '60歲以上' },
+    rangeLabel: '每日範圍', perMealLabel: '每餐 (4餐/日)', help: 'g/日',
+    aboutHeader: '蛋白質為何重要', aboutBody: '蛋白質是肌肉合成、飽腹感與代謝維持的核心。減脂期需要標準推薦量(0.8 g/kg)的2倍以防止肌肉流失。單餐超過30g吸收率下降,建議分4餐攝取 (ISSN 2017)。' },
+  es: { pageTitle: 'Calculadora de Necesidades de Proteína', pageIntro: 'Gramos diarios de proteína por peso y objetivo (ISSN 2017).', weight: 'Peso (kg)', goal: 'Objetivo', calculate: 'Calcular',
+    goalLabels: { sedentary: 'Sedentario (oficina)', endurance: 'Resistencia (correr, ciclismo)', strength: 'Fuerza (pesas)', cut: 'Definición (preservar músculo)', older_adult: 'Adulto 60+' },
+    rangeLabel: 'Rango diario', perMealLabel: 'Por comida (4/día)', help: 'g/día',
+    aboutHeader: 'Por qué importa la proteína', aboutBody: 'La proteína impulsa la síntesis muscular, la saciedad y la preservación metabólica. En definición se necesita 2× la RDA estándar (0.8 g/kg) para evitar pérdida muscular. Distribuye en 4 comidas — la absorción se estabiliza por encima de ~30g por toma (ISSN 2017).' },
+};
+
+/* ─── Water labels ─── */
+export interface WaterLabels {
+  pageTitle: string; pageIntro: string;
+  weight: string; exerciseHours: string; climate: string; calculate: string;
+  climateNormal: string; climateHot: string;
+  resultLabel: string; help: string;
+  cupsLabel: string;
+  aboutHeader: string; aboutBody: string;
+}
+export const WATER_LABELS: Record<ToolLang, WaterLabels> = {
+  ko: { pageTitle: '일일 수분 섭취량 계산기', pageIntro: '체중·운동·기후를 반영한 정확한 일일 물 섭취량 (NAM 2004).', weight: '체중 (kg)', exerciseHours: '하루 운동 시간 (시간)', climate: '기후', calculate: '계산하기', climateNormal: '보통', climateHot: '덥거나 습함', resultLabel: '하루 권장 수분', help: '음료·음식 모두 포함', cupsLabel: '약 250ml 컵 기준',
+    aboutHeader: '계산 근거', aboutBody: '기본: 체중 1kg당 35ml. 운동 1시간당 +700ml. 더운 기후 +500ml. 카페인·알코올은 이뇨 작용으로 추가 보충 필요.' },
+  en: { pageTitle: 'Daily Water Intake Calculator', pageIntro: 'Personalized hydration target by weight, exercise, climate (NAM 2004).', weight: 'Weight (kg)', exerciseHours: 'Exercise hours/day', climate: 'Climate', calculate: 'Calculate', climateNormal: 'Normal', climateHot: 'Hot or humid', resultLabel: 'Daily target', help: 'Includes drinks and food', cupsLabel: '~250 ml cups',
+    aboutHeader: 'How this is calculated', aboutBody: 'Baseline: 35 ml per kg body weight. +700 ml per hour of exercise. +500 ml in hot climate. Caffeine and alcohol are diuretic — add extra accordingly.' },
+  ja: { pageTitle: '1日の水分摂取量計算機', pageIntro: '体重・運動・気候を反映した正確な水分量 (NAM 2004)。', weight: '体重 (kg)', exerciseHours: '1日の運動時間', climate: '気候', calculate: '計算', climateNormal: '通常', climateHot: '暑い・湿気', resultLabel: '1日推奨', help: '飲み物と食事を含む', cupsLabel: '約250mlカップ換算',
+    aboutHeader: '計算根拠', aboutBody: '基本:体重1kgあたり35ml。運動1時間ごとに+700ml。暑い気候は+500ml。カフェイン・アルコールは利尿作用で追加補給推奨。' },
+  zh: { pageTitle: '每日水分摄入计算器', pageIntro: '基于体重、运动、气候的精确每日水量 (NAM 2004)。', weight: '体重 (kg)', exerciseHours: '每日运动时间', climate: '气候', calculate: '计算', climateNormal: '正常', climateHot: '炎热或潮湿', resultLabel: '每日推荐', help: '包括饮料和食物', cupsLabel: '约250ml杯',
+    aboutHeader: '计算依据', aboutBody: '基础:体重每kg 35ml。运动每小时+700ml。炎热气候+500ml。咖啡因和酒精有利尿作用,需额外补充。' },
+  'zh-tw': { pageTitle: '每日水分攝取計算機', pageIntro: '基於體重、運動、氣候的精確每日水量 (NAM 2004)。', weight: '體重 (kg)', exerciseHours: '每日運動時間', climate: '氣候', calculate: '計算', climateNormal: '正常', climateHot: '炎熱或潮濕', resultLabel: '每日推薦', help: '包括飲料和食物', cupsLabel: '約250ml杯',
+    aboutHeader: '計算依據', aboutBody: '基礎:體重每kg 35ml。運動每小時+700ml。炎熱氣候+500ml。咖啡因和酒精有利尿作用,需額外補充。' },
+  es: { pageTitle: 'Calculadora de Hidratación Diaria', pageIntro: 'Objetivo personalizado por peso, ejercicio y clima (NAM 2004).', weight: 'Peso (kg)', exerciseHours: 'Horas de ejercicio/día', climate: 'Clima', calculate: 'Calcular', climateNormal: 'Normal', climateHot: 'Cálido o húmedo', resultLabel: 'Meta diaria', help: 'Incluye bebidas y alimentos', cupsLabel: '~250 ml por vaso',
+    aboutHeader: 'Cómo se calcula', aboutBody: 'Base: 35 ml por kg. +700 ml por hora de ejercicio. +500 ml en clima cálido. La cafeína y el alcohol son diuréticos — añade más en consecuencia.' },
+};
+
+/* ─── Caffeine labels ─── */
+export interface CaffeineLabels {
+  pageTitle: string; pageIntro: string;
+  bedtime: string; dose: string; doseExamples: string; targetAtBed: string; calculate: string;
+  resultLabel: string; helpResult: string;
+  aboutHeader: string; aboutBody: string;
+}
+export const CAFFEINE_LABELS: Record<ToolLang, CaffeineLabels> = {
+  ko: { pageTitle: '카페인 마지노선 계산기', pageIntro: '잠 안 깨고 싶은 시간까지 카페인이 충분히 빠지려면 언제 마지막 컵을 마셔야 할지 계산.', bedtime: '취침 시각', dose: '한 잔 카페인 (mg)', doseExamples: '드립커피 ≈95mg · 에스프레소 ≈63mg · 콜드브루 ≈155mg · 녹차 ≈30mg', targetAtBed: '취침 시 잔류 허용량 (mg)', calculate: '계산하기', resultLabel: '마지막 컵 마지노선', helpResult: '이 시각 이후엔 마시지 않기',
+    aboutHeader: '왜 이렇게 보수적인가?', aboutBody: '카페인 평균 반감기는 5시간. 즉 100mg을 마시면 5시간 후 50mg, 10시간 후 25mg 남음. 잔류 30mg 이상이면 깊은 잠(N3) 비율이 40% 감소 (Drake 2013). 개인차로 빠른 대사자/느린 대사자 ±50%.' },
+  en: { pageTitle: 'Caffeine Cutoff Calculator', pageIntro: 'Find the latest time to drink coffee so it doesn\'t wreck your sleep.', bedtime: 'Bedtime', dose: 'Caffeine per cup (mg)', doseExamples: 'Drip coffee ≈95mg · Espresso ≈63mg · Cold brew ≈155mg · Green tea ≈30mg', targetAtBed: 'Residual allowed at bedtime (mg)', calculate: 'Calculate', resultLabel: 'Latest cup time', helpResult: 'No caffeine after this time',
+    aboutHeader: 'Why this conservative?', aboutBody: 'Average caffeine half-life: 5 hours. 100mg becomes 50mg in 5h, 25mg in 10h. Residual above 30mg cuts deep sleep (N3) by 40% (Drake 2013). Individual variation ±50% for fast/slow metabolizers.' },
+  ja: { pageTitle: 'カフェイン門限計算機', pageIntro: '快眠のために最後のコーヒーを何時までに飲むべきか計算します。', bedtime: '就寝時刻', dose: '1杯あたりカフェイン (mg)', doseExamples: 'ドリップ ≈95mg · エスプレッソ ≈63mg · コールドブリュー ≈155mg · 緑茶 ≈30mg', targetAtBed: '就寝時残存許容量 (mg)', calculate: '計算', resultLabel: '最終杯の門限', helpResult: 'この時刻以降は飲まない',
+    aboutHeader: 'なぜ厳しめか', aboutBody: 'カフェイン平均半減期は5時間。100mgは5時間後50mg、10時間後25mg。残存30mg超で深睡眠(N3)が40%減少 (Drake 2013)。個人差±50%。' },
+  zh: { pageTitle: '咖啡因截止时间计算器', pageIntro: '为了不影响睡眠,最后一杯咖啡该几点喝。', bedtime: '就寝时间', dose: '每杯咖啡因 (mg)', doseExamples: '滴漏咖啡 ≈95mg · 浓缩 ≈63mg · 冷萃 ≈155mg · 绿茶 ≈30mg', targetAtBed: '就寝时残留允许 (mg)', calculate: '计算', resultLabel: '最迟饮用时间', helpResult: '此后不要再摄入咖啡因',
+    aboutHeader: '为何如此保守', aboutBody: '咖啡因平均半衰期5小时。100mg 5小时后剩50mg,10小时后25mg。残留超过30mg会让深睡眠(N3)减少40% (Drake 2013)。个体差异±50%。' },
+  'zh-tw': { pageTitle: '咖啡因截止時間計算機', pageIntro: '為了不影響睡眠,最後一杯咖啡該幾點喝。', bedtime: '就寢時間', dose: '每杯咖啡因 (mg)', doseExamples: '滴漏咖啡 ≈95mg · 濃縮 ≈63mg · 冷萃 ≈155mg · 綠茶 ≈30mg', targetAtBed: '就寢時殘留允許 (mg)', calculate: '計算', resultLabel: '最遲飲用時間', helpResult: '此後不要再攝入咖啡因',
+    aboutHeader: '為何如此保守', aboutBody: '咖啡因平均半衰期5小時。100mg 5小時後剩50mg,10小時後25mg。殘留超過30mg會讓深睡眠(N3)減少40% (Drake 2013)。個體差異±50%。' },
+  es: { pageTitle: 'Calculadora de Hora Límite de Cafeína', pageIntro: 'Encuentra a qué hora dejar el café para no arruinar tu sueño.', bedtime: 'Hora de dormir', dose: 'Cafeína por taza (mg)', doseExamples: 'Café filtrado ≈95mg · Espresso ≈63mg · Cold brew ≈155mg · Té verde ≈30mg', targetAtBed: 'Residual permitido al dormir (mg)', calculate: 'Calcular', resultLabel: 'Última taza permitida', helpResult: 'Nada de cafeína después de esta hora',
+    aboutHeader: '¿Por qué tan conservador?', aboutBody: 'Vida media de la cafeína: 5 horas. 100mg → 50mg en 5h, 25mg en 10h. Más de 30mg residuales reduce el sueño profundo (N3) un 40% (Drake 2013). Variación individual ±50%.' },
+};
+
+/* ─── Sleep cycle labels ─── */
+export interface SleepCycleLabels {
+  pageTitle: string; pageIntro: string;
+  wakeTime: string; calculate: string;
+  resultHeader: string; cyclesLabel: string; helpRow: string;
+  aboutHeader: string; aboutBody: string;
+}
+export const SLEEP_CYCLE_LABELS: Record<ToolLang, SleepCycleLabels> = {
+  ko: { pageTitle: '수면 사이클 계산기', pageIntro: '90분 사이클 끝에 깨면 가장 상쾌. 원하는 기상 시각을 입력하면 추천 취침 시각 4가지가 나옵니다.', wakeTime: '기상 시각', calculate: '계산하기', resultHeader: '추천 취침 시각', cyclesLabel: '사이클', helpRow: '(잠드는 데 14분 가정)', aboutHeader: '왜 사이클이 중요한가?', aboutBody: '수면은 90분 단위 사이클 (얕은잠 → 깊은잠 → REM)로 반복됩니다. 사이클 중간에 깨면 sleep inertia (정신이 흐릿한 상태)가 30분 이상 지속. 사이클 끝(REM 직후)에 깨면 즉시 상쾌. 성인 권장: 4~6 사이클 (6~9시간).' },
+  en: { pageTitle: 'Sleep Cycle Calculator', pageIntro: 'Waking at the end of a 90-min cycle feels best. Enter your wake time to get 4 recommended bedtimes.', wakeTime: 'Wake up time', calculate: 'Calculate', resultHeader: 'Recommended bedtimes', cyclesLabel: 'cycles', helpRow: '(14 min to fall asleep)', aboutHeader: 'Why cycles matter', aboutBody: 'Sleep runs in 90-min cycles (light → deep → REM). Waking mid-cycle triggers sleep inertia (grogginess) for 30+ min. Waking at cycle end (just after REM) feels instantly fresh. Adult recommendation: 4–6 cycles (6–9 hours).' },
+  ja: { pageTitle: '睡眠サイクル計算機', pageIntro: '90分サイクルの最後に起きるのが最も爽快。希望の起床時刻を入れると4つの推奨就寝時刻が出ます。', wakeTime: '起床時刻', calculate: '計算', resultHeader: '推奨就寝時刻', cyclesLabel: 'サイクル', helpRow: '(寝つき14分前提)', aboutHeader: 'サイクルが重要な理由', aboutBody: '睡眠は90分単位のサイクル(浅い→深い→REM)を繰り返します。サイクル途中で起きると睡眠惰性(頭が重い状態)が30分以上続きます。サイクル終わり(REM直後)に起きると即座に爽快。成人推奨:4〜6サイクル(6〜9時間)。' },
+  zh: { pageTitle: '睡眠周期计算器', pageIntro: '在90分钟周期末尾醒来最清爽。输入起床时间,获得4个推荐入睡时间。', wakeTime: '起床时间', calculate: '计算', resultHeader: '推荐入睡时间', cyclesLabel: '周期', helpRow: '(入睡14分钟)', aboutHeader: '周期为何重要', aboutBody: '睡眠以90分钟为周期(浅→深→REM)循环。在周期中间醒来会产生睡眠惯性(头脑迷糊)30分钟以上。在周期末尾(REM刚结束)醒来立即清爽。成人推荐:4–6个周期(6–9小时)。' },
+  'zh-tw': { pageTitle: '睡眠週期計算機', pageIntro: '在90分鐘週期末尾醒來最清爽。輸入起床時間,獲得4個推薦入睡時間。', wakeTime: '起床時間', calculate: '計算', resultHeader: '推薦入睡時間', cyclesLabel: '週期', helpRow: '(入睡14分鐘)', aboutHeader: '週期為何重要', aboutBody: '睡眠以90分鐘為週期(淺→深→REM)循環。在週期中間醒來會產生睡眠慣性(頭腦迷糊)30分鐘以上。在週期末尾(REM剛結束)醒來立即清爽。成人推薦:4–6個週期(6–9小時)。' },
+  es: { pageTitle: 'Calculadora de Ciclos de Sueño', pageIntro: 'Despertar al final de un ciclo de 90 min se siente mejor. Introduce tu hora de despertar para obtener 4 horas recomendadas para dormir.', wakeTime: 'Hora de despertar', calculate: 'Calcular', resultHeader: 'Horas recomendadas para dormir', cyclesLabel: 'ciclos', helpRow: '(14 min para dormirse)', aboutHeader: 'Por qué importan los ciclos', aboutBody: 'El sueño se da en ciclos de 90 min (ligero → profundo → REM). Despertar a mitad de ciclo provoca inercia del sueño (aturdimiento) por más de 30 min. Despertar al final del ciclo (justo tras REM) se siente fresco al instante. Recomendación adulta: 4–6 ciclos (6–9 horas).' },
+};
+
+/* ─── Exercise calorie labels ─── */
+export interface ExerciseLabels {
+  pageTitle: string; pageIntro: string;
+  exercise: string; duration: string; weight: string; calculate: string;
+  exerciseLabels: Record<ExerciseType, string>;
+  resultLabel: string; helpResult: string;
+  aboutHeader: string; aboutBody: string;
+}
+const EXERCISE_LABELS_KO: Record<ExerciseType, string> = { walking_brisk: '빠르게 걷기', running_8: '러닝 (8 km/h)', running_10: '러닝 (10 km/h)', running_12: '러닝 (12 km/h)', cycling_moderate: '사이클링 (보통)', cycling_vigorous: '사이클링 (격렬)', swimming_moderate: '수영 (보통)', swimming_vigorous: '수영 (격렬)', weight_training: '웨이트 트레이닝', yoga: '요가', pilates: '필라테스', hiking: '하이킹', jump_rope: '줄넘기', rowing: '로잉 머신', elliptical: '일립티컬', basketball: '농구', soccer: '축구', tennis: '테니스' };
+const EXERCISE_LABELS_EN: Record<ExerciseType, string> = { walking_brisk: 'Brisk walking', running_8: 'Running (8 km/h)', running_10: 'Running (10 km/h)', running_12: 'Running (12 km/h)', cycling_moderate: 'Cycling (moderate)', cycling_vigorous: 'Cycling (vigorous)', swimming_moderate: 'Swimming (moderate)', swimming_vigorous: 'Swimming (vigorous)', weight_training: 'Weight training', yoga: 'Yoga', pilates: 'Pilates', hiking: 'Hiking', jump_rope: 'Jump rope', rowing: 'Rowing machine', elliptical: 'Elliptical', basketball: 'Basketball', soccer: 'Soccer', tennis: 'Tennis' };
+const EXERCISE_LABELS_JA: Record<ExerciseType, string> = { walking_brisk: '早歩き', running_8: 'ランニング (8 km/h)', running_10: 'ランニング (10 km/h)', running_12: 'ランニング (12 km/h)', cycling_moderate: 'サイクリング (中)', cycling_vigorous: 'サイクリング (激)', swimming_moderate: '水泳 (中)', swimming_vigorous: '水泳 (激)', weight_training: 'ウェイトトレーニング', yoga: 'ヨガ', pilates: 'ピラティス', hiking: 'ハイキング', jump_rope: '縄跳び', rowing: 'ローイングマシン', elliptical: 'エリプティカル', basketball: 'バスケットボール', soccer: 'サッカー', tennis: 'テニス' };
+const EXERCISE_LABELS_ZH: Record<ExerciseType, string> = { walking_brisk: '快走', running_8: '跑步 (8 km/h)', running_10: '跑步 (10 km/h)', running_12: '跑步 (12 km/h)', cycling_moderate: '骑行 (中)', cycling_vigorous: '骑行 (剧烈)', swimming_moderate: '游泳 (中)', swimming_vigorous: '游泳 (剧烈)', weight_training: '力量训练', yoga: '瑜伽', pilates: '普拉提', hiking: '徒步', jump_rope: '跳绳', rowing: '划船机', elliptical: '椭圆机', basketball: '篮球', soccer: '足球', tennis: '网球' };
+const EXERCISE_LABELS_ZH_TW: Record<ExerciseType, string> = { walking_brisk: '快走', running_8: '跑步 (8 km/h)', running_10: '跑步 (10 km/h)', running_12: '跑步 (12 km/h)', cycling_moderate: '騎行 (中)', cycling_vigorous: '騎行 (劇烈)', swimming_moderate: '游泳 (中)', swimming_vigorous: '游泳 (劇烈)', weight_training: '力量訓練', yoga: '瑜伽', pilates: '皮拉提斯', hiking: '健行', jump_rope: '跳繩', rowing: '划船機', elliptical: '橢圓機', basketball: '籃球', soccer: '足球', tennis: '網球' };
+const EXERCISE_LABELS_ES: Record<ExerciseType, string> = { walking_brisk: 'Caminata rápida', running_8: 'Correr (8 km/h)', running_10: 'Correr (10 km/h)', running_12: 'Correr (12 km/h)', cycling_moderate: 'Ciclismo (moderado)', cycling_vigorous: 'Ciclismo (vigoroso)', swimming_moderate: 'Natación (moderado)', swimming_vigorous: 'Natación (vigoroso)', weight_training: 'Entrenamiento con pesas', yoga: 'Yoga', pilates: 'Pilates', hiking: 'Senderismo', jump_rope: 'Comba', rowing: 'Máquina de remo', elliptical: 'Elíptica', basketball: 'Baloncesto', soccer: 'Fútbol', tennis: 'Tenis' };
+export const EXERCISE_CAL_LABELS: Record<ToolLang, ExerciseLabels> = {
+  ko: { pageTitle: '운동 칼로리 소모 계산기', pageIntro: 'METs × 체중 × 시간으로 실제 운동별 정확한 칼로리 소모를 계산 (Compendium of Physical Activities 2024).', exercise: '운동 종류', duration: '운동 시간 (분)', weight: '체중 (kg)', calculate: '계산하기', exerciseLabels: EXERCISE_LABELS_KO, resultLabel: '소모 칼로리', helpResult: '실제 체성분에 따라 ±15% 차이 가능', aboutHeader: 'METs란?', aboutBody: 'METs(Metabolic Equivalent of Task)는 안정시 에너지 대비 운동 에너지 배율입니다. 예) 빠르게 걷기 4.3 METs = 안정시의 4.3배 칼로리 소모. 공식: METs × 3.5 × 체중(kg) × 시간(분) / 200 = 칼로리.' },
+  en: { pageTitle: 'Exercise Calorie Burn Calculator', pageIntro: 'METs × weight × time gives the actual calorie burn for any activity (Compendium of Physical Activities 2024).', exercise: 'Exercise', duration: 'Duration (min)', weight: 'Weight (kg)', calculate: 'Calculate', exerciseLabels: EXERCISE_LABELS_EN, resultLabel: 'Calories burned', helpResult: 'Actual burn varies ±15% by body composition', aboutHeader: 'What are METs?', aboutBody: 'METs (Metabolic Equivalent of Task) = energy cost vs. resting. Brisk walking at 4.3 METs burns 4.3× resting calories. Formula: METs × 3.5 × weight(kg) × time(min) / 200 = kcal.' },
+  ja: { pageTitle: '運動カロリー消費計算機', pageIntro: 'METs × 体重 × 時間で運動別の正確なカロリー消費を計算 (Compendium of Physical Activities 2024)。', exercise: '運動種類', duration: '運動時間 (分)', weight: '体重 (kg)', calculate: '計算', exerciseLabels: EXERCISE_LABELS_JA, resultLabel: '消費カロリー', helpResult: '体組成により±15%差あり', aboutHeader: 'METsとは?', aboutBody: 'METs(代謝当量)は安静時を1とした運動エネルギー倍率。例)早歩き4.3 METs = 安静時の4.3倍消費。計算式:METs × 3.5 × 体重(kg) × 時間(分) / 200 = kcal。' },
+  zh: { pageTitle: '运动卡路里消耗计算器', pageIntro: 'METs × 体重 × 时间精确计算每种运动的卡路里消耗 (Compendium of Physical Activities 2024)。', exercise: '运动种类', duration: '运动时长 (分钟)', weight: '体重 (kg)', calculate: '计算', exerciseLabels: EXERCISE_LABELS_ZH, resultLabel: '消耗卡路里', helpResult: '实际消耗因体成分±15%', aboutHeader: '什么是 METs?', aboutBody: 'METs(代谢当量)是相对静息状态的能量倍率。例)快走4.3 METs = 静息时的4.3倍消耗。公式:METs × 3.5 × 体重(kg) × 时间(分钟) / 200 = kcal。' },
+  'zh-tw': { pageTitle: '運動卡路里消耗計算機', pageIntro: 'METs × 體重 × 時間精確計算每種運動的卡路里消耗 (Compendium of Physical Activities 2024)。', exercise: '運動種類', duration: '運動時長 (分鐘)', weight: '體重 (kg)', calculate: '計算', exerciseLabels: EXERCISE_LABELS_ZH_TW, resultLabel: '消耗卡路里', helpResult: '實際消耗因體組成±15%', aboutHeader: '什麼是 METs?', aboutBody: 'METs(代謝當量)是相對靜息狀態的能量倍率。例)快走4.3 METs = 靜息時的4.3倍消耗。公式:METs × 3.5 × 體重(kg) × 時間(分鐘) / 200 = kcal。' },
+  es: { pageTitle: 'Calculadora de Calorías por Ejercicio', pageIntro: 'METs × peso × tiempo calcula la quema real por actividad (Compendium of Physical Activities 2024).', exercise: 'Ejercicio', duration: 'Duración (min)', weight: 'Peso (kg)', calculate: 'Calcular', exerciseLabels: EXERCISE_LABELS_ES, resultLabel: 'Calorías quemadas', helpResult: 'La quema real varía ±15% según composición corporal', aboutHeader: '¿Qué son los METs?', aboutBody: 'METs (Equivalente Metabólico de Tarea) = coste energético vs. reposo. Caminar rápido 4.3 METs = 4.3× las calorías en reposo. Fórmula: METs × 3.5 × peso(kg) × tiempo(min) / 200 = kcal.' },
 };

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { ArticleListItem } from '@/lib/articles-v2';
+import { localizedCategory } from '@/lib/category-labels';
 
 interface Props {
   item: ArticleListItem;
@@ -56,7 +57,7 @@ export default function ArticleCardV2({ item, shortLang, featured = false }: Pro
             aria-label={`Category: ${item.category}`}
           >
             {item.category_emoji && <span aria-hidden>{item.category_emoji}</span>}
-            <span>{item.category}</span>
+            <span>{localizedCategory(item.category, shortLang)}</span>
           </span>
         </div>
         <h3 className={`font-bold leading-snug group-hover:text-primary-700 dark:group-hover:text-primary-400 transition-colors ${featured ? 'text-xl md:text-2xl' : 'text-base md:text-lg'}`}>

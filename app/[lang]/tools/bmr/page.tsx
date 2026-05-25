@@ -54,7 +54,7 @@ export default function BmrPage({ params }: Props) {
           </p>
         </header>
 
-        <BmrCalculator labels={L} />
+        <BmrCalculator labels={L} lang={lang} />
 
         <section className="mt-12">
           <h2 className="text-2xl font-bold mb-3">{L.aboutHeader}</h2>

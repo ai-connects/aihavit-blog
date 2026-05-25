@@ -11,6 +11,8 @@ import {
   lbToKg,
   ftInToCm,
 } from '@/lib/calculators';
+import AppCtaBanner from './AppCtaBanner';
+import type { ToolLang } from '@/lib/tool-labels';
 
 interface Labels {
   sex: string;
@@ -36,9 +38,10 @@ interface Labels {
 
 interface Props {
   labels: Labels;
+  lang: ToolLang;
 }
 
-export default function BmrCalculator({ labels }: Props) {
+export default function BmrCalculator({ labels, lang }: Props) {
   const [sex, setSex] = useState<Sex>('male');
   const [age, setAge] = useState(30);
   const [unit, setUnit] = useState<Unit>('metric');
@@ -135,6 +138,7 @@ export default function BmrCalculator({ labels }: Props) {
           </div>
         </div>
       )}
+      {result && <AppCtaBanner lang={lang} />}
     </div>
   );
 }
