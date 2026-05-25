@@ -174,15 +174,21 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
             {label('references', shortLang)}
           </h3>
           <ul className="space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
-            {references.map((r, i) => (
-              <li key={i} className="italic">
-                {r.url ? (
-                  <a href={r.url} target="_blank" rel="noopener" className="hover:underline">{r.text}</a>
-                ) : (
-                  r.text
-                )}
-              </li>
-            ))}
+            {references.map((r: any, i) => {
+              const refTitle = r.title ?? r.text ?? '';
+              const refSource = r.source ?? '';
+              const refUrl = r.url ?? null;
+              const display = refSource ? `${refTitle} — ${refSource}` : refTitle;
+              return (
+                <li key={i} className="italic">
+                  {refUrl ? (
+                    <a href={refUrl} target="_blank" rel="noopener" className="hover:underline">{display}</a>
+                  ) : (
+                    display
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </section>
       )}
