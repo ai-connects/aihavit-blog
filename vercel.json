@@ -31,8 +31,8 @@
     { "source": "/blog/g", "destination": "/ko", "permanent": true },
     { "source": "/blog/seo-batch-2/:slug", "destination": "/ko/:slug", "permanent": true },
     { "source": "/blog/g/:slug", "destination": "/ko/:slug", "permanent": true },
-    { "source": "/blog/:lang/:slug", "destination": "/:lang/:slug", "permanent": true },
+    { "source": "/blog/:lang/search", "destination": "/:lang", "permanent": true },
     { "source": "/blog/:lang/c/:catSlug", "destination": "/:lang", "permanent": true },
-    { "source": "/blog/:lang/search", "destination": "/:lang", "permanent": true }
+    { "source": "/blog/:lang/:slug", "destination": "/:lang/:slug", "permanent": true }
   ]
 }
