@@ -31,6 +31,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  // BLOG_AUTHORITY v1.0.0 (PRD §13.2.3 / §7.1 Step 5 / INV-007) —
+  // 12 신규 entry (about×6 lang + editorial-policy×6 lang). 각 entry는
+  // 6 lang hreflang alternates 포함 (entry 카운트 아님 — sub-element).
+  // 총 sitemap entry = 6,536 (기존) + 12 (신규) = 6,548.
+  for (const lang of ROUTE_LANGS) {
+    const aboutAlternates: Record<string, string> = {};
+    const policyAlternates: Record<string, string> = {};
+    for (const other of ROUTE_LANGS) {
+      aboutAlternates[other] = `${SITE}/${other}/about`;
+      policyAlternates[other] = `${SITE}/${other}/editorial-policy`;
+    }
+    aboutAlternates['x-default'] = `${SITE}/en/about`;
+    policyAlternates['x-default'] = `${SITE}/en/editorial-policy`;
+
+    entries.push({
+      url: `${SITE}/${lang}/about`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+      alternates: { languages: aboutAlternates },
+    });
+    entries.push({
+      url: `${SITE}/${lang}/editorial-policy`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+      alternates: { languages: policyAlternates },
+    });
+  }
+
   for (const a of getAllArticles()) {
     for (const lang of ROUTE_LANGS) {
       const r = resolveContent(a, lang);
