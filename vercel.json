@@ -1,0 +1,26 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    { "source": "/faq", "destination": "/", "permanent": true },
+    { "source": "/faq-1", "destination": "/", "permanent": true },
+    { "source": "/faq-1/:path*", "destination": "/", "permanent": true },
+    { "source": "/cookie-policy", "destination": "/privacy.html", "permanent": true },
+    { "source": "/cookie-policy-en", "destination": "/privacy.html", "permanent": true },
+    { "source": "/safety", "destination": "/", "permanent": true },
+    { "source": "/safety-and-secureity-tips", "destination": "/", "permanent": true },
+    { "source": "/eng", "destination": "/", "permanent": true },
+    { "source": "/support", "destination": "/", "permanent": true },
+    { "source": "/cart", "destination": "/", "permanent": true },
+    { "source": "/havit-photo-verification-guide", "destination": "/", "permanent": true },
+    { "source": "/privacy-en", "destination": "/privacy.html", "permanent": true },
+    { "source": "/terms-of-service-en", "destination": "/terms.html", "permanent": true },
+    { "source": "/blog", "destination": "https://blog.aihavit.com/", "permanent": true },
+    { "source": "/blog/:path*", "destination": "https://blog.aihavit.com/", "permanent": true },
+    { "source": "/about", "destination": "/", "permanent": true },
+    { "source": "/about-us", "destination": "/", "permanent": true },
+    { "source": "/team", "destination": "/", "permanent": true },
+    { "source": "/contact", "destination": "/", "permanent": true },
+    { "source": "/careers", "destination": "/", "permanent": true },
+    { "source": "/home", "destination": "/", "permanent": true }
+  ]
+}
