@@ -10,6 +10,10 @@ const FOOTER_I18N: Record<string, { aiTransparency: string }> = {
   zh: { aiTransparency: 'AI辅助研究，人工编辑审核。' },
   'zh-tw': { aiTransparency: 'AI輔助研究，人工編輯審核。' },
   es: { aiTransparency: 'Investigación asistida por IA, edición revisada por humanos.' },
+  'pt-br': { aiTransparency: 'Pesquisa assistida por IA, edição revisada por humanos.' },
+  id: { aiTransparency: 'Riset dibantu AI, editorial diperiksa manusia.' },
+  de: { aiTransparency: 'KI-gestützte Recherche, menschliche Redaktion.' },
+  fr: { aiTransparency: 'Recherche assistée par IA, édition révisée par des humains.' },
 };
 
 function pickFooterI18n(shortLang: string): { aiTransparency: string } {

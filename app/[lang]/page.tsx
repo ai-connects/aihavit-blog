@@ -10,7 +10,7 @@ import { toFullLang } from '@/lib/i18n';
 
 export const revalidate = 600;
 
-const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es'] as const;
+const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es', 'pt-br', 'id', 'de', 'fr'] as const;
 type RouteLang = (typeof ROUTE_LANGS)[number];
 
 export function generateStaticParams() {
@@ -29,26 +29,35 @@ const HERO_TAGLINE: Record<RouteLang, string> = {
   zh: '关于习惯、睡眠、营养和运动的科学指南。',
   'zh-tw': '關於習慣、睡眠、營養和運動的科學指南。',
   es: 'Guías basadas en ciencia sobre hábitos, sueño, nutrición y movimiento.',
+  'pt-br': 'Guias baseados em ciência sobre hábitos, sono, nutrição e movimento.',
+  id: 'Panduan berbasis sains tentang kebiasaan, tidur, nutrisi, dan gerakan.',
+  de: 'Wissenschaftlich fundierte Guides zu Gewohnheiten, Schlaf, Ernährung und Bewegung.',
+  fr: 'Guides fondés sur la science pour les habitudes, le sommeil, la nutrition et le mouvement.',
 };
 
 const SEARCH_PLACEHOLDER: Record<RouteLang, string> = {
   ko: '검색...', en: 'Search...', ja: '検索...', zh: '搜索...', 'zh-tw': '搜尋...', es: 'Buscar...',
+  'pt-br': 'Buscar...', id: 'Cari...', de: 'Suchen...', fr: 'Rechercher...',
 };
 
 const LABEL_ALL: Record<RouteLang, string> = {
   ko: '전체', en: 'All', ja: 'すべて', zh: '全部', 'zh-tw': '全部', es: 'Todo',
+  'pt-br': 'Tudo', id: 'Semua', de: 'Alle', fr: 'Tout',
 };
 
 const LABEL_LATEST: Record<RouteLang, string> = {
   ko: '최신', en: 'Latest', ja: '最新', zh: '最新', 'zh-tw': '最新', es: 'Recientes',
+  'pt-br': 'Recentes', id: 'Terbaru', de: 'Neueste', fr: 'Récents',
 };
 
 const LABEL_NO_RESULTS: Record<RouteLang, string> = {
   ko: '검색 결과가 없습니다.', en: 'No results found.', ja: '結果が見つかりません.', zh: '没有找到结果.', 'zh-tw': '沒有找到結果.', es: 'No se encontraron resultados.',
+  'pt-br': 'Nenhum resultado.', id: 'Tidak ada hasil.', de: 'Keine Ergebnisse.', fr: 'Aucun résultat.',
 };
 
 const LABEL_ITEMS: Record<RouteLang, string> = {
   ko: '건', en: 'articles', ja: '件', zh: '篇', 'zh-tw': '篇', es: 'artículos',
+  'pt-br': 'artigos', id: 'artikel', de: 'Artikel', fr: 'articles',
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

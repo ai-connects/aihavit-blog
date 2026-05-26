@@ -20,6 +20,11 @@ const DISCLAIMER_I18N: Record<string, string> = {
   'zh-tw':
     '本文僅供一般資訊參考，不能替代專業醫療建議、診斷或治療。如有任何健康相關問題，請務必諮詢合格的醫療專業人員。',
   es: 'Este artículo tiene fines informativos generales y no sustituye el consejo, diagnóstico o tratamiento médico profesional. Consulte siempre a un profesional sanitario cualificado.',
+  'pt-br':
+    'Este artigo tem fins informativos gerais e não substitui aconselhamento, diagnóstico ou tratamento médico profissional. Sempre consulte um profissional de saúde qualificado para questões sobre uma condição médica.',
+  id: 'Artikel ini hanya untuk informasi umum dan bukan pengganti nasihat, diagnosis, atau perawatan medis profesional. Selalu konsultasikan dengan tenaga kesehatan yang berkualifikasi untuk pertanyaan tentang kondisi medis.',
+  de: 'Dieser Artikel dient ausschließlich allgemeinen Informationszwecken und ersetzt keine professionelle medizinische Beratung, Diagnose oder Behandlung. Wenden Sie sich bei gesundheitlichen Fragen stets an qualifiziertes medizinisches Fachpersonal.',
+  fr: "Cet article est fourni à titre d'information générale uniquement et ne remplace pas un avis, un diagnostic ou un traitement médical professionnel. Consultez toujours un professionnel de santé qualifié pour toute question concernant une affection médicale.",
 };
 
 function pickText(shortLang: string): string {

@@ -22,6 +22,10 @@ const AUTHOR_I18N: Record<string, { by: string; reviewedBy: string }> = {
   zh: { by: '撰写', reviewedBy: '审核' },
   'zh-tw': { by: '撰寫', reviewedBy: '審核' },
   es: { by: 'Por', reviewedBy: 'Revisado por' },
+  'pt-br': { by: 'Por', reviewedBy: 'Revisado por' },
+  id: { by: 'Oleh', reviewedBy: 'Diperiksa oleh' },
+  de: { by: 'Von', reviewedBy: 'Geprüft von' },
+  fr: { by: 'Par', reviewedBy: 'Vérifié par' },
 };
 
 function pickLabels(shortLang: string): { by: string; reviewedBy: string } {

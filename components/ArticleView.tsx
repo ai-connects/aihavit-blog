@@ -17,14 +17,14 @@ interface Props {
 }
 
 const L: Record<string, Record<string, string>> = {
-  back: { en: '← Back to Blog', ko: '← 블로그로 돌아가기', ja: '← ブログに戻る', zh: '← 返回博客', 'zh-tw': '← 返回網誌', es: '← Volver al blog' },
-  tldr: { en: 'TL;DR', ko: '한 줄 요약', ja: '要約', zh: '一句话总结', 'zh-tw': '一句話總結', es: 'En resumen' },
-  updated: { en: 'Updated', ko: '업데이트', ja: '更新', zh: '更新', 'zh-tw': '更新', es: 'Actualizado' },
-  minRead: { en: 'min read', ko: '분 분량', ja: '分で読める', zh: '分钟阅读', 'zh-tw': '分鐘閱讀', es: 'min de lectura' },
-  keyStats: { en: 'Key Stats', ko: '핵심 통계', ja: '主要統計', zh: '关键统计', 'zh-tw': '關鍵統計', es: 'Datos clave' },
-  faq: { en: 'Frequently Asked Questions', ko: '자주 묻는 질문', ja: 'よくある質問', zh: '常见问题', 'zh-tw': '常見問題', es: 'Preguntas frecuentes' },
-  references: { en: 'References', ko: '참고 자료', ja: '参考資料', zh: '参考资料', 'zh-tw': '參考資料', es: 'Referencias' },
-  fallbackBanner: { en: 'Showing English (translation pending for your language).', ko: '영문판을 표시 중입니다 (해당 언어 번역 예정).', ja: '英語版を表示中（翻訳予定）.', zh: '正在显示英文版（翻译中）.', 'zh-tw': '正在顯示英文版（翻譯中）.', es: 'Mostrando inglés (traducción pendiente).' },
+  back: { en: '← Back to Blog', ko: '← 블로그로 돌아가기', ja: '← ブログに戻る', zh: '← 返回博客', 'zh-tw': '← 返回網誌', es: '← Volver al blog', 'pt-br': '← Voltar ao blog', id: '← Kembali ke blog', de: '← Zurück zum Blog', fr: '← Retour au blog' },
+  tldr: { en: 'TL;DR', ko: '한 줄 요약', ja: '要約', zh: '一句话总结', 'zh-tw': '一句話總結', es: 'En resumen', 'pt-br': 'Em resumo', id: 'Ringkasan', de: 'Kurzfassung', fr: 'En bref' },
+  updated: { en: 'Updated', ko: '업데이트', ja: '更新', zh: '更新', 'zh-tw': '更新', es: 'Actualizado', 'pt-br': 'Atualizado', id: 'Diperbarui', de: 'Aktualisiert', fr: 'Mis à jour' },
+  minRead: { en: 'min read', ko: '분 분량', ja: '分で読める', zh: '分钟阅读', 'zh-tw': '分鐘閱讀', es: 'min de lectura', 'pt-br': 'min de leitura', id: 'menit', de: 'Min. Lesezeit', fr: 'min de lecture' },
+  keyStats: { en: 'Key Stats', ko: '핵심 통계', ja: '主要統計', zh: '关键统计', 'zh-tw': '關鍵統計', es: 'Datos clave', 'pt-br': 'Estatísticas-chave', id: 'Statistik Utama', de: 'Kennzahlen', fr: 'Chiffres clés' },
+  faq: { en: 'Frequently Asked Questions', ko: '자주 묻는 질문', ja: 'よくある質問', zh: '常见问题', 'zh-tw': '常見問題', es: 'Preguntas frecuentes', 'pt-br': 'Perguntas frequentes', id: 'Pertanyaan Umum', de: 'Häufige Fragen', fr: 'Questions fréquentes' },
+  references: { en: 'References', ko: '참고 자료', ja: '参考資料', zh: '参考资料', 'zh-tw': '參考資料', es: 'Referencias', 'pt-br': 'Referências', id: 'Referensi', de: 'Quellen', fr: 'Références' },
+  fallbackBanner: { en: 'Showing English (translation pending for your language).', ko: '영문판을 표시 중입니다 (해당 언어 번역 예정).', ja: '英語版を表示中（翻訳予定）.', zh: '正在显示英文版（翻译中）.', 'zh-tw': '正在顯示英文版（翻譯中）.', es: 'Mostrando inglés (traducción pendiente).', 'pt-br': 'Exibindo em inglês (tradução pendente).', id: 'Menampilkan bahasa Inggris (terjemahan akan menyusul).', de: 'Englische Version (Übersetzung in Vorbereitung).', fr: 'Version anglaise (traduction à venir).' },
 };
 
 function label(key: string, shortLang: string): string {

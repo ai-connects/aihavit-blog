@@ -13,7 +13,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { toFullLang } from '@/lib/i18n';
 
-const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es'] as const;
+const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es', 'pt-br', 'id', 'de', 'fr'] as const;
 type RouteLang = (typeof ROUTE_LANGS)[number];
 
 interface Props {
@@ -145,6 +145,74 @@ const ABOUT_I18N: Record<RouteLang, AboutI18n> = {
       'Para correcciones, consultas de asociación o comentarios sobre cualquier artículo, envíe un correo a nuestro equipo editorial. Respondemos a inquietudes verificadas en 7 días hábiles y actualizamos artículos públicamente cuando corresponde.',
     contactLabel: 'Correo',
     publisherLabel: 'Publicado por',
+  },
+  'pt-br': {
+    title: 'Sobre o HAVIT Blog',
+    metaDescription:
+      'HAVIT Blog é publicado pela AI Connect Inc. Compartilhamos pesquisas de bem-estar assistidas por IA e revisadas por humanos sobre hábitos, sono, nutrição e movimento.',
+    heading: 'Sobre o HAVIT Blog',
+    sectionPublisherHeading: 'Publicador',
+    sectionPublisherBody:
+      'O HAVIT Blog é publicado pela AI Connect Inc., uma empresa sediada em Seul que digitaliza a saúde metabólica premium — cuidados que antes só eram possíveis com equipamentos caros, clínicas especializadas e coordenadores dedicados, agora acessíveis a qualquer pessoa através de um smartphone. O HAVIT é o produto principal, e o HAVIT Blog estende essa missão ao conteúdo. A AI Connect Inc. é a única entidade legal responsável por tudo publicado neste site.',
+    sectionMissionHeading: 'Nossa Missão',
+    sectionMissionBody:
+      'Uma vida saudável e cheia de energia — para cada pessoa no mundo. Acreditamos que a clareza das informações que antes exigiam clínicas especializadas ou consultas pagas deve estar disponível para qualquer pessoa com um smartphone. O HAVIT Blog traduz pesquisas revisadas por pares e diretrizes clínicas em conteúdo multilíngue e acionável sobre hábitos, sono, nutrição, hidratação e movimento. Cada artigo passa por pesquisa assistida por IA e revisão editorial humana antes de ser publicado.',
+    sectionContactHeading: 'Contato',
+    sectionContactBody:
+      'Para correções, consultas de parceria ou feedback sobre qualquer artigo, envie um e-mail para nossa equipe editorial. Respondemos a preocupações verificadas em até 7 dias úteis e atualizamos os artigos publicamente quando justificado.',
+    contactLabel: 'E-mail',
+    publisherLabel: 'Publicado por',
+  },
+  id: {
+    title: 'Tentang HAVIT Blog',
+    metaDescription:
+      'HAVIT Blog diterbitkan oleh AI Connect Inc. Kami berbagi riset kesehatan yang dibantu AI dan diperiksa manusia tentang kebiasaan, tidur, nutrisi, dan gerakan.',
+    heading: 'Tentang HAVIT Blog',
+    sectionPublisherHeading: 'Penerbit',
+    sectionPublisherBody:
+      'HAVIT Blog diterbitkan oleh AI Connect Inc., perusahaan berbasis Seoul yang mendigitalkan kesehatan metabolik premium — perawatan yang dulu hanya mungkin dengan peralatan mahal, klinik spesialis, dan koordinator khusus, kini dapat diakses siapa saja melalui smartphone. HAVIT adalah produk utamanya, dan HAVIT Blog memperluas misi tersebut ke dalam konten. AI Connect Inc. adalah satu-satunya entitas hukum yang bertanggung jawab atas semua yang diterbitkan di situs ini.',
+    sectionMissionHeading: 'Misi Kami',
+    sectionMissionBody:
+      'Hidup sehat dan penuh energi — untuk setiap orang di dunia. Kami percaya bahwa kejelasan informasi yang dulu hanya bisa didapat di klinik spesialis atau konsultasi berbayar harus tersedia untuk siapa saja yang memiliki smartphone. HAVIT Blog menerjemahkan riset yang telah ditinjau sejawat dan pedoman klinis menjadi konten multibahasa yang dapat dipraktikkan tentang kebiasaan, tidur, nutrisi, hidrasi, dan gerakan. Setiap artikel melalui riset yang dibantu AI dan tinjauan editorial manusia sebelum diterbitkan.',
+    sectionContactHeading: 'Kontak',
+    sectionContactBody:
+      'Untuk koreksi, pertanyaan kemitraan, atau umpan balik tentang artikel apa pun, kirim email ke tim editorial kami. Kami merespons keluhan yang terverifikasi dalam 7 hari kerja dan memperbarui artikel secara publik bila perlu.',
+    contactLabel: 'Email',
+    publisherLabel: 'Diterbitkan oleh',
+  },
+  de: {
+    title: 'Über HAVIT Blog',
+    metaDescription:
+      'HAVIT Blog wird von AI Connect Inc. herausgegeben. Wir teilen KI-gestützte und von Menschen geprüfte Wellness-Forschung zu Gewohnheiten, Schlaf, Ernährung und Bewegung.',
+    heading: 'Über HAVIT Blog',
+    sectionPublisherHeading: 'Herausgeber',
+    sectionPublisherBody:
+      'HAVIT Blog wird von AI Connect Inc. herausgegeben, einem in Seoul ansässigen Unternehmen, das Premium-Stoffwechselgesundheit digitalisiert — Versorgung, die früher teure Geräte, Spezialkliniken und persönliche Koordinatoren erforderte, ist nun für jeden über ein Smartphone zugänglich. HAVIT ist das Hauptprodukt, und der HAVIT Blog erweitert diese Mission auf Inhalte. AI Connect Inc. ist die alleinige juristische Person, die für alles auf dieser Website verantwortlich ist.',
+    sectionMissionHeading: 'Unsere Mission',
+    sectionMissionBody:
+      'Ein gesundes, vitales Leben — für jeden Menschen auf der Welt. Wir glauben, dass die Klarheit von Informationen, die früher Spezialkliniken oder kostenpflichtige Beratungen erforderte, jedem mit einem Smartphone zur Verfügung stehen sollte. HAVIT Blog übersetzt peer-reviewed Forschung und klinische Leitlinien in handlungsorientierte, mehrsprachige Inhalte zu Gewohnheiten, Schlaf, Ernährung, Hydration und Bewegung. Jeder Artikel durchläuft vor der Veröffentlichung KI-gestützte Recherche und menschliche redaktionelle Prüfung.',
+    sectionContactHeading: 'Kontakt',
+    sectionContactBody:
+      'Für Korrekturen, Partnerschaftsanfragen oder Feedback zu einem Artikel senden Sie bitte eine E-Mail an unser Redaktionsteam. Wir antworten auf verifizierte Anliegen innerhalb von 7 Werktagen und aktualisieren Artikel öffentlich, wenn dies gerechtfertigt ist.',
+    contactLabel: 'E-Mail',
+    publisherLabel: 'Herausgegeben von',
+  },
+  fr: {
+    title: 'À propos de HAVIT Blog',
+    metaDescription:
+      'HAVIT Blog est publié par AI Connect Inc. Nous partageons des recherches sur le bien-être assistées par IA et révisées par des humains sur les habitudes, le sommeil, la nutrition et le mouvement.',
+    heading: 'À propos de HAVIT Blog',
+    sectionPublisherHeading: 'Éditeur',
+    sectionPublisherBody:
+      "HAVIT Blog est publié par AI Connect Inc., une société basée à Séoul qui numérise la santé métabolique premium — des soins qui n'étaient autrefois possibles qu'avec du matériel coûteux, des cliniques spécialisées et des coordinateurs dédiés, désormais accessibles à toute personne via un smartphone. HAVIT est le produit principal, et HAVIT Blog étend cette mission au contenu. AI Connect Inc. est la seule entité légale responsable de tout ce qui est publié sur ce site.",
+    sectionMissionHeading: 'Notre Mission',
+    sectionMissionBody:
+      "Une vie saine et pleine d'énergie — pour chaque personne dans le monde. Nous pensons que la clarté de l'information qui exigeait autrefois des cliniques spécialisées ou des consultations payantes devrait être disponible pour quiconque possède un smartphone. HAVIT Blog traduit la recherche évaluée par des pairs et les directives cliniques en contenu multilingue et actionnable sur les habitudes, le sommeil, la nutrition, l'hydratation et le mouvement. Chaque article passe par une recherche assistée par IA et une révision éditoriale humaine avant publication.",
+    sectionContactHeading: 'Contact',
+    sectionContactBody:
+      "Pour les corrections, les demandes de partenariat ou les commentaires sur un article, envoyez un e-mail à notre équipe éditoriale. Nous répondons aux préoccupations vérifiées dans un délai de 7 jours ouvrables et mettons à jour les articles publiquement lorsque cela est justifié.",
+    contactLabel: 'E-mail',
+    publisherLabel: 'Publié par',
   },
 };
 

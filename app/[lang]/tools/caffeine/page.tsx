@@ -3,17 +3,17 @@ import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CaffeineCalculator from '@/components/tools/CaffeineCalculator';
-import { CAFFEINE_LABELS, type ToolLang } from '@/lib/tool-labels';
+import { CAFFEINE_LABELS, type ToolLang, toToolLang } from '@/lib/tool-labels';
 import { toFullLang } from '@/lib/i18n';
 
-const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es'] as const;
+const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es', 'pt-br', 'id', 'de', 'fr'] as const;
 interface Props { params: { lang: string } }
 
 export function generateStaticParams() { return ROUTE_LANGS.map((lang) => ({ lang })); }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!ROUTE_LANGS.includes(params.lang as ToolLang)) return { title: 'Not Found' };
-  const L = CAFFEINE_LABELS[params.lang as ToolLang];
+  const L = CAFFEINE_LABELS[toToolLang(params.lang)];
   return {
     title: `${L.pageTitle} — HAVIT`,
     description: L.pageIntro,
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default function CaffeinePage({ params }: Props) {
   if (!ROUTE_LANGS.includes(params.lang as ToolLang)) notFound();
-  const lang = params.lang as ToolLang;
+  const lang = toToolLang(params.lang);
   const fullLang = toFullLang(lang === 'zh-tw' ? 'zh-tw' : lang === 'zh' ? 'zh-cn' : lang);
   const L = CAFFEINE_LABELS[lang];
 

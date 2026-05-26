@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import { getAllArticles, resolveContent } from '@/lib/articles-v2';
 
 const SITE = 'https://blog.aihavit.com';
-const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es'] as const;
+const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es', 'pt-br', 'id', 'de', 'fr'] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];

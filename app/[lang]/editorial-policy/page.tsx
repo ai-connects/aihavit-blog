@@ -19,7 +19,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { toFullLang } from '@/lib/i18n';
 
-const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es'] as const;
+const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es', 'pt-br', 'id', 'de', 'fr'] as const;
 type RouteLang = (typeof ROUTE_LANGS)[number];
 
 interface Props {
@@ -230,6 +230,122 @@ const POLICY_I18N: Record<RouteLang, PolicyI18n> = {
     contactBody:
       'Para correcciones, solicitudes de verificación de fuentes, consultas de asociación o cualquier otra inquietud editorial, envíe un correo al Equipo Editorial de HAVIT. Monitoreamos esta dirección durante horario laboral y respondemos a inquietudes verificadas en 7 días hábiles.',
     contactLabel: 'Correo',
+  },
+  'pt-br': {
+    title: 'Política Editorial',
+    metaDescription:
+      'Política editorial do HAVIT Blog: escopo da IA, fluxo de revisão humana, credenciais dos revisores, política de correções e contato. Publicado pela AI Connect Inc.',
+    heading: 'Política Editorial',
+    lastReviewedLabel: 'Última revisão',
+    aiScopeHeading: 'Como Usamos IA',
+    aiScopeBody:
+      'O HAVIT Blog usa IA generativa como ferramenta de apoio à pesquisa e ferramenta de redação. Especificamente, a IA nos ajuda a (a) sintetizar estudos revisados por pares e diretrizes clínicas em estruturas organizadas, (b) redigir primeiras versões de explicações, comparações e perguntas frequentes, e (c) traduzir o conteúdo finalizado em inglês para cinco idiomas adicionais. A IA nunca publica diretamente. Cada artigo — incluindo traduções — passa por revisão editorial humana antes da publicação.',
+    workflowHeading: 'Fluxo Editorial',
+    workflowBody:
+      'Cada artigo no HAVIT Blog passa pelas quatro etapas a seguir antes da publicação:',
+    workflowSteps: [
+      'Rascunho — A IA gera um primeiro rascunho estruturado a partir de fontes revisadas por pares, diretrizes clínicas e o briefing do artigo.',
+      'Verificação de fatos — Um editor humano verifica cada estatística, citação e afirmação em relação às fontes primárias listadas. Afirmações não verificadas são removidas ou marcadas como tal.',
+      'Revisão de assessoria médica — Para categorias YMYL (Health & Conditions, Medication Guide, Mental Health & Stress, etc.), o HAVIT Medical Advisory revisa o artigo quanto à precisão médica, linguagem de risco e adequação do aviso legal.',
+      'Publicação — Somente após a verificação de fatos e (quando aplicável) a revisão médica serem aprovadas, o artigo é publicado, com a data last_updated definida como a data de conclusão da revisão.',
+    ],
+    reviewerHeading: 'Credenciais dos Revisores',
+    reviewerBody:
+      'O HAVIT Medical Advisory é um comitê editorial de revisão composto por colaboradores com formação em medicina, farmacologia, ciência da nutrição e saúde pública. Os revisores são credenciados para revisar conteúdo dentro de sua área de especialização. Em 2026-05-25, este é um nome de entidade coletiva; divulgações individuais de revisores serão adicionadas em uma atualização futura conforme expandirmos o comitê. Para verificação ou para consultar credenciais de revisores para um artigo específico, entre em contato pelo e-mail abaixo.',
+    correctionsHeading: 'Política de Correções',
+    correctionsBody:
+      'Quando um erro factual é relatado e verificado, (a) atualizamos o artigo, (b) definimos uma nova data last_updated, e (c) preservamos uma breve nota de alteração quando a correção altera materialmente a orientação. Respondemos a solicitações de correção verificadas em 7 dias úteis. Decisões editoriais (estilo, escopo) podem diferir das solicitações de correção e são tratadas separadamente.',
+    contactHeading: 'Contato',
+    contactBody:
+      'Para correções, solicitações de verificação de fontes, consultas de parceria ou qualquer outra preocupação editorial, envie um e-mail para a Equipe Editorial do HAVIT. Monitoramos este endereço durante o horário comercial e respondemos a preocupações verificadas em 7 dias úteis.',
+    contactLabel: 'E-mail',
+  },
+  id: {
+    title: 'Kebijakan Editorial',
+    metaDescription:
+      'Kebijakan editorial HAVIT Blog: cakupan AI, alur tinjauan manusia, kredensial peninjau, kebijakan koreksi, dan kontak. Diterbitkan oleh AI Connect Inc.',
+    heading: 'Kebijakan Editorial',
+    lastReviewedLabel: 'Terakhir ditinjau',
+    aiScopeHeading: 'Cara Kami Menggunakan AI',
+    aiScopeBody:
+      'HAVIT Blog menggunakan AI generatif sebagai alat bantu riset dan penyusunan draf. Secara spesifik, AI membantu kami (a) merangkum studi yang ditinjau sejawat dan pedoman klinis menjadi kerangka terstruktur, (b) menyusun versi awal penjelasan, perbandingan, dan FAQ, serta (c) menerjemahkan konten bahasa Inggris yang sudah final ke lima bahasa tambahan. AI tidak pernah menerbitkan secara langsung. Setiap artikel — termasuk terjemahan — melewati tinjauan editorial manusia sebelum diterbitkan.',
+    workflowHeading: 'Alur Editorial',
+    workflowBody:
+      'Setiap artikel di HAVIT Blog melalui empat tahap berikut sebelum dipublikasikan:',
+    workflowSteps: [
+      'Draf — AI menghasilkan draf pertama yang terstruktur dari sumber yang ditinjau sejawat, pedoman klinis, dan ringkasan artikel.',
+      'Pemeriksaan fakta — Editor manusia memverifikasi setiap statistik, kutipan, dan klaim terhadap sumber primer yang tercantum. Klaim yang tidak terverifikasi dihapus atau ditandai.',
+      'Tinjauan penasihat medis — Untuk kategori YMYL (Health & Conditions, Medication Guide, Mental Health & Stress, dll.), HAVIT Medical Advisory meninjau artikel untuk akurasi medis, bahasa risiko, dan kecukupan pernyataan penyangkalan.',
+      'Publikasi — Hanya setelah baik pemeriksaan fakta maupun (jika berlaku) tinjauan medis lolos, artikel akan dipublikasikan, dengan tanggal last_updated yang ditetapkan ke tanggal penyelesaian tinjauan.',
+    ],
+    reviewerHeading: 'Kredensial Peninjau',
+    reviewerBody:
+      'HAVIT Medical Advisory adalah komite tinjauan editorial yang terdiri dari kontributor dengan latar belakang kedokteran, farmakologi, ilmu gizi, dan kesehatan masyarakat. Peninjau dikreditkan untuk meninjau konten dalam bidang keahliannya. Per 2026-05-25, ini adalah nama entitas kolektif; pengungkapan peninjau individu akan ditambahkan di pembaruan mendatang seiring perluasan komite. Untuk verifikasi atau menanyakan kredensial peninjau artikel tertentu, hubungi kami melalui email di bawah.',
+    correctionsHeading: 'Kebijakan Koreksi',
+    correctionsBody:
+      'Ketika kesalahan faktual dilaporkan dan diverifikasi, kami (a) memperbarui artikel, (b) menetapkan tanggal last_updated baru, dan (c) menyimpan catatan perubahan singkat ketika koreksi mengubah panduan secara material. Kami merespons permintaan koreksi yang terverifikasi dalam 7 hari kerja. Keputusan editorial (gaya, cakupan) dapat berbeda dari permintaan koreksi dan ditangani secara terpisah.',
+    contactHeading: 'Kontak',
+    contactBody:
+      'Untuk koreksi, permintaan verifikasi sumber, pertanyaan kemitraan, atau kekhawatiran editorial lainnya, kirim email ke Tim Editorial HAVIT. Kami memantau alamat ini selama jam kerja dan merespons kekhawatiran yang terverifikasi dalam 7 hari kerja.',
+    contactLabel: 'Email',
+  },
+  de: {
+    title: 'Redaktionsrichtlinie',
+    metaDescription:
+      'HAVIT Blog Redaktionsrichtlinie: KI-Umfang, menschlicher Prüfprozess, Prüfer-Qualifikationen, Korrekturrichtlinie und Kontakt. Herausgegeben von AI Connect Inc.',
+    heading: 'Redaktionsrichtlinie',
+    lastReviewedLabel: 'Zuletzt geprüft',
+    aiScopeHeading: 'Wie wir KI nutzen',
+    aiScopeBody:
+      'HAVIT Blog setzt generative KI als Recherchehilfe und als Entwurfswerkzeug ein. Konkret hilft uns die KI dabei, (a) peer-reviewed Studien und klinische Leitlinien in strukturierte Gliederungen zu synthetisieren, (b) erste Entwürfe von Erklärungen, Vergleichen und FAQs zu erstellen und (c) finalisierte englische Inhalte in fünf weitere Sprachen zu übersetzen. KI veröffentlicht niemals direkt. Jeder Artikel — auch Übersetzungen — durchläuft vor der Veröffentlichung eine menschliche redaktionelle Prüfung.',
+    workflowHeading: 'Redaktioneller Workflow',
+    workflowBody:
+      'Jeder Artikel im HAVIT Blog durchläuft die folgenden vier Stufen vor der Veröffentlichung:',
+    workflowSteps: [
+      'Entwurf — Die KI erstellt einen strukturierten ersten Entwurf aus peer-reviewed Quellen, klinischen Leitlinien und dem Artikel-Briefing.',
+      'Faktencheck — Ein menschlicher Redakteur überprüft jede Statistik, jedes Zitat und jede Behauptung anhand der angegebenen Primärquellen. Nicht überprüfbare Behauptungen werden entfernt oder als solche gekennzeichnet.',
+      'Medizinische Beirat-Prüfung — Für YMYL-Kategorien (Health & Conditions, Medication Guide, Mental Health & Stress usw.) prüft das HAVIT Medical Advisory den Artikel auf medizinische Genauigkeit, Risikosprache und Angemessenheit des Disclaimers.',
+      'Veröffentlichung — Erst nach bestandenem Faktencheck und (falls zutreffend) medizinischer Prüfung wird der Artikel veröffentlicht, wobei das last_updated-Datum auf das Datum des Prüfungsabschlusses gesetzt wird.',
+    ],
+    reviewerHeading: 'Prüfer-Qualifikationen',
+    reviewerBody:
+      'Das HAVIT Medical Advisory ist ein redaktioneller Prüfungsausschuss aus Mitwirkenden mit Hintergrund in Medizin, Pharmakologie, Ernährungswissenschaft und öffentlicher Gesundheit. Prüfer sind berechtigt, Inhalte innerhalb ihres Fachgebiets zu überprüfen. Stand 2026-05-25 ist dies eine kollektive Bezeichnung; individuelle Prüfer-Angaben werden in einer zukünftigen Aktualisierung hinzugefügt, sobald wir das Komitee erweitern. Für die Verifizierung oder zur Anfrage von Prüfer-Qualifikationen zu einem bestimmten Artikel wenden Sie sich bitte an die unten genannte E-Mail-Adresse.',
+    correctionsHeading: 'Korrekturrichtlinie',
+    correctionsBody:
+      'Wenn ein sachlicher Fehler gemeldet und überprüft wird, (a) aktualisieren wir den Artikel, (b) setzen ein neues last_updated-Datum und (c) bewahren eine kurze Änderungsnotiz auf, wenn die Korrektur die Empfehlung wesentlich verändert. Wir antworten auf bestätigte Korrekturanfragen innerhalb von 7 Werktagen. Redaktionelle Entscheidungen (Stil, Umfang) können von Korrekturanfragen abweichen und werden separat behandelt.',
+    contactHeading: 'Kontakt',
+    contactBody:
+      'Für Korrekturen, Quellenüberprüfungen, Partnerschaftsanfragen oder andere redaktionelle Anliegen wenden Sie sich bitte per E-Mail an das HAVIT Redaktionsteam. Wir überwachen diese Adresse während der Geschäftszeiten und antworten auf bestätigte Anliegen innerhalb von 7 Werktagen.',
+    contactLabel: 'E-Mail',
+  },
+  fr: {
+    title: 'Politique Éditoriale',
+    metaDescription:
+      "Politique éditoriale du HAVIT Blog : portée de l'IA, processus de relecture humaine, qualifications des relecteurs, politique de corrections et contact. Publié par AI Connect Inc.",
+    heading: 'Politique Éditoriale',
+    lastReviewedLabel: 'Dernière révision',
+    aiScopeHeading: "Comment nous utilisons l'IA",
+    aiScopeBody:
+      "HAVIT Blog utilise l'IA générative comme outil d'aide à la recherche et outil de rédaction. Concrètement, l'IA nous aide à (a) synthétiser des études évaluées par des pairs et des directives cliniques en plans structurés, (b) rédiger les premières versions d'explications, de comparaisons et de FAQ, et (c) traduire le contenu anglais finalisé en cinq langues supplémentaires. L'IA ne publie jamais directement. Chaque article — y compris les traductions — passe par une révision éditoriale humaine avant publication.",
+    workflowHeading: 'Processus Éditorial',
+    workflowBody:
+      'Chaque article sur HAVIT Blog passe par les quatre étapes suivantes avant publication :',
+    workflowSteps: [
+      "Brouillon — L'IA génère un premier brouillon structuré à partir de sources évaluées par des pairs, de directives cliniques et du brief de l'article.",
+      'Vérification des faits — Un éditeur humain vérifie chaque statistique, citation et affirmation par rapport aux sources primaires listées. Les affirmations non vérifiées sont supprimées ou signalées comme telles.',
+      "Révision médicale — Pour les catégories YMYL (Health & Conditions, Medication Guide, Mental Health & Stress, etc.), le HAVIT Medical Advisory examine l'article pour vérifier l'exactitude médicale, le langage du risque et l'adéquation du disclaimer.",
+      "Publication — L'article est publié uniquement après validation de la vérification des faits et (le cas échéant) de la révision médicale, avec la date last_updated fixée à la date d'achèvement de la révision.",
+    ],
+    reviewerHeading: 'Qualifications des Relecteurs',
+    reviewerBody:
+      "Le HAVIT Medical Advisory est un comité éditorial de relecture composé de contributeurs ayant une formation en médecine, pharmacologie, sciences de la nutrition et santé publique. Les relecteurs sont qualifiés pour examiner le contenu dans leur domaine d'expertise. Au 2026-05-25, il s'agit d'un nom d'entité collective ; les divulgations individuelles des relecteurs seront ajoutées lors d'une mise à jour future à mesure que nous étendons le comité. Pour vérifier ou demander les qualifications des relecteurs d'un article spécifique, contactez-nous à l'adresse e-mail ci-dessous.",
+    correctionsHeading: 'Politique de Corrections',
+    correctionsBody:
+      "Lorsqu'une erreur factuelle est signalée et vérifiée, nous (a) mettons à jour l'article, (b) fixons une nouvelle date last_updated et (c) conservons une brève note de modification lorsque la correction modifie significativement les conseils. Nous répondons aux demandes de correction vérifiées dans un délai de 7 jours ouvrables. Les décisions éditoriales (style, périmètre) peuvent différer des demandes de correction et sont traitées séparément.",
+    contactHeading: 'Contact',
+    contactBody:
+      "Pour les corrections, les demandes de vérification de sources, les demandes de partenariat ou toute autre préoccupation éditoriale, envoyez un e-mail à l'Équipe Éditoriale HAVIT. Nous surveillons cette adresse pendant les heures de bureau et répondons aux préoccupations vérifiées dans un délai de 7 jours ouvrables.",
+    contactLabel: 'E-mail',
   },
 };
 

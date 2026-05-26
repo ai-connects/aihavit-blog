@@ -117,7 +117,7 @@ export function isYmylCategory(category: string): boolean {
   return YMYL_CATEGORIES_V2.has(category);
 }
 
-export const PRIMARY_LANGS = ['en', 'ko', 'ja', 'zh-CN', 'zh-TW', 'es'] as const;
+export const PRIMARY_LANGS = ['en', 'ko', 'ja', 'zh-CN', 'zh-TW', 'es', 'pt-BR', 'id', 'de', 'fr'] as const;
 export type PrimaryLang = (typeof PRIMARY_LANGS)[number];
 
 export const SHORT_LANG_TO_DATA: Record<string, PrimaryLang> = {
@@ -128,6 +128,11 @@ export const SHORT_LANG_TO_DATA: Record<string, PrimaryLang> = {
   'zh-cn': 'zh-CN',
   'zh-tw': 'zh-TW',
   es: 'es',
+  'pt-br': 'pt-BR',
+  pt: 'pt-BR',
+  id: 'id',
+  de: 'de',
+  fr: 'fr',
 };
 
 const ARTICLES_DIR = path.join(process.cwd(), 'data', 'articles');

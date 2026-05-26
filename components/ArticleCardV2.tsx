@@ -25,6 +25,7 @@ const CATEGORY_GRADIENT: Record<string, [string, string]> = {
 
 const MIN_READ_LABEL: Record<string, string> = {
   en: 'min read', ko: '분 분량', ja: '分で読める', zh: '分钟阅读', 'zh-tw': '分鐘閱讀', es: 'min',
+  'pt-br': 'min de leitura', id: 'menit', de: 'Min. Lesezeit', fr: 'min de lecture',
 };
 
 export default function ArticleCardV2({ item, shortLang, featured = false }: Props) {

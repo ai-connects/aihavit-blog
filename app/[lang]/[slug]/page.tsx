@@ -6,7 +6,7 @@ import ArticleView from '@/components/ArticleView';
 import { getArticleBySlug, resolveContent, getAllArticles, PRIMARY_LANGS } from '@/lib/articles-v2';
 import { toFullLang } from '@/lib/i18n';
 
-const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es'] as const;
+const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es', 'pt-br', 'id', 'de', 'fr'] as const;
 type RouteLang = (typeof ROUTE_LANGS)[number];
 
 interface Props {
@@ -59,6 +59,10 @@ const LANG_LABELS: Record<RouteLang, string> = {
   zh: '简体中文',
   'zh-tw': '繁體中文',
   es: 'Español',
+  'pt-br': 'Português',
+  id: 'Indonesia',
+  de: 'Deutsch',
+  fr: 'Français',
 };
 
 const LANG_SWITCHER_LABEL: Record<RouteLang, string> = {
@@ -68,6 +72,10 @@ const LANG_SWITCHER_LABEL: Record<RouteLang, string> = {
   zh: '语言',
   'zh-tw': '語言',
   es: 'Idioma',
+  'pt-br': 'Idioma',
+  id: 'Bahasa',
+  de: 'Sprache',
+  fr: 'Langue',
 };
 
 export default function ArticlePage({ params }: Props) {
@@ -81,6 +89,7 @@ export default function ArticlePage({ params }: Props) {
 
   const availability: Record<RouteLang, boolean> = {
     ko: false, en: false, ja: false, zh: false, 'zh-tw': false, es: false,
+    'pt-br': false, id: false, de: false, fr: false,
   };
   for (const l of ROUTE_LANGS) {
     const rr = resolveContent(article, l);

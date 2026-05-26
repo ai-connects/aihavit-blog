@@ -6,6 +6,18 @@ import type { ActivityLevel, ProteinGoal, Climate, ExerciseType } from './calcul
 
 export type ToolLang = 'ko' | 'en' | 'ja' | 'zh' | 'zh-tw' | 'es';
 
+/** Map any route lang to a ToolLang, falling back to 'en'. Used to keep
+ *  tool calculator labels operational for the 4 newer langs (pt-br/id/de/fr)
+ *  until they have native tool-label translations. */
+export function toToolLang(lang: string): ToolLang {
+  switch (lang) {
+    case 'ko': case 'en': case 'ja': case 'zh': case 'zh-tw': case 'es':
+      return lang;
+    default:
+      return 'en';
+  }
+}
+
 /** Shared: HAVIT app cross-promo on every calculator. */
 export const APP_CTA: Record<ToolLang, { title: string; body: string; button: string }> = {
   ko: { title: '📱 더 정확한 측정은 HAVIT 앱', body: '체성분 (체지방률·근육량·내장지방) 정밀 측정과 일별 트렌드는 HAVIT 앱에서 1초 만에 확인하세요.', button: '앱 시작하기' },
