@@ -2,7 +2,25 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { type LangKey, toShortLang, LANG_NATIVE, SUPPORTED_LANGS, t } from '@/lib/i18n';
+import { type LangKey, toShortLang, t } from '@/lib/i18n';
+
+// Only the 10 langs the blog actually serves (matches ROUTE_LANGS in pages).
+const TOGGLE_LANGS: { route: string; native: string }[] = [
+  { route: 'ko', native: '한국어' },
+  { route: 'en', native: 'English' },
+  { route: 'ja', native: '日本語' },
+  { route: 'zh', native: '简体中文' },
+  { route: 'zh-tw', native: '繁體中文' },
+  { route: 'es', native: 'Español' },
+  { route: 'pt-br', native: 'Português' },
+  { route: 'id', native: 'Bahasa Indonesia' },
+  { route: 'de', native: 'Deutsch' },
+  { route: 'fr', native: 'Français' },
+];
+
+function currentNative(shortLang: string): string {
+  return TOGGLE_LANGS.find((l) => l.route === shortLang)?.native ?? 'English';
+}
 
 interface Props {
   lang: LangKey;
@@ -33,15 +51,13 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
     }
   }
 
-  function langHref(target: LangKey): string {
-    const short = toShortLang(target);
+  function langHrefShort(short: string): string {
     if (currentSlug) return `/${short}/${currentSlug}`;
     if (currentCategorySlug) return `/${short}/c/${currentCategorySlug}`;
     return `/${short}`;
   }
 
   const shortLang = toShortLang(lang);
-  const isContentAvailable = (k: LangKey) => (availableLangs ? availableLangs.includes(k) : true);
 
   return (
     <header className="sticky top-0 z-40 backdrop-blur bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800">
@@ -82,32 +98,32 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
               aria-label={t(lang, 'language')}
             >
               <span aria-hidden>🌐</span>
-              <span className="ml-1 hidden sm:inline text-sm">{LANG_NATIVE[lang]}</span>
+              <span className="ml-1 hidden sm:inline text-sm">{currentNative(shortLang)}</span>
             </button>
             {open && (
               <div
-                className="absolute right-0 mt-2 w-72 max-h-[60vh] overflow-y-auto rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-lg p-1"
+                className="absolute right-0 mt-2 w-56 max-h-[60vh] overflow-y-auto rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-lg p-1"
                 role="listbox"
               >
                 <div className="px-3 py-2 text-xs text-gray-500">
                   {t(lang, 'language')}
                 </div>
-                {SUPPORTED_LANGS.map((k) => {
-                  const has = isContentAvailable(k);
+                {TOGGLE_LANGS.map((opt) => {
+                  const active = opt.route === shortLang;
                   return (
                     <Link
-                      key={k}
-                      href={langHref(k)}
+                      key={opt.route}
+                      href={langHrefShort(opt.route)}
                       onClick={() => setOpen(false)}
                       className={`flex justify-between items-center px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 ${
-                        k === lang ? 'bg-gray-100 dark:bg-gray-800 font-semibold' : ''
+                        active ? 'bg-gray-100 dark:bg-gray-800 font-semibold' : ''
                       }`}
                       role="option"
-                      aria-selected={k === lang}
+                      aria-selected={active}
                     >
-                      <span className="text-sm">{LANG_NATIVE[k]}</span>
+                      <span className="text-sm">{opt.native}</span>
                       <span className="text-xs text-gray-400">
-                        {has ? '✓' : '↪ en'}
+                        {active ? '●' : ''}
                       </span>
                     </Link>
                   );
