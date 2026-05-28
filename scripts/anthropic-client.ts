@@ -31,10 +31,12 @@ export interface CompletionOptions {
   maxTokens?: number;
   temperature?: number;
   cacheSystem?: boolean;
+  /** Override the default Opus model (e.g. 'claude-sonnet-4-5' for cost). */
+  model?: string;
 }
 
 export async function complete(opts: CompletionOptions): Promise<string> {
-  const { system, user, maxTokens = MAX_TOKENS, temperature = 0.7, cacheSystem = true } = opts;
+  const { system, user, maxTokens = MAX_TOKENS, temperature = 0.7, cacheSystem = true, model = MODEL } = opts;
   const c = getClient();
 
   for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
@@ -49,8 +51,28 @@ export async function complete(opts: CompletionOptions): Promise<string> {
           ]
         : undefined;
 
+      // Long requests (>16K maxTokens or estimated >10min) require streaming per
+      // anthropic-sdk. Use stream API and accumulate text from final message.
+      const useStream = maxTokens > 16000;
+
+      if (useStream) {
+        const stream = c.messages.stream({
+          model,
+          max_tokens: maxTokens,
+          temperature,
+          ...(systemBlocks ? { system: systemBlocks } : {}),
+          messages: [{ role: 'user', content: user }],
+        });
+        const final = await stream.finalMessage();
+        const text = final.content
+          .filter((block): block is Anthropic.Messages.TextBlock => block.type === 'text')
+          .map((block) => block.text)
+          .join('\n');
+        return text;
+      }
+
       const response = await c.messages.create({
-        model: MODEL,
+        model,
         max_tokens: maxTokens,
         temperature,
         ...(systemBlocks ? { system: systemBlocks } : {}),
