@@ -24,6 +24,44 @@ export async function generateStaticParams() {
   return params;
 }
 
+const OG_IMAGE_URL = 'https://blog.aihavit.com/havit-logo.png';
+const TITLE_MAX_LEN = 60; // Google SERP title pixel-limit ≈ 60 chars (latin)
+const DESC_MAX_LEN = 158; // Google snippet ≈ 158 chars on desktop, 130 on mobile
+
+/**
+ * Truncate title for HTML <title> only — at a sentence/clause boundary if possible.
+ * og:title and body H1 keep the full title.
+ */
+function truncateTitle(full: string, max = TITLE_MAX_LEN): string {
+  if (full.length <= max) return full;
+  // Prefer splitting at em-dash, colon, or " — " / " : "
+  const splitters = [' — ', ' – ', ': ', ' | ', ' / '];
+  for (const s of splitters) {
+    const idx = full.indexOf(s);
+    if (idx > 10 && idx <= max) return full.slice(0, idx).trim();
+  }
+  // Fallback — hard truncate at last space before max
+  const cut = full.lastIndexOf(' ', max - 1);
+  return (cut > 20 ? full.slice(0, cut) : full.slice(0, max - 1)).trimEnd() + '…';
+}
+
+/**
+ * Truncate description for HTML meta only — break at sentence boundary.
+ * og:description and JSON-LD description keep the full text.
+ */
+function truncateDescription(full: string | undefined, max = DESC_MAX_LEN): string | undefined {
+  if (!full) return full;
+  if (full.length <= max) return full;
+  // Prefer sentence end (. ? !) within range
+  for (const punct of ['. ', '? ', '! ']) {
+    const idx = full.lastIndexOf(punct, max);
+    if (idx > 60) return full.slice(0, idx + 1).trim();
+  }
+  // Fallback — last space before max
+  const cut = full.lastIndexOf(' ', max - 1);
+  return (cut > 40 ? full.slice(0, cut) : full.slice(0, max - 1)).trimEnd() + '…';
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!ROUTE_LANGS.includes(params.lang as RouteLang)) return { title: 'Not Found — HAVIT Blog' };
   const article = getArticleBySlug(params.slug);
@@ -31,9 +69,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const r = resolveContent(article, params.lang);
   if (!r) return { title: 'Not Found — HAVIT Blog' };
   const { content } = r;
+  const fullDescription = content.meta_description ?? content.tldr ?? undefined;
+  const htmlDescription = truncateDescription(fullDescription);
+  const htmlTitle = truncateTitle(content.title);
   return {
-    title: `${content.title} — HAVIT Blog`,
-    description: content.meta_description ?? content.tldr ?? undefined,
+    title: `${htmlTitle} — HAVIT Blog`,
+    description: htmlDescription,
     alternates: {
       canonical: `https://blog.aihavit.com/${params.lang}/${params.slug}`,
       languages: Object.fromEntries(
@@ -45,9 +86,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     openGraph: {
       title: content.title,
-      description: content.meta_description ?? content.tldr ?? undefined,
+      description: fullDescription,
       type: 'article',
       url: `https://blog.aihavit.com/${params.lang}/${params.slug}`,
+      siteName: 'HAVIT Blog',
+      locale: params.lang,
+      images: [
+        {
+          url: OG_IMAGE_URL,
+          width: 1600,
+          height: 753,
+          alt: content.title,
+        },
+      ],
+      publishedTime: article.published_at ?? content.last_updated ?? undefined,
+      modifiedTime: content.last_updated ?? article.updated_at ?? undefined,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: content.title,
+      description: fullDescription,
+      images: [OG_IMAGE_URL],
     },
   };
 }
