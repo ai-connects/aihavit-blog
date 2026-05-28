@@ -25,7 +25,10 @@ export async function generateStaticParams() {
 }
 
 const OG_IMAGE_URL = 'https://blog.aihavit.com/havit-logo.png';
-const TITLE_MAX_LEN = 60; // Google SERP title pixel-limit ≈ 60 chars (latin)
+// HTML <title> CTR target: keep core keywords visible in Google SERP without a
+// trailing " — HAVIT Blog" suffix (Google often appends site name automatically
+// via og:site_name + Organization schema). 50 chars leaves room without cutoff.
+const TITLE_MAX_LEN = 50;
 const DESC_MAX_LEN = 158; // Google snippet ≈ 158 chars on desktop, 130 on mobile
 
 /**
@@ -71,9 +74,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { content } = r;
   const fullDescription = content.meta_description ?? content.tldr ?? undefined;
   const htmlDescription = truncateDescription(fullDescription);
-  const htmlTitle = truncateTitle(content.title);
+  // Prefer hand-tuned short_title (high-CTR pattern) when available;
+  // otherwise auto-truncate the full title. No brand suffix — Google often
+  // appends site name via og:site_name + Organization schema, and the extra
+  // characters get cut off in the SERP anyway.
+  const htmlTitle = content.short_title?.trim() || truncateTitle(content.title);
   return {
-    title: `${htmlTitle} — HAVIT Blog`,
+    title: htmlTitle,
     description: htmlDescription,
     alternates: {
       canonical: `https://blog.aihavit.com/${params.lang}/${params.slug}`,

@@ -16,6 +16,13 @@ import path from 'path';
 
 export interface ArticleV2LangContent {
   title: string;
+  /**
+   * Optional SEO-optimized short title used only for HTML <title> in Google
+   * SERP. Should be ≤ ~50 chars and apply CTR best-practices (numbers,
+   * brackets, power words). When absent, the full `title` is auto-truncated.
+   * body H1, og:title, JSON-LD headline always use the full `title`.
+   */
+  short_title?: string;
   meta_description?: string;
   tldr?: string;
   body_md: string;
