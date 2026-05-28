@@ -8,6 +8,9 @@ import { toFullLang } from '@/lib/i18n';
 import ArticleAuthorBlock from './ArticleAuthorBlock';
 import MedicalDisclaimer from './MedicalDisclaimer';
 import MedicalArticleJsonLd from './MedicalArticleJsonLd';
+// SEO v1.1 — FAQPage + BreadcrumbList rich-result schemas
+import FaqJsonLd from './FaqJsonLd';
+import BreadcrumbJsonLd from './BreadcrumbJsonLd';
 
 interface Props {
   article: ArticleV2;
@@ -198,6 +201,10 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
 
       {/* BLOG_AUTHORITY v1.0.0 (PRD §7.3 Step 3e) — JSON-LD schema injection */}
       <MedicalArticleJsonLd article={article} content={content} shortLang={shortLang} />
+      {/* SEO v1.1 — FAQPage rich-result schema (only when content.faq exists) */}
+      <FaqJsonLd content={content} />
+      {/* SEO v1.1 — BreadcrumbList navigation schema */}
+      <BreadcrumbJsonLd article={article} content={content} shortLang={shortLang} />
     </article>
   );
 }
