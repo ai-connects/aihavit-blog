@@ -21,7 +21,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://blog.aihavit.com/${params.lang}/tools/sleep-cycle`,
       languages: Object.fromEntries(ROUTE_LANGS.map((l) => [l, `https://blog.aihavit.com/${l}/tools/sleep-cycle`])),
     },
-    openGraph: { title: L.pageTitle, description: L.pageIntro, type: 'website', url: `https://blog.aihavit.com/${params.lang}/tools/sleep-cycle` },
+    openGraph: {
+      title: L.pageTitle,
+      description: L.pageIntro,
+      type: 'website',
+      url: `https://blog.aihavit.com/${params.lang}/tools/sleep-cycle`,
+      siteName: 'HAVIT Blog',
+      locale: params.lang,
+      images: [{ url: 'https://blog.aihavit.com/havit-logo.png', width: 1600, height: 753, alt: 'HAVIT Blog' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: L.pageTitle,
+      description: L.pageIntro,
+      images: ['https://blog.aihavit.com/havit-logo.png'],
+    },
   };
 }
 

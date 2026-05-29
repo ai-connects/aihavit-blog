@@ -60,17 +60,62 @@ const LABEL_ITEMS: Record<RouteLang, string> = {
   'pt-br': 'artigos', id: 'artikel', de: 'Artikel', fr: 'articles',
 };
 
+const LABEL_LANGUAGES: Record<RouteLang, string> = {
+  ko: '언어', en: 'languages', ja: '言語', zh: '语言', 'zh-tw': '語言', es: 'idiomas',
+  'pt-br': 'idiomas', id: 'bahasa', de: 'Sprachen', fr: 'langues',
+};
+
+const LABEL_BY_AI_CONNECT: Record<RouteLang, string> = {
+  ko: 'AI Connect Inc. 발행', en: 'Published by AI Connect Inc.',
+  ja: 'AI Connect Inc. 発行', zh: '由 AI Connect Inc. 出版', 'zh-tw': '由 AI Connect Inc. 出版',
+  es: 'Publicado por AI Connect Inc.', 'pt-br': 'Publicado por AI Connect Inc.',
+  id: 'Diterbitkan oleh AI Connect Inc.', de: 'Herausgegeben von AI Connect Inc.',
+  fr: 'Publié par AI Connect Inc.',
+};
+
+const OG_IMAGE_URL = 'https://blog.aihavit.com/havit-logo.png';
+
+const HOME_TITLE: Record<RouteLang, string> = {
+  ko: 'HAVIT 블로그 — 과학 기반 웰니스 가이드',
+  en: 'HAVIT Blog — Science-Backed Wellness Guides',
+  ja: 'HAVIT ブログ — 科学的根拠に基づくウェルネスガイド',
+  zh: 'HAVIT 博客 — 科学循证健康指南',
+  'zh-tw': 'HAVIT 部落格 — 科學循證健康指南',
+  es: 'HAVIT Blog — Guías de Bienestar Basadas en Ciencia',
+  'pt-br': 'HAVIT Blog — Guias de Bem-Estar com Base Científica',
+  id: 'HAVIT Blog — Panduan Kesehatan Berbasis Sains',
+  de: 'HAVIT Blog — Wissenschaftlich fundierte Wellness-Guides',
+  fr: 'HAVIT Blog — Guides Bien-Être Fondés sur la Science',
+};
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!ROUTE_LANGS.includes(params.lang as RouteLang)) return { title: 'Not Found — HAVIT Blog' };
-  const title = 'HAVIT Blog — Science-backed wellness guidance';
+  const lang = params.lang as RouteLang;
+  const title = HOME_TITLE[lang];
+  const description = HERO_TAGLINE[lang];
+  const url = `https://blog.aihavit.com/${lang}`;
   return {
     title,
-    description: HERO_TAGLINE[params.lang as RouteLang],
+    description,
     alternates: {
-      canonical: `https://blog.aihavit.com/${params.lang}`,
+      canonical: url,
       languages: Object.fromEntries(ROUTE_LANGS.map((l) => [l, `https://blog.aihavit.com/${l}`])),
     },
-    openGraph: { title, type: 'website', siteName: 'HAVIT Blog', url: `https://blog.aihavit.com/${params.lang}` },
+    openGraph: {
+      title,
+      description,
+      type: 'website',
+      siteName: 'HAVIT Blog',
+      url,
+      locale: lang,
+      images: [{ url: OG_IMAGE_URL, width: 1600, height: 753, alt: 'HAVIT Blog' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [OG_IMAGE_URL],
+    },
   };
 }
 
@@ -122,6 +167,43 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
     return qs ? `${basePath}?${qs}` : basePath;
   }
 
+  // SEO v1.3 — WebSite + Organization JSON-LD on home page (sitelinks search
+  // box + Knowledge Graph signals). Single object as @graph for compactness.
+  const homeJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': 'https://blog.aihavit.com/#website',
+        url: 'https://blog.aihavit.com/',
+        name: 'HAVIT Blog',
+        description: HERO_TAGLINE[shortLang as RouteLang],
+        inLanguage: shortLang,
+        publisher: { '@id': 'https://blog.aihavit.com/#publisher' },
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: `https://blog.aihavit.com/${shortLang}?q={search_term_string}`,
+          },
+          'query-input': 'required name=search_term_string',
+        },
+      },
+      {
+        '@type': 'Organization',
+        '@id': 'https://blog.aihavit.com/#publisher',
+        name: 'AI Connect Inc.',
+        url: 'https://www.aiconnects.me',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://blog.aihavit.com/havit-logo.png',
+          width: 1600,
+          height: 753,
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header lang={lang} />
@@ -130,9 +212,17 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
           <h1 className="font-bold text-3xl md:text-5xl xl:text-6xl leading-tight mb-3">
             HAVIT <span className="text-primary-600 dark:text-primary-400">Blog</span>
           </h1>
-          <p className="text-base md:text-xl text-gray-600 dark:text-gray-400 max-w-prose mb-6">
+          <p className="text-base md:text-xl text-gray-600 dark:text-gray-400 max-w-prose mb-3">
             {HERO_TAGLINE[shortLang as RouteLang]}
           </p>
+          <p className="text-sm text-gray-500 dark:text-gray-500 mb-6">
+            {LABEL_BY_AI_CONNECT[shortLang as RouteLang]} · {allArticles.length.toLocaleString()}+ {LABEL_ITEMS[shortLang as RouteLang]} · 10 {LABEL_LANGUAGES[shortLang as RouteLang]}
+          </p>
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}
+          />
 
           <form className="max-w-2xl mb-6" method="get" action={basePath}>
             <div className="relative">

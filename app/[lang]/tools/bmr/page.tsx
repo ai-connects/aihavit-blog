@@ -31,6 +31,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: L.pageIntro,
       type: 'website',
       url: `https://blog.aihavit.com/${params.lang}/tools/bmr`,
+      siteName: 'HAVIT Blog',
+      locale: params.lang,
+      images: [{ url: 'https://blog.aihavit.com/havit-logo.png', width: 1600, height: 753, alt: 'HAVIT Blog' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: L.pageTitle,
+      description: L.pageIntro,
+      images: ['https://blog.aihavit.com/havit-logo.png'],
     },
   };
 }
