@@ -79,11 +79,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // appends site name via og:site_name + Organization schema, and the extra
   // characters get cut off in the SERP anyway.
   const htmlTitle = content.short_title?.trim() || truncateTitle(content.title);
+
+  // SEO v1.2 — Fallback de-duplication strategy:
+  // When this lang has no native translation and the user is being shown the
+  // English fallback, instruct Google to:
+  //   - noindex this page (stop duplicating EN content across 10 lang URLs)
+  //   - canonical → /en/<slug> (consolidate authority to the original)
+  //   - follow links (preserve internal link equity)
+  // This addresses the GSC "Crawled — currently not indexed" cluster caused
+  // by Google treating 10 lang URLs of the same EN body as duplicates.
+  const isFallback = r.fallback === true;
+  const canonicalUrl = isFallback
+    ? `https://blog.aihavit.com/en/${params.slug}`
+    : `https://blog.aihavit.com/${params.lang}/${params.slug}`;
+
   return {
     title: htmlTitle,
     description: htmlDescription,
+    robots: isFallback
+      ? { index: false, follow: true, googleBot: { index: false, follow: true } }
+      : { index: true, follow: true },
     alternates: {
-      canonical: `https://blog.aihavit.com/${params.lang}/${params.slug}`,
+      canonical: canonicalUrl,
       languages: Object.fromEntries(
         ROUTE_LANGS.filter((l) => {
           const rr = resolveContent(article, l);
