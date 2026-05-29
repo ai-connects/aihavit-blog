@@ -231,6 +231,15 @@ export function generateMetadata({ params }: Props): Metadata {
       description: i18n.metaDescription,
       type: 'website',
       url: `${SITE}/${params.lang}/about`,
+      siteName: 'HAVIT Blog',
+      locale: params.lang,
+      images: [{ url: `${SITE}/havit-logo.png`, width: 1600, height: 753, alt: 'HAVIT Blog' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: i18n.title,
+      description: i18n.metaDescription,
+      images: [`${SITE}/havit-logo.png`],
     },
   };
 }

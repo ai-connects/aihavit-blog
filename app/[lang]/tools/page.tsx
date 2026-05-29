@@ -110,7 +110,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://blog.aihavit.com/${lang}/tools`,
       languages: Object.fromEntries(ROUTE_LANGS.map((l) => [l, `https://blog.aihavit.com/${l}/tools`])),
     },
-    openGraph: { title: PAGE_TITLE[lang], description: PAGE_INTRO[lang], type: 'website', url: `https://blog.aihavit.com/${lang}/tools` },
+    openGraph: {
+      title: PAGE_TITLE[lang],
+      description: PAGE_INTRO[lang],
+      type: 'website',
+      url: `https://blog.aihavit.com/${lang}/tools`,
+      siteName: 'HAVIT Blog',
+      locale: lang,
+      images: [{ url: 'https://blog.aihavit.com/havit-logo.png', width: 1600, height: 753, alt: 'HAVIT Blog' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: PAGE_TITLE[lang],
+      description: PAGE_INTRO[lang],
+      images: ['https://blog.aihavit.com/havit-logo.png'],
+    },
   };
 }
 
