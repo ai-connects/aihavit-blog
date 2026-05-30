@@ -7,6 +7,7 @@ import ArticleCardV2 from '@/components/ArticleCardV2';
 import { listArticlesForLang, getAllArticles, resolveContent } from '@/lib/articles-v2';
 import { localizedCategory } from '@/lib/category-labels';
 import { toFullLang } from '@/lib/i18n';
+import { categorySlug } from '@/lib/categories';
 
 export const revalidate = 600;
 
@@ -253,25 +254,18 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
             >
               {LABEL_ALL[shortLang as RouteLang]} ({allArticles.length})
             </Link>
-            {categories.map(([cat, info]) => {
-              const qs = new URLSearchParams();
-              if (query) qs.set('q', query);
-              qs.set('cat', cat);
-              return (
-                <Link
-                  key={cat}
-                  href={`${basePath}?${qs.toString()}`}
-                  className={`px-3 py-1.5 rounded-full text-sm border transition-colors ${
-                    category === cat
-                      ? 'bg-primary-500 text-gray-900 border-primary-500 font-semibold'
-                      : 'border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800'
-                  }`}
-                >
-                  {info.emoji && <span aria-hidden className="mr-1">{info.emoji}</span>}
-                  {localizedCategory(cat, shortLang)} ({info.count})
-                </Link>
-              );
-            })}
+            {/* SEO crawl-path: category chips link to indexable /category/<slug> hubs
+                (was an in-page ?cat= filter, which Google does not treat as a page). */}
+            {categories.map(([cat, info]) => (
+              <Link
+                key={cat}
+                href={`${basePath}/category/${categorySlug(cat)}`}
+                className="px-3 py-1.5 rounded-full text-sm border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              >
+                {info.emoji && <span aria-hidden className="mr-1">{info.emoji}</span>}
+                {localizedCategory(cat, shortLang)} ({info.count})
+              </Link>
+            ))}
           </div>
         </section>
 
