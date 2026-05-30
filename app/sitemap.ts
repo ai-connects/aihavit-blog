@@ -1,8 +1,17 @@
 import type { MetadataRoute } from 'next';
 import { getAllArticles, resolveContent } from '@/lib/articles-v2';
+import { ALL_CATEGORIES } from '@/lib/categories';
 
 const SITE = 'https://blog.aihavit.com';
 const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es', 'pt-br', 'id', 'de', 'fr'] as const;
+
+/** hreflang alternates for a path template present in all langs (incl. x-default). */
+function langAlternates(pathFor: (lang: string) => string): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const l of ROUTE_LANGS) out[l] = pathFor(l);
+  out['x-default'] = pathFor('en');
+  return out;
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
@@ -59,6 +68,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
       alternates: { languages: policyAlternates },
     });
+  }
+
+  // SEO crawl-path: article archive + category hub pages (present in all 10 langs).
+  // These give Google a shallow path to every article (fixes "Discovered — not indexed").
+  for (const lang of ROUTE_LANGS) {
+    entries.push({
+      url: `${SITE}/${lang}/articles`,
+      lastModified: now,
+      changeFrequency: 'daily',
+      priority: 0.8,
+      alternates: { languages: langAlternates((l) => `${SITE}/${l}/articles`) },
+    });
+    for (const cat of ALL_CATEGORIES) {
+      entries.push({
+        url: `${SITE}/${lang}/category/${cat.slug}`,
+        lastModified: now,
+        changeFrequency: 'weekly',
+        priority: 0.7,
+        alternates: { languages: langAlternates((l) => `${SITE}/${l}/category/${cat.slug}`) },
+      });
+    }
   }
 
   for (const a of getAllArticles()) {
