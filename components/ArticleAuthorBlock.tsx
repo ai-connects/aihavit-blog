@@ -64,6 +64,9 @@ export default function ArticleAuthorBlock({ article, shortLang }: Props) {
         >
           {reviewer.name}
         </Link>
+        {reviewer.credential && (
+          <span className="text-gray-500 dark:text-gray-500"> · {reviewer.credential}</span>
+        )}
       </span>
     </address>
   );
