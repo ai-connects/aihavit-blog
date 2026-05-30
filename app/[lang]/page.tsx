@@ -8,6 +8,7 @@ import { listArticlesForLang, getAllArticles, resolveContent } from '@/lib/artic
 import { localizedCategory } from '@/lib/category-labels';
 import { toFullLang } from '@/lib/i18n';
 import { categorySlug } from '@/lib/categories';
+import { BRAND_SAME_AS } from '@/lib/team';
 
 export const revalidate = 600;
 
@@ -201,6 +202,7 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
           width: 1600,
           height: 753,
         },
+        sameAs: BRAND_SAME_AS,
       },
     ],
   };

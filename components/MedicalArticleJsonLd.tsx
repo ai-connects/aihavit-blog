@@ -16,6 +16,7 @@
 import type { ArticleV2, ArticleV2LangContent } from '@/lib/articles-v2';
 import { isYmylCategory } from '@/lib/articles-v2';
 import { toBcp47, toFullLang } from '@/lib/i18n';
+import { PUBLISHER_ORG, DEFAULT_AUTHOR, DEFAULT_REVIEWER, entitySchema } from '@/lib/team';
 
 interface Props {
   article: ArticleV2;
@@ -25,17 +26,7 @@ interface Props {
 
 const SITE = 'https://blog.aihavit.com';
 
-// PRD §6.4 publisher 상수 (기존 components/Footer.tsx 표기와 일관).
-const PUBLISHER = {
-  '@type': 'Organization',
-  name: 'AI Connect Inc.',
-  url: 'https://www.aiconnects.me',
-  logo: {
-    '@type': 'ImageObject',
-    url: `${SITE}/havit-logo.png`,
-  },
-} as const;
-
+// publisher Organization (incl. sameAs) is centralized in lib/team.ts (PUBLISHER_ORG).
 const OG_IMAGE = `${SITE}/og-default.png`;
 
 interface JsonLdPayload {
@@ -49,20 +40,15 @@ interface JsonLdPayload {
   inLanguage: string;
   mainEntityOfPage: { '@type': 'WebPage'; '@id': string };
   articleSection: string;
-  author: { '@type': string; name: string; url: string };
-  reviewedBy: { '@type': string; name: string; url: string };
+  author: Record<string, unknown>;
+  reviewedBy: Record<string, unknown>;
   lastReviewed: string;
-  publisher: typeof PUBLISHER;
+  publisher: typeof PUBLISHER_ORG;
   specialty?: { '@type': 'MedicalSpecialty'; name: string };
 }
 
 function buildPayload(article: ArticleV2, content: ArticleV2LangContent, shortLang: string): JsonLdPayload {
   const ymyl = isYmylCategory(article.category);
-  // PRD §6.3 — author/reviewer는 loadAll() default 주입으로 항상 존재 (E-001).
-  const authorName = article.author?.name ?? 'HAVIT Editorial Team';
-  const reviewerName = article.reviewer?.name ?? 'HAVIT Medical Advisory';
-  const authorType = article.author?.type ?? 'Organization';
-
   const dateModified =
     content.last_updated ?? article.updated_at ?? new Date().toISOString();
   const datePublished = article.published_at ?? dateModified;
@@ -85,18 +71,10 @@ function buildPayload(article: ArticleV2, content: ArticleV2LangContent, shortLa
       '@id': `${SITE}/${shortLang}/${article.slug}`,
     },
     articleSection: article.category,
-    author: {
-      '@type': authorType,
-      name: authorName,
-      url: `${SITE}/${shortLang}/about`,
-    },
-    reviewedBy: {
-      '@type': 'Organization',
-      name: reviewerName,
-      url: `${SITE}/${shortLang}/editorial-policy`,
-    },
+    author: entitySchema(DEFAULT_AUTHOR, shortLang),
+    reviewedBy: entitySchema(DEFAULT_REVIEWER, shortLang),
     lastReviewed,
-    publisher: PUBLISHER,
+    publisher: PUBLISHER_ORG,
   };
 
   if (ymyl) {
