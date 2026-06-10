@@ -3,6 +3,10 @@ import { listArticlesForLang } from '@/lib/articles-v2';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ArticleCardV2 from '@/components/ArticleCardV2';
+import type { Metadata } from 'next';
+
+// 404 should never be indexed (page also returns HTTP 404).
+export const metadata: Metadata = { robots: { index: false, follow: true } };
 
 export default function NotFound() {
   const recommended = listArticlesForLang('en', 6);

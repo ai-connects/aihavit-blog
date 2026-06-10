@@ -14,6 +14,7 @@
  */
 
 import type { Metadata } from 'next';
+import { isLangIndexable } from '@/lib/articles-v2';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -355,9 +356,13 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: `${i18n.title} — HAVIT Blog`,
     description: i18n.metaDescription,
+    // SEO staging — index only priority langs first (PRIORITY_INDEX_LANGS).
+    robots: isLangIndexable(params.lang)
+      ? { index: true, follow: true }
+      : { index: false, follow: true, googleBot: { index: false, follow: true } },
     alternates: {
       canonical: `${SITE}/${params.lang}/editorial-policy`,
-      languages: Object.fromEntries(ROUTE_LANGS.map((l) => [l, `${SITE}/${l}/editorial-policy`])),
+      languages: Object.fromEntries(ROUTE_LANGS.filter(isLangIndexable).map((l) => [l, `${SITE}/${l}/editorial-policy`])),
     },
     openGraph: {
       title: i18n.title,

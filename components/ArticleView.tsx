@@ -2,6 +2,7 @@ import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import type { ArticleV2, ArticleV2LangContent } from '@/lib/articles-v2';
+import { getRelatedForLang } from '@/lib/articles-v2';
 import InstallCTA from './InstallCTA';
 import { toFullLang } from '@/lib/i18n';
 // BLOG_AUTHORITY v1.0.0 (PRD §7.3) — 3 신규 import (기존 import 무변경)
@@ -27,6 +28,7 @@ const L: Record<string, Record<string, string>> = {
   keyStats: { en: 'Key Stats', ko: '핵심 통계', ja: '主要統計', zh: '关键统计', 'zh-tw': '關鍵統計', es: 'Datos clave', 'pt-br': 'Estatísticas-chave', id: 'Statistik Utama', de: 'Kennzahlen', fr: 'Chiffres clés' },
   faq: { en: 'Frequently Asked Questions', ko: '자주 묻는 질문', ja: 'よくある質問', zh: '常见问题', 'zh-tw': '常見問題', es: 'Preguntas frecuentes', 'pt-br': 'Perguntas frequentes', id: 'Pertanyaan Umum', de: 'Häufige Fragen', fr: 'Questions fréquentes' },
   references: { en: 'References', ko: '참고 자료', ja: '参考資料', zh: '参考资料', 'zh-tw': '參考資料', es: 'Referencias', 'pt-br': 'Referências', id: 'Referensi', de: 'Quellen', fr: 'Références' },
+  related: { en: 'Related articles', ko: '관련 글', ja: '関連記事', zh: '相关文章', 'zh-tw': '相關文章', es: 'Artículos relacionados', 'pt-br': 'Artigos relacionados', id: 'Artikel terkait', de: 'Ähnliche Artikel', fr: 'Articles liés' },
   fallbackBanner: { en: 'Showing English (translation pending for your language).', ko: '영문판을 표시 중입니다 (해당 언어 번역 예정).', ja: '英語版を表示中（翻訳予定）.', zh: '正在显示英文版（翻译中）.', 'zh-tw': '正在顯示英文版（翻譯中）.', es: 'Mostrando inglés (traducción pendiente).', 'pt-br': 'Exibindo em inglês (tradução pendente).', id: 'Menampilkan bahasa Inggris (terjemahan akan menyusul).', de: 'Englische Version (Übersetzung in Vorbereitung).', fr: 'Version anglaise (traduction à venir).' },
 };
 
@@ -37,6 +39,10 @@ function label(key: string, shortLang: string): string {
 export default function ArticleView({ article, content, shortLang, fallback }: Props) {
   const langKey = toFullLang(shortLang === 'zh' ? 'zh-cn' : shortLang);
   const references = Array.isArray(content.references) ? content.references : null;
+  // SEO — same-category sibling links (native-content only) so no article is an
+  // orphan. Reachability from related pages is a direct lever against
+  // "Crawled/Discovered — currently not indexed".
+  const related = getRelatedForLang(article, shortLang, 4);
 
   return (
     <article className="mx-auto max-w-3xl px-4 md:px-6 py-8 md:py-12">
@@ -192,6 +198,26 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
                 </li>
               );
             })}
+          </ul>
+        </section>
+      )}
+
+      {related.length > 0 && (
+        <section className="mt-12 pt-6 border-t border-gray-200 dark:border-gray-800">
+          <h3 className="text-sm font-bold text-gray-600 dark:text-gray-400 uppercase tracking-wider mb-3">
+            {label('related', shortLang)}
+          </h3>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 list-disc pl-5">
+            {related.map((r) => (
+              <li key={r.slug} className="text-sm">
+                <Link
+                  href={`/${shortLang}/${r.slug}`}
+                  className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:underline"
+                >
+                  {r.category_emoji ? `${r.category_emoji} ` : ''}{r.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </section>
       )}

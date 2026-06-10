@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ArticleView from '@/components/ArticleView';
-import { getArticleBySlug, resolveContent, getAllArticles, PRIMARY_LANGS } from '@/lib/articles-v2';
+import { getArticleBySlug, resolveContent, getAllArticles, PRIMARY_LANGS, isLangIndexable } from '@/lib/articles-v2';
 import { toFullLang } from '@/lib/i18n';
 
 const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es', 'pt-br', 'id', 'de', 'fr'] as const;
@@ -89,6 +89,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // This addresses the GSC "Crawled — currently not indexed" cluster caused
   // by Google treating 10 lang URLs of the same EN body as duplicates.
   const isFallback = r.fallback === true;
+  // SEO staging — index only priority langs first (PRIORITY_INDEX_LANGS). Non-
+  // priority native pages stay noindex/follow until promoted; canonical remains
+  // self (distinct language), only the index signal is gated.
+  const indexable = !isFallback && isLangIndexable(params.lang);
   const canonicalUrl = isFallback
     ? `https://blog.aihavit.com/en/${params.slug}`
     : `https://blog.aihavit.com/${params.lang}/${params.slug}`;
@@ -96,15 +100,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: htmlTitle,
     description: htmlDescription,
-    robots: isFallback
-      ? { index: false, follow: true, googleBot: { index: false, follow: true } }
-      : { index: true, follow: true },
+    robots: indexable
+      ? { index: true, follow: true }
+      : { index: false, follow: true, googleBot: { index: false, follow: true } },
     alternates: {
       canonical: canonicalUrl,
+      // hreflang cluster lists only indexable (priority + native) langs, so every
+      // alternate Google sees is itself indexable — no noindex/hreflang conflict.
       languages: Object.fromEntries(
         ROUTE_LANGS.filter((l) => {
           const rr = resolveContent(article, l);
-          return rr && !rr.fallback;
+          return rr && !rr.fallback && isLangIndexable(l);
         }).map((l) => [l, `https://blog.aihavit.com/${l}/${params.slug}`]),
       ),
     },
