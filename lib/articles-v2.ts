@@ -219,6 +219,47 @@ export function getRelatedArticles(article: ArticleV2, limit = 4): ArticleV2[] {
     .slice(0, limit);
 }
 
+// SEO staging — index priority languages first to escape "Crawled — currently
+// not indexed". A new domain pushing ~10k AI-generated URLs across 10 langs gets
+// index-throttled by Google; concentrating crawl/index budget on a few languages
+// builds authority, then the rest are promoted by editing this one set.
+// To roll out another language: add its route short code (e.g. 'ja') here and
+// redeploy — sitemap, hreflang clusters, and robots all follow automatically.
+export const PRIORITY_INDEX_LANGS = new Set<string>(['en', 'ko']);
+
+/** Whether pages in this route short lang should be indexable now (SEO staging). */
+export function isLangIndexable(shortLang: string): boolean {
+  return PRIORITY_INDEX_LANGS.has(shortLang.toLowerCase());
+}
+
+export interface RelatedArticleLink {
+  slug: string;
+  title: string;
+  category_emoji?: string;
+}
+
+/**
+ * Same-category articles with NATIVE (non-fallback) content in `shortLang`,
+ * excluding the current one. Powers in-article internal linking so every article
+ * is reachable from its siblings — kills orphan pages and improves crawl depth,
+ * a direct lever against "Crawled/Discovered — currently not indexed".
+ */
+export function getRelatedForLang(
+  article: ArticleV2,
+  shortLang: string,
+  limit = 4,
+): RelatedArticleLink[] {
+  const out: RelatedArticleLink[] = [];
+  for (const a of loadAll()) {
+    if (a.slug === article.slug || a.category !== article.category) continue;
+    const r = resolveContent(a, shortLang);
+    if (!r || r.fallback) continue;
+    out.push({ slug: a.slug, title: r.content.title, category_emoji: a.category_emoji });
+    if (out.length >= limit) break;
+  }
+  return out;
+}
+
 export function getArticlesByCategory(category: string): ArticleV2[] {
   return loadAll().filter((a) => a.category === category);
 }

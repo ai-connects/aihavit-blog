@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { isLangIndexable } from '@/lib/articles-v2';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -17,9 +18,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${L.pageTitle} — HAVIT`,
     description: L.pageIntro,
+    // SEO staging — index only priority langs first (PRIORITY_INDEX_LANGS).
+    robots: isLangIndexable(params.lang)
+      ? { index: true, follow: true }
+      : { index: false, follow: true, googleBot: { index: false, follow: true } },
     alternates: {
       canonical: `https://blog.aihavit.com/${params.lang}/tools/caffeine`,
-      languages: Object.fromEntries(ROUTE_LANGS.map((l) => [l, `https://blog.aihavit.com/${l}/tools/caffeine`])),
+      languages: Object.fromEntries(ROUTE_LANGS.filter(isLangIndexable).map((l) => [l, `https://blog.aihavit.com/${l}/tools/caffeine`])),
     },
     openGraph: {
       title: L.pageTitle,

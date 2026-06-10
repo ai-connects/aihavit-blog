@@ -1,14 +1,17 @@
 import type { MetadataRoute } from 'next';
-import { getAllArticles, resolveContent } from '@/lib/articles-v2';
+import { getAllArticles, resolveContent, isLangIndexable } from '@/lib/articles-v2';
 import { ALL_CATEGORIES } from '@/lib/categories';
 
 const SITE = 'https://blog.aihavit.com';
 const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es', 'pt-br', 'id', 'de', 'fr'] as const;
+// SEO staging — sitemap lists only indexable (priority) langs so it never submits
+// a noindex URL (which GSC flags). Promote a lang via PRIORITY_INDEX_LANGS.
+const INDEXABLE_LANGS = ROUTE_LANGS.filter(isLangIndexable);
 
-/** hreflang alternates for a path template present in all langs (incl. x-default). */
+/** hreflang alternates for a path template present in all indexable langs (incl. x-default). */
 function langAlternates(pathFor: (lang: string) => string): Record<string, string> {
   const out: Record<string, string> = {};
-  for (const l of ROUTE_LANGS) out[l] = pathFor(l);
+  for (const l of INDEXABLE_LANGS) out[l] = pathFor(l);
   out['x-default'] = pathFor('en');
   return out;
 }
@@ -17,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
   const now = new Date();
 
-  for (const lang of ROUTE_LANGS) {
+  for (const lang of INDEXABLE_LANGS) {
     entries.push({
       url: `${SITE}/${lang}`,
       lastModified: now,
@@ -44,10 +47,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 12 신규 entry (about×6 lang + editorial-policy×6 lang). 각 entry는
   // 6 lang hreflang alternates 포함 (entry 카운트 아님 — sub-element).
   // 총 sitemap entry = 6,536 (기존) + 12 (신규) = 6,548.
-  for (const lang of ROUTE_LANGS) {
+  for (const lang of INDEXABLE_LANGS) {
     const aboutAlternates: Record<string, string> = {};
     const policyAlternates: Record<string, string> = {};
-    for (const other of ROUTE_LANGS) {
+    for (const other of INDEXABLE_LANGS) {
       aboutAlternates[other] = `${SITE}/${other}/about`;
       policyAlternates[other] = `${SITE}/${other}/editorial-policy`;
     }
@@ -72,7 +75,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // SEO crawl-path: article archive + category hub pages (present in all 10 langs).
   // These give Google a shallow path to every article (fixes "Discovered — not indexed").
-  for (const lang of ROUTE_LANGS) {
+  for (const lang of INDEXABLE_LANGS) {
     entries.push({
       url: `${SITE}/${lang}/articles`,
       lastModified: now,
@@ -92,11 +95,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const a of getAllArticles()) {
-    for (const lang of ROUTE_LANGS) {
+    for (const lang of INDEXABLE_LANGS) {
       const r = resolveContent(a, lang);
       if (!r || r.fallback) continue;
       const alternates: Record<string, string> = {};
-      for (const other of ROUTE_LANGS) {
+      for (const other of INDEXABLE_LANGS) {
         const rr = resolveContent(a, other);
         if (rr && !rr.fallback) {
           alternates[other] = `${SITE}/${other}/${a.slug}`;

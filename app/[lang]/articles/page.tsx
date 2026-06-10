@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { listArticlesForLang } from '@/lib/articles-v2';
+import { listArticlesForLang, isLangIndexable } from '@/lib/articles-v2';
 import { localizedCategory } from '@/lib/category-labels';
 import { toFullLang } from '@/lib/i18n';
 import { ALL_CATEGORIES, categorySlug } from '@/lib/categories';
@@ -55,10 +55,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
+    // SEO staging — index only priority langs first (PRIORITY_INDEX_LANGS).
+    robots: isLangIndexable(lang)
+      ? { index: true, follow: true }
+      : { index: false, follow: true, googleBot: { index: false, follow: true } },
     alternates: {
       canonical: url,
       languages: {
-        ...Object.fromEntries(ROUTE_LANGS.map((l) => [l, `${SITE}/${l}/articles`])),
+        ...Object.fromEntries(
+          ROUTE_LANGS.filter(isLangIndexable).map((l) => [l, `${SITE}/${l}/articles`]),
+        ),
         'x-default': `${SITE}/en/articles`,
       },
     },

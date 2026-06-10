@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ArticleCardV2 from '@/components/ArticleCardV2';
-import { listArticlesForLang, getAllArticles, resolveContent } from '@/lib/articles-v2';
+import { listArticlesForLang, getAllArticles, resolveContent, isLangIndexable } from '@/lib/articles-v2';
 import { localizedCategory } from '@/lib/category-labels';
 import { toFullLang } from '@/lib/i18n';
 import { categorySlug } from '@/lib/categories';
@@ -99,9 +99,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
+    // SEO staging — index only priority langs first (PRIORITY_INDEX_LANGS).
+    robots: isLangIndexable(lang)
+      ? { index: true, follow: true }
+      : { index: false, follow: true, googleBot: { index: false, follow: true } },
     alternates: {
       canonical: url,
-      languages: Object.fromEntries(ROUTE_LANGS.map((l) => [l, `https://blog.aihavit.com/${l}`])),
+      languages: Object.fromEntries(
+        ROUTE_LANGS.filter(isLangIndexable).map((l) => [l, `https://blog.aihavit.com/${l}`]),
+      ),
     },
     openGraph: {
       title,
