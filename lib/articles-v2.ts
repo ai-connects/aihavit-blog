@@ -225,7 +225,7 @@ export function getRelatedArticles(article: ArticleV2, limit = 4): ArticleV2[] {
 // builds authority, then the rest are promoted by editing this one set.
 // To roll out another language: add its route short code (e.g. 'ja') here and
 // redeploy — sitemap, hreflang clusters, and robots all follow automatically.
-export const PRIORITY_INDEX_LANGS = new Set<string>(['en', 'ko']);
+export const PRIORITY_INDEX_LANGS = new Set<string>(['en', 'ko', 'ja', 'zh-tw']);
 
 /** Whether pages in this route short lang should be indexable now (SEO staging). */
 export function isLangIndexable(shortLang: string): boolean {
