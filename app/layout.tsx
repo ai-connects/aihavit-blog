@@ -50,6 +50,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* impact.com affiliate site verification (non-standard `value` attr required by impact.com) */}
+        <meta {...{ name: 'impact-site-verification', value: 'cf5ec2a5-ad3b-4112-9e9a-c9451e7c7029' }} />
         {/* Prevent FOUC for dark mode */}
         <script
           dangerouslySetInnerHTML={{
