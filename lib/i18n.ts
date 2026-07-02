@@ -27,6 +27,21 @@ export const FALLBACK_LANG: LangKey = 'en_us';
  */
 export const INDEXABLE_ROUTE_LANGS = ['en', 'ja', 'ko', 'zh-tw'] as const;
 
+/** 블로그가 라우팅하는 전체 route short-lang (app/[lang] 세그먼트). */
+export const SERVED_ROUTE_LANGS = [
+  'ko', 'en', 'ja', 'zh', 'zh-tw', 'es', 'pt-br', 'id', 'de', 'fr',
+] as const;
+
+/**
+ * 색인 대상이 아닌(폐기) route short-lang = 서빙 − 타겟.
+ * 이 언어 경로는 middleware에서 HTTP 410(Gone)으로 응답해 Googlebot의 반복
+ * 재크롤을 끊고 크롤 예산을 타겟(INDEXABLE_ROUTE_LANGS)으로 회수한다.
+ * 언어를 타겟으로 승격하려면 INDEXABLE_ROUTE_LANGS에 추가 → 자동으로 여기서 빠진다.
+ */
+export const DEPRECATED_ROUTE_LANGS: string[] = SERVED_ROUTE_LANGS.filter(
+  (l) => !(INDEXABLE_ROUTE_LANGS as readonly string[]).includes(l)
+);
+
 /** short → full mapping (e.g. ko → ko_kr) */
 const SHORT_TO_FULL: Record<string, LangKey> = {
   ko: 'ko_kr', en: 'en_us', ja: 'ja_jp', zh: 'zh_cn', th: 'th_th', vi: 'vi_vn',
