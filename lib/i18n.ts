@@ -15,6 +15,18 @@ export type LangKey = (typeof SUPPORTED_LANGS)[number];
 /** PRD §6.9 fallback policy (INV-005): en_us */
 export const FALLBACK_LANG: LangKey = 'en_us';
 
+/**
+ * SEO SSOT — 색인/크롤 대상 route short-lang.
+ * 타겟 시장: 미국(en)·일본(ja)·한국(ko)·대만(zh-tw).
+ * 이 배열 하나가 색인 게이팅(PRIORITY_INDEX_LANGS)·sitemap·hreflang·robots·
+ * Header 언어 스위처를 모두 제어한다. (client·server 공용 — i18n.ts엔 fs 없음)
+ *
+ * 언어 승격(예: 스페인어·독일어): 여기에 'es','de' 추가 후 재배포하면 전 계층 자동 반영.
+ * ⚠️ 신생 도메인은 크롤 예산이 부족하므로 웨이브로 승격한다 — 한 번에 다 켜지 말 것.
+ *    (4개 색인률이 건강해진 뒤 다음 웨이브를 켜는 것을 권장.)
+ */
+export const INDEXABLE_ROUTE_LANGS = ['en', 'ja', 'ko', 'zh-tw'] as const;
+
 /** short → full mapping (e.g. ko → ko_kr) */
 const SHORT_TO_FULL: Record<string, LangKey> = {
   ko: 'ko_kr', en: 'en_us', ja: 'ja_jp', zh: 'zh_cn', th: 'th_th', vi: 'vi_vn',

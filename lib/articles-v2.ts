@@ -13,6 +13,7 @@
 
 import { readdirSync, readFileSync, statSync } from 'fs';
 import path from 'path';
+import { INDEXABLE_ROUTE_LANGS } from './i18n';
 
 export interface ArticleV2LangContent {
   title: string;
@@ -223,9 +224,9 @@ export function getRelatedArticles(article: ArticleV2, limit = 4): ArticleV2[] {
 // not indexed". A new domain pushing ~10k AI-generated URLs across 10 langs gets
 // index-throttled by Google; concentrating crawl/index budget on a few languages
 // builds authority, then the rest are promoted by editing this one set.
-// To roll out another language: add its route short code (e.g. 'ja') here and
-// redeploy — sitemap, hreflang clusters, and robots all follow automatically.
-export const PRIORITY_INDEX_LANGS = new Set<string>(['en', 'ko', 'ja', 'zh-tw']);
+// SEO SSOT — 색인 대상 언어는 lib/i18n.ts 의 INDEXABLE_ROUTE_LANGS 한 곳에서만 관리.
+// 언어 승격은 그 배열에 추가(여기 수정 불필요) → sitemap·hreflang·robots·Header 스위처 자동 반영.
+export const PRIORITY_INDEX_LANGS = new Set<string>(INDEXABLE_ROUTE_LANGS);
 
 /** Whether pages in this route short lang should be indexable now (SEO staging). */
 export function isLangIndexable(shortLang: string): boolean {

@@ -2,9 +2,9 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { type LangKey, toShortLang, t } from '@/lib/i18n';
+import { type LangKey, toShortLang, t, INDEXABLE_ROUTE_LANGS } from '@/lib/i18n';
 
-// Only the 10 langs the blog actually serves (matches ROUTE_LANGS in pages).
+// 블로그가 실제 서빙하는 10개 언어의 native 이름 lookup (현재 언어 이름 표시용).
 const TOGGLE_LANGS: { route: string; native: string }[] = [
   { route: 'ko', native: '한국어' },
   { route: 'en', native: 'English' },
@@ -17,6 +17,13 @@ const TOGGLE_LANGS: { route: string; native: string }[] = [
   { route: 'de', native: 'Deutsch' },
   { route: 'fr', native: 'Français' },
 ];
+
+// SEO: 색인 대상(타겟) 언어만 스위처에 노출한다. noindex 언어로 내부링크가 새어
+// Googlebot이 ~6,200개 noindex 페이지를 반복 재크롤하며 크롤 예산을 낭비하는 것을 차단.
+// 노출 언어 집합은 lib/i18n.ts 의 INDEXABLE_ROUTE_LANGS(SSOT)를 따른다.
+const VISIBLE_LANGS = TOGGLE_LANGS.filter((l) =>
+  (INDEXABLE_ROUTE_LANGS as readonly string[]).includes(l.route)
+);
 
 function currentNative(shortLang: string): string {
   return TOGGLE_LANGS.find((l) => l.route === shortLang)?.native ?? 'English';
@@ -108,7 +115,7 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
                 <div className="px-3 py-2 text-xs text-gray-500">
                   {t(lang, 'language')}
                 </div>
-                {TOGGLE_LANGS.map((opt) => {
+                {VISIBLE_LANGS.map((opt) => {
                   const active = opt.route === shortLang;
                   return (
                     <Link
