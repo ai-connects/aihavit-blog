@@ -8,6 +8,17 @@ const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es', 'pt-br', 'id', 'de',
 // a noindex URL (which GSC flags). Promote a lang via PRIORITY_INDEX_LANGS.
 const INDEXABLE_LANGS = ROUTE_LANGS.filter(isLangIndexable);
 
+// 블로그 최초 발행일(2026-05). 일부 아티클 updated_at 이 langs.*.last_updated(2025) 로
+// 채워져 런칭 이전(불가능) lastmod 가 새어나가던 문제 → 하한(floor)으로 클램프.
+const LAUNCH_FLOOR = new Date('2026-05-23T00:00:00.000Z');
+/** lastmod 안전화: 파싱불가/런칭이전 → floor, 미래 → now 로 클램프. */
+function safeLastMod(raw: string | undefined, now: Date): Date {
+  const d = raw ? new Date(raw) : now;
+  if (Number.isNaN(d.getTime()) || d < LAUNCH_FLOOR) return LAUNCH_FLOOR;
+  if (d > now) return now;
+  return d;
+}
+
 /** hreflang alternates for a path template present in all indexable langs (incl. x-default). */
 function langAlternates(pathFor: (lang: string) => string): Record<string, string> {
   const out: Record<string, string> = {};
@@ -108,7 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates['x-default'] = `${SITE}/en/${a.slug}`;
       entries.push({
         url: `${SITE}/${lang}/${a.slug}`,
-        lastModified: new Date(a.updated_at ?? now),
+        lastModified: safeLastMod(a.updated_at, now),
         changeFrequency: 'weekly',
         priority: 0.7,
         alternates: { languages: alternates },
