@@ -192,7 +192,11 @@ export default function ArticlePage({ params }: Props) {
         <div className="border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
           <div className="mx-auto max-w-3xl px-4 py-2 flex flex-wrap gap-2 text-sm">
             <span className="text-gray-500 mr-2 self-center">{LANG_SWITCHER_LABEL[params.lang as RouteLang]}:</span>
-            {ROUTE_LANGS.map((L) => (
+            {/* SEO: 색인 대상(타겟) 언어만 SSR <a> 링크로 노출한다. 전 언어를 렌더하면
+                Googlebot이 매 타겟 페이지에서 noindex 언어(de/es/fr/id/pt-br/zh) 링크를
+                따라가 ~6,200개 noindex URL을 반복 재크롤하며 크롤 예산을 낭비한다.
+                노출 집합은 lib/i18n.ts 의 INDEXABLE_ROUTE_LANGS(SSOT) → isLangIndexable 을 따른다. */}
+            {ROUTE_LANGS.filter((L) => isLangIndexable(L)).map((L) => (
               <a
                 key={L}
                 href={`/${L}/${params.slug}`}
