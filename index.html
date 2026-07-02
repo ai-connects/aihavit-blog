@@ -119,7 +119,7 @@
     <a href="#how" data-i18n="nav_how">How it works</a>
     <a href="#features" data-i18n="nav_features">Features</a>
     <a href="#proof" data-i18n="nav_validation">Validation</a>
-    <a href="https://blog.aihavit.com/ko" data-i18n="nav_blog" id="nav-blog-link">Blog</a>
+    <a href="https://blog.aihavit.com/en" data-i18n="nav_blog" id="nav-blog-link" data-blog-path="">Blog</a>
     <a href="https://www.aiconnects.me" target="_blank" data-i18n="nav_about">About Us</a>
   </div>
   <div class="nav-right">
@@ -572,6 +572,53 @@
   </div>
 </section>
 
+<!-- FEATURED ARTICLES (SEO: static crawlable deep links to indexable blog articles; JS localizes href+title) -->
+<style>
+  #articles{padding:96px 0;background:var(--bg)}
+  .fa-wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .fa-head{text-align:center;margin-bottom:44px}
+  .fa-h2{font-size:clamp(28px,4vw,40px);font-weight:800;letter-spacing:-.02em;color:var(--text)}
+  .fa-sub{margin-top:12px;color:var(--muted);font-size:16px}
+  .fa-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+  .fa-card{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;
+    padding:22px;border:1px solid var(--border);border-radius:16px;text-decoration:none;
+    color:var(--text);background:var(--surface);
+    transition:transform .15s ease,border-color .15s ease,box-shadow .15s ease,background .15s ease}
+  .fa-card:hover{transform:translateY(-3px);border-color:var(--accent);
+    background:var(--accent-dim);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+  .fa-title{font-size:15px;font-weight:600;line-height:1.5;color:var(--text);
+    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .fa-card:hover .fa-title{color:#fff}
+  .fa-arrow{color:var(--accent);font-weight:700;flex-shrink:0;transition:transform .15s ease}
+  .fa-card:hover .fa-arrow{transform:translateX(3px)}
+  .fa-more{text-align:center;margin-top:40px}
+  .fa-more a{color:var(--accent);font-weight:700;text-decoration:none;font-size:16px}
+  .fa-more a:hover{text-decoration:underline}
+</style>
+<section id="articles">
+  <div class="fa-wrap">
+    <div class="fa-head">
+      <h2 class="fa-h2" data-i18n="featured_h2">From the HAVIT Blog</h2>
+      <p class="fa-sub" data-i18n="featured_sub">Evidence-based guides on habits, weight, and metabolic health.</p>
+    </div>
+    <div class="fa-grid" id="fa-grid">
+      <a class="fa-card" href="https://blog.aihavit.com/en/havit-ai-coaching-engine-8steps" data-featured="havit-ai-coaching-engine-8steps"><span class="fa-title">The New Standard for Digital Health Coaching — How HAVIT's 8-Step AI Coaching Engine Integrates Personalization, Immediate Feedback, and Behavior Triggers</span><span class="fa-arrow">→</span></a>
+      <a class="fa-card" href="https://blog.aihavit.com/en/havit-ai-body-composition-92percent-vs-inbody" data-featured="havit-ai-body-composition-92percent-vs-inbody"><span class="fa-title">Democratizing Body Composition Checks — How HAVIT's Survey-Based Model Achieves Clinical-Tool-Grade Accuracy</span><span class="fa-arrow">→</span></a>
+      <a class="fa-card" href="https://blog.aihavit.com/en/havit-vs-myfitnesspal-noom-simple-2026" data-featured="havit-vs-myfitnesspal-noom-simple-2026"><span class="fa-title">Beyond BMI — Why the New Generation of Diet Apps Needs Body Composition and Personalized Behavior Change</span><span class="fa-arrow">→</span></a>
+      <a class="fa-card" href="https://blog.aihavit.com/en/30-day-habit-challenge-failure-rate-better-approach-2026" data-featured="30-day-habit-challenge-failure-rate-better-approach-2026"><span class="fa-title">Why Your 30-Day Habit Challenge Will Probably Fail (And What Actually Works)</span><span class="fa-arrow">→</span></a>
+      <a class="fa-card" href="https://blog.aihavit.com/en/emotional-eating-trigger-moment-intervention-techniques-2026" data-featured="emotional-eating-trigger-moment-intervention-techniques-2026"><span class="fa-title">Emotional Eating Trigger Moment Intervention Techniques: The 90-Second Reset</span><span class="fa-arrow">→</span></a>
+      <a class="fa-card" href="https://blog.aihavit.com/en/eating-speed-satiety-weight-management-2026" data-featured="eating-speed-satiety-weight-management-2026"><span class="fa-title">Why 20 Minutes Per Meal Changes Everything: The Science of Eating Speed and Satiety</span><span class="fa-arrow">→</span></a>
+      <a class="fa-card" href="https://blog.aihavit.com/en/habit-stacking-implementation-intention-success-rate-2026" data-featured="habit-stacking-implementation-intention-success-rate-2026"><span class="fa-title">Habit Stacking Meets Implementation Intentions: The 91% Success Formula for 2026</span><span class="fa-arrow">→</span></a>
+      <a class="fa-card" href="https://blog.aihavit.com/en/diet-break-planned-pause-fat-loss-benefits-2026" data-featured="diet-break-planned-pause-fat-loss-benefits-2026"><span class="fa-title">Diet Breaks Explained: Why Planned Pauses Actually Accelerate Long-Term Fat Loss</span><span class="fa-arrow">→</span></a>
+      <a class="fa-card" href="https://blog.aihavit.com/en/body-composition-trend-tracking-beyond-scale-weight-2026" data-featured="body-composition-trend-tracking-beyond-scale-weight-2026"><span class="fa-title">How to Track Body Composition Changes at Home Without Expensive Equipment</span><span class="fa-arrow">→</span></a>
+      <a class="fa-card" href="https://blog.aihavit.com/en/visceral-fat-reduction-specific-strategies-2026" data-featured="visceral-fat-reduction-specific-strategies-2026"><span class="fa-title">How to Reduce Visceral Belly Fat Specifically: 7 Evidence-Based Strategies</span><span class="fa-arrow">→</span></a>
+      <a class="fa-card" href="https://blog.aihavit.com/en/weight-loss-rate-optimal-speed-muscle-preservation-2026" data-featured="weight-loss-rate-optimal-speed-muscle-preservation-2026"><span class="fa-title">Weight Loss Rate: Finding Your Optimal Speed for Fat Loss Without Sacrificing Muscle</span><span class="fa-arrow">→</span></a>
+      <a class="fa-card" href="https://blog.aihavit.com/en/muscle-mass-loss-after-40-prevention-protocol-2026" data-featured="muscle-mass-loss-after-40-prevention-protocol-2026"><span class="fa-title">Muscle Mass Loss After 40: The Prevention Protocol That Actually Works in 2026</span><span class="fa-arrow">→</span></a>
+    </div>
+    <div class="fa-more"><a href="https://blog.aihavit.com/en" data-blog-path="" data-i18n="featured_more">Read more on the HAVIT Blog →</a></div>
+  </div>
+</section>
+
 <!-- DOWNLOAD -->
 <section id="download">
   <div class="download-glow"></div>
@@ -604,7 +651,7 @@
       <div class="footer-col-title">Product</div>
       <ul class="footer-col-links">
         <li><a href="https://app.aihavit.com/" target="_blank" rel="noopener">📱 App</a></li>
-        <li><a href="https://blog.aihavit.com/ko">📝 Blog</a></li>
+        <li><a href="https://blog.aihavit.com/en" data-blog-path="">📝 Blog</a></li>
         <li><a href="https://blog.aihavit.com/rss.xml">📡 RSS</a></li>
       </ul>
     </div>
@@ -676,6 +723,42 @@ function applyTranslations(tKey) {
   });
 }
 
+// SEO: 블로그는 타겟 4개 언어만 색인(en/ja/ko/zh-tw). 그 외 UI 언어는 영어 블로그로.
+var BLOG_LANG = { ko: 'ko', en: 'en', ja: 'ja', 'zh-TW': 'zh-tw' };
+function blogLangFor(tKey) { return BLOG_LANG[tKey] || 'en'; }
+
+// 정적 HTML의 blog 링크(nav/footer/Featured "더보기")를 방문자 언어의 블로그 로케일로 갱신.
+function updateBlogLinks(blogLang) {
+  document.querySelectorAll('[data-blog-path]').forEach(function(a) {
+    a.href = 'https://blog.aihavit.com/' + blogLang + (a.getAttribute('data-blog-path') || '');
+  });
+}
+
+// Featured 아티클 카드: href(로케일)+제목(로케일)을 갱신. 정적 HTML엔 영어가 이미 크롤 가능하게 존재.
+var FEATURED_TITLES = {
+  "havit-ai-coaching-engine-8steps": {"en":"The New Standard for Digital Health Coaching — How HAVIT's 8-Step AI Coaching Engine Integrates Personalization, Immediate Feedback, and Behavior Triggers","ja":"デジタルヘルスコーチングの新基準 — HAVITの8ステップAIコーチングエンジンが実現する「パーソナライゼーション × 即時フィードバック × 行動トリガー」の統合","ko":"디지털 헬스 코칭의 새 표준 — HAVIT 8단계 AI 코칭 엔진이 개인화·즉시 피드백·행동 트리거를 어떻게 통합하는가","zh-tw":"數位健康教練的新標準 — HAVIT 8 步驟 AI 教練引擎如何整合個人化、即時回饋與行為觸發"},
+  "havit-ai-body-composition-92percent-vs-inbody": {"en":"Democratizing Body Composition Checks — How HAVIT's Survey-Based Model Achieves Clinical-Tool-Grade Accuracy","ja":"体組成チェックの民主化 — HAVITのアンケート型モデルが臨床ツール級の精度を実現する仕組み","ko":"체성분 체크의 민주화 — HAVIT 설문 기반 체성분 추정 모델의 임상 도구급 정확도","zh-tw":"普及身體組成檢測——HAVIT 問卷模型如何達到臨床工具級準確度"},
+  "havit-vs-myfitnesspal-noom-simple-2026": {"en":"Beyond BMI — Why the New Generation of Diet Apps Needs Body Composition and Personalized Behavior Change","ja":"BMIを超えて — 次世代ダイエットアプリに必要な体組成、ライフスタイルデータ、パーソナライズされた行動変容","ko":"BMI 시대는 끝났다 — 체성분·라이프스타일 기반 개인화가 만드는 차세대 다이어트 앱 비교","zh-tw":"超越 BMI ── 為何新世代飲食 App 需要體組成、生活型態數據與個人化行為改變"},
+  "30-day-habit-challenge-failure-rate-better-approach-2026": {"en":"Why Your 30-Day Habit Challenge Will Probably Fail (And What Actually Works)","ja":"30日チャレンジが失敗する本当の理由と、科学的に効果が証明された習慣化メソッド","ko":"30일 습관 챌린지, 왜 92%가 실패할까? 과학이 말하는 더 나은 방법","zh-tw":"為什麼你的30天習慣挑戰八成會失敗（以及真正有效的方法）"},
+  "emotional-eating-trigger-moment-intervention-techniques-2026": {"en":"Emotional Eating Trigger Moment Intervention Techniques: The 90-Second Reset","ja":"感情的な過食衝動を90秒でリセットする介入テクニック","ko":"감정적 폭식 순간 개입 기법: 90초 안에 충동 조절하는 5가지 방법","zh-tw":"情緒性進食衝動的90秒黃金介入法：當手伸向零食櫃的那一刻"},
+  "eating-speed-satiety-weight-management-2026": {"en":"Why 20 Minutes Per Meal Changes Everything: The Science of Eating Speed and Satiety","ja":"1食20分で変わる満腹感の科学｜早食いが太る本当の理由とホルモンの遅延メカニズム","ko":"천천히 먹으면 진짜 살 빠질까? 한 끼 적정 식사 시간과 포만감의 과학","zh-tw":"為什麼每餐花 20 分鐘吃會改變一切？進食速度與飽足感的科學解密"},
+  "habit-stacking-implementation-intention-success-rate-2026": {"en":"Habit Stacking Meets Implementation Intentions: The 91% Success Formula for 2026","ja":"習慣スタッキング×実行意図：成功率91%を実現する2026年最強の習慣化メソッド","ko":"습관 쌓기와 실행 의도 기법을 결합하면 성공률이 3배 높아지는 이유","zh-tw":"習慣堆疊 × 執行意圖：2026 年讓成功率飆升到 91% 的黃金組合"},
+  "diet-break-planned-pause-fat-loss-benefits-2026": {"en":"Diet Breaks Explained: Why Planned Pauses Actually Accelerate Long-Term Fat Loss","ja":"ダイエット休止期間の科学：計画的な「食べる期間」が長期的な脂肪減少を加速させる理由","ko":"다이어트 중간에 쉬면 살이 더 빠진다? 계획적 휴식의 과학적 효과","zh-tw":"減肥休息期完整指南：為什麼刻意暫停反而能加速長期減脂效果"},
+  "body-composition-trend-tracking-beyond-scale-weight-2026": {"en":"How to Track Body Composition Changes at Home Without Expensive Equipment","ja":"自宅で体組成の変化を追跡する方法｜高価な機器なしでできる実践ガイド","ko":"집에서 체성분 변화 추적하는 법: 체중계 숫자 말고 진짜 변화 보는 5가지 방법","zh-tw":"不花大錢也能在家追蹤體態變化：照片、皮尺、重訓數據的實戰指南"},
+  "visceral-fat-reduction-specific-strategies-2026": {"en":"How to Reduce Visceral Belly Fat Specifically: 7 Evidence-Based Strategies","ja":"内臓脂肪だけを狙い撃ち！科学的根拠に基づく7つの効果的アプローチ【2026年最新版】","ko":"내장지방만 집중적으로 빼는 방법: 피하지방은 놔두고 뱃속 지방만 공략하는 전략","zh-tw":"如何針對性減掉內臟脂肪：7個科學實證策略,專攻深層腹部脂肪"},
+  "weight-loss-rate-optimal-speed-muscle-preservation-2026": {"en":"Weight Loss Rate: Finding Your Optimal Speed for Fat Loss Without Sacrificing Muscle","ja":"体重減少ペースの最適解：筋肉を守りながら脂肪を落とす週間目標とは","ko":"체중 감량 속도, 주당 몇 kg이 근육 보존에 최적일까? (2026 연구 기반)","zh-tw":"減重速度怎麼抓？不掉肌肉的最佳減脂節奏完整攻略"},
+  "muscle-mass-loss-after-40-prevention-protocol-2026": {"en":"Muscle Mass Loss After 40: The Prevention Protocol That Actually Works in 2026","ja":"40代からの筋肉量低下を防ぐ：2026年版・科学的根拠に基づく実践プロトコル","ko":"40대 이후 근감소증 예방 프로토콜: 단백질 타이밍과 저항 운동의 과학","zh-tw":"40歲後肌肉流失怎麼辦？2026年真正有效的肌少症預防方案"}
+};
+function localizeFeatured(blogLang) {
+  document.querySelectorAll('.fa-card[data-featured]').forEach(function(a) {
+    var slug = a.getAttribute('data-featured');
+    a.href = 'https://blog.aihavit.com/' + blogLang + '/' + slug;
+    var titles = FEATURED_TITLES[slug];
+    var el = a.querySelector('.fa-title');
+    if (titles && titles[blogLang] && el) el.textContent = titles[blogLang];
+  });
+}
+
 function setLang(langCode) {
   const l = LANGS[langCode] || LANGS['en-US'];
   currentLang = langCode;
@@ -684,6 +767,10 @@ function setLang(langCode) {
   // Apply translations
   var tKey = l.t || l.ui;
   applyTranslations(tKey);
+  // SEO: blog 링크·Featured 카드를 방문자 언어의 블로그 로케일(타겟 4개 외 = en)로 매칭
+  var blogLang = blogLangFor(tKey);
+  updateBlogLinks(blogLang);
+  localizeFeatured(blogLang);
   // Update lang button
   document.getElementById('langFlag').textContent = l.flag;
   document.getElementById('langCode').textContent = l.code;
