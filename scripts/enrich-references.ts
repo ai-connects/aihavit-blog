@@ -34,7 +34,7 @@ async function findCrossrefDoi(title: string, source: string): Promise<string | 
     const query = encodeURIComponent(`${title} ${source}`.slice(0, 200));
     const url = `https://api.crossref.org/works?query.bibliographic=${query}&rows=1&select=DOI,title,container-title`;
     const r = await fetch(url, {
-      headers: { 'User-Agent': 'HAVIT-Blog-Backfill/1.0 (mailto:help@aiconnects.me)' },
+      headers: { 'User-Agent': 'HAVIT-Blog-Backfill/1.0 (mailto:havit@aihavit.com)' },
       signal: AbortSignal.timeout(8000),
     });
     if (!r.ok) return null;

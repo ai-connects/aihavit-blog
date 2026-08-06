@@ -75,7 +75,7 @@ export default function Footer({ lang }: { lang: LangKey }) {
               {/* BLOG_AUTHORITY v1.0.0 (PRD §16.2 / INV-004 / INV-011) — About + Editorial Policy 신규 link */}
               <li><Link href={`/${shortLang}/about`} className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">About</Link></li>
               <li><Link href={`/${shortLang}/editorial-policy`} className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Editorial Policy</Link></li>
-              <li><a href="mailto:help@aiconnects.me" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contact</a></li>
+              <li><a href="mailto:havit@aihavit.com" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contact</a></li>
               <li><a href="https://aihavit.com/privacy.html" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Privacy</a></li>
               <li><a href="https://aihavit.com/terms.html" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Terms</a></li>
             </ul>

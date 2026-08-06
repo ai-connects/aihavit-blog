@@ -26,7 +26,7 @@ export function generateStaticParams() {
 }
 
 const SITE = 'https://blog.aihavit.com';
-const CONTACT_EMAIL = 'help@aiconnects.me';
+const CONTACT_EMAIL = 'havit@aihavit.com';
 const PUBLISHER_NAME = 'AI Connect Inc.';
 const PUBLISHER_URL = 'https://www.aiconnects.me';
 
