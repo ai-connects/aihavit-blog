@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ArticleView from '@/components/ArticleView';
 import { getArticleBySlug, resolveContent, getAllArticles, PRIMARY_LANGS, isLangIndexable } from '@/lib/articles-v2';
+import { articleImage } from '@/lib/article-images';
 import { toFullLang } from '@/lib/i18n';
 
 const ROUTE_LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'es', 'pt-br', 'id', 'de', 'fr'] as const;
@@ -24,7 +25,10 @@ export async function generateStaticParams() {
   return params;
 }
 
-const OG_IMAGE_URL = 'https://blog.aihavit.com/havit-logo.png';
+// Social preview used to be the HAVIT wordmark on every one of ~11k article
+// URLs — identical thumbnails across the whole site. Each article now has its
+// own photo (lib/article-images.ts), so share cards are distinct per article.
+const OG_IMAGE_FALLBACK = 'https://blog.aihavit.com/havit-logo.png';
 // HTML <title> CTR target: keep core keywords visible in Google SERP without a
 // trailing " — HAVIT Blog" suffix (Google often appends site name automatically
 // via og:site_name + Organization schema). 50 chars leaves room without cutoff.
@@ -97,6 +101,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `https://blog.aihavit.com/en/${params.slug}`
     : `https://blog.aihavit.com/${params.lang}/${params.slug}`;
 
+  const ogImage = articleImage(params.slug, article.category) || OG_IMAGE_FALLBACK;
+
   return {
     title: htmlTitle,
     description: htmlDescription,
@@ -123,9 +129,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: params.lang,
       images: [
         {
-          url: OG_IMAGE_URL,
-          width: 1600,
-          height: 753,
+          url: ogImage,
           alt: content.title,
         },
       ],
@@ -136,7 +140,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title: content.title,
       description: fullDescription,
-      images: [OG_IMAGE_URL],
+      images: [ogImage],
     },
   };
 }
@@ -189,9 +193,9 @@ export default function ArticlePage({ params }: Props) {
     <div className="min-h-screen flex flex-col">
       <Header lang={fullLang} availableLangs={['en_us', 'ko_kr', 'ja_jp', 'zh_cn', 'zh_tw', 'es_es']} />
       <main className="flex-1">
-        <div className="border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
-          <div className="mx-auto max-w-3xl px-4 py-2 flex flex-wrap gap-2 text-sm">
-            <span className="text-gray-500 mr-2 self-center">{LANG_SWITCHER_LABEL[params.lang as RouteLang]}:</span>
+        <div className="border-b" style={{ borderColor: 'var(--hv-border)' }}>
+          <div className="hv-container max-w-3xl py-2.5 flex flex-wrap gap-2 text-sm">
+            <span className="text-body-small mr-1 self-center">{LANG_SWITCHER_LABEL[params.lang as RouteLang]}:</span>
             {/* SEO: 색인 대상(타겟) 언어만 SSR <a> 링크로 노출한다. 전 언어를 렌더하면
                 Googlebot이 매 타겟 페이지에서 noindex 언어(de/es/fr/id/pt-br/zh) 링크를
                 따라가 ~6,200개 noindex URL을 반복 재크롤하며 크롤 예산을 낭비한다.
@@ -200,12 +204,12 @@ export default function ArticlePage({ params }: Props) {
               <a
                 key={L}
                 href={`/${L}/${params.slug}`}
-                className={`px-2.5 py-1 rounded transition-colors ${
+                className={`px-3 py-1 rounded-full transition-colors ${
                   L === params.lang
-                    ? 'bg-primary-500 text-gray-900 font-semibold'
+                    ? 'bg-primary-500 text-black font-semibold'
                     : availability[L]
-                      ? 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
-                      : 'bg-gray-50 dark:bg-gray-900 text-gray-400 line-through pointer-events-none'
+                      ? 'bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10'
+                      : 'opacity-40 line-through pointer-events-none'
                 }`}
                 aria-disabled={!availability[L]}
               >

@@ -25,74 +25,102 @@ function pickFooterI18n(shortLang: string): { aiTransparency: string } {
 // SEO crawl-path: sitewide links to the article archive + category hubs so every
 // article is ≤2 clicks from any page (fixes GSC "Discovered — currently not indexed").
 const LABEL_TOPICS: Record<string, string> = {
-  en: 'Topics', ko: '주제', ja: 'トピック', zh: '主题', 'zh-tw': '主題', es: 'Temas',
-  'pt-br': 'Tópicos', id: 'Topik', de: 'Themen', fr: 'Thèmes',
+  en: 'TOPICS', ko: '주제', ja: 'トピック', zh: '主题', 'zh-tw': '主題', es: 'TEMAS',
+  'pt-br': 'TÓPICOS', id: 'TOPIK', de: 'THEMEN', fr: 'THÈMES',
 };
 const LABEL_ALL_ARTICLES: Record<string, string> = {
   en: 'All articles', ko: '전체 아티클', ja: '全記事', zh: '全部文章', 'zh-tw': '全部文章',
   es: 'Todos los artículos', 'pt-br': 'Todos os artigos', id: 'Semua artikel',
   de: 'Alle Artikel', fr: 'Tous les articles',
 };
+const NOTICE: Record<string, string> = {
+  en: 'HAVIT provides general wellness information and does not provide medical advice, diagnosis, or treatment.',
+  ko: 'HAVIT은 일반적인 웰니스 정보를 제공하며, 의학적 조언·진단·치료를 제공하지 않습니다.',
+  ja: 'HAVITは一般的なウェルネス情報を提供するものであり、医学的助言・診断・治療を提供するものではありません。',
+  zh: 'HAVIT 提供一般健康信息，不提供医疗建议、诊断或治疗。',
+  'zh-tw': 'HAVIT 提供一般健康資訊，不提供醫療建議、診斷或治療。',
+  es: 'HAVIT ofrece información general de bienestar y no proporciona consejo médico, diagnóstico ni tratamiento.',
+  'pt-br': 'A HAVIT fornece informações gerais de bem-estar e não oferece aconselhamento médico, diagnóstico ou tratamento.',
+  id: 'HAVIT menyediakan informasi kesehatan umum dan tidak memberikan nasihat medis, diagnosis, atau pengobatan.',
+  de: 'HAVIT bietet allgemeine Wellness-Informationen und keine medizinische Beratung, Diagnose oder Behandlung.',
+  fr: 'HAVIT fournit des informations générales de bien-être et ne fournit ni conseil médical, ni diagnostic, ni traitement.',
+};
+
+const MAIN_SITE = process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://aihavit.com';
 
 export default function Footer({ lang }: { lang: LangKey }) {
   const shortLang = toShortLang(lang);
   const i18n = pickFooterI18n(shortLang);
+
   return (
-    <footer className="mt-16 border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
-      <div className="mx-auto max-w-7xl px-4 md:px-6 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-          <div className="col-span-2 md:col-span-1">
-            <div className="font-bold text-2xl mb-3 tracking-tight">HAVIT</div>
-            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed max-w-sm">
-              AI-powered wellness companion for habits, sleep, nutrition, and movement.
-            </p>
+    <footer className="hv-footer">
+      <div className="hv-container">
+        {/* Wordmark is dark-on-transparent; the footer band is dark, so it is
+            inverted here the same way the marketing site does it. */}
+        <img
+          className="mb-6"
+          src="/logo.svg"
+          alt="HAVIT"
+          width={355}
+          height={100}
+          style={{ height: 20, width: 'auto', filter: 'brightness(0) invert(1)' }}
+        />
+        <p className="text-body-small" style={{ color: 'rgba(255,255,255,0.6)' }}>
+          © 2026 AI Connect Inc. All Rights Reserved.
+        </p>
+        <p className="text-body-small hv-footer__notice" style={{ color: 'rgba(255,255,255,0.6)' }}>
+          {NOTICE[shortLang] ?? NOTICE.en}
+        </p>
+
+        <div className="hv-footer__columns">
+          <div className="hv-footer__col">
+            <p className="eyebrow">PRODUCT</p>
+            <a href={MAIN_SITE}>HAVIT</a>
+            <a href="https://app.aihavit.com/" target="_blank" rel="noopener">App</a>
+            <Link href={`/${shortLang}`}>Blog</Link>
+            <Link href={`/${shortLang}/tools`}>Tools</Link>
           </div>
-          <div>
-            <div className="font-semibold text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4">Product</div>
-            <ul className="space-y-2.5 text-sm">
-              <li><a href="https://app.aihavit.com/" target="_blank" rel="noopener" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">📱 App</a></li>
-              <li><Link href={`/${shortLang}`} className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">📝 Blog</Link></li>
-              <li><Link href={`/${shortLang}/articles`} className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">🗂 {LABEL_ALL_ARTICLES[shortLang] ?? LABEL_ALL_ARTICLES.en}</Link></li>
-              <li><Link href="/rss.xml" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">📡 RSS</Link></li>
-            </ul>
-          </div>
-          <div>
-            <div className="font-semibold text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4">{LABEL_TOPICS[shortLang] ?? LABEL_TOPICS.en}</div>
-            <ul className="space-y-2.5 text-sm">
+          <div className="hv-footer__col">
+            <p className="eyebrow">{LABEL_TOPICS[shortLang] ?? LABEL_TOPICS.en}</p>
+            {/* All 15 categories stay in the footer — it is the sitewide crawl
+                path that keeps every article ≤2 clicks from any page. Two
+                columns so the list doesn't run twice as tall as its neighbours. */}
+            <div className="grid grid-cols-2 gap-x-5 gap-y-3.5">
               {ALL_CATEGORIES.map((c) => (
-                <li key={c.slug}>
-                  <Link href={`/${shortLang}/category/${c.slug}`} className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                    {localizedCategory(c.value, shortLang)}
-                  </Link>
-                </li>
+                <Link key={c.slug} href={`/${shortLang}/category/${c.slug}`}>
+                  {localizedCategory(c.value, shortLang)}
+                </Link>
               ))}
-            </ul>
+            </div>
           </div>
-          <div>
-            <div className="font-semibold text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4">Company</div>
-            <ul className="space-y-2.5 text-sm">
-              <li><a href="https://www.aiconnects.me" target="_blank" rel="noopener" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">AI Connect</a></li>
-              {/* BLOG_AUTHORITY v1.0.0 (PRD §16.2 / INV-004 / INV-011) — About + Editorial Policy 신규 link */}
-              <li><Link href={`/${shortLang}/about`} className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">About</Link></li>
-              <li><Link href={`/${shortLang}/editorial-policy`} className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Editorial Policy</Link></li>
-              <li><a href="mailto:havit@aihavit.com" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contact</a></li>
-              <li><a href="https://aihavit.com/privacy.html" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Privacy</a></li>
-              <li><a href="https://aihavit.com/terms.html" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Terms</a></li>
-            </ul>
+          <div className="hv-footer__col">
+            <p className="eyebrow">COMPANY</p>
+            <a href="https://www.aiconnects.me" target="_blank" rel="noopener">AI Connect</a>
+            <Link href={`/${shortLang}/about`}>About</Link>
+            <Link href={`/${shortLang}/editorial-policy`}>Editorial Policy</Link>
+            <Link href={`/${shortLang}/articles`}>{LABEL_ALL_ARTICLES[shortLang] ?? LABEL_ALL_ARTICLES.en}</Link>
+            <a href="/rss.xml">RSS</a>
+            <a href="mailto:havit@aihavit.com">Contact</a>
+          </div>
+          <div className="hv-footer__col">
+            <p className="eyebrow">LEGAL</p>
+            <a href={`${MAIN_SITE}/privacy.html`}>Privacy</a>
+            <a href={`${MAIN_SITE}/terms.html`}>Terms</a>
+            <a href={`${MAIN_SITE}/eula.html`}>EULA</a>
+            <a href={`${MAIN_SITE}/refund.html`}>Refund Policy</a>
           </div>
         </div>
-        {/* BLOG_AUTHORITY v1.0.0 (PRD §5.2.3 / §16.2 F-07 옵션 A / INV-005) — AI transparency link to editorial policy */}
-        <p className="mt-12 text-xs text-gray-500 text-center">
-          <Link
-            href={`/${shortLang}/editorial-policy`}
-            className="hover:text-primary-600 dark:hover:text-primary-400 underline-offset-2 hover:underline transition-colors"
-          >
+
+        {/* BLOG_AUTHORITY v1.0.0 (PRD §5.2.3 / §16.2 F-07 옵션 A / INV-005) —
+            AI transparency link to editorial policy */}
+        <p
+          className="mt-14 pt-6 text-xs text-center"
+          style={{ color: 'rgba(255,255,255,0.4)', borderTop: '1px solid rgba(255,255,255,0.12)' }}
+        >
+          <Link href={`/${shortLang}/editorial-policy`} className="hover:underline">
             {i18n.aiTransparency}
           </Link>
         </p>
-        <div className="mt-3 pt-6 border-t border-gray-200 dark:border-gray-800 text-center text-xs text-gray-500">
-          © 2026 AI Connect Inc. All rights reserved.
-        </div>
       </div>
     </footer>
   );

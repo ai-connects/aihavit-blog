@@ -92,45 +92,45 @@ export default function CategoryPage({ params }: Props) {
     <div className="min-h-screen flex flex-col">
       <Header lang={lang} />
       <main className="flex-1">
-        <section className="mx-auto max-w-7xl px-4 md:px-6 pt-8 md:pt-12 pb-6">
-          <nav className="text-sm text-gray-500 mb-3" aria-label="Breadcrumb">
-            <Link href={basePath} className="hover:text-primary-600 dark:hover:text-primary-400">
+        <section className="hv-container pt-10 md:pt-14 pb-8">
+          <nav className="text-body-small mb-3" aria-label="Breadcrumb">
+            <Link href={basePath} className="hover:text-primary-700 dark:hover:text-primary-400">
               {LABEL_BLOG[shortLang as RouteLang]}
             </Link>
             <span className="mx-2">/</span>
-            <span className="text-gray-700 dark:text-gray-300">{name}</span>
+            <span style={{ color: 'var(--hv-fg)' }}>{name}</span>
           </nav>
-          <h1 className="font-bold text-3xl md:text-5xl leading-tight mb-3">{name}</h1>
-          <p className="text-sm text-gray-500 dark:text-gray-500 mb-2">
+          <h1 className="text-heading-2 mb-3">{name}</h1>
+          <p className="text-body-small mb-2">
             {items.length} {LABEL_ITEMS[shortLang as RouteLang]}
           </p>
           <Link
             href={`${basePath}/articles`}
-            className="text-sm text-primary-600 dark:text-primary-400 hover:underline"
+            className="text-body-small text-primary-700 dark:text-primary-400 hover:underline"
           >
             {LABEL_ALL_ARTICLES[shortLang as RouteLang]} →
           </Link>
         </section>
 
-        <section className="mx-auto max-w-7xl px-4 md:px-6 pb-12">
+        <section className="hv-container pb-12">
           {items.length === 0 ? (
-            <div className="p-12 text-center text-gray-500 rounded-2xl border border-gray-200 dark:border-gray-800" />
+            <div className="p-12 text-center rounded-3xl border" style={{ borderColor: 'var(--hv-border)' }} />
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-              {items.map((item) => (
-                <ArticleCardV2 key={item.slug} item={item} shortLang={shortLang} featured={false} />
+              {items.map((item, i) => (
+                <ArticleCardV2 key={item.slug} item={item} shortLang={shortLang} featured={false} priority={i < 4} />
               ))}
             </div>
           )}
         </section>
 
-        <section className="mx-auto max-w-7xl px-4 md:px-6 pb-16">
+        <section className="hv-container pb-20">
           <div className="flex flex-wrap gap-2">
             {otherCategories.map((c) => (
               <Link
                 key={c.slug}
                 href={`${basePath}/category/${c.slug}`}
-                className="px-3 py-1.5 rounded-full text-sm border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                className="blog-categories__item"
               >
                 {localizedCategory(c.value, shortLang)}
               </Link>

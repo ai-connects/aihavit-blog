@@ -15,9 +15,21 @@ const nextConfig = {
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'cdn.aihavit.com' },
+      // Article hero photos — the HAVIT app's own article library (see
+      // lib/article-images.ts). Originals are 0.3–3.9 MB, so they are always
+      // rendered through next/image, never linked raw.
+      {
+        protocol: 'https',
+        hostname: 'havit-prod-us-east.s3.us-east-1.amazonaws.com',
+        pathname: '/image/**',
+      },
       { protocol: 'https', hostname: 'images.unsplash.com' },
       { protocol: 'https', hostname: 'source.unsplash.com' },
     ],
+    formats: ['image/avif', 'image/webp'],
+    // 289 distinct sources — a long TTL keeps the optimizer from re-fetching
+    // multi-MB originals as pages revalidate on the 600s ISR window.
+    minimumCacheTTL: 60 * 60 * 24 * 31,
   },
   // PRD §6.1 INV-011: ISR revalidate 600s (10분)
   experimental: {

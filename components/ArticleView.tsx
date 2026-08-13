@@ -1,8 +1,11 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import type { ArticleV2, ArticleV2LangContent } from '@/lib/articles-v2';
 import { getRelatedForLang } from '@/lib/articles-v2';
+import { articleImage } from '@/lib/article-images';
+import { localizedCategory } from '@/lib/category-labels';
 import InstallCTA from './InstallCTA';
 import { toFullLang } from '@/lib/i18n';
 // BLOG_AUTHORITY v1.0.0 (PRD §7.3) — 3 신규 import (기존 import 무변경)
@@ -45,51 +48,58 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
   const related = getRelatedForLang(article, shortLang, 4);
 
   return (
-    <article className="mx-auto max-w-3xl px-4 md:px-6 py-8 md:py-12">
+    <article className="post hv-container post__col">
       <header className="mb-8">
-        <Link
-          href={`/${shortLang}`}
-          className="inline-block text-sm text-gray-600 dark:text-gray-400 hover:text-primary-700 dark:hover:text-primary-400 mb-4"
-        >
+        <Link href={`/${shortLang}`} className="inline-block text-body-small mb-5 hover:underline">
           {label('back', shortLang)}
         </Link>
 
         {fallback && (
-          <div className="mb-4 p-3 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 text-sm text-amber-900 dark:text-amber-200">
+          <div className="mb-5 p-3 rounded-xl bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 text-sm text-amber-900 dark:text-amber-200">
             {label('fallbackBanner', shortLang)}
           </div>
         )}
 
+        {/* Hero photo — assigned by scripts/build-article-images.ts. This is the
+            page's LCP element, hence `priority`. */}
+        <figure className="post__hero">
+          <Image
+            src={articleImage(article.slug, article.category)}
+            alt=""
+            fill
+            sizes="(max-width: 760px) 100vw, 680px"
+            priority
+            className="object-cover"
+          />
+        </figure>
+
         <div className="flex flex-wrap items-center gap-2 mb-4">
-          {article.category_emoji && <span className="text-3xl">{article.category_emoji}</span>}
-          <span className="text-xs font-mono uppercase text-gray-600 dark:text-gray-400">
-            {article.category}
+          <span className="category-badge">
+            {article.category_emoji && <span aria-hidden>{article.category_emoji}</span>}
+            <span>{localizedCategory(article.category, shortLang)}</span>
           </span>
           {article.reading_time_min && (
-            <>
-              <span className="text-xs text-gray-500">·</span>
-              <span className="text-xs text-gray-500">{article.reading_time_min} {label('minRead', shortLang)}</span>
-            </>
+            <span className="text-body-small">
+              {article.reading_time_min} {label('minRead', shortLang)}
+            </span>
           )}
         </div>
 
-        <h1 className="font-bold text-3xl md:text-4xl xl:text-5xl leading-tight mb-4">
-          {content.title}
-        </h1>
+        <h1 className="text-heading-2 mb-4">{content.title}</h1>
 
         {content.tldr && (
-          <div className="mb-5 p-4 rounded-xl border-l-4 border-primary-500 bg-primary-50 dark:bg-primary-900/20">
-            <div className="text-xs font-bold uppercase tracking-wider text-primary-800 dark:text-primary-400 mb-1.5">
+          <div className="post__callout mb-5">
+            <div className="eyebrow mb-1.5" style={{ color: 'var(--hv-grey-80)' }}>
               {label('tldr', shortLang)}
             </div>
-            <p className="text-base md:text-lg font-medium text-gray-900 dark:text-gray-100 leading-relaxed">
+            <p className="text-title-medium leading-relaxed" style={{ color: 'var(--hv-grey-100)' }}>
               {content.tldr}
             </p>
           </div>
         )}
 
         {content.last_updated && (
-          <div className="text-sm text-gray-500 dark:text-gray-400">
+          <div className="text-body-small">
             🕓 {label('updated', shortLang)}: <strong>{content.last_updated}</strong>
           </div>
         )}
@@ -103,7 +113,7 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
       {/* BLOG_AUTHORITY v1.0.0 (PRD §7.3 Step 3b) — Medical disclaimer banner before body */}
       <MedicalDisclaimer shortLang={shortLang} />
 
-      <div className="prose prose-gray dark:prose-invert max-w-none prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-p:leading-relaxed prose-strong:text-gray-900 dark:prose-strong:text-gray-100">
+      <div className="prose prose-gray dark:prose-invert max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-h2:text-[24px] prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-[18px] prose-p:leading-[1.7] prose-p:text-[var(--hv-fg-muted)] prose-li:text-[var(--hv-fg-muted)] prose-a:text-primary-700 dark:prose-a:text-primary-400 prose-strong:text-[var(--hv-fg)]">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{content.body_md}</ReactMarkdown>
       </div>
 
@@ -114,14 +124,14 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
 
       {content.key_stats && content.key_stats.length > 0 && (
         <section className="mt-12">
-          <h2 className="text-2xl font-bold mb-4">📊 {label('keyStats', shortLang)}</h2>
+          <h2 className="text-title-xlarge mb-4">📊 {label('keyStats', shortLang)}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {content.key_stats.map((s, i) => (
-              <div key={i} className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
-                <div className="text-2xl font-bold text-primary-700 dark:text-primary-400 mb-1">{s.value}</div>
-                <div className="text-sm text-gray-700 dark:text-gray-300 mb-1.5">{s.label}</div>
+              <div key={i} className="p-5 rounded-2xl border" style={{ borderColor: 'var(--hv-border)', background: 'var(--hv-surface)' }}>
+                <div className="text-title-xlarge text-primary-700 dark:text-primary-400 mb-1">{s.value}</div>
+                <div className="text-body-small mb-1.5" style={{ color: 'var(--hv-fg-muted)' }}>{s.label}</div>
                 {s.source && (
-                  <div className="text-xs text-gray-500 dark:text-gray-500 italic">{s.source}</div>
+                  <div className="text-xs italic" style={{ color: 'var(--hv-fg-subtle)' }}>{s.source}</div>
                 )}
               </div>
             ))}
@@ -131,10 +141,10 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
 
       {content.comparison_table && (
         <section className="mt-12">
-          <h2 className="text-2xl font-bold mb-4">{content.comparison_table.title}</h2>
-          <div className="overflow-x-auto -mx-4 md:mx-0 rounded-xl border border-gray-200 dark:border-gray-800">
+          <h2 className="text-title-xlarge mb-4">{content.comparison_table.title}</h2>
+          <div className="overflow-x-auto -mx-4 md:mx-0 rounded-2xl border" style={{ borderColor: 'var(--hv-border)' }}>
             <table className="w-full text-sm">
-              <thead className="bg-gray-50 dark:bg-gray-900">
+              <thead style={{ background: 'var(--hv-surface-muted)' }}>
                 <tr>
                   {content.comparison_table.headers.map((h, i) => (
                     <th key={i} className="text-left px-3 py-2.5 font-semibold whitespace-nowrap border-b border-gray-200 dark:border-gray-800">
@@ -162,15 +172,15 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
 
       {content.faq && content.faq.length > 0 && (
         <section className="mt-12">
-          <h2 className="text-2xl font-bold mb-4">❓ {label('faq', shortLang)}</h2>
+          <h2 className="text-title-xlarge mb-4">❓ {label('faq', shortLang)}</h2>
           <div className="space-y-3">
             {content.faq.map((q, i) => (
-              <details key={i} className="group p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
+              <details key={i} className="group p-5 rounded-2xl border" style={{ borderColor: 'var(--hv-border)', background: 'var(--hv-surface)' }}>
                 <summary className="cursor-pointer font-semibold list-none flex items-start justify-between gap-3">
                   <span>{q.question}</span>
                   <span aria-hidden className="text-gray-400 group-open:rotate-180 transition-transform mt-0.5">▼</span>
                 </summary>
-                <div className="mt-3 text-gray-700 dark:text-gray-300 leading-relaxed">{q.answer}</div>
+                <div className="mt-3 text-body-medium leading-relaxed">{q.answer}</div>
               </details>
             ))}
           </div>
@@ -178,11 +188,11 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
       )}
 
       {references && references.length > 0 && (
-        <section className="mt-12 pt-6 border-t border-gray-200 dark:border-gray-800">
-          <h3 className="text-sm font-bold text-gray-600 dark:text-gray-400 uppercase tracking-wider mb-3">
+        <section className="mt-14 pt-8 border-t" style={{ borderColor: 'var(--hv-border)' }}>
+          <h3 className="eyebrow">
             {label('references', shortLang)}
           </h3>
-          <ul className="space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
+          <ul className="space-y-1.5 text-body-small">
             {references.map((r: any, i) => {
               const refTitle = r.title ?? r.text ?? '';
               const refSource = r.source ?? '';
@@ -203,22 +213,32 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
       )}
 
       {related.length > 0 && (
-        <section className="mt-12 pt-6 border-t border-gray-200 dark:border-gray-800">
-          <h3 className="text-sm font-bold text-gray-600 dark:text-gray-400 uppercase tracking-wider mb-3">
-            {label('related', shortLang)}
-          </h3>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 list-disc pl-5">
+        <section className="mt-14 pt-8 border-t" style={{ borderColor: 'var(--hv-border)' }}>
+          <h2 className="text-title-xlarge">{label('related', shortLang)}</h2>
+          {/* Thumbnails here, not a bullet list — same "Other articles" grid the
+              marketing site uses, and it makes sibling links actually clickable
+              targets (crawl depth + orphan-page mitigation). */}
+          <div className="post__related-grid">
             {related.map((r) => (
-              <li key={r.slug} className="text-sm">
-                <Link
-                  href={`/${shortLang}/${r.slug}`}
-                  className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:underline"
-                >
-                  {r.category_emoji ? `${r.category_emoji} ` : ''}{r.title}
+              <figure key={r.slug} className="article-card">
+                <Link href={`/${shortLang}/${r.slug}`} className="article-card__media" tabIndex={-1} aria-hidden>
+                  <Image
+                    src={articleImage(r.slug, article.category)}
+                    alt=""
+                    fill
+                    sizes="(max-width: 960px) 100vw, 330px"
+                    className="object-cover"
+                  />
                 </Link>
-              </li>
+                <figcaption className="p-4">
+                  <Link href={`/${shortLang}/${r.slug}`} className="text-title-small hover:underline">
+                    {r.category_emoji && <span aria-hidden className="mr-1.5">{r.category_emoji}</span>}
+                    {r.title}
+                  </Link>
+                </figcaption>
+              </figure>
             ))}
-          </ul>
+          </div>
         </section>
       )}
 

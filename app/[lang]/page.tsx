@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ArticleCardV2 from '@/components/ArticleCardV2';
 import { listArticlesForLang, getAllArticles, resolveContent, isLangIndexable } from '@/lib/articles-v2';
 import { localizedCategory } from '@/lib/category-labels';
 import { toFullLang } from '@/lib/i18n';
 import { categorySlug } from '@/lib/categories';
+import { articleImage } from '@/lib/article-images';
 import { BRAND_SAME_AS } from '@/lib/team';
 
 export const revalidate = 600;
@@ -65,6 +66,17 @@ const LABEL_ITEMS: Record<RouteLang, string> = {
 const LABEL_LANGUAGES: Record<RouteLang, string> = {
   ko: '언어', en: 'languages', ja: '言語', zh: '语言', 'zh-tw': '語言', es: 'idiomas',
   'pt-br': 'idiomas', id: 'bahasa', de: 'Sprachen', fr: 'langues',
+};
+
+const LABEL_ALL_ARTICLES: Record<RouteLang, string> = {
+  ko: '전체 아티클', en: 'All articles', ja: '全記事', zh: '全部文章', 'zh-tw': '全部文章',
+  es: 'Todos los artículos', 'pt-br': 'Todos os artigos', id: 'Semua artikel',
+  de: 'Alle Artikel', fr: 'Tous les articles',
+};
+
+const LABEL_MIN_READ: Record<RouteLang, string> = {
+  ko: '분 분량', en: 'min read', ja: '分で読める', zh: '分钟阅读', 'zh-tw': '分鐘閱讀',
+  es: 'min', 'pt-br': 'min de leitura', id: 'menit', de: 'Min. Lesezeit', fr: 'min de lecture',
 };
 
 const LABEL_BY_AI_CONNECT: Record<RouteLang, string> = {
@@ -213,103 +225,198 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
     ],
   };
 
+  // The featured slot is the newest article, and it is the page's LCP element —
+  // so its photo gets `priority`. Suppressed while searching/filtering, where a
+  // large unrelated hero above the results would just be in the way.
+  const featured = !query && !category ? items[0] : null;
+  const listItems = featured ? pageItems.filter((i) => i.slug !== featured.slug) : pageItems;
+
+  const pageNumbers: number[] = [];
+  {
+    const from = Math.max(1, Math.min(safePage - 2, totalPages - 4));
+    const to = Math.min(totalPages, from + 4);
+    for (let p = from; p <= to; p++) pageNumbers.push(p);
+  }
+
+  const heading = query
+    ? `"${query}" — ${total} ${LABEL_ITEMS[shortLang as RouteLang]}`
+    : category
+      ? `${localizedCategory(category, shortLang)} · ${total}`
+      : LABEL_ALL_ARTICLES[shortLang as RouteLang];
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header lang={lang} />
       <main className="flex-1">
-        <section className="mx-auto max-w-7xl px-4 md:px-6 pt-8 md:pt-12 pb-6">
-          <h1 className="font-bold text-3xl md:text-5xl xl:text-6xl leading-tight mb-3">
-            HAVIT <span className="text-primary-600 dark:text-primary-400">Blog</span>
-          </h1>
-          <p className="text-base md:text-xl text-gray-600 dark:text-gray-400 max-w-prose mb-3">
-            {HERO_TAGLINE[shortLang as RouteLang]}
-          </p>
-          <p className="text-sm text-gray-500 dark:text-gray-500 mb-6">
-            {LABEL_BY_AI_CONNECT[shortLang as RouteLang]} · {allArticles.length.toLocaleString()}+ {LABEL_ITEMS[shortLang as RouteLang]} · 10 {LABEL_LANGUAGES[shortLang as RouteLang]}
-          </p>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}
+        />
 
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}
-          />
+        {/* FEATURED — mirrors .blog-featured on aihavit.com/blog/ */}
+        <section className="blog-featured">
+          <div className="hv-container blog-featured__inner">
+            <div className="blog-featured__text">
+              <h1 className="text-heading-2 mb-4">
+                HAVIT <span className="text-primary-700 dark:text-primary-400">Blog</span>
+              </h1>
+              <p className="text-paragraph mb-4 max-w-[440px]">
+                {HERO_TAGLINE[shortLang as RouteLang]}
+              </p>
+              <p className="text-body-small mb-7">
+                {LABEL_BY_AI_CONNECT[shortLang as RouteLang]} ·{' '}
+                {allArticles.length.toLocaleString()}+ {LABEL_ITEMS[shortLang as RouteLang]} · 10{' '}
+                {LABEL_LANGUAGES[shortLang as RouteLang]}
+              </p>
 
-          <form className="max-w-2xl mb-6" method="get" action={basePath}>
-            <div className="relative">
-              <input
-                type="search"
-                name="q"
-                defaultValue={query}
-                placeholder={SEARCH_PLACEHOLDER[shortLang as RouteLang]}
-                className="w-full px-4 py-3 pr-12 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500"
-              />
-              {category && <input type="hidden" name="cat" value={category} />}
-              <button
-                type="submit"
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary-600"
-                aria-label="Search"
-              >🔍</button>
+              <form className="max-w-[440px]" method="get" action={basePath}>
+                <div className="relative">
+                  <input
+                    type="search"
+                    name="q"
+                    defaultValue={query}
+                    placeholder={SEARCH_PLACEHOLDER[shortLang as RouteLang]}
+                    className="w-full px-5 py-3.5 pr-12 rounded-full border text-[15px] focus:outline-none"
+                    style={{
+                      background: 'var(--hv-surface)',
+                      borderColor: 'var(--hv-border)',
+                      color: 'var(--hv-fg)',
+                    }}
+                  />
+                  {category && <input type="hidden" name="cat" value={category} />}
+                  <button
+                    type="submit"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 carousel-arrow"
+                    aria-label="Search"
+                    style={{ width: 38, height: 38 }}
+                  >
+                    🔍
+                  </button>
+                </div>
+              </form>
             </div>
-          </form>
 
-          <div className="flex flex-wrap gap-2 mb-2">
-            <Link
-              href={query ? `${basePath}?q=${encodeURIComponent(query)}` : basePath}
-              className={`px-3 py-1.5 rounded-full text-sm border transition-colors ${
-                !category
-                  ? 'bg-primary-500 text-gray-900 border-primary-500 font-semibold'
-                  : 'border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800'
-              }`}
-            >
-              {LABEL_ALL[shortLang as RouteLang]} ({allArticles.length})
-            </Link>
-            {/* SEO crawl-path: category chips link to indexable /category/<slug> hubs
-                (was an in-page ?cat= filter, which Google does not treat as a page). */}
-            {categories.map(([cat, info]) => (
-              <Link
-                key={cat}
-                href={`${basePath}/category/${categorySlug(cat)}`}
-                className="px-3 py-1.5 rounded-full text-sm border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-              >
-                {info.emoji && <span aria-hidden className="mr-1">{info.emoji}</span>}
-                {localizedCategory(cat, shortLang)} ({info.count})
+            {featured && (
+              <Link className="blog-featured__media" href={`${basePath}/${featured.slug}`}>
+                <Image
+                  src={articleImage(featured.slug, featured.category)}
+                  alt={featured.title}
+                  fill
+                  sizes="(max-width: 960px) 100vw, 530px"
+                  priority
+                  className="object-cover"
+                />
               </Link>
-            ))}
+            )}
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-4 md:px-6 pb-12">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold">
-              {query
-                ? `"${query}" — ${total} ${LABEL_ITEMS[shortLang as RouteLang]}`
-                : `${LABEL_LATEST[shortLang as RouteLang]} · ${total} ${LABEL_ITEMS[shortLang as RouteLang]}`}
-            </h2>
-          </div>
-          {pageItems.length === 0 ? (
-            <div className="p-12 text-center text-gray-500 rounded-2xl border border-gray-200 dark:border-gray-800">
-              {LABEL_NO_RESULTS[shortLang as RouteLang]}
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-              {pageItems.map((item) => (
-                <ArticleCardV2 key={item.slug} item={item} shortLang={shortLang} featured={false} />
+        {/* LIST — .blog-list: category rail + post rows */}
+        <section className="blog-list">
+          <div className="hv-container blog-list__inner">
+            {/* SEO crawl-path: category chips are real links to indexable
+                /category/<slug> hubs, not an in-page ?cat= filter. */}
+            <nav className="blog-categories" aria-label="Article categories">
+              <Link
+                href={query ? `${basePath}?q=${encodeURIComponent(query)}` : basePath}
+                className={`blog-categories__item ${!category ? 'is-active' : ''}`}
+              >
+                <span className="blog-categories__icon" aria-hidden>🗂️</span>
+                <span className="text-body-medium">{LABEL_ALL[shortLang as RouteLang]}</span>
+                <span className="blog-categories__count">{allArticles.length}</span>
+              </Link>
+              {categories.map(([cat, info]) => (
+                <Link
+                  key={cat}
+                  href={`${basePath}/category/${categorySlug(cat)}`}
+                  className="blog-categories__item"
+                >
+                  <span className="blog-categories__icon" aria-hidden>{info.emoji ?? '✨'}</span>
+                  <span className="text-body-medium">{localizedCategory(cat, shortLang)}</span>
+                  <span className="blog-categories__count">{info.count}</span>
+                </Link>
               ))}
-            </div>
-          )}
-
-          {totalPages > 1 && (
-            <nav className="mt-10 flex items-center justify-center gap-2" aria-label="Pagination">
-              {safePage > 1 && (
-                <Link href={pageHref(safePage - 1)} className="px-3 py-2 rounded-lg border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 text-sm">‹</Link>
-              )}
-              <span className="text-sm text-gray-600 dark:text-gray-400">
-                {safePage} / {totalPages}
-              </span>
-              {safePage < totalPages && (
-                <Link href={pageHref(safePage + 1)} className="px-3 py-2 rounded-lg border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 text-sm">›</Link>
-              )}
             </nav>
-          )}
+
+            <div className="blog-list__main">
+              <h2 className="text-heading-2 mb-8">{heading}</h2>
+
+              {listItems.length === 0 ? (
+                <div
+                  className="p-12 text-center rounded-3xl border"
+                  style={{ borderColor: 'var(--hv-border)', color: 'var(--hv-fg-subtle)' }}
+                >
+                  {LABEL_NO_RESULTS[shortLang as RouteLang]}
+                </div>
+              ) : (
+                <div className="post-list">
+                  {listItems.map((item, i) => (
+                    <Link key={item.slug} className="post-list__item" href={`${basePath}/${item.slug}`}>
+                      <div className="post-list__item-text">
+                        <h3 className="text-title-large">{item.title}</h3>
+                        <p className="text-body-medium line-clamp-2">
+                          {item.tldr ?? item.meta_description}
+                        </p>
+                        <div className="post-list__meta">
+                          {item.category_emoji && <span aria-hidden>{item.category_emoji}</span>}
+                          <span>{localizedCategory(item.category, shortLang)}</span>
+                          {item.reading_time_min && (
+                            <>
+                              <span aria-hidden>·</span>
+                              <span>
+                                {item.reading_time_min} {LABEL_MIN_READ[shortLang as RouteLang]}
+                              </span>
+                            </>
+                          )}
+                        </div>
+                      </div>
+                      <div className="post-list__media">
+                        <Image
+                          src={articleImage(item.slug, item.category)}
+                          alt=""
+                          fill
+                          sizes="140px"
+                          loading={i < 3 ? 'eager' : 'lazy'}
+                          className="object-cover"
+                        />
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              )}
+
+              {totalPages > 1 && (
+                <nav className="pagination" aria-label="Pagination">
+                  <Link
+                    href={pageHref(Math.max(1, safePage - 1))}
+                    className="carousel-arrow"
+                    aria-label="Previous page"
+                    aria-disabled={safePage === 1}
+                  >
+                    ‹
+                  </Link>
+                  {pageNumbers.map((p) => (
+                    <Link
+                      key={p}
+                      href={pageHref(p)}
+                      className={`pagination__page ${p === safePage ? 'is-active' : ''}`}
+                      aria-current={p === safePage ? 'page' : undefined}
+                    >
+                      {p}
+                    </Link>
+                  ))}
+                  <Link
+                    href={pageHref(Math.min(totalPages, safePage + 1))}
+                    className="carousel-arrow"
+                    aria-label="Next page"
+                    aria-disabled={safePage === totalPages}
+                  >
+                    ›
+                  </Link>
+                </nav>
+              )}
+            </div>
+          </div>
         </section>
       </main>
       <Footer lang={lang} />

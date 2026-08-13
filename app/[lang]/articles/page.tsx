@@ -94,24 +94,24 @@ export default function AllArticlesPage({ params }: Props) {
     <div className="min-h-screen flex flex-col">
       <Header lang={lang} />
       <main className="flex-1">
-        <section className="mx-auto max-w-7xl px-4 md:px-6 pt-8 md:pt-12 pb-6">
-          <h1 className="font-bold text-3xl md:text-5xl leading-tight mb-3">{TITLE[shortLang as RouteLang]}</h1>
-          <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-4">
+        <section className="hv-container pt-10 md:pt-14 pb-6">
+          <h1 className="text-heading-2 mb-3">{TITLE[shortLang as RouteLang]}</h1>
+          <p className="text-paragraph mb-4">
             {TAGLINE[shortLang as RouteLang]}
           </p>
-          <p className="text-sm text-gray-500 dark:text-gray-500">
+          <p className="text-body-small">
             {items.length} {LABEL_ITEMS[shortLang as RouteLang]}
           </p>
         </section>
 
         {/* Category jump nav — links to the in-page sections + category hub pages */}
-        <section className="mx-auto max-w-7xl px-4 md:px-6 pb-6">
+        <section className="hv-container pb-8">
           <div className="flex flex-wrap gap-2">
             {sections.map((s) => (
               <Link
                 key={s.slug}
                 href={`${basePath}/category/${s.slug}`}
-                className="px-3 py-1.5 rounded-full text-sm border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                className="blog-categories__item"
               >
                 {localizedCategory(s.value, shortLang)} ({s.items.length})
               </Link>
@@ -119,21 +119,21 @@ export default function AllArticlesPage({ params }: Props) {
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-4 md:px-6 pb-16">
+        <section className="hv-container pb-20">
           {sections.map((s) => (
             <div key={s.slug} id={categorySlug(s.value)} className="mb-10 scroll-mt-24">
-              <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
-                <Link href={`${basePath}/category/${s.slug}`} className="hover:text-primary-600 dark:hover:text-primary-400">
+              <h2 className="text-title-xlarge mb-4 flex items-center gap-2">
+                <Link href={`${basePath}/category/${s.slug}`} className="hover:text-primary-700 dark:hover:text-primary-400">
                   {localizedCategory(s.value, shortLang)}
                 </Link>
-                <span className="text-sm font-normal text-gray-400">({s.items.length})</span>
+                <span className="text-body-small">({s.items.length})</span>
               </h2>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 list-disc pl-5">
                 {s.items.map((item) => (
                   <li key={item.slug} className="text-sm">
                     <Link
                       href={`${basePath}/${item.slug}`}
-                      className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:underline"
+                      className="hover:text-primary-700 dark:hover:text-primary-400 hover:underline"
                     >
                       {item.title}
                     </Link>
