@@ -123,7 +123,7 @@ export default function AllArticlesPage({ params }: Props) {
           {sections.map((s) => (
             <div key={s.slug} id={categorySlug(s.value)} className="mb-10 scroll-mt-24">
               <h2 className="text-title-xlarge mb-4 flex items-center gap-2">
-                <Link href={`${basePath}/category/${s.slug}`} className="hover:text-primary-700 dark:hover:text-primary-400">
+                <Link href={`${basePath}/category/${s.slug}`} className="hover:text-primary-700">
                   {localizedCategory(s.value, shortLang)}
                 </Link>
                 <span className="text-body-small">({s.items.length})</span>
@@ -133,7 +133,7 @@ export default function AllArticlesPage({ params }: Props) {
                   <li key={item.slug} className="text-sm">
                     <Link
                       href={`${basePath}/${item.slug}`}
-                      className="hover:text-primary-700 dark:hover:text-primary-400 hover:underline"
+                      className="hover:text-primary-700 hover:underline"
                     >
                       {item.title}
                     </Link>

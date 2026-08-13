@@ -94,7 +94,7 @@ export default function CategoryPage({ params }: Props) {
       <main className="flex-1">
         <section className="hv-container pt-10 md:pt-14 pb-8">
           <nav className="text-body-small mb-3" aria-label="Breadcrumb">
-            <Link href={basePath} className="hover:text-primary-700 dark:hover:text-primary-400">
+            <Link href={basePath} className="hover:text-primary-700">
               {LABEL_BLOG[shortLang as RouteLang]}
             </Link>
             <span className="mx-2">/</span>
@@ -106,7 +106,7 @@ export default function CategoryPage({ params }: Props) {
           </p>
           <Link
             href={`${basePath}/articles`}
-            className="text-body-small text-primary-700 dark:text-primary-400 hover:underline"
+            className="text-body-small text-primary-700 hover:underline"
           >
             {LABEL_ALL_ARTICLES[shortLang as RouteLang]} →
           </Link>

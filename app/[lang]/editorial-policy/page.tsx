@@ -439,12 +439,12 @@ export default function EditorialPolicyPage({ params }: Props) {
             <h1 className="font-bold text-3xl md:text-4xl xl:text-5xl leading-tight mb-4">
               {i18n.heading}
             </h1>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              {i18n.lastReviewedLabel}: <strong className="text-gray-700 dark:text-gray-300">{LAST_REVIEWED}</strong>
+            <p className="text-sm text-gray-500">
+              {i18n.lastReviewedLabel}: <strong className="text-gray-700">{LAST_REVIEWED}</strong>
             </p>
           </header>
 
-          <div className="prose prose-gray dark:prose-invert max-w-none">
+          <div className="prose prose-gray max-w-none">
             <h2>{i18n.aiScopeHeading}</h2>
             <p>{i18n.aiScopeBody}</p>
 
@@ -468,7 +468,7 @@ export default function EditorialPolicyPage({ params }: Props) {
               <strong>{i18n.contactLabel}:</strong>{' '}
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
-                className="hover:text-primary-600 dark:hover:text-primary-400"
+                className="hover:text-primary-600"
               >
                 {CONTACT_EMAIL}
               </a>

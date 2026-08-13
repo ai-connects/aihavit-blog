@@ -44,7 +44,7 @@ export default function ArticleCardV2({ item, shortLang, featured = false, prior
           </span>
         </div>
         <h3 className={featured ? 'text-title-xlarge' : 'text-title-large'}>
-          <Link href={href} className="hover:text-primary-700 dark:hover:text-primary-400 transition-colors">
+          <Link href={href} className="hover:text-primary-700 transition-colors">
             {item.title}
           </Link>
         </h3>

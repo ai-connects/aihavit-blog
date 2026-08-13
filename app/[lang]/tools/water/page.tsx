@@ -56,12 +56,12 @@ export default function WaterPage({ params }: Props) {
       <main className="flex-1 mx-auto max-w-3xl w-full px-4 md:px-6 py-8 md:py-12">
         <header className="mb-6 md:mb-8">
           <h1 className="font-bold text-3xl md:text-4xl xl:text-5xl leading-tight mb-3">{L.pageTitle}</h1>
-          <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">{L.pageIntro}</p>
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed">{L.pageIntro}</p>
         </header>
         <WaterCalculator labels={L} lang={lang} />
         <section className="mt-12">
           <h2 className="text-2xl font-bold mb-3">{L.aboutHeader}</h2>
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{L.aboutBody}</p>
+          <p className="text-gray-700 leading-relaxed">{L.aboutBody}</p>
         </section>
       </main>
       <Footer lang={fullLang} />

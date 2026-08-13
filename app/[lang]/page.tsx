@@ -258,7 +258,7 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
           <div className="hv-container blog-featured__inner">
             <div className="blog-featured__text">
               <h1 className="text-heading-2 mb-4">
-                HAVIT <span className="text-primary-700 dark:text-primary-400">Blog</span>
+                HAVIT <span className="text-primary-700">Blog</span>
               </h1>
               <p className="text-paragraph mb-4 max-w-[440px]">
                 {HERO_TAGLINE[shortLang as RouteLang]}

@@ -41,31 +41,31 @@ export default function ArticleAuthorBlock({ article, shortLang }: Props) {
 
   return (
     <address
-      className="not-italic flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-gray-600 dark:text-gray-400 mb-3"
+      className="not-italic flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-gray-600 mb-3"
       aria-label="Article authorship"
     >
       <span>
         {labels.by}{' '}
         <Link
           href={`/${shortLang}/about`}
-          className="font-medium text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 underline-offset-2 hover:underline"
+          className="font-medium text-gray-700 hover:text-primary-600 underline-offset-2 hover:underline"
         >
           {author.name}
         </Link>
       </span>
-      <span aria-hidden className="text-gray-400 dark:text-gray-600">
+      <span aria-hidden className="text-gray-400">
         ·
       </span>
       <span>
         {labels.reviewedBy}{' '}
         <Link
           href={`/${shortLang}/editorial-policy`}
-          className="font-medium text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 underline-offset-2 hover:underline"
+          className="font-medium text-gray-700 hover:text-primary-600 underline-offset-2 hover:underline"
         >
           {reviewer.name}
         </Link>
         {reviewer.credential && (
-          <span className="text-gray-500 dark:text-gray-500"> · {reviewer.credential}</span>
+          <span className="text-gray-500"> · {reviewer.credential}</span>
         )}
       </span>
     </address>

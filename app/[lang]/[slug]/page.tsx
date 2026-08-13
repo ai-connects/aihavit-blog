@@ -208,7 +208,7 @@ export default function ArticlePage({ params }: Props) {
                   L === params.lang
                     ? 'bg-primary-500 text-black font-semibold'
                     : availability[L]
-                      ? 'bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10'
+                      ? 'bg-gray-100 hover:bg-gray-200 '
                       : 'opacity-40 line-through pointer-events-none'
                 }`}
                 aria-disabled={!availability[L]}

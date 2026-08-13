@@ -46,17 +46,8 @@ interface Props {
 
 export default function Header({ lang, currentSlug, currentCategorySlug }: Props) {
   const [open, setOpen] = useState(false);
-  const [dark, setDark] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const stored = typeof window !== 'undefined' ? localStorage.getItem('theme') : null;
-    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const isDark = stored ? stored === 'dark' : systemDark;
-    setDark(isDark);
-    document.documentElement.classList.toggle('dark', isDark);
-  }, []);
 
   // Marketing-site nav behaviour: the bar is transparent over the top of the
   // page and gains its border + shadow only once content scrolls under it.
@@ -66,15 +57,6 @@ export default function Header({ lang, currentSlug, currentCategorySlug }: Props
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  function toggleDark() {
-    const next = !dark;
-    setDark(next);
-    document.documentElement.classList.toggle('dark', next);
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('theme', next ? 'dark' : 'light');
-    }
-  }
 
   function langHrefShort(short: string): string {
     if (currentSlug) return `/${short}/${currentSlug}`;
@@ -133,8 +115,8 @@ export default function Header({ lang, currentSlug, currentCategorySlug }: Props
                       key={opt.route}
                       href={langHrefShort(opt.route)}
                       onClick={() => setOpen(false)}
-                      className={`flex justify-between items-center px-3 py-2 rounded-xl hover:bg-gray-100 dark:hover:bg-white/5 ${
-                        active ? 'bg-gray-100 dark:bg-white/5 font-semibold' : ''
+                      className={`flex justify-between items-center px-3 py-2 rounded-xl hover:bg-gray-100 ${
+                        active ? 'bg-gray-100 font-semibold' : ''
                       }`}
                       role="option"
                       aria-selected={active}
@@ -149,17 +131,6 @@ export default function Header({ lang, currentSlug, currentCategorySlug }: Props
               </div>
             )}
           </div>
-
-          {/* Dark mode toggle S-007 */}
-          <button
-            type="button"
-            onClick={toggleDark}
-            className="btn-ghost"
-            aria-label={t(lang, 'darkMode')}
-            title={t(lang, 'darkMode')}
-          >
-            {dark ? '☀️' : '🌙'}
-          </button>
 
           <a href={`${MAIN_SITE}/#download`} className="btn btn--primary btn--sm hidden md:inline-flex">
             {startFree}

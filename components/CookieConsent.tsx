@@ -34,10 +34,10 @@ export default function CookieConsent({ lang }: { lang: LangKey }) {
     <div
       role="dialog"
       aria-label={t(lang, 'cookieTitle')}
-      className="fixed bottom-4 inset-x-4 md:bottom-6 md:right-6 md:left-auto md:max-w-md z-40 p-5 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900"
+      className="fixed bottom-4 inset-x-4 md:bottom-6 md:right-6 md:left-auto md:max-w-md z-40 p-5 rounded-2xl shadow-2xl border border-gray-200 bg-white"
     >
       <div className="font-bold text-base mb-1">🍪 {t(lang, 'cookieTitle')}</div>
-      <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+      <p className="text-sm text-gray-600 mb-4">
         {t(lang, 'cookieDesc')}
       </p>
       <div className="flex gap-2">

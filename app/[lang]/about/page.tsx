@@ -305,21 +305,21 @@ export default function AboutPage({ params }: Props) {
             <h1 className="font-bold text-3xl md:text-4xl xl:text-5xl leading-tight mb-4">
               {i18n.heading}
             </h1>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              {i18n.publisherLabel}: <strong className="text-gray-700 dark:text-gray-300">{PUBLISHER_NAME}</strong>
+            <p className="text-sm text-gray-500">
+              {i18n.publisherLabel}: <strong className="text-gray-700">{PUBLISHER_NAME}</strong>
               {' · '}
               <a
                 href={PUBLISHER_URL}
                 target="_blank"
                 rel="noopener"
-                className="hover:text-primary-600 dark:hover:text-primary-400 underline-offset-2 hover:underline"
+                className="hover:text-primary-600 underline-offset-2 hover:underline"
               >
                 {PUBLISHER_URL.replace('https://', '')}
               </a>
             </p>
           </header>
 
-          <div className="prose prose-gray dark:prose-invert max-w-none">
+          <div className="prose prose-gray max-w-none">
             <h2>{i18n.sectionPublisherHeading}</h2>
             <p>{i18n.sectionPublisherBody}</p>
 
@@ -332,7 +332,7 @@ export default function AboutPage({ params }: Props) {
               <strong>{i18n.contactLabel}:</strong>{' '}
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
-                className="hover:text-primary-600 dark:hover:text-primary-400"
+                className="hover:text-primary-600"
               >
                 {CONTACT_EMAIL}
               </a>

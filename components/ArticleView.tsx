@@ -55,7 +55,7 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
         </Link>
 
         {fallback && (
-          <div className="mb-5 p-3 rounded-xl bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 text-sm text-amber-900 dark:text-amber-200">
+          <div className="mb-5 p-3 rounded-xl bg-amber-50 border border-amber-200 text-sm text-amber-900">
             {label('fallbackBanner', shortLang)}
           </div>
         )}
@@ -113,7 +113,7 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
       {/* BLOG_AUTHORITY v1.0.0 (PRD §7.3 Step 3b) — Medical disclaimer banner before body */}
       <MedicalDisclaimer shortLang={shortLang} />
 
-      <div className="prose prose-gray dark:prose-invert max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-h2:text-[24px] prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-[18px] prose-p:leading-[1.7] prose-p:text-[var(--hv-fg-muted)] prose-li:text-[var(--hv-fg-muted)] prose-a:text-primary-700 dark:prose-a:text-primary-400 prose-strong:text-[var(--hv-fg)]">
+      <div className="prose prose-gray max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-h2:text-[24px] prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-[18px] prose-p:leading-[1.7] prose-p:text-[var(--hv-fg-muted)] prose-li:text-[var(--hv-fg-muted)] prose-a:text-primary-700 prose-strong:text-[var(--hv-fg)]">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{content.body_md}</ReactMarkdown>
       </div>
 
@@ -128,7 +128,7 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {content.key_stats.map((s, i) => (
               <div key={i} className="p-5 rounded-2xl border" style={{ borderColor: 'var(--hv-border)', background: 'var(--hv-surface)' }}>
-                <div className="text-title-xlarge text-primary-700 dark:text-primary-400 mb-1">{s.value}</div>
+                <div className="text-title-xlarge text-primary-700 mb-1">{s.value}</div>
                 <div className="text-body-small mb-1.5" style={{ color: 'var(--hv-fg-muted)' }}>{s.label}</div>
                 {s.source && (
                   <div className="text-xs italic" style={{ color: 'var(--hv-fg-subtle)' }}>{s.source}</div>
@@ -147,7 +147,7 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
               <thead style={{ background: 'var(--hv-surface-muted)' }}>
                 <tr>
                   {content.comparison_table.headers.map((h, i) => (
-                    <th key={i} className="text-left px-3 py-2.5 font-semibold whitespace-nowrap border-b border-gray-200 dark:border-gray-800">
+                    <th key={i} className="text-left px-3 py-2.5 font-semibold whitespace-nowrap border-b border-gray-200">
                       {h}
                     </th>
                   ))}
@@ -155,9 +155,9 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
               </thead>
               <tbody>
                 {content.comparison_table.rows.map((row, i) => (
-                  <tr key={i} className="border-b border-gray-100 dark:border-gray-800 last:border-0">
+                  <tr key={i} className="border-b border-gray-100 last:border-0">
                     {row.map((cell, j) => (
-                      <td key={j} className="px-3 py-2.5 text-gray-700 dark:text-gray-300">{cell}</td>
+                      <td key={j} className="px-3 py-2.5 text-gray-700">{cell}</td>
                     ))}
                   </tr>
                 ))}
@@ -165,7 +165,7 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
             </table>
           </div>
           {content.comparison_table.caption && (
-            <p className="mt-2 text-xs text-gray-500 dark:text-gray-400 italic">{content.comparison_table.caption}</p>
+            <p className="mt-2 text-xs text-gray-500 italic">{content.comparison_table.caption}</p>
           )}
         </section>
       )}

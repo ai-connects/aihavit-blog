@@ -21,10 +21,10 @@ export default function SleepCycleCalculator({ labels: L, lang }: { labels: Slee
   const [rows, setRows] = useState<{ cycles: number; bedtime: Date }[] | null>(null);
 
   return (
-    <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5 md:p-7 bg-white dark:bg-gray-900">
+    <div className="rounded-2xl border border-gray-200 p-5 md:p-7 bg-white">
       <div className="grid grid-cols-1 max-w-xs">
         <label className="block text-sm font-semibold mb-2">{L.wakeTime}</label>
-        <input type="time" value={wake} onChange={(e) => setWake(e.target.value)} className="w-full px-3 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900" />
+        <input type="time" value={wake} onChange={(e) => setWake(e.target.value)} className="w-full px-3 py-2 rounded-lg border border-gray-200 bg-white" />
       </div>
       <button type="button" onClick={() => setRows(sleepTimesForWake(parseTime(wake)))} className="mt-6 w-full md:w-auto px-6 py-3 rounded-xl bg-primary-500 hover:bg-primary-600 text-gray-900 font-semibold transition-colors">
         {L.calculate}
@@ -35,16 +35,16 @@ export default function SleepCycleCalculator({ labels: L, lang }: { labels: Slee
             <h3 className="font-bold text-lg mb-3">{L.resultHeader}</h3>
             <div className="space-y-2.5">
               {rows.map((r, i) => (
-                <div key={r.cycles} className={`flex items-center justify-between px-4 py-3 rounded-xl border ${i === 0 ? 'border-2 border-primary-500 bg-primary-50 dark:bg-primary-900/20' : 'border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/50'}`}>
+                <div key={r.cycles} className={`flex items-center justify-between px-4 py-3 rounded-xl border ${i === 0 ? 'border-2 border-primary-500 bg-primary-50' : 'border-gray-200 bg-gray-50'}`}>
                   <div>
-                    <div className="text-2xl md:text-3xl font-bold text-primary-700 dark:text-primary-400">{fmtTime(r.bedtime)}</div>
+                    <div className="text-2xl md:text-3xl font-bold text-primary-700">{fmtTime(r.bedtime)}</div>
                     <div className="text-xs text-gray-500">{r.cycles} {L.cyclesLabel} · {r.cycles * 1.5}h</div>
                   </div>
-                  {i === 0 && <span className="text-xs uppercase tracking-wider font-bold text-primary-700 dark:text-primary-400">★</span>}
+                  {i === 0 && <span className="text-xs uppercase tracking-wider font-bold text-primary-700">★</span>}
                 </div>
               ))}
             </div>
-            <p className="mt-3 text-xs text-gray-500 dark:text-gray-500">{L.helpRow}</p>
+            <p className="mt-3 text-xs text-gray-500">{L.helpRow}</p>
           </div>
           <AppCtaBanner lang={lang} />
         </>

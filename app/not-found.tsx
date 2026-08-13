@@ -18,7 +18,7 @@ export default function NotFound() {
         <div className="text-center mb-10">
           <div className="text-7xl mb-4">🔍</div>
           <h1 className="text-3xl md:text-5xl font-bold mb-3">Page Not Found</h1>
-          <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-6">
+          <p className="text-base md:text-lg text-gray-600 mb-6">
             The page you’re looking for doesn’t exist or has been moved.
           </p>
           <Link href="/en" className="btn-primary">

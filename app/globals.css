@@ -12,9 +12,11 @@
  *   - CJK fallbacks. Poppins has no Korean/Japanese/Chinese glyphs and the blog
  *     ships 10 languages, so Pretendard/Noto follow it in the stack and pick up
  *     everything Poppins cannot draw.
- *   - Dark mode. The marketing site is light-only; the blog has shipped a dark
- *     toggle whose setting is already in visitors' localStorage, so every token
- *     below has a .dark counterpart rather than dropping the feature.
+ *
+ * The site is light-only, matching the marketing site. A dark toggle used to
+ * ship here; it was removed, and with it every .dark token and `dark:` utility.
+ * tailwind.config keeps darkMode: 'class' so that if a `dark:` class ever slips
+ * back in it stays inert — nothing adds that class to <html> any more.
  */
 
 /* Latin — matches the marketing site. */
@@ -63,28 +65,9 @@
     --color-card: 247 247 247;
   }
 
-  .dark {
-    --hv-bg: #121212;
-    --hv-surface: #1c1c1c;
-    --hv-surface-muted: #242424;
-    --hv-fg: #f5f5f5;
-    --hv-fg-muted: #d4d4d4;
-    --hv-fg-subtle: #a3a3a3;
-    --hv-border: rgba(255, 255, 255, 0.12);
-    --hv-nav-bg: rgba(18, 18, 18, 0.85);
-    --hv-section-grey: #242424;
-    --hv-tint-lime: #2f3a12;
-    --hv-tint-pale: #23290f;
-
-    --color-bg: 18 18 18;
-    --color-fg: 245 245 245;
-    --color-muted: 163 163 163;
-    --color-border: 55 55 55;
-    --color-card: 28 28 28;
-  }
 
   html {
-    color-scheme: light dark;
+    color-scheme: light;
     scroll-behavior: smooth;
   }
 
@@ -114,9 +97,6 @@
     outline: 2px solid var(--hv-primary);
     outline-offset: 2px;
     border-radius: 4px;
-  }
-  .dark *:focus-visible {
-    outline-color: var(--hv-primary);
   }
 }
 
@@ -249,9 +229,6 @@
     background: rgba(0, 0, 0, 0.05);
     color: var(--hv-fg);
   }
-  .dark .btn--ghost {
-    background: rgba(255, 255, 255, 0.08);
-  }
   .btn--ghost:hover {
     transform: translateX(3px);
   }
@@ -352,9 +329,6 @@
     height: 24px;
     width: auto;
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .dark .nav__logo img {
-    filter: brightness(0) invert(1);
   }
   .nav__logo:hover img {
     transform: scale(1.05);
@@ -484,9 +458,6 @@
   .blog-categories__item:hover {
     background: #ececec;
   }
-  .dark .blog-categories__item:hover {
-    background: #303030;
-  }
   .blog-categories__item.is-active {
     background: var(--hv-primary);
     color: #000;
@@ -535,9 +506,6 @@
   }
   .post-list__item:hover .post-list__item-text h3 {
     color: #7a9d00;
-  }
-  .dark .post-list__item:hover .post-list__item-text h3 {
-    color: var(--hv-primary);
   }
   .post-list__item-text p {
     max-width: 520px;
@@ -599,9 +567,6 @@
   .pagination__page.is-active {
     background: var(--hv-tint-lime);
   }
-  .dark .pagination__page.is-active {
-    color: var(--hv-primary);
-  }
 
   /* ---------------------------------------------------------------- */
   /* Article card (grid variant — /articles, /category, related)       */
@@ -646,10 +611,6 @@
     font-weight: 600;
     background: var(--hv-tint-lime);
     color: #2a2a2a;
-  }
-  .dark .category-badge {
-    background: var(--hv-surface-muted);
-    color: var(--hv-fg-muted);
   }
 
   /* ---------------------------------------------------------------- */
@@ -700,9 +661,6 @@
     color: rgba(255, 255, 255, 0.6);
     padding: 64px 0;
     margin-top: 64px;
-  }
-  .dark .hv-footer {
-    background: #1c1c1c;
   }
   .hv-footer p {
     margin: 0 0 12px;
@@ -756,15 +714,6 @@
     );
     background-size: 400% 100%;
     animation: shimmer 1.4s ease infinite;
-  }
-  .dark .skeleton {
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.04) 25%,
-      rgba(255, 255, 255, 0.08) 37%,
-      rgba(255, 255, 255, 0.04) 63%
-    );
-    background-size: 400% 100%;
   }
   @keyframes shimmer {
     0% {

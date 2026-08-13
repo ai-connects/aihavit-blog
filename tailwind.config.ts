@@ -2,6 +2,10 @@ import type { Config } from 'tailwindcss';
 
 // PRD §16.5 디자인 토큰 (정량) — LOCKED v0.3.0
 const config: Config = {
+  // Dark mode was removed from the blog (light-only, matching aihavit.com).
+  // 'class' is kept deliberately rather than deleted: nothing adds `.dark` to
+  // <html> any more, so any `dark:` utility that ever slips back in stays
+  // inert instead of activating off the visitor's OS setting.
   darkMode: 'class',
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
