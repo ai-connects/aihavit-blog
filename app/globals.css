@@ -326,7 +326,9 @@
     gap: 24px;
   }
   .nav__logo img {
-    height: 24px;
+    /* The banner mark carries ~45% of its height in border/padding, so it needs
+       a taller box than a plain wordmark to read at the same size. */
+    height: 36px;
     width: auto;
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }

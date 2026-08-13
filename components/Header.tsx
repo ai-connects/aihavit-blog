@@ -71,8 +71,8 @@ export default function Header({ lang, currentSlug, currentCategorySlug }: Props
     <header className={`nav ${scrolled ? 'is-scrolled' : ''}`}>
       <div className="nav__inner">
         <a href={MAIN_SITE} className="nav__logo" aria-label="HAVIT">
-          {/* Same wordmark file the marketing site ships (src/assets/images/logo.svg). */}
-          <img src="/logo.svg" alt="HAVIT" width={355} height={100} />
+          {/* Same brand mark the marketing site uses (aihavit.com/havit-logo.png). */}
+          <img src="/havit-logo.png" alt="HAVIT" width={1600} height={753} />
         </a>
 
         <nav className="nav__links" aria-label="Primary">

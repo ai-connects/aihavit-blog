@@ -55,15 +55,16 @@ export default function Footer({ lang }: { lang: LangKey }) {
   return (
     <footer className="hv-footer">
       <div className="hv-container">
-        {/* Wordmark is dark-on-transparent; the footer band is dark, so it is
-            inverted here the same way the marketing site does it. */}
+        {/* No invert filter: the mark is a white banner holding a black
+            wordmark, so inverting it would flatten it into a white blob. It
+            reads as a sticker on the dark band, which is the intended use. */}
         <img
           className="mb-6"
-          src="/logo.svg"
+          src="/havit-logo.png"
           alt="HAVIT"
-          width={355}
-          height={100}
-          style={{ height: 20, width: 'auto', filter: 'brightness(0) invert(1)' }}
+          width={1600}
+          height={753}
+          style={{ height: 32, width: 'auto' }}
         />
         <p className="text-body-small" style={{ color: 'rgba(255,255,255,0.6)' }}>
           © 2026 AI Connect Inc. All Rights Reserved.
