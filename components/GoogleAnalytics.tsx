@@ -27,6 +27,8 @@ export default function GoogleAnalytics() {
           gtag('config', '${GA_ID}', {
             page_path: window.location.pathname,
             linker: {
+              // Cross-domain measurement list, not branding — aiconnects.me stays
+              // while it still redirects here after the Havit Inc. rename.
               domains: ['aihavit.com', 'www.aihavit.com', 'blog.aihavit.com', 'app.aihavit.com', 'aiconnects.me', 'www.aiconnects.me']
             }
           });

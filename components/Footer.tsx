@@ -67,7 +67,7 @@ export default function Footer({ lang }: { lang: LangKey }) {
           style={{ height: 32, width: 'auto' }}
         />
         <p className="text-body-small" style={{ color: 'rgba(255,255,255,0.6)' }}>
-          © 2026 AI Connect Inc. All Rights Reserved.
+          © 2026 Havit Inc. All Rights Reserved.
         </p>
         <p className="text-body-small hv-footer__notice" style={{ color: 'rgba(255,255,255,0.6)' }}>
           {NOTICE[shortLang] ?? NOTICE.en}
@@ -96,7 +96,7 @@ export default function Footer({ lang }: { lang: LangKey }) {
           </div>
           <div className="hv-footer__col">
             <p className="eyebrow">COMPANY</p>
-            <a href="https://www.aiconnects.me" target="_blank" rel="noopener">AI Connect</a>
+            <a href="https://www.aihavit.com" target="_blank" rel="noopener">Havit Inc.</a>
             <Link href={`/${shortLang}/about`}>About</Link>
             <Link href={`/${shortLang}/editorial-policy`}>Editorial Policy</Link>
             <Link href={`/${shortLang}/articles`}>{LABEL_ALL_ARTICLES[shortLang] ?? LABEL_ALL_ARTICLES.en}</Link>

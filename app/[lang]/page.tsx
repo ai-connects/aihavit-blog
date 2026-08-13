@@ -79,12 +79,12 @@ const LABEL_MIN_READ: Record<RouteLang, string> = {
   es: 'min', 'pt-br': 'min de leitura', id: 'menit', de: 'Min. Lesezeit', fr: 'min de lecture',
 };
 
-const LABEL_BY_AI_CONNECT: Record<RouteLang, string> = {
-  ko: 'AI Connect Inc. 발행', en: 'Published by AI Connect Inc.',
-  ja: 'AI Connect Inc. 発行', zh: '由 AI Connect Inc. 出版', 'zh-tw': '由 AI Connect Inc. 出版',
-  es: 'Publicado por AI Connect Inc.', 'pt-br': 'Publicado por AI Connect Inc.',
-  id: 'Diterbitkan oleh AI Connect Inc.', de: 'Herausgegeben von AI Connect Inc.',
-  fr: 'Publié par AI Connect Inc.',
+const LABEL_BY_PUBLISHER: Record<RouteLang, string> = {
+  ko: '주식회사 하비트 발행', en: 'Published by Havit Inc.',
+  ja: 'Havit Inc. 発行', zh: '由 Havit Inc. 出版', 'zh-tw': '由 Havit Inc. 出版',
+  es: 'Publicado por Havit Inc.', 'pt-br': 'Publicado por Havit Inc.',
+  id: 'Diterbitkan oleh Havit Inc.', de: 'Herausgegeben von Havit Inc.',
+  fr: 'Publié par Havit Inc.',
 };
 
 const OG_IMAGE_URL = 'https://blog.aihavit.com/havit-logo.png';
@@ -212,8 +212,8 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
       {
         '@type': 'Organization',
         '@id': 'https://blog.aihavit.com/#publisher',
-        name: 'AI Connect Inc.',
-        url: 'https://www.aiconnects.me',
+        name: 'Havit Inc.',
+        url: 'https://www.aihavit.com',
         logo: {
           '@type': 'ImageObject',
           url: 'https://blog.aihavit.com/havit-logo.png',
@@ -264,7 +264,7 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
                 {HERO_TAGLINE[shortLang as RouteLang]}
               </p>
               <p className="text-body-small mb-7">
-                {LABEL_BY_AI_CONNECT[shortLang as RouteLang]} ·{' '}
+                {LABEL_BY_PUBLISHER[shortLang as RouteLang]} ·{' '}
                 {allArticles.length.toLocaleString()}+ {LABEL_ITEMS[shortLang as RouteLang]} · 10{' '}
                 {LABEL_LANGUAGES[shortLang as RouteLang]}
               </p>
