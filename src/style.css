@@ -2620,3 +2620,21 @@ a {
     display: none;
   }
 }
+
+/* RTL (ar, he) — the layout is flex/grid driven, so only the handful of places
+   with a hard-coded side need mirroring. */
+[dir='rtl'] .lang-switch__menu {
+  right: auto;
+  left: 0;
+}
+[dir='rtl'] .hero__headline-underline::after,
+[dir='rtl'] .underline::after {
+  transform: scaleX(-1);
+}
+[dir='rtl'] .btn__arrow--right,
+[dir='rtl'] .carousel-arrow__icon {
+  transform: rotate(180deg);
+}
+[dir='rtl'] .comparison__col--label {
+  text-align: right;
+}
