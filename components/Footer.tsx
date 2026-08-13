@@ -81,12 +81,12 @@ export default function Footer({ lang }: { lang: LangKey }) {
             <Link href={`/${shortLang}`}>Blog</Link>
             <Link href={`/${shortLang}/tools`}>Tools</Link>
           </div>
-          <div className="hv-footer__col">
+          <div className="hv-footer__col hv-footer__col--topics">
             <p className="eyebrow">{LABEL_TOPICS[shortLang] ?? LABEL_TOPICS.en}</p>
             {/* All 15 categories stay in the footer — it is the sitewide crawl
                 path that keeps every article ≤2 clicks from any page. Two
                 columns so the list doesn't run twice as tall as its neighbours. */}
-            <div className="grid grid-cols-2 gap-x-5 gap-y-3.5">
+            <div className="hv-footer__topics">
               {ALL_CATEGORIES.map((c) => (
                 <Link key={c.slug} href={`/${shortLang}/category/${c.slug}`}>
                   {localizedCategory(c.value, shortLang)}
