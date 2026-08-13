@@ -40,10 +40,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#0f172a' },
-  ],
+  themeColor: '#ffffff',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -52,18 +49,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* impact.com affiliate site verification (non-standard `value` attr required by impact.com) */}
         <meta {...{ name: 'impact-site-verification', value: 'cf5ec2a5-ad3b-4112-9e9a-c9451e7c7029' }} />
-        {/* Prevent FOUC for dark mode */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                const stored = localStorage.getItem('theme');
-                const sys = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                if (stored ? stored === 'dark' : sys) document.documentElement.classList.add('dark');
-              } catch {}
-            `,
-          }}
-        />
       </head>
       <body>
         <GoogleAnalytics />

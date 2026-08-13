@@ -9,9 +9,14 @@
  * `sameAs` (LinkedIn / ORCID / clinic profile) and reference it from articles.
  */
 
-/** Verified official AI Connect / HAVIT properties (same legal entity). */
+/**
+ * Verified official Havit Inc. properties (same legal entity).
+ * aiconnects.me is deliberately absent: after the AI Connect → Havit Inc.
+ * rename it redirects here, and sameAs must list live canonical profiles, not
+ * URLs that bounce.
+ */
 export const BRAND_SAME_AS: string[] = [
-  'https://www.aiconnects.me',
+  'https://www.aihavit.com',
   'https://aihavit.com',
   'https://app.aihavit.com',
   // TODO(real-data): add external authoritative profiles to strengthen the entity:
@@ -22,8 +27,8 @@ export const BRAND_SAME_AS: string[] = [
 export const PUBLISHER_ORG = {
   '@type': 'Organization' as const,
   '@id': 'https://blog.aihavit.com/#publisher',
-  name: 'AI Connect Inc.',
-  url: 'https://www.aiconnects.me',
+  name: 'Havit Inc.',
+  url: 'https://www.aihavit.com',
   logo: {
     '@type': 'ImageObject' as const,
     url: 'https://blog.aihavit.com/havit-logo.png',

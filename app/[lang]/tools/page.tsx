@@ -146,7 +146,7 @@ export default function ToolsIndexPage({ params }: Props) {
           <h1 className="font-bold text-3xl md:text-5xl xl:text-6xl leading-tight mb-3">
             {PAGE_TITLE[lang]}
           </h1>
-          <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-prose">
+          <p className="text-base md:text-lg text-gray-600 max-w-prose">
             {PAGE_INTRO[lang]}
           </p>
         </header>
@@ -154,12 +154,12 @@ export default function ToolsIndexPage({ params }: Props) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
           {TOOLS.map((tool) => {
             const card = (
-              <div className={`p-5 md:p-6 rounded-2xl border h-full flex flex-col gap-2 transition-colors ${tool.ready ? 'border-gray-200 dark:border-gray-800 hover:border-primary-500 hover:shadow-md bg-white dark:bg-gray-900' : 'border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 opacity-70'}`}>
+              <div className={`p-5 md:p-6 rounded-2xl border h-full flex flex-col gap-2 transition-colors ${tool.ready ? 'border-gray-200 hover:border-primary-500 hover:shadow-md bg-white' : 'border-gray-100 bg-gray-50 opacity-70'}`}>
                 <div className="text-4xl mb-1">{tool.emoji}</div>
                 <h2 className="font-bold text-lg md:text-xl">{tool.title[lang]}</h2>
-                <p className="text-sm text-gray-600 dark:text-gray-400 flex-1">{tool.desc[lang]}</p>
+                <p className="text-sm text-gray-600 flex-1">{tool.desc[lang]}</p>
                 {!tool.ready && (
-                  <span className="inline-block text-xs uppercase tracking-wider text-gray-500 dark:text-gray-500 mt-2">
+                  <span className="inline-block text-xs uppercase tracking-wider text-gray-500 mt-2">
                     {COMING_SOON[lang]}
                   </span>
                 )}

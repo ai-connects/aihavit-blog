@@ -61,49 +61,49 @@ export default function BmrCalculator({ labels, lang }: Props) {
   }
 
   return (
-    <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5 md:p-7 bg-white dark:bg-gray-900">
+    <div className="rounded-2xl border border-gray-200 p-5 md:p-7 bg-white">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div>
           <label className="block text-sm font-semibold mb-2">{labels.sex}</label>
           <div className="flex gap-2">
-            <button type="button" onClick={() => setSex('male')} className={`flex-1 px-3 py-2 rounded-lg border text-sm ${sex === 'male' ? 'bg-primary-500 border-primary-500 text-gray-900 font-semibold' : 'border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800'}`}>{labels.male}</button>
-            <button type="button" onClick={() => setSex('female')} className={`flex-1 px-3 py-2 rounded-lg border text-sm ${sex === 'female' ? 'bg-primary-500 border-primary-500 text-gray-900 font-semibold' : 'border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800'}`}>{labels.female}</button>
+            <button type="button" onClick={() => setSex('male')} className={`flex-1 px-3 py-2 rounded-lg border text-sm ${sex === 'male' ? 'bg-primary-500 border-primary-500 text-gray-900 font-semibold' : 'border-gray-200 hover:bg-gray-100'}`}>{labels.male}</button>
+            <button type="button" onClick={() => setSex('female')} className={`flex-1 px-3 py-2 rounded-lg border text-sm ${sex === 'female' ? 'bg-primary-500 border-primary-500 text-gray-900 font-semibold' : 'border-gray-200 hover:bg-gray-100'}`}>{labels.female}</button>
           </div>
         </div>
 
         <div>
           <label className="block text-sm font-semibold mb-2">{labels.units}</label>
           <div className="flex gap-2">
-            <button type="button" onClick={() => setUnit('metric')} className={`flex-1 px-3 py-2 rounded-lg border text-sm ${unit === 'metric' ? 'bg-primary-500 border-primary-500 text-gray-900 font-semibold' : 'border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800'}`}>{labels.metric}</button>
-            <button type="button" onClick={() => setUnit('imperial')} className={`flex-1 px-3 py-2 rounded-lg border text-sm ${unit === 'imperial' ? 'bg-primary-500 border-primary-500 text-gray-900 font-semibold' : 'border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800'}`}>{labels.imperial}</button>
+            <button type="button" onClick={() => setUnit('metric')} className={`flex-1 px-3 py-2 rounded-lg border text-sm ${unit === 'metric' ? 'bg-primary-500 border-primary-500 text-gray-900 font-semibold' : 'border-gray-200 hover:bg-gray-100'}`}>{labels.metric}</button>
+            <button type="button" onClick={() => setUnit('imperial')} className={`flex-1 px-3 py-2 rounded-lg border text-sm ${unit === 'imperial' ? 'bg-primary-500 border-primary-500 text-gray-900 font-semibold' : 'border-gray-200 hover:bg-gray-100'}`}>{labels.imperial}</button>
           </div>
         </div>
 
         <div>
           <label className="block text-sm font-semibold mb-2">{labels.age}</label>
-          <input type="number" min={1} max={120} value={age} onChange={(e) => setAge(Number(e.target.value))} className="w-full px-3 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900" />
+          <input type="number" min={1} max={120} value={age} onChange={(e) => setAge(Number(e.target.value))} className="w-full px-3 py-2 rounded-lg border border-gray-200 bg-white" />
         </div>
 
         <div>
           <label className="block text-sm font-semibold mb-2">{labels.weight} ({unit === 'metric' ? 'kg' : 'lb'})</label>
-          <input type="number" min={1} value={weight} onChange={(e) => setWeight(Number(e.target.value))} className="w-full px-3 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900" />
+          <input type="number" min={1} value={weight} onChange={(e) => setWeight(Number(e.target.value))} className="w-full px-3 py-2 rounded-lg border border-gray-200 bg-white" />
         </div>
 
         <div className="md:col-span-2">
           <label className="block text-sm font-semibold mb-2">{labels.height}</label>
           {unit === 'metric' ? (
             <div className="flex items-center gap-2">
-              <input type="number" min={1} value={heightCm} onChange={(e) => setHeightCm(Number(e.target.value))} className="w-full px-3 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900" />
+              <input type="number" min={1} value={heightCm} onChange={(e) => setHeightCm(Number(e.target.value))} className="w-full px-3 py-2 rounded-lg border border-gray-200 bg-white" />
               <span className="text-sm text-gray-500">cm</span>
             </div>
           ) : (
             <div className="grid grid-cols-2 gap-2">
               <div className="flex items-center gap-2">
-                <input type="number" min={0} value={heightFt} onChange={(e) => setHeightFt(Number(e.target.value))} className="w-full px-3 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900" />
+                <input type="number" min={0} value={heightFt} onChange={(e) => setHeightFt(Number(e.target.value))} className="w-full px-3 py-2 rounded-lg border border-gray-200 bg-white" />
                 <span className="text-sm text-gray-500">{labels.feet}</span>
               </div>
               <div className="flex items-center gap-2">
-                <input type="number" min={0} max={11} value={heightIn} onChange={(e) => setHeightIn(Number(e.target.value))} className="w-full px-3 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900" />
+                <input type="number" min={0} max={11} value={heightIn} onChange={(e) => setHeightIn(Number(e.target.value))} className="w-full px-3 py-2 rounded-lg border border-gray-200 bg-white" />
                 <span className="text-sm text-gray-500">{labels.inches}</span>
               </div>
             </div>
@@ -112,7 +112,7 @@ export default function BmrCalculator({ labels, lang }: Props) {
 
         <div className="md:col-span-2">
           <label className="block text-sm font-semibold mb-2">{labels.activity}</label>
-          <select value={activity} onChange={(e) => setActivity(e.target.value as ActivityLevel)} className="w-full px-3 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
+          <select value={activity} onChange={(e) => setActivity(e.target.value as ActivityLevel)} className="w-full px-3 py-2 rounded-lg border border-gray-200 bg-white">
             {(Object.keys(ACTIVITY_MULTIPLIER) as ActivityLevel[]).map((lvl) => (
               <option key={lvl} value={lvl}>{labels.activityLevels[lvl]} (×{ACTIVITY_MULTIPLIER[lvl]})</option>
             ))}
@@ -126,15 +126,15 @@ export default function BmrCalculator({ labels, lang }: Props) {
 
       {result && (
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div className="p-5 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/50">
+          <div className="p-5 rounded-xl border border-gray-200 bg-gray-50">
             <div className="text-xs uppercase tracking-wider text-gray-500 mb-1.5">{labels.bmrLabel}</div>
-            <div className="text-3xl md:text-4xl font-bold text-primary-700 dark:text-primary-400">{result.bmr.toLocaleString()} <span className="text-base font-normal text-gray-500">kcal</span></div>
-            <p className="text-xs text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">{labels.bmrHelp}</p>
+            <div className="text-3xl md:text-4xl font-bold text-primary-700">{result.bmr.toLocaleString()} <span className="text-base font-normal text-gray-500">kcal</span></div>
+            <p className="text-xs text-gray-600 mt-2 leading-relaxed">{labels.bmrHelp}</p>
           </div>
-          <div className="p-5 rounded-xl border-2 border-primary-500 bg-primary-50 dark:bg-primary-900/20">
-            <div className="text-xs uppercase tracking-wider text-primary-800 dark:text-primary-400 mb-1.5">{labels.tdeeLabel}</div>
-            <div className="text-3xl md:text-4xl font-bold text-primary-700 dark:text-primary-400">{result.tdee.toLocaleString()} <span className="text-base font-normal text-gray-500">kcal</span></div>
-            <p className="text-xs text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">{labels.tdeeHelp}</p>
+          <div className="p-5 rounded-xl border-2 border-primary-500 bg-primary-50">
+            <div className="text-xs uppercase tracking-wider text-primary-800 mb-1.5">{labels.tdeeLabel}</div>
+            <div className="text-3xl md:text-4xl font-bold text-primary-700">{result.tdee.toLocaleString()} <span className="text-base font-normal text-gray-500">kcal</span></div>
+            <p className="text-xs text-gray-600 mt-2 leading-relaxed">{labels.tdeeHelp}</p>
           </div>
         </div>
       )}

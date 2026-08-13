@@ -29,6 +29,14 @@ function currentNative(shortLang: string): string {
   return TOGGLE_LANGS.find((l) => l.route === shortLang)?.native ?? 'English';
 }
 
+const MAIN_SITE = process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://aihavit.com';
+
+const LABEL_START_FREE: Record<string, string> = {
+  en: 'Start Free', ko: '무료로 시작', ja: '無料で始める', zh: '免费开始', 'zh-tw': '免費開始',
+  es: 'Empezar gratis', 'pt-br': 'Começar grátis', id: 'Mulai gratis', de: 'Kostenlos starten',
+  fr: 'Commencer',
+};
+
 interface Props {
   lang: LangKey;
   currentSlug?: string | null;
@@ -36,27 +44,19 @@ interface Props {
   availableLangs?: LangKey[];
 }
 
-export default function Header({ lang, currentSlug, currentCategorySlug, availableLangs }: Props) {
+export default function Header({ lang, currentSlug, currentCategorySlug }: Props) {
   const [open, setOpen] = useState(false);
-  const [dark, setDark] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
+  // Marketing-site nav behaviour: the bar is transparent over the top of the
+  // page and gains its border + shadow only once content scrolls under it.
   useEffect(() => {
-    const stored = typeof window !== 'undefined' ? localStorage.getItem('theme') : null;
-    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const isDark = stored ? stored === 'dark' : systemDark;
-    setDark(isDark);
-    document.documentElement.classList.toggle('dark', isDark);
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  function toggleDark() {
-    const next = !dark;
-    setDark(next);
-    document.documentElement.classList.toggle('dark', next);
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('theme', next ? 'dark' : 'light');
-    }
-  }
 
   function langHrefShort(short: string): string {
     if (currentSlug) return `/${short}/${currentSlug}`;
@@ -65,32 +65,24 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
   }
 
   const shortLang = toShortLang(lang);
+  const startFree = LABEL_START_FREE[shortLang] ?? LABEL_START_FREE.en;
 
   return (
-    <header className="sticky top-0 z-40 backdrop-blur bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800">
-      <div className="mx-auto max-w-7xl px-4 md:px-6 h-16 flex items-center justify-between gap-4">
-        <div className="flex items-center gap-4">
-          {/* ← HAVIT main site link */}
-          <a
-            href={process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://aihavit.com'}
-            className="flex items-center gap-1.5 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
-            aria-label="HAVIT main site"
-          >
-            <span aria-hidden>←</span>
-            <span className="hidden sm:inline">HAVIT</span>
-          </a>
-          <span className="text-gray-300 dark:text-gray-700">|</span>
-          <Link href={`/${shortLang}`} className="flex items-center gap-2" aria-label="HAVIT Blog Home">
-            <img src="/havit-logo.png" alt="HAVIT" className="h-7 w-auto" />
-            <span className="text-sm text-gray-500 dark:text-gray-400 hidden md:inline">{t(lang, 'blog')}</span>
-          </Link>
-        </div>
+    <header className={`nav ${scrolled ? 'is-scrolled' : ''}`}>
+      <div className="nav__inner">
+        <a href={MAIN_SITE} className="nav__logo" aria-label="HAVIT">
+          {/* Same brand mark the marketing site uses (aihavit.com/havit-logo.png). */}
+          <img src="/havit-logo.png" alt="HAVIT" width={1600} height={753} />
+        </a>
 
-        {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-1 text-sm">
-          <Link href={`/${shortLang}`} className="btn-ghost">{t(lang, 'home')}</Link>
-          <Link href={`/${shortLang}/tools`} className="btn-ghost">🧮 Tools</Link>
-          <a href="https://app.aihavit.com/" target="_blank" rel="noopener" className="btn-ghost">📱 App</a>
+        <nav className="nav__links" aria-label="Primary">
+          <a href={MAIN_SITE}>HAVIT</a>
+          <a href={`${MAIN_SITE}/#features`}>Features</a>
+          <Link href={`/${shortLang}`} className="is-active">
+            {t(lang, 'blog')}
+          </Link>
+          <Link href={`/${shortLang}/tools`}>Tools</Link>
+          <a href={`${MAIN_SITE}/#faq`}>FAQ</a>
         </nav>
 
         <div className="flex items-center gap-1">
@@ -105,14 +97,15 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
               aria-label={t(lang, 'language')}
             >
               <span aria-hidden>🌐</span>
-              <span className="ml-1 hidden sm:inline text-sm">{currentNative(shortLang)}</span>
+              <span className="ml-1.5 hidden lg:inline text-sm">{currentNative(shortLang)}</span>
             </button>
             {open && (
               <div
-                className="absolute right-0 mt-2 w-56 max-h-[60vh] overflow-y-auto rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-lg p-1"
+                className="absolute right-0 mt-2 w-56 max-h-[60vh] overflow-y-auto rounded-2xl border shadow-lg p-1.5 z-50"
+                style={{ background: 'var(--hv-surface)', borderColor: 'var(--hv-border)' }}
                 role="listbox"
               >
-                <div className="px-3 py-2 text-xs text-gray-500">
+                <div className="px-3 py-2 text-xs" style={{ color: 'var(--hv-fg-subtle)' }}>
                   {t(lang, 'language')}
                 </div>
                 {VISIBLE_LANGS.map((opt) => {
@@ -122,14 +115,14 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
                       key={opt.route}
                       href={langHrefShort(opt.route)}
                       onClick={() => setOpen(false)}
-                      className={`flex justify-between items-center px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 ${
-                        active ? 'bg-gray-100 dark:bg-gray-800 font-semibold' : ''
+                      className={`flex justify-between items-center px-3 py-2 rounded-xl hover:bg-gray-100 ${
+                        active ? 'bg-gray-100 font-semibold' : ''
                       }`}
                       role="option"
                       aria-selected={active}
                     >
                       <span className="text-sm">{opt.native}</span>
-                      <span className="text-xs text-gray-400">
+                      <span className="text-xs" style={{ color: 'var(--hv-fg-subtle)' }}>
                         {active ? '●' : ''}
                       </span>
                     </Link>
@@ -139,23 +132,16 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
             )}
           </div>
 
-          {/* Dark mode toggle S-007 */}
-          <button
-            type="button"
-            onClick={toggleDark}
-            className="btn-ghost"
-            aria-label={t(lang, 'darkMode')}
-            title={t(lang, 'darkMode')}
-          >
-            {dark ? '☀️' : '🌙'}
-          </button>
+          <a href={`${MAIN_SITE}/#download`} className="btn btn--primary btn--sm hidden md:inline-flex">
+            {startFree}
+          </a>
 
-          {/* Mobile menu */}
           <button
             type="button"
             onClick={() => setMobileMenu((v) => !v)}
             className="btn-ghost md:hidden"
             aria-label="Menu"
+            aria-expanded={mobileMenu}
           >
             ☰
           </button>
@@ -163,11 +149,18 @@ export default function Header({ lang, currentSlug, currentCategorySlug, availab
       </div>
 
       {mobileMenu && (
-        <div className="md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-3 flex flex-col gap-2">
-          <a href={process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://aihavit.com'} className="py-2 text-gray-600 dark:text-gray-400">← HAVIT</a>
-          <Link href={`/${shortLang}`} className="py-2">{t(lang, 'home')}</Link>
-          <Link href={`/${shortLang}/tools`} className="py-2">🧮 Tools</Link>
-          <a href="https://app.aihavit.com/" target="_blank" rel="noopener" className="py-2">📱 App</a>
+        <div
+          className="md:hidden border-t px-6 py-4 flex flex-col gap-3"
+          style={{ borderColor: 'var(--hv-border)', background: 'var(--hv-surface)' }}
+        >
+          <a href={MAIN_SITE} className="py-1">HAVIT</a>
+          <Link href={`/${shortLang}`} className="py-1">{t(lang, 'blog')}</Link>
+          <Link href={`/${shortLang}/articles`} className="py-1">Articles</Link>
+          <Link href={`/${shortLang}/tools`} className="py-1">Tools</Link>
+          <a href="https://app.aihavit.com/" target="_blank" rel="noopener" className="py-1">App</a>
+          <a href={`${MAIN_SITE}/#download`} className="btn btn--primary btn--sm self-start mt-1">
+            {startFree}
+          </a>
         </div>
       )}
     </header>

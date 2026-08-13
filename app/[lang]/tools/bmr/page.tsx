@@ -63,7 +63,7 @@ export default function BmrPage({ params }: Props) {
           <h1 className="font-bold text-3xl md:text-4xl xl:text-5xl leading-tight mb-3">
             {L.pageTitle}
           </h1>
-          <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed">
             {L.pageIntro}
           </p>
         </header>
@@ -72,12 +72,12 @@ export default function BmrPage({ params }: Props) {
 
         <section className="mt-12">
           <h2 className="text-2xl font-bold mb-3">{L.aboutHeader}</h2>
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{L.aboutBody}</p>
+          <p className="text-gray-700 leading-relaxed">{L.aboutBody}</p>
         </section>
 
         <section className="mt-8">
           <h2 className="text-2xl font-bold mb-3">{L.formulaHeader}</h2>
-          <pre className="p-4 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-sm whitespace-pre-wrap font-mono leading-relaxed">{L.formulaBody}</pre>
+          <pre className="p-4 rounded-xl bg-gray-50 border border-gray-200 text-sm whitespace-pre-wrap font-mono leading-relaxed">{L.formulaBody}</pre>
         </section>
       </main>
       <Footer lang={fullLang} />

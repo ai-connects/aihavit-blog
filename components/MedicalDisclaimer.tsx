@@ -38,9 +38,9 @@ export default function MedicalDisclaimer({ shortLang }: Props) {
     <div
       role="note"
       aria-label="Medical disclaimer"
-      className="mb-6 p-4 rounded-lg bg-gray-50 dark:bg-gray-900 border-l-4 border-gray-300 dark:border-gray-700"
+      className="mb-6 p-4 rounded-lg bg-gray-50 border-l-4 border-gray-300"
     >
-      <p className="text-sm text-gray-700 dark:text-gray-400 leading-relaxed">{text}</p>
+      <p className="text-sm text-gray-700 leading-relaxed">{text}</p>
     </div>
   );
 }

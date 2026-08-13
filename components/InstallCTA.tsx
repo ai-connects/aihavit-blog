@@ -26,7 +26,7 @@ export default function InstallCTA({ lang, articleId, variant = 'inline' }: Prop
 
   if (variant === 'sticky') {
     return (
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-30 p-3 bg-white/95 dark:bg-gray-900/95 backdrop-blur border-t border-gray-200 dark:border-gray-800">
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-30 p-3 bg-white/95 backdrop-blur border-t border-gray-200">
         <a
           href={universalLink}
           onClick={handleClick}

@@ -2,6 +2,10 @@ import type { Config } from 'tailwindcss';
 
 // PRD §16.5 디자인 토큰 (정량) — LOCKED v0.3.0
 const config: Config = {
+  // Dark mode was removed from the blog (light-only, matching aihavit.com).
+  // 'class' is kept deliberately rather than deleted: nothing adds `.dark` to
+  // <html> any more, so any `dark:` utility that ever slips back in stays
+  // inert instead of activating off the visitor's OS setting.
   darkMode: 'class',
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -18,18 +22,22 @@ const config: Config = {
     },
     extend: {
       colors: {
-        // HAVIT primary — havit-wellness-app/app/lib/common/theme/havit_color.dart 1:1
+        // HAVIT primary — aihavit.com marketing site (--color-primary #d4ff50).
+        // 500 is the brand fill. Lime is very light, so 600+ are the darkened
+        // olives used wherever the color has to carry TEXT: 700 (#5f7a00) is
+        // the lightest step that clears WCAG AA 4.5:1 on white, so it — not
+        // 500/600 — is the correct token for links and inline emphasis.
         primary: {
-          50: '#FCFEEF',
-          100: '#FBFEDA',
-          200: '#F3FDB6',
-          300: '#E8FB90',
-          400: '#DDF772',
-          500: '#CDF246', // brand default
-          600: '#ABD033',
-          700: '#89AE23',
-          800: '#6BBC17',
-          900: '#54750D',
+          50: '#FBFFEE',
+          100: '#F6FFDC', // marketing --tint-pale
+          200: '#EDFFB9',
+          300: '#E5FF96', // marketing --tint-lime
+          400: '#DCFF73',
+          500: '#D4FF50', // brand default
+          600: '#7A9D00', // 3.2:1 on white — large text / UI accents only
+          700: '#5F7A00', // 4.9:1 on white — body-size text
+          800: '#4A5F00',
+          900: '#354400',
         },
         secondary: { 500: '#1243EE' },
         // 12 카테고리 액센트 (PRD §5.1.2 12개 enum)
@@ -71,6 +79,9 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
+          // Poppins first to match aihavit.com; it has no CJK glyphs, so
+          // Pretendard/Noto behind it cover ko/ja/zh.
+          'Poppins',
           'Pretendard',
           'Pretendard Variable',
           '-apple-system',

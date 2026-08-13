@@ -17,6 +17,7 @@ import type { ArticleV2, ArticleV2LangContent } from '@/lib/articles-v2';
 import { isYmylCategory } from '@/lib/articles-v2';
 import { toBcp47, toFullLang } from '@/lib/i18n';
 import { PUBLISHER_ORG, DEFAULT_AUTHOR, DEFAULT_REVIEWER, entitySchema } from '@/lib/team';
+import { articleImage } from '@/lib/article-images';
 
 interface Props {
   article: ArticleV2;
@@ -27,7 +28,11 @@ interface Props {
 const SITE = 'https://blog.aihavit.com';
 
 // publisher Organization (incl. sameAs) is centralized in lib/team.ts (PUBLISHER_ORG).
-const OG_IMAGE = `${SITE}/og-default.png`;
+// NOTE: this used to be `${SITE}/og-default.png`, a file that does not exist in
+// public/ — so every article advertised an unfetchable image to Google, which
+// disqualifies Article rich results. Articles now carry a real photo, so the
+// schema points at that; the fallback is a file that is actually deployed.
+const OG_IMAGE_FALLBACK = `${SITE}/havit-logo.png`;
 
 interface JsonLdPayload {
   '@context': 'https://schema.org';
@@ -62,7 +67,7 @@ function buildPayload(article: ArticleV2, content: ArticleV2LangContent, shortLa
     '@type': ymyl ? ['Article', 'MedicalWebPage'] : 'Article',
     headline: content.title,
     description: content.meta_description ?? content.tldr ?? '',
-    image: [OG_IMAGE],
+    image: [articleImage(article.slug, article.category) || OG_IMAGE_FALLBACK],
     datePublished,
     dateModified,
     inLanguage,
