@@ -46,13 +46,92 @@ const NOTICE: Record<string, string> = {
   fr: 'HAVIT fournit des informations générales de bien-être et ne fournit ni conseil médical, ni diagnostic, ni traitement.',
 };
 
+
+// 푸터 위 풀블리드 CTA 밴드 — 마케팅 사이트(aihavit.com)의 final-cta 를 옮긴 것.
+// 블로그는 10개 언어라 문구를 여기 자체포함한다(lib/i18n.ts 무변경).
+const FINAL_CTA: Record<string, { title: string; sub: string; note: string }> = {
+  en: {
+    title: 'Ready for Smarter Weight Loss?',
+    sub: 'Everything you need to lose weight, preserve muscle, and build healthier habits—all in one AI-powered app.',
+    note: 'Free to download. In-app purchases may apply.',
+  },
+  ko: {
+    title: '더 똑똑한 체중 관리, 시작할까요?',
+    sub: '체중 감량, 근육 보존, 건강한 습관 만들기까지 — AI 기반 앱 하나에 담았습니다.',
+    note: '무료로 내려받을 수 있습니다. 인앱 결제가 있을 수 있습니다.',
+  },
+  ja: {
+    title: 'もっと賢い体重管理を始めませんか',
+    sub: '減量、筋肉の維持、健康習慣づくりまで — AI搭載アプリひとつで。',
+    note: '無料でダウンロードできます。アプリ内課金があります。',
+  },
+  zh: {
+    title: '开始更聪明的体重管理',
+    sub: '减重、保住肌肉、养成健康习惯 — 一个 AI 应用全搞定。',
+    note: '免费下载，含应用内购买。',
+  },
+  'zh-tw': {
+    title: '開始更聰明的體重管理',
+    sub: '減重、保住肌肉、養成健康習慣 — 一個 AI 應用全搞定。',
+    note: '免費下載，含應用內購買。',
+  },
+  es: {
+    title: '¿Listo para perder peso de forma más inteligente?',
+    sub: 'Todo lo que necesitas para bajar de peso, preservar músculo y crear hábitos saludables, en una sola app con IA.',
+    note: 'Descarga gratuita. Puede incluir compras dentro de la app.',
+  },
+  'pt-br': {
+    title: 'Pronto para emagrecer de forma mais inteligente?',
+    sub: 'Tudo o que você precisa para perder peso, preservar músculo e criar hábitos saudáveis — em um só app com IA.',
+    note: 'Download gratuito. Pode conter compras no aplicativo.',
+  },
+  id: {
+    title: 'Siap Turun Berat Badan dengan Lebih Cerdas?',
+    sub: 'Semua yang Anda butuhkan untuk menurunkan berat badan, menjaga otot, dan membangun kebiasaan sehat — dalam satu aplikasi berbasis AI.',
+    note: 'Gratis diunduh. Mungkin ada pembelian dalam aplikasi.',
+  },
+  de: {
+    title: 'Bereit für smarteres Abnehmen?',
+    sub: 'Alles, was du brauchst, um abzunehmen, Muskeln zu erhalten und gesunde Gewohnheiten aufzubauen — in einer KI-App.',
+    note: 'Kostenloser Download. In-App-Käufe möglich.',
+  },
+  fr: {
+    title: 'Prêt à perdre du poids plus intelligemment ?',
+    sub: 'Tout ce qu\'il faut pour perdre du poids, préserver vos muscles et créer de bonnes habitudes — dans une seule app dopée à l\'IA.',
+    note: 'Téléchargement gratuit. Achats intégrés possibles.',
+  },
+};
+
 const MAIN_SITE = process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://aihavit.com';
 
 export default function Footer({ lang }: { lang: LangKey }) {
   const shortLang = toShortLang(lang);
   const i18n = pickFooterI18n(shortLang);
 
+  const cta = FINAL_CTA[shortLang] ?? FINAL_CTA.en;
+
   return (
+    <>
+      <section className="hv-final-cta">
+        <div className="hv-container">
+          <h2 className="hv-final-cta__title">{cta.title}</h2>
+          <p className="hv-final-cta__sub">{cta.sub}</p>
+          <div className="hv-final-cta__badges">
+            <a href={`${MAIN_SITE}/#download`} className="hv-final-cta__badge" aria-label="App Store">
+              {/* 마케팅 사이트와 같은 뱃지 에셋. next/image 를 쓰지 않는 이유는
+                  5~6KB 짜리 고정 크기 PNG 라 최적화 이득이 없어서다. */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/badge-appstore.png" alt="Download on the App Store" width={168} height={56} />
+            </a>
+            <a href={`${MAIN_SITE}/#download`} className="hv-final-cta__badge" aria-label="Google Play">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/badge-googleplay.png" alt="Get it on Google Play" width={189} height={56} />
+            </a>
+          </div>
+          <p className="hv-final-cta__disclaimer">{cta.note}</p>
+        </div>
+      </section>
+
     <footer className="hv-footer">
       <div className="hv-container">
         {/* No invert filter: the mark is a white banner holding a black
@@ -124,5 +203,6 @@ export default function Footer({ lang }: { lang: LangKey }) {
         </p>
       </div>
     </footer>
+    </>
   );
 }

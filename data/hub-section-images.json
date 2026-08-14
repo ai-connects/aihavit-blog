@@ -1,0 +1,593 @@
+{
+  "_generated": "scripts/build-hub-section-images.mjs",
+  "_note": "허브 아티클 섹션별 사진. 인덱스 = body_md 의 h2 순서. 히어로와 서로 겹치지 않는다.",
+  "map": {
+    "ask-glp-1-questions": [
+      "IMG_CARB_006.jpg",
+      "IMG_CAT_PERSONAL.jpg",
+      "IMG_CAT_DIET.jpg",
+      "IMG_CARB_003.jpg",
+      "IMG_VEG_003.jpg",
+      "IMG_PRO_008.jpg",
+      "IMG_MIND_001.jpg",
+      "IMG_CAT_MIND.jpg",
+      "IMG_CAT_MED.jpg",
+      "art_0127.jpg"
+    ],
+    "best-food-tracker-for-glp-1": [
+      "IMG_CAT_DIET.jpg",
+      "IMG_WT_001.jpg",
+      "IMG_CAT_TRACK.jpg",
+      "IMG_WT_004.jpg",
+      "IMG_VEG_003.jpg",
+      "IMG_TRACK_001.jpg",
+      "IMG_MIND_010.jpg"
+    ],
+    "best-glp-1-tracker-apps": [
+      "IMG_WT_001.jpg",
+      "IMG_CAT_EX.jpg",
+      "IMG_WT_004.jpg",
+      "IMG_MIND_010.jpg",
+      "IMG_TRACK_001.jpg",
+      "IMG_CAT_TRACK.jpg",
+      "art_0029.jpg"
+    ],
+    "cal-ai-alternative-glp-1": [
+      "IMG_CAT_TRACK.jpg",
+      "IMG_WT_001.jpg",
+      "IMG_CARB_003.jpg",
+      "IMG_CARB_007.jpg",
+      "IMG_WT_004.jpg",
+      "IMG_STR_006.jpg",
+      "IMG_CAT_HYD.jpg",
+      "IMG_CAT_EX.jpg"
+    ],
+    "cronometer-alternative-glp-1": [
+      "IMG_CAT_TRACK.jpg",
+      "IMG_WT_001.jpg",
+      "IMG_CARB_003.jpg",
+      "IMG_TRACK_001.jpg",
+      "IMG_WT_004.jpg",
+      "IMG_CAT_SIT.jpg",
+      "art_0018.jpg",
+      "art_0029.jpg"
+    ],
+    "foundayo-side-effects": [
+      "IMG_MED_007.jpg",
+      "art_0023.jpg",
+      "IMG_CAT_MED.jpg",
+      "art_0024.jpg",
+      "IMG_CAT_SIT.jpg",
+      "IMG_CAT_DIET.jpg"
+    ],
+    "foundayo-tracker": [
+      "art_0007.jpg",
+      "art_0013.jpg",
+      "IMG_CAT_EX.jpg",
+      "art_0016.jpg",
+      "art_0021.jpg",
+      "art_0029.jpg"
+    ],
+    "gamify-weight-loss": [
+      "IMG_CAT_WT.jpg",
+      "art_0039.jpg",
+      "IMG_CAT_LIFE.jpg",
+      "art_0068.jpg",
+      "IMG_WT_002.jpg",
+      "IMG_CARB_003.jpg",
+      "art_0081.jpg",
+      "IMG_WT_001.jpg",
+      "IMG_WT_003.jpg"
+    ],
+    "glapp-alternative": [
+      "art_0090.jpg",
+      "IMG_CAT_TRACK.jpg",
+      "IMG_CARB_003.jpg",
+      "IMG_CAT_EX.jpg",
+      "IMG_WT_001.jpg",
+      "IMG_WT_004.jpg",
+      "IMG_TRACK_001.jpg"
+    ],
+    "glp-1-cost-korea": [
+      "art_0099.jpg",
+      "IMG_WT_003.jpg",
+      "IMG_WT_005.jpg",
+      "IMG_WT_008.jpg",
+      "art_0057.jpg",
+      "art_0098.jpg",
+      "art_0100.jpg",
+      "IMG_CAT_WT.jpg",
+      "IMG_WT_006.jpg"
+    ],
+    "glp-1-diary-habit": [
+      "IMG_CAT_DIET.jpg",
+      "IMG_SIT_007.jpg",
+      "IMG_SIT_002.jpg",
+      "IMG_CARB_003.jpg",
+      "IMG_CAT_EX.jpg",
+      "IMG_CAT_MED.jpg",
+      "IMG_FLEX_005.jpg",
+      "IMG_CARB_006.jpg",
+      "IMG_CAT_PERSONAL.jpg",
+      "IMG_SIT_001.jpg",
+      "IMG_MEAL_007.jpg"
+    ],
+    "glp-1-diet-7-day-meal-plan": [
+      "art_0103.jpg",
+      "art_0129.jpg",
+      "IMG_CAT_DIET.jpg",
+      "art_0073.jpg",
+      "art_0109.jpg",
+      "art_0076.jpg",
+      "art_0063.jpg",
+      "art_0056.jpg",
+      "art_0125.jpg",
+      "IMG_CARB_007.jpg"
+    ],
+    "glp-1-dose-tracker": [
+      "art_0027.jpg",
+      "art_0005.jpg",
+      "art_0010.jpg",
+      "IMG_MED_009.jpg",
+      "art_0001.jpg",
+      "art_0011.jpg",
+      "art_0012.jpg",
+      "art_0029.jpg"
+    ],
+    "glp-1-first-month": [
+      "IMG_CAT_PERSONAL.jpg",
+      "IMG_CAT_LIFE.jpg",
+      "IMG_CAT_DIET.jpg",
+      "art_0083.jpg",
+      "IMG_MIND_010.jpg",
+      "IMG_CARB_006.jpg",
+      "IMG_CAT_SIT.jpg",
+      "IMG_CAT_MED.jpg"
+    ],
+    "glp-1-for-menopause": [
+      "IMG_SIT_008.jpg",
+      "IMG_CAT_HEALTH.jpg",
+      "IMG_CAT_PERSONAL.jpg",
+      "art_0198.jpg",
+      "art_0192.jpg",
+      "IMG_WT_001.jpg"
+    ],
+    "glp-1-for-pcos": [
+      "IMG_CAT_HEALTH.jpg",
+      "IMG_SIT_008.jpg",
+      "art_0198.jpg",
+      "IMG_CAT_MIND.jpg",
+      "IMG_CAT_LIFE.jpg",
+      "art_0193.jpg",
+      "IMG_MIND_010.jpg"
+    ],
+    "glp-1-habit-report": [
+      "IMG_WT_001.jpg",
+      "IMG_CAT_TRACK.jpg",
+      "IMG_WT_004.jpg",
+      "art_0096.jpg",
+      "IMG_CAT_HEALTH.jpg",
+      "IMG_TRACK_001.jpg",
+      "IMG_CAT_EX.jpg"
+    ],
+    "glp-1-perimenopause": [
+      "IMG_SIT_008.jpg",
+      "IMG_CAT_DIET.jpg",
+      "IMG_FAT_005.jpg",
+      "IMG_CAT_SIT.jpg",
+      "art_0198.jpg",
+      "art_0027.jpg"
+    ],
+    "glp-1-period-fatigue": [
+      "IMG_SIT_008.jpg",
+      "IMG_CAT_HEALTH.jpg",
+      "IMG_CAT_MIND.jpg",
+      "IMG_MEAL_005.jpg",
+      "art_0036.jpg",
+      "IMG_MIND_010.jpg"
+    ],
+    "glp-1-plotter": [
+      "art_0032.jpg",
+      "IMG_MED_007.jpg",
+      "IMG_WT_001.jpg",
+      "IMG_MEAL_007.jpg",
+      "IMG_CAT_TRACK.jpg",
+      "IMG_PRO_008.jpg",
+      "art_0070.jpg",
+      "IMG_TRACK_001.jpg"
+    ],
+    "glp-1-postpartum": [
+      "IMG_CAT_MIND.jpg",
+      "IMG_SIT_008.jpg",
+      "IMG_CAT_HEALTH.jpg",
+      "art_0192.jpg",
+      "IMG_CAT_LIFE.jpg"
+    ],
+    "glp-1-progress-tracker": [
+      "IMG_WT_001.jpg",
+      "IMG_CAT_TRACK.jpg",
+      "IMG_PRO_008.jpg",
+      "IMG_FAT_005.jpg",
+      "IMG_CARB_007.jpg",
+      "art_0188.jpg",
+      "IMG_MEAL_008.jpg",
+      "IMG_TRACK_001.jpg"
+    ],
+    "glp-1-shot-tracker": [
+      "art_0010.jpg",
+      "art_0004.jpg",
+      "art_0026.jpg",
+      "art_0014.jpg",
+      "art_0027.jpg",
+      "art_0001.jpg"
+    ],
+    "glp-1-side-effects": [
+      "art_0023.jpg",
+      "IMG_MED_007.jpg",
+      "IMG_CAT_MED.jpg",
+      "art_0010.jpg",
+      "art_0008.jpg",
+      "IMG_CAT_SIT.jpg",
+      "art_0011.jpg"
+    ],
+    "glp-1-tracker-app-alternatives": [
+      "art_0044.jpg",
+      "art_0054.jpg",
+      "art_0071.jpg",
+      "art_0074.jpg",
+      "art_0148.jpg",
+      "art_0086.jpg",
+      "art_0118.jpg",
+      "art_0122.jpg",
+      "art_0123.jpg",
+      "art_0128.jpg"
+    ],
+    "glp-1-tracker-app": [
+      "IMG_WT_004.jpg",
+      "IMG_WT_001.jpg",
+      "IMG_CAT_EX.jpg",
+      "art_0043.jpg",
+      "art_0130.jpg",
+      "IMG_TRACK_001.jpg"
+    ],
+    "glp-1-weight-loss-calculator": [
+      "art_0039.jpg",
+      "IMG_HYD_001.jpg",
+      "art_0100.jpg",
+      "IMG_WT_002.jpg",
+      "IMG_CAT_WT.jpg",
+      "IMG_MED_001.jpg"
+    ],
+    "how-much-does-wegovy-ozempic-cost": [
+      "art_0002.jpg",
+      "art_0025.jpg",
+      "art_0028.jpg",
+      "IMG_MED_005.jpg",
+      "art_0012.jpg",
+      "IMG_HYD_001.jpg",
+      "art_0030.jpg",
+      "art_0029.jpg"
+    ],
+    "injection-tracker-app": [
+      "art_0004.jpg",
+      "art_0015.jpg",
+      "art_0003.jpg",
+      "art_0001.jpg",
+      "art_0002.jpg",
+      "art_0005.jpg",
+      "art_0007.jpg",
+      "art_0009.jpg",
+      "art_0029.jpg"
+    ],
+    "lose-it-alternative": [
+      "art_0090.jpg",
+      "art_0091.jpg",
+      "IMG_CARB_003.jpg",
+      "IMG_HYD_001.jpg",
+      "art_0093.jpg",
+      "art_0130.jpg",
+      "IMG_CAT_SIT.jpg",
+      "IMG_WT_001.jpg"
+    ],
+    "macrofactor-alternative": [
+      "art_0090.jpg",
+      "art_0133.jpg",
+      "IMG_CARB_003.jpg",
+      "art_0085.jpg",
+      "art_0137.jpg",
+      "art_0143.jpg",
+      "art_0151.jpg",
+      "IMG_WT_001.jpg"
+    ],
+    "meagain-alternative": [
+      "art_0090.jpg",
+      "art_0043.jpg",
+      "IMG_CARB_003.jpg",
+      "art_0177.jpg",
+      "art_0152.jpg",
+      "art_0153.jpg",
+      "IMG_WT_001.jpg"
+    ],
+    "mounjaro-side-effects": [
+      "art_0023.jpg",
+      "IMG_MED_007.jpg",
+      "art_0024.jpg",
+      "IMG_CAT_MED.jpg",
+      "art_0013.jpg",
+      "art_0016.jpg",
+      "IMG_CAT_DIET.jpg",
+      "IMG_CAT_SIT.jpg",
+      "art_0021.jpg"
+    ],
+    "mounjaro-tracker": [
+      "art_0025.jpg",
+      "art_0028.jpg",
+      "IMG_CAT_EX.jpg",
+      "IMG_MED_005.jpg",
+      "art_0007.jpg",
+      "art_0029.jpg"
+    ],
+    "myfitnesspal-alternative-glp-1": [
+      "art_0090.jpg",
+      "art_0154.jpg",
+      "IMG_FAT_005.jpg",
+      "art_0085.jpg",
+      "art_0157.jpg",
+      "art_0161.jpg",
+      "art_0164.jpg",
+      "IMG_TRACK_001.jpg"
+    ],
+    "noom-glp-1-alternative": [
+      "IMG_CAT_TRACK.jpg",
+      "art_0165.jpg",
+      "IMG_CARB_003.jpg",
+      "art_0177.jpg",
+      "art_0181.jpg",
+      "IMG_CARB_001.jpg",
+      "IMG_PRO_003.jpg",
+      "IMG_TRACK_001.jpg"
+    ],
+    "oral-wegovy-side-effects": [
+      "art_0023.jpg",
+      "IMG_CAT_MED.jpg",
+      "IMG_MED_007.jpg",
+      "art_0024.jpg",
+      "art_0002.jpg",
+      "IMG_CAT_DIET.jpg",
+      "IMG_CAT_SIT.jpg",
+      "art_0009.jpg",
+      "art_0029.jpg"
+    ],
+    "oral-wegovy-tracker": [
+      "art_0005.jpg",
+      "art_0013.jpg",
+      "art_0014.jpg",
+      "art_0016.jpg",
+      "IMG_HYD_001.jpg",
+      "IMG_CAT_EX.jpg",
+      "art_0021.jpg",
+      "art_0025.jpg",
+      "art_0026.jpg"
+    ],
+    "orforglipron-side-effects": [
+      "art_0023.jpg",
+      "IMG_MED_007.jpg",
+      "art_0024.jpg",
+      "IMG_CAT_MED.jpg",
+      "IMG_CAT_SIT.jpg",
+      "IMG_CAT_DIET.jpg"
+    ],
+    "orforglipron-tracker": [
+      "art_0027.jpg",
+      "art_0028.jpg",
+      "IMG_MED_009.jpg",
+      "IMG_MED_005.jpg",
+      "art_0004.jpg",
+      "art_0007.jpg"
+    ],
+    "ozempic-side-effects": [
+      "art_0023.jpg",
+      "IMG_MED_007.jpg",
+      "art_0024.jpg",
+      "IMG_CAT_MED.jpg",
+      "art_0009.jpg",
+      "art_0013.jpg",
+      "IMG_CAT_DIET.jpg",
+      "IMG_CAT_SIT.jpg",
+      "art_0015.jpg"
+    ],
+    "ozempic-tracker": [
+      "art_0016.jpg",
+      "art_0021.jpg",
+      "IMG_CAT_EX.jpg",
+      "art_0025.jpg",
+      "art_0026.jpg",
+      "art_0028.jpg"
+    ],
+    "pep-alternative": [
+      "art_0090.jpg",
+      "art_0043.jpg",
+      "IMG_CARB_003.jpg",
+      "art_0085.jpg",
+      "IMG_PRO_006.jpg",
+      "IMG_CARB_008.jpg",
+      "IMG_WT_001.jpg"
+    ],
+    "phaze-alternative": [
+      "IMG_PRO_005.jpg",
+      "IMG_CARB_006.jpg",
+      "IMG_FAT_005.jpg",
+      "IMG_FLEX_005.jpg",
+      "IMG_MEAL_004.jpg",
+      "IMG_STR_002.jpg",
+      "IMG_TRACK_001.jpg"
+    ],
+    "pillyze-alternative": [
+      "IMG_CAT_HYD.jpg",
+      "IMG_CARB_006.jpg",
+      "IMG_CARDIO_003.jpg",
+      "art_0123.jpg",
+      "IMG_STR_002.jpg",
+      "IMG_MIND_002.jpg",
+      "IMG_WT_001.jpg"
+    ],
+    "protein-tracker-for-glp-1": [
+      "art_0103.jpg",
+      "art_0020.jpg",
+      "art_0044.jpg",
+      "art_0070.jpg",
+      "art_0042.jpg",
+      "IMG_TRACK_001.jpg"
+    ],
+    "retatrutide-side-effects": [
+      "IMG_MED_007.jpg",
+      "art_0024.jpg",
+      "art_0031.jpg",
+      "IMG_CAT_MED.jpg",
+      "art_0008.jpg",
+      "IMG_CAT_DIET.jpg",
+      "IMG_MED_009.jpg",
+      "art_0029.jpg"
+    ],
+    "retatrutide-tracker": [
+      "IMG_MED_005.jpg",
+      "IMG_MED_002.jpg",
+      "art_0004.jpg",
+      "art_0005.jpg",
+      "art_0007.jpg",
+      "art_0009.jpg",
+      "art_0013.jpg",
+      "art_0015.jpg"
+    ],
+    "semaglutide-side-effects": [
+      "art_0023.jpg",
+      "IMG_CAT_MED.jpg",
+      "IMG_MED_007.jpg",
+      "art_0024.jpg",
+      "art_0016.jpg",
+      "IMG_VEG_003.jpg",
+      "art_0005.jpg",
+      "IMG_CAT_SIT.jpg",
+      "art_0021.jpg"
+    ],
+    "semaglutide-tracker": [
+      "art_0025.jpg",
+      "art_0026.jpg",
+      "art_0028.jpg",
+      "IMG_HYD_001.jpg",
+      "art_0017.jpg",
+      "art_0014.jpg",
+      "art_0005.jpg",
+      "IMG_CAT_EX.jpg",
+      "art_0030.jpg",
+      "IMG_MED_009.jpg",
+      "art_0029.jpg"
+    ],
+    "semaglutide-vs-tirzepatide": [
+      "art_0014.jpg",
+      "IMG_FAT_005.jpg",
+      "IMG_MED_001.jpg",
+      "IMG_CAT_MED.jpg",
+      "IMG_PRO_005.jpg",
+      "IMG_MED_005.jpg",
+      "IMG_FLEX_005.jpg",
+      "IMG_MED_002.jpg"
+    ],
+    "shotsy-alternative": [
+      "art_0003.jpg",
+      "art_0004.jpg",
+      "IMG_CARB_003.jpg",
+      "IMG_CARB_007.jpg",
+      "art_0007.jpg",
+      "art_0009.jpg",
+      "art_0029.jpg"
+    ],
+    "side-effect-tracker": [
+      "art_0008.jpg",
+      "art_0023.jpg",
+      "IMG_CAT_SIT.jpg",
+      "IMG_MED_007.jpg",
+      "IMG_CAT_LIFE.jpg",
+      "IMG_FLEX_001.jpg",
+      "IMG_CAT_DIET.jpg",
+      "art_0006.jpg",
+      "IMG_CAT_MED.jpg"
+    ],
+    "tirzepatide-side-effects": [
+      "art_0023.jpg",
+      "art_0031.jpg",
+      "IMG_MED_007.jpg",
+      "art_0008.jpg",
+      "IMG_CAT_MED.jpg",
+      "IMG_FLEX_005.jpg",
+      "art_0010.jpg",
+      "IMG_CAT_SIT.jpg",
+      "art_0011.jpg"
+    ],
+    "tirzepatide-tracker": [
+      "art_0005.jpg",
+      "art_0012.jpg",
+      "art_0013.jpg",
+      "IMG_MED_001.jpg",
+      "IMG_CAT_EX.jpg",
+      "art_0015.jpg",
+      "art_0016.jpg",
+      "art_0021.jpg"
+    ],
+    "wegovy-side-effects": [
+      "art_0023.jpg",
+      "art_0031.jpg",
+      "art_0017.jpg",
+      "art_0024.jpg",
+      "IMG_MED_007.jpg",
+      "IMG_CAT_MED.jpg",
+      "IMG_CAT_SIT.jpg",
+      "art_0002.jpg"
+    ],
+    "wegovy-tracker": [
+      "art_0002.jpg",
+      "art_0025.jpg",
+      "IMG_MEAL_007.jpg",
+      "art_0026.jpg",
+      "art_0027.jpg",
+      "art_0028.jpg"
+    ],
+    "weight-loss-tracker-app-glp-1": [
+      "IMG_WT_001.jpg",
+      "IMG_MIND_009.jpg",
+      "IMG_VEG_003.jpg",
+      "art_0078.jpg",
+      "IMG_VEG_005.jpg",
+      "IMG_MIND_010.jpg"
+    ],
+    "weightwatchers-glp-1-alternative": [
+      "IMG_CAT_TRACK.jpg",
+      "IMG_CAT_HYD.jpg",
+      "IMG_CARDIO_003.jpg",
+      "art_0177.jpg",
+      "art_0018.jpg",
+      "IMG_STR_006.jpg",
+      "IMG_MIND_002.jpg",
+      "IMG_TRACK_001.jpg"
+    ],
+    "zepbound-side-effects": [
+      "art_0023.jpg",
+      "art_0031.jpg",
+      "art_0017.jpg",
+      "art_0024.jpg",
+      "IMG_MED_007.jpg",
+      "IMG_CAT_DIET.jpg",
+      "IMG_CAT_SIT.jpg",
+      "IMG_CAT_MED.jpg"
+    ],
+    "zepbound-tracker": [
+      "art_0030.jpg",
+      "IMG_MED_009.jpg",
+      "art_0002.jpg",
+      "IMG_STR_003.jpg",
+      "IMG_MED_005.jpg",
+      "art_0001.jpg",
+      "art_0003.jpg"
+    ]
+  }
+}

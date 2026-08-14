@@ -14,6 +14,7 @@
  */
 
 import raw from '@/data/article-images.json';
+import hubRaw from '@/data/hub-section-images.json';
 
 const S3_ARTICLES = 'https://havit-prod-us-east.s3.us-east-1.amazonaws.com/image/articles/';
 const S3_ACTIONS = 'https://havit-prod-us-east.s3.us-east-1.amazonaws.com/image/actions/image/';
@@ -64,4 +65,19 @@ export function hasArticleImage(slug: string): boolean {
  */
 export function articleImageAlt(title: string): string {
   return title;
+}
+
+/**
+ * 허브 아티클의 섹션별 사진.
+ *
+ * 히어로를 본문 섹션에 다시 쓰면 한 글 안에서 같은 사진이 서너 번 반복된다.
+ * scripts/build-hub-section-images.mjs 가 섹션 제목을 질의로 삼아 히어로와도,
+ * 서로와도 겹치지 않는 사진을 미리 배정해 둔다. 인덱스는 body_md 의 h2 순서.
+ * 배정이 없으면 null — 호출부가 사진을 생략한다(같은 사진 재사용보다 낫다).
+ */
+const HUB_MAP = (hubRaw as { map: Record<string, string[]> }).map;
+
+export function hubSectionImage(slug: string, sectionIndex: number): string | null {
+  const file = HUB_MAP[slug]?.[sectionIndex];
+  return file ? toUrl(file) : null;
 }

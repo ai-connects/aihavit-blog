@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ArticleView from '@/components/ArticleView';
+import HubArticleView from '@/components/HubArticleView';
 import { getArticleBySlug, resolveContent, getAllArticles, PRIMARY_LANGS, isLangIndexable } from '@/lib/articles-v2';
 import { articleImage } from '@/lib/article-images';
 import { toFullLang } from '@/lib/i18n';
@@ -191,35 +192,20 @@ export default function ArticlePage({ params }: Props) {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header lang={fullLang} availableLangs={['en_us', 'ko_kr', 'ja_jp', 'zh_cn', 'zh_tw', 'es_es']} />
+      <Header lang={fullLang} currentSlug={params.slug} availableLangs={['en_us', 'ko_kr', 'ja_jp', 'zh_cn', 'zh_tw', 'es_es']} />
       <main className="flex-1">
-        <div className="border-b" style={{ borderColor: 'var(--hv-border)' }}>
-          <div className="hv-container max-w-3xl py-2.5 flex flex-wrap gap-2 text-sm">
-            <span className="text-body-small mr-1 self-center">{LANG_SWITCHER_LABEL[params.lang as RouteLang]}:</span>
-            {/* SEO: 색인 대상(타겟) 언어만 SSR <a> 링크로 노출한다. 전 언어를 렌더하면
-                Googlebot이 매 타겟 페이지에서 noindex 언어(de/es/fr/id/pt-br/zh) 링크를
-                따라가 ~6,200개 noindex URL을 반복 재크롤하며 크롤 예산을 낭비한다.
-                노출 집합은 lib/i18n.ts 의 INDEXABLE_ROUTE_LANGS(SSOT) → isLangIndexable 을 따른다. */}
-            {ROUTE_LANGS.filter((L) => isLangIndexable(L)).map((L) => (
-              <a
-                key={L}
-                href={`/${L}/${params.slug}`}
-                className={`px-3 py-1 rounded-full transition-colors ${
-                  L === params.lang
-                    ? 'bg-primary-500 text-black font-semibold'
-                    : availability[L]
-                      ? 'bg-gray-100 hover:bg-gray-200 '
-                      : 'opacity-40 line-through pointer-events-none'
-                }`}
-                aria-disabled={!availability[L]}
-              >
-                {LANG_LABELS[L]}
-              </a>
-            ))}
-          </div>
-        </div>
+        {/* 언어 전환 바 제거 — 헤더 우측 🌐 선택기와 완전히 중복이었다.
+            크롤 경로는 잃지 않는다: (a) <head> 의 hreflang alternates 가 그대로이고
+            (b) Header 의 언어 드롭다운을 SSR 에 남겨 <a> 링크가 HTML 에 존재한다. */}
 
-        <ArticleView article={article} content={r.content} shortLang={params.lang} fallback={r.fallback} />
+        {/* GLP-1 SEO 허브 61건은 헤드 키워드를 받는 훑어보기용이라 전용 레이아웃을
+            쓴다(목차 · 짧은 문단 · 카드/스텝 · 섹션 사진). 나머지 1,035건은 기존
+            ArticleView 그대로. 분기는 JSON 의 layout 필드 하나로만 한다. */}
+        {(article as { layout?: string }).layout === 'hub' ? (
+          <HubArticleView article={article} content={r.content} shortLang={params.lang} fallback={r.fallback} />
+        ) : (
+          <ArticleView article={article} content={r.content} shortLang={params.lang} fallback={r.fallback} />
+        )}
       </main>
       <Footer lang={fullLang} />
     </div>

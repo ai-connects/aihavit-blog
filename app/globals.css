@@ -846,3 +846,511 @@
     }
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   GLP-1 SEO 허브 아티클 (components/HubArticleView.tsx)
+
+   기존 ArticleView 는 Tailwind prose 로 마크다운을 흘린다. 허브 61건은 헤드
+   키워드를 받는 훑어보기용이라, 문단을 짧게 끊고 나열을 카드·스텝으로 세우는
+   전용 블록이 필요하다. 토큰(--hv-*)은 기존 것을 그대로 쓴다.
+
+   측정 근거 — 마케팅 사이트 protein-tracker-glp1 대비:
+     레퍼런스 문단 평균 134자 / 300자 초과 7%
+     원고 그대로 204자 / 23%  → lib/hub-body.ts 가 190자 상한으로 쪼갠다
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.hub {
+  --hub-measure: 800px;
+}
+.hub > * {
+  max-width: var(--hub-measure);
+  margin-inline: auto;
+}
+
+.hub-topbar {
+  margin-bottom: 24px;
+}
+.hub-back {
+  font-size: 14px;
+  color: var(--hv-grey-60);
+}
+.hub-back:hover {
+  color: var(--hv-black);
+}
+.hub-fallback {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  font-size: 14px;
+  color: #78350f;
+}
+.hub-badge {
+  margin-bottom: 16px;
+}
+.hub-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin: 0 0 20px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.hub-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.hub-meta__row {
+  font-size: 14px;
+  color: var(--hv-grey-60);
+}
+
+/* 히어로 — 카탈로그 원본이 2048² 정사각이라 그대로 두면 폭만큼 높아진다.
+   ⚠️ 앱 스크린샷에는 쓰지 말 것(화면이 잘린다). 현재 참조 이미지는 전부 사진. */
+.hub-hero {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--hv-grey-3);
+  margin: 0 0 28px;
+}
+
+.hub-quick {
+  background: var(--tint-pale, #f6ffdc);
+  border-radius: 24px;
+  padding: 24px 28px;
+  margin: 20px 0 0;
+}
+.hub-quick__label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #5c6b1a;
+  margin: 0 0 8px;
+}
+.hub-quick__text {
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--hv-grey-80);
+  margin: 0;
+}
+
+/* 목차 — 앵커 점프가 목적이라 2단으로 접어 한눈에 보이게 한다. */
+.hub-toc {
+  background: var(--hv-grey-3);
+  border-radius: 24px;
+  padding: 24px 28px;
+  margin-top: 32px;
+}
+.hub-toc__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 28px;
+  margin-top: 12px;
+}
+.hub-toc__link {
+  position: relative;
+  padding-left: 14px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--hv-grey-80);
+}
+.hub-toc__link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--hv-primary);
+}
+.hub-toc__link:hover {
+  color: var(--hv-black);
+}
+
+.hub-lead {
+  margin-top: 32px;
+}
+.hub-section {
+  margin-top: 56px;
+}
+.hub-section__n {
+  color: #b9c26a;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.hub-h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: -0.6px;
+  margin: 0 0 16px;
+  scroll-margin-top: 96px;
+  word-break: keep-all;
+}
+.hub-h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 32px 0 10px;
+  word-break: keep-all;
+}
+.hub-h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 24px 0 8px;
+}
+.hub-p {
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--hv-grey-80);
+  margin: 0 0 16px;
+}
+.hub-caption {
+  font-size: 14px;
+  font-style: italic;
+  color: #8a8f1f;
+  margin: 0 0 16px;
+}
+.hub-link {
+  color: #5f7a00;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.hub-accent {
+  color: #5f7a00;
+  font-weight: 700;
+}
+
+.hub-quote {
+  margin: 0 0 16px;
+  padding: 18px 22px;
+  border-left: 3px solid var(--hv-primary);
+  border-radius: 0 16px 16px 0;
+  background: var(--hv-grey-3);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--hv-grey-80);
+}
+
+.hub-ul,
+.hub-ol {
+  margin: 0 0 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--hv-grey-80);
+  font-size: 16px;
+  line-height: 1.55;
+}
+.hub-ul {
+  list-style: none;
+}
+.hub-ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.hub-bullet {
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--hv-primary);
+  margin-top: 9px;
+}
+.hub-ol {
+  padding-left: 22px;
+}
+.hub-ol li::marker {
+  color: #8a8f1f;
+  font-weight: 700;
+}
+
+/* 스텝·카드 — 원고의 "**제목** 설명" 목록을 세운다.
+   실측: 번호목록의 51%, 불릿의 16%가 이 꼴이다. */
+.hub-steps {
+  list-style: none;
+  margin: 4px 0 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.hub-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.hub-step__n {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--hv-black);
+  color: var(--hv-primary);
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.hub-step__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 4px 0 2px;
+}
+.hub-step__body {
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--hv-grey-80);
+  margin: 0;
+}
+
+.hub-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 4px 0 20px;
+}
+.hub-card {
+  background: var(--hv-grey-3);
+  border-radius: 16px;
+  padding: 18px 20px;
+}
+.hub-card__title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+.hub-card__body {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--hv-grey-60);
+  margin: 0;
+}
+
+.hub-table-wrap {
+  margin: 4px 0 20px;
+  border-radius: 20px;
+  border: 1px solid #ececec;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.hub-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 560px;
+  font-size: 15px;
+}
+.hub-table th,
+.hub-table td {
+  padding: 14px 18px;
+  text-align: left;
+}
+.hub-table thead th {
+  background: var(--tint-lime, #e5ff96);
+  font-weight: 700;
+  color: #5c6b1a;
+  white-space: nowrap;
+}
+.hub-table tbody tr:nth-child(even) {
+  background: #f7f7f7;
+}
+
+.hub-figure {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--hv-grey-3);
+  margin: 32px 0 0;
+}
+
+.hub-faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hub-faq__item {
+  background: #f2f2f2;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.hub-faq__item > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 20px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.hub-faq__item > summary::-webkit-details-marker {
+  display: none;
+}
+.hub-faq__item[open] > summary .hub-faq__chevron {
+  transform: rotate(180deg);
+}
+.hub-faq__chevron {
+  flex-shrink: 0;
+  color: var(--hv-grey-60);
+  transition: transform 0.25s ease;
+}
+.hub-faq__answer {
+  padding: 0 22px 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--hv-grey-80);
+}
+
+.hub-cta {
+  margin-top: 48px;
+}
+.hub-refs {
+  margin-top: 56px;
+  padding-top: 28px;
+  border-top: 1px solid #ececec;
+}
+.hub-refs__list {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--hv-grey-60);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 860px) {
+  .hub-title {
+    font-size: 30px;
+  }
+  .hub-h2 {
+    font-size: 24px;
+  }
+  .hub-toc__list,
+  .hub-cards {
+    grid-template-columns: 1fr;
+  }
+  .hub-quick,
+  .hub-toc {
+    padding: 20px;
+  }
+}
+
+/* 허브 CTA — 마케팅 사이트(aihavit.com)의 final-cta 와 색·폭을 맞춘다.
+ *
+ * InstallCTA 는 기존 아티클 1,035건과 공유하는 컴포넌트라 손대지 않고
+ * .hub-cta 안에서만 덮어쓴다. 원래 모습과의 차이는 둘:
+ *   - bg-gradient(primary-500→700): 라임에서 올리브로 흐르는 그라디언트라
+ *     브랜드 라임(#d4ff50)과 다른 색으로 읽힌다 → 플랫 라임으로
+ *   - max-w-prose(65ch ≈ 630px): 본문 측정폭(800px)보다 좁아 좌우가 어긋난다
+ *     → 측정폭을 꽉 채우게
+ */
+.hub-cta > div {
+  max-width: none;
+  background: var(--hv-primary);
+  border-radius: 24px;
+  padding: 40px;
+}
+.hub-cta > div > p {
+  max-width: none;
+}
+/* 본문 텍스트는 라임 위에서 회색이면 대비가 뜬다 — 마케팅 사이트처럼 검정 계열. */
+.hub-cta > div > div:first-child,
+.hub-cta > div > p {
+  color: var(--hv-black);
+}
+.hub-cta a {
+  background: var(--hv-black);
+  color: var(--hv-white);
+  border-radius: 999px;
+  padding-inline: 24px;
+}
+
+@media (max-width: 860px) {
+  .hub-cta > div {
+    padding: 28px 24px;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   FINAL CTA — 푸터 위 풀블리드 라임 밴드
+
+   마케팅 사이트(aihavit.com)에는 푸터 바로 위에 이 밴드가 있는데 블로그에는
+   없어서 두 사이트 하단이 달랐다. src/style.css 의 .final-cta 를 그대로 옮겨
+   같은 색·같은 리듬으로 맞춘다. Footer 컴포넌트 안에 넣어 전 페이지에 나온다.
+   ═══════════════════════════════════════════════════════════════════════ */
+.hv-final-cta {
+  background: var(--hv-primary);
+  padding: 100px 0;
+}
+.hv-final-cta__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  max-width: 700px;
+  margin: 0 0 20px;
+  color: var(--hv-black);
+  word-break: keep-all;
+}
+.hv-final-cta__sub {
+  font-size: 17px;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 0 40px;
+  color: var(--hv-grey-100, #2a2a2a);
+}
+.hv-final-cta__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.hv-final-cta__badge {
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hv-final-cta__badge:hover {
+  transform: translateY(-2px);
+}
+.hv-final-cta__badge img {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+.hv-final-cta__disclaimer {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+/* 밴드가 자체 상단 여백을 만드므로 푸터의 margin-top 은 중복이 된다. */
+.hv-final-cta + .hv-footer {
+  margin-top: 0;
+}
+
+@media (max-width: 860px) {
+  .hv-final-cta {
+    padding: 64px 0;
+  }
+  .hv-final-cta__title {
+    font-size: 30px;
+  }
+  .hv-final-cta__badge img {
+    height: 46px;
+  }
+}
