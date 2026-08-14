@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { type LangKey, toShortLang } from '@/lib/i18n';
 import { localizedCategory } from '@/lib/category-labels';
 import { ALL_CATEGORIES } from '@/lib/categories';
+import { FOOTER_LINK_GROUPS } from '@/lib/footer-links';
+import { getArticleBySlug, resolveContent } from '@/lib/articles-v2';
 
 // BLOG_AUTHORITY v1.0.0 (PRD §5.2.3 / §16.2 F-07 옵션 A) — 인라인 i18n.
 // lib/i18n.ts 미변경 (INV-010, P0-#2 회피). 6 lang 자체포함.
@@ -47,6 +49,72 @@ const NOTICE: Record<string, string> = {
 };
 
 const MAIN_SITE = process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://aihavit.com';
+
+/** Column headings for the SEO link clusters (see lib/footer-links.ts). */
+const FOOTER_GROUP_LABELS: Record<string, Record<string, string>> = {
+  glp1Start: {
+    en: 'STARTING GLP-1', ko: 'GLP-1 시작하기', ja: 'GLP-1 をはじめる', zh: '开始使用 GLP-1',
+    'zh-tw': '開始使用 GLP-1', es: 'EMPEZAR CON GLP-1', 'pt-br': 'COMEÇAR COM GLP-1',
+    id: 'MEMULAI GLP-1', de: 'GLP-1 STARTEN', fr: 'DÉBUTER LE GLP-1',
+  },
+  sideEffects: {
+    en: 'SIDE EFFECT GUIDES', ko: '부작용 가이드', ja: '副作用ガイド', zh: '副作用指南',
+    'zh-tw': '副作用指南', es: 'EFECTOS SECUNDARIOS', 'pt-br': 'EFEITOS COLATERAIS',
+    id: 'PANDUAN EFEK SAMPING', de: 'NEBENWIRKUNGEN', fr: 'EFFETS SECONDAIRES',
+  },
+  compare: {
+    en: 'COMPARE MEDICATIONS', ko: '약물 비교', ja: '薬の比較', zh: '药物比较',
+    'zh-tw': '藥物比較', es: 'COMPARAR MEDICAMENTOS', 'pt-br': 'COMPARAR MEDICAMENTOS',
+    id: 'BANDINGKAN OBAT', de: 'MEDIKAMENTE VERGLEICHEN', fr: 'COMPARER LES TRAITEMENTS',
+  },
+  interactions: {
+    en: 'DRUG INTERACTIONS', ko: '병용·상호작용', ja: '併用・相互作用', zh: '联用与相互作用',
+    'zh-tw': '併用與交互作用', es: 'INTERACCIONES', 'pt-br': 'INTERAÇÕES',
+    id: 'INTERAKSI OBAT', de: 'WECHSELWIRKUNGEN', fr: 'INTERACTIONS',
+  },
+  afterGlp1: {
+    en: 'AFTER GLP-1', ko: '중단 후 유지', ja: '中止後の維持', zh: '停药后维持',
+    'zh-tw': '停藥後維持', es: 'DESPUÉS DEL GLP-1', 'pt-br': 'DEPOIS DO GLP-1',
+    id: 'SETELAH GLP-1', de: 'NACH GLP-1', fr: 'APRÈS LE GLP-1',
+  },
+  conditions: {
+    en: 'FOR YOUR SITUATION', ko: '상황별 가이드', ja: '状況別ガイド', zh: '按情况查看',
+    'zh-tw': '依情況查看', es: 'SEGÚN TU CASO', 'pt-br': 'PARA O SEU CASO',
+    id: 'SESUAI KONDISI ANDA', de: 'FÜR IHRE SITUATION', fr: 'SELON VOTRE CAS',
+  },
+};
+
+/**
+ * Trim an article title down to a footer-sized anchor.
+ *
+ * Titles follow a "Hook: long explanation" shape in every language, so cutting
+ * at the first separator yields a natural short label that still carries the
+ * entity (Ozempic, GLP-1, PCOS …) the anchor needs for SEO — without keeping a
+ * hand-written label table in 10 languages.
+ */
+function shortLabel(title: string): string {
+  // Budget is display width, not character count: a CJK glyph occupies about
+  // twice the advance of a Latin one, so a flat 44-char cap renders Korean and
+  // Japanese labels nearly twice as wide as the English ones.
+  const width = (t: string) =>
+    [...t].reduce((n, ch) => n + (/[\u1100-\u115F\u2E80-\uA4CF\uAC00-\uD7A3\uF900-\uFAFF\uFE30-\uFE4F\uFF00-\uFF60]/.test(ch) ? 2 : 1), 0);
+  const MAX = 46;
+
+  for (const sep of [': ', '：', ' — ', ' – ', ' - ', '—', '? ', '？', ', ']) {
+    const i = title.indexOf(sep);
+    if (i > 5) {
+      const head = title.slice(0, i).trim();
+      if (width(head) <= MAX) return head;
+    }
+  }
+  if (width(title) <= MAX) return title;
+  let out = '';
+  for (const ch of title) {
+    if (width(out + ch) > MAX - 1) break;
+    out += ch;
+  }
+  return `${out.trimEnd()}…`;
+}
 
 export default function Footer({ lang }: { lang: LangKey }) {
   const shortLang = toShortLang(lang);
@@ -110,6 +178,38 @@ export default function Footer({ lang }: { lang: LangKey }) {
             <a href={`${MAIN_SITE}/eula.html`}>EULA</a>
             <a href={`${MAIN_SITE}/refund.html`}>Refund Policy</a>
           </div>
+        </div>
+
+        {/* SEO link clusters. Sitewide, so these articles collect internal link
+            equity from every one of the ~10k article URLs. Selection rationale
+            lives in lib/footer-links.ts. */}
+        <div className="hv-footer__seo">
+          {FOOTER_LINK_GROUPS.map((group) => {
+            const links = group.slugs
+              .map((slug) => {
+                const article = getArticleBySlug(slug);
+                if (!article) return null;
+                const r = resolveContent(article, shortLang);
+                if (!r) return null;
+                return { slug, label: shortLabel(r.content.title) };
+              })
+              .filter((x): x is { slug: string; label: string } => x !== null);
+            if (!links.length) return null;
+            return (
+              <div key={group.key} className="hv-footer__col">
+                <p className="eyebrow">
+                  {FOOTER_GROUP_LABELS[group.key]?.[shortLang] ??
+                    FOOTER_GROUP_LABELS[group.key]?.en ??
+                    group.key}
+                </p>
+                {links.map((l) => (
+                  <Link key={l.slug} href={`/${shortLang}/${l.slug}`}>
+                    {l.label}
+                  </Link>
+                ))}
+              </div>
+            );
+          })}
         </div>
 
         {/* BLOG_AUTHORITY v1.0.0 (PRD §5.2.3 / §16.2 F-07 옵션 A / INV-005) —
