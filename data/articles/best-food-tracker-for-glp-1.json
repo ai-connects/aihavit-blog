@@ -1,0 +1,419 @@
+{
+  "article_id": "BLOG_BEST_FOOD_TRACKER_FOR_GLP_1",
+  "slug": "best-food-tracker-for-glp-1",
+  "category": "Tracking & Insights",
+  "category_emoji": "📊",
+  "type": "guide",
+  "layout": "hub",
+  "reading_time_min": 7,
+  "primary_keyword_en": "best food tracker for glp-1",
+  "primary_keyword_ko": "GLP-1 식단 기록 앱",
+  "langs": {
+    "en": {
+      "title": "Best Food Tracker for GLP-1: What Generic Calorie Apps Miss",
+      "meta_description": "Most food trackers count calories. On GLP-1s you need protein, fiber, hydration, and symptom-food patterns. See what a GLP-1 food tracker should do.",
+      "tldr": "The best food tracker for GLP-1 users is one that puts protein, fiber, and hydration ahead of raw calories, and links what you eat to your symptoms and injection day. Generic calorie counters miss all three.",
+      "body_md": "When you start Ozempic, Wegovy, Zepbound, or Mounjaro, your appetite drops fast. That is the point of the drug — but it quietly changes what \"tracking food\" even means. On a GLP-1, eating *less* is easy. Eating *well* while eating less is the hard part, and it is exactly the part that ordinary calorie apps were never built to help with.\n\nThis guide explains why most food trackers fall short for GLP-1 users, what a purpose-built GLP-1 food tracker should measure, and how to log your meals so the data actually protects your muscle and calms your gut. If you are looking for the *meals themselves*, see our companion piece on the [7-day GLP-1 meal plan](#) — this article is about the tracking, not the menu.\n\n## Why generic calorie trackers fall short on GLP-1\n\nApps like MyFitnessPal, Cronometer, and the newer AI photo-loggers (Cal AI and similar) are genuinely good tools. But they were designed around one core assumption: your problem is *eating too much*, so the app's job is to help you eat less. On a GLP-1, the drug already solved that problem. Your new problems are different, and here is where the mismatch shows.\n\n### 1. They are calorie-first, not protein-first\n\nOpen almost any mainstream tracker and the giant number at the top is calories. Protein is a secondary stat, often buried, and in some free tiers macros are set as *percentages* that must add up to 100 rather than as hard gram targets. That framing is backwards for GLP-1 users. When your total intake collapses to 1,000–1,300 kcal a day, hitting a protein floor in grams matters far more than shaving another 100 calories. A tracker that celebrates a low calorie total can quietly reward you for under-eating protein — the single biggest driver of muscle loss on these drugs.\n\n### 2. No dose or injection-day correlation\n\nGLP-1 side effects and appetite are not constant. Nausea and fullness often spike in the day or two after your weekly injection and ease later in the week. Generic trackers have no concept of an \"injection day,\" so they cannot show you the pattern that would let you plan lighter, blander meals right after your shot and push protein on the days you feel best. (MyFitnessPal and MyNetDiary have recently added GLP-1 symptom logging — a real improvement — but the *correlation* view is still thin.)\n\n### 3. No symptom-to-food link\n\nReflux after a fatty dinner, bloating after carbonated drinks, cramping after a big high-fiber jump — these are the daily realities of GLP-1 life. A pure calorie counter records the food and ignores how you felt. Without connecting the two, you keep repeating the meals that make you miserable because nothing surfaces the pattern.\n\n### 4. Fiber and hydration are afterthoughts\n\nConstipation is one of the most common GLP-1 complaints, driven by slowed gut motility *and* a reduced desire to drink. Fiber and water are the two levers that fix it, yet in most trackers fiber is a minor micronutrient and water tracking is an optional widget you have to go hunting for.\n\n### 5. Data-entry friction when you eat almost nothing\n\nIronically, logging gets *harder* when you eat less. Portions are tiny and irregular, you graze instead of eating \"meals,\" and user-submitted food databases are full of mislabeled entries — MyFitnessPal's catalog runs into the tens of millions of foods, but much of it is crowd-sourced and error-prone. Fighting the app to log three bites of chicken is how people quit tracking in week two.\n\n## What a GLP-1 food tracker should actually do\n\nFlip every shortcoming above and you get a spec for a proper GLP-1 food tracker.\n\n- **Protein first, in grams.** A daily protein target front and center, shown as grams remaining, with a nudge when you are behind. Evidence points to roughly **1.0–1.6 g of protein per kg of body weight per day**, split into **25–40 g per meal**, to preserve lean mass during rapid loss.\n- **Fiber and hydration as headline stats,** not buried micros. Target roughly **25–30 g of fiber** and **at least ~2 liters (64 oz) of fluid** a day, adjusted by your clinician.\n- **Injection-day awareness.** Mark your shot day so the app can correlate appetite, symptoms, and intake across the weekly cycle.\n- **Symptom-food correlation.** One-tap logging of nausea, reflux, bloating, or constipation, tied to the meals around it, so patterns surface automatically.\n- **Small-meal and grazing support.** Fast entry for tiny portions and repeat \"usual\" mini-meals, because that is how GLP-1 eating actually looks.\n- **Muscle-protective framing.** Guidance that pairs protein targets with resistance-training reminders, since protein plus strength training is what drives lean-mass loss toward zero.\n\n## Comparison: generic trackers vs. a GLP-1 food tracker\n\nThe takeaway is not that MyFitnessPal or Cronometer are bad — Cronometer in particular has excellent, lab-verified nutrient data and lets you set gram targets for free. It is that their *center of gravity* is the calorie deficit, while a GLP-1 tracker's center of gravity is protein, symptoms, and the weekly dose rhythm.\n\n## Why the numbers matter: muscle is on the line\n\nThis is not a nice-to-have. Body-composition sub-studies of these drugs are sobering. In the STEP 1 DEXA sub-study of semaglutide 2.4 mg, participants lost about **15.3 kg on average, of which roughly 39% registered as lean mass**. Tirzepatide's SURMOUNT-1 sub-study looked somewhat better at around a 75/25 fat-to-lean split. Across trials, **25–45% of the weight lost can come from lean tissue** — unless you intervene.\n\nThe intervention is boring and effective: eat enough protein and lift things. Studies combining GLP-1 therapy with adequate protein and resistance training have pushed muscle loss toward near-zero while preserving strong fat loss. A tracker that keeps protein in your face every day is, functionally, muscle insurance. A tracker that only celebrates a low calorie number is not.\n\n## How to log food on GLP-1: a step-by-step guide\n\nHere is a simple daily logging routine that works even on days you barely want to eat.\n\n### Step 1 — Set gram targets, not just calories\nWith your clinician or dietitian, set a **daily protein floor in grams** (start around 1.0–1.6 g/kg), a **fiber goal (~25–30 g)**, and a **fluid goal (~2 L)**. Enter these as hard targets in your tracker. Calories can be a *ceiling* you rarely reach, not the number you optimize.\n\n### Step 2 — Log protein first, every meal\nBefore anything else, log the protein source and its grams. Aim for **25–40 g per sitting**. If a meal has no real protein, treat that as the signal to fix the meal — not just something to record.\n\n### Step 3 — Mark your injection day\nTag the day you take your shot. Over two or three weeks you will see how appetite and nausea rise right after the dose and recover later — priceless for planning meals.\n\n### Step 4 — Log how you felt, not just what you ate\nAfter meals, tap any symptom: nausea, reflux, bloating, constipation. This is the data generic apps throw away, and it is what lets you retire the meals that hurt.\n\n### Step 5 — Track fiber and water in real time\nLog fluids as you drink and check fiber at each meal. If you are behind on both by mid-afternoon, that is your early-warning system for constipation.\n\n### Step 6 — Review weekly, adjust with your care team\nOnce a week, look at protein consistency, symptom clusters, and the injection-day pattern. Bring the trends — not a food diary of shame — to your clinician or dietitian.\n\n## Where HAVIT fits\n\nHAVIT is built around this GLP-1-first philosophy: protein, fiber, and hydration as headline goals, symptom logging tied to your meals, and coaching that connects your food to how your body is actually responding — not just a calorie score. If generic trackers have left you eating less but feeling worse, a GLP-1-aware tracker is worth a look. Explore how HAVIT approaches [GLP-1 nutrition tracking](#) and decide for yourself.\n\n## Why HAVIT — Medication + Behavior Change, in One App\n\nGLP-1 medications can meaningfully reduce weight — but the number on the scale is only part of the story. Roughly 20–40% of the weight lost on GLP-1 therapy can come from lean (muscle) tissue rather than fat ([Neeland et al., *Diabetes, Obesity and Metabolism*, 2024](https://dom-pubs.onlinelibrary.wiley.com/doi/10.1111/dom.15728)), and results tend to fade once the medication stops unless new habits take their place. That's why leading guidance treats medication as one part of care, not the whole: the U.S. Preventive Services Task Force recommends that adults with obesity be offered intensive, multicomponent behavioral interventions ([USPSTF, Grade B](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/obesity-in-adults-interventions)).\n\nHAVIT is built for exactly this moment — one app that unites medication tracking, body composition, nutrition and protein, daily habit-building, and an AI coach that adapts to you. Across our own 1,090 GLP-1 users, the most consistent trackers built the strongest habits ([see the GLP-1 habit report](/en/glp-1-habit-report)).\n\nManage the medicine and the muscle — together. [Start with HAVIT →](https://aihavit.com)",
+      "comparison_table": {
+        "title": "Comparison: generic trackers vs. a GLP-1 food tracker",
+        "headers": [
+          "Capability",
+          "MyFitnessPal / Cronometer / Cal AI (generic)",
+          "GLP-1 food tracker (e.g., HAVIT)"
+        ],
+        "rows": [
+          [
+            "Primary metric",
+            "Calories in / out",
+            "Protein (grams) first"
+          ],
+          [
+            "Protein target",
+            "Secondary; % of calories in free tiers",
+            "Hard gram target, per-meal split"
+          ],
+          [
+            "Fiber tracking",
+            "Minor micronutrient",
+            "Headline daily goal (25–30 g)"
+          ],
+          [
+            "Hydration",
+            "Optional add-on widget",
+            "Built-in daily fluid goal"
+          ],
+          [
+            "Injection-day view",
+            "None (some now add symptom logs)",
+            "Weekly cycle mapped to shot day"
+          ],
+          [
+            "Symptom ↔ food link",
+            "Not correlated",
+            "One-tap symptom log tied to meals"
+          ],
+          [
+            "Tiny / grazing meals",
+            "Clunky for small portions",
+            "Fast small-meal & repeat entry"
+          ],
+          [
+            "Muscle-loss guidance",
+            "Generic",
+            "Protein + resistance-training nudges"
+          ],
+          [
+            "Best for",
+            "General calorie deficits",
+            "People losing weight on GLP-1s"
+          ]
+        ]
+      },
+      "faq": [
+        {
+          "question": "What is the best food tracker for GLP-1 users?",
+          "answer": "The best one prioritizes protein in grams, tracks fiber and hydration as headline goals, and correlates your symptoms with your injection day and meals. Generic calorie counters like MyFitnessPal and Cronometer can be adapted, but they are calorie-first by design; GLP-1-focused options (including HAVIT and features in MyNetDiary and MyFitnessPal) are closer to purpose-built."
+        },
+        {
+          "question": "Should I still count calories on Ozempic or Wegovy?",
+          "answer": "Calories still matter, but on a GLP-1 the drug usually creates the deficit for you. The bigger risk is under-eating protein and nutrients. Treat calories as a ceiling and make protein, fiber, and hydration your daily targets."
+        },
+        {
+          "question": "How much protein should I log per day on a GLP-1?",
+          "answer": "Guidance commonly lands around 1.0–1.6 g of protein per kg of body weight daily, split into 25–40 g per meal, to protect muscle during rapid weight loss. Confirm your exact number with your clinician or dietitian."
+        },
+        {
+          "question": "What should I log on Ozempic or Wegovy besides food?",
+          "answer": "Log your protein and fiber in grams, your fluid intake, your injection day, and any GI symptoms (nausea, reflux, bloating, constipation) after meals. That combination reveals the patterns that plain calorie tracking hides."
+        },
+        {
+          "question": "Why do I keep losing muscle even though I'm losing weight?",
+          "answer": "Body-composition studies show 25–45% of GLP-1 weight loss can come from lean mass. Under-eating protein and skipping resistance training are the main drivers. Adequate protein plus strength training can cut muscle loss dramatically."
+        },
+        {
+          "question": "How do I track food when I have almost no appetite?",
+          "answer": "Use fast entry for tiny portions and \"repeat usual\" mini-meals, and log protein first even if it is just a few bites. Consistency beats completeness — a rough protein total is far more useful than an abandoned perfect log."
+        },
+        {
+          "question": "Can food tracking help with GLP-1 side effects?",
+          "answer": "Yes. By logging symptoms alongside meals, you can spot triggers — often greasy, fatty, spicy, carbonated, or alcohol-heavy foods — and catch low fiber or fluid days before constipation sets in."
+        },
+        {
+          "question": "Is a GLP-1 food tracker different from a diet tracker?",
+          "answer": "A diet tracker generally optimizes a calorie deficit. A GLP-1 food tracker optimizes protein, symptom comfort, and muscle preservation within a deficit the medication already created. Same act of logging, very different priorities."
+        }
+      ],
+      "references": [
+        {
+          "text": "STEP 1 body-composition (DEXA) findings on semaglutide 2.4 mg and lean-mass loss — Circulation, American Heart Association Journals:",
+          "url": "https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.124.067676"
+        },
+        {
+          "text": "Preservation of lean soft tissue during GLP-1 / GLP-1–GIP–induced weight loss — PMC (National Library of Medicine):",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12536186/"
+        },
+        {
+          "text": "GLP-1 medications and muscle loss: nutrition and protein guidance — Mayo Clinic:",
+          "url": "https://store.mayoclinic.com/education/glp-1-medications-and-muscle-loss-what-to-know-about-nutrition-and-supplements/"
+        },
+        {
+          "text": "Foods and Ozempic side effects (greasy/fatty foods, hydration, fiber) — Cleveland Clinic:",
+          "url": "https://health.clevelandclinic.org/ozempic-foods-to-avoid"
+        },
+        {
+          "text": "What to eat on GLP-1s: protein, fiber, and hydration targets — Culina Health:",
+          "url": "https://culinahealth.com/blog/glp1-what-to-eat/"
+        },
+        {
+          "text": "GLP-1 support and symptom tracking features — MyFitnessPal Help / blog:",
+          "url": "https://blog.myfitnesspal.com/why-tracking-could-still-help-on-glp-1s/"
+        },
+        {
+          "text": "### Related reading"
+        },
+        {
+          "text": "7-Day GLP-1 Meal Plan (High-Protein, Gut-Friendly)"
+        },
+        {
+          "text": "How Much Protein Do You Really Need on Ozempic or Wegovy?"
+        },
+        {
+          "text": "Beating GLP-1 Constipation: Fiber and Hydration Guide"
+        },
+        {
+          "text": "Preventing Muscle Loss on GLP-1: Strength + Nutrition"
+        }
+      ],
+      "last_updated": "2026-07-02"
+    },
+    "ko": {
+      "title": "GLP-1(위고비·마운자로) 식단 기록 앱, 칼로리 앱이 놓치는 것",
+      "meta_description": "칼로리만 세는 앱은 GLP-1에 부족합니다. 위고비·마운자로 사용 중엔 단백질·식이섬유·수분·증상을 기록해야 합니다. 제대로 된 GLP-1 식단 기록 앱 조건.",
+      "tldr": "GLP-1 사용자에게 가장 좋은 식단 기록 앱은 칼로리보다 단백질·식이섬유·수분을 먼저 보여주고, 무엇을 먹었는지를 증상과 주사 맞은 날에 연결해 주는 앱입니다. 일반 칼로리 계산 앱은 이 세 가지를 모두 놓칩니다.",
+      "body_md": "위고비, 오젬픽, 마운자로를 시작하면 식욕이 빠르게 줄어듭니다. 그것이 약의 목적이지만, 동시에 \"식단을 기록한다\"는 말의 의미가 조용히 바뀝니다. GLP-1을 맞으면 *적게* 먹는 것은 쉽습니다. 적게 먹으면서 *잘* 먹는 것이 어려운 부분이고, 바로 그 부분이 일반 칼로리 앱이 도와주도록 설계되지 않은 영역입니다.\n\n이 글에서는 왜 대부분의 식단 앱이 GLP-1 사용자에게 부족한지, 목적에 맞는 GLP-1 식단 기록 앱이 무엇을 측정해야 하는지, 그리고 데이터가 실제로 근육을 지키고 속을 편하게 만들도록 어떻게 기록해야 하는지를 설명합니다. *메뉴 자체*가 궁금하다면 함께 보는 [GLP-1 7일 식단 플랜](/ko/glp-1-diet-7-day-meal-plan)을 참고하세요. 이 글은 메뉴가 아니라 **기록**에 대한 이야기입니다.\n\n## 일반 칼로리 앱이 GLP-1에서 부족한 이유\n\nMyFitnessPal, 크로노미터(Cronometer), 최근의 AI 사진 기록 앱들은 모두 훌륭한 도구입니다. 다만 이들은 하나의 전제 위에 설계되었습니다. \"당신의 문제는 *너무 많이 먹는 것*이고, 앱의 역할은 덜 먹게 돕는 것\"이라는 전제죠. GLP-1에서는 약이 이미 그 문제를 해결해 버립니다. 이제 당신의 문제는 완전히 다르고, 여기서 엇갈림이 드러납니다.\n\n### 1. 칼로리 우선, 단백질은 뒷전\n\n대부분의 앱을 열면 화면 맨 위에 큰 숫자로 뜨는 건 칼로리입니다. 단백질은 보조 지표로 밀려 있고, 무료 버전에서는 탄단지가 합이 100이 되어야 하는 *퍼센트*로만 잡히기도 합니다. GLP-1 사용자에게는 거꾸로 된 구조입니다. 하루 총 섭취량이 1,000~1,300kcal로 줄어들면, 100kcal를 더 깎는 것보다 단백질 **그램**을 채우는 것이 훨씬 중요합니다. 낮은 칼로리 총량을 칭찬하는 앱은 단백질 부족을 조용히 보상해 줄 수 있는데, 단백질 부족이야말로 이 약들에서 근손실의 가장 큰 원인입니다.\n\n### 2. 용량·주사일과의 연관성이 없다\n\nGLP-1의 부작용과 식욕은 일정하지 않습니다. 메스꺼움과 포만감은 보통 주 1회 주사 후 하루 이틀에 몰렸다가 주 후반으로 갈수록 완화됩니다. 일반 앱에는 \"주사 맞은 날\"이라는 개념이 없어서, 주사 직후엔 가볍고 담백한 식사를 두고 컨디션 좋은 날 단백질을 몰아주는 계획을 세울 수 있게 하는 패턴을 보여주지 못합니다.\n\n### 3. 증상과 음식을 연결하지 못한다\n\n기름진 저녁 뒤의 역류, 탄산 뒤의 더부룩함, 갑자기 늘린 고식이섬유 뒤의 복통 — 이것이 GLP-1 생활의 일상입니다. 순수한 칼로리 계산기는 음식만 기록하고 어떻게 느꼈는지는 버립니다. 둘을 잇지 못하면, 무엇 때문에 힘든지 드러나지 않으니 괴로운 식사를 계속 반복하게 됩니다.\n\n### 4. 식이섬유와 수분이 부수적으로 취급된다\n\n변비는 GLP-1의 가장 흔한 불편 중 하나로, 위장 운동이 느려지는 것과 물을 덜 마시게 되는 것이 함께 원인이 됩니다. 이를 푸는 두 지렛대가 식이섬유와 물인데, 대부분의 앱에서 식이섬유는 사소한 미량영양소이고 수분 기록은 따로 찾아 켜야 하는 선택 위젯입니다.\n\n### 5. 거의 안 먹을 때 오히려 기록이 번거롭다\n\n역설적으로 적게 먹을수록 기록은 *더 어려워집니다*. 양은 적고 불규칙하며, \"끼니\"가 아니라 조금씩 집어 먹게 되고, 사용자가 올린 음식 DB에는 잘못된 항목이 넘칩니다. 닭가슴살 세 입을 기록하겠다고 앱과 씨름하다 보면, 사람들은 둘째 주쯤 기록을 그만둡니다.\n\n## 제대로 된 GLP-1 식단 기록 앱이 해야 할 것\n\n위의 단점을 모두 뒤집으면 GLP-1 식단 기록 앱의 사양이 나옵니다.\n\n- **단백질 우선, 그램 단위로.** 하루 단백질 목표를 맨 앞에, 남은 그램으로 보여주고 뒤처지면 알림을 줍니다. 근거는 대체로 하루 **체중 1kg당 단백질 약 1.0~1.6g**, 이를 **끼니당 25~40g**으로 나누어 빠른 감량 중에도 제지방(근육)을 지키는 방향을 가리킵니다.\n- **식이섬유·수분을 대표 지표로.** 묻혀 있는 미량 항목이 아니라, 하루 **식이섬유 약 25~35g**과 **최소 약 2L(8~10컵)의 수분**을 전면에 두고 의료진 지침에 맞춰 조정합니다.\n- **주사일 인식.** 주사 맞은 날을 표시해, 식욕·증상·섭취를 주간 주기에 걸쳐 연결합니다.\n- **증상–음식 연결.** 메스꺼움·역류·더부룩함·변비를 한 번의 탭으로 기록하고 앞뒤 식사와 묶어, 패턴이 자동으로 드러나게 합니다.\n- **소식·조금씩 먹기 지원.** 적은 양과 \"평소 그거\" 미니 식사를 빠르게 입력 — 실제 GLP-1 식사가 그렇게 생겼기 때문입니다.\n- **근육 보호 프레임.** 단백질 목표와 근력운동 리마인더를 함께 제시 — 단백질과 근력운동의 조합이 근손실을 0에 가깝게 줄이기 때문입니다.\n\n## 비교: 일반 앱 vs GLP-1 식단 기록 앱\n\n핵심은 MyFitnessPal이나 크로노미터가 나쁘다는 게 아닙니다. 크로노미터는 실험실 검증 영양 데이터가 뛰어나고 무료로 그램 목표도 설정할 수 있습니다. 문제는 이들의 *무게중심*이 칼로리 적자라는 것이고, GLP-1 앱의 무게중심은 단백질·증상·주간 주사 리듬이라는 점입니다.\n\n## 왜 숫자가 중요한가: 근육이 걸려 있다\n\n이건 있으면 좋은 정도가 아닙니다. 이 약들의 체성분 하위 연구는 냉정합니다. 세마글루타이드 2.4mg의 STEP 1 DEXA 하위 연구에서 참가자는 평균 약 **15.3kg을 감량했고, 그중 약 39%가 제지방으로 측정**되었습니다([Circulation/AHA](https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.124.067676)). 여러 시험을 종합하면, 개입하지 않을 경우 **감량한 체중의 약 25~45%가 제지방 조직**에서 나올 수 있습니다.\n\n개입은 단순하지만 효과적입니다. 단백질을 충분히 먹고, 근력운동을 하는 것. GLP-1 치료에 충분한 단백질과 근력운동을 결합한 사례들에서 근손실은 0에 가깝게 줄면서도 강력한 지방 감소는 유지되었습니다([PMC/NIH 사례 연구](https://pmc.ncbi.nlm.nih.gov/articles/PMC12536186/)). 매일 단백질을 눈앞에 두는 앱은 사실상 근육 보험입니다. 낮은 칼로리 숫자만 칭찬하는 앱은 그렇지 않습니다.\n\n## GLP-1에서 식단 기록하는 법: 단계별 가이드\n\n거의 먹고 싶지 않은 날에도 되는 간단한 하루 기록 루틴입니다.\n\n### 1단계 — 칼로리가 아니라 그램 목표를 정한다\n의사·영양사와 함께 **하루 단백질 하한(그램)**(체중 1kg당 약 1.0~1.6g에서 시작), **식이섬유 목표(약 25~35g)**, **수분 목표(약 2L)**를 정하세요. 이를 앱에 확정 목표로 입력합니다. 칼로리는 최적화할 숫자가 아니라 좀처럼 닿지 않는 *상한선*으로 둡니다.\n\n### 2단계 — 매 끼니 단백질부터 기록한다\n무엇보다 먼저 단백질 급원과 그램을 기록하세요. 한 끼 **25~40g**을 목표로. 단백질이 없는 식사라면 그건 그냥 기록할 일이 아니라 *식사를 고쳐야 한다는 신호*입니다.\n\n### 3단계 — 주사 맞은 날을 표시한다\n주사한 날에 태그를 답니다. 2~3주가 지나면 주사 직후 식욕과 메스꺼움이 오르고 후반에 회복되는 흐름이 보입니다 — 식사 계획에 값을 매길 수 없이 유용합니다.\n\n### 4단계 — 무엇을 먹었는지만이 아니라 어떻게 느꼈는지 기록한다\n식후에 증상을 탭하세요: 메스꺼움, 역류, 더부룩함, 변비. 일반 앱이 버리는 이 데이터가, 나를 힘들게 한 식사를 은퇴시켜 줍니다.\n\n### 5단계 — 식이섬유와 물을 실시간으로 추적한다\n물은 마실 때마다, 식이섬유는 끼니마다 확인하세요. 오후 중반에 둘 다 뒤처져 있다면 그것이 변비의 조기 경보입니다.\n\n### 6단계 — 주 1회 돌아보고 의료진과 조정한다\n일주일에 한 번 단백질 일관성, 증상 군집, 주사일 패턴을 봅니다. \"부끄러운 식단 일기\"가 아니라 *추세*를 들고 의사·영양사에게 가세요.\n\n## HAVIT는 어디에 맞나\n\nHAVIT는 이 GLP-1 우선 철학 위에 만들어졌습니다. 단백질·식이섬유·수분을 대표 목표로, 증상 기록을 식사와 연결하고, 칼로리 점수가 아니라 몸이 실제로 어떻게 반응하는지에 음식을 이어 주는 코칭입니다. 일반 앱 때문에 덜 먹으면서도 더 힘들었다면, GLP-1을 이해하는 [HAVIT의 영양 기록 방식](https://aihavit.com)을 한 번 살펴볼 가치가 있습니다.\n\n## 왜 HAVIT인가 — 약물 관리와 행동 변화를 한 곳에\n\nGLP-1 약물은 체중을 확실히 줄여줍니다. 하지만 체중계 숫자가 전부는 아닙니다. GLP-1로 빠진 체중의 약 20~40%는 지방이 아니라 근육 등 제지방(lean mass)일 수 있고([Neeland 외, *Diabetes, Obesity and Metabolism*, 2024](https://dom-pubs.onlinelibrary.wiley.com/doi/10.1111/dom.15728)), 약을 끊은 뒤 습관이 자리 잡지 못하면 효과는 다시 되돌아가기 쉽습니다. 그래서 주요 지침은 약물을 치료의 전부가 아닌 한 축으로 봅니다. 미국 예방서비스특별위원회(USPSTF)는 비만이 있는 성인에게 집중적·다요소 행동중재를 제공하도록 권고합니다([USPSTF, 권고등급 B](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/obesity-in-adults-interventions)).\n\nHAVIT은 바로 이 시대를 위해 만들어졌습니다. 약물 기록, 체성분, 영양·단백질, 매일의 습관 만들기, 그리고 나에게 맞춰 조언하는 AI 코치까지 한 앱에 담았습니다. 실제 HAVIT의 GLP-1 사용자 1,090명을 분석해 보니, 꾸준히 기록한 사람일수록 더 단단한 습관을 만들었습니다([GLP-1 습관 리포트 보기](/ko/glp-1-habit-report)).\n\n약도, 근육도 함께 관리하세요. [HAVIT 시작하기 →](https://aihavit.com)",
+      "comparison_table": {
+        "title": "비교: 일반 앱 vs GLP-1 식단 기록 앱",
+        "headers": [
+          "기능",
+          "MyFitnessPal · 크로노미터 · AI 사진앱(일반)",
+          "GLP-1 식단 기록 앱(예: HAVIT)"
+        ],
+        "rows": [
+          [
+            "주요 지표",
+            "칼로리 인/아웃",
+            "단백질(그램) 우선"
+          ],
+          [
+            "단백질 목표",
+            "보조 지표, 무료판은 칼로리 %",
+            "그램 목표 + 끼니당 배분"
+          ],
+          [
+            "식이섬유",
+            "사소한 미량영양소",
+            "하루 대표 목표(25~35g)"
+          ],
+          [
+            "수분",
+            "선택 위젯",
+            "기본 내장 수분 목표"
+          ],
+          [
+            "주사일 관점",
+            "없음",
+            "주사일 기준 주간 주기 매핑"
+          ],
+          [
+            "증상↔음식",
+            "연결 안 됨",
+            "원탭 증상 기록을 식사와 연결"
+          ],
+          [
+            "소량·조금씩",
+            "적은 양엔 번거로움",
+            "소식·반복 입력 빠름"
+          ],
+          [
+            "근손실 가이드",
+            "일반적",
+            "단백질+근력운동 넛지"
+          ],
+          [
+            "적합 대상",
+            "일반적 칼로리 적자",
+            "GLP-1로 감량하는 사람"
+          ]
+        ]
+      },
+      "faq": [
+        {
+          "question": "GLP-1 사용자에게 가장 좋은 식단 기록 앱은?",
+          "answer": "단백질을 그램으로 우선하고, 식이섬유·수분을 대표 목표로 추적하며, 증상을 주사일·식사와 연결하는 앱입니다. MyFitnessPal·크로노미터도 맞춰 쓸 수 있지만 본질이 칼로리 우선이며, HAVIT 같은 GLP-1 특화 앱이 목적에 더 가깝습니다."
+        },
+        {
+          "question": "위고비·오젬픽을 맞아도 칼로리를 세야 하나요?",
+          "answer": "칼로리도 중요하지만, GLP-1에서는 대개 약이 적자를 만들어 줍니다. 더 큰 위험은 단백질과 영양의 *부족*입니다. 칼로리는 상한선으로 두고 단백질·식이섬유·수분을 하루 목표로 삼으세요."
+        },
+        {
+          "question": "GLP-1에서 하루 단백질은 얼마나 기록해야 하나요?",
+          "answer": "흔히 하루 체중 1kg당 약 1.0~1.6g, 끼니당 25~40g으로 나누는 것이 권장됩니다. 빠른 감량 중 근육을 지키기 위함입니다. 정확한 목표는 의사·영양사와 확인하세요."
+        },
+        {
+          "question": "음식 외에 위고비·마운자로에서 무엇을 기록하나요?",
+          "answer": "단백질·식이섬유(그램), 수분 섭취, 주사 맞은 날, 그리고 식후 소화기 증상(메스꺼움·역류·더부룩함·변비)입니다. 이 조합이 단순 칼로리 기록이 숨기는 패턴을 드러냅니다."
+        },
+        {
+          "question": "살은 빠지는데 왜 근육이 계속 줄죠?",
+          "answer": "체성분 연구에 따르면 GLP-1 감량의 25~45%가 제지방에서 나올 수 있습니다. 단백질 부족과 근력운동 부재가 주원인입니다. 충분한 단백질과 근력운동이 근손실을 크게 줄여 줍니다."
+        },
+        {
+          "question": "입맛이 거의 없을 때 어떻게 기록하나요?",
+          "answer": "소량 빠른 입력과 \"평소 그거\" 미니 식사를 활용하고, 몇 입이라도 단백질부터 기록하세요. 완벽함보다 꾸준함이 중요합니다 — 대략적인 단백질 합계가 포기한 완벽한 기록보다 훨씬 유용합니다."
+        },
+        {
+          "question": "식단 기록이 GLP-1 부작용에 도움이 되나요?",
+          "answer": "네. 증상을 식사와 함께 기록하면 유발 요인 — 흔히 기름지고 매운 음식, 탄산, 술 — 을 찾을 수 있고, 식이섬유나 수분이 부족한 날을 변비가 오기 전에 잡아냅니다."
+        },
+        {
+          "question": "GLP-1 식단 기록 앱은 일반 다이어트 기록 앱과 다른가요?",
+          "answer": "일반 다이어트 앱은 대체로 칼로리 적자를 최적화합니다. GLP-1 식단 기록 앱은 약이 이미 만든 적자 안에서 단백질·증상 편안함·근육 보존을 최적화합니다. 같은 \"기록\"이지만 우선순위가 완전히 다릅니다."
+        }
+      ],
+      "references": [
+        {
+          "text": "STEP 1 체성분(DEXA)·세마글루타이드 2.4mg 제지방 손실 — Circulation, American Heart Association:",
+          "url": "https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.124.067676"
+        },
+        {
+          "text": "GLP-1 / GLP-1–GIP 감량 중 제지방 보존 사례 연구 — PMC(미국 국립의학도서관):",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12536186/"
+        },
+        {
+          "text": "GLP-1 약물과 근손실: 영양·단백질 가이드 — Mayo Clinic:",
+          "url": "https://store.mayoclinic.com/education/glp-1-medications-and-muscle-loss-what-to-know-about-nutrition-and-supplements/"
+        },
+        {
+          "text": "GLP-1 부작용을 줄이는 음식(기름진 음식·수분·식이섬유) — Cleveland Clinic:",
+          "url": "https://health.clevelandclinic.org/ozempic-foods-to-avoid"
+        },
+        {
+          "text": "GLP-1에서 무엇을 먹을까: 단백질·식이섬유·수분 목표 — Culina Health:",
+          "url": "https://culinahealth.com/blog/glp1-what-to-eat/"
+        },
+        {
+          "text": "위 의학적 진술은 인용한 저널·주요 클리닉 자료를 기준으로 2026년 7월 기준 검증했습니다.*"
+        },
+        {
+          "text": "### 함께 읽기"
+        },
+        {
+          "text": "GLP-1 7일 고단백 식단 플랜(한식 중심, 속 편한 구성)",
+          "url": "https://blog.aihavit.com/ko/glp-1-diet-7-day-meal-plan"
+        },
+        {
+          "text": "GLP-1 단백질 기록, 이렇게 하면 쉽다 — 단백질 추적 가이드",
+          "url": "https://blog.aihavit.com/ko/protein-tracker-for-glp-1"
+        },
+        {
+          "text": "GLP-1 습관 리포트: 매주 데이터로 감량 흐름 읽기",
+          "url": "https://blog.aihavit.com/ko/glp-1-habit-report"
+        },
+        {
+          "text": "GLP-1 부작용 완전 정리: 메스꺼움·변비부터 근손실까지",
+          "url": "https://blog.aihavit.com/ko/glp-1-side-effects"
+        }
+      ],
+      "last_updated": "2026-07-02"
+    },
+    "ja": {
+      "title": "GLP-1(オゼンピック・ウゴービ)向けの食事記録アプリの選び方｜カロリー計算では足りない理由",
+      "meta_description": "GLP-1（ウゴービ・オゼンピック）中の食事記録は、カロリーより「たんぱく質・食物繊維・水分・症状」が重要。専用アプリの選び方と記録のコツを解説します。",
+      "tldr": "GLP-1（ウゴービ・オゼンピック）中の食事記録は、カロリーより「たんぱく質・食物繊維・水分・症状」が重要。専用アプリの選び方と記録のコツを解説します。",
+      "body_md": "**結論から：** GLP-1中に最適な食事記録アプリは、カロリーよりも「たんぱく質・食物繊維・水分」を優先して表示し、食べたものと体調（症状）や注射日を結びつけられるものです。一般的なカロリー計算アプリはこの3点が抜け落ちています。\n\nウゴービ（Wegovy）やオゼンピック、マンジャロなどのGLP-1を始めると、食欲は一気に落ちます。それが薬の狙いなのですが、同時に「食事を記録する意味」そのものが静かに変わります。GLP-1中は「食べる量を減らす」のは簡単です。難しいのは、少ない量のなかで「必要な栄養をきちんと摂る」こと。そして、これこそ従来のカロリーアプリが想定してこなかった課題です。\n\nこの記事では、なぜ多くの食事記録アプリがGLP-1利用者に合わないのか、GLP-1専用の食事記録アプリが備えるべき機能、そして筋肉を守り胃腸を落ち着かせるための記録のコツを解説します。「何を食べればいいか」という献立そのものについては、別記事の[GLP-1向け7日間の食事プラン](#)をご覧ください。ここで扱うのはあくまで「記録（ログ）」の話です。\n\n## 一般的なカロリーアプリがGLP-1に合わない理由\n\nあすけん、カロミル、MyFitnessPal（マイフィットネスパル）といった定番アプリは、優れたツールです。ただし共通する前提は「あなたの問題は食べ過ぎ」であり、アプリの役割は「食べる量を減らす手助け」だということ。GLP-1では、その問題は薬がすでに解決してくれています。新たに直面する課題は別物で、そこにズレが生まれます。\n\n### 1. カロリー中心で、たんぱく質中心ではない\n\n多くのアプリを開くと、一番大きく表示されるのはカロリーです。たんぱく質は二番手扱いで、無料プランではPFCが「割合（％）」で設定され、グラム単位の下限を守りにくいこともあります。GLP-1利用者にとって、この設計は逆です。1日の総摂取量が1,000〜1,300kcal程度まで落ちると、あと100kcal削ることより、たんぱく質を「グラムで」下限まで確保することがはるかに重要になります。カロリーが低いことをほめてくれるアプリは、たんぱく質不足という「筋肉が落ちる最大の原因」を見逃したまま、あなたを安心させてしまいます。\n\n### 2. 注射日との関連づけができない\n\nGLP-1の副作用や食欲は一定ではありません。吐き気や満腹感は、週1回の注射から1〜2日後に強まり、週の後半で和らぐことがよくあります。一般的なアプリには「注射日」という概念がないため、注射直後は消化にやさしい軽めの食事に、体調が良い日にはたんぱく質を厚めに、といった計画に役立つパターンを可視化できません。\n\n### 3. 症状と食べ物が結びつかない\n\n脂っこい夕食のあとの胸やけ、炭酸飲料のあとの膨満感、食物繊維を急に増やしたあとの腹痛。これらはGLP-1生活の日常です。純粋なカロリー計算アプリは、食べたものは記録しても「どう感じたか」は無視します。両者を結びつけないと、つらくなる食事を何度も繰り返してしまいます。\n\n### 4. 食物繊維と水分が「おまけ」扱い\n\n便秘はGLP-1で最も多い悩みの一つで、消化管の動きが遅くなることと、水分を摂りたい気持ちが減ることが重なって起こります。これを防ぐ二大レバーが食物繊維と水分なのに、多くのアプリでは食物繊維は目立たない微量栄養素の一つ、水分記録はわざわざ探しに行くオプション機能です。\n\n### 5. ほとんど食べない日の記録が逆にしんどい\n\n皮肉なことに、食べる量が減るほど記録は「面倒」になります。量は少なく不規則で、「食事」というより「つまむ」感じになり、ユーザー投稿型の食品データベースには誤った登録も多い。鶏肉を数口記録するためにアプリと格闘しているうちに、多くの人が2週目で挫折します。\n\n## GLP-1向け食事記録アプリに必要な機能\n\n上の弱点をすべて裏返すと、あるべき仕様が見えてきます。\n\n- **たんぱく質を最優先、グラムで表示。** 1日のたんぱく質目標を最上部に置き、「あと何グラム」を示し、不足時に通知する。目安は**体重1kgあたり1.0〜1.6gのたんぱく質**を、**1食あたり25〜40g**に分けて摂ること。\n- **食物繊維と水分を主役の指標に。** 微量栄養素に埋もれさせず、**食物繊維は約25〜30g**、**水分は1日約2L（64オンス）以上**を目安に（数値は主治医と調整）。\n- **注射日を意識した設計。** 注射日を記録し、週のサイクルのなかで食欲・症状・摂取量を関連づける。\n- **症状と食べ物の関連づけ。** 吐き気・胸やけ・膨満感・便秘をワンタップで記録し、前後の食事と紐づけてパターンを自動で浮かび上がらせる。\n- **少量・間食スタイルへの対応。** 少量の素早い入力や「いつもの」ミニ食の繰り返し登録。これがGLP-1の実際の食べ方だから。\n- **筋肉を守る視点。** たんぱく質目標と筋トレのリマインドをセットにする。たんぱく質＋レジスタンス運動こそ、筋肉量の減少をゼロに近づける方法だから。\n\n## 比較表：一般アプリ vs GLP-1向け食事記録アプリ\n\n誤解のないように言うと、あすけんやMyFitnessPalが悪いわけではありません（海外のCronometerは研究に基づく高精度な栄養データを無料でグラム設定できます）。問題は、それらの「重心」がカロリー収支にある一方で、GLP-1向けアプリの重心は「たんぱく質・症状・週次の投与リズム」にある、という点です。\n\n## 数字が示す現実：失われるのは筋肉\n\nこれは「あれば嬉しい」機能ではありません。GLP-1薬の体組成に関するサブ試験は厳しい現実を示しています。セマグルチド2.4mgのSTEP 1のDEXAサブ試験では、参加者は**平均で約15.3kg減量し、そのうち約39%が除脂肪量（≒筋肉）**でした。チルゼパチドのSURMOUNT-1サブ試験はやや良好で、脂肪と除脂肪の比率はおよそ75対25。各試験を通じて、**減った体重の25〜45%が除脂肪組織から**という結果が出ています——対策をしなければ、です。\n\n対策は地味ですが効果的です。「十分なたんぱく質を摂り、筋トレをする」。GLP-1治療に十分なたんぱく質とレジスタンス運動を組み合わせた研究では、脂肪はしっかり落としつつ筋肉の減少をほぼゼロ近くまで抑えられています。毎日たんぱく質を目の前に出し続けるアプリは、いわば「筋肉の保険」です。低いカロリーだけをほめるアプリは、そうではありません。\n\n## GLP-1中の食事記録のやり方（ステップ解説）\n\n食欲がほとんどない日でも回る、シンプルな1日の記録ルーティンです。\n\n### ステップ1：カロリーではなくグラムで目標を決める\n主治医や管理栄養士と、**1日のたんぱく質の下限（目安は体重1kgあたり1.0〜1.6g）**、**食物繊維（約25〜30g）**、**水分（約2L）**を決め、アプリに「グラム／リットル」の目標として登録します。カロリーは最適化する数字ではなく、めったに超えない「上限」として扱います。\n\n### ステップ2：毎食、まずたんぱく質を記録\n何より先に、たんぱく質源とそのグラム数を記録します。目安は**1食25〜40g**。たんぱく質がほぼない食事なら、それは「記録すべきこと」ではなく「食事を直す合図」です。\n\n### ステップ3：注射日を記録する\n注射をした日にタグを付けます。2〜3週間続けると、注射直後に食欲や吐き気が上がり、後半で回復する流れが見えてきます。献立計画に非常に役立ちます。\n\n### ステップ4：食べたものだけでなく「体調」も記録\n食後に、吐き気・胸やけ・膨満感・便秘などの症状をタップします。これは一般アプリが捨てているデータであり、つらくなる食事を「引退」させるための鍵です。\n\n### ステップ5：食物繊維と水分をリアルタイムで\n飲んだらすぐ水分を記録し、各食事で食物繊維を確認します。午後の時点で両方が足りていなければ、それが便秘の早期警報です。\n\n### ステップ6：週1回ふり返り、専門家と調整\n週に一度、たんぱく質の安定度・症状のかたまり・注射日のパターンを見ます。「反省の食事日記」ではなく「傾向」を主治医や管理栄養士に持っていきましょう。\n\n## HAVITの位置づけ\n\nHAVITは、このGLP-1ファーストの考え方を軸に作られています。たんぱく質・食物繊維・水分を主役の目標に据え、症状記録を食事と結びつけ、単なるカロリー点数ではなく「体が実際にどう反応しているか」に食事をつなげるコーチングを提供します。一般的なアプリで「食べる量は減ったのに体調は悪い」と感じているなら、GLP-1に対応した記録アプリを試す価値があります。HAVITの[GLP-1向け食事記録](#)の考え方をぜひご覧ください。\n\n## よくある質問（FAQ）\n\n**1. GLP-1利用者に最適な食事記録アプリは？**\nたんぱく質をグラムで最優先し、食物繊維と水分を主役の目標として記録し、症状を注射日や食事と関連づけられるものです。あすけんやMyFitnessPalも工夫すれば使えますが、設計上はカロリー中心。GLP-1に特化した選択肢（HAVITなど）の方が目的に近いです。\n\n**2. オゼンピックやウゴービ中もカロリー計算は必要？**\nカロリーも大切ですが、GLP-1では薬が不足（赤字）を作ってくれます。より大きなリスクはたんぱく質や栄養の摂り不足です。カロリーは「上限」とし、たんぱく質・食物繊維・水分を毎日の目標にしましょう。\n\n**3. GLP-1中は1日どれくらいのたんぱく質を記録すべき？**\n一般的な目安は体重1kgあたり1.0〜1.6g／日で、1食25〜40gに分けて摂ることです。急な減量中の筋肉を守るためです。正確な数値は主治医や管理栄養士に確認を。\n\n**4. オゼンピックやウゴービで、食べ物以外に何を記録すべき？**\nたんぱく質と食物繊維（グラム）、水分量、注射日、そして食後の消化器症状（吐き気・胸やけ・膨満感・便秘）です。この組み合わせが、カロリー記録では見えないパターンを明らかにします。\n\n**5. 体重は減っているのに、なぜ筋肉が落ちる？**\n体組成の研究では、GLP-1の減量の25〜45%が除脂肪量（筋肉）からという結果があります。たんぱく質不足と筋トレ不足が主因です。十分なたんぱく質＋筋トレで大きく抑えられます。\n\n**6. 食欲がほとんどない日はどう記録する？**\n少量の素早い入力や「いつもの」ミニ食の繰り返し登録を使い、たとえ数口でも「まずたんぱく質」を記録します。完璧さより継続。ざっくりしたたんぱく質合計でも、記録を放棄するよりはるかに有用です。\n\n**7. 食事記録はGLP-1の副作用対策になる？**\nなります。症状を食事と一緒に記録すると、脂っこいもの・辛いもの・炭酸・アルコールなどの引き金を特定でき、食物繊維や水分が不足した日を便秘になる前に察知できます。\n\n**8. GLP-1向け食事記録アプリは、普通のダイエット記録アプリと何が違う？**\nダイエット記録アプリは主にカロリーの赤字を最適化します。GLP-1向けアプリは、薬がすでに作った赤字のなかで「たんぱく質・症状の快適さ・筋肉の維持」を最適化します。記録という行為は同じでも、優先順位がまったく違います。\n\n## なぜHAVITなのか — 薬の管理と行動変容をひとつに\n\nGLP-1薬は体重をしっかり減らしてくれます。ただ、体重計の数字だけがすべてではありません。GLP-1で減った体重のおよそ20〜40%は、脂肪ではなく筋肉などの除脂肪量である可能性があり([Neeland他, *Diabetes, Obesity and Metabolism*, 2024](https://dom-pubs.onlinelibrary.wiley.com/doi/10.1111/dom.15728))、薬をやめた後に習慣が根づいていなければ、効果は戻りやすいこともわかっています。だからこそ主要なガイドラインは、薬を治療の「すべて」ではなく「一部」と位置づけます。米国予防医学専門委員会(USPSTF)は、肥満のある成人に集中的で多面的な行動介入を提供するよう推奨しています([USPSTF, グレードB](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/obesity-in-adults-interventions))。\n\nHAVITは、まさにこの時代のために作られました。服薬の記録、体組成、栄養とたんぱく質、毎日の習慣づくり、そしてあなたに合わせて助言するAIコーチを、ひとつのアプリに。実際にHAVITのGLP-1ユーザー1,090人を分析したところ、記録を続けた人ほど強い習慣を築いていました([GLP-1習慣レポートを見る](/ja/glp-1-habit-report))。\n\n薬も、筋肉も、いっしょに。[HAVITを始める →](https://aihavit.com)\n\n## 参考文献\n\n- セマグルチド2.4mgのSTEP 1体組成（DEXA）結果と除脂肪量の減少 — Circulation（米国心臓協会ジャーナル）：https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.124.067676\n- GLP-1／GLP-1・GIP作動薬による減量時の除脂肪組織の維持 — PMC（米国国立医学図書館）：https://pmc.ncbi.nlm.nih.gov/articles/PMC12536186/\n- GLP-1薬と筋肉減少：栄養とたんぱく質のガイダンス — Mayo Clinic：https://store.mayoclinic.com/education/glp-1-medications-and-muscle-loss-what-to-know-about-nutrition-and-supplements/\n- 食べ物とオゼンピックの副作用（脂っこい食事・水分・食物繊維） — Cleveland Clinic：https://health.clevelandclinic.org/ozempic-foods-to-avoid\n- GLP-1中に食べるもの：たんぱく質・食物繊維・水分の目標 — Culina Health：https://culinahealth.com/blog/glp1-what-to-eat/\n- 日本におけるウゴービ（セマグルチド）の承認・保険適用の概要 — カラダ内科クリニック：https://karada-naika.com/medical/weight-management/\n\n---\n\n### 関連記事\n- [GLP-1向け7日間の食事プラン（高たんぱく・胃腸にやさしい）](#)\n- [オゼンピック・ウゴービ中に本当に必要なたんぱく質量とは](#)\n- [GLP-1の便秘対策：食物繊維と水分ガイド](#)\n- [GLP-1中の筋肉減少を防ぐ：筋トレ×栄養](#)",
+      "comparison_table": {
+        "title": "比較表：一般アプリ vs GLP-1向け食事記録アプリ",
+        "headers": [
+          "機能",
+          "一般アプリ（あすけん・カロミル・MyFitnessPal等）",
+          "GLP-1向けアプリ（例：HAVIT）"
+        ],
+        "rows": [
+          [
+            "主要指標",
+            "カロリー収支",
+            "たんぱく質（グラム）を最優先"
+          ],
+          [
+            "たんぱく質目標",
+            "二番手／無料版はカロリーの％",
+            "グラムの下限・1食ごとの配分"
+          ],
+          [
+            "食物繊維",
+            "目立たない微量栄養素",
+            "1日の主要目標（25〜30g）"
+          ],
+          [
+            "水分",
+            "追加ウィジェット扱い",
+            "標準搭載の1日目標"
+          ],
+          [
+            "注射日ビュー",
+            "なし（症状記録の追加は一部あり）",
+            "週サイクルを注射日に対応"
+          ],
+          [
+            "症状↔食べ物の連携",
+            "関連づけなし",
+            "ワンタップ症状記録を食事と連携"
+          ],
+          [
+            "少量・間食の記録",
+            "少量だと入力が煩雑",
+            "少量・繰り返し入力が高速"
+          ],
+          [
+            "筋肉減少への配慮",
+            "一般的",
+            "たんぱく質＋筋トレの通知"
+          ],
+          [
+            "向いている人",
+            "一般的なカロリー制限",
+            "GLP-1で減量中の人"
+          ]
+        ]
+      },
+      "faq": [],
+      "references": [],
+      "last_updated": "2026-07-02"
+    },
+    "zh-TW": {
+      "title": "GLP-1 飲食記錄 App：一般卡路里 App 漏掉了什麼",
+      "meta_description": "只算卡路里的 App 對打瘦瘦針的人不夠用。用週纖達、猛健樂時要記錄蛋白質、纖維、水分與症狀。看看真正的 GLP-1 飲食記錄 App 該具備什麼。",
+      "tldr": "對打瘦瘦針（GLP-1）的人來說，最好的飲食記錄 App 會把蛋白質、纖維、水分放在卡路里之前，並把你吃了什麼連結到症狀與打針日。一般的卡路里計算 App，這三件事全都漏掉了。",
+      "body_md": "開始打週纖達、胰妥讚或猛健樂後，食慾會快速下降。這正是藥物的目的——但它也悄悄改變了「記錄飲食」的意義。打了 GLP-1，*吃得少*很容易；難的是吃得少的同時*吃得好*，而這正是一般卡路里 App 從來不是為此設計的部分。\n\n這篇文章會說明：為什麼多數飲食 App 對 GLP-1 使用者不夠用、專為 GLP-1 打造的飲食記錄 App 該測量什麼，以及該怎麼記錄，才能讓資料真正保護肌肉、安撫腸胃。若你想找的是*菜單本身*，請參考搭配閱讀的[GLP-1 飲食 7 天菜單](/zh-tw/glp-1-diet-7-day-meal-plan)。這篇談的是**記錄**，不是菜單。\n\n## 為什麼一般卡路里 App 對 GLP-1 不夠用\n\nMyFitnessPal、Cronometer，以及近期的 AI 拍照記錄 App，都是很好的工具。但它們都建立在一個前提上：「你的問題是*吃太多*，所以 App 的任務是幫你少吃。」在 GLP-1 上，藥物已經解決了那個問題。你現在的問題完全不同，落差就從這裡浮現。\n\n### 1. 卡路里優先，蛋白質其次\n\n打開幾乎任何主流 App，最上方的大數字都是卡路里。蛋白質是次要指標，常被埋起來，免費版甚至把三大營養素設成必須加總為 100 的*百分比*，而非以克為單位的硬目標。對 GLP-1 使用者這是本末倒置。當一天總攝取降到 1,000～1,300 大卡，達到蛋白質的**克數**下限，遠比再省 100 大卡重要。一個為「低卡路里總量」鼓掌的 App，可能在悄悄獎勵你蛋白質吃不夠——而蛋白質不足正是這類藥物造成肌肉流失的最大原因。\n\n### 2. 沒有和劑量、打針日的關聯\n\nGLP-1 的副作用與食慾並非恆定。噁心與飽脹感通常在每週注射後一兩天達到高峰，週後段逐漸緩和。一般 App 沒有「打針日」的概念，因此無法呈現那個能讓你在打針後安排清淡飲食、在狀況最好的日子補足蛋白質的模式。\n\n### 3. 無法把症狀連到食物\n\n吃了油膩晚餐後的胃食道逆流、喝碳酸飲料後的脹氣、突然大量增加纖維後的絞痛——這些都是 GLP-1 生活的日常。純卡路里計算器只記食物，卻丟掉你的感受。少了兩者的連結，你會一再重複讓自己難受的餐點，因為沒有東西把模式浮現出來。\n\n### 4. 纖維與水分被當成附屬品\n\n便祕是 GLP-1 最常見的不適之一，成因是腸胃蠕動變慢*加上*不想喝水。纖維與水是兩大解方，但在多數 App 裡，纖維是不起眼的微量營養素，水分記錄則是要自己去翻找、開啟的選用小工具。\n\n### 5. 吃得極少時，記錄反而更麻煩\n\n矛盾的是，吃得越少，記錄*越難*。份量小又不規則，你是「一點一點吃」而非吃「一餐」，而使用者上傳的食物資料庫充滿標錯的項目。為了記三口雞胸肉還得跟 App 搏鬥，很多人就是這樣在第二週放棄記錄的。\n\n## 真正的 GLP-1 飲食記錄 App 該做到什麼\n\n把上面每個缺點反過來，就是 GLP-1 飲食記錄 App 的規格。\n\n- **蛋白質優先，以克計。** 每日蛋白質目標放在最前，以「還差幾克」呈現，落後時提醒。證據大致指向每天**每公斤體重約 1.0～1.6 克蛋白質**，分成**每餐 25～40 克**，在快速減重期保住淨體重（肌肉）。\n- **纖維與水分是主要指標，** 而非被埋的微量項。每天約 **25～35 克纖維**與**至少約 2 公升（8～10 杯）水分**，並依醫療團隊指示調整。\n- **打針日感知。** 標記注射日，讓 App 能把食慾、症狀與攝取在每週週期中串起來。\n- **症狀—食物連結。** 一鍵記錄噁心、逆流、脹氣、便祕，並綁定前後餐點，讓模式自動浮現。\n- **少量、少量多餐支援。** 快速輸入小份量與「照舊那份」的迷你餐——因為真實的 GLP-1 飲食就是這樣。\n- **護肌思維。** 把蛋白質目標與阻力訓練提醒並列——因為蛋白質加重訓，才能把肌肉流失壓到接近零。\n\n## 比較：一般 App vs GLP-1 飲食記錄 App\n\n重點不是 MyFitnessPal 或 Cronometer 不好——Cronometer 的實驗室驗證營養數據尤其優秀，還能免費設定克數目標。重點在於它們的*重心*是熱量赤字，而 GLP-1 App 的重心是蛋白質、症狀與每週的注射節奏。\n\n## 為什麼數字重要：賭上的是肌肉\n\n這不是「有更好、沒有也行」。這些藥物的身體組成子研究相當嚴峻。在司美格魯肽 2.4mg 的 STEP 1 DEXA 子研究中，受試者平均減去約 **15.3 公斤，其中約 39% 被判定為淨體重（肌肉）**流失（[Circulation／AHA](https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.124.067676)）。綜合多項試驗，若不加以介入，**所減體重的約 25～45% 可能來自淨組織**。\n\n介入方式很無趣但有效：吃夠蛋白質、做重量訓練。把 GLP-1 治療與充足蛋白質及阻力訓練結合的案例中，肌肉流失被壓到接近零，同時仍維持強勁的脂肪減少（[PMC／NIH 案例研究](https://pmc.ncbi.nlm.nih.gov/articles/PMC12536186/)）。每天把蛋白質擺在你眼前的 App，實質上就是肌肉的保險。只為低卡路里數字鼓掌的 App，則不是。\n\n## 如何在 GLP-1 上記錄飲食：逐步指南\n\n即使在幾乎不想吃的日子，也行得通的簡單每日記錄流程。\n\n### 步驟 1 — 設定克數目標，而非只有卡路里\n與醫師或營養師一起，設定**每日蛋白質下限（克）**（從每公斤 1.0～1.6 克起步）、**纖維目標（約 25～35 克）**與**水分目標（約 2 公升）**。把這些以硬目標輸入 App。卡路里當作你很少碰到的*上限*，而不是要去最佳化的數字。\n\n### 步驟 2 — 每餐先記蛋白質\n在其他之前，先記下蛋白質來源與克數。每餐目標 **25～40 克**。若一餐沒有像樣的蛋白質，那不只是要記錄的事，而是*該修正這一餐*的訊號。\n\n### 步驟 3 — 標記打針日\n為注射當天加上標籤。兩三週後，你會看到食慾與噁心在打針後升高、後段回復——對安排餐點來說無價。\n\n### 步驟 4 — 不只記吃了什麼，也記你的感受\n餐後點一下症狀：噁心、逆流、脹氣、便祕。這正是一般 App 丟掉的資料，也是讓你淘汰「吃了會難受」餐點的關鍵。\n\n### 步驟 5 — 即時追蹤纖維與水分\n喝水就記、每餐檢查纖維。若到了下午兩者都落後，那就是便祕的早期警報。\n\n### 步驟 6 — 每週回顧，與醫療團隊調整\n每週看一次蛋白質的穩定度、症狀群集與打針日模式。帶著*趨勢*（而不是充滿罪惡感的飲食日記）去找你的醫師或營養師。\n\n## HAVIT 的定位\n\nHAVIT 就建立在這套 GLP-1 優先的理念上：把蛋白質、纖維、水分作為主要目標，把症狀記錄綁定到餐點，並用能把食物連到身體真實反應（而非只有卡路里分數）的教練式陪伴。如果一般 App 讓你吃更少卻更不舒服，值得看看理解 GLP-1 的 [HAVIT 營養記錄方式](https://aihavit.com)。\n\n## 常見問題\n\n**1. 對 GLP-1 使用者，最好的飲食記錄 App 是哪種？**\n以克數優先蛋白質、把纖維與水分作為主要目標追蹤，並將症狀連到打針日與餐點的 App。MyFitnessPal、Cronometer 也能調整使用，但本質是卡路里優先；像 HAVIT 這類 GLP-1 專用 App 更貼近用途。\n\n**2. 打週纖達、胰妥讚還要算卡路里嗎？**\n卡路里仍重要，但在 GLP-1 上通常是藥物幫你製造赤字。更大的風險是蛋白質與營養*不足*。把卡路里當上限，讓蛋白質、纖維、水分成為每日目標。\n\n**3. 在 GLP-1 上，每天該記多少蛋白質？**\n常見建議是每天每公斤體重約 1.0～1.6 克，分成每餐 25～40 克，以在快速減重期保護肌肉。確切數字請與你的醫療團隊確認。\n\n**4. 除了食物，打瘦瘦針還要記什麼？**\n蛋白質與纖維（克）、水分攝取、打針日，以及餐後腸胃症狀（噁心、逆流、脹氣、便祕）。這個組合能揭露純卡路里記錄所隱藏的模式。\n\n**5. 明明在瘦，為什麼肌肉一直掉？**\n身體組成研究顯示，GLP-1 減重的 25～45% 可能來自淨體重。蛋白質不足與沒做阻力訓練是主因。充足蛋白質加重量訓練能大幅降低肌肉流失。\n\n**6. 幾乎沒食慾時要怎麼記？**\n善用小份量快速輸入與「照舊」迷你餐，即使只有幾口也先記蛋白質。穩定勝過完整——一個粗略的蛋白質總量，遠比放棄的完美紀錄有用。\n\n**7. 記錄飲食能幫助處理 GLP-1 副作用嗎？**\n可以。把症狀與餐點一起記，就能找出誘因——常是油膩、辛辣、碳酸與含酒精的食物——並在便祕發生前抓到纖維或水分不足的日子。\n\n**8. GLP-1 飲食記錄 App 和一般減重記錄 App 不同嗎？**\n一般 App 多在最佳化熱量赤字；GLP-1 App 則在藥物已製造的赤字裡，最佳化蛋白質、症狀舒適度與肌肉保存。同樣是「記錄」，優先順序完全不同。\n\n## 為什麼選 HAVIT — 藥物管理與行為改變，一站完成\n\nGLP-1 藥物確實能有效減重，但體重計上的數字並非全部。研究指出，使用 GLP-1 減掉的體重中，約有 20〜40% 可能來自肌肉等「淨體重（lean mass）」，而非脂肪（[Neeland 等人，*Diabetes, Obesity and Metabolism*，2024](https://dom-pubs.onlinelibrary.wiley.com/doi/10.1111/dom.15728)）；一旦停藥，若沒有養成新的生活習慣，成果往往容易反彈。正因如此，主流指引都把藥物視為治療的一環，而非全部：美國預防服務工作小組（USPSTF）建議，為肥胖成人提供密集、多面向的行為介入（[USPSTF，B 級建議](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/obesity-in-adults-interventions)）。\n\nHAVIT 正是為這個時代而生——把用藥紀錄、體組成、營養與蛋白質、每日習慣養成，以及能因人調整的 AI 教練，全部整合在同一個 App。我們分析自家 1,090 位 GLP-1 使用者後發現：紀錄越持續的人，習慣也養得越扎實（[查看 GLP-1 習慣報告](/zh-tw/glp-1-habit-report)）。\n\n管好藥物，也守住肌肉。[立即開始使用 HAVIT →](https://aihavit.com)\n\n## 參考文獻\n\n- STEP 1 身體組成（DEXA）·司美格魯肽 2.4mg 淨體重流失 — Circulation, American Heart Association：https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.124.067676\n- GLP-1／GLP-1–GIP 減重期淨組織保存案例研究 — PMC（美國國家醫學圖書館）：https://pmc.ncbi.nlm.nih.gov/articles/PMC12536186/\n- GLP-1 藥物與肌肉流失：營養與蛋白質指引 — Mayo Clinic：https://store.mayoclinic.com/education/glp-1-medications-and-muscle-loss-what-to-know-about-nutrition-and-supplements/\n- 減少 GLP-1 副作用的食物（油膩食物·水分·纖維）— Cleveland Clinic：https://health.clevelandclinic.org/ozempic-foods-to-avoid\n- 在 GLP-1 上該吃什麼：蛋白質·纖維·水分目標 — Culina Health：https://culinahealth.com/blog/glp1-what-to-eat/\n\n*以上醫療陳述已依所引期刊與主要醫療機構資料，於 2026 年 7 月核實。*\n\n---\n\n### 延伸閱讀\n- [GLP-1 飲食 7 天高蛋白菜單（台式家常、腸胃友善）](/zh-tw/glp-1-diet-7-day-meal-plan)\n- [GLP-1 蛋白質記錄輕鬆做——蛋白質追蹤指南](/zh-tw/protein-tracker-for-glp-1)\n- [GLP-1 習慣週報：用每週數據看懂你的減重趨勢](/zh-tw/glp-1-habit-report)\n- [GLP-1 副作用完整整理：從噁心、便祕到肌肉流失](/zh-tw/glp-1-side-effects)",
+      "comparison_table": {
+        "title": "比較：一般 App vs GLP-1 飲食記錄 App",
+        "headers": [
+          "功能",
+          "MyFitnessPal · Cronometer · AI 拍照 App（一般）",
+          "GLP-1 飲食記錄 App（例：HAVIT）"
+        ],
+        "rows": [
+          [
+            "主要指標",
+            "卡路里進／出",
+            "蛋白質（克）優先"
+          ],
+          [
+            "蛋白質目標",
+            "次要；免費版為卡路里 %",
+            "克數目標＋每餐分配"
+          ],
+          [
+            "纖維追蹤",
+            "不起眼的微量營養素",
+            "每日主要目標（25～35 克）"
+          ],
+          [
+            "水分",
+            "選用小工具",
+            "內建每日水分目標"
+          ],
+          [
+            "打針日視角",
+            "無",
+            "以打針日對映每週週期"
+          ],
+          [
+            "症狀↔食物",
+            "未連結",
+            "一鍵症狀記錄綁定餐點"
+          ],
+          [
+            "少量／少量多餐",
+            "小份量操作繁瑣",
+            "少量與重複輸入快速"
+          ],
+          [
+            "肌肉流失指引",
+            "一般性",
+            "蛋白質＋重訓提醒"
+          ],
+          [
+            "適合對象",
+            "一般熱量赤字",
+            "用 GLP-1 減重的人"
+          ]
+        ]
+      },
+      "faq": [],
+      "references": [],
+      "last_updated": "2026-07-02"
+    }
+  },
+  "generated_at": "2026-08-14T00:00:00.000Z"
+}

@@ -99,9 +99,12 @@ export default function Header({ lang, currentSlug, currentCategorySlug }: Props
               <span aria-hidden>🌐</span>
               <span className="ml-1.5 hidden lg:inline text-sm">{currentNative(shortLang)}</span>
             </button>
-            {open && (
+            {/* 닫혔을 때도 DOM 에 남긴다(hidden). 조건부 렌더면 SSR HTML 에 언어 링크가
+                아예 없어서, 아티클 페이지의 언어 바를 걷어낸 뒤 크롤러가 다른 언어판으로
+                갈 앵커가 사라진다. hreflang 과 이 링크 둘 다 있는 편이 안전하다. */}
+            {(
               <div
-                className="absolute right-0 mt-2 w-56 max-h-[60vh] overflow-y-auto rounded-2xl border shadow-lg p-1.5 z-50"
+                className={`absolute right-0 mt-2 w-56 max-h-[60vh] overflow-y-auto rounded-2xl border shadow-lg p-1.5 z-50 ${open ? '' : 'hidden'}`}
                 style={{ background: 'var(--hv-surface)', borderColor: 'var(--hv-border)' }}
                 role="listbox"
               >

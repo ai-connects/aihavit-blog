@@ -462,5 +462,61 @@
   {
     "from": "potassium-sodium-ratio-blood-pressure-optimization-2026",
     "to": "sodium-potassium-ratio-blood-pressure-balance-2026"
+  },
+  {
+    "from": "glp-1-nausea",
+    "to": "glp1-nausea-management-evidence-based-strategies-2026"
+  },
+  {
+    "from": "glp-1-nausea-food-guide",
+    "to": "glp1-nausea-management-evidence-based-strategies-2026"
+  },
+  {
+    "from": "glp-1-constipation",
+    "to": "glp1-constipation-management-fiber-hydration-protocol-2026"
+  },
+  {
+    "from": "glp-1-muscle-loss",
+    "to": "glp1-muscle-loss-prevention-nutrition-strategy-2026"
+  },
+  {
+    "from": "glp-1-muscle-loss-protein",
+    "to": "protein-intake-goal-on-semaglutide-grams-per-pound-2026"
+  },
+  {
+    "from": "protein-on-glp-1",
+    "to": "protein-intake-goal-on-semaglutide-grams-per-pound-2026"
+  },
+  {
+    "from": "maintain-weight-after-glp-1",
+    "to": "stopping-semaglutide-weight-regain-prevention-protocol-2026"
+  },
+  {
+    "from": "glp-1-comparison",
+    "to": "semaglutide-vs-tirzepatide"
+  },
+  {
+    "from": "sustainable-weight-loss-habits",
+    "to": "glp-1-diary-habit"
+  },
+  {
+    "from": "weight-loss-tracker",
+    "to": "weight-loss-tracker-app-glp-1"
+  },
+  {
+    "from": "glp-1-for-perimenopause",
+    "to": "glp-1-perimenopause"
+  },
+  {
+    "from": "high-protein-snacks-glp-1",
+    "to": "glp-1-diet-7-day-meal-plan"
+  },
+  {
+    "from": "track-protein-fiber-havit",
+    "to": "protein-tracker-for-glp-1"
+  },
+  {
+    "from": "glp-1-guide",
+    "to": "glp-1-first-month"
   }
 ]

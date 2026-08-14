@@ -1,0 +1,312 @@
+{
+  "article_id": "BLOG_GLP_1_SHOT_TRACKER",
+  "slug": "glp-1-shot-tracker",
+  "category": "Medication Guide",
+  "category_emoji": "💊",
+  "type": "guide",
+  "layout": "hub",
+  "reading_time_min": 5,
+  "primary_keyword_en": "glp-1 shot tracker",
+  "primary_keyword_ko": "GLP-1 주사 기록",
+  "langs": {
+    "en": {
+      "title": "GLP-1 Shot Tracker: Log Every Weekly Injection & Site",
+      "meta_description": "A GLP-1 shot tracker logs each weekly injection — date, rotated site, and missed-dose window for Wegovy, Ozempic & tirzepatide. See exactly how to track a shot.",
+      "tldr": "A GLP-1 shot tracker logs each weekly injection — date, rotated site, and missed-dose window for Wegovy, Ozempic & tirzepatide. See exactly how to track a shot.",
+      "body_md": "A GLP-1 like Wegovy, Ozempic, Zepbound or Mounjaro is a once-weekly subcutaneous injection, and the *injection itself* is the one event you cannot afford to lose track of. Miss it and you drift off your plan; repeat the same spot and you risk lumpy scar tissue; forget the date and you can't tell whether a missed shot should be taken or skipped. A **shot tracker** exists to capture that single weekly event cleanly — separate from, but feeding into, your broader [GLP-1 tracker app](/en/glp-1-tracker-app) that also handles weight, protein and side effects.\n\nThis page is the practical how-to for the injection event specifically: what to log the moment you inject, how to rotate sites, and how to handle a missed shot. If your question is instead about *which milligram to log and when the dose steps up*, that belongs on the companion [GLP-1 dose tracker](/en/glp-1-dose-tracker) guide.\n\n## What to log the moment you take your shot\n\nThe best time to record an injection is the 20 seconds right after you take it, while the details are exact. Capture these five fields every week:\n\nOnly the first three are essential. Logged consistently, they answer the two questions that trip people up most: *\"When is my next shot due?\"* and *\"Where do I inject this week?\"*\n\n## Injection sites and how to rotate them\n\nThere are three approved subcutaneous areas for common GLP-1 pens: the **abdomen** (staying at least two inches / ~5 cm away from the navel), the **front or outer thigh**, and the **back of the upper arm**. Injecting into the same spot week after week can cause **lipohypertrophy** — firm, lumpy tissue that changes how the medicine absorbs and can blunt its effect.\n\nThe fix is to rotate across zones so each area recovers before you return to it. A simple, reliable pattern treats left and right versions of each area as separate sites, giving you six landing spots to cycle through:\n\n- Week 1 — left abdomen\n- Week 2 — right abdomen\n- Week 3 — left thigh\n- Week 4 — right thigh\n- Week 5 — left upper arm (or back of arm with help)\n- Week 6 — right upper arm, then repeat\n\nThe catch is memory: after a month, nobody reliably recalls \"was it left thigh or right arm last time?\" This is exactly where a tracker earns its keep — a good app shows a **body map** with your last few sites highlighted, so you always pick a fresh one instead of guessing. For the clinical detail behind why rotation matters, see the deep dive on [injection-site rotation and lipohypertrophy prevention](/en/glp1-injection-site-rotation-lipohypertrophy-prevention-2026).\n\n## Missed a shot? The rule depends on your drug\n\nThis is the number-one reason to timestamp every injection. The manufacturers publish specific missed-dose windows, and they differ by medicine. Because your tracker knows the exact date and time of your last shot, it can tell you at a glance which rule applies.\n\n| Medicine (generic) | Take the missed shot if… | Otherwise |\n|---|---|---|\n| **Wegovy** (semaglutide) | your next scheduled dose is **more than 2 days (48 h)** away | skip it, resume on your normal day |\n| **Ozempic** (semaglutide) | it is **within 5 days** of the missed dose | skip it, resume on your normal day |\n| **Zepbound / Mounjaro** (tirzepatide) | it is **within 4 days (96 h)** of the missed dose | skip it, resume on your normal day |\n\nNever take two shots at once to \"catch up.\" If you miss two or more consecutive weekly doses, contact your prescriber — you may need to reinitiate at a lower dose to limit nausea. Always follow your own product's label and your clinician's instructions; a shot tracker simply makes the date easy to check. The full protocol lives in the [missed-dose timing guide](/en/glp1-missed-dose-protocol-timing-guide-2026).\n\n## How to build a 60-second weekly shot routine\n\nYou do not need a complicated system — you need a repeatable one. Here is a routine that takes about a minute a week:\n\n1. **Set a recurring weekly reminder** for a consistent day and time, so a missed shot never sneaks up on you.\n2. **Prep and inject** into the next site your rotation calls for, at least ~5 cm from the navel if using the abdomen.\n3. **Log it immediately** — tap the date, the dose in mg, and the body-map zone you just used.\n4. **Note any reaction** (redness, leaking, a bent needle) so a pattern is visible over time.\n5. **Confirm the next due date** the app shows, and check its missed-dose window is set for your specific drug.\n6. **Glance at the body map** before next week so the upcoming site is already obvious.\n\n## How a GLP-1 shot tracker app automates all of this\n\nDoing the six steps by hand works, but a weekly repeating event is exactly what an app is built for. A good GLP-1 shot tracker turns the routine into a few taps and gives you back certainty:\n\n- **Weekly injection reminders** tied to your chosen day, with a due-date countdown.\n- **A visual injection-site body map** that highlights recent sites so rotation is never a guess.\n- **An automatic missed-dose check** that applies your drug's specific 2-, 4-, or 5-day rule.\n- **A timestamped shot history** you can hand to your clinician as a clean adherence record.\n- **Reaction notes** that surface site problems (recurring lumps, leaks) early.\n\n[**HAVIT**](https://aihavit.com) brings your shot log together with weight, body-composition, food and protein tracking in one wellness app — so the injection event lives alongside the daily habits that actually protect your results. If you want your reminders, your rotation map and your habits in the same place, it is a natural home for your GLP-1 journey. Curious how it stacks up against dedicated tools? Compare options in our [best GLP-1 tracker apps](/en/best-glp-1-tracker-apps) roundup.\n\n## Why HAVIT — Medication + Behavior Change, in One App\n\nGLP-1 medications can meaningfully reduce weight — but the number on the scale is only part of the story. Roughly 20–40% of the weight lost on GLP-1 therapy can come from lean (muscle) tissue rather than fat ([Neeland et al., *Diabetes, Obesity and Metabolism*, 2024](https://dom-pubs.onlinelibrary.wiley.com/doi/10.1111/dom.15728)), and results tend to fade once the medication stops unless new habits take their place. That's why leading guidance treats medication as one part of care, not the whole: the U.S. Preventive Services Task Force recommends that adults with obesity be offered intensive, multicomponent behavioral interventions ([USPSTF, Grade B](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/obesity-in-adults-interventions)).\n\nHAVIT is built for exactly this moment — one app that unites medication tracking, body composition, nutrition and protein, daily habit-building, and an AI coach that adapts to you. Across our own 1,090 GLP-1 users, the most consistent trackers built the strongest habits ([see the GLP-1 habit report](/en/glp-1-habit-report)).\n\nManage the medicine and the muscle — together. [Start with HAVIT →](https://aihavit.com)",
+      "comparison_table": {
+        "title": "What to log the moment you take your shot",
+        "headers": [
+          "Field",
+          "Why it matters",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Date & time",
+            "Anchors your weekly cadence and makes the missed-dose rule answerable",
+            "Mon, 8:00 AM"
+          ],
+          [
+            "Drug & dose (mg)",
+            "Confirms you injected the right strength for your current titration step",
+            "Wegovy 1.0 mg"
+          ],
+          [
+            "Injection site",
+            "Drives rotation and prevents lipohypertrophy",
+            "Left abdomen"
+          ],
+          [
+            "Pen / lot (optional)",
+            "Helps trace a bad pen or a cold-chain issue",
+            "Pen #4"
+          ],
+          [
+            "Immediate reaction",
+            "Flags redness, a leak (\"wet injection\"), or a bent needle",
+            "None"
+          ]
+        ]
+      },
+      "faq": [
+        {
+          "question": "What is a GLP-1 shot tracker?",
+          "answer": "It is a tool — usually a phone app — that logs each weekly GLP-1 injection: the date and time, the dose in milligrams, and the body-map site you rotated to. It then reminds you when the next shot is due and flags your drug's missed-dose window."
+        },
+        {
+          "question": "How is a shot tracker different from a dose tracker?",
+          "answer": "A shot tracker focuses on the injection *event* — when you injected and where on your body. A dose tracker focuses on the *milligram* — which strength you're on and when it steps up your titration schedule. Many people track both in one app."
+        },
+        {
+          "question": "Why do I need to record my injection site?",
+          "answer": "Because injecting the same spot repeatedly can cause lipohypertrophy — lumpy scar tissue that changes drug absorption. Logging each site lets you rotate across the abdomen, thigh and upper arm so every area recovers and your medicine absorbs consistently."
+        },
+        {
+          "question": "What are the approved GLP-1 injection sites?",
+          "answer": "The abdomen (at least ~5 cm from the navel), the front or outer thigh, and the back of the upper arm. Treating the left and right of each area as separate sites gives you a simple six-week rotation to cycle through."
+        },
+        {
+          "question": "What should I do if I miss my weekly shot?",
+          "answer": "It depends on the drug. For Wegovy, take it only if your next dose is more than 2 days (48 h) away; for Ozempic, take it within 5 days; for tirzepatide (Zepbound/Mounjaro), within 4 days (96 h). Otherwise skip it and resume on your normal day — and never double up."
+        },
+        {
+          "question": "Can I change which day I take my shot?",
+          "answer": "Often yes, if enough time separates the two doses (for semaglutide, at least 48 hours between them). Confirm with your prescriber and update your reminder so the tracker's cadence and missed-dose window stay accurate."
+        },
+        {
+          "question": "Do I really need an app, or is a notebook enough?",
+          "answer": "Any record beats none. But an app automates the parts people forget — the weekly reminder, the site-rotation body map, and the drug-specific missed-dose rule — and keeps a timestamped history you can share, which is why most people stick with digital tracking longer."
+        },
+        {
+          "question": "Will a shot tracker tell me when to change my dose?",
+          "answer": "No. A tracker records what you did and reminds you; it never directs a dose change. Milligram increases are decided by your prescriber on your titration schedule — log them, don't self-adjust."
+        }
+      ],
+      "references": [
+        {
+          "text": "U.S. Food & Drug Administration — WEGOVY (semaglutide) prescribing information, dosing and missed dose.",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215256s024lbl.pdf"
+        },
+        {
+          "text": "Novo Nordisk — Wegovy dosing schedule and missed-dose (2-day) guidance.",
+          "url": "https://www.wegovy.com/taking-wegovy/dosing-schedule.html"
+        },
+        {
+          "text": "Novo Nordisk — Ozempic pen use, dosing and missed-dose (5-day) guidance.",
+          "url": "https://www.ozempic.com/ozempic-pen/dosing.html"
+        },
+        {
+          "text": "Eli Lilly — ZEPBOUND (tirzepatide) prescribing information, dosing and missed dose (4-day / 96 h).",
+          "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+        },
+        {
+          "text": "Eli Lilly — Zepbound dosage options, schedules and missed doses.",
+          "url": "https://zepbound.lilly.com/hcp/dosage"
+        },
+        {
+          "text": "Cleveland Clinic — GLP-1 Agonists: administration and injection-site guidance.",
+          "url": "https://my.clevelandclinic.org/health/treatments/13901-glp-1-agonists"
+        },
+        {
+          "text": "All medical claims verified against the cited FDA labels and manufacturer materials as of July 2026. Labels are updated periodically — confirm current details with your prescriber and the official prescribing information.*"
+        }
+      ],
+      "last_updated": "2026-07-06"
+    },
+    "ko": {
+      "title": "GLP-1(위고비·마운자로) 주사 기록 앱: 매주 주사·부위 관리법",
+      "meta_description": "GLP-1 주사 기록 앱으로 매주 주사일·부위 회전·용량을 기록하고, 위고비·오젬픽·티르제파타이드별 누락 규칙까지 자동으로 확인하세요.",
+      "tldr": "GLP-1 주사 기록 앱으로 매주 주사일·부위 회전·용량을 기록하고, 위고비·오젬픽·티르제파타이드별 누락 규칙까지 자동으로 확인하세요.",
+      "body_md": "위고비·오젬픽·젭바운드·마운자로 같은 GLP-1은 주 1회 피하주사이고, 관리의 핵심은 바로 **주사라는 사건 하나**입니다. 놓치면 계획에서 벗어나고, 같은 자리에 반복하면 딱딱한 흉터 조직이 생기며, 날짜를 잊으면 놓친 주사를 맞아야 할지 건너뛰어야 할지 판단할 수 없습니다. **주사 기록(shot tracker)**은 이 주간 사건 하나를 깔끔하게 잡아 주는 도구로, 체중·단백질·부작용까지 함께 다루는 [GLP-1 기록 앱](/ko/glp-1-tracker-app) 허브와 연결되지만 초점은 다릅니다.\n\n이 글은 주사라는 사건 자체의 실전 가이드입니다. 즉 놓는 순간 무엇을 기록하고, 부위를 어떻게 회전하며, 주사를 놓쳤을 때 어떻게 하는지 다룹니다. *어떤 mg를 언제 기록하고 용량이 언제 올라가는지*가 궁금하다면 짝을 이루는 [GLP-1 용량 기록](/ko/glp-1-dose-tracker) 가이드를 보세요.\n\n## 주사를 놓는 순간 기록해야 할 것\n\n주사를 기록하기 가장 좋은 때는 놓은 직후 20초, 세부 정보가 정확할 때입니다. 매주 아래 다섯 가지를 기록하세요.\n\n핵심은 앞의 세 가지입니다. 꾸준히 기록하면 사람들이 가장 헷갈리는 두 질문 — *\"다음 주사는 언제지?\"*와 *\"이번 주엔 어디에 놓지?\"* — 에 바로 답할 수 있습니다.\n\n## 주사 부위와 회전 방법\n\n일반적인 GLP-1 펜의 피하주사 부위는 세 곳입니다. **복부**(배꼽에서 최소 약 5cm 떨어진 곳), **허벅지 앞·바깥쪽**, **위팔 뒤쪽**입니다. 매주 같은 자리에 놓으면 **리포하이퍼트로피** — 딱딱하고 뭉친 조직 — 가 생겨 약물 흡수가 달라지고 효과가 떨어질 수 있습니다.\n\n해법은 각 부위가 회복할 시간을 갖도록 구역을 번갈아 쓰는 것입니다. 좌우를 별개 부위로 보면 여섯 자리를 순환하는 간단한 패턴이 됩니다.\n\n- 1주차 — 왼쪽 복부\n- 2주차 — 오른쪽 복부\n- 3주차 — 왼쪽 허벅지\n- 4주차 — 오른쪽 허벅지\n- 5주차 — 왼쪽 위팔\n- 6주차 — 오른쪽 위팔, 이후 반복\n\n문제는 기억입니다. 한 달만 지나도 \"지난번이 왼쪽 허벅지였나, 오른쪽 팔이었나?\"를 정확히 떠올리기 어렵습니다. 바로 이 지점에서 기록 앱이 진가를 발휘합니다 — 좋은 앱은 최근 부위를 표시한 **바디맵**을 보여줘 추측 없이 늘 새 자리를 고르게 합니다. 회전이 중요한 임상적 이유는 [주사 부위 회전과 리포하이퍼트로피 예방](/ko/glp1-injection-site-rotation-lipohypertrophy-prevention-2026) 심화 글에서 확인하세요.\n\n## 주사를 놓쳤다면? 규칙은 약마다 다릅니다\n\n매 주사에 타임스탬프를 남겨야 하는 첫 번째 이유입니다. 제조사는 누락 대응 창을 공개하며, 그 기준은 약마다 다릅니다. 앱이 마지막 주사의 정확한 날짜·시간을 알고 있으면 어떤 규칙이 적용되는지 한눈에 알려줄 수 있습니다.\n\n| 약물(성분명) | 놓친 주사를 맞는 경우 | 그 외 |\n|---|---|---|\n| **위고비**(세마글루타이드) | 다음 예정 주사가 **2일(48시간) 넘게** 남았을 때 | 건너뛰고 원래 요일에 재개 |\n| **오젬픽**(세마글루타이드) | 놓친 후 **5일 이내**일 때 | 건너뛰고 원래 요일에 재개 |\n| **젭바운드 / 마운자로**(티르제파타이드) | 놓친 후 **4일(96시간) 이내**일 때 | 건너뛰고 원래 요일에 재개 |\n\n\"따라잡으려\" 두 번 연속 맞지 마세요. 주 1회 용량을 2회 이상 연속으로 놓쳤다면 처방 의사에게 연락하세요 — 구역을 줄이기 위해 낮은 용량으로 재시작해야 할 수 있습니다. 항상 본인 제품의 허가사항과 의료진 지시를 따르며, 주사 기록 앱은 날짜 확인을 쉽게 해줄 뿐입니다. 전체 규칙은 [GLP-1 주사를 놓쳤을 때 대응 가이드](/ko/glp1-missed-dose-protocol-timing-guide-2026)에 있습니다.\n\n## 60초 주간 주사 루틴 만들기\n\n복잡한 시스템이 아니라 반복 가능한 시스템이면 됩니다. 주당 약 1분이면 되는 루틴입니다.\n\n1. **주간 반복 알림을 설정합니다.** 일정한 요일·시간으로 정해 주사를 놓치지 않게 합니다.\n2. **회전 순서에 따른 부위에 준비하고 주사합니다.** 복부라면 배꼽에서 약 5cm 이상 떨어진 곳에.\n3. **즉시 기록합니다.** 날짜, mg 용량, 방금 사용한 바디맵 구역을 탭.\n4. **반응을 메모합니다.** 발적·누출·휘어진 바늘 등 패턴이 보이도록.\n5. **다음 예정일을 확인합니다.** 앱이 표시한 날짜와, 본인 약에 맞는 누락 규칙 설정을 점검.\n6. **바디맵을 미리 봅니다.** 다음 주 부위가 미리 눈에 들어오도록.\n\n## GLP-1 주사 기록 앱이 이 모든 걸 자동화하는 방식\n\n6단계를 손으로 해도 되지만, 매주 반복되는 사건이야말로 앱이 만들어진 이유입니다.\n\n- **주간 주사 알림** — 정한 요일에 맞춰 남은 일수 카운트다운과 함께.\n- **시각적 주사 부위 바디맵** — 최근 부위를 강조해 회전을 추측하지 않게.\n- **자동 누락 확인** — 본인 약의 2일·4일·5일 규칙을 자동 적용.\n- **타임스탬프 주사 이력** — 의사에게 깔끔한 순응도 기록으로 제시.\n- **반응 메모** — 반복되는 멍울·누출 같은 부위 문제를 조기에 포착.\n\n[**하빗(HAVIT)**](https://aihavit.com)은 주사 기록을 체중·체성분·음식·단백질 기록과 하나의 웰니스 앱에 담아, 주사라는 사건이 결과를 지키는 일상 습관과 같은 자리에 살게 합니다. 알림·회전 지도·습관을 한곳에 두고 싶다면 GLP-1 여정의 자연스러운 보금자리가 됩니다. 전용 도구들과 비교하고 싶다면 [최고의 GLP-1 기록 앱](/ko/best-glp-1-tracker-apps) 정리를 참고하세요.\n\n## 왜 HAVIT인가 — 약물 관리와 행동 변화를 한 곳에\n\nGLP-1 약물은 체중을 확실히 줄여줍니다. 하지만 체중계 숫자가 전부는 아닙니다. GLP-1로 빠진 체중의 약 20~40%는 지방이 아니라 근육 등 제지방(lean mass)일 수 있고([Neeland 외, *Diabetes, Obesity and Metabolism*, 2024](https://dom-pubs.onlinelibrary.wiley.com/doi/10.1111/dom.15728)), 약을 끊은 뒤 습관이 자리 잡지 못하면 효과는 다시 되돌아가기 쉽습니다. 그래서 주요 지침은 약물을 치료의 전부가 아닌 한 축으로 봅니다. 미국 예방서비스특별위원회(USPSTF)는 비만이 있는 성인에게 집중적·다요소 행동중재를 제공하도록 권고합니다([USPSTF, 권고등급 B](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/obesity-in-adults-interventions)).\n\nHAVIT은 바로 이 시대를 위해 만들어졌습니다. 약물 기록, 체성분, 영양·단백질, 매일의 습관 만들기, 그리고 나에게 맞춰 조언하는 AI 코치까지 한 앱에 담았습니다. 실제 HAVIT의 GLP-1 사용자 1,090명을 분석해 보니, 꾸준히 기록한 사람일수록 더 단단한 습관을 만들었습니다([GLP-1 습관 리포트 보기](/ko/glp-1-habit-report)).\n\n약도, 근육도 함께 관리하세요. [HAVIT 시작하기 →](https://aihavit.com)",
+      "comparison_table": {
+        "title": "주사를 놓는 순간 기록해야 할 것",
+        "headers": [
+          "항목",
+          "왜 중요한가",
+          "예시"
+        ],
+        "rows": [
+          [
+            "날짜 & 시간",
+            "주간 리듬을 고정하고 누락 규칙 판단의 기준이 됨",
+            "월, 오전 8:00"
+          ],
+          [
+            "약물 & 용량(mg)",
+            "현재 증량 단계에 맞는 용량을 맞았는지 확인",
+            "위고비 1.0mg"
+          ],
+          [
+            "주사 부위",
+            "부위 회전을 이끌고 리포하이퍼트로피 예방",
+            "왼쪽 복부"
+          ],
+          [
+            "펜 / 로트(선택)",
+            "불량 펜이나 냉장 보관 문제 추적에 도움",
+            "펜 #4"
+          ],
+          [
+            "즉각 반응",
+            "발적, 약물 누출(\"젖은 주사\"), 휘어진 바늘 표시",
+            "없음"
+          ]
+        ]
+      },
+      "faq": [
+        {
+          "question": "GLP-1 주사 기록 앱이 무엇인가요?",
+          "answer": "매주 GLP-1 주사의 날짜·시간, mg 용량, 회전한 바디맵 부위를 기록하는 도구(보통 앱)입니다. 다음 주사 시점을 알려주고 본인 약의 누락 대응 창을 표시합니다."
+        },
+        {
+          "question": "주사 기록과 용량 기록은 어떻게 다른가요?",
+          "answer": "주사 기록은 주사라는 *사건* — 언제, 몸의 어디에 놓았는지 — 에 초점을 둡니다. 용량 기록은 *mg* — 현재 강도와 증량 단계 — 에 초점을 둡니다. 많은 사람이 한 앱에서 둘 다 기록합니다."
+        },
+        {
+          "question": "주사 부위를 왜 기록해야 하나요?",
+          "answer": "같은 자리에 반복 주사하면 리포하이퍼트로피(딱딱한 흉터 조직)가 생겨 약물 흡수가 달라질 수 있기 때문입니다. 부위를 기록하면 복부·허벅지·위팔을 번갈아 써서 각 부위가 회복하고 흡수가 일정해집니다."
+        },
+        {
+          "question": "GLP-1 주사 부위는 어디인가요?",
+          "answer": "복부(배꼽에서 약 5cm 이상), 허벅지 앞·바깥쪽, 위팔 뒤쪽입니다. 좌우를 별개로 보면 6주짜리 회전 순환이 간단히 만들어집니다."
+        },
+        {
+          "question": "주간 주사를 놓치면 어떻게 하나요?",
+          "answer": "약마다 다릅니다. 위고비는 다음 주사가 2일(48시간) 넘게 남았을 때만, 오젬픽은 5일 이내, 티르제파타이드(젭바운드·마운자로)는 4일(96시간) 이내에 맞습니다. 그 외에는 건너뛰고 원래 요일에 재개하며, 절대 두 번 맞지 마세요."
+        },
+        {
+          "question": "주사 요일을 바꿀 수 있나요?",
+          "answer": "두 주사 사이 간격이 충분하면(세마글루타이드는 최소 48시간) 대개 가능합니다. 처방 의사와 확인하고 알림을 갱신해 앱의 리듬과 누락 규칙이 정확히 유지되게 하세요."
+        },
+        {
+          "question": "노트 대신 꼭 앱이어야 하나요?",
+          "answer": "어떤 기록이든 안 하는 것보단 낫습니다. 다만 앱은 잊기 쉬운 부분 — 주간 알림, 부위 회전 바디맵, 약별 누락 규칙 — 을 자동화하고 공유 가능한 이력을 남겨, 대부분의 사람이 디지털 기록을 더 오래 유지합니다."
+        },
+        {
+          "question": "주사 기록 앱이 용량 변경 시점을 알려주나요?",
+          "answer": "아니요. 기록하고 알릴 뿐, 용량 변경을 지시하지 않습니다. mg 증량은 증량 일정에 따라 처방 의사가 결정합니다 — 기록하되 스스로 조절하지 마세요."
+        }
+      ],
+      "references": [
+        {
+          "text": "미국 FDA — WEGOVY(세마글루타이드) 허가사항, 용량 및 누락 대응.",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215256s024lbl.pdf"
+        },
+        {
+          "text": "Novo Nordisk — 위고비 용량 일정 및 누락(2일) 안내.",
+          "url": "https://www.wegovy.com/taking-wegovy/dosing-schedule.html"
+        },
+        {
+          "text": "Novo Nordisk — 오젬픽 펜 사용·용량 및 누락(5일) 안내.",
+          "url": "https://www.ozempic.com/ozempic-pen/dosing.html"
+        },
+        {
+          "text": "Eli Lilly — ZEPBOUND(티르제파타이드) 허가사항, 용량 및 누락(4일/96시간).",
+          "url": "https://pi.lilly.com/us/zepbound-uspi.pdf"
+        },
+        {
+          "text": "식품의약품안전처(MFDS) — 의약품 허가·정보 및 안전성 서한.",
+          "url": "https://www.mfds.go.kr"
+        },
+        {
+          "text": "Cleveland Clinic — GLP-1 Agonists: 투여 및 주사 부위 안내.",
+          "url": "https://my.clevelandclinic.org/health/treatments/13901-glp-1-agonists"
+        },
+        {
+          "text": "위 의학적 내용은 인용한 FDA 라벨·제조사 자료와 대조해 2026년 중반 기준으로 확인했습니다. 라벨은 주기적으로 갱신되므로 최신 정보는 담당 의사와 공식 허가사항으로 확인하세요.*"
+        }
+      ],
+      "last_updated": "2026-07-06"
+    },
+    "ja": {
+      "title": "GLP-1(オゼンピック・マンジャロ)注射記録アプリ｜毎週の注射・部位を管理",
+      "meta_description": "GLP-1 注射記録アプリで、毎週の注射日・部位ローテーション・投与量を記録。ウゴービ・オゼンピック・チルゼパチドごとの打ち忘れルールも自動で確認できます。",
+      "tldr": "GLP-1 注射記録アプリで、毎週の注射日・部位ローテーション・投与量を記録。ウゴービ・オゼンピック・チルゼパチドごとの打ち忘れルールも自動で確認できます。",
+      "body_md": "オゼンピック・ウゴービ・マンジャロなどの GLP-1 は週1回の皮下注射で、管理の要は**「注射」というひとつの出来事**です。忘れれば計画からズレ、同じ場所に打ち続ければしこりができ、日付を忘れると打ち忘れを打つべきか飛ばすべきか判断できません。**注射記録（shot tracker）**は、この週1回の出来事だけをきれいに残す道具で、体重・タンパク質・副作用までまとめる[GLP-1 記録アプリ](/ja/glp-1-tracker-app)ハブとつながりつつ、焦点が違います。\n\n本記事は「注射という出来事」そのものの実践ガイドです。打った瞬間に何を記録し、部位をどう回し、打ち忘れたらどうするか。*どの mg をいつ記録し、投与量がいつ上がるか*が知りたい方は、対になる[GLP-1 投与量記録](/ja/glp-1-dose-tracker)ガイドをご覧ください。\n\n## 注射を打った瞬間に記録すること\n\n記録に一番よいのは打った直後の20秒、細部が正確なうちです。毎週、次の5項目を残しましょう。\n\n要は最初の3つ。続けて残せば、みんなが迷う2つの問い ―*「次の注射はいつ？」*と*「今週はどこに打つ？」*― に即答できます。\n\n## 注射部位とローテーションのやり方\n\n一般的な GLP-1 の皮下注射部位は3か所です。**お腹**（へそから約5cm以上離す）、**太ももの前面〜外側**、**上腕の後ろ側**。毎週同じ場所に打つと**しこり（脂肪組織の肥厚）**ができ、吸収が変わって効きが鈍ることがあります。\n\n対策は、各部位が回復する時間を持てるようゾーンを順番に使うこと。左右を別部位と数えれば、6か所を巡る簡単なパターンになります。\n\n- 1週目 — 左のお腹\n- 2週目 — 右のお腹\n- 3週目 — 左の太もも\n- 4週目 — 右の太もも\n- 5週目 — 左の上腕\n- 6週目 — 右の上腕、以降くり返し\n\n問題は記憶です。1か月もすると「前回は左の太もも？右の腕？」を正確に思い出せません。ここが記録アプリの真価で、直近の部位を色分けした**ボディマップ**を見せてくれるアプリなら、迷わず新しい場所を選べます。ローテーションが大切な臨床的理由は[注射部位のローテーションとしこり予防](/ja/glp1-injection-site-rotation-lipohypertrophy-prevention-2026)で解説しています。\n\n## 打ち忘れたら？ ルールは薬で違う\n\n注射のたびに日時を残すべき最大の理由です。メーカーは打ち忘れ猶予を公開しており、その基準は薬ごとに違います。アプリが直近の日時を把握していれば、どのルールが当てはまるか一目でわかります。\n\n| 薬（一般名） | 打ち忘れを打つ場合 | それ以外 |\n|---|---|---|\n| **ウゴービ**（セマグルチド） | 次回予定まで**2日（48時間）超**あるとき | 飛ばして次の定例日に戻す |\n| **オゼンピック**（セマグルチド） | 打ち忘れから**5日以内**のとき | 飛ばして次の定例日に戻す |\n| **マンジャロ／ゼップバウンド**（チルゼパチド） | 打ち忘れから**4日（96時間）以内**のとき | 飛ばして次の定例日に戻す |\n\n「取り戻そう」と2回続けて打たないでください。週1回を2回以上続けて忘れたら処方医に連絡を ― 吐き気を抑えるため低用量からの再開が必要なことがあります。必ずご自身の薬の添付文書と医師の指示に従い、注射記録アプリは日付確認を楽にするだけです。全体の手順は[GLP-1 打ち忘れ対応ガイド](/ja/glp1-missed-dose-protocol-timing-guide-2026)にあります。\n\n## 60秒でできる週1注射ルーティン\n\n複雑な仕組みは不要、必要なのは「くり返せる」仕組みです。週に約1分のルーティンです。\n\n1. **週1回の繰り返しリマインドを設定。** 曜日・時間を固定して打ち忘れを防ぐ。\n2. **ローテーション順の部位に準備して注射。** お腹ならへそから約5cm以上離して。\n3. **すぐ記録。** 日付・mg・使ったボディマップのゾーンをタップ。\n4. **反応をメモ。** 発赤・液もれ・曲がった針など、傾向が見えるように。\n5. **次回予定を確認。** アプリ表示の日付と、薬に合った打ち忘れルール設定をチェック。\n6. **ボディマップを先に見る。** 来週の部位が前もってわかるように。\n\n## GLP-1 注射記録アプリが、これをすべて自動化する\n\n手作業でも回せますが、週1回の反復こそアプリの得意技です。\n\n- 選んだ曜日に合わせた**週1注射リマインド**と残り日数カウントダウン。\n- 直近部位を色分けする**注射部位ボディマップ**で、ローテーションに迷わない。\n- 薬ごとの2日・4日・5日ルールを当てはめる**自動の打ち忘れチェック**。\n- 診察でそのまま渡せる**日時つき注射履歴**（アドヒアランス記録）。\n- 反復するしこりや液もれなど、部位の問題を早く拾う**反応メモ**。\n\n[**HAVIT**](https://aihavit.com) は、注射記録を体重・体組成・食事・タンパク質の記録と一つのウェルネスアプリにまとめ、注射という出来事を成果を守る毎日の習慣と同じ場所に置きます。リマインド・ローテーション地図・習慣を一体で続けたい人には、GLP-1 の旅を置く自然な拠点になります。専用ツールと比べたいときは[おすすめ GLP-1 記録アプリ](/ja/best-glp-1-tracker-apps)の比較をどうぞ。\n\n## よくある質問（FAQ）\n\n**1. GLP-1 注射記録アプリとは何ですか？**\n毎週の GLP-1 注射の日時・mg・ローテーションしたボディマップ部位を記録する道具（多くはアプリ）です。次の注射日を知らせ、薬ごとの打ち忘れ猶予を表示します。\n\n**2. 注射記録と投与量記録は何が違いますか？**\n注射記録は「注射という*出来事*」― いつ、体のどこに打ったか ― に、投与量記録は「*mg*」― 今の強さと増量ステップ ― に焦点を当てます。多くの人は一つのアプリで両方を記録します。\n\n**3. なぜ注射部位まで記録するのですか？**\n同じ場所へ反復注射するとしこり（脂肪組織の肥厚）ができ、吸収が変わるためです。部位を記録すればお腹・太もも・上腕を順に使え、各部位が回復し吸収が安定します。\n\n**4. GLP-1 の注射部位はどこですか？**\nお腹（へそから約5cm以上）、太ももの前面〜外側、上腕の後ろ側です。左右を別に数えれば6週の巡回が簡単に作れます。\n\n**5. 週1の注射を打ち忘れたらどうしますか？**\n薬によります。ウゴービは次回まで2日（48時間）超あるとき、オゼンピックは5日以内、チルゼパチド（マンジャロ／ゼップバウンド）は4日（96時間）以内に打ちます。それ以外は飛ばして次の定例日に戻し、二重投与はしません。\n\n**6. 注射する曜日は変えられますか？**\n2回の間隔が十分（セマグルチドなら48時間以上）なら多くの場合可能です。処方医に確認しリマインドを更新して、アプリのリズムと打ち忘れルールを正確に保ちましょう。\n\n**7. ノートではだめで、アプリが必要ですか？**\n記録しないよりずっと良いです。ただしアプリは忘れがちな部分 ― 週1リマインド・部位ローテーション地図・薬ごとの打ち忘れルール ― を自動化し、共有できる履歴を残すので、多くの人がデジタル記録を長く続けられます。\n\n**8. 注射記録アプリは投与量を変える時期を教えてくれますか？**\nいいえ。記録して知らせるだけで、用量変更を指示しません。mg の増量は増量スケジュールに沿って処方医が決めます ― 記録はしても自己調整はしないでください。\n\n## なぜHAVITなのか — 薬の管理と行動変容をひとつに\n\nGLP-1薬は体重をしっかり減らしてくれます。ただ、体重計の数字だけがすべてではありません。GLP-1で減った体重のおよそ20〜40%は、脂肪ではなく筋肉などの除脂肪量である可能性があり([Neeland他, *Diabetes, Obesity and Metabolism*, 2024](https://dom-pubs.onlinelibrary.wiley.com/doi/10.1111/dom.15728))、薬をやめた後に習慣が根づいていなければ、効果は戻りやすいこともわかっています。だからこそ主要なガイドラインは、薬を治療の「すべて」ではなく「一部」と位置づけます。米国予防医学専門委員会(USPSTF)は、肥満のある成人に集中的で多面的な行動介入を提供するよう推奨しています([USPSTF, グレードB](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/obesity-in-adults-interventions))。\n\nHAVITは、まさにこの時代のために作られました。服薬の記録、体組成、栄養とたんぱく質、毎日の習慣づくり、そしてあなたに合わせて助言するAIコーチを、ひとつのアプリに。実際にHAVITのGLP-1ユーザー1,090人を分析したところ、記録を続けた人ほど強い習慣を築いていました([GLP-1習慣レポートを見る](/ja/glp-1-habit-report))。\n\n薬も、筋肉も、いっしょに。[HAVITを始める →](https://aihavit.com)\n\n## 参考文献\n\n1. U.S. Food & Drug Administration ― WEGOVY（セマグルチド）添付文書・用量・打ち忘れ。https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215256s024lbl.pdf\n2. Novo Nordisk ― ウゴービの用量スケジュールと打ち忘れ（2日）。https://www.wegovy.com/taking-wegovy/dosing-schedule.html\n3. Novo Nordisk ― オゼンピックのペン使用・用量・打ち忘れ（5日）。https://www.ozempic.com/ozempic-pen/dosing.html\n4. Eli Lilly ― ZEPBOUND（チルゼパチド）添付文書・用量・打ち忘れ（4日/96時間）。https://pi.lilly.com/us/zepbound-uspi.pdf\n5. PMDA（医薬品医療機器総合機構）― 医薬品情報・添付文書検索。https://www.pmda.go.jp\n6. Cleveland Clinic ― GLP-1 Agonists：投与・注射部位の解説。https://my.clevelandclinic.org/health/treatments/13901-glp-1-agonists\n\n*上記の医療内容は、引用した FDA 添付文書・メーカー資料・主要医療機関の情報と照合し、2026年半ば時点で確認しています。添付文書は随時更新されるため、最新の詳細は主治医と公式の添付文書でご確認ください。*\n\n## 関連ガイド\n\n- [GLP-1 記録アプリ 完全ガイド｜注射・体重・食事を一元管理](/ja/glp-1-tracker-app)\n- [GLP-1 投与量記録：増量スケジュールと mg の管理法](/ja/glp-1-dose-tracker)\n- [GLP-1 注射部位のローテーションでしこりを防ぐ](/ja/glp1-injection-site-rotation-lipohypertrophy-prevention-2026)\n- [GLP-1 を打ち忘れたときの対応ガイド](/ja/glp1-missed-dose-protocol-timing-guide-2026)",
+      "comparison_table": {
+        "title": "注射を打った瞬間に記録すること",
+        "headers": [
+          "項目",
+          "なぜ大切か",
+          "例"
+        ],
+        "rows": [
+          [
+            "日時",
+            "週のリズムを固定し、打ち忘れ判断の基準になる",
+            "月 8:00"
+          ],
+          [
+            "薬・投与量（mg）",
+            "今の増量ステップに合う量を打てたか確認",
+            "ウゴービ 1.0mg"
+          ],
+          [
+            "注射部位",
+            "ローテーションを促し、しこり（肥厚）を防ぐ",
+            "左のお腹"
+          ],
+          [
+            "ペン／ロット（任意）",
+            "不良ペンや保管トラブルの追跡に役立つ",
+            "ペン #4"
+          ],
+          [
+            "すぐの反応",
+            "発赤、液もれ、曲がった針を記録",
+            "なし"
+          ]
+        ]
+      },
+      "faq": [],
+      "references": [],
+      "last_updated": "2026-07-06"
+    },
+    "zh-TW": {
+      "title": "GLP-1(週纖達·猛健樂)注射記錄 App：每週注射與部位管理",
+      "meta_description": "GLP-1 注射記錄 App 幫你記錄每週注射日、部位輪替與劑量，並依週纖達、胰妥讚、tirzepatide 各自的漏打規則自動提醒，避免漏打或重複給藥。",
+      "tldr": "GLP-1 注射記錄 App 幫你記錄每週注射日、部位輪替與劑量，並依週纖達、胰妥讚、tirzepatide 各自的漏打規則自動提醒，避免漏打或重複給藥。",
+      "body_md": "胰妥讚（Ozempic）、週纖達（Wegovy）、猛健樂（Mounjaro）等 GLP-1 是每週一次的皮下注射，管理的關鍵就是**「注射」這一件事**。漏了會偏離計畫，同一位置反覆打會長硬塊，忘了日期就無法判斷漏打該補還是跳過。**注射記錄（shot tracker）**就是把這件每週一次的事乾淨記下的工具，它與同時管理體重、蛋白質、副作用的 [GLP-1 追蹤 App](/zh-tw/glp-1-tracker-app) 相連，但焦點不同。\n\n本文是「注射這件事」本身的實作指南：打完當下記什麼、部位怎麼輪替、漏打怎麼辦。若你想知道*記哪個 mg、劑量何時調升*，請看成對的 [GLP-1 劑量記錄](/zh-tw/glp-1-dose-tracker)指南。\n\n## 打完針的當下該記什麼\n\n記錄的最佳時機是打完後的 20 秒，細節最精準。每週記下這五項：\n\n重點是前三項。持續記錄，就能立刻回答最讓人困惑的兩個問題 ―*「下一針何時？」*與*「這週打哪裡？」*。\n\n## 注射部位與輪替方式\n\n一般 GLP-1 筆針的皮下注射區有三處：**腹部**（距肚臍至少約 5 公分）、**大腿前側或外側**、**上臂後側**。每週打同一位置會造成**脂肪增生（lipohypertrophy）**― 硬塊組織，會改變吸收、削弱效果。\n\n解方是讓每個部位有時間恢復，跨區輪替。把左右視為不同部位，就成了循環六個位置的簡單模式：\n\n- 第 1 週 — 左腹\n- 第 2 週 — 右腹\n- 第 3 週 — 左大腿\n- 第 4 週 — 右大腿\n- 第 5 週 — 左上臂\n- 第 6 週 — 右上臂，之後重複\n\n麻煩在記憶：一個月後沒人記得「上次是左大腿還是右手臂？」這正是記錄 App 最有價值之處 ― 好的 App 會用**人體圖**標示最近幾次部位，讓你不必猜就選到新位置。輪替為何重要的臨床細節，見[注射部位輪替與脂肪增生預防](/zh-tw/glp1-injection-site-rotation-lipohypertrophy-prevention-2026)深入解說。\n\n## 漏打了？規則因藥而異\n\n這是每次注射都要留時間戳的頭號理由。原廠會公布漏打時窗，且各藥不同。App 只要知道上一針的確切日期時間，就能一眼告訴你適用哪條規則。\n\n| 藥物（學名） | 補打漏掉這針的條件 | 否則 |\n|---|---|---|\n| **週纖達**（semaglutide） | 下一次預定注射還有**超過 2 天（48 小時）** | 跳過，在原本的日子恢復 |\n| **胰妥讚**（semaglutide） | 漏打後**5 天以內** | 跳過，在原本的日子恢復 |\n| **猛健樂 / Zepbound**（tirzepatide） | 漏打後**4 天（96 小時）以內** | 跳過，在原本的日子恢復 |\n\n不要為了「補回來」一次打兩針。若連續漏打兩次以上的每週劑量，請聯絡處方醫師 ― 可能需要從較低劑量重新開始以減少噁心。請一律遵循你所用產品的仿單與醫師指示；注射記錄 App 只是讓查核日期更容易。完整流程見 [GLP-1 漏打處理指南](/zh-tw/glp1-missed-dose-protocol-timing-guide-2026)。\n\n## 用 60 秒建立每週注射習慣\n\n你不需要複雜系統，只需要可重複的系統。這是每週約一分鐘的流程：\n\n1. **設定每週重複提醒。** 固定星期與時間，避免漏打偷襲。\n2. **在輪替該到的部位準備並注射。** 若打腹部，距肚臍至少約 5 公分。\n3. **立刻記錄。** 點選日期、mg 劑量與剛用的人體圖區域。\n4. **記下反應。** 泛紅、外漏、彎針等，讓型態隨時間浮現。\n5. **確認下次到期日。** 檢查 App 顯示的日期，以及是否設為你所用藥物的漏打規則。\n6. **先看人體圖。** 讓下週部位提前一目了然。\n\n## GLP-1 注射記錄 App 如何自動化這一切\n\n手做也行，但每週重複的事正是 App 的專長。\n\n- 配合你所選星期的**每週注射提醒**與剩餘天數倒數。\n- 標示最近部位的**注射部位人體圖**，輪替不必猜。\n- 套用你藥物專屬 2 天、4 天、5 天規則的**自動漏打檢查**。\n- 可交給醫師當作乾淨遵從性紀錄的**帶時間戳注射歷史**。\n- 及早發現反覆硬塊、外漏等部位問題的**反應備註**。\n\n[**HAVIT**](https://aihavit.com) 把注射記錄與體重、體組成、飲食、蛋白質追蹤整合在同一款健康 App，讓注射這件事與守護成效的日常習慣住在一起。若你想把提醒、輪替圖與習慣放同一處，它是 GLP-1 旅程的自然歸屬。想和專用工具比較，參考[最佳 GLP-1 追蹤 App](/zh-tw/best-glp-1-tracker-apps) 整理。\n\n## 常見問題\n\n**1. GLP-1 注射記錄 App 是什麼？**\n是一款記錄每週 GLP-1 注射日期時間、mg 劑量與輪替人體圖部位的工具（多為 App）。它會提醒下一針何時到期，並顯示你藥物的漏打時窗。\n\n**2. 注射記錄與劑量記錄有何不同？**\n注射記錄聚焦「注射*事件*」― 何時、打在身體哪裡；劑量記錄聚焦「*mg*」― 目前強度與調升階段。多數人會在同一 App 記錄兩者。\n\n**3. 為什麼要記錄注射部位？**\n因為同一位置反覆注射會形成硬塊（脂肪增生），改變吸收。記錄部位能讓你在腹部、大腿與上臂間輪替，使各部位恢復、吸收一致。\n\n**4. GLP-1 的注射部位在哪？**\n腹部（距肚臍至少約 5 公分）、大腿前側或外側、上臂後側。把左右視為不同部位，就能簡單組成六週輪替。\n\n**5. 漏打每週注射該怎麼辦？**\n視藥物而定。週纖達要在下一針還有超過 2 天（48 小時）時補；胰妥讚在 5 天內；tirzepatide（猛健樂／Zepbound）在 4 天（96 小時）內。否則跳過並在原本的日子恢復，且絕不一次打兩針。\n\n**6. 可以更改注射的星期嗎？**\n若兩針間隔足夠（semaglutide 至少 48 小時），通常可以。請與處方醫師確認並更新提醒，讓 App 的節奏與漏打規則維持正確。\n\n**7. 用筆記本不行嗎，一定要 App？**\n任何記錄都勝過不記。但 App 會自動化人們最常忘的部分 ― 每週提醒、部位輪替圖、各藥漏打規則 ― 並保留可分享的歷史，這也是多數人能更長久維持數位記錄的原因。\n\n**8. 注射記錄 App 會告訴我何時該調整劑量嗎？**\n不會。它只記錄與提醒，不指示劑量變更。mg 的調升由處方醫師依調升時程決定 ― 請記錄，不要自行調整。\n\n## 為什麼選 HAVIT — 藥物管理與行為改變，一站完成\n\nGLP-1 藥物確實能有效減重，但體重計上的數字並非全部。研究指出，使用 GLP-1 減掉的體重中，約有 20〜40% 可能來自肌肉等「淨體重（lean mass）」，而非脂肪（[Neeland 等人，*Diabetes, Obesity and Metabolism*，2024](https://dom-pubs.onlinelibrary.wiley.com/doi/10.1111/dom.15728)）；一旦停藥，若沒有養成新的生活習慣，成果往往容易反彈。正因如此，主流指引都把藥物視為治療的一環，而非全部：美國預防服務工作小組（USPSTF）建議，為肥胖成人提供密集、多面向的行為介入（[USPSTF，B 級建議](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/obesity-in-adults-interventions)）。\n\nHAVIT 正是為這個時代而生——把用藥紀錄、體組成、營養與蛋白質、每日習慣養成，以及能因人調整的 AI 教練，全部整合在同一個 App。我們分析自家 1,090 位 GLP-1 使用者後發現：紀錄越持續的人，習慣也養得越扎實（[查看 GLP-1 習慣報告](/zh-tw/glp-1-habit-report)）。\n\n管好藥物，也守住肌肉。[立即開始使用 HAVIT →](https://aihavit.com)\n\n## 參考資料\n\n1. 美國 FDA ― WEGOVY（semaglutide）處方資訊、劑量與漏打。https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215256s024lbl.pdf\n2. Novo Nordisk ― 週纖達用藥時程與漏打（2 天）指引。https://www.wegovy.com/taking-wegovy/dosing-schedule.html\n3. Novo Nordisk ― 胰妥讚筆針使用、劑量與漏打（5 天）指引。https://www.ozempic.com/ozempic-pen/dosing.html\n4. Eli Lilly ― ZEPBOUND（tirzepatide）處方資訊、劑量與漏打（4 天/96 小時）。https://pi.lilly.com/us/zepbound-uspi.pdf\n5. 衛生福利部食品藥物管理署（TFDA）― 藥品許可證與藥物安全資訊。https://www.fda.gov.tw\n6. Cleveland Clinic ― GLP-1 Agonists：給藥與注射部位說明。https://my.clevelandclinic.org/health/treatments/13901-glp-1-agonists\n\n*以上醫療內容已對照所引用之 FDA 仿單與原廠資料，並以 2026 年年中為準確認。仿單會定期更新，最新細節請與你的醫師及官方處方資訊確認。*\n\n## 相關文章\n\n- [GLP-1 追蹤 App：在同一處管理你的療程](/zh-tw/glp-1-tracker-app)\n- [GLP-1 劑量記錄：調升時程與 mg 管理法](/zh-tw/glp-1-dose-tracker)\n- [GLP-1 注射部位輪替：預防脂肪增生](/zh-tw/glp1-injection-site-rotation-lipohypertrophy-prevention-2026)\n- [漏打 GLP-1 該怎麼辦：處理時機指南](/zh-tw/glp1-missed-dose-protocol-timing-guide-2026)",
+      "comparison_table": {
+        "title": "打完針的當下該記什麼",
+        "headers": [
+          "項目",
+          "為什麼重要",
+          "範例"
+        ],
+        "rows": [
+          [
+            "日期 & 時間",
+            "固定每週節奏，成為漏打判斷的基準",
+            "一 8:00"
+          ],
+          [
+            "藥物 & 劑量（mg）",
+            "確認打的是目前調升階段該打的強度",
+            "週纖達 1.0mg"
+          ],
+          [
+            "注射部位",
+            "帶動輪替、預防脂肪增生",
+            "左腹"
+          ],
+          [
+            "筆針 / 批號（選填）",
+            "有助追蹤不良筆針或保存問題",
+            "筆 #4"
+          ],
+          [
+            "當下反應",
+            "記錄泛紅、藥液外漏、彎針",
+            "無"
+          ]
+        ]
+      },
+      "faq": [],
+      "references": [],
+      "last_updated": "2026-07-06"
+    }
+  },
+  "generated_at": "2026-08-14T00:00:00.000Z"
+}
