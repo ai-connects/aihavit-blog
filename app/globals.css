@@ -436,6 +436,15 @@
     gap: 60px;
     align-items: start;
   }
+  /* Grid/flex children default to min-width:auto, so a `1fr` track can never
+     shrink below its content's min-content width. With long English category
+     names ("Longevity & Healthy Aging") that pushed the single mobile column to
+     460px inside a 390px viewport and scrolled the whole page sideways. Korean
+     hid the bug because it wraps between characters. */
+  .blog-list__inner > *,
+  .blog-featured__inner > * {
+    min-width: 0;
+  }
   .blog-categories {
     display: flex;
     flex-direction: column;
@@ -466,6 +475,12 @@
   }
   .blog-categories__item.is-active .text-body-medium {
     color: #000;
+  }
+  .blog-categories__item {
+    max-width: 100%;
+  }
+  .blog-categories__item .text-body-medium {
+    overflow-wrap: anywhere;
   }
   .blog-categories__icon {
     font-size: 16px;
@@ -506,6 +521,14 @@
     margin-bottom: 8px;
     transition: color 0.2s ease;
   }
+  /* Article titles contain long unbreakable compounds (e.g.
+     "Measurement-Assessment-Lifestyle"), which at 320px pushed the row to
+     348px inside a 272px column and scrolled the whole page sideways. */
+  .post-list__item-text h3,
+  .post-list__item-text p,
+  .post__col h1 {
+    overflow-wrap: anywhere;
+  }
   .post-list__item:hover .post-list__item-text h3 {
     color: #7a9d00;
   }
@@ -543,6 +566,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
     margin-top: 48px;
   }
@@ -576,6 +600,11 @@
   .article-card {
     display: flex;
     flex-direction: column;
+    /* Grid items default to min-width:auto and cannot shrink below their
+       longest word. screens.sm is 320px in this project, so the card grid is
+       already 2-up on the narrowest phones — long English titles escaped the
+       card without these two rules. */
+    min-width: 0;
     background: var(--hv-surface);
     border: 1px solid var(--hv-border);
     border-radius: 20px;
@@ -585,6 +614,10 @@
   .article-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+  }
+  .article-card h3,
+  .article-card figcaption {
+    overflow-wrap: anywhere;
   }
   .article-card__media {
     position: relative;
@@ -619,7 +652,13 @@
   /* Article page                                                      */
   /* ---------------------------------------------------------------- */
   .post {
-    padding: 40px 0 96px;
+    /* padding-block only. The article element is `post hv-container post__col`,
+       and a `padding` shorthand here would reset .hv-container's 24px side
+       padding to 0 — which put the title, body and hero flush against the
+       screen edges on mobile, and let the -mx-4 comparison table push the page
+       16px wider than the viewport. */
+    padding-top: 40px;
+    padding-bottom: 96px;
   }
   .post__col {
     max-width: 680px;
@@ -685,6 +724,11 @@
   .hv-footer__col .eyebrow {
     color: rgba(255, 255, 255, 0.4);
     margin-bottom: 4px;
+  }
+  .hv-footer__topics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 20px;
   }
   .hv-footer__col a {
     color: #fff;
@@ -754,7 +798,51 @@
       height: 72px;
     }
     .hv-footer__columns {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    /* Topics holds all 15 category names. Inside a half-width footer column its
+       own 2-up grid left each cell ~52px at 320px, so "Weight & Metabolism"
+       (88px) escaped the page. Let it span the full width instead. */
+    .hv-footer__col--topics {
+      grid-column: 1 / -1;
+    }
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Touch targets (phones)                                            */
+  /*                                                                   */
+  /* Measured at 390px: footer links were 23px tall, pagination 36px —  */
+  /* both under the ~44px minimum for a comfortable tap. These add hit  */
+  /* area without changing the visual rhythm (padding, not font-size).  */
+  /* ---------------------------------------------------------------- */
+  @media (max-width: 640px) {
+    .hv-footer__col a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+    }
+    .hv-footer__col {
+      gap: 2px;
+    }
+    .pagination__page,
+    .carousel-arrow {
+      min-width: 44px;
+      height: 44px;
+    }
+    .btn-ghost {
+      min-height: 44px;
+      min-width: 44px;
+    }
+    .blog-categories__item {
+      min-height: 44px;
+    }
+    /* iOS Safari zooms the whole page when a focused input is under 16px. */
+    input[type='search'],
+    input[type='text'],
+    input[type='number'],
+    select,
+    textarea {
+      font-size: 16px;
     }
   }
 }
