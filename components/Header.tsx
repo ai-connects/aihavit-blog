@@ -30,6 +30,8 @@ function currentNative(shortLang: string): string {
 }
 
 const MAIN_SITE = process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://aihavit.com';
+/** Start Free goes straight to the web app, same as on aihavit.com. */
+const APP_URL = 'https://app.aihavit.com/';
 
 const LABEL_START_FREE: Record<string, string> = {
   en: 'Start Free', ko: '무료로 시작', ja: '無料で始める', zh: '免费开始', 'zh-tw': '免費開始',
@@ -135,7 +137,7 @@ export default function Header({ lang, currentSlug, currentCategorySlug }: Props
             )}
           </div>
 
-          <a href={`${MAIN_SITE}/#download`} className="btn btn--primary btn--sm hidden md:inline-flex">
+          <a href={APP_URL} className="btn btn--primary btn--sm hidden md:inline-flex">
             {startFree}
           </a>
 
@@ -161,7 +163,7 @@ export default function Header({ lang, currentSlug, currentCategorySlug }: Props
           <Link href={`/${shortLang}/articles`} className="py-1">Articles</Link>
           <Link href={`/${shortLang}/tools`} className="py-1">Tools</Link>
           <a href="https://app.aihavit.com/" target="_blank" rel="noopener" className="py-1">App</a>
-          <a href={`${MAIN_SITE}/#download`} className="btn btn--primary btn--sm self-start mt-1">
+          <a href={APP_URL} className="btn btn--primary btn--sm self-start mt-1">
             {startFree}
           </a>
         </div>
