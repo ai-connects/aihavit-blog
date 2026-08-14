@@ -50,6 +50,12 @@ const SHORT_TO_FULL: Record<string, LangKey> = {
   pl: 'pl_pl', nb: 'nb_no', no: 'nb_no', da: 'da_dk', ro: 'ro_ro', ms: 'ms_my',
   sk: 'sk_sk', uk: 'uk_ua', cs: 'cs_cz', ca: 'ca_es', hr: 'hr_hr', fi: 'fi_fi',
   hu: 'hu_hu', he: 'he_il', hi: 'hi_in', uz: 'uz_cyrl_uz',
+  // Hyphenated route segments were missing, so toFullLang('zh-tw') fell through
+  // to FALLBACK_LANG (en_us) and every component that derives its language from
+  // the LangKey rendered zh-tw pages in English — including a sitewide footer
+  // whose article links then pointed at /en/. Round-trip must hold:
+  // toShortLang(toFullLang(x)) === x for every served route lang.
+  'zh-tw': 'zh_tw', 'zh-cn': 'zh_cn', 'pt-br': 'pt_pt', 'en-gb': 'en_gb',
 };
 
 const FULL_TO_SHORT: Record<LangKey, string> = {
