@@ -2638,3 +2638,57 @@ a {
 [dir='rtl'] .comparison__col--label {
   text-align: right;
 }
+
+
+/* SEO LINK CLUSTERS (footer)
+   Six columns of curated blog links. Sitewide, so these pages collect internal
+   link equity from every locale of the homepage. */
+.footer__seo {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px 24px;
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+.footer__seo .footer__col a {
+  font-size: 14px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.78);
+}
+.footer__seo .footer__col a:hover {
+  color: var(--color-primary);
+}
+@media (min-width: 1024px) {
+  .footer__seo {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .footer__seo {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 20px;
+    margin-top: 40px;
+    padding-top: 32px;
+  }
+}
+[dir='rtl'] .footer__seo {
+  text-align: right;
+}
+
+
+/* Article carousel on narrow phones.
+   The cards carry fixed widths (304px, 360px for the centred one) so the
+   three-up desktop row keeps its proportions. Below 640px that 360px card
+   is wider than the viewport itself and pushed the whole page 64px sideways,
+   so let the cards go fluid once there is only one per row. */
+@media (max-width: 640px) {
+  .articles__track {
+    flex-wrap: wrap;
+  }
+  .article-card,
+  .article-card--center {
+    width: 100%;
+    max-width: 360px;
+  }
+}

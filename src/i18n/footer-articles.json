@@ -1,0 +1,364 @@
+{
+  "blogLangs": [
+    "en",
+    "ko",
+    "ja",
+    "zh-tw"
+  ],
+  "groups": [
+    {
+      "key": "glp1Start",
+      "links": [
+        {
+          "slug": "glp1-injection-site-rotation-absorption-2026",
+          "labels": {
+            "en": "Where You Inject Semaglutide Actually Matters",
+            "ko": "세마글루타이드 주사 부위별 흡수율 차이",
+            "ja": "セマグルチドの注射部位で吸収率が変わる",
+            "zh-tw": "Semaglutide 注射部位真的有差！腹部、大腿、手…"
+          }
+        },
+        {
+          "slug": "glp1-injection-technique-pain-reduction-2026",
+          "labels": {
+            "en": "How to Make Ozempic Injections Less Painful",
+            "ko": "오젠픽 주사 통증 줄이는 방법",
+            "ja": "オゼンピック注射の痛みを軽減する方法",
+            "zh-tw": "如何讓 Ozempic 注射不再痛"
+          }
+        },
+        {
+          "slug": "tirzepatide-dose-titration-schedule-minimize-nausea-2026",
+          "labels": {
+            "en": "Mounjaro Dose Increase Schedule",
+            "ko": "마운자로 용량 증가 시 부작용 최소화하는 스케줄",
+            "ja": "マンジャロ増量スケジュール",
+            "zh-tw": "Mounjaro 劑量調整時程"
+          }
+        },
+        {
+          "slug": "glp1-traveling-storage-temperature-guide-2026",
+          "labels": {
+            "en": "How to Travel with Ozempic Without Refrigerat…",
+            "ko": "오젬픽 냉장보관 없이 여행하는 방법",
+            "ja": "オゼンピックを冷蔵庫なしで持ち運ぶ方法",
+            "zh-tw": "Ozempic 不冷藏怎麼帶出國"
+          }
+        },
+        {
+          "slug": "wegovy-insurance-coverage-prior-authorization-tips-2026",
+          "labels": {
+            "en": "How to Get Insurance to Cover Wegovy",
+            "ko": "위고비 보험 적용 사전승인 획득 방법",
+            "ja": "ウゴービの保険適用を勝ち取る方法",
+            "zh-tw": "Wegovy 保險給付攻略"
+          }
+        },
+        {
+          "slug": "glp1-exercise-timing-medication-effectiveness-2026",
+          "labels": {
+            "en": "Should I Exercise Before or After My Ozempic…",
+            "ko": "오젬픽 주사 전후 운동 타이밍",
+            "ja": "オゼンピック注射の前後、運動はいつすべき",
+            "zh-tw": "打完 Ozempic 到底能不能運動"
+          }
+        }
+      ]
+    },
+    {
+      "key": "sideEffects",
+      "links": [
+        {
+          "slug": "glp1-nausea-management-evidence-based-strategies-2026",
+          "labels": {
+            "en": "How to Reduce Ozempic Nausea Without Stopping",
+            "ko": "오젠픽 메스꺼움 줄이는 실제 방법",
+            "ja": "オゼンピックの吐き気を止めずに軽減する方法",
+            "zh-tw": "Ozempic 噁心感不用停藥也能改善"
+          }
+        },
+        {
+          "slug": "glp1-hair-loss-telogen-effluvium-management-2026",
+          "labels": {
+            "en": "GLP-1 Hair Loss and Telogen Effluvium",
+            "ko": "GLP-1 약물 복용 중 머리카락이 빠진다면",
+            "ja": "GLP-1薬と抜け毛・休止期脱毛症",
+            "zh-tw": "GLP-1 藥物掉髮與休止期落髮"
+          }
+        },
+        {
+          "slug": "glp1-constipation-fiber-strategy-balance-2026",
+          "labels": {
+            "en": "GLP-1 Constipation Relief",
+            "ko": "GLP-1 약물 복용 중 변비가 생겼다면",
+            "ja": "GLP-1薬で便秘がつらい",
+            "zh-tw": "GLP-1 藥物便秘困擾"
+          }
+        },
+        {
+          "slug": "glp1-gallbladder-symptoms-recognition-prevention-2026",
+          "labels": {
+            "en": "GLP-1 Gallbladder Problems",
+            "ko": "GLP-1 복용 중 담낭 문제",
+            "ja": "GLP-1薬と胆嚢トラブル",
+            "zh-tw": "GLP-1 藥物與膽囊問題"
+          }
+        },
+        {
+          "slug": "glp1-pancreatitis-warning-signs-risk-reduction-2026",
+          "labels": {
+            "en": "GLP-1 Pancreatitis Warning Signs",
+            "ko": "GLP-1 복용 중 췌장염 경고 신호 5가지",
+            "ja": "GLP-1薬と膵炎の警告サイン",
+            "zh-tw": "GLP-1 藥物與胰臟炎"
+          }
+        },
+        {
+          "slug": "glp1-gastroparesis-symptoms-recognition-2026",
+          "labels": {
+            "en": "GLP-1 Gastroparesis Symptoms",
+            "ko": "GLP-1 복용 후 속이 더부룩한데",
+            "ja": "GLP-1薬による胃不全麻痺の症状",
+            "zh-tw": "GLP-1 胃輕癱症狀"
+          }
+        }
+      ]
+    },
+    {
+      "key": "compare",
+      "links": [
+        {
+          "slug": "glp1-type2-diabetes-vs-obesity-indication-dose-difference-2026",
+          "labels": {
+            "en": "Ozempic vs Wegovy",
+            "ko": "오젬픽 vs 위고비",
+            "ja": "オゼンピックとウゴービの違い",
+            "zh-tw": "Ozempic vs Wegovy"
+          }
+        },
+        {
+          "slug": "tirzepatide-vs-semaglutide-gi-side-effects-duration-comparison-2026",
+          "labels": {
+            "en": "Mounjaro vs Wegovy Nausea Duration",
+            "ko": "마운자로 vs 위고비 메스꺼움 지속 기간 비교",
+            "ja": "マンジャロ vs ウゴービ 吐き気の持続期間を徹底…",
+            "zh-tw": "Mounjaro vs Wegovy 噁心持續時間比較"
+          }
+        },
+        {
+          "slug": "glp1-retatrutide-triple-agonist-comparison-2026",
+          "labels": {
+            "en": "Retatrutide vs Tirzepatide vs Semaglutide",
+            "ko": "레타트루타이드 vs 티르제파타이드 vs 세마글루…",
+            "ja": "レタトルチド vs チルゼパチド vs セマグルチド",
+            "zh-tw": "Retatrutide vs Tirzepatide vs Semaglutide"
+          }
+        },
+        {
+          "slug": "compounded-semaglutide-vs-brand-wegovy-safety-efficacy-2026",
+          "labels": {
+            "en": "Compounded Semaglutide vs Brand Wegovy",
+            "ko": "조제 세마글루타이드 vs 위고비",
+            "ja": "調剤セマグルチド vs ウゴービ",
+            "zh-tw": "複方調配 Semaglutide vs 原廠 Wegovy"
+          }
+        },
+        {
+          "slug": "glp1-switching-brands-equivalence-guide-2026",
+          "labels": {
+            "en": "Switching from Ozempic to Wegovy",
+            "ko": "오젬픽에서 위고비로 전환할 때 용량 계산법과…",
+            "ja": "オゼンピックからウゴービへの切り替え完全ガイド",
+            "zh-tw": "Ozempic 轉換 Wegovy 完整指南"
+          }
+        },
+        {
+          "slug": "transitioning-from-ozempic-to-mounjaro-protocol-2026",
+          "labels": {
+            "en": "Switching from Ozempic to Mounjaro",
+            "ko": "오젭픽에서 마운자로 전환하는 방법",
+            "ja": "オゼンピックからマンジャロへの切り替え",
+            "zh-tw": "從 Ozempic 轉換到 Mounjaro"
+          }
+        }
+      ]
+    },
+    {
+      "key": "interactions",
+      "links": [
+        {
+          "slug": "glp1-metformin-combination-therapy-synergy-2026",
+          "labels": {
+            "en": "GLP-1 and Metformin Together",
+            "ko": "GLP-1 메트포르민 병용 시너지 효과",
+            "ja": "GLP-1とメトホルミンの併用療法",
+            "zh-tw": "GLP-1 加上 Metformin"
+          }
+        },
+        {
+          "slug": "glp1-antidepressant-ssri-interaction-serotonin-2026",
+          "labels": {
+            "en": "GLP-1 Medications and Antidepressants",
+            "ko": "GLP-1 주사와 항우울제 SSRI 함께 복용해도 될까",
+            "ja": "GLP-1薬と抗うつ薬の併用",
+            "zh-tw": "GLP-1 藥物與抗憂鬱藥併用"
+          }
+        },
+        {
+          "slug": "glp1-levothyroxine-thyroid-medication-interaction-2026",
+          "labels": {
+            "en": "Taking Thyroid Medication Levothyroxine with…",
+            "ko": "GLP-1과 갑상선약 레보티록신 함께 복용할 때 반…",
+            "ja": "GLP-1薬とレボチロキシン（チラーヂン）の併用｜…",
+            "zh-tw": "GLP-1藥物與甲狀腺藥Levothyroxine怎麼吃"
+          }
+        },
+        {
+          "slug": "glp1-statin-cholesterol-medication-synergy-2026",
+          "labels": {
+            "en": "GLP-1 Plus Statin",
+            "ko": "GLP-1 스타틴 병용 콜레스테롤 개선",
+            "ja": "GLP-1受容体作動薬とスタチンの併用療法",
+            "zh-tw": "GLP-1 加上史他汀"
+          }
+        },
+        {
+          "slug": "glp1-alcohol-interaction-safety-limits-2026",
+          "labels": {
+            "en": "Can I Drink Alcohol on Semaglutide Safely",
+            "ko": "세마글루타이드 복용 중 음주, 어디까지 괜찮을까",
+            "ja": "セマグルチド服用中のお酒は大丈夫",
+            "zh-tw": "使用 Semaglutide 期間可以喝酒嗎"
+          }
+        },
+        {
+          "slug": "glp1-caffeine-interaction-appetite-effects-2026",
+          "labels": {
+            "en": "Does Coffee Affect Semaglutide Effectiveness",
+            "ko": "커피가 세마글루타이드 효과에 영향을 주는가",
+            "ja": "コーヒーはセマグルチドの効果に影響する",
+            "zh-tw": "喝咖啡會影響瘦瘦針效果嗎"
+          }
+        }
+      ]
+    },
+    {
+      "key": "afterGlp1",
+      "links": [
+        {
+          "slug": "glp1-rebound-weight-gain-prevention-2026",
+          "labels": {
+            "en": "After Ozempic",
+            "ko": "오젬픽 중단 후 체중 유지하는 방법",
+            "ja": "オゼンピック終了後のリバウンド対策",
+            "zh-tw": "停用 Ozempic 後如何維持體重"
+          }
+        },
+        {
+          "slug": "stopping-semaglutide-weight-regain-prevention-protocol-2026",
+          "labels": {
+            "en": "Stopping Semaglutide Without Regaining Weight",
+            "ko": "오젭픽 중단 후 체중 유지 방법",
+            "ja": "セマグルチド中止後にリバウンドしない方法",
+            "zh-tw": "停用 Ozempic 後不復胖"
+          }
+        },
+        {
+          "slug": "glp1-muscle-preservation-protein-timing-resistance-training-2026",
+          "labels": {
+            "en": "How to Prevent Muscle Loss on Semaglutide",
+            "ko": "세마글루타이드 복용 중 근육 손실 막는 단백질…",
+            "ja": "セマグルチド服用中の筋肉減少を防ぐ方法",
+            "zh-tw": "使用 Semaglutide 期間如何避免肌肉流失"
+          }
+        },
+        {
+          "slug": "glp1-sarcopenia-screening-dexa-grip-strength-protocol-2026",
+          "labels": {
+            "en": "How to Check for Muscle Loss While on Wegovy",
+            "ko": "위고비 복용 중 근육 감소 확인 방법",
+            "ja": "ウゴービ服用中の筋肉減少チェック法",
+            "zh-tw": "Wegovy 減重期間如何監測肌肉流失"
+          }
+        },
+        {
+          "slug": "weight-regain-prevention-maintenance-phase-protocol-2026",
+          "labels": {
+            "en": "Why 80% of Dieters Regain Weight (And the Exa…",
+            "ko": "감량 후 요요 방지하고 체중 유지하는 장기 전략",
+            "ja": "ダイエット成功者の80%がリバウンドする理由と、…",
+            "zh-tw": "為什麼 80% 減肥成功的人會復胖"
+          }
+        },
+        {
+          "slug": "glp1-behavior-change-m0-m1-m2",
+          "labels": {
+            "en": "GLP-1 Alone Is Not Enough",
+            "ko": "GLP-1만으로는 부족하다",
+            "ja": "GLP-1単独では不十分",
+            "zh-tw": "單靠 GLP-1 藥物還不夠"
+          }
+        }
+      ]
+    },
+    {
+      "key": "conditions",
+      "links": [
+        {
+          "slug": "glp1-pcos-weight-loss-insulin-resistance-improvement-2026",
+          "labels": {
+            "en": "GLP-1 Medications for PCOS",
+            "ko": "다낭성 난소 증후군에 오젭픽이 효과 있을까",
+            "ja": "PCOSにGLP-1薬が効く理由",
+            "zh-tw": "GLP-1 藥物治療多囊性卵巢症候群"
+          }
+        },
+        {
+          "slug": "glp1-menstrual-cycle-changes-fertility-considerations-2026",
+          "labels": {
+            "en": "GLP-1 Medications and Your Menstrual Cycle",
+            "ko": "GLP-1 약물 복용 중 생리주기가 달라졌다면",
+            "ja": "GLP-1薬と生理周期の関係",
+            "zh-tw": "GLP-1 藥物如何影響你的月經週期"
+          }
+        },
+        {
+          "slug": "glp1-thyroid-function-monitoring-protocol-2026",
+          "labels": {
+            "en": "GLP-1 Medication Thyroid Monitoring",
+            "ko": "GLP-1 약물 복용 중 갑상선 기능 모니터링",
+            "ja": "GLP-1薬と甲状腺モニタリング",
+            "zh-tw": "GLP-1 藥物甲狀腺監測"
+          }
+        },
+        {
+          "slug": "glp1-sleep-quality-changes-mechanisms-2026",
+          "labels": {
+            "en": "Does Semaglutide Affect Sleep Quality",
+            "ko": "세마글루타이드가 수면의 질에 영향을 주는가",
+            "ja": "セマグルチドは睡眠の質に影響する",
+            "zh-tw": "司美格魯肽會影響睡眠品質嗎"
+          }
+        },
+        {
+          "slug": "glp1-mental-health-effects-depression-anxiety-2026",
+          "labels": {
+            "en": "Can Semaglutide Cause Depression or Anxiety",
+            "ko": "세마글루타이드가 우울증이나 불안을 유발할까",
+            "ja": "セマグルチドはうつや不安を引き起こす",
+            "zh-tw": "Semaglutide 會導致憂鬱或焦慮嗎"
+          }
+        },
+        {
+          "slug": "glp1-hair-loss-protein-intake-connection-2026",
+          "labels": {
+            "en": "Why Am I Losing Hair on Semaglutide",
+            "ko": "세마글루타이드 복용 중 탈모가 생겼다면",
+            "ja": "セマグルチドで髪が抜ける本当の理由｜誰も教え…",
+            "zh-tw": "打Ozempic為什麼會掉髮"
+          }
+        }
+      ]
+    }
+  ]
+}
