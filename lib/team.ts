@@ -13,11 +13,11 @@
  * Verified official Havit Inc. properties (same legal entity).
  * aiconnects.me is deliberately absent: after the AI Connect → Havit Inc.
  * rename it redirects here, and sameAs must list live canonical profiles, not
- * URLs that bounce.
+ * URLs that bounce. The bare apex aihavit.com is absent for the same reason —
+ * it 307s to www, so www is the one canonical form.
  */
 export const BRAND_SAME_AS: string[] = [
   'https://www.aihavit.com',
-  'https://aihavit.com',
   'https://app.aihavit.com',
   // TODO(real-data): add external authoritative profiles to strengthen the entity:
   //   LinkedIn company, Crunchbase, X/Instagram, Google Play / App Store listings.
