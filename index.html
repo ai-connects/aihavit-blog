@@ -28,8 +28,34 @@
     />
     <meta property="og:site_name" content="HAVIT" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://www.aihavit.com/havit-logo.png" />
+    <!-- 1200×630 소셜 카드. 예전엔 흰 배경 워드마크(havit-logo.png)를 써서
+         링크를 공유하면 로고 파일 하나가 튀어나온 것처럼 보였다. -->
+    <meta property="og:image" content="https://www.aihavit.com/og-card.png" />
     <meta name="twitter:card" content="summary_large_image" />
+    <!-- GA4. 블로그(blog.aihavit.com)와 같은 속성을 쓴다 — 블로그에서 홈으로
+         넘어와 스토어로 나가는 경로가 한 보고서에서 이어져 보여야 하기 때문.
+         이 페이지의 목적이 Start Free 와 스토어 배지 두 개뿐이라, 그 두
+         클릭만 이벤트로 잡는다. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NEXM0LNTK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() { dataLayer.push(arguments) }
+      gtag('js', new Date())
+      gtag('config', 'G-4NEXM0LNTK')
+
+      addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href]')
+        if (!a) return
+        var href = a.getAttribute('href') || ''
+        if (href.indexOf('app.aihavit.com') > -1) {
+          gtag('event', 'start_free_click', { link_location: a.className || 'unknown' })
+        } else if (href.indexOf('apps.apple.com') > -1) {
+          gtag('event', 'store_badge_click', { store: 'app_store' })
+        } else if (href.indexOf('play.google.com') > -1) {
+          gtag('event', 'store_badge_click', { store: 'google_play' })
+        }
+      })
+    </script>
   </head>
   <body>
     <header class="nav">

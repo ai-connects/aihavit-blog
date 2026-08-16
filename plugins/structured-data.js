@@ -18,10 +18,16 @@ const PLAY_STORE = 'https://play.google.com/store/apps/details?id=com.aiconnects
 const BLOG = 'https://blog.aihavit.com'
 const APP = 'https://app.aihavit.com/'
 
-/** Swap this file and the social card changes everywhere; nothing else moves. */
-const OG_IMAGE = `${SITE}/havit-logo.png`
-const OG_IMAGE_W = 1600
-const OG_IMAGE_H = 753
+/**
+ * The social card. Swap this file and every locale's preview changes.
+ *
+ * It used to point at havit-logo.png — a 1600×753 wordmark on white, which made
+ * a shared link look like a stray logo file. This one carries the page's own
+ * headline and the app screen at the 1.91:1 ratio the platforms crop to.
+ */
+const OG_IMAGE = `${SITE}/og-card.png`
+const OG_IMAGE_W = 1200
+const OG_IMAGE_H = 630
 
 /**
  * og:locale wants language_TERRITORY, which cannot be derived from a bare
