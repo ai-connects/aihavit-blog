@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { renderSeoHead } from './structured-data.js'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
 const I18N_DIR = resolve(HERE, '../src/i18n')
@@ -157,8 +158,15 @@ function translateBody(html, dict) {
   return { html: out, missing }
 }
 
-/** Rewrite <html lang>, <title>, meta description, canonical + hreflang set. */
-function translateHead(html, locale, dict) {
+/**
+ * Rewrite <html lang>, <title>, meta description, canonical + hreflang set, and
+ * append the Open Graph / JSON-LD block.
+ *
+ * `baseHtml` is the untranslated index.html: the default locale keeps its
+ * strings in the markup rather than a dictionary, so the schema builder needs
+ * the original to resolve a key when `dict` is empty.
+ */
+function translateHead(html, locale, dict, baseHtml) {
   const meta = LOCALE_META[locale]
   // Arabic and Hebrew need dir="rtl"; every other locale must not carry a stale
   // dir attribute, so the whole <html …> tag is rewritten rather than patched.
@@ -177,6 +185,7 @@ function translateHead(html, locale, dict) {
 
   // Strip any previously-injected block so re-runs stay idempotent.
   html = html.replace(/\s*<!-- i18n:alternates -->[\s\S]*?<!-- \/i18n:alternates -->/i, '')
+  html = html.replace(/\s*<!-- i18n:seo -->[\s\S]*?<!-- \/i18n:seo -->/i, '')
 
   const links = [
     `    <link rel="canonical" href="${localeUrl(locale)}" />`,
@@ -187,10 +196,40 @@ function translateHead(html, locale, dict) {
     `    <link rel="alternate" hreflang="x-default" href="${localeUrl(DEFAULT_LOCALE)}" />`,
   ].join('\n')
 
+  // Whatever survived the rewrites above is what the page actually says, so the
+  // social tags and the schema read those final values back rather than
+  // re-deriving them from the dictionary and risking a mismatch.
+  const title = plainText((/<title>([\s\S]*?)<\/title>/i.exec(html) || [, ''])[1])
+  const description = (/<meta\s+name="description"\s+content="([^"]*)"/i.exec(html) || [, ''])[1]
+
+  const seo = renderSeoHead({
+    locale,
+    dict,
+    baseHtml,
+    title,
+    description,
+    url: localeUrl(locale),
+    localeMeta: meta,
+  })
+
   return html.replace(
     /<\/head>/i,
-    `    <!-- i18n:alternates -->\n${links}\n    <!-- /i18n:alternates -->\n  </head>`,
+    `    <!-- i18n:alternates -->\n${links}\n    <!-- /i18n:alternates -->\n` +
+      `    <!-- i18n:seo -->\n${seo}\n    <!-- /i18n:seo -->\n  </head>`,
   )
+}
+
+/** Entity-decoded, tag-free text — a dictionary <title> may carry entities. */
+function plainText(str) {
+  return str
+    .replace(/<[^>]+>/g, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'")
+    .replace(/\s+/g, ' ')
+    .trim()
 }
 
 /** Swap the placeholder in index.html for this locale's cluster block. */
@@ -223,7 +262,7 @@ export function renderLocale(baseHtml, locale) {
   const { html, missing } = locale === DEFAULT_LOCALE
     ? { html: baseHtml, missing: 0 }
     : translateBody(baseHtml, dict)
-  const withHead = renderLangMenu(translateHead(html, locale, dict), locale)
+  const withHead = renderLangMenu(translateHead(html, locale, dict, baseHtml), locale)
   return { html: injectFooterArticles(withHead, locale), missing }
 }
 

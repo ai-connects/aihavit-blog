@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" as="image" href="/src/assets/images/hero-phone.webp" fetchpriority="high" />
     <link rel="stylesheet" href="/src/style.css" />
     <title>HAVIT — Lost Weight, Keep Muscle</title>
     <meta
@@ -68,7 +69,7 @@
         <div class="container hero__inner">
           <div class="hero__content">
             <div class="rating reveal">
-              <img class="rating__leaf rating__leaf--left" src="/src/assets/images/icon-laurel-left.webp" alt="" />
+              <img loading="lazy" decoding="async" width="85" height="160" class="rating__leaf rating__leaf--left" src="/src/assets/images/icon-laurel-left.webp" alt="" />
               <div class="rating__body">
                 <div class="rating__stars">
                   <span class="star-icon" aria-hidden="true"></span>
@@ -80,7 +81,7 @@
                 <div data-i18n="4-8" class="rating__score text-title-xlarge">4.8</div>
                 <div data-i18n="average-rating" class="rating__label text-body-small">Average Rating</div>
               </div>
-              <img class="rating__leaf rating__leaf--right" src="/src/assets/images/icon-laurel-right.webp" alt="" />
+              <img loading="lazy" decoding="async" width="85" height="160" class="rating__leaf rating__leaf--right" src="/src/assets/images/icon-laurel-right.webp" alt="" />
             </div>
 
             <h1 data-i18n="lost-weight-keep-muscle" class="hero__headline">
@@ -111,7 +112,7 @@
 
           <div class="hero__visual">
             <div class="hero__glow"></div>
-            <img
+            <img fetchpriority="high" decoding="async" width="671" height="1280"
               class="hero__phone"
               src="/src/assets/images/hero-phone.webp"
               alt="HAVIT app preview"
@@ -146,7 +147,7 @@
                   </p>
                 </div>
                 <div class="feature-card__image-frame">
-                  <img
+                  <img loading="lazy" decoding="async" width="681" height="1193"
                     class="feature-card__image"
                     src="/src/assets/images/feature-body-insights.webp"
                     alt="Body composition analysis screen"
@@ -164,7 +165,7 @@
                   </p>
                 </div>
                 <div class="feature-card__image-frame">
-                  <img
+                  <img loading="lazy" decoding="async" width="917" height="1743"
                     class="feature-card__image"
                     src="/src/assets/images/feature-nutrition.webp"
                     alt="Meal logging screen"
@@ -186,7 +187,7 @@
                   </p>
                 </div>
                 <div class="feature-card__image-frame">
-                  <img
+                  <img loading="lazy" decoding="async" width="880" height="2201"
                     class="feature-card__image"
                     src="/src/assets/images/feature-daily-missions.webp"
                     alt="Daily missions screen"
@@ -204,7 +205,7 @@
                   </p>
                 </div>
                 <div class="feature-card__image-frame">
-                  <img
+                  <img loading="lazy" decoding="async" width="1000" height="1363"
                     class="feature-card__image"
                     src="/src/assets/images/feature-ai-coach.webp"
                     alt="AI coach recommendation screen"
@@ -225,7 +226,7 @@
                   </p>
                 </div>
                 <div class="feature-card__image-frame">
-                  <img
+                  <img loading="lazy" decoding="async" width="1000" height="941"
                     class="feature-card__image"
                     src="/src/assets/images/feature-track-everything.webp"
                     alt="Water and GLP-1 tracking screen"
@@ -433,8 +434,8 @@
                   class="article-card__media"
                   href="https://blog.aihavit.com/en/morning-vs-evening-workout-circadian-performance-2026"
                 >
-                  <img
-                    src="https://havit-prod-us-east.s3.us-east-1.amazonaws.com/image/actions/image/IMG_FLEX_003.jpg"
+                  <img decoding="async" width="760" height="760"
+                    src="/src/assets/images/article-IMG_FLEX_003.webp"
                     alt="Person stretching on a mat in a sunlit studio"
                     loading="lazy"
                   />
@@ -448,8 +449,8 @@
                   class="article-card__media"
                   href="https://blog.aihavit.com/en/postprandial-glucose-spike-prevention-food-order-2026"
                 >
-                  <img
-                    src="https://havit-prod-us-east.s3.us-east-1.amazonaws.com/image/articles/art_0084.jpg"
+                  <img decoding="async" width="760" height="760"
+                    src="/src/assets/images/article-art_0084.webp"
                     alt="Vegetables, protein and rice laid out in eating order"
                     loading="lazy"
                   />
@@ -463,8 +464,8 @@
                   class="article-card__media"
                   href="https://blog.aihavit.com/en/caffeine-intake-tracking-sleep-impact-timing-2026"
                 >
-                  <img
-                    src="https://havit-prod-us-east.s3.us-east-1.amazonaws.com/image/actions/image/IMG_HYD_002.jpg"
+                  <img decoding="async" width="760" height="760"
+                    src="/src/assets/images/article-IMG_HYD_002.webp"
                     alt="Iced coffee being poured at a cafe"
                     loading="lazy"
                   />
@@ -637,7 +638,7 @@
               target="_blank"
               rel="noopener"
             >
-              <img src="/src/assets/images/badge-appstore.webp" alt="Download on the App Store" />
+              <img loading="lazy" decoding="async" width="306" height="112" src="/src/assets/images/badge-appstore.webp" alt="Download on the App Store" />
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.aiconnects.havitWellness"
@@ -645,7 +646,7 @@
               target="_blank"
               rel="noopener"
             >
-              <img src="/src/assets/images/badge-googleplay.webp" alt="Get it on Google Play" />
+              <img loading="lazy" decoding="async" width="306" height="112" src="/src/assets/images/badge-googleplay.webp" alt="Get it on Google Play" />
             </a>
           </div>
           <p data-i18n="free-to-download-in-app" class="text-body-small final-cta__disclaimer">
