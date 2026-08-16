@@ -104,7 +104,7 @@ const FINAL_CTA: Record<string, { title: string; sub: string; note: string }> = 
   },
 };
 
-const MAIN_SITE = process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://aihavit.com';
+const MAIN_SITE = process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://www.aihavit.com';
 
 /** Column headings for the SEO link clusters (see lib/footer-links.ts). */
 const FOOTER_GROUP_LABELS: Record<string, Record<string, string>> = {

@@ -29,7 +29,7 @@ function currentNative(shortLang: string): string {
   return TOGGLE_LANGS.find((l) => l.route === shortLang)?.native ?? 'English';
 }
 
-const MAIN_SITE = process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://aihavit.com';
+const MAIN_SITE = process.env.NEXT_PUBLIC_MAIN_URL ?? 'https://www.aihavit.com';
 /** Start Free goes straight to the web app, same as on aihavit.com. */
 const APP_URL = 'https://app.aihavit.com/';
 

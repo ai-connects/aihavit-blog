@@ -25,7 +25,7 @@
 4. Root Directory: `./`
 5. **Environment Variables** (아래 6개 추가):
    - `NEXT_PUBLIC_SITE_URL` = `https://blog.aihavit.com`
-   - `NEXT_PUBLIC_MAIN_URL` = `https://aihavit.com`
+   - `NEXT_PUBLIC_MAIN_URL` = `https://www.aihavit.com`
    - `NEXT_PUBLIC_GA_ID` = `G-XXXXXXXXXX` (실제 GA4 ID로 교체)
    - `REVALIDATE_SECRET` = `(랜덤 32자 문자열, openssl rand -hex 16으로 생성)`
    - `TWITTER_HANDLE` = `@havit_ai` (확인 필요)
@@ -71,7 +71,7 @@ Value: cname.vercel-dns.com
 - [ ] `https://blog.aihavit.com` HTTP 200
 - [ ] `https://blog.aihavit.com/blog?lang=ko` 동작
 - [ ] `https://blog.aihavit.com/blog?lang=en` 동작
-- [ ] 블로그 헤더에 `← HAVIT` 링크 → `https://aihavit.com` 정상 이동
+- [ ] 블로그 헤더에 `← HAVIT` 링크 → `https://www.aihavit.com` 정상 이동
 - [ ] 메인 사이트 헤더에 `블로그` (또는 영어 `Blog`) 링크 → `https://blog.aihavit.com/ko` 이동
 - [ ] `https://blog.aihavit.com/sitemap.xml` 응답
 - [ ] `https://blog.aihavit.com/robots.txt` 응답
