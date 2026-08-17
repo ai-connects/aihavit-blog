@@ -372,21 +372,62 @@
   /* ---------------------------------------------------------------- */
   /* Blog listing — featured                                           */
   /* ---------------------------------------------------------------- */
+  /* ── 아래 히어로/목록/푸터 규격은 Figma HAVIT 2.1 Design System,
+     node 3513-415481 (Blog Desktop) 를 그대로 옮긴 값이다. ────────── */
   .blog-featured {
-    padding: 56px 0 72px;
+    padding: 120px 0 0;
   }
   .blog-featured__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 40px;
+    align-items: stretch;
+  }
+  /* 좌측 컬럼은 위(제목·설명)와 아래(캐러셀 화살표)로 벌어진다. */
+  .blog-featured__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /* 좌측 컬럼 상단 묶음: 제목·설명·검색을 24px 간격으로. */
+  .blog-featured__copy {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 12px 0;
+    max-width: 440px;
+  }
+  .blog-featured__tldr {
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: -0.15px;
+    /* Figma 토큰 60. 블로그 --hv-fg-muted 는 #333 이라 여기만 맞춘다 —
+       토큰을 바꾸면 이 두 곳 밖의 수십 군데가 같이 옅어진다. */
+    color: var(--hv-grey-60);
+    margin: 0;
+  }
+  .blog-featured__nav {
+    display: flex;
+    gap: 12px;
+    padding-top: 24px;
+  }
+  .blog-featured__nav .carousel-arrow {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
   }
   .blog-featured__media {
     display: block;
-    border-radius: 24px;
+    border-radius: 36px;
     overflow: hidden;
     position: relative;
-    aspect-ratio: 16 / 10;
+    height: 240px;
     background: var(--hv-surface-muted);
   }
   .blog-featured__media img {
@@ -428,12 +469,12 @@
   /* Blog listing — sidebar + rows                                     */
   /* ---------------------------------------------------------------- */
   .blog-list {
-    padding: 0 0 96px;
+    padding: 80px 0 96px;
   }
   .blog-list__inner {
     display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 60px;
+    grid-template-columns: max-content 1fr;
+    gap: 40px;
     align-items: start;
   }
   /* Grid/flex children default to min-width:auto, so a `1fr` track can never
@@ -452,12 +493,15 @@
     position: sticky;
     top: 88px;
   }
+  /* Figma HAVIT 2.1 Design System, node 3513-415481:
+     좌 8 / 우 12 패딩, 아이콘-라벨 간격 8, 라운드 24. 아이콘이 이모지(16px 글자)에서
+     24px SVG 로 바뀌면서 왼쪽 패딩이 좁아진 것이 디자인 의도다. */
   .blog-categories__item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 12px 16px;
-    border-radius: 999px;
+    gap: 8px;
+    padding: 8px 12px 8px 8px;
+    border-radius: 24px;
     background: var(--hv-surface-muted);
     color: var(--hv-fg);
     border: none;
@@ -482,9 +526,9 @@
   .blog-categories__item .text-body-medium {
     overflow-wrap: anywhere;
   }
+  /* 크기는 CategoryIcon 이 24px 박스로 인라인 고정한다. 여기서는 줄어들지만
+     않게 막아 둔다 — 라벨이 길어져도 아이콘이 찌그러지지 않도록. */
   .blog-categories__icon {
-    font-size: 16px;
-    line-height: 1;
     flex-shrink: 0;
   }
   .blog-categories__count {
@@ -500,22 +544,41 @@
     display: flex;
     flex-direction: column;
   }
+  /* 디자인에는 행 구분선이 없고, 행 사이를 40px 간격으로만 띄운다. */
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
   .post-list__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 32px;
-    padding: 28px 0;
-    border-bottom: 1px solid var(--hv-border);
-  }
-  .post-list__item:first-child {
-    padding-top: 0;
-  }
-  .post-list__item:last-child {
+    gap: 12px;
+    padding: 0;
     border-bottom: none;
   }
   .post-list__item-text {
     min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  /* 제목 18/600, 발췌 15/#666 두 줄 고정 — 행 높이가 썸네일(120px)과 맞물린다. */
+  .post-list__item-text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.54px;
+    color: var(--hv-fg);
+    margin: 0;
+  }
+  .post-list__item-text p {
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: -0.15px;
+    color: var(--hv-grey-60);
+    margin: 0;
   }
   .post-list__item-text h3 {
     margin-bottom: 8px;
@@ -535,11 +598,12 @@
   .post-list__item-text p {
     max-width: 520px;
   }
+  /* 디자인: 160×120, 라운드 24. */
   .post-list__media {
     position: relative;
-    width: 140px;
-    height: 100px;
-    border-radius: 16px;
+    width: 160px;
+    height: 120px;
+    border-radius: 24px;
     overflow: hidden;
     flex-shrink: 0;
     background: var(--hv-surface-muted);
@@ -567,8 +631,14 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 48px;
+    gap: 12px;
+    margin-top: 80px;
+  }
+  /* 활성 페이지는 Accent 가 아니라 Green20(#f6ffdc) 이다 — 디자인 기준. */
+  .pagination__page.is-active,
+  .pagination__page[aria-current='page'] {
+    background: #f6ffdc;
+    color: #000;
   }
   .pagination__page {
     display: inline-flex;
@@ -698,10 +768,10 @@
   /* Footer                                                            */
   /* ---------------------------------------------------------------- */
   .hv-footer {
-    background: var(--hv-grey-80);
-    color: rgba(255, 255, 255, 0.6);
-    padding: 64px 0;
-    margin-top: 64px;
+    background: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.4);
+    padding: 40px 0;
+    margin-top: 0;
   }
   .hv-footer p {
     margin: 0 0 12px;

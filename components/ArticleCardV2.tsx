@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import type { ArticleListItem } from '@/lib/articles-v2';
 import { localizedCategory } from '@/lib/category-labels';
+import { CategoryIcon } from '@/components/CategoryIcon';
 import { articleImage } from '@/lib/article-images';
 
 interface Props {
@@ -39,7 +40,7 @@ export default function ArticleCardV2({ item, shortLang, featured = false, prior
       <div className="p-5 flex flex-col gap-3 flex-1">
         <div className="flex items-center gap-2 flex-wrap">
           <span className="category-badge" aria-label={`Category: ${item.category}`}>
-            {item.category_emoji && <span aria-hidden>{item.category_emoji}</span>}
+            <CategoryIcon category={item.category} />
             <span>{localizedCategory(item.category, shortLang)}</span>
           </span>
         </div>

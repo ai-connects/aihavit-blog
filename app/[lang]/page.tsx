@@ -8,6 +8,9 @@ import { listArticlesForLang, getAllArticles, resolveContent, isLangIndexable } 
 import { localizedCategory } from '@/lib/category-labels';
 import { toFullLang } from '@/lib/i18n';
 import { categorySlug } from '@/lib/categories';
+import { CategoryIcon } from '@/components/CategoryIcon';
+import FeaturedCarousel from '@/components/FeaturedCarousel';
+import { ALL_CATEGORY_ICON } from '@/lib/category-icons';
 import { articleImage } from '@/lib/article-images';
 import { BRAND_SAME_AS } from '@/lib/team';
 
@@ -46,6 +49,21 @@ const SEARCH_PLACEHOLDER: Record<RouteLang, string> = {
 const LABEL_ALL: Record<RouteLang, string> = {
   ko: '전체', en: 'All', ja: 'すべて', zh: '全部', 'zh-tw': '全部', es: 'Todo',
   'pt-br': 'Tudo', id: 'Semua', de: 'Alle', fr: 'Tout',
+};
+
+/* 히어로 캐러셀 화살표의 스크린리더 라벨. 화살표는 그림뿐이라 이름이 필요하다. */
+const LABEL_PREV: Record<RouteLang, string> = {
+  ko: '이전 추천 아티클', en: 'Previous featured article', ja: '前のおすすめ記事',
+  zh: '上一篇推荐文章', 'zh-tw': '上一篇推薦文章', es: 'Artículo destacado anterior',
+  'pt-br': 'Artigo destacado anterior', id: 'Artikel unggulan sebelumnya',
+  de: 'Vorheriger empfohlener Artikel', fr: 'Article à la une précédent',
+};
+
+const LABEL_NEXT: Record<RouteLang, string> = {
+  ko: '다음 추천 아티클', en: 'Next featured article', ja: '次のおすすめ記事',
+  zh: '下一篇推荐文章', 'zh-tw': '下一篇推薦文章', es: 'Artículo destacado siguiente',
+  'pt-br': 'Próximo artigo destacado', id: 'Artikel unggulan berikutnya',
+  de: 'Nächster empfohlener Artikel', fr: 'Article à la une suivant',
 };
 
 const LABEL_LATEST: Record<RouteLang, string> = {
@@ -166,12 +184,12 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
   const pageItems = items.slice(start, start + PAGE_SIZE);
 
   const allArticles = getAllArticles();
-  const categoryCounts = new Map<string, { count: number; emoji?: string }>();
+  const categoryCounts = new Map<string, { count: number }>();
   for (const a of allArticles) {
     const r = resolveContent(a, shortLang);
     if (!r) continue;
-    const prev = categoryCounts.get(a.category) ?? { count: 0, emoji: a.category_emoji };
-    categoryCounts.set(a.category, { count: prev.count + 1, emoji: a.category_emoji ?? prev.emoji });
+    const prev = categoryCounts.get(a.category) ?? { count: 0 };
+    categoryCounts.set(a.category, { count: prev.count + 1 });
   }
   const categories = Array.from(categoryCounts.entries())
     .sort((a, b) => b[1].count - a[1].count);
@@ -228,8 +246,20 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
   // The featured slot is the newest article, and it is the page's LCP element —
   // so its photo gets `priority`. Suppressed while searching/filtering, where a
   // large unrelated hero above the results would just be in the way.
-  const featured = !query && !category ? items[0] : null;
-  const listItems = featured ? pageItems.filter((i) => i.slug !== featured.slug) : pageItems;
+  // 디자인의 히어로는 화살표로 넘기는 추천 캐러셀이다. 검색·필터 중에는 결과와
+  // 무관한 큰 히어로가 방해만 되므로 그때는 비운다(기존 동작 유지).
+  const featuredSlides =
+    !query && !category
+      ? items.slice(0, 5).map((it) => ({
+          slug: it.slug,
+          title: it.title,
+          image: articleImage(it.slug, it.category),
+        }))
+      : [];
+  const featuredSlugs = new Set(featuredSlides.map((f) => f.slug));
+  const listItems = featuredSlides.length
+    ? pageItems.filter((i) => !featuredSlugs.has(i.slug))
+    : pageItems;
 
   const pageNumbers: number[] = [];
   {
@@ -256,20 +286,18 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
         {/* FEATURED — mirrors .blog-featured on aihavit.com/blog/ */}
         <section className="blog-featured">
           <div className="hv-container blog-featured__inner">
-            <div className="blog-featured__text">
-              <h1 className="text-heading-2 mb-4">
+            <FeaturedCarousel
+              slides={featuredSlides}
+              basePath={basePath}
+              prevLabel={LABEL_PREV[shortLang as RouteLang]}
+              nextLabel={LABEL_NEXT[shortLang as RouteLang]}
+            >
+              <h1 className="text-heading-2">
                 HAVIT <span className="text-primary-700">Blog</span>
               </h1>
-              <p className="text-paragraph mb-4 max-w-[440px]">
-                {HERO_TAGLINE[shortLang as RouteLang]}
-              </p>
-              <p className="text-body-small mb-7">
-                {LABEL_BY_PUBLISHER[shortLang as RouteLang]} ·{' '}
-                {allArticles.length.toLocaleString()}+ {LABEL_ITEMS[shortLang as RouteLang]} · 10{' '}
-                {LABEL_LANGUAGES[shortLang as RouteLang]}
-              </p>
+              <p className="blog-featured__tldr">{HERO_TAGLINE[shortLang as RouteLang]}</p>
 
-              <form className="max-w-[440px]" method="get" action={basePath}>
+              <form method="get" action={basePath}>
                 <div className="relative">
                   <input
                     type="search"
@@ -294,20 +322,7 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
                   </button>
                 </div>
               </form>
-            </div>
-
-            {featured && (
-              <Link className="blog-featured__media" href={`${basePath}/${featured.slug}`}>
-                <Image
-                  src={articleImage(featured.slug, featured.category)}
-                  alt={featured.title}
-                  fill
-                  sizes="(max-width: 960px) 100vw, 530px"
-                  priority
-                  className="object-cover"
-                />
-              </Link>
-            )}
+            </FeaturedCarousel>
           </div>
         </section>
 
@@ -321,9 +336,8 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
                 href={query ? `${basePath}?q=${encodeURIComponent(query)}` : basePath}
                 className={`blog-categories__item ${!category ? 'is-active' : ''}`}
               >
-                <span className="blog-categories__icon" aria-hidden>🗂️</span>
+                <CategoryIcon src={ALL_CATEGORY_ICON} className="blog-categories__icon" />
                 <span className="text-body-medium">{LABEL_ALL[shortLang as RouteLang]}</span>
-                <span className="blog-categories__count">{allArticles.length}</span>
               </Link>
               {categories.map(([cat, info]) => (
                 <Link
@@ -331,9 +345,8 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
                   href={`${basePath}/category/${categorySlug(cat)}`}
                   className="blog-categories__item"
                 >
-                  <span className="blog-categories__icon" aria-hidden>{info.emoji ?? '✨'}</span>
+                  <CategoryIcon category={cat} className="blog-categories__icon" />
                   <span className="text-body-medium">{localizedCategory(cat, shortLang)}</span>
-                  <span className="blog-categories__count">{info.count}</span>
                 </Link>
               ))}
             </nav>
@@ -357,18 +370,6 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
                         <p className="text-body-medium line-clamp-2">
                           {item.tldr ?? item.meta_description}
                         </p>
-                        <div className="post-list__meta">
-                          {item.category_emoji && <span aria-hidden>{item.category_emoji}</span>}
-                          <span>{localizedCategory(item.category, shortLang)}</span>
-                          {item.reading_time_min && (
-                            <>
-                              <span aria-hidden>·</span>
-                              <span>
-                                {item.reading_time_min} {LABEL_MIN_READ[shortLang as RouteLang]}
-                              </span>
-                            </>
-                          )}
-                        </div>
                       </div>
                       <div className="post-list__media">
                         <Image
