@@ -236,6 +236,8 @@ export function isLangIndexable(shortLang: string): boolean {
 export interface RelatedArticleLink {
   slug: string;
   title: string;
+  /** 아이콘이 카테고리로 결정되므로 함께 넘긴다(같은 카테고리 안이라 항상 동일). */
+  category: string;
   category_emoji?: string;
 }
 
@@ -255,7 +257,7 @@ export function getRelatedForLang(
     if (a.slug === article.slug || a.category !== article.category) continue;
     const r = resolveContent(a, shortLang);
     if (!r || r.fallback) continue;
-    out.push({ slug: a.slug, title: r.content.title, category_emoji: a.category_emoji });
+    out.push({ slug: a.slug, title: r.content.title, category: a.category, category_emoji: a.category_emoji });
     if (out.length >= limit) break;
   }
   return out;

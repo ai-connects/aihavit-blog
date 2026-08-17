@@ -452,12 +452,15 @@
     position: sticky;
     top: 88px;
   }
+  /* Figma HAVIT 2.1 Design System, node 3513-415481:
+     좌 8 / 우 12 패딩, 아이콘-라벨 간격 8, 라운드 24. 아이콘이 이모지(16px 글자)에서
+     24px SVG 로 바뀌면서 왼쪽 패딩이 좁아진 것이 디자인 의도다. */
   .blog-categories__item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 12px 16px;
-    border-radius: 999px;
+    gap: 8px;
+    padding: 8px 12px 8px 8px;
+    border-radius: 24px;
     background: var(--hv-surface-muted);
     color: var(--hv-fg);
     border: none;
@@ -482,9 +485,9 @@
   .blog-categories__item .text-body-medium {
     overflow-wrap: anywhere;
   }
+  /* 크기는 CategoryIcon 이 24px 박스로 인라인 고정한다. 여기서는 줄어들지만
+     않게 막아 둔다 — 라벨이 길어져도 아이콘이 찌그러지지 않도록. */
   .blog-categories__icon {
-    font-size: 16px;
-    line-height: 1;
     flex-shrink: 0;
   }
   .blog-categories__count {

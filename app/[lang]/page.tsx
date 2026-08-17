@@ -8,6 +8,8 @@ import { listArticlesForLang, getAllArticles, resolveContent, isLangIndexable } 
 import { localizedCategory } from '@/lib/category-labels';
 import { toFullLang } from '@/lib/i18n';
 import { categorySlug } from '@/lib/categories';
+import { CategoryIcon } from '@/components/CategoryIcon';
+import { ALL_CATEGORY_ICON } from '@/lib/category-icons';
 import { articleImage } from '@/lib/article-images';
 import { BRAND_SAME_AS } from '@/lib/team';
 
@@ -166,12 +168,12 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
   const pageItems = items.slice(start, start + PAGE_SIZE);
 
   const allArticles = getAllArticles();
-  const categoryCounts = new Map<string, { count: number; emoji?: string }>();
+  const categoryCounts = new Map<string, { count: number }>();
   for (const a of allArticles) {
     const r = resolveContent(a, shortLang);
     if (!r) continue;
-    const prev = categoryCounts.get(a.category) ?? { count: 0, emoji: a.category_emoji };
-    categoryCounts.set(a.category, { count: prev.count + 1, emoji: a.category_emoji ?? prev.emoji });
+    const prev = categoryCounts.get(a.category) ?? { count: 0 };
+    categoryCounts.set(a.category, { count: prev.count + 1 });
   }
   const categories = Array.from(categoryCounts.entries())
     .sort((a, b) => b[1].count - a[1].count);
@@ -321,7 +323,7 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
                 href={query ? `${basePath}?q=${encodeURIComponent(query)}` : basePath}
                 className={`blog-categories__item ${!category ? 'is-active' : ''}`}
               >
-                <span className="blog-categories__icon" aria-hidden>🗂️</span>
+                <CategoryIcon src={ALL_CATEGORY_ICON} className="blog-categories__icon" />
                 <span className="text-body-medium">{LABEL_ALL[shortLang as RouteLang]}</span>
                 <span className="blog-categories__count">{allArticles.length}</span>
               </Link>
@@ -331,7 +333,7 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
                   href={`${basePath}/category/${categorySlug(cat)}`}
                   className="blog-categories__item"
                 >
-                  <span className="blog-categories__icon" aria-hidden>{info.emoji ?? '✨'}</span>
+                  <CategoryIcon category={cat} className="blog-categories__icon" />
                   <span className="text-body-medium">{localizedCategory(cat, shortLang)}</span>
                   <span className="blog-categories__count">{info.count}</span>
                 </Link>
@@ -358,7 +360,7 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
                           {item.tldr ?? item.meta_description}
                         </p>
                         <div className="post-list__meta">
-                          {item.category_emoji && <span aria-hidden>{item.category_emoji}</span>}
+                          <CategoryIcon category={item.category} />
                           <span>{localizedCategory(item.category, shortLang)}</span>
                           {item.reading_time_min && (
                             <>

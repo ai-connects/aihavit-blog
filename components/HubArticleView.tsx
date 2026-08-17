@@ -6,6 +6,7 @@ import type { ArticleV2, ArticleV2LangContent } from '@/lib/articles-v2';
 import { getRelatedForLang } from '@/lib/articles-v2';
 import { articleImage, hubSectionImage } from '@/lib/article-images';
 import { localizedCategory } from '@/lib/category-labels';
+import { CategoryIcon } from '@/components/CategoryIcon';
 import { toFullLang } from '@/lib/i18n';
 import { parseHubBody, type HubBlock } from '@/lib/hub-body';
 import ArticleAuthorBlock from './ArticleAuthorBlock';
@@ -230,7 +231,7 @@ export default function HubArticleView({ article, content, shortLang, fallback }
         {fallback && <div className="hub-fallback">{t('fallbackBanner', shortLang)}</div>}
 
         <span className="category-badge hub-badge">
-          {article.category_emoji && <span aria-hidden>{article.category_emoji}</span>}
+          <CategoryIcon category={article.category} />
           <span>{localizedCategory(article.category, shortLang)}</span>
         </span>
 
@@ -440,11 +441,7 @@ export default function HubArticleView({ article, content, shortLang, fallback }
                 </Link>
                 <figcaption className="p-4">
                   <Link href={`/${shortLang}/${r.slug}`} className="text-title-small hover:underline">
-                    {r.category_emoji && (
-                      <span aria-hidden className="mr-1.5">
-                        {r.category_emoji}
-                      </span>
-                    )}
+                    <CategoryIcon category={r.category} className="mr-1.5" />
                     {r.title}
                   </Link>
                 </figcaption>

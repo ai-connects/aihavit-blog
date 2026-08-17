@@ -6,6 +6,7 @@ import type { ArticleV2, ArticleV2LangContent } from '@/lib/articles-v2';
 import { getRelatedForLang } from '@/lib/articles-v2';
 import { articleImage } from '@/lib/article-images';
 import { localizedCategory } from '@/lib/category-labels';
+import { CategoryIcon } from '@/components/CategoryIcon';
 import InstallCTA from './InstallCTA';
 import { toFullLang } from '@/lib/i18n';
 // BLOG_AUTHORITY v1.0.0 (PRD §7.3) — 3 신규 import (기존 import 무변경)
@@ -75,7 +76,7 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
 
         <div className="flex flex-wrap items-center gap-2 mb-4">
           <span className="category-badge">
-            {article.category_emoji && <span aria-hidden>{article.category_emoji}</span>}
+            <CategoryIcon category={article.category} />
             <span>{localizedCategory(article.category, shortLang)}</span>
           </span>
           {article.reading_time_min && (
@@ -232,7 +233,7 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
                 </Link>
                 <figcaption className="p-4">
                   <Link href={`/${shortLang}/${r.slug}`} className="text-title-small hover:underline">
-                    {r.category_emoji && <span aria-hidden className="mr-1.5">{r.category_emoji}</span>}
+                    <CategoryIcon category={r.category} className="mr-1.5" />
                     {r.title}
                   </Link>
                 </figcaption>
