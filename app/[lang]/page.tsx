@@ -51,6 +51,13 @@ const LABEL_ALL: Record<RouteLang, string> = {
   'pt-br': 'Tudo', id: 'Semua', de: 'Alle', fr: 'Tout',
 };
 
+/* 히어로 캐러셀 캡션의 구간 라벨. */
+const LABEL_LATEST_CONTENT: Record<RouteLang, string> = {
+  ko: '최신 콘텐츠', en: 'Latest', ja: '最新コンテンツ', zh: '最新内容',
+  'zh-tw': '最新內容', es: 'Lo más reciente', 'pt-br': 'Mais recentes',
+  id: 'Terbaru', de: 'Neueste Beiträge', fr: 'Derniers contenus',
+};
+
 /* 히어로 캐러셀 화살표의 스크린리더 라벨. 화살표는 그림뿐이라 이름이 필요하다. */
 const LABEL_PREV: Record<RouteLang, string> = {
   ko: '이전 추천 아티클', en: 'Previous featured article', ja: '前のおすすめ記事',
@@ -253,6 +260,7 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
       ? items.slice(0, 5).map((it) => ({
           slug: it.slug,
           title: it.title,
+          excerpt: it.tldr ?? it.meta_description ?? '',
           image: articleImage(it.slug, it.category),
         }))
       : [];
@@ -289,6 +297,7 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
             <FeaturedCarousel
               slides={featuredSlides}
               basePath={basePath}
+              eyebrow={LABEL_LATEST_CONTENT[shortLang as RouteLang]}
               prevLabel={LABEL_PREV[shortLang as RouteLang]}
               nextLabel={LABEL_NEXT[shortLang as RouteLang]}
             >
