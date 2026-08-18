@@ -6,6 +6,12 @@ export const CATEGORY_LABELS: Record<string, Record<string, string>> = {
     zh: '追踪与洞察', 'zh-tw': '追蹤與洞察', es: 'Seguimiento e Insights',
     'pt-br': 'Monitoramento e Insights', id: 'Pelacakan & Wawasan', de: 'Tracking & Insights', fr: 'Suivi & Insights',
   },
+  'Mental Health & Stress': {
+    ko: '정신건강·스트레스', en: 'Mental Health & Stress', ja: 'メンタルヘルス・ストレス',
+    zh: '心理健康与压力', 'zh-tw': '心理健康與壓力', es: 'Salud Mental y Estrés',
+    'pt-br': 'Saúde Mental e Estresse', id: 'Kesehatan Mental & Stres',
+    de: 'Psychische Gesundheit & Stress', fr: 'Santé Mentale & Stress',
+  },
   'Mindset & Motivation': {
     ko: '마인드셋·동기부여', en: 'Mindset & Motivation', ja: 'マインドセット・動機付け',
     zh: '心态与动机', 'zh-tw': '心態與動機', es: 'Mentalidad y Motivación',
@@ -73,6 +79,22 @@ export const CATEGORY_LABELS: Record<string, Record<string, string>> = {
   },
 };
 
+/**
+ * 카테고리명을 해당 언어로. 사전에 없으면 영어 원문을 그대로 돌려준다.
+ *
+ * 이 폴백이 조용해서 `Mental Health & Stress` 가 한국어 화면에 영어로 그대로
+ * 노출됐다. 아티클 JSON 이 새 카테고리를 들고 오면 사전이 자동으로 따라오지
+ * 않으므로, 개발 중에는 콘솔에 남겨 놓쳐도 눈에 띄게 한다.
+ * (프로덕션에서는 조용히 영어로 폴백 — 화면이 비는 것보다 낫다)
+ */
+const warned = new Set<string>();
+
 export function localizedCategory(category: string, shortLang: string): string {
-  return CATEGORY_LABELS[category]?.[shortLang] ?? category;
+  const hit = CATEGORY_LABELS[category]?.[shortLang];
+  if (!hit && process.env.NODE_ENV !== 'production' && !warned.has(category)) {
+    warned.add(category);
+    // eslint-disable-next-line no-console
+    console.warn(`[category-labels] 번역 누락: "${category}" (${shortLang})`);
+  }
+  return hit ?? category;
 }
