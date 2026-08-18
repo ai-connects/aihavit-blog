@@ -19,6 +19,14 @@ export default function GoogleAnalytics() {
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
         strategy="afterInteractive"
       />
+      {/* linker(교차 도메인 측정)는 두지 않는다.
+          여기 걸려 있던 목록은 aihavit.com 과 그 서브도메인(www/blog/app)이었는데,
+          GA4 는 _ga 쿠키를 .aihavit.com 에 심어 서브도메인끼리 이미 같은 사용자로
+          잇는다. 설정이 있으나 마나 집계 결과는 같고, 링크마다 ?_gl=... 만 붙어
+          주소가 지저분해졌다. aiconnects.me 도 이제 전 경로가 301 로 넘어와
+          그 도메인에 머무는 사용자가 없다.
+          GA4 관리자(데이터 스트림 → 태그 설정 구성 → 도메인 구성)의 같은 설정도
+          함께 비웠다 — 한쪽만 지우면 다른 쪽이 계속 붙인다. */}
       <Script id="ga-init" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
@@ -26,11 +34,6 @@ export default function GoogleAnalytics() {
           gtag('js', new Date());
           gtag('config', '${GA_ID}', {
             page_path: window.location.pathname,
-            linker: {
-              // Cross-domain measurement list, not branding — aiconnects.me stays
-              // while it still redirects here after the Havit Inc. rename.
-              domains: ['aihavit.com', 'www.aihavit.com', 'blog.aihavit.com', 'app.aihavit.com', 'aiconnects.me', 'www.aiconnects.me']
-            }
           });
         `}
       </Script>
