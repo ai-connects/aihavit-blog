@@ -383,11 +383,14 @@ export default function HubArticleView({ article, content, shortLang, fallback }
         </section>
       )}
 
+      {/* 무엇인지 먼저 말하고, 그 다음 설치를 권한다. 순서가 반대면
+          아직 브랜드를 모르는 독자에게 CTA 가 먼저 온다. */}
+      <AboutHavit shortLang={shortLang} />
+
       <div className="hub-cta">
         <InstallCTA lang={langKey} articleId={article.article_id} variant="inline" />
       </div>
 
-      <AboutHavit shortLang={shortLang} />
 
       {references && references.length > 0 && (
         <section className="hub-refs">
