@@ -13,6 +13,7 @@
    ═══════════════════════════════════════════════════════════════════════════ */
 
 :root {
+  /* HAVIT-TOKENS:BEGIN — packages/design/tokens.json 에서 생성. 직접 고치지 말 것. */
   --color-primary: #d4ff50;
   --color-black: #000000;
   --color-white: #ffffff;
@@ -29,10 +30,11 @@
   --white-60: rgba(255, 255, 255, 0.6);
   --white-40: rgba(255, 255, 255, 0.4);
   --container-width: 1120px;
+  /* HAVIT-TOKENS:END */
 
-  /* 본문 가독 폭. 컨테이너(1120px)를 그대로 쓰면 약관 한 줄이 140자를 넘어가
-     읽기 어렵다. 긴 산문에만 적용한다. */
+  /* 본문 가독 폭. 이 파일에서만 쓰는 값이라 SSOT 밖이다. */
   --legal-measure: 780px;
+
 }
 
 *,

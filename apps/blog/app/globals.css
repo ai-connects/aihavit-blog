@@ -30,7 +30,7 @@
 
 @layer base {
   :root {
-    /* Brand — aihavit.com tokens */
+    /* HAVIT-TOKENS:BEGIN — packages/design/tokens.json 에서 생성. 직접 고치지 말 것. */
     --hv-primary: #d4ff50;
     --hv-primary-shadow: rgba(212, 255, 80, 0.5);
     --hv-black: #000000;
@@ -44,6 +44,8 @@
     --hv-tint-blue: #c1f2ff;
     --hv-tint-sky: #eafaff;
     --hv-tint-pale: #f6ffdc;
+    --hv-container: 1120px;
+    /* HAVIT-TOKENS:END */
 
     /* Surfaces — what the page actually paints with */
     --hv-bg: var(--hv-white);
@@ -54,15 +56,6 @@
     --hv-fg-subtle: var(--hv-grey-60);
     --hv-border: rgba(0, 0, 0, 0.08);
     --hv-nav-bg: rgba(255, 255, 255, 0.85);
-
-    --hv-container: 1120px;
-
-    /* Kept for Tailwind rgb(var(--color-*)) consumers already in the tree */
-    --color-bg: 255 255 255;
-    --color-fg: 0 0 0;
-    --color-muted: 102 102 102;
-    --color-border: 229 229 229;
-    --color-card: 247 247 247;
   }
 
 

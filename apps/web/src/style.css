@@ -1,4 +1,5 @@
 :root {
+  /* HAVIT-TOKENS:BEGIN — packages/design/tokens.json 에서 생성. 직접 고치지 말 것. */
   --color-primary: #d4ff50;
   --color-black: #000000;
   --color-white: #ffffff;
@@ -7,17 +8,17 @@
   --color-grey-80: #333333;
   --color-grey-100: #2a2a2a;
   --color-section-grey: #f2f2f2;
-
   --tint-lime: #e5ff96;
   --tint-blue: #c1f2ff;
   --tint-sky: #eafaff;
   --tint-pale: #f6ffdc;
-
   --white-90: rgba(255, 255, 255, 0.9);
   --white-60: rgba(255, 255, 255, 0.6);
   --white-40: rgba(255, 255, 255, 0.4);
-
   --container-width: 1120px;
+  /* HAVIT-TOKENS:END */
+
+  /* 이 아래는 marketing 사이트 전용 — 브랜드 원시값이 아니라 SSOT 밖에 둔다. */
   --section-pad-x: 80px;
 }
 
@@ -439,7 +440,7 @@ a {
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: linear-gradient(180deg, #d4ff50 0%, #32d6ff 100%);
+  background: linear-gradient(180deg, var(--color-primary) 0%, #32d6ff 100%);
   opacity: 0.4;
   filter: blur(40px);
   z-index: 0;
@@ -1117,7 +1118,7 @@ a {
   width: 900px;
   height: 900px;
   border-radius: 50%;
-  background: linear-gradient(180deg, #d4ff50 0%, #32d6ff 100%);
+  background: linear-gradient(180deg, var(--color-primary) 0%, #32d6ff 100%);
   opacity: 0.4;
   filter: blur(90px);
   z-index: -1;
