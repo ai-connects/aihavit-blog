@@ -15,6 +15,7 @@ import MedicalArticleJsonLd from './MedicalArticleJsonLd';
 import FaqJsonLd from './FaqJsonLd';
 import BreadcrumbJsonLd from './BreadcrumbJsonLd';
 import InstallCTA from './InstallCTA';
+import AboutHavit from './AboutHavit';
 
 /**
  * GLP-1 SEO 허브 아티클 레이아웃.
@@ -385,6 +386,8 @@ export default function HubArticleView({ article, content, shortLang, fallback }
       <div className="hub-cta">
         <InstallCTA lang={langKey} articleId={article.article_id} variant="inline" />
       </div>
+
+      <AboutHavit shortLang={shortLang} />
 
       {references && references.length > 0 && (
         <section className="hub-refs">

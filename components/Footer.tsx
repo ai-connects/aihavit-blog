@@ -133,6 +133,16 @@ const FOOTER_GROUP_LABELS: Record<string, Record<string, string>> = {
     'zh-tw': '停藥後維持', es: 'DESPUÉS DEL GLP-1', 'pt-br': 'DEPOIS DO GLP-1',
     id: 'SETELAH GLP-1', de: 'NACH GLP-1', fr: 'APRÈS LE GLP-1',
   },
+  tracker: {
+    en: 'GLP-1 TRACKERS', ko: 'GLP-1 트래커', ja: 'GLP-1 トラッカー', zh: 'GLP-1 追踪器',
+    'zh-tw': 'GLP-1 追蹤器', es: 'RASTREADORES GLP-1', 'pt-br': 'RASTREADORES GLP-1',
+    id: 'PELACAK GLP-1', de: 'GLP-1 TRACKER', fr: 'SUIVI GLP-1',
+  },
+  alternatives: {
+    en: 'COMPARE APPS', ko: '앱 비교', ja: 'アプリ比較', zh: '应用比较',
+    'zh-tw': 'App 比較', es: 'COMPARAR APPS', 'pt-br': 'COMPARAR APPS',
+    id: 'BANDINGKAN APLIKASI', de: 'APPS VERGLEICHEN', fr: 'COMPARER LES APPS',
+  },
   conditions: {
     en: 'FOR YOUR SITUATION', ko: '상황별 가이드', ja: '状況別ガイド', zh: '按情况查看',
     'zh-tw': '依情況查看', es: 'SEGÚN TU CASO', 'pt-br': 'PARA O SEU CASO',

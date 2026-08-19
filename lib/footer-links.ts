@@ -19,10 +19,22 @@
  * to represent all 15 blog categories equally (the TOPICS column already does
  * that job).
  *
- * WHY ~36 LINKS
+ * WHY ~48 LINKS (was 36)
  * Enough to cover the money clusters, few enough that each still receives a
  * meaningful share of link equity. Adding the long tail here would dilute every
  * link and bloat 10k pages.
+ *
+ * The original 36 were picked when only the 1,035 long-tail articles existed —
+ * there were no head-term pages to choose from, so the best available were
+ * still 60-character slugs like glp1-gastroparesis-symptoms-recognition-2026.
+ * The GLP-1 hub set added real head terms (ozempic-side-effects, wegovy-tracker,
+ * myfitnesspal-alternative-glp-1), which score far higher on the same three
+ * criteria used above. Scoring both sets on (short head term / names a drug
+ * brand / commercial-decision intent) gave 3.6 avg for the original 36 and
+ * 10.9 for the top hubs, so 24 of the weakest were swapped out rather than
+ * appended to. The dropped ones are not orphaned: the hub bodies link to them
+ * (526 internal links), which is the hub-and-spoke shape this set is meant to
+ * express.
  *
  * LABELS
  * Anchor text is derived from each article's own title in the reader's
@@ -58,21 +70,21 @@ export const FOOTER_LINK_GROUPS: FooterLinkGroup[] = [
     // "<drug> side effects" is the highest-volume GLP-1 query family.
     key: 'sideEffects',
     slugs: [
+      'ozempic-side-effects',
+      'wegovy-side-effects',
+      'mounjaro-side-effects',
+      'zepbound-side-effects',
+      'semaglutide-side-effects',
       'glp1-nausea-management-evidence-based-strategies-2026',
-      'glp1-hair-loss-telogen-effluvium-management-2026',
-      'glp1-constipation-fiber-strategy-balance-2026',
-      'glp1-gallbladder-symptoms-recognition-prevention-2026',
-      'glp1-pancreatitis-warning-signs-risk-reduction-2026',
-      'glp1-gastroparesis-symptoms-recognition-2026',
     ],
   },
   {
     // Comparison queries convert: the searcher is choosing between options.
     key: 'compare',
     slugs: [
-      'glp1-type2-diabetes-vs-obesity-indication-dose-difference-2026',
+      'semaglutide-vs-tirzepatide',
+      'tirzepatide-side-effects',
       'tirzepatide-vs-semaglutide-gi-side-effects-duration-comparison-2026',
-      'glp1-retatrutide-triple-agonist-comparison-2026',
       'compounded-semaglutide-vs-brand-wegovy-safety-efficacy-2026',
       'glp1-switching-brands-equivalence-guide-2026',
       'transitioning-from-ozempic-to-mounjaro-protocol-2026',
@@ -94,24 +106,53 @@ export const FOOTER_LINK_GROUPS: FooterLinkGroup[] = [
     // Stopping / maintaining — where HAVIT's own product value sits.
     key: 'afterGlp1',
     slugs: [
+      'glp-1-habit-report',
+      'glp-1-first-month',
       'glp1-rebound-weight-gain-prevention-2026',
       'stopping-semaglutide-weight-regain-prevention-protocol-2026',
       'glp1-muscle-preservation-protein-timing-resistance-training-2026',
       'glp1-sarcopenia-screening-dexa-grip-strength-protocol-2026',
-      'weight-regain-prevention-maintenance-phase-protocol-2026',
-      'glp1-behavior-change-m0-m1-m2',
     ],
   },
   {
     // Persona / condition modifiers — long-tail with low competition.
     key: 'conditions',
     slugs: [
+      'glp-1-for-pcos',
+      'glp-1-for-menopause',
+      'glp-1-postpartum',
       'glp1-pcos-weight-loss-insulin-resistance-improvement-2026',
-      'glp1-menstrual-cycle-changes-fertility-considerations-2026',
-      'glp1-thyroid-function-monitoring-protocol-2026',
       'glp1-sleep-quality-changes-mechanisms-2026',
       'glp1-mental-health-effects-depression-anxiety-2026',
-      'glp1-hair-loss-protein-intake-connection-2026',
+    ],
+  },
+  {
+    // Brand-name tracker queries — the closest thing the blog has to product
+    // intent. These are hub pages, so each also feeds the long-tail articles
+    // beneath it rather than being a dead end.
+    key: 'tracker',
+    slugs: [
+      'ozempic-tracker',
+      'wegovy-tracker',
+      'mounjaro-tracker',
+      'zepbound-tracker',
+      'semaglutide-tracker',
+      'tirzepatide-tracker',
+    ],
+  },
+  {
+    // Competitor comparisons. The title carries "Havit vs <rival>" so the pair
+    // is legible to generative engines, while the slug keeps the query people
+    // actually search ("<rival> alternative") — swapping the slug would trade
+    // real search demand for a term nobody looks up yet.
+    key: 'alternatives',
+    slugs: [
+      'myfitnesspal-alternative-glp-1',
+      'noom-glp-1-alternative',
+      'weightwatchers-glp-1-alternative',
+      'shotsy-alternative',
+      'macrofactor-alternative',
+      'glp-1-tracker-app',
     ],
   },
 ]

@@ -1536,3 +1536,48 @@
     height: 46px;
   }
 }
+
+/* 엔티티 블록 — components/AboutHavit.tsx
+   본문 끝에 놓이되 아티클 내용과 섞이지 않게 카드로 분리한다. */
+.about-havit {
+  margin-top: 56px;
+  padding: 28px 30px;
+  border-radius: 24px;
+  background: var(--tint-pale, #f6ffdc);
+  border: 1px solid #e8f3bf;
+}
+.about-havit__heading {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin: 0 0 12px;
+  color: var(--hv-black);
+}
+.about-havit__lede {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 12px;
+  color: var(--hv-black);
+}
+.about-havit__body {
+  font-size: 15px;
+  line-height: 1.62;
+  margin: 0 0 12px;
+  color: var(--hv-grey-80);
+}
+.about-havit__link {
+  color: #5f7a00;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.about-havit__note {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--hv-grey-60);
+}
+@media (max-width: 860px) {
+  .about-havit { padding: 22px 20px; }
+}
