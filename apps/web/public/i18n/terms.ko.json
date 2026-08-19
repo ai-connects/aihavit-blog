@@ -1,0 +1,814 @@
+{
+  "source": "terms.html",
+  "units": [
+    {
+      "id": "t0",
+      "en": "Terms of Use — HAVIT",
+      "ko": "이용약관 — HAVIT"
+    },
+    {
+      "id": "t1",
+      "en": "Home",
+      "ko": "홈"
+    },
+    {
+      "id": "t2",
+      "en": "Blog",
+      "ko": "블로그"
+    },
+    {
+      "id": "t3",
+      "en": "Privacy",
+      "ko": "개인정보"
+    },
+    {
+      "id": "t4",
+      "en": "Terms",
+      "ko": "이용약관"
+    },
+    {
+      "id": "t5",
+      "en": "Refund",
+      "ko": "환불"
+    },
+    {
+      "id": "t6",
+      "en": "EULA",
+      "ko": "EULA"
+    },
+    {
+      "id": "t7",
+      "en": "HAVIT Terms of Use",
+      "ko": "HAVIT 이용약관"
+    },
+    {
+      "id": "t8",
+      "en": "Version 1.1",
+      "ko": "버전 1.1"
+    },
+    {
+      "id": "t9",
+      "en": "Effective Date:",
+      "ko": "시행일:"
+    },
+    {
+      "id": "t10",
+      "en": "Last Updated:",
+      "ko": "최종 수정:"
+    },
+    {
+      "id": "t11",
+      "en": "1. Introduction and Acceptance",
+      "ko": "1. 목적 및 약관의 효력"
+    },
+    {
+      "id": "t12",
+      "en": "1.1 Agreement to Terms",
+      "ko": "1.1 약관 동의"
+    },
+    {
+      "id": "t13",
+      "en": "Welcome to HAVIT! These Terms of Use (\"Terms\") govern your access to and use of the HAVIT mobile application, websites, and related services (collectively, the \"Services\") provided by Havit Inc. (\"HAVIT,\" \"we,\" \"us,\" or \"our\").",
+      "ko": "HAVIT 에 오신 것을 환영합니다. 본 이용약관(\"약관\")은 주식회사 하비트(\"HAVIT\", \"회사\")가 제공하는 HAVIT 모바일 애플리케이션, 웹사이트 및 관련 서비스(통칭 \"서비스\")에 대한 이용자의 접근과 이용에 적용됩니다."
+    },
+    {
+      "id": "t14",
+      "en": "By accessing or using our Services, you agree to be bound by these Terms. If you do not agree, please do not use our Services.",
+      "ko": "서비스에 접근하거나 이를 이용함으로써 이용자는 본 약관에 동의하는 것으로 봅니다. 동의하지 않는 경우 서비스를 이용하지 마시기 바랍니다."
+    },
+    {
+      "id": "t15",
+      "en": "1.2 Service Provider",
+      "ko": "1.2 서비스 제공자"
+    },
+    {
+      "id": "t16",
+      "en": "Havit Inc.",
+      "ko": "주식회사 하비트"
+    },
+    {
+      "id": "t17",
+      "en": "A-611, Daesung D-Polis, 606, Seobusaet-gil,",
+      "ko": "서울특별시 금천구 서부샛길 606,"
+    },
+    {
+      "id": "t18",
+      "en": "Geumcheon-gu, Seoul, 08504, Republic of Korea",
+      "ko": "대성디폴리스 A동 611호 (08504)"
+    },
+    {
+      "id": "t19",
+      "en": "Business Registration No.: 306-86-03160",
+      "ko": "사업자등록번호: 306-86-03160"
+    },
+    {
+      "id": "t20",
+      "en": "E-Commerce Registration No.: 2024-Seoul Geumcheon-1855",
+      "ko": "통신판매업신고번호: 2024-서울금천-1855"
+    },
+    {
+      "id": "t21",
+      "en": "Representative: Ryan Yun",
+      "ko": "대표자: Ryan Yun"
+    },
+    {
+      "id": "t22",
+      "en": "Contact:",
+      "ko": "문의:"
+    },
+    {
+      "id": "t23",
+      "en": "havit@aihavit.com",
+      "ko": "havit@aihavit.com"
+    },
+    {
+      "id": "t24",
+      "en": "2. Changes to Terms",
+      "ko": "2. 약관의 변경"
+    },
+    {
+      "id": "t25",
+      "en": "We may modify these Terms at any time. For material changes, we will provide at least 30 days' notice via in-app notification, email, or website posting. Continued use after the effective date constitutes acceptance.",
+      "ko": "회사는 본 약관을 언제든지 변경할 수 있습니다. 중대한 변경의 경우 시행일로부터 최소 30일 전에 앱 내 알림, 이메일 또는 웹사이트 게시를 통해 공지합니다. 시행일 이후에도 서비스를 계속 이용하는 경우 변경된 약관에 동의한 것으로 봅니다."
+    },
+    {
+      "id": "t26",
+      "en": "3. Eligibility and Account Registration",
+      "ko": "3. 이용 자격 및 계정 등록"
+    },
+    {
+      "id": "t27",
+      "en": "3.1 Eligibility Requirements",
+      "ko": "3.1 이용 자격 요건"
+    },
+    {
+      "id": "t28",
+      "en": "To use the Services, you must be at least 18 years old, not be barred from using HAVIT under applicable law, and not be located in a country subject to U.S. or Korean government sanctions.",
+      "ko": "서비스를 이용하려면 만 18세 이상이어야 하며, 관련 법령에 따라 HAVIT 이용이 금지된 자가 아니어야 하고, 미국 또는 대한민국 정부의 제재 대상 국가에 소재하지 않아야 합니다."
+    },
+    {
+      "id": "t29",
+      "en": "3.2 Sensitive Health Information (Separate Consent Required)",
+      "ko": "3.2 민감한 건강정보 (별도 동의 필요)"
+    },
+    {
+      "id": "t30",
+      "en": "IMPORTANT:",
+      "ko": "중요:"
+    },
+    {
+      "id": "t31",
+      "en": "To use personalized wellness features, you will be asked to provide health-related sensitive information through a SEPARATE consent process including health conditions, medications, medical history, and ethnic origin.",
+      "ko": "맞춤형 웰니스 기능을 이용하려면 건강 상태, 복용 약물, 병력, 인종 등 건강 관련 민감정보를 별도의 동의 절차를 통해 제공하도록 요청받게 됩니다."
+    },
+    {
+      "id": "t32",
+      "en": "This consent is presented separately from these Terms, is voluntary, revocable at any time, and recorded with timestamp for compliance purposes.",
+      "ko": "이 동의는 본 약관과 분리하여 제시되며, 임의적이고, 언제든지 철회할 수 있으며, 법령 준수를 위해 동의 시각과 함께 기록됩니다."
+    },
+    {
+      "id": "t33",
+      "en": "4. Important Health and Medical Disclaimers",
+      "ko": "4. 건강 및 의료 관련 중요 고지"
+    },
+    {
+      "id": "t34",
+      "en": "HAVIT IS NOT A MEDICAL DEVICE AND DOES NOT PROVIDE MEDICAL ADVICE.",
+      "ko": "HAVIT 은 의료기기가 아니며 의학적 조언을 제공하지 않습니다."
+    },
+    {
+      "id": "t35",
+      "en": "No doctor-patient or healthcare provider relationship is created. The Services provide general wellness insights, estimates, and habit-support tools only. All recommendations are informational and educational in nature.",
+      "ko": "서비스 이용으로 의사-환자 관계나 의료인-이용자 관계가 성립하지 않습니다. 서비스는 일반적인 웰니스 인사이트, 추정치, 습관 형성 보조 도구만을 제공합니다. 모든 권장 사항은 정보 제공 및 교육 목적입니다."
+    },
+    {
+      "id": "t36",
+      "en": "You should always consult a qualified healthcare professional before making any decisions that may affect your health.",
+      "ko": "건강에 영향을 줄 수 있는 결정을 내리기 전에는 반드시 자격을 갖춘 의료 전문가와 상담하시기 바랍니다."
+    },
+    {
+      "id": "t37",
+      "en": "4.1 Who Should Consult a Doctor",
+      "ko": "4.1 의사와 상담이 필요한 경우"
+    },
+    {
+      "id": "t38",
+      "en": "We strongly recommend consulting your healthcare provider before using HAVIT if you: are pregnant or breastfeeding, are underweight (BMI &lt; 18.5), are under 18 or over 80, have a diagnosed eating disorder, have type 1 diabetes, or have any medical condition that may be affected by diet or exercise changes.",
+      "ko": "다음에 해당하는 경우 HAVIT 이용 전에 담당 의료진과 상담할 것을 강력히 권고합니다: 임신 또는 수유 중인 경우, 저체중인 경우(BMI &lt; 18.5), 만 18세 미만이거나 80세를 초과하는 경우, 섭식장애를 진단받은 경우, 제1형 당뇨가 있는 경우, 그 밖에 식이나 운동 변화로 영향을 받을 수 있는 질환이 있는 경우."
+    },
+    {
+      "id": "t39",
+      "en": "4.2 No Guaranteed Results",
+      "ko": "4.2 결과에 대한 보증 없음"
+    },
+    {
+      "id": "t40",
+      "en": "We make no guarantees concerning the level of success you may experience. Results will differ for each individual based on factors including genetics, adherence, health conditions, and lifestyle.",
+      "ko": "회사는 이용자가 얻게 될 성과의 수준에 대해 어떠한 보증도 하지 않습니다. 결과는 유전적 요인, 실천 정도, 건강 상태, 생활 습관 등에 따라 개인별로 달라집니다."
+    },
+    {
+      "id": "t41",
+      "en": "5. AI Body Composition Estimates",
+      "ko": "5. AI 체성분 추정"
+    },
+    {
+      "id": "t42",
+      "en": "HAVIT uses proprietary AI algorithms to estimate your body composition based on survey responses, physical measurements you provide, and ethnicity and age-based statistical models.",
+      "ko": "HAVIT 은 자체 AI 알고리즘을 사용하여 설문 응답, 이용자가 제공한 신체 계측값, 인종 및 연령 기반 통계 모델을 바탕으로 체성분을 추정합니다."
+    },
+    {
+      "id": "t43",
+      "en": "THESE ESTIMATES ARE STATISTICAL APPROXIMATIONS DERIVED FROM MACHINE LEARNING MODELS AND ARE NOT EQUIVALENT TO ACTUAL MEASUREMENTS.",
+      "ko": "이 추정치는 머신러닝 모델에서 도출된 통계적 근사값이며 실제 측정값과 동일하지 않습니다."
+    },
+    {
+      "id": "t44",
+      "en": "Estimated values may differ significantly from measurements obtained through devices such as InBody, DEXA scans, or other medical-grade analyzers. Estimates should be used for general wellness tracking only, not for medical diagnosis, treatment decisions, or medication dosing.",
+      "ko": "추정값은 인바디, DEXA 스캔 등 의료용 측정 장비로 얻은 값과 상당히 다를 수 있습니다. 추정값은 일반적인 웰니스 기록 용도로만 사용해야 하며, 의학적 진단, 치료 결정, 약물 용량 산정에 사용해서는 안 됩니다."
+    },
+    {
+      "id": "t45",
+      "en": "6. S-L-M Profile Classification System",
+      "ko": "6. S-L-M 프로필 분류 체계"
+    },
+    {
+      "id": "t46",
+      "en": "Your S-L-M Profile categorizes your wellness journey based on:",
+      "ko": "S-L-M 프로필은 다음을 기준으로 이용자의 웰니스 여정을 분류합니다:"
+    },
+    {
+      "id": "t47",
+      "en": "S (Somatic/Body Type):",
+      "ko": "S (체형):"
+    },
+    {
+      "id": "t48",
+      "en": "Physical characteristics derived from AI body composition estimates (S1-S7)",
+      "ko": "AI 체성분 추정에서 도출된 신체적 특성 (S1~S7)"
+    },
+    {
+      "id": "t49",
+      "en": "L (Lifestyle):",
+      "ko": "L (생활 습관):"
+    },
+    {
+      "id": "t50",
+      "en": "Behavioral patterns identified through your logged activities and survey responses",
+      "ko": "기록된 활동과 설문 응답을 통해 파악된 행동 패턴"
+    },
+    {
+      "id": "t51",
+      "en": "M (Medical/Medication):",
+      "ko": "M (의료/약물):"
+    },
+    {
+      "id": "t52",
+      "en": "Your disclosed medical conditions and medication usage (M0-M2)",
+      "ko": "이용자가 밝힌 질환 및 약물 복용 여부 (M0~M2)"
+    },
+    {
+      "id": "t53",
+      "en": "7. Six-Factor Wellness Plans",
+      "ko": "7. 6대 요소 웰니스 플랜"
+    },
+    {
+      "id": "t54",
+      "en": "Based on your profile, HAVIT generates personalized daily targets for: Calories, Protein, Hydration, Steps, Sleep, and Weigh-ins. Targets are calculated using validated formulas and are general wellness guidelines, not medical prescriptions.",
+      "ko": "HAVIT 은 프로필을 바탕으로 칼로리, 단백질, 수분, 걸음 수, 수면, 체중 측정에 대한 맞춤 일일 목표를 생성합니다. 목표치는 검증된 공식으로 산출되며 일반적인 웰니스 가이드라인일 뿐 의학적 처방이 아닙니다."
+    },
+    {
+      "id": "t55",
+      "en": "8. Havi AI Coach",
+      "ko": "8. Havi AI 코치"
+    },
+    {
+      "id": "t56",
+      "en": "Havi is your AI-powered wellness companion using large language model technology from OpenAI, Anthropic, and Google to provide personalized guidance and motivation.",
+      "ko": "Havi 는 OpenAI, Anthropic, Google 의 대규모 언어모델 기술을 활용해 맞춤형 안내와 동기 부여를 제공하는 AI 웰니스 동반자입니다."
+    },
+    {
+      "id": "t57",
+      "en": "Havi is not a human coach, licensed therapist, registered dietitian, or medical professional.",
+      "ko": "Havi 는 사람 코치, 면허를 가진 치료사, 등록 영양사 또는 의료 전문가가 아닙니다."
+    },
+    {
+      "id": "t58",
+      "en": "Havi's responses are generated by AI and may contain errors. Please contact appropriate human professionals for medical emergencies, mental health crises, or specific medical advice.",
+      "ko": "Havi 의 답변은 AI 가 생성한 것으로 오류가 포함될 수 있습니다. 의료 응급 상황, 정신건강 위기, 구체적인 의학적 조언이 필요한 경우 해당 분야의 전문가에게 문의하시기 바랍니다."
+    },
+    {
+      "id": "t59",
+      "en": "9. User-Generated Content",
+      "ko": "9. 이용자 게시물"
+    },
+    {
+      "id": "t60",
+      "en": "You retain ownership of content you create or upload. By uploading content, you grant HAVIT a non-exclusive, worldwide, royalty-free license to store, display, and process your content to provide the Services.",
+      "ko": "이용자가 작성하거나 업로드한 콘텐츠의 소유권은 이용자에게 있습니다. 콘텐츠를 업로드함으로써 이용자는 회사가 서비스 제공을 위해 해당 콘텐츠를 저장·표시·처리할 수 있는 비독점적, 전 세계적, 무상 라이선스를 회사에 부여합니다."
+    },
+    {
+      "id": "t61",
+      "en": "10. Intellectual Property",
+      "ko": "10. 지식재산권"
+    },
+    {
+      "id": "t62",
+      "en": "HAVIT and its licensors own all rights in the HAVIT app, website, Services, branding, AI models, and content library. We grant you a limited, non-exclusive, non-transferable license to use the Services for personal, non-commercial purposes.",
+      "ko": "HAVIT 앱, 웹사이트, 서비스, 브랜드, AI 모델, 콘텐츠 라이브러리에 대한 모든 권리는 회사와 그 라이선서에게 있습니다. 회사는 이용자에게 개인적·비상업적 목적으로 서비스를 이용할 수 있는 제한적, 비독점적, 양도 불가능한 라이선스를 부여합니다."
+    },
+    {
+      "id": "t63",
+      "en": "11. Third-Party Integrations",
+      "ko": "11. 제3자 연동"
+    },
+    {
+      "id": "t64",
+      "en": "HAVIT may integrate with Apple HealthKit, Google Health Connect, WhatsApp, and Social Login Providers. Data from HealthKit and Health Connect is NEVER used for advertising, sold to third parties, or used for insurance decisions.",
+      "ko": "HAVIT 은 Apple HealthKit, Google Health Connect, WhatsApp, 소셜 로그인 제공자와 연동될 수 있습니다. HealthKit 및 Health Connect 에서 받은 데이터는 광고에 사용되거나, 제3자에게 판매되거나, 보험 관련 결정에 사용되지 않습니다."
+    },
+    {
+      "id": "t65",
+      "en": "12. Subscriptions and Payments",
+      "ko": "12. 구독 및 결제"
+    },
+    {
+      "id": "t66",
+      "en": "12.1 Free and Premium Offerings",
+      "ko": "12.1 무료 및 유료 서비스"
+    },
+    {
+      "id": "t67",
+      "en": "HAVIT offers both free features and paid offerings, including HAVIT Premium auto-renewing subscriptions and consumable in-app items (such as coins). All paid items are purchased and billed through the Apple App Store or Google Play in accordance with the applicable store's terms.",
+      "ko": "HAVIT 은 무료 기능과 유료 상품을 함께 제공하며, 유료 상품에는 자동 갱신되는 HAVIT 프리미엄 구독과 코인 등 소비성 인앱 아이템이 포함됩니다. 모든 유료 항목은 Apple App Store 또는 Google Play 를 통해 각 스토어의 약관에 따라 구매·결제됩니다."
+    },
+    {
+      "id": "t68",
+      "en": "12.2 Auto-Renewal and Cancellation",
+      "ko": "12.2 자동 갱신 및 해지"
+    },
+    {
+      "id": "t69",
+      "en": "Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period, and the applicable price (shown at the point of purchase) is charged to your store account. You can manage or cancel auto-renewal at any time in your store account settings (Apple: Settings → your name → Subscriptions; Google: Play Store → Subscriptions). Cancellation stops future renewals; access continues until the end of the period already paid for. Deleting the App does not cancel your subscription.",
+      "ko": "구독은 현재 결제 주기 종료 최소 24시간 전에 해지하지 않으면 자동으로 갱신되며, 구매 시점에 표시된 금액이 스토어 계정으로 청구됩니다. 자동 갱신은 스토어 계정 설정에서 언제든지 관리하거나 해지할 수 있습니다(Apple: 설정 → 이름 → 구독 / Google: Play 스토어 → 구독). 해지 시 이후 갱신이 중단되며, 이미 결제한 기간이 끝날 때까지는 이용할 수 있습니다. 앱을 삭제해도 구독은 해지되지 않습니다."
+    },
+    {
+      "id": "t70",
+      "en": "12.3 In-App Coins",
+      "ko": "12.3 인앱 코인"
+    },
+    {
+      "id": "t71",
+      "en": "Coins are a consumable virtual currency usable only within HAVIT (for example, to unlock characters and cosmetic items). Coins have no monetary value, cannot be exchanged for cash, and cannot be transferred between accounts or out of the App.",
+      "ko": "코인은 HAVIT 내에서만 사용할 수 있는 소비성 가상 재화입니다(예: 캐릭터·꾸미기 아이템 잠금 해제). 코인은 금전적 가치가 없고, 현금으로 교환할 수 없으며, 계정 간 또는 앱 외부로 이전할 수 없습니다."
+    },
+    {
+      "id": "t72",
+      "en": "12.4 Refunds and Right of Withdrawal",
+      "ko": "12.4 환불 및 청약철회"
+    },
+    {
+      "id": "t73",
+      "en": "Because billing is handled by the stores, refunds are processed by Apple or Google under their respective refund policies. In-app coins are consumable digital content and are generally non-refundable once delivered or used. Your statutory withdrawal (cooling-off) rights, store refund procedures, and full details are set out in our",
+      "ko": "결제는 스토어가 처리하므로 환불은 Apple 또는 Google 이 각사의 환불 정책에 따라 처리합니다. 인앱 코인은 소비성 디지털 콘텐츠로, 지급되거나 사용된 후에는 원칙적으로 환불되지 않습니다. 법정 청약철회권, 스토어 환불 절차 및 상세 내용은"
+    },
+    {
+      "id": "t74",
+      "en": "Refund Policy",
+      "ko": "환불 정책"
+    },
+    {
+      "id": "t75",
+      "en": "(Korean:",
+      "ko": "(영문:"
+    },
+    {
+      "id": "t76",
+      "en": "), which forms part of these Terms.",
+      "ko": ")에 정해져 있으며, 해당 정책은 본 약관의 일부를 구성합니다."
+    },
+    {
+      "id": "t77",
+      "en": "13. Privacy and Data Processing",
+      "ko": "13. 개인정보 및 데이터 처리"
+    },
+    {
+      "id": "t78",
+      "en": "Our collection and use of your information is governed by our",
+      "ko": "회사의 정보 수집 및 이용은"
+    },
+    {
+      "id": "t79",
+      "en": "Privacy Policy",
+      "ko": "개인정보처리방침"
+    },
+    {
+      "id": "t80",
+      "en": ". Processing of sensitive health data requires separate, explicit consent obtained through a dedicated consent screen during onboarding.",
+      "ko": "에 따릅니다. 민감한 건강정보의 처리는 온보딩 과정의 전용 동의 화면을 통해 받은 별도의 명시적 동의를 필요로 합니다."
+    },
+    {
+      "id": "t81",
+      "en": "14. Disclaimers of Warranty",
+      "ko": "14. 보증의 부인"
+    },
+    {
+      "id": "t82",
+      "en": "THE SERVICES ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.",
+      "ko": "서비스는 상품성, 특정 목적에의 적합성, 권리 비침해에 대한 보증을 포함하여 명시적이든 묵시적이든 어떠한 종류의 보증 없이 \"있는 그대로(AS IS)\" 및 \"이용 가능한 상태로(AS AVAILABLE)\" 제공됩니다."
+    },
+    {
+      "id": "t83",
+      "en": "15. Limitation of Liability",
+      "ko": "15. 책임의 제한"
+    },
+    {
+      "id": "t84",
+      "en": "TO THE MAXIMUM EXTENT PERMITTED BY LAW, HAVIT INC. SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES. OUR TOTAL LIABILITY SHALL NOT EXCEED THE GREATER OF: (A) THE AMOUNT YOU PAID TO US IN THE 12 MONTHS PRECEDING THE CLAIM, OR (B) USD $100.",
+      "ko": "법이 허용하는 최대 범위에서 주식회사 하비트는 간접적, 부수적, 특별, 결과적 또는 징벌적 손해에 대하여 책임을 지지 않습니다. 회사의 총 책임액은 (가) 청구 발생 이전 12개월 동안 이용자가 회사에 지급한 금액 또는 (나) 미화 100달러 중 큰 금액을 초과하지 않습니다."
+    },
+    {
+      "id": "t85",
+      "en": "16. Dispute Resolution",
+      "ko": "16. 분쟁 해결"
+    },
+    {
+      "id": "t86",
+      "en": "Before filing any claim, you agree to contact us at havit@aihavit.com and attempt to resolve the dispute informally for at least 30 days. If informal resolution fails, disputes shall be resolved through binding arbitration administered by the Korean Commercial Arbitration Board (KCAB) in Seoul, Republic of Korea.",
+      "ko": "이용자는 청구를 제기하기 전에 havit@aihavit.com 으로 회사에 연락하여 최소 30일 동안 원만한 해결을 시도하는 데 동의합니다. 협의로 해결되지 않는 분쟁은 대한민국 서울에서 대한상사중재원(KCAB)이 관장하는 구속력 있는 중재로 해결합니다."
+    },
+    {
+      "id": "t87",
+      "en": "CLASS ACTION WAIVER:",
+      "ko": "집단소송 포기:"
+    },
+    {
+      "id": "t88",
+      "en": "YOU AGREE TO RESOLVE DISPUTES ONLY ON AN INDIVIDUAL BASIS AND WAIVE ANY RIGHT TO PARTICIPATE IN CLASS ACTIONS OR CLASS ARBITRATIONS.",
+      "ko": "이용자는 분쟁을 개별적으로만 해결하는 데 동의하며, 집단소송 또는 집단중재에 참여할 권리를 포기합니다."
+    },
+    {
+      "id": "t89",
+      "en": "17. Governing Law",
+      "ko": "17. 준거법"
+    },
+    {
+      "id": "t90",
+      "en": "These Terms are governed by the laws of the Republic of Korea. For disputes not subject to arbitration, you consent to the exclusive jurisdiction of the courts in Seoul, Republic of Korea.",
+      "ko": "본 약관은 대한민국 법률에 따릅니다. 중재 대상이 아닌 분쟁에 대해서는 대한민국 서울 소재 법원을 전속 관할 법원으로 합니다."
+    },
+    {
+      "id": "t91",
+      "en": "18. General Provisions",
+      "ko": "18. 일반 조항"
+    },
+    {
+      "id": "t92",
+      "en": "These Terms, together with the Privacy Policy, constitute the entire agreement between you and Havit Inc. If any provision is found unenforceable, the remaining provisions continue in effect. You may not assign your rights under these Terms.",
+      "ko": "본 약관은 개인정보처리방침과 함께 이용자와 주식회사 하비트 사이의 완전한 합의를 구성합니다. 어느 조항이 집행 불가능한 것으로 판단되더라도 나머지 조항은 계속 유효합니다. 이용자는 본 약관상의 권리를 양도할 수 없습니다."
+    },
+    {
+      "id": "t93",
+      "en": "19. Medical Disclaimer (Summary)",
+      "ko": "19. 의료 고지 (요약)"
+    },
+    {
+      "id": "t94",
+      "en": "HAVIT IS A WELLNESS APPLICATION, NOT A MEDICAL DEVICE.",
+      "ko": "HAVIT 은 웰니스 애플리케이션이며 의료기기가 아닙니다."
+    },
+    {
+      "id": "t95",
+      "en": "AI body composition estimates are not clinical measurements",
+      "ko": "AI 체성분 추정치는 임상 측정값이 아닙니다"
+    },
+    {
+      "id": "t96",
+      "en": "Personalized recommendations are general wellness guidance",
+      "ko": "맞춤 권장 사항은 일반적인 웰니스 안내입니다"
+    },
+    {
+      "id": "t97",
+      "en": "Always consult healthcare professionals for medical decisions",
+      "ko": "의학적 결정은 반드시 의료 전문가와 상담하십시오"
+    },
+    {
+      "id": "t98",
+      "en": "Do not use HAVIT to diagnose, treat, or prevent any medical condition",
+      "ko": "질병의 진단, 치료, 예방 목적으로 HAVIT 을 사용하지 마십시오"
+    },
+    {
+      "id": "t99",
+      "en": "20. Contact Information",
+      "ko": "20. 연락처"
+    },
+    {
+      "id": "t100",
+      "en": "Havit Inc.",
+      "ko": "주식회사 하비트"
+    },
+    {
+      "id": "t101",
+      "en": "📍 Address: A-611, Daesung D-Polis, 606, Seobusaet-gil, Geumcheon-gu, Seoul, 08504, Republic of Korea",
+      "ko": "📍 주소: 서울특별시 금천구 서부샛길 606, 대성디폴리스 A동 611호 (08504)"
+    },
+    {
+      "id": "t102",
+      "en": "📧 General Support:",
+      "ko": "📧 일반 문의:"
+    },
+    {
+      "id": "t103",
+      "en": "havit@aihavit.com",
+      "ko": "havit@aihavit.com"
+    },
+    {
+      "id": "t104",
+      "en": "📧 Privacy Inquiries:",
+      "ko": "📧 개인정보 문의:"
+    },
+    {
+      "id": "t105",
+      "en": "privacy@aihavit.com",
+      "ko": "privacy@aihavit.com"
+    },
+    {
+      "id": "t106",
+      "en": "🌐 Website:",
+      "ko": "🌐 웹사이트:"
+    },
+    {
+      "id": "t107",
+      "en": "https://aihavit.com",
+      "ko": "https://aihavit.com"
+    },
+    {
+      "id": "t108",
+      "en": "Addendum A: Korea-Specific Terms",
+      "ko": "부칙 A: 대한민국 특별 조항"
+    },
+    {
+      "id": "t109",
+      "en": "Nothing in these Terms limits your rights under the Korean Consumer Protection Act or E-Commerce Act. Under Korean law, you may withdraw from digital content purchases within 7 days. You may seek resolution through Korea Consumer Agency (1372) or KISA (118).",
+      "ko": "본 약관의 어떠한 내용도 「소비자기본법」 및 「전자상거래 등에서의 소비자보호에 관한 법률」에 따른 이용자의 권리를 제한하지 않습니다. 국내법에 따라 이용자는 디지털 콘텐츠 구매일로부터 7일 이내에 청약철회를 할 수 있습니다. 한국소비자원(1372) 또는 한국인터넷진흥원(118)을 통해 분쟁 해결을 요청할 수 있습니다."
+    },
+    {
+      "id": "t110",
+      "en": "Addendum B: EU/EEA-Specific Terms",
+      "ko": "부칙 B: EU/EEA 특별 조항"
+    },
+    {
+      "id": "t111",
+      "en": "Nothing in these Terms affects your statutory rights under EU consumer protection law. You have 14 days to withdraw from a purchase. You have additional rights under GDPR as described in our Privacy Policy. Processing of special category data is based on your explicit consent (Article 9(2)(a)).",
+      "ko": "본 약관의 어떠한 내용도 EU 소비자보호법에 따른 이용자의 법정 권리에 영향을 주지 않습니다. 이용자는 구매일로부터 14일 이내에 청약철회를 할 수 있습니다. 개인정보처리방침에 기재된 바와 같이 GDPR 에 따른 추가 권리를 가집니다. 특별 범주 데이터의 처리는 이용자의 명시적 동의(제9조 제2항 (a)호)에 근거합니다."
+    },
+    {
+      "id": "t112",
+      "en": "Addendum C: United States-Specific Terms",
+      "ko": "부칙 C: 미국 특별 조항"
+    },
+    {
+      "id": "t113",
+      "en": "The arbitration agreement is governed by the Federal Arbitration Act. California residents may contact the Complaint Assistance Unit at 1625 North Market Blvd., Sacramento, CA 95834, or (916) 445-1254. Under CPRA, health information and ethnic origin are classified as \"sensitive personal information\" requiring explicit opt-in consent.",
+      "ko": "중재 합의는 연방중재법(Federal Arbitration Act)의 적용을 받습니다. 캘리포니아주 거주자는 Complaint Assistance Unit(1625 North Market Blvd., Sacramento, CA 95834 / (916) 445-1254)에 연락할 수 있습니다. CPRA 에 따라 건강정보와 인종 정보는 명시적 옵트인 동의가 필요한 \"민감 개인정보\"로 분류됩니다."
+    },
+    {
+      "id": "t114",
+      "en": "Document Information",
+      "ko": "문서 정보"
+    },
+    {
+      "id": "t115",
+      "en": "Item",
+      "ko": "항목"
+    },
+    {
+      "id": "t116",
+      "en": "Details",
+      "ko": "내용"
+    },
+    {
+      "id": "t117",
+      "en": "Document Title",
+      "ko": "문서명"
+    },
+    {
+      "id": "t118",
+      "en": "HAVIT Terms of Use",
+      "ko": "HAVIT 이용약관"
+    },
+    {
+      "id": "t119",
+      "en": "Version",
+      "ko": "버전"
+    },
+    {
+      "id": "t120",
+      "en": "Effective Date",
+      "ko": "시행일"
+    },
+    {
+      "id": "t121",
+      "en": "Last Updated",
+      "ko": "최종 수정"
+    },
+    {
+      "id": "t122",
+      "en": "Approved By",
+      "ko": "승인 주체"
+    },
+    {
+      "id": "t123",
+      "en": "Havit Inc.",
+      "ko": "주식회사 하비트"
+    },
+    {
+      "id": "t124",
+      "en": "Language",
+      "ko": "언어"
+    },
+    {
+      "id": "t125",
+      "en": "English",
+      "ko": "한국어"
+    },
+    {
+      "id": "t126",
+      "en": "Thank you for choosing HAVIT. We're committed to supporting your wellness journey!",
+      "ko": "HAVIT 을 선택해 주셔서 감사합니다. 여러분의 웰니스 여정을 함께하겠습니다."
+    },
+    {
+      "id": "t127",
+      "en": "AI-powered wellness companion for habits, sleep, nutrition, and movement.",
+      "ko": "습관·수면·영양·운동을 함께 관리하는 AI 웰니스 동반자."
+    },
+    {
+      "id": "t128",
+      "en": "Product",
+      "ko": "제품"
+    },
+    {
+      "id": "t129",
+      "en": "App",
+      "ko": "앱"
+    },
+    {
+      "id": "t130",
+      "en": "Blog",
+      "ko": "블로그"
+    },
+    {
+      "id": "t131",
+      "en": "RSS",
+      "ko": "RSS"
+    },
+    {
+      "id": "t132",
+      "en": "Company",
+      "ko": "회사"
+    },
+    {
+      "id": "t133",
+      "en": "Havit Inc.",
+      "ko": "주식회사 하비트"
+    },
+    {
+      "id": "t134",
+      "en": "Contact",
+      "ko": "문의"
+    },
+    {
+      "id": "t135",
+      "en": "Privacy",
+      "ko": "개인정보"
+    },
+    {
+      "id": "t136",
+      "en": "Terms",
+      "ko": "이용약관"
+    },
+    {
+      "id": "t137",
+      "en": "Refund",
+      "ko": "환불"
+    },
+    {
+      "id": "t138",
+      "en": "EULA",
+      "ko": "EULA"
+    },
+    {
+      "id": "t139",
+      "en": "&copy; 2026 Havit Inc. All rights reserved.",
+      "ko": "&copy; 2026 주식회사 하비트. All rights reserved."
+    }
+  ],
+  "attrs": [
+    {
+      "id": "a0",
+      "en": "width=device-width, initial-scale=1.0",
+      "ko": ""
+    },
+    {
+      "id": "a1",
+      "en": "HAVIT Terms of Use: user agreement, acceptable use, and account terms for the HAVIT wellness app, blog, and website by Havit Inc.",
+      "ko": ""
+    },
+    {
+      "id": "a2",
+      "en": "index, follow",
+      "ko": "index, follow"
+    },
+    {
+      "id": "a3",
+      "en": "https://www.aihavit.com/terms.html",
+      "ko": ""
+    },
+    {
+      "id": "a4",
+      "en": "Terms of Use — HAVIT",
+      "ko": "이용약관 — HAVIT"
+    },
+    {
+      "id": "a5",
+      "en": "User agreement, acceptable use, and account terms for the HAVIT wellness app, blog, and website by Havit Inc.",
+      "ko": ""
+    },
+    {
+      "id": "a6",
+      "en": "https://www.aihavit.com/havit-logo.png",
+      "ko": ""
+    },
+    {
+      "id": "a7",
+      "en": "summary_large_image",
+      "ko": "summary_large_image"
+    },
+    {
+      "id": "a8",
+      "en": "Terms of Use — HAVIT",
+      "ko": "이용약관 — HAVIT"
+    },
+    {
+      "id": "a9",
+      "en": "User agreement, acceptable use, and account terms for the HAVIT wellness app, blog, and website by Havit Inc.",
+      "ko": ""
+    },
+    {
+      "id": "a10",
+      "en": "https://www.aihavit.com/havit-logo.png",
+      "ko": ""
+    },
+    {
+      "id": "a11",
+      "en": "c2496c22c6c1164dde9fd14e034e9c63153b6817",
+      "ko": ""
+    }
+  ],
+  "rewrites": [
+    {
+      "from": "href=\"privacy.html\"",
+      "to": "href=\"privacy-ko.html\"",
+      "count": 3
+    },
+    {
+      "from": "href=\"terms.html\"",
+      "to": "href=\"terms-ko.html\"",
+      "count": 2
+    },
+    {
+      "from": "href=\"eula.html\"",
+      "to": "href=\"eula-ko.html\"",
+      "count": 2
+    },
+    {
+      "from": "href=\"refund.html\"",
+      "to": "href=\"refund-ko.html\"",
+      "count": 3
+    },
+    {
+      "from": "href=\"https://blog.aihavit.com/en\"",
+      "to": "href=\"https://blog.aihavit.com/ko\"",
+      "count": 2
+    },
+    {
+      "from": "https://www.aihavit.com/terms.html",
+      "to": "https://www.aihavit.com/terms-ko.html",
+      "count": 2
+    },
+    {
+      "from": "<a href=\"refund-ko.html\">환불 정책</a> (영문: <a href=\"refund-ko.html\">환불 정책</a>)",
+      "to": "<a href=\"refund-ko.html\">환불 정책</a> (영문: <a href=\"refund.html\">Refund Policy</a>)",
+      "count": 1
+    },
+    {
+      "from": "<html lang=\"en\">",
+      "to": "<html lang=\"ko\">",
+      "count": 1
+    },
+    {
+      "from": "content=\"en_US\"",
+      "to": "content=\"ko_KR\"",
+      "count": 1
+    }
+  ]
+}
