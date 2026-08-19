@@ -25,6 +25,8 @@ const FOOTER_GROUP_LABELS = {
   interactions: { en: 'DRUG INTERACTIONS', ko: '병용·상호작용', ja: '併用・相互作用', 'zh-tw': '併用與交互作用', 'zh-cn': '联用与相互作用', es: 'INTERACCIONES', de: 'WECHSELWIRKUNGEN', fr: 'INTERACTIONS', pt: 'INTERAÇÕES', it: 'INTERAZIONI', id: 'INTERAKSI OBAT' },
   afterGlp1: { en: 'AFTER GLP-1', ko: '중단 후 유지', ja: '中止後の維持', 'zh-tw': '停藥後維持', 'zh-cn': '停药后维持', es: 'DESPUÉS DEL GLP-1', de: 'NACH GLP-1', fr: 'APRÈS LE GLP-1', pt: 'DEPOIS DO GLP-1', it: 'DOPO IL GLP-1', id: 'SETELAH GLP-1' },
   conditions: { en: 'FOR YOUR SITUATION', ko: '상황별 가이드', ja: '状況別ガイド', 'zh-tw': '依情況查看', 'zh-cn': '按情况查看', es: 'SEGÚN TU CASO', de: 'FÜR IHRE SITUATION', fr: 'SELON VOTRE CAS', pt: 'PARA O SEU CASO', it: 'IN BASE ALLA TUA SITUAZIONE', id: 'SESUAI KONDISI ANDA' },
+  tracker: { en: 'TRACKING BY MEDICATION', ko: '약물별 기록', ja: '薬剤別の記録', 'zh-tw': '依藥物追蹤', 'zh-cn': '按药物追踪', es: 'SEGUIMIENTO POR MEDICAMENTO', de: 'TRACKING NACH MEDIKAMENT', fr: 'SUIVI PAR TRAITEMENT', pt: 'ACOMPANHAMENTO POR MEDICAMENTO', it: 'MONITORAGGIO PER FARMACO', id: 'PELACAKAN PER OBAT' },
+  alternatives: { en: 'APP ALTERNATIVES', ko: '앱 대안 비교', ja: 'アプリの代替候補', 'zh-tw': '應用程式替代方案', 'zh-cn': '应用替代方案', es: 'ALTERNATIVAS DE APPS', de: 'APP-ALTERNATIVEN', fr: 'ALTERNATIVES AUX APPS', pt: 'ALTERNATIVAS DE APPS', it: 'ALTERNATIVE ALLE APP', id: 'ALTERNATIF APLIKASI' },
 }
 
 const BLOG = 'https://blog.aihavit.com'
@@ -40,8 +42,15 @@ function renderFooterArticles(locale) {
   const blogLang = FOOTER_ARTICLES.blogLangs.includes(locale) ? locale : DEFAULT_LOCALE
   const cols = FOOTER_ARTICLES.groups
     .map((g) => {
+      // 라벨이 없으면 예전에는 키(`tracker`)가 그대로 노출됐다. 조용히 나쁜 값을
+      // 서빙하느니 빌드를 세운다 — 생성기가 그룹을 늘릴 때마다 여기도 늘어나야 한다.
       const heading =
-        FOOTER_GROUP_LABELS[g.key]?.[locale] ?? FOOTER_GROUP_LABELS[g.key]?.[DEFAULT_LOCALE] ?? g.key
+        FOOTER_GROUP_LABELS[g.key]?.[locale] ?? FOOTER_GROUP_LABELS[g.key]?.[DEFAULT_LOCALE]
+      if (!heading) {
+        throw new Error(
+          `footer group '${g.key}' has no label in FOOTER_GROUP_LABELS (plugins/i18n-html.js)`,
+        )
+      }
       const links = g.links
         .map((l) => {
           const label = l.labels[blogLang] ?? l.labels[DEFAULT_LOCALE]
