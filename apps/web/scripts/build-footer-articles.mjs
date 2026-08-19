@@ -9,14 +9,18 @@
  * The cluster definition is the blog's lib/footer-links.ts — parsed here so
  * there is one source of truth for *which* articles are promoted, on both sites.
  *
- * Usage:  node scripts/build-footer-articles.mjs [path-to-blog-repo]
+ * Usage:  node scripts/build-footer-articles.mjs [path-to-blog-app]
+ *
+ * Default resolves to the sibling app in this monorepo (apps/blog). Before the
+ * two repos merged this pointed at a checkout that had to sit next to this one;
+ * an override argument is still accepted for one-off runs.
  */
 import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
-const BLOG = process.argv[2] ?? resolve(HERE, '../../aihavit-blog-fresh')
+const BLOG = process.argv[2] ?? resolve(HERE, '../../blog')
 
 /** Blog languages that are actually served; everything else 410s over there. */
 const BLOG_LANGS = ['en', 'ko', 'ja', 'zh-tw']
