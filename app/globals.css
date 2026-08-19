@@ -1581,3 +1581,90 @@
 @media (max-width: 860px) {
   .about-havit { padding: 22px 20px; }
 }
+
+/* 설치 CTA — components/InstallCTA.tsx (inline)
+   마케팅 사이트 final-cta 와 같은 구성: 플랫 브랜드 라임 + 실제 스토어 배지 +
+   앱 화면. 종전 그라디언트 + 이모지 버튼은 스토어 배포로 읽히지 않았다. */
+.install-cta {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: end;
+  margin-top: 48px;
+  padding: 36px 40px 0;
+  border-radius: 24px;
+  background: var(--hv-primary);
+  overflow: hidden;
+}
+/* 카드 높이는 폰 이미지가 정한다. 텍스트를 위에 붙이면 아래가 비어 보이므로
+   세로 가운데로 둔다(그리드는 폰을 바닥에 걸치기 위해 align-items:end 유지). */
+.install-cta__text {
+  align-self: center;
+  padding-bottom: 36px;
+}
+.install-cta__title {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+  margin: 0 0 8px;
+  color: var(--hv-black);
+  word-break: keep-all;
+}
+.install-cta__sub {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 22px;
+  color: var(--hv-grey-100, #2a2a2a);
+}
+.install-cta__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.install-cta__badge {
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.install-cta__badge:hover {
+  transform: translateY(-2px);
+}
+.install-cta__badge img {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+/* 폰은 아래를 잘라 카드에 걸치게 둔다 — 높이를 다 쓰면 블록이 과하게 커진다. */
+.install-cta__shot {
+  align-self: end;
+  width: 190px;
+  margin-bottom: -8px;
+}
+.install-cta__shot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.18));
+}
+
+@media (max-width: 860px) {
+  .install-cta {
+    grid-template-columns: 1fr;
+    padding: 28px 24px 0;
+    gap: 8px;
+  }
+  .install-cta__text {
+    padding-bottom: 8px;
+  }
+  .install-cta__title {
+    font-size: 22px;
+  }
+  .install-cta__badge img {
+    height: 46px;
+  }
+  .install-cta__shot {
+    width: 160px;
+    margin: 0 auto -6px;
+  }
+}

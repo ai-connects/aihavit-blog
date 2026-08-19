@@ -39,17 +39,31 @@ export default function InstallCTA({ lang, articleId, variant = 'inline' }: Prop
   }
 
   return (
-    <div className="mt-12 p-6 md:p-8 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-700 text-gray-900 max-w-prose">
-      <div className="font-bold text-2xl mb-2">{t(lang, 'installCta')}</div>
-      <p className="text-gray-800 mb-5 max-w-prose">{t(lang, 'installCtaSub')}</p>
-      <div className="flex flex-col sm:flex-row gap-3">
-        <a
-          href={universalLink}
-          onClick={handleClick}
-          className="inline-flex items-center justify-center min-h-[48px] md:min-h-[40px] px-5 rounded-lg bg-gray-900 text-white font-semibold text-base md:text-sm"
-        >
-          📱 App Store / Play Store
-        </a>
+    /* 아티클 하단 전환 블록.
+       종전에는 라임→올리브 그라디언트 박스에 "📱 App Store / Play Store" 라는
+       텍스트 버튼 하나였다. 이모지가 스토어 배지를 대신하고 있어서 실제 배포
+       채널로 읽히지 않았고, 색도 브랜드 라임(#d4ff50)과 다르게 보였다.
+       마케팅 사이트(aihavit.com)의 final-cta 와 같은 구성으로 맞춘다 —
+       플랫 라임 + 실제 스토어 배지 + 앱 화면. */
+    <div className="install-cta">
+      <div className="install-cta__text">
+        <p className="install-cta__title">{t(lang, 'installCta')}</p>
+        <p className="install-cta__sub">{t(lang, 'installCtaSub')}</p>
+        <div className="install-cta__badges">
+          <a href={universalLink} onClick={handleClick} className="install-cta__badge" aria-label="App Store">
+            {/* 5~6KB 고정 크기 PNG 라 next/image 최적화 이득이 없다. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/badge-appstore.png" alt="Download on the App Store" width={168} height={56} />
+          </a>
+          <a href={universalLink} onClick={handleClick} className="install-cta__badge" aria-label="Google Play">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/badge-googleplay.png" alt="Get it on Google Play" width={189} height={56} />
+          </a>
+        </div>
+      </div>
+      <div className="install-cta__shot" aria-hidden>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/app-preview.webp" alt="" width={330} height={670} loading="lazy" />
       </div>
     </div>
   );

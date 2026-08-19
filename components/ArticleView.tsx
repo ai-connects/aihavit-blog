@@ -119,10 +119,6 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{content.body_md}</ReactMarkdown>
       </div>
 
-      {/* Inline CTA — after main body */}
-      <div className="mt-12">
-        <InstallCTA lang={langKey} articleId={article.article_id} variant="inline" />
-      </div>
 
       {content.key_stats && content.key_stats.length > 0 && (
         <section className="mt-12">
@@ -191,7 +187,13 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
 
       {/* 엔티티 블록 — 본문 영역 안. 푸터/CTA 의 Havit 언급은 추출 단계에서
           대체로 버려지므로 <article> 안에서 한 번은 브랜드를 말해야 한다. */}
+
+      {/* 무엇인지 먼저 말하고, 그 다음 설치를 권한다. */}
       <AboutHavit shortLang={shortLang} />
+
+      <div className="mt-12">
+        <InstallCTA lang={langKey} articleId={article.article_id} variant="inline" />
+      </div>
 
       {references && references.length > 0 && (
         <section className="mt-14 pt-8 border-t" style={{ borderColor: 'var(--hv-border)' }}>
