@@ -1,0 +1,9 @@
+# 앱별 무시 규칙은 각 apps/*/.gitignore 에 있다. 여기에는 어느 앱에도
+# 속하지 않는 것만 둔다 — 저장소 어디서나 생길 수 있는 찌꺼기들.
+
+.DS_Store
+*.log
+.vercel
+.idea
+.vscode/*
+!.vscode/extensions.json
