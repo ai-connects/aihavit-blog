@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/check-token-parity.mjs && vite build",
+    "build": "npm run check:tokens && vite build",
     "preview": "vite preview",
-    "check:tokens": "node scripts/check-token-parity.mjs"
+    "check:tokens": "node ../../packages/design/check.mjs"
   },
   "devDependencies": {
     "vite": "^8.2.0"

@@ -51,6 +51,23 @@ directory** 를 켜둘 것. 안 켜면 블로그 글 하나 고칠 때마다 홈
 과거 이력이 필요하면 거기서 볼 수 있지만, 거기에 푸시해도 아무것도
 배포되지 않는다.
 
+## 디자인 토큰
+
+브랜드 색·컨테이너 폭 같은 원시 값의 SSOT 는 `packages/design/tokens.json`
+하나다. 두 앱의 `:root` 는 거기서 생성된다.
+
+```bash
+vi packages/design/tokens.json
+node packages/design/generate.mjs
+```
+
+각 앱의 `:root` 를 손으로 고치지 말 것 — 생성 구간(`HAVIT-TOKENS:BEGIN/END`)
+안은 다음 실행 때 덮어써지고, 그 전에 두 앱의 빌드가 `packages/design/check.mjs`
+로 대조해서 어긋나면 선다.
+
+이름은 앱마다 다르다 (`--color-*` / `--hv-*`). 300곳 넘는 사용처를 개명해봐야
+얻는 건 "이름이 같다"뿐이고, 값이 한 곳에서 나오면 어차피 갈라질 수 없다.
+
 ## 개발
 
 ```bash
