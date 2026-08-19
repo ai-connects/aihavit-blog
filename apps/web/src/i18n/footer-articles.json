@@ -1,0 +1,482 @@
+{
+  "blogLangs": [
+    "en",
+    "ko",
+    "ja",
+    "zh-tw"
+  ],
+  "groups": [
+    {
+      "key": "glp1Start",
+      "links": [
+        {
+          "slug": "glp1-injection-site-rotation-absorption-2026",
+          "labels": {
+            "en": "Where You Inject Semaglutide Actually Matters",
+            "ko": "세마글루타이드 주사 부위별 흡수율 차이",
+            "ja": "セマグルチドの注射部位で吸収率が変わる",
+            "zh-tw": "Semaglutide 注射部位真的有差！腹部、大腿、手…"
+          }
+        },
+        {
+          "slug": "glp1-injection-technique-pain-reduction-2026",
+          "labels": {
+            "en": "How to Make Ozempic Injections Less Painful",
+            "ko": "오젠픽 주사 통증 줄이는 방법",
+            "ja": "オゼンピック注射の痛みを軽減する方法",
+            "zh-tw": "如何讓 Ozempic 注射不再痛"
+          }
+        },
+        {
+          "slug": "tirzepatide-dose-titration-schedule-minimize-nausea-2026",
+          "labels": {
+            "en": "Mounjaro Dose Increase Schedule",
+            "ko": "마운자로 용량 증가 시 부작용 최소화하는 스케줄",
+            "ja": "マンジャロ増量スケジュール",
+            "zh-tw": "Mounjaro 劑量調整時程"
+          }
+        },
+        {
+          "slug": "glp1-traveling-storage-temperature-guide-2026",
+          "labels": {
+            "en": "How to Travel with Ozempic Without Refrigerat…",
+            "ko": "오젬픽 냉장보관 없이 여행하는 방법",
+            "ja": "オゼンピックを冷蔵庫なしで持ち運ぶ方法",
+            "zh-tw": "Ozempic 不冷藏怎麼帶出國"
+          }
+        },
+        {
+          "slug": "wegovy-insurance-coverage-prior-authorization-tips-2026",
+          "labels": {
+            "en": "How to Get Insurance to Cover Wegovy",
+            "ko": "위고비 보험 적용 사전승인 획득 방법",
+            "ja": "ウゴービの保険適用を勝ち取る方法",
+            "zh-tw": "Wegovy 保險給付攻略"
+          }
+        },
+        {
+          "slug": "glp1-exercise-timing-medication-effectiveness-2026",
+          "labels": {
+            "en": "Should I Exercise Before or After My Ozempic…",
+            "ko": "오젬픽 주사 전후 운동 타이밍",
+            "ja": "オゼンピック注射の前後、運動はいつすべき",
+            "zh-tw": "打完 Ozempic 到底能不能運動"
+          }
+        }
+      ]
+    },
+    {
+      "key": "sideEffects",
+      "links": [
+        {
+          "slug": "ozempic-side-effects",
+          "labels": {
+            "en": "Ozempic Side Effects",
+            "ko": "오젬픽 부작용 총정리",
+            "ja": "オゼンピックの副作用｜吐き気・期間・重大な注…",
+            "zh-tw": "胰妥讚副作用全解析"
+          }
+        },
+        {
+          "slug": "wegovy-side-effects",
+          "labels": {
+            "en": "Wegovy Side Effects",
+            "ko": "위고비 부작용 총정리",
+            "ja": "ウゴービの副作用｜吐き気・脱毛・続く期間（202…",
+            "zh-tw": "週纖達副作用全解析"
+          }
+        },
+        {
+          "slug": "mounjaro-side-effects",
+          "labels": {
+            "en": "Mounjaro Side Effects",
+            "ko": "마운자로 부작용",
+            "ja": "マンジャロの副作用｜吐き気・硫黄げっぷ・期間…",
+            "zh-tw": "猛健樂副作用全解析"
+          }
+        },
+        {
+          "slug": "zepbound-side-effects",
+          "labels": {
+            "en": "Zepbound Side Effects",
+            "ko": "젭바운드 부작용",
+            "ja": "ゼップバウンドの副作用｜吐き気・脱毛・期間（2…",
+            "zh-tw": "Zepbound（猛健樂）副作用"
+          }
+        },
+        {
+          "slug": "semaglutide-side-effects",
+          "labels": {
+            "en": "Semaglutide Side Effects",
+            "ko": "세마글루타이드 부작용",
+            "ja": "セマグルチドの副作用｜オゼンピック・ウゴービ…",
+            "zh-tw": "司美格魯肽副作用"
+          }
+        },
+        {
+          "slug": "glp1-nausea-management-evidence-based-strategies-2026",
+          "labels": {
+            "en": "How to Reduce Ozempic Nausea Without Stopping",
+            "ko": "오젠픽 메스꺼움 줄이는 실제 방법",
+            "ja": "オゼンピックの吐き気を止めずに軽減する方法",
+            "zh-tw": "Ozempic 噁心感不用停藥也能改善"
+          }
+        }
+      ]
+    },
+    {
+      "key": "compare",
+      "links": [
+        {
+          "slug": "semaglutide-vs-tirzepatide",
+          "labels": {
+            "en": "Semaglutide vs Tirzepatide",
+            "ko": "세마글루타이드 vs 티르제파타이드 (위고비·마운…",
+            "ja": "セマグルチド vs チルゼパチド（オゼンピック・…",
+            "zh-tw": "semaglutide vs 替爾泊肽（週纖達・猛健樂）怎麼…"
+          }
+        },
+        {
+          "slug": "tirzepatide-side-effects",
+          "labels": {
+            "en": "Tirzepatide Side Effects",
+            "ko": "티르제파타이드 부작용",
+            "ja": "チルゼパチドの副作用｜マンジャロ・ゼップバウ…",
+            "zh-tw": "替爾泊肽副作用全解析"
+          }
+        },
+        {
+          "slug": "tirzepatide-vs-semaglutide-gi-side-effects-duration-comparison-2026",
+          "labels": {
+            "en": "Mounjaro vs Wegovy Nausea Duration",
+            "ko": "마운자로 vs 위고비 메스꺼움 지속 기간 비교",
+            "ja": "マンジャロ vs ウゴービ 吐き気の持続期間を徹底…",
+            "zh-tw": "Mounjaro vs Wegovy 噁心持續時間比較"
+          }
+        },
+        {
+          "slug": "compounded-semaglutide-vs-brand-wegovy-safety-efficacy-2026",
+          "labels": {
+            "en": "Compounded Semaglutide vs Brand Wegovy",
+            "ko": "조제 세마글루타이드 vs 위고비",
+            "ja": "調剤セマグルチド vs ウゴービ",
+            "zh-tw": "複方調配 Semaglutide vs 原廠 Wegovy"
+          }
+        },
+        {
+          "slug": "glp1-switching-brands-equivalence-guide-2026",
+          "labels": {
+            "en": "Switching from Ozempic to Wegovy",
+            "ko": "오젬픽에서 위고비로 전환할 때 용량 계산법과…",
+            "ja": "オゼンピックからウゴービへの切り替え完全ガイド",
+            "zh-tw": "Ozempic 轉換 Wegovy 完整指南"
+          }
+        },
+        {
+          "slug": "transitioning-from-ozempic-to-mounjaro-protocol-2026",
+          "labels": {
+            "en": "Switching from Ozempic to Mounjaro",
+            "ko": "오젭픽에서 마운자로 전환하는 방법",
+            "ja": "オゼンピックからマンジャロへの切り替え",
+            "zh-tw": "從 Ozempic 轉換到 Mounjaro"
+          }
+        }
+      ]
+    },
+    {
+      "key": "interactions",
+      "links": [
+        {
+          "slug": "glp1-metformin-combination-therapy-synergy-2026",
+          "labels": {
+            "en": "GLP-1 and Metformin Together",
+            "ko": "GLP-1 메트포르민 병용 시너지 효과",
+            "ja": "GLP-1とメトホルミンの併用療法",
+            "zh-tw": "GLP-1 加上 Metformin"
+          }
+        },
+        {
+          "slug": "glp1-antidepressant-ssri-interaction-serotonin-2026",
+          "labels": {
+            "en": "GLP-1 Medications and Antidepressants",
+            "ko": "GLP-1 주사와 항우울제 SSRI 함께 복용해도 될까",
+            "ja": "GLP-1薬と抗うつ薬の併用",
+            "zh-tw": "GLP-1 藥物與抗憂鬱藥併用"
+          }
+        },
+        {
+          "slug": "glp1-levothyroxine-thyroid-medication-interaction-2026",
+          "labels": {
+            "en": "Taking Thyroid Medication Levothyroxine with…",
+            "ko": "GLP-1과 갑상선약 레보티록신 함께 복용할 때 반…",
+            "ja": "GLP-1薬とレボチロキシン（チラーヂン）の併用｜…",
+            "zh-tw": "GLP-1藥物與甲狀腺藥Levothyroxine怎麼吃"
+          }
+        },
+        {
+          "slug": "glp1-statin-cholesterol-medication-synergy-2026",
+          "labels": {
+            "en": "GLP-1 Plus Statin",
+            "ko": "GLP-1 스타틴 병용 콜레스테롤 개선",
+            "ja": "GLP-1受容体作動薬とスタチンの併用療法",
+            "zh-tw": "GLP-1 加上史他汀"
+          }
+        },
+        {
+          "slug": "glp1-alcohol-interaction-safety-limits-2026",
+          "labels": {
+            "en": "Can I Drink Alcohol on Semaglutide Safely",
+            "ko": "세마글루타이드 복용 중 음주, 어디까지 괜찮을까",
+            "ja": "セマグルチド服用中のお酒は大丈夫",
+            "zh-tw": "使用 Semaglutide 期間可以喝酒嗎"
+          }
+        },
+        {
+          "slug": "glp1-caffeine-interaction-appetite-effects-2026",
+          "labels": {
+            "en": "Does Coffee Affect Semaglutide Effectiveness",
+            "ko": "커피가 세마글루타이드 효과에 영향을 주는가",
+            "ja": "コーヒーはセマグルチドの効果に影響する",
+            "zh-tw": "喝咖啡會影響瘦瘦針效果嗎"
+          }
+        }
+      ]
+    },
+    {
+      "key": "afterGlp1",
+      "links": [
+        {
+          "slug": "glp-1-habit-report",
+          "labels": {
+            "en": "The GLP-1 Habit Report 2026",
+            "ko": "GLP-1(위고비·마운자로) 습관 리포트 2026｜사용…",
+            "ja": "GLP-1(オゼンピック・マンジャロ)習慣レポート20…",
+            "zh-tw": "GLP-1 習慣報告2026｜1,090 位使用者數據揭示的…"
+          }
+        },
+        {
+          "slug": "glp-1-first-month",
+          "labels": {
+            "en": "GLP-1 First Month",
+            "ko": "GLP-1 첫 한 달 (위고비·마운자로)｜다이어트 주…",
+            "ja": "GLP-1 最初の1か月（オゼンピック・マンジャロ）…",
+            "zh-tw": "GLP-1 第一個月（週纖達・猛健樂）逐週變化 (202…"
+          }
+        },
+        {
+          "slug": "glp1-rebound-weight-gain-prevention-2026",
+          "labels": {
+            "en": "After Ozempic",
+            "ko": "오젬픽 중단 후 체중 유지하는 방법",
+            "ja": "オゼンピック終了後のリバウンド対策",
+            "zh-tw": "停用 Ozempic 後如何維持體重"
+          }
+        },
+        {
+          "slug": "stopping-semaglutide-weight-regain-prevention-protocol-2026",
+          "labels": {
+            "en": "Stopping Semaglutide Without Regaining Weight",
+            "ko": "오젭픽 중단 후 체중 유지 방법",
+            "ja": "セマグルチド中止後にリバウンドしない方法",
+            "zh-tw": "停用 Ozempic 後不復胖"
+          }
+        },
+        {
+          "slug": "glp1-muscle-preservation-protein-timing-resistance-training-2026",
+          "labels": {
+            "en": "How to Prevent Muscle Loss on Semaglutide",
+            "ko": "세마글루타이드 복용 중 근육 손실 막는 단백질…",
+            "ja": "セマグルチド服用中の筋肉減少を防ぐ方法",
+            "zh-tw": "使用 Semaglutide 期間如何避免肌肉流失"
+          }
+        },
+        {
+          "slug": "glp1-sarcopenia-screening-dexa-grip-strength-protocol-2026",
+          "labels": {
+            "en": "How to Check for Muscle Loss While on Wegovy",
+            "ko": "위고비 복용 중 근육 감소 확인 방법",
+            "ja": "ウゴービ服用中の筋肉減少チェック法",
+            "zh-tw": "Wegovy 減重期間如何監測肌肉流失"
+          }
+        }
+      ]
+    },
+    {
+      "key": "conditions",
+      "links": [
+        {
+          "slug": "glp-1-for-pcos",
+          "labels": {
+            "en": "GLP-1 for PCOS",
+            "ko": "GLP-1(위고비·마운자로) 다낭성난소증후군(PCOS)…",
+            "ja": "GLP-1(オゼンピック・マンジャロ)とPCOS｜多嚢胞…",
+            "zh-tw": "GLP-1(週纖達·猛健樂)與多囊性卵巢症候群 PCOS"
+          }
+        },
+        {
+          "slug": "glp-1-for-menopause",
+          "labels": {
+            "en": "GLP-1 for Menopause",
+            "ko": "GLP-1(위고비·마운자로)과 폐경 체중 증가·복부…",
+            "ja": "GLP-1(オゼンピック・マンジャロ)と更年期の体重…",
+            "zh-tw": "GLP-1(週纖達·猛健樂)與更年期體重·內臟脂肪"
+          }
+        },
+        {
+          "slug": "glp-1-postpartum",
+          "labels": {
+            "en": "GLP-1 Postpartum",
+            "ko": "GLP-1(위고비·마운자로)과 산후",
+            "ja": "GLP-1(オゼンピック・マンジャロ)と産後:授乳の…",
+            "zh-tw": "GLP-1(週纖達·猛健樂)與產後減重"
+          }
+        },
+        {
+          "slug": "glp1-pcos-weight-loss-insulin-resistance-improvement-2026",
+          "labels": {
+            "en": "GLP-1 Medications for PCOS",
+            "ko": "다낭성 난소 증후군에 오젭픽이 효과 있을까",
+            "ja": "PCOSにGLP-1薬が効く理由",
+            "zh-tw": "GLP-1 藥物治療多囊性卵巢症候群"
+          }
+        },
+        {
+          "slug": "glp1-sleep-quality-changes-mechanisms-2026",
+          "labels": {
+            "en": "Does Semaglutide Affect Sleep Quality",
+            "ko": "세마글루타이드가 수면의 질에 영향을 주는가",
+            "ja": "セマグルチドは睡眠の質に影響する",
+            "zh-tw": "司美格魯肽會影響睡眠品質嗎"
+          }
+        },
+        {
+          "slug": "glp1-mental-health-effects-depression-anxiety-2026",
+          "labels": {
+            "en": "Can Semaglutide Cause Depression or Anxiety",
+            "ko": "세마글루타이드가 우울증이나 불안을 유발할까",
+            "ja": "セマグルチドはうつや不安を引き起こす",
+            "zh-tw": "Semaglutide 會導致憂鬱或焦慮嗎"
+          }
+        }
+      ]
+    },
+    {
+      "key": "tracker",
+      "links": [
+        {
+          "slug": "ozempic-tracker",
+          "labels": {
+            "en": "Ozempic Tracker",
+            "ko": "오젬픽 기록 완벽 가이드",
+            "ja": "オゼンピック トラッカー｜注射・血糖・体重を記…",
+            "zh-tw": "胰妥讚記錄全攻略"
+          }
+        },
+        {
+          "slug": "wegovy-tracker",
+          "labels": {
+            "en": "Wegovy Tracker",
+            "ko": "위고비 기록 완벽 가이드",
+            "ja": "ウゴービ 記録アプリ｜注射・体重・副作用を管理…",
+            "zh-tw": "週纖達記錄全攻略"
+          }
+        },
+        {
+          "slug": "mounjaro-tracker",
+          "labels": {
+            "en": "Mounjaro Tracker",
+            "ko": "마운자로 기록 완벽 가이드",
+            "ja": "マンジャロ 記録アプリ｜注射・体重・副作用を管…",
+            "zh-tw": "猛健樂記錄全攻略"
+          }
+        },
+        {
+          "slug": "zepbound-tracker",
+          "labels": {
+            "en": "Zepbound Tracker",
+            "ko": "젭바운드 기록 완벽 가이드",
+            "ja": "ゼップバウンド 記録アプリ｜注射・体重・副作用…",
+            "zh-tw": "Zepbound 追蹤全攻略"
+          }
+        },
+        {
+          "slug": "semaglutide-tracker",
+          "labels": {
+            "en": "Semaglutide Tracker",
+            "ko": "세마글루티드 기록 가이드",
+            "ja": "セマグルチド 記録｜オゼンピック・ウゴービ・リ…",
+            "zh-tw": "司美格魯肽追蹤全攻略"
+          }
+        },
+        {
+          "slug": "tirzepatide-tracker",
+          "labels": {
+            "en": "Tirzepatide Tracker",
+            "ko": "티르제파타이드 기록 가이드",
+            "ja": "チルゼパチド 記録｜マンジャロ・ゼップバウンド…",
+            "zh-tw": "替爾泊肽追蹤全攻略"
+          }
+        }
+      ]
+    },
+    {
+      "key": "alternatives",
+      "links": [
+        {
+          "slug": "myfitnesspal-alternative-glp-1",
+          "labels": {
+            "en": "MyFitnessPal Alternative for GLP-1 Users",
+            "ko": "MyFitnessPal 대안 GLP-1 트래커｜2026 솔직 비…",
+            "ja": "MyFitnessPal 代替アプリ｜GLP-1向け 2026年 正…",
+            "zh-tw": "MyFitnessPal 替代方案｜GLP-1 專用 2026 誠實比…"
+          }
+        },
+        {
+          "slug": "noom-glp-1-alternative",
+          "labels": {
+            "en": "Noom GLP-1 Alternative",
+            "ko": "눔(Noom) 대안 GLP-1｜2026 솔직 비교｜Havit vs…",
+            "ja": "Noom（ヌーム）代替｜GLP-1向け 2026 正直比較｜…",
+            "zh-tw": "Noom 替代方案｜GLP-1 專用 2026 誠實比較｜Havi…"
+          }
+        },
+        {
+          "slug": "weightwatchers-glp-1-alternative",
+          "labels": {
+            "en": "WeightWatchers GLP-1 Alternative",
+            "ko": "웨이트워처스 대안 GLP-1｜2026 솔직 비교｜Havi…",
+            "ja": "ウェイトウォッチャーズ 代替｜GLP-1向け 2026…",
+            "zh-tw": "慧優體 替代方案｜GLP-1 專用 2026 誠實比較｜Ha…"
+          }
+        },
+        {
+          "slug": "shotsy-alternative",
+          "labels": {
+            "en": "Shotsy Alternative for GLP-1 Users",
+            "ko": "Shotsy 대안 앱 2026｜GLP-1 주사 기록",
+            "ja": "Shotsy 代替アプリ 2026｜GLP-1注射記録アプリを…",
+            "zh-tw": "Shotsy 替代 App 2026｜GLP-1 瘦瘦筆記錄，誠實…"
+          }
+        },
+        {
+          "slug": "macrofactor-alternative",
+          "labels": {
+            "en": "MacroFactor Alternative for GLP-1 Users",
+            "ko": "MacroFactor 대체 앱",
+            "ja": "MacroFactorの代替アプリ｜GLP-1（ダイエット注…",
+            "zh-tw": "MacroFactor 替代 App｜GLP-1（瘦瘦針）使用者的…"
+          }
+        },
+        {
+          "slug": "glp-1-tracker-app",
+          "labels": {
+            "en": "GLP-1 Tracker App",
+            "ko": "GLP-1(위고비·마운자로) 기록 앱",
+            "ja": "GLP-1(オゼンピック・マンジャロ)記録アプリ 完…",
+            "zh-tw": "GLP-1 追蹤 App"
+          }
+        }
+      ]
+    }
+  ]
+}
