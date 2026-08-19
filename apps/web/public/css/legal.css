@@ -1,0 +1,389 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   법적 고지 페이지 (privacy / terms / eula / refund + -ko)
+
+   이 6개 페이지는 public/ 에 있는 정적 HTML 이라 Vite 파이프라인을 타지 않는다.
+   그래서 src/style.css 의 해시 붙은 번들을 <link> 할 수 없고, 자기 시트가 필요하다.
+
+   예전에는 구 사이트 v2 의 스타일시트(697줄, 다크 테마, accent #BEFF00)를 그대로
+   물려 쓰고 있었다. 메인 사이트는 라이트 테마에 accent #d4ff50 이라, 홈에서 약관
+   링크를 누르면 완전히 다른 사이트로 넘어간 것처럼 보였다. 이 파일이 그걸 맞춘다.
+
+   ⚠️ 아래 :root 토큰은 src/style.css 의 사본이다. 두 파일이 갈라지면
+      scripts/check-token-parity.mjs 가 빌드를 세운다. 값을 고칠 땐 양쪽 모두.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --color-primary: #d4ff50;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-grey-3: #f7f7f7;
+  --color-grey-60: #666666;
+  --color-grey-80: #333333;
+  --color-grey-100: #2a2a2a;
+  --color-section-grey: #f2f2f2;
+  --tint-lime: #e5ff96;
+  --tint-blue: #c1f2ff;
+  --tint-sky: #eafaff;
+  --tint-pale: #f6ffdc;
+  --white-90: rgba(255, 255, 255, 0.9);
+  --white-60: rgba(255, 255, 255, 0.6);
+  --white-40: rgba(255, 255, 255, 0.4);
+  --container-width: 1120px;
+
+  /* 본문 가독 폭. 컨테이너(1120px)를 그대로 쓰면 약관 한 줄이 140자를 넘어가
+     읽기 어렵다. 긴 산문에만 적용한다. */
+  --legal-measure: 780px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.legal-page {
+  margin: 0;
+  /* 메인과 동일. Pretendard 는 -ko 페이지의 한글 폴백 — Poppins 에 한글 글리프가
+     없어서, 지정하지 않으면 OS 기본 고딕으로 떨어지며 자간이 달라진다. */
+  font-family: 'Poppins', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--color-black);
+  background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── NAV ──────────────────────────────────────────────────────────────────
+   메인의 .nav 와 같은 거동 — sticky + 반투명 블러. 다만 이 페이지들에는 스크롤
+   상태를 토글할 JS 가 없으므로, HTML 이 이미 붙여둔 .scrolled 를 정적으로 쓴다. */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  /* 배경은 full-bleed, 내용만 컨테이너 폭으로 가운데 정렬한다. 메인은 .nav /
+     .nav__inner 두 겹으로 하는데 이 HTML 에는 안쪽 래퍼가 없어서, 좌우 패딩을
+     계산해 같은 결과를 낸다. max() 라서 좁은 화면에서도 24px 아래로 안 내려간다. */
+  padding: 20px max(24px, calc((100% - var(--container-width)) / 2 + 24px));
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px) saturate(1.6);
+  -webkit-backdrop-filter: blur(16px) saturate(1.6);
+}
+
+nav.scrolled {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* width/height 속성이 HTML 에 있어 로드 전에도 종횡비가 잡힌다. width:auto 가
+   그 비율을 아래 height 에 물린다 — 첫 레이아웃부터 흔들림이 없다. */
+.nav-logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-logo:hover .nav-logo-img {
+  transform: scale(1.05);
+}
+
+.nav-center-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav-center-links a {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-black);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-center-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 2px;
+  background: var(--color-black);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-center-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ── 본문 ────────────────────────────────────────────────────────────────── */
+.legal-content {
+  padding: 64px 0 96px;
+}
+
+.legal-content .container > * {
+  max-width: var(--legal-measure);
+}
+
+.legal-content h1 {
+  font-size: clamp(32px, 5vw, 44px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 32px;
+}
+
+.legal-content h2 {
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin: 56px 0 16px;
+}
+
+.legal-content h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 36px 0 12px;
+}
+
+.legal-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 28px 0 10px;
+}
+
+.legal-content p {
+  margin: 0 0 16px;
+}
+
+.legal-content ul,
+.legal-content ol {
+  margin: 0 0 16px;
+  padding-left: 24px;
+}
+
+.legal-content li {
+  margin-bottom: 8px;
+}
+
+.legal-content a {
+  color: var(--color-black);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 2px;
+}
+
+.legal-content a:hover {
+  background: var(--tint-pale);
+}
+
+.legal-content hr {
+  max-width: var(--legal-measure);
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+}
+
+.legal-content strong {
+  font-weight: 600;
+}
+
+/* 표는 가독 폭을 넘겨도 되지만, 좁은 화면에서 페이지 전체가 옆으로 밀리면 안 된다. */
+.legal-content table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 0 0 24px;
+  font-size: 15px;
+}
+
+.legal-content th,
+.legal-content td {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 10px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.legal-content th {
+  background: var(--color-grey-3);
+  font-weight: 600;
+}
+
+/* ── 강조 블록 3종 ─────────────────────────────────────────────────────────
+   전부 라임 계열 틴트로 통일하되, 경고만 채도를 낮춘 회색으로 구분한다.
+   빨강·노랑을 쓰면 브랜드 팔레트 밖으로 나간다. */
+.legal-meta {
+  background: var(--color-grey-3);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin: 0 0 32px;
+  font-size: 15px;
+}
+
+.legal-meta p {
+  margin: 0 0 4px;
+}
+
+.legal-meta p:last-child {
+  margin-bottom: 0;
+}
+
+.info-box {
+  background: var(--tint-pale);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 16px 16px 0;
+  padding: 20px 24px;
+  margin: 0 0 24px;
+}
+
+.info-box p:last-child,
+.warning-box p:last-child,
+.closing-note p:last-child {
+  margin-bottom: 0;
+}
+
+.warning-box {
+  background: var(--color-section-grey);
+  border-left: 4px solid var(--color-grey-80);
+  border-radius: 0 16px 16px 0;
+  padding: 20px 24px;
+  margin: 0 0 24px;
+}
+
+.closing-note {
+  background: var(--tint-sky);
+  border-radius: 16px;
+  padding: 24px;
+  margin: 48px 0 0;
+}
+
+/* ── FOOTER ───────────────────────────────────────────────────────────────
+   메인 .footer 와 같은 값: grey-80 배경 + white-60 본문. */
+.havit-footer {
+  background: var(--color-grey-80);
+  color: var(--white-60);
+  padding: 64px 24px;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 80px;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* flex:1 을 주면 브랜드 열이 남은 폭을 다 먹어서 링크 두 열이 오른쪽 끝으로
+   밀리고 가운데가 텅 빈다. 자기 폭만 쓰게 두고 열들을 왼쪽부터 붙인다. */
+.footer-brand {
+  flex: 0 1 340px;
+}
+
+.footer-logo {
+  height: 32px;
+  width: auto;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.footer-tagline {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+.footer-col-title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--white-40);
+  margin-bottom: 12px;
+}
+
+.footer-col-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-col-links a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.25s ease;
+}
+
+.footer-col-links a:hover {
+  color: var(--color-primary);
+}
+
+.footer-copy {
+  max-width: var(--container-width);
+  margin: 48px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 13px;
+  color: var(--white-40);
+}
+
+/* ── 모바일 ───────────────────────────────────────────────────────────────
+   nav 를 세로로 접는다. 링크 6개가 좁은 화면에서 가로 오버플로를 만들던 자리다. */
+@media (max-width: 720px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  nav {
+    padding: 16px 24px;
+  }
+
+  .nav-center-links {
+    gap: 16px 20px;
+  }
+
+  .nav-center-links a {
+    font-size: 14px;
+  }
+
+  .legal-content {
+    padding: 40px 0 64px;
+  }
+}
