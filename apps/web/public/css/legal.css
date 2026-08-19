@@ -304,8 +304,10 @@ nav.scrolled {
   margin: 0 auto;
 }
 
+/* flex:1 을 주면 브랜드 열이 남은 폭을 다 먹어서 링크 두 열이 오른쪽 끝으로
+   밀리고 가운데가 텅 빈다. 자기 폭만 쓰게 두고 열들을 왼쪽부터 붙인다. */
 .footer-brand {
-  flex: 1 1 280px;
+  flex: 0 1 340px;
 }
 
 .footer-logo {
