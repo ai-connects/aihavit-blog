@@ -16,6 +16,7 @@ import MedicalArticleJsonLd from './MedicalArticleJsonLd';
 // SEO v1.1 — FAQPage + BreadcrumbList rich-result schemas
 import FaqJsonLd from './FaqJsonLd';
 import BreadcrumbJsonLd from './BreadcrumbJsonLd';
+import AboutHavit from './AboutHavit';
 
 interface Props {
   article: ArticleV2;
@@ -187,6 +188,10 @@ export default function ArticleView({ article, content, shortLang, fallback }: P
           </div>
         </section>
       )}
+
+      {/* 엔티티 블록 — 본문 영역 안. 푸터/CTA 의 Havit 언급은 추출 단계에서
+          대체로 버려지므로 <article> 안에서 한 번은 브랜드를 말해야 한다. */}
+      <AboutHavit shortLang={shortLang} />
 
       {references && references.length > 0 && (
         <section className="mt-14 pt-8 border-t" style={{ borderColor: 'var(--hv-border)' }}>
