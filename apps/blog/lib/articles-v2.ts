@@ -14,6 +14,24 @@
 import { readdirSync, readFileSync, statSync } from 'fs';
 import path from 'path';
 import { INDEXABLE_ROUTE_LANGS } from './i18n';
+import mergedRedirects from './merged-redirects.json';
+
+/**
+ * 중복 통합으로 301(next.config redirects)이 걸린 슬러그.
+ *
+ * 이 슬러그의 JSON 은 남아 있지만 URL 은 keeper 로 영구 이동한다. loadAll() 이
+ * 이들을 그대로 흘려보내면 사이트맵·RSS·목록·관련링크·정적경로가 전부 "308 로
+ * 튕기는 URL" 을 정식 URL 로 선언한다 — 실측 327건이 사이트맵에 실려 있었고
+ * GSC 가 "리디렉션이 포함된 페이지" 로 잡고 있었다. 크롤 예산을 왕복 요청으로
+ * 태우고 사이트맵 신호를 희석한다.
+ *
+ * loadAll() 이 단일 소스이므로 여기서 한 번 걸러내면 전 계층이 정합해진다.
+ * JSON 은 건드리지 않는다(P7 무손실) — 통합을 되돌리려면 merged-redirects.json
+ * 에서 항목만 지우면 슬러그가 자동으로 되살아난다.
+ */
+const MERGED_AWAY = new Set<string>(
+  (mergedRedirects as { from: string; to: string }[]).map((r) => r.from),
+);
 
 export interface ArticleV2LangContent {
   title: string;
@@ -177,6 +195,8 @@ function loadAll(): ArticleV2[] {
         // PRD §5.2.1 / §7.1 Step 1 — default author/reviewer 런타임 주입 (JSON 무수정)
         if (!parsed.author) parsed.author = DEFAULT_AUTHOR;
         if (!parsed.reviewer) parsed.reviewer = DEFAULT_REVIEWER;
+        // 통합으로 301 이 걸린 슬러그는 노출 계층에서 제외 (MERGED_AWAY 주석 참조).
+        if (MERGED_AWAY.has(parsed.slug)) continue;
         out.push(parsed);
       } catch {
         // skip malformed

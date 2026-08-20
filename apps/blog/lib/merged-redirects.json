@@ -1,230 +1,46 @@
 [
   {
-    "from": "daylight-saving-time-adjustment-sleep-schedule-protocol-2026",
-    "to": "daylight-saving-time-sleep-schedule-adjustment-2026"
-  },
-  {
-    "from": "daylight-saving-time-adjustment-protocol-2026",
-    "to": "daylight-saving-time-sleep-schedule-adjustment-2026"
-  },
-  {
-    "from": "jet-lag-circadian-reset-melatonin-light-protocol-2026",
-    "to": "jet-lag-circadian-reset-light-exposure-protocol-2026"
-  },
-  {
-    "from": "jet-lag-recovery-protocol-circadian-reset-2026",
-    "to": "jet-lag-circadian-reset-light-exposure-protocol-2026"
-  },
-  {
-    "from": "stress-cortisol-belly-fat-accumulation-management-2026",
-    "to": "stress-cortisol-belly-fat-accumulation-connection-2026"
-  },
-  {
-    "from": "stress-cortisol-belly-fat-accumulation-mechanism-2026",
-    "to": "stress-cortisol-belly-fat-accumulation-connection-2026"
-  },
-  {
-    "from": "metabolic-flexibility-carb-fat-switching-training-2026",
-    "to": "metabolic-flexibility-carb-fat-oxidation-training-2026"
-  },
-  {
-    "from": "metabolic-flexibility-fat-carb-switching-training-2026",
-    "to": "metabolic-flexibility-carb-fat-oxidation-training-2026"
-  },
-  {
-    "from": "morning-vs-evening-workout-circadian-performance-2026",
-    "to": "morning-vs-evening-workout-circadian-performance-optimization-2026"
-  },
-  {
-    "from": "morning-versus-evening-workout-performance-circadian-2026",
-    "to": "morning-vs-evening-workout-circadian-performance-optimization-2026"
-  },
-  {
-    "from": "tempo-training-time-under-tension-hypertrophy-protocol-2026",
-    "to": "tempo-training-time-under-tension-muscle-growth-2026"
-  },
-  {
-    "from": "tempo-training-time-under-tension-hypertrophy-2026",
-    "to": "tempo-training-time-under-tension-muscle-growth-2026"
-  },
-  {
-    "from": "iron-deficiency-without-anemia-symptoms-optimization-2026",
-    "to": "iron-deficiency-without-anemia-symptoms-management-2026"
-  },
-  {
-    "from": "iron-deficiency-without-anemia-symptoms-ferritin-2026",
-    "to": "iron-deficiency-without-anemia-symptoms-management-2026"
-  },
-  {
-    "from": "glp1-muscle-loss-prevention-protein-timing-2026",
-    "to": "glp1-muscle-preservation-protein-timing-resistance-training-2026"
-  },
-  {
-    "from": "first-day-new-job-stress-management-protocol-2026",
-    "to": "first-day-new-job-energy-management-2026"
-  },
-  {
-    "from": "surgery-recovery-mobility-return-timeline-2026",
-    "to": "post-surgery-mobility-return-timeline-evidence-2026"
-  },
-  {
-    "from": "crying-baby-sleep-deprived-parent-coping-strategies-2026",
-    "to": "new-parent-sleep-deprivation-coping-strategies-2026"
-  },
-  {
-    "from": "chronotype-meal-timing-optimization-owl-lark-2026",
-    "to": "chronotype-based-meal-timing-weight-loss-2026"
-  },
-  {
-    "from": "menstrual-cycle-training-periodization-strength-2026",
-    "to": "menstrual-cycle-training-periodization-protocol-2026"
-  },
-  {
-    "from": "postprandial-glucose-spike-reduction-food-order-2026",
-    "to": "postprandial-glucose-spike-prevention-food-order-2026"
-  },
-  {
-    "from": "magnesium-forms-absorption-glycinate-citrate-2026",
-    "to": "magnesium-forms-absorption-glycinate-citrate-comparison-2026"
-  },
-  {
-    "from": "collagen-peptide-absorption-skin-joint-evidence-2026",
-    "to": "collagen-supplement-absorption-skin-joint-evidence-2026"
-  },
-  {
-    "from": "protein-timing-muscle-synthesis-window-myth-2026",
-    "to": "protein-timing-window-muscle-synthesis-myth-2026"
-  },
-  {
-    "from": "body-recomposition-fat-loss-muscle-gain-simultaneous-2026",
-    "to": "body-recomposition-lose-fat-gain-muscle-simultaneously-2026"
-  },
-  {
-    "from": "non-exercise-activity-thermogenesis-neat-optimization-2026",
-    "to": "neat-non-exercise-activity-thermogenesis-increase-2026"
-  },
-  {
-    "from": "visceral-fat-reduction-targeted-strategies-evidence-2026",
-    "to": "visceral-fat-reduction-targeted-strategies-2026"
-  },
-  {
-    "from": "set-point-theory-weight-regulation-evidence-2026",
-    "to": "body-set-point-theory-weight-settling-point-2026"
-  },
-  {
-    "from": "post-meal-walking-blood-sugar-metabolism-2026",
-    "to": "post-meal-walking-blood-sugar-timing-optimization-2026"
-  },
-  {
-    "from": "alcohol-metabolism-weight-gain-mechanism-reduction-2026",
-    "to": "alcohol-metabolism-weight-gain-fat-storage-mechanism-2026"
-  },
-  {
-    "from": "brown-fat-activation-cold-exposure-weight-loss-2026",
-    "to": "cold-exposure-brown-fat-activation-protocol-2026"
-  },
-  {
-    "from": "thyroid-function-metabolism-natural-support-2026",
-    "to": "thyroid-function-metabolism-natural-support-strategies-2026"
-  },
-  {
-    "from": "sleep-debt-recovery-weekend-catch-up-myth-2026",
-    "to": "sleep-debt-recovery-weekend-catchup-myth-2026"
-  },
-  {
-    "from": "sleep-consistency-metric-regularity-index-2026",
-    "to": "sleep-regularity-index-consistency-health-impact-2026"
-  },
-  {
-    "from": "sleep-latency-tracking-falling-asleep-time-2026",
-    "to": "sleep-latency-tracking-what-falling-asleep-time-reveals-2026"
-  },
-  {
-    "from": "heart-rate-recovery-fitness-indicator-tracking-2026",
-    "to": "exercise-heart-rate-recovery-fitness-indicator-2026"
-  },
-  {
-    "from": "nature-exposure-minimum-dose-mental-health-2026",
-    "to": "nature-exposure-weekly-minimum-mental-health-threshold-2026"
-  },
-  {
-    "from": "social-jet-lag-weekend-schedule-health-impact-2026",
-    "to": "social-jet-lag-weekend-schedule-shift-health-impact-2026"
-  },
-  {
-    "from": "evening-routine-wind-down-protocol-evidence-2026",
-    "to": "evening-routine-wind-down-protocol-sleep-onset-2026"
-  },
-  {
     "from": "afternoon-slump-prevention-strategies-without-caffeine-2026",
     "to": "afternoon-slump-prevention-non-caffeine-strategies-2026"
   },
   {
-    "from": "houseplant-air-quality-mental-wellbeing-2026",
-    "to": "houseplants-indoor-air-quality-mental-health-evidence-2026"
+    "from": "age-related-metabolism-decline-prevention-strategies-2026",
+    "to": "age-related-metabolic-decline-prevention-strategies-2026"
   },
   {
-    "from": "progress-monitoring-frequency-optimal-tracking-balance-2026",
-    "to": "progress-monitoring-goal-tracking-frequency-2026"
+    "from": "alcohol-metabolism-weight-gain-fat-storage-mechanism-2026",
+    "to": "alcohol-metabolism-fat-storage-weight-gain-2026"
   },
   {
-    "from": "ego-depletion-myth-willpower-unlimited-resource-2026",
-    "to": "ego-depletion-myth-willpower-unlimited-2026"
+    "from": "alcohol-metabolism-weight-gain-mechanism-reduction-2026",
+    "to": "alcohol-metabolism-fat-storage-weight-gain-2026"
   },
   {
-    "from": "mental-contrasting-woop-goal-achievement-2026",
-    "to": "mental-contrasting-woop-goal-achievement-method-2026"
+    "from": "ankle-mobility-squat-depth-improvement-protocol-2026",
+    "to": "ankle-mobility-squat-depth-injury-prevention-2026"
+  },
+  {
+    "from": "artificial-sweeteners-metabolism-insulin-response-2026",
+    "to": "artificial-sweeteners-insulin-response-weight-2026"
+  },
+  {
+    "from": "autoimmune-flare-trigger-identification-tracking-method-2026",
+    "to": "autoimmune-flare-trigger-identification-tracking-2026"
+  },
+  {
+    "from": "bile-acid-malabsorption-chronic-diarrhea-cause-2026",
+    "to": "bile-acid-malabsorption-diarrhea-dietary-management-2026"
   },
   {
     "from": "blood-flow-restriction-training-low-load-muscle-gain-2026",
     "to": "blood-flow-restriction-training-low-load-muscle-growth-2026"
   },
   {
-    "from": "zone-2-cardio-fat-burning-heart-rate-calculation-2026",
-    "to": "zone-2-cardio-fat-oxidation-heart-rate-guide-2026"
+    "from": "body-recomposition-fat-loss-muscle-gain-simultaneous-2026",
+    "to": "body-recomposition-lose-fat-gain-muscle-simultaneously-2026"
   },
   {
-    "from": "plyometric-training-bone-density-adults-over-40-2026",
-    "to": "plyometric-training-bone-density-adults-2026"
-  },
-  {
-    "from": "exercise-snacks-metabolic-health-protocol-2026",
-    "to": "exercise-snacks-metabolic-health-micro-workouts-2026"
-  },
-  {
-    "from": "resistance-band-progressive-overload-home-2026",
-    "to": "resistance-band-progressive-overload-home-strength-2026"
-  },
-  {
-    "from": "concurrent-training-interference-minimization-2026",
-    "to": "concurrent-training-interference-effect-minimization-2026"
-  },
-  {
-    "from": "silent-reflux-lpr-symptoms-different-from-gerd-2026",
-    "to": "silent-reflux-lpr-throat-symptoms-different-gerd-2026"
-  },
-  {
-    "from": "migraine-prodrome-symptoms-early-intervention-window-2026",
-    "to": "migraine-prodrome-recognition-early-intervention-window-2026"
-  },
-  {
-    "from": "restless-leg-syndrome-iron-ferritin-threshold-2026",
-    "to": "restless-leg-syndrome-iron-ferritin-threshold-treatment-2026"
-  },
-  {
-    "from": "histamine-intolerance-symptoms-low-histamine-diet-2026",
-    "to": "histamine-intolerance-symptom-patterns-elimination-protocol-2026"
-  },
-  {
-    "from": "functional-dyspepsia-gut-brain-treatment-2026",
-    "to": "functional-dyspepsia-gut-brain-interaction-treatment-2026"
-  },
-  {
-    "from": "chronic-inflammation-markers-crp-levels-lifestyle-2026",
-    "to": "chronic-inflammation-markers-crp-levels-lifestyle-reduction-2026"
-  },
-  {
-    "from": "brown-fat-activation-cold-exposure-protocol-metabolism-2026",
+    "from": "brown-fat-activation-cold-exposure-calorie-burn-2026",
     "to": "cold-exposure-brown-fat-activation-protocol-2026"
   },
   {
@@ -232,8 +48,156 @@
     "to": "cold-exposure-brown-fat-activation-protocol-2026"
   },
   {
-    "from": "brown-fat-activation-cold-exposure-calorie-burn-2026",
+    "from": "brown-fat-activation-cold-exposure-protocol-metabolism-2026",
     "to": "cold-exposure-brown-fat-activation-protocol-2026"
+  },
+  {
+    "from": "brown-fat-activation-cold-exposure-weight-loss-2026",
+    "to": "cold-exposure-brown-fat-activation-protocol-2026"
+  },
+  {
+    "from": "chronic-inflammation-markers-crp-levels-lifestyle-2026",
+    "to": "chronic-inflammation-markers-crp-levels-lifestyle-reduction-2026"
+  },
+  {
+    "from": "chronic-sinusitis-biofilm-treatment-approaches-2026",
+    "to": "chronic-sinusitis-biofilm-disruption-saline-protocol-2026"
+  },
+  {
+    "from": "chronotype-meal-timing-optimization-owl-lark-2026",
+    "to": "chronotype-based-meal-timing-weight-loss-2026"
+  },
+  {
+    "from": "cold-water-drinking-metabolism-boost-reality-2026",
+    "to": "cold-water-drinking-metabolism-calorie-burn-myth-2026"
+  },
+  {
+    "from": "cold-water-immersion-recovery-timing-optimization-2026",
+    "to": "cold-water-immersion-recovery-optimal-protocol-2026"
+  },
+  {
+    "from": "cold-water-immersion-recovery-timing-temperature-protocol-2026",
+    "to": "cold-water-immersion-recovery-optimal-protocol-2026"
+  },
+  {
+    "from": "collagen-peptide-absorption-skin-joint-evidence-2026",
+    "to": "collagen-supplement-absorption-skin-joint-evidence-2026"
+  },
+  {
+    "from": "commitment-devices-precommitment-strategy-effectiveness-2026",
+    "to": "commitment-devices-precommitment-strategy-2026"
+  },
+  {
+    "from": "concurrent-training-interference-effect-optimization-2026",
+    "to": "concurrent-training-interference-effect-minimization-2026"
+  },
+  {
+    "from": "concurrent-training-interference-minimization-2026",
+    "to": "concurrent-training-interference-effect-minimization-2026"
+  },
+  {
+    "from": "crying-baby-sleep-deprived-parent-coping-strategies-2026",
+    "to": "new-parent-sleep-deprivation-coping-strategies-2026"
+  },
+  {
+    "from": "daylight-saving-time-adjustment-protocol-2026",
+    "to": "daylight-saving-time-sleep-schedule-adjustment-2026"
+  },
+  {
+    "from": "daylight-saving-time-adjustment-sleep-schedule-protocol-2026",
+    "to": "daylight-saving-time-sleep-schedule-adjustment-2026"
+  },
+  {
+    "from": "digital-detox-dopamine-reset-protocol-2026",
+    "to": "digital-detox-dopamine-reset-evidence-2026"
+  },
+  {
+    "from": "digital-sunset-routine-blue-light-elimination-protocol-2026",
+    "to": "digital-sunset-routine-blue-light-alternative-2026"
+  },
+  {
+    "from": "ego-depletion-myth-willpower-unlimited-resource-2026",
+    "to": "ego-depletion-myth-willpower-unlimited-2026"
+  },
+  {
+    "from": "emotional-eating-trigger-pattern-intervention-match-2026",
+    "to": "emotional-eating-trigger-pattern-intervention-2026"
+  },
+  {
+    "from": "evening-routine-wind-down-protocol-evidence-2026",
+    "to": "evening-routine-wind-down-protocol-sleep-onset-2026"
+  },
+  {
+    "from": "evening-wind-down-routine-sleep-onset-latency-reduction-2026",
+    "to": "evening-routine-wind-down-protocol-sleep-onset-2026"
+  },
+  {
+    "from": "exercise-order-compound-isolation-optimal-sequence-2026",
+    "to": "exercise-order-compound-isolation-sequence-2026"
+  },
+  {
+    "from": "exercise-snacks-metabolic-benefits-sedentary-breaks-2026",
+    "to": "exercise-snacks-metabolic-health-micro-workouts-2026"
+  },
+  {
+    "from": "exercise-snacks-metabolic-health-protocol-2026",
+    "to": "exercise-snacks-metabolic-health-micro-workouts-2026"
+  },
+  {
+    "from": "first-day-new-job-stress-management-protocol-2026",
+    "to": "first-day-new-job-energy-management-2026"
+  },
+  {
+    "from": "food-logging-accuracy-portion-estimation-error-2026",
+    "to": "food-logging-accuracy-portion-estimation-bias-2026"
+  },
+  {
+    "from": "functional-dyspepsia-gut-brain-treatment-2026",
+    "to": "functional-dyspepsia-gut-brain-interaction-treatment-2026"
+  },
+  {
+    "from": "glp-1-comparison",
+    "to": "semaglutide-vs-tirzepatide"
+  },
+  {
+    "from": "glp-1-constipation",
+    "to": "glp1-constipation-management-fiber-hydration-protocol-2026"
+  },
+  {
+    "from": "glp-1-for-perimenopause",
+    "to": "glp-1-perimenopause"
+  },
+  {
+    "from": "glp-1-guide",
+    "to": "glp-1-first-month"
+  },
+  {
+    "from": "glp-1-muscle-loss",
+    "to": "glp1-muscle-loss-prevention-nutrition-strategy-2026"
+  },
+  {
+    "from": "glp-1-muscle-loss-protein",
+    "to": "protein-intake-goal-on-semaglutide-grams-per-pound-2026"
+  },
+  {
+    "from": "glp-1-nausea",
+    "to": "glp1-nausea-management-evidence-based-strategies-2026"
+  },
+  {
+    "from": "glp-1-nausea-food-guide",
+    "to": "glp1-nausea-management-evidence-based-strategies-2026"
+  },
+  {
+    "from": "glp1-muscle-loss-prevention-protein-timing-2026",
+    "to": "glp1-muscle-preservation-protein-timing-resistance-training-2026"
+  },
+  {
+    "from": "glp1-surgery-preparation-perioperative-protocol-2026",
+    "to": "glp1-surgery-preparation-withholding-protocol-2026"
+  },
+  {
+    "from": "goal-gradient-effect-finish-line-motivation-boost-2026",
+    "to": "goal-gradient-effect-motivation-near-finish-2026"
   },
   {
     "from": "grip-strength-longevity-predictor-training-protocol-2026",
@@ -248,8 +212,124 @@
     "to": "grip-strength-longevity-predictor-training-2026"
   },
   {
+    "from": "heart-rate-recovery-fitness-indicator-tracking-2026",
+    "to": "exercise-heart-rate-recovery-fitness-indicator-2026"
+  },
+  {
+    "from": "high-protein-snacks-glp-1",
+    "to": "glp-1-diet-7-day-meal-plan"
+  },
+  {
+    "from": "histamine-intolerance-foods-symptoms-low-histamine-diet-2026",
+    "to": "histamine-intolerance-symptom-patterns-elimination-protocol-2026"
+  },
+  {
+    "from": "histamine-intolerance-symptoms-low-histamine-diet-2026",
+    "to": "histamine-intolerance-symptom-patterns-elimination-protocol-2026"
+  },
+  {
+    "from": "houseplant-air-quality-mental-wellbeing-2026",
+    "to": "houseplants-indoor-air-quality-mental-health-evidence-2026"
+  },
+  {
+    "from": "hydration-tracking-urine-color-accuracy-2026",
+    "to": "urine-color-hydration-chart-accuracy-limitations-2026"
+  },
+  {
+    "from": "insulin-sensitivity-morning-vs-evening-exercise-2026",
+    "to": "insulin-sensitivity-morning-vs-evening-meals-2026"
+  },
+  {
+    "from": "insulin-sensitivity-morning-vs-evening-meal-timing-2026",
+    "to": "insulin-sensitivity-morning-vs-evening-meals-2026"
+  },
+  {
+    "from": "iron-deficiency-without-anemia-symptoms-ferritin-2026",
+    "to": "iron-deficiency-without-anemia-symptoms-management-2026"
+  },
+  {
+    "from": "iron-deficiency-without-anemia-symptoms-optimization-2026",
+    "to": "iron-deficiency-without-anemia-symptoms-management-2026"
+  },
+  {
     "from": "iron-deficiency-without-anemia-symptoms-treatment-2026",
     "to": "iron-deficiency-without-anemia-symptoms-management-2026"
+  },
+  {
+    "from": "isometric-exercise-blood-pressure-reduction-protocol-2026",
+    "to": "isometric-exercise-blood-pressure-reduction-2026"
+  },
+  {
+    "from": "jet-lag-circadian-reset-melatonin-light-protocol-2026",
+    "to": "jet-lag-circadian-reset-light-exposure-protocol-2026"
+  },
+  {
+    "from": "jet-lag-recovery-protocol-circadian-reset-2026",
+    "to": "jet-lag-circadian-reset-light-exposure-protocol-2026"
+  },
+  {
+    "from": "long-haul-flight-dvt-prevention-movement-protocol-2026",
+    "to": "long-haul-flight-deep-vein-thrombosis-prevention-2026"
+  },
+  {
+    "from": "magnesium-forms-absorption-glycinate-citrate-2026",
+    "to": "magnesium-forms-absorption-glycinate-citrate-comparison-2026"
+  },
+  {
+    "from": "maintain-weight-after-glp-1",
+    "to": "glp1-rebound-weight-gain-prevention-2026"
+  },
+  {
+    "from": "mast-cell-activation-syndrome-mcas-symptoms-2026",
+    "to": "mast-cell-activation-syndrome-symptom-tracking-2026"
+  },
+  {
+    "from": "menstrual-cycle-metabolism-changes-weight-fluctuation-2026",
+    "to": "menstrual-cycle-metabolism-weight-fluctuation-phases-2026"
+  },
+  {
+    "from": "menstrual-cycle-training-periodization-strength-2026",
+    "to": "menstrual-cycle-training-periodization-protocol-2026"
+  },
+  {
+    "from": "mental-contrasting-woop-goal-achievement-2026",
+    "to": "mental-contrasting-woop-goal-achievement-method-2026"
+  },
+  {
+    "from": "metabolic-flexibility-carb-fat-switching-training-2026",
+    "to": "metabolic-flexibility-carb-fat-oxidation-training-2026"
+  },
+  {
+    "from": "metabolic-flexibility-fat-carb-switching-training-2026",
+    "to": "metabolic-flexibility-carb-fat-oxidation-training-2026"
+  },
+  {
+    "from": "migraine-prodrome-symptoms-early-intervention-window-2026",
+    "to": "migraine-prodrome-recognition-early-intervention-window-2026"
+  },
+  {
+    "from": "morning-routine-decision-fatigue-reduction-automation-2026",
+    "to": "morning-routine-decision-fatigue-automation-2026"
+  },
+  {
+    "from": "morning-sunlight-exposure-circadian-rhythm-optimization-2026",
+    "to": "morning-sunlight-exposure-duration-circadian-reset-2026"
+  },
+  {
+    "from": "morning-versus-evening-workout-performance-circadian-2026",
+    "to": "morning-vs-evening-workout-circadian-performance-optimization-2026"
+  },
+  {
+    "from": "morning-vs-evening-workout-circadian-performance-2026",
+    "to": "morning-vs-evening-workout-circadian-performance-optimization-2026"
+  },
+  {
+    "from": "muscle-fiber-type-ratio-training-method-selection-2026",
+    "to": "muscle-fiber-type-training-modality-selection-2026"
+  },
+  {
+    "from": "muscle-mass-metabolic-rate-relationship-calculation-2026",
+    "to": "muscle-mass-resting-metabolic-rate-calculation-2026"
   },
   {
     "from": "muscle-mass-resting-metabolic-rate-contribution-2026",
@@ -260,20 +340,52 @@
     "to": "muscle-mass-resting-metabolic-rate-calculation-2026"
   },
   {
-    "from": "muscle-mass-metabolic-rate-relationship-calculation-2026",
-    "to": "muscle-mass-resting-metabolic-rate-calculation-2026"
+    "from": "nature-exposure-minimum-dose-mental-health-2026",
+    "to": "nature-exposure-weekly-minimum-mental-health-threshold-2026"
   },
   {
-    "from": "concurrent-training-interference-effect-optimization-2026",
-    "to": "concurrent-training-interference-effect-minimization-2026"
+    "from": "neat-non-exercise-activity-thermogenesis-optimization-2026",
+    "to": "neat-non-exercise-activity-thermogenesis-increase-2026"
+  },
+  {
+    "from": "night-shift-meal-timing-metabolic-optimization-2026",
+    "to": "night-shift-meal-timing-metabolic-protection-2026"
+  },
+  {
+    "from": "non-exercise-activity-thermogenesis-neat-optimization-2026",
+    "to": "neat-non-exercise-activity-thermogenesis-increase-2026"
+  },
+  {
+    "from": "omega-3-to-omega-6-ratio-inflammation-optimization-2026",
+    "to": "omega-3-omega-6-ratio-inflammation-modern-diet-2026"
+  },
+  {
+    "from": "perimenopause-sleep-disruption-personalized-protocol-2026",
+    "to": "perimenopause-sleep-disruption-management-protocol-2026"
+  },
+  {
+    "from": "phone-free-bedroom-sleep-quality-implementation-2026",
+    "to": "phone-free-bedroom-relationship-sleep-quality-2026"
   },
   {
     "from": "phone-free-bedroom-sleep-quality-improvement-timeline-2026",
     "to": "phone-free-bedroom-relationship-sleep-quality-2026"
   },
   {
-    "from": "phone-free-bedroom-sleep-quality-implementation-2026",
-    "to": "phone-free-bedroom-relationship-sleep-quality-2026"
+    "from": "plyometric-training-bone-density-adults-over-40-2026",
+    "to": "plyometric-training-bone-density-adults-2026"
+  },
+  {
+    "from": "polycystic-ovary-syndrome-insulin-resistance-management-2026",
+    "to": "pcos-insulin-resistance-lifestyle-management-2026"
+  },
+  {
+    "from": "post-meal-walking-blood-sugar-metabolism-2026",
+    "to": "post-meal-walking-blood-sugar-timing-optimization-2026"
+  },
+  {
+    "from": "post-meal-walking-timing-glucose-response-2026",
+    "to": "post-meal-walking-blood-sugar-timing-optimization-2026"
   },
   {
     "from": "post-viral-fatigue-recovery-timeline-realistic-expectations-2026",
@@ -284,239 +396,215 @@
     "to": "post-viral-fatigue-recovery-timeline-protocol-2026"
   },
   {
-    "from": "evening-wind-down-routine-sleep-onset-latency-reduction-2026",
-    "to": "evening-routine-wind-down-protocol-sleep-onset-2026"
-  },
-  {
-    "from": "seasonal-affective-disorder-light-therapy-timing-protocol-2026",
-    "to": "seasonal-affective-disorder-light-therapy-timing-2026"
-  },
-  {
-    "from": "seasonal-affective-disorder-light-exercise-protocol-2026",
-    "to": "seasonal-affective-disorder-light-therapy-timing-2026"
-  },
-  {
-    "from": "rpe-autoregulation-training-load-management-2026",
-    "to": "rpe-autoregulation-training-load-adjustment-2026"
-  },
-  {
-    "from": "rpe-autoregulation-training-fatigue-management-2026",
-    "to": "rpe-autoregulation-training-load-adjustment-2026"
-  },
-  {
-    "from": "restless-leg-syndrome-iron-ferritin-connection-2026",
-    "to": "restless-leg-syndrome-iron-ferritin-threshold-treatment-2026"
-  },
-  {
-    "from": "neat-non-exercise-activity-thermogenesis-optimization-2026",
-    "to": "neat-non-exercise-activity-thermogenesis-increase-2026"
-  },
-  {
-    "from": "weight-loss-plateau-metabolic-adaptation-breakthrough-2026",
-    "to": "weight-loss-plateau-breakthrough-metabolic-reset-2026"
-  },
-  {
-    "from": "weight-loss-plateau-breakthrough-metabolic-adaptation-2026",
-    "to": "weight-loss-plateau-breakthrough-metabolic-reset-2026"
-  },
-  {
-    "from": "insulin-sensitivity-morning-vs-evening-meal-timing-2026",
-    "to": "insulin-sensitivity-morning-vs-evening-meals-2026"
-  },
-  {
-    "from": "insulin-sensitivity-morning-vs-evening-exercise-2026",
-    "to": "insulin-sensitivity-morning-vs-evening-meals-2026"
-  },
-  {
-    "from": "cold-water-immersion-recovery-timing-optimization-2026",
-    "to": "cold-water-immersion-recovery-optimal-protocol-2026"
-  },
-  {
-    "from": "cold-water-immersion-recovery-timing-temperature-protocol-2026",
-    "to": "cold-water-immersion-recovery-optimal-protocol-2026"
-  },
-  {
-    "from": "silent-inflammation-crp-levels-lifestyle-reduction-2026",
-    "to": "chronic-inflammation-markers-crp-levels-lifestyle-reduction-2026"
-  },
-  {
-    "from": "artificial-sweeteners-metabolism-insulin-response-2026",
-    "to": "artificial-sweeteners-insulin-response-weight-2026"
-  },
-  {
-    "from": "sleep-spindles-memory-consolidation-enhancement-2026",
-    "to": "sleep-spindle-enhancement-memory-consolidation-2026"
-  },
-  {
-    "from": "training-load-acute-chronic-ratio-injury-risk-2026",
-    "to": "weekly-training-load-acute-chronic-ratio-2026"
-  },
-  {
-    "from": "muscle-fiber-type-ratio-training-method-selection-2026",
-    "to": "muscle-fiber-type-training-modality-selection-2026"
-  },
-  {
-    "from": "values-clarification-exercise-motivation-alignment-2026",
-    "to": "values-clarification-motivation-alignment-2026"
-  },
-  {
-    "from": "isometric-exercise-blood-pressure-reduction-protocol-2026",
-    "to": "isometric-exercise-blood-pressure-reduction-2026"
-  },
-  {
-    "from": "exercise-order-compound-isolation-optimal-sequence-2026",
-    "to": "exercise-order-compound-isolation-sequence-2026"
-  },
-  {
-    "from": "food-logging-accuracy-portion-estimation-error-2026",
-    "to": "food-logging-accuracy-portion-estimation-bias-2026"
-  },
-  {
-    "from": "menstrual-cycle-metabolism-changes-weight-fluctuation-2026",
-    "to": "menstrual-cycle-metabolism-weight-fluctuation-phases-2026"
-  },
-  {
-    "from": "digital-sunset-routine-blue-light-elimination-protocol-2026",
-    "to": "digital-sunset-routine-blue-light-alternative-2026"
-  },
-  {
-    "from": "night-shift-meal-timing-metabolic-optimization-2026",
-    "to": "night-shift-meal-timing-metabolic-protection-2026"
-  },
-  {
-    "from": "digital-detox-dopamine-reset-protocol-2026",
-    "to": "digital-detox-dopamine-reset-evidence-2026"
-  },
-  {
-    "from": "glp1-surgery-preparation-perioperative-protocol-2026",
-    "to": "glp1-surgery-preparation-withholding-protocol-2026"
-  },
-  {
-    "from": "emotional-eating-trigger-pattern-intervention-match-2026",
-    "to": "emotional-eating-trigger-pattern-intervention-2026"
-  },
-  {
-    "from": "histamine-intolerance-foods-symptoms-low-histamine-diet-2026",
-    "to": "histamine-intolerance-symptom-patterns-elimination-protocol-2026"
-  },
-  {
-    "from": "morning-routine-decision-fatigue-reduction-automation-2026",
-    "to": "morning-routine-decision-fatigue-automation-2026"
-  },
-  {
-    "from": "water-retention-vs-fat-gain-distinction-tracking-2026",
-    "to": "water-retention-vs-fat-gain-distinction-guide-2026"
-  },
-  {
-    "from": "tinnitus-habituation-sound-therapy-neuroplasticity-2026",
-    "to": "tinnitus-habituation-sound-therapy-evidence-2026"
-  },
-  {
-    "from": "autoimmune-flare-trigger-identification-tracking-method-2026",
-    "to": "autoimmune-flare-trigger-identification-tracking-2026"
-  },
-  {
-    "from": "subclinical-hypothyroidism-when-to-treat-watchful-waiting-2026",
-    "to": "thyroid-subclinical-hypothyroidism-when-to-treat-2026"
-  },
-  {
-    "from": "walking-speed-health-indicator-improvement-strategies-2026",
-    "to": "walking-speed-health-indicator-improvement-2026"
-  },
-  {
-    "from": "temporal-landmarks-fresh-start-effect-behavior-change-2026",
-    "to": "temporal-landmarks-fresh-start-effect-motivation-2026"
-  },
-  {
-    "from": "sleep-divorce-separate-beds-relationship-research-2026",
-    "to": "sleep-divorce-separate-beds-relationship-quality-2026"
-  },
-  {
-    "from": "respiratory-rate-sleep-health-indicator-tracking-2026",
-    "to": "respiratory-rate-sleep-trend-health-indicator-2026"
-  },
-  {
-    "from": "satiety-index-foods-ranking-hunger-control-2026",
-    "to": "satiety-index-foods-hunger-control-ranking-2026"
-  },
-  {
-    "from": "commitment-devices-precommitment-strategy-effectiveness-2026",
-    "to": "commitment-devices-precommitment-strategy-2026"
-  },
-  {
-    "from": "goal-gradient-effect-finish-line-motivation-boost-2026",
-    "to": "goal-gradient-effect-motivation-near-finish-2026"
-  },
-  {
-    "from": "age-related-metabolism-decline-prevention-strategies-2026",
-    "to": "age-related-metabolic-decline-prevention-strategies-2026"
-  },
-  {
-    "from": "self-talk-instructional-motivational-performance-effects-2026",
-    "to": "self-talk-instructional-motivational-performance-2026"
-  },
-  {
-    "from": "perimenopause-sleep-disruption-personalized-protocol-2026",
-    "to": "perimenopause-sleep-disruption-management-protocol-2026"
+    "from": "postprandial-glucose-spike-reduction-food-order-2026",
+    "to": "postprandial-glucose-spike-prevention-food-order-2026"
   },
   {
     "from": "potassium-sodium-ratio-blood-pressure-optimization-2026",
     "to": "sodium-potassium-ratio-blood-pressure-balance-2026"
   },
   {
-    "from": "glp-1-nausea",
-    "to": "glp1-nausea-management-evidence-based-strategies-2026"
-  },
-  {
-    "from": "glp-1-nausea-food-guide",
-    "to": "glp1-nausea-management-evidence-based-strategies-2026"
-  },
-  {
-    "from": "glp-1-constipation",
-    "to": "glp1-constipation-management-fiber-hydration-protocol-2026"
-  },
-  {
-    "from": "glp-1-muscle-loss",
-    "to": "glp1-muscle-loss-prevention-nutrition-strategy-2026"
-  },
-  {
-    "from": "glp-1-muscle-loss-protein",
-    "to": "protein-intake-goal-on-semaglutide-grams-per-pound-2026"
+    "from": "progress-monitoring-frequency-optimal-tracking-balance-2026",
+    "to": "progress-monitoring-goal-tracking-frequency-2026"
   },
   {
     "from": "protein-on-glp-1",
     "to": "protein-intake-goal-on-semaglutide-grams-per-pound-2026"
   },
   {
-    "from": "maintain-weight-after-glp-1",
-    "to": "stopping-semaglutide-weight-regain-prevention-protocol-2026"
+    "from": "protein-timing-muscle-synthesis-window-myth-2026",
+    "to": "protein-timing-window-muscle-synthesis-myth-2026"
   },
   {
-    "from": "glp-1-comparison",
-    "to": "semaglutide-vs-tirzepatide"
+    "from": "reading-before-bed-vs-scrolling-sleep-quality-comparison-2026",
+    "to": "reading-before-bed-screen-replacement-habit-2026"
+  },
+  {
+    "from": "refeeding-after-diet-metabolism-recovery-protocol-2026",
+    "to": "reverse-dieting-metabolism-recovery-protocol-2026"
+  },
+  {
+    "from": "resistance-band-progressive-overload-home-2026",
+    "to": "resistance-band-progressive-overload-home-strength-2026"
+  },
+  {
+    "from": "respiratory-rate-sleep-health-indicator-tracking-2026",
+    "to": "respiratory-rate-sleep-trend-health-indicator-2026"
+  },
+  {
+    "from": "restless-leg-syndrome-iron-ferritin-connection-2026",
+    "to": "restless-leg-syndrome-iron-ferritin-threshold-treatment-2026"
+  },
+  {
+    "from": "restless-leg-syndrome-iron-ferritin-threshold-2026",
+    "to": "restless-leg-syndrome-iron-ferritin-threshold-treatment-2026"
+  },
+  {
+    "from": "revenge-bedtime-procrastination-psychology-solutions-2026",
+    "to": "revenge-bedtime-procrastination-behavioral-intervention-2026"
+  },
+  {
+    "from": "rpe-autoregulation-training-fatigue-management-2026",
+    "to": "rpe-autoregulation-training-load-adjustment-2026"
+  },
+  {
+    "from": "rpe-autoregulation-training-load-management-2026",
+    "to": "rpe-autoregulation-training-load-adjustment-2026"
+  },
+  {
+    "from": "satiety-index-foods-ranking-hunger-control-2026",
+    "to": "satiety-index-foods-hunger-control-ranking-2026"
+  },
+  {
+    "from": "seasonal-affective-disorder-light-exercise-protocol-2026",
+    "to": "seasonal-affective-disorder-light-therapy-timing-2026"
+  },
+  {
+    "from": "seasonal-affective-disorder-light-therapy-timing-protocol-2026",
+    "to": "seasonal-affective-disorder-light-therapy-timing-2026"
+  },
+  {
+    "from": "self-talk-instructional-motivational-performance-effects-2026",
+    "to": "self-talk-instructional-motivational-performance-2026"
+  },
+  {
+    "from": "set-point-theory-weight-regulation-evidence-2026",
+    "to": "body-set-point-theory-weight-settling-point-2026"
+  },
+  {
+    "from": "silent-inflammation-crp-levels-lifestyle-reduction-2026",
+    "to": "chronic-inflammation-markers-crp-levels-lifestyle-reduction-2026"
+  },
+  {
+    "from": "silent-reflux-lpr-symptoms-different-from-gerd-2026",
+    "to": "silent-reflux-lpr-throat-symptoms-different-gerd-2026"
+  },
+  {
+    "from": "sleep-consistency-metric-regularity-index-2026",
+    "to": "sleep-regularity-index-consistency-health-impact-2026"
+  },
+  {
+    "from": "sleep-debt-recovery-weekend-catch-up-myth-2026",
+    "to": "sleep-debt-recovery-weekend-catchup-myth-2026"
+  },
+  {
+    "from": "sleep-deprivation-hunger-hormones-weight-gain-2026",
+    "to": "appetite-hormones-sleep-deprivation-recovery-2026"
+  },
+  {
+    "from": "sleep-divorce-separate-beds-relationship-research-2026",
+    "to": "sleep-divorce-separate-beds-relationship-quality-2026"
+  },
+  {
+    "from": "sleep-latency-tracking-falling-asleep-time-2026",
+    "to": "sleep-latency-tracking-what-falling-asleep-time-reveals-2026"
+  },
+  {
+    "from": "sleep-spindles-memory-consolidation-enhancement-2026",
+    "to": "sleep-spindle-enhancement-memory-consolidation-2026"
+  },
+  {
+    "from": "social-jet-lag-weekend-schedule-health-impact-2026",
+    "to": "social-jet-lag-weekend-schedule-shift-health-impact-2026"
+  },
+  {
+    "from": "standing-desk-alternation-schedule-optimal-ratio-2026",
+    "to": "standing-desk-movement-breaks-optimal-ratio-2026"
+  },
+  {
+    "from": "stopping-semaglutide-weight-regain-prevention-protocol-2026",
+    "to": "glp1-rebound-weight-gain-prevention-2026"
+  },
+  {
+    "from": "stress-cortisol-belly-fat-accumulation-management-2026",
+    "to": "stress-cortisol-belly-fat-accumulation-connection-2026"
+  },
+  {
+    "from": "stress-cortisol-belly-fat-accumulation-mechanism-2026",
+    "to": "stress-cortisol-belly-fat-accumulation-connection-2026"
+  },
+  {
+    "from": "subclinical-hypothyroidism-when-to-treat-watchful-waiting-2026",
+    "to": "thyroid-subclinical-hypothyroidism-when-to-treat-2026"
+  },
+  {
+    "from": "surgery-recovery-mobility-return-timeline-2026",
+    "to": "post-surgery-mobility-return-timeline-evidence-2026"
   },
   {
     "from": "sustainable-weight-loss-habits",
     "to": "glp-1-diary-habit"
   },
   {
-    "from": "weight-loss-tracker",
-    "to": "weight-loss-tracker-app-glp-1"
+    "from": "tempo-training-time-under-tension-hypertrophy-2026",
+    "to": "tempo-training-time-under-tension-muscle-growth-2026"
   },
   {
-    "from": "glp-1-for-perimenopause",
-    "to": "glp-1-perimenopause"
+    "from": "tempo-training-time-under-tension-hypertrophy-protocol-2026",
+    "to": "tempo-training-time-under-tension-muscle-growth-2026"
   },
   {
-    "from": "high-protein-snacks-glp-1",
-    "to": "glp-1-diet-7-day-meal-plan"
+    "from": "temporal-landmarks-fresh-start-effect-behavior-change-2026",
+    "to": "temporal-landmarks-fresh-start-effect-motivation-2026"
+  },
+  {
+    "from": "thyroid-function-metabolism-natural-support-2026",
+    "to": "thyroid-function-metabolism-natural-support-strategies-2026"
+  },
+  {
+    "from": "thyroid-function-metabolism-optimization-without-medication-2026",
+    "to": "thyroid-function-metabolism-natural-support-strategies-2026"
+  },
+  {
+    "from": "tinnitus-habituation-sound-therapy-neuroplasticity-2026",
+    "to": "tinnitus-habituation-sound-therapy-evidence-2026"
   },
   {
     "from": "track-protein-fiber-havit",
     "to": "protein-tracker-for-glp-1"
   },
   {
-    "from": "glp-1-guide",
-    "to": "glp-1-first-month"
+    "from": "training-load-acute-chronic-ratio-injury-risk-2026",
+    "to": "weekly-training-load-acute-chronic-ratio-2026"
+  },
+  {
+    "from": "travel-jet-lag-exercise-light-protocol-2026",
+    "to": "jet-lag-circadian-reset-light-exposure-protocol-2026"
+  },
+  {
+    "from": "values-clarification-exercise-motivation-alignment-2026",
+    "to": "values-clarification-motivation-alignment-2026"
+  },
+  {
+    "from": "visceral-fat-reduction-targeted-strategies-evidence-2026",
+    "to": "visceral-fat-reduction-targeted-strategies-2026"
+  },
+  {
+    "from": "walking-speed-health-indicator-improvement-strategies-2026",
+    "to": "walking-speed-health-indicator-improvement-2026"
+  },
+  {
+    "from": "water-retention-vs-fat-gain-distinction-tracking-2026",
+    "to": "water-retention-vs-fat-gain-distinction-guide-2026"
+  },
+  {
+    "from": "weekend-sleep-timing-shift-social-jetlag-recovery-2026",
+    "to": "social-jet-lag-weekend-schedule-shift-health-impact-2026"
+  },
+  {
+    "from": "weight-loss-plateau-breakthrough-metabolic-adaptation-2026",
+    "to": "weight-loss-plateau-breakthrough-metabolic-reset-2026"
+  },
+  {
+    "from": "weight-loss-plateau-metabolic-adaptation-breakthrough-2026",
+    "to": "weight-loss-plateau-breakthrough-metabolic-reset-2026"
+  },
+  {
+    "from": "weight-loss-tracker",
+    "to": "weight-loss-tracker-app-glp-1"
+  },
+  {
+    "from": "zone-2-cardio-fat-burning-heart-rate-calculation-2026",
+    "to": "zone-2-cardio-fat-oxidation-heart-rate-guide-2026"
   }
 ]
