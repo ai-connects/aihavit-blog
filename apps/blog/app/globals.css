@@ -1597,6 +1597,21 @@
   align-self: center;
   padding-bottom: 36px;
 }
+/* 라임 판 위 브랜드 마크. 마크의 그라디언트 바가 배경과 같은 라임에서 시작해
+   그냥 올리면 왼쪽 점과 바 절반이 사라진다 — 흰 칩이 그걸 막는다. 어두운
+   워드마크본(havit-logo.svg)을 쓰는 것도 칩이 밝은 면이기 때문이다. */
+.install-cta__brand {
+  display: inline-block;
+  background: var(--hv-white);
+  border-radius: 12px;
+  padding: 8px 12px;
+  margin-bottom: 18px;
+}
+.install-cta__brand img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
 .install-cta__title {
   font-size: 26px;
   font-weight: 700;
@@ -1650,6 +1665,13 @@
   }
   .install-cta__text {
     padding-bottom: 8px;
+  }
+  .install-cta__brand {
+    padding: 6px 10px;
+    margin-bottom: 14px;
+  }
+  .install-cta__brand img {
+    height: 26px;
   }
   .install-cta__title {
     font-size: 22px;
