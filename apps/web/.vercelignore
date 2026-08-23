@@ -5,3 +5,5 @@
 __pycache__
 *.py
 requirements.txt
+apps/web/public/email/README.md
+apps/web/public/email/*.svg
