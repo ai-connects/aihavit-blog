@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <!-- Same icon set the blog serves (blog.aihavit.com layout.tsx), so the tab
-         icon is identical across both sites. favicon.svg goes first and carries a
-         prefers-color-scheme rule, so browsers that take an SVG icon flip the tile
-         between the light and dark lockup on their own. The .ico/.png set below is
-         the fallback for the ones that don't — those are the dark tile, which is
-         legible on a light and a dark tab strip alike. -->
+         icon is identical across both sites. Every file here is the SAME tile —
+         white ground, black wordmark — and none of them adapt to the OS theme.
+         An earlier revision let favicon.svg flip to the dark tile under
+         prefers-color-scheme, which meant the icon Chrome drew next to the URL
+         changed with the user's theme. One fixed mark is the brand decision. -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />

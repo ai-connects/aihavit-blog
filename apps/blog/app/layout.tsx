@@ -17,9 +17,8 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   icons: {
     icon: [
-      // SVG first: it carries a prefers-color-scheme rule, so browsers that take
-      // an SVG icon flip the tile between the light and dark lockup themselves.
-      // The rest are the fallback and are the dark tile in every case.
+      // SVG first for the browsers that take one; every file below is the same
+      // fixed tile (white ground, black wordmark) and none adapt to the OS theme.
       { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/favicon.ico' },
       { url: '/favicon-16.png', sizes: '16x16', type: 'image/png' },
