@@ -32,7 +32,7 @@ const SITE = 'https://blog.aihavit.com';
 // public/ — so every article advertised an unfetchable image to Google, which
 // disqualifies Article rich results. Articles now carry a real photo, so the
 // schema points at that; the fallback is a file that is actually deployed.
-const OG_IMAGE_FALLBACK = `${SITE}/havit-logo.png`;
+const OG_IMAGE_FALLBACK = `${SITE}/og-card.png`;
 
 interface JsonLdPayload {
   '@context': 'https://schema.org';

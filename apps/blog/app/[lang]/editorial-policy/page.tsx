@@ -371,13 +371,13 @@ export function generateMetadata({ params }: Props): Metadata {
       url: `${SITE}/${params.lang}/editorial-policy`,
       siteName: 'HAVIT Blog',
       locale: params.lang,
-      images: [{ url: `${SITE}/havit-logo.png`, width: 1600, height: 753, alt: 'HAVIT Blog' }],
+      images: [{ url: `${SITE}/og-card.png`, width: 1200, height: 630, alt: 'HAVIT Blog' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: i18n.title,
       description: i18n.metaDescription,
-      images: [`${SITE}/havit-logo.png`],
+      images: [`${SITE}/og-card.png`],
     },
   };
 }

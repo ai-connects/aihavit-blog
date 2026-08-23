@@ -122,13 +122,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://blog.aihavit.com/${lang}/tools`,
       siteName: 'HAVIT Blog',
       locale: lang,
-      images: [{ url: 'https://blog.aihavit.com/havit-logo.png', width: 1600, height: 753, alt: 'HAVIT Blog' }],
+      images: [{ url: 'https://blog.aihavit.com/og-card.png', width: 1200, height: 630, alt: 'HAVIT Blog' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: PAGE_TITLE[lang],
       description: PAGE_INTRO[lang],
-      images: ['https://blog.aihavit.com/havit-logo.png'],
+      images: ['https://blog.aihavit.com/og-card.png'],
     },
   };
 }

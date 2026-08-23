@@ -100,7 +100,9 @@ nav.scrolled {
 /* width/height 속성이 HTML 에 있어 로드 전에도 종횡비가 잡힌다. width:auto 가
    그 비율을 아래 height 에 물린다 — 첫 레이아웃부터 흔들림이 없다. */
 .nav-logo-img {
-  height: 36px;
+  /* 42px, not 36: 2.1 마크는 워드마크 위에 그라디언트 바가 올라간 스택형이라
+     박스 높이의 44% 만 워드마크다. 36 이면 구 배너 마크보다 한 단계 작게 읽힌다. */
+  height: 42px;
   width: auto;
   display: block;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -313,7 +315,7 @@ nav.scrolled {
 }
 
 .footer-logo {
-  height: 32px;
+  height: 38px;
   width: auto;
   display: block;
   margin-bottom: 16px;
