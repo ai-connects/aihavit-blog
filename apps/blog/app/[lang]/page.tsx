@@ -112,7 +112,7 @@ const LABEL_BY_PUBLISHER: Record<RouteLang, string> = {
   fr: 'Publié par Havit Inc.',
 };
 
-const OG_IMAGE_URL = 'https://blog.aihavit.com/havit-logo.png';
+const OG_IMAGE_URL = 'https://blog.aihavit.com/og-card.png';
 
 const HOME_TITLE: Record<RouteLang, string> = {
   ko: 'HAVIT 블로그 — 과학 기반 웰니스 가이드',
@@ -153,7 +153,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: 'HAVIT Blog',
       url,
       locale: lang,
-      images: [{ url: OG_IMAGE_URL, width: 1600, height: 753, alt: 'HAVIT Blog' }],
+      images: [{ url: OG_IMAGE_URL, width: 1200, height: 630, alt: 'HAVIT Blog' }],
     },
     twitter: {
       card: 'summary_large_image',
@@ -243,7 +243,7 @@ export default function BlogIndexPage({ params, searchParams }: Props) {
           '@type': 'ImageObject',
           url: 'https://blog.aihavit.com/havit-logo.png',
           width: 1600,
-          height: 753,
+          height: 988,
         },
         sameAs: BRAND_SAME_AS,
       },

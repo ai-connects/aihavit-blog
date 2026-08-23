@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <!-- Same icon set the blog serves (blog.aihavit.com layout.tsx), so the tab
-         icon is identical across both sites. The template shipped Vite's default
-         purple favicon.svg; that file is gone. -->
+         icon is identical across both sites. favicon.svg goes first and carries a
+         prefers-color-scheme rule, so browsers that take an SVG icon flip the tile
+         between the light and dark lockup on their own. The .ico/.png set below is
+         the fallback for the ones that don't — those are the dark tile, which is
+         legible on a light and a dark tab strip alike. -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
@@ -61,7 +65,7 @@
     <header class="nav">
       <div class="nav__inner">
         <a href="#" class="nav__logo">
-          <img src="/havit-logo.png" alt="HAVIT" width="1600" height="753" />
+          <img src="/havit-logo.svg" alt="HAVIT" width="264" height="163" />
         </a>
         <nav class="nav__links">
           <a data-i18n="havit" href="#">HAVIT</a>
@@ -684,7 +688,7 @@
 
     <footer class="footer">
       <div class="container">
-        <img class="footer__logo" src="/havit-logo.png" alt="HAVIT" width="1600" height="753" />
+        <img class="footer__logo" src="/havit-logo-white.svg" alt="HAVIT" width="264" height="163" />
         <p data-i18n="2026-havit-inc-all-rights" class="text-body-small">© 2026 Havit Inc. All Rights Reserved.</p>
         <p data-i18n="havit-provides-general-wellness-information" class="text-body-small footer__notice">
           HAVIT provides general wellness information and does not provide

@@ -33,7 +33,7 @@ export const PUBLISHER_ORG = {
     '@type': 'ImageObject' as const,
     url: 'https://blog.aihavit.com/havit-logo.png',
     width: 1600,
-    height: 753,
+    height: 988,
   },
   sameAs: BRAND_SAME_AS,
 };

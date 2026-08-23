@@ -212,16 +212,17 @@ export default function Footer({ lang }: { lang: LangKey }) {
 
     <footer className="hv-footer">
       <div className="hv-container">
-        {/* No invert filter: the mark is a white banner holding a black
-            wordmark, so inverting it would flatten it into a white blob. It
-            reads as a sticker on the dark band, which is the intended use. */}
+        {/* No filter: the 2.1 mark is a bare wordmark on a transparent
+            surround, so this dark band gets its own asset (the same paths with
+            the wordmark filled white). A brightness/invert trick would fix the
+            wordmark but strip the gradient bar under it of its colour. */}
         <img
           className="mb-6"
-          src="/havit-logo.png"
+          src="/havit-logo-white.svg"
           alt="HAVIT"
-          width={1600}
-          height={753}
-          style={{ height: 32, width: 'auto' }}
+          width={264}
+          height={163}
+          style={{ height: 38, width: 'auto' }}
         />
         <p className="text-body-small" style={{ color: 'rgba(255,255,255,0.6)' }}>
           © 2026 Havit Inc. All Rights Reserved.

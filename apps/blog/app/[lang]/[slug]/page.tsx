@@ -29,7 +29,7 @@ export async function generateStaticParams() {
 // Social preview used to be the HAVIT wordmark on every one of ~11k article
 // URLs — identical thumbnails across the whole site. Each article now has its
 // own photo (lib/article-images.ts), so share cards are distinct per article.
-const OG_IMAGE_FALLBACK = 'https://blog.aihavit.com/havit-logo.png';
+const OG_IMAGE_FALLBACK = 'https://blog.aihavit.com/og-card.png';
 // HTML <title> CTR target: keep core keywords visible in Google SERP without a
 // trailing " — HAVIT Blog" suffix (Google often appends site name automatically
 // via og:site_name + Organization schema). 50 chars leaves room without cutoff.

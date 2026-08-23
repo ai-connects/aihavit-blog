@@ -302,8 +302,11 @@ a {
      of leaving it to the width="355" attribute's own presentational hint,
      which would otherwise render at a literal 355px) is what makes it use
      that ratio against the 24px height below. Together they size the box
-     correctly from the very first layout pass, with no load-in shift. */
-  height: 36px;
+     correctly from the very first layout pass, with no load-in shift.
+     42px, not 36: the 2.1 mark stacks the wordmark over the gradient bar, so
+     the wordmark is only ~44% of the box. At 36px it read a step smaller than
+     the banner mark it replaced; 42 puts it back at the same optical size. */
+  height: 42px;
   width: auto;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -997,12 +1000,13 @@ a {
   color: var(--white-60);
   padding: 64px 0;
 }
-/* No invert filter here. The brand mark is a white banner with a black
-   wordmark inside it and a transparent surround, so `brightness(0) invert(1)`
-   would flatten the whole thing into a solid white blob. On the dark footer it
-   reads correctly as-is — that sticker look is how the mark is designed. */
+/* No filter here either. The 2.1 mark is a bare wordmark on a transparent
+   surround, so the dark footer gets its own asset (havit-logo-white.svg, the
+   same paths with the wordmark filled white) instead of a filter — the
+   gradient bar under the wordmark has to keep its colour, and any
+   brightness/invert trick that fixes the wordmark would destroy the bar. */
 .footer__logo {
-  height: 32px;
+  height: 38px;
   width: auto;
   margin-bottom: 24px;
 }
@@ -2842,7 +2846,7 @@ a {
     padding-right: 16px;
   }
   .nav__logo img {
-    height: 28px;
+    height: 32px;
   }
   .nav__actions .btn--sm {
     padding-left: 10px;
