@@ -47,6 +47,13 @@ export default function InstallCTA({ lang, articleId, variant = 'inline' }: Prop
        플랫 라임 + 실제 스토어 배지 + 앱 화면. */
     <div className="install-cta">
       <div className="install-cta__text">
+        {/* 판이 브랜드 라임(#d4ff50)인데 마크의 그라디언트 바도 같은 #D4FF50 에서
+            시작한다. 그냥 올리면 바 왼쪽과 점이 배경에 묻혀 마크가 잘려 보이므로,
+            이메일 헤더(apps/web/public/email)와 같은 흰 칩을 깔아 분리한다. */}
+        <span className="install-cta__brand">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/havit-logo.svg" alt="HAVIT" width={264} height={163} />
+        </span>
         <p className="install-cta__title">{t(lang, 'installCta')}</p>
         <p className="install-cta__sub">{t(lang, 'installCtaSub')}</p>
         <div className="install-cta__badges">
