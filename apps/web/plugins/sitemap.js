@@ -28,6 +28,14 @@ const DOCUMENTS = [
   { path: '/eula-ko.html', lastmod: '2026-06-19' },
 ]
 
+/**
+ * Real pages that are not locale twins of index.html. They are rebuilt on every
+ * deploy like the locale pages are, but their content only changes when someone
+ * edits them — so they get an explicit date for the same reason DOCUMENTS do,
+ * rather than claiming a fresh lastmod on every unrelated release.
+ */
+const PAGES = [{ path: '/affiliate/', lastmod: '2026-08-25', priority: '0.6' }]
+
 function today() {
   return new Date().toISOString().slice(0, 10)
 }
@@ -76,11 +84,23 @@ function buildSitemap() {
     ].join('\n'),
   )
 
+  const pageUrls = PAGES.map((p) =>
+    [
+      '  <url>',
+      `    <loc>${SITE}${p.path}</loc>`,
+      `    <lastmod>${p.lastmod}</lastmod>`,
+      '    <changefreq>monthly</changefreq>',
+      `    <priority>${p.priority}</priority>`,
+      '  </url>',
+    ].join('\n'),
+  )
+
   return [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
     '        xmlns:xhtml="http://www.w3.org/1999/xhtml">',
     ...localeUrls,
+    ...pageUrls,
     ...documentUrls,
     '</urlset>',
     '',

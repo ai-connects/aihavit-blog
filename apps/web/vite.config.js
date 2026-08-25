@@ -13,8 +13,13 @@ import sitemap from './plugins/sitemap.js'
 // static file, so lastmod cannot go stale behind a deploy.
 //
 // The blog lives on blog.aihavit.com (Next.js) and /blog/* is 301'd there in
-// vercel.json. If a second real page is ever added here it needs its own entry
-// below — Vite silently bundles only index.html otherwise.
+// vercel.json. Any real page needs its own entry below — Vite silently bundles
+// only index.html otherwise.
+//
+// /affiliate/ is English-only and therefore NOT run through i18nHtml: that
+// plugin reads bundle['index.html'] and emits the 33 locale twins from it, so
+// adding an input here gives you exactly one page. affiliate/index.html carries
+// its own canonical and <head> for that reason.
 const ROOT = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
@@ -23,6 +28,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(ROOT, 'index.html'),
+        affiliate: resolve(ROOT, 'affiliate/index.html'),
       },
     },
   },
