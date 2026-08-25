@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Same icon set as the homepage and the blog. -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="/src/assets/images/hero-phone.webp" fetchpriority="high" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>HAVIT Affiliate Program — Partner With an AI Metabolic Coach</title>
+    <meta
+      name="description"
+      content="Earn 50% on every eligible first subscription plus 20% on each of the next 3 renewals. Apply to the HAVIT Affiliate Program and promote an AI metabolic coach built for sustainable weight loss and GLP-1 support."
+    />
+    <!--
+      English only, on purpose.
+
+      plugins/i18n-html.js generates the 33 localized pages from index.html and
+      touches nothing else in the bundle, so this page has no /ko/, /ja/ … twin
+      and must not advertise one. Hence a self-canonical with no hreflang set:
+      claiming alternates that 404 is worse than claiming none.
+
+      That is also the honest state of the program — the Impact signup flow, the
+      partner terms and the campaign assets are all English-only. If the program
+      is ever localized, the i18n plugin has to learn about multiple source
+      pages first; do not just add hreflang links here.
+    -->
+    <link rel="canonical" href="https://www.aihavit.com/affiliate/" />
+    <meta property="og:site_name" content="HAVIT" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.aihavit.com/affiliate/" />
+    <meta property="og:title" content="HAVIT Affiliate Program" />
+    <meta
+      property="og:description"
+      content="Earn 50% on every eligible first subscription plus 20% on each of the next 3 renewals."
+    />
+    <meta property="og:image" content="https://www.aihavit.com/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- GA4 — same property as the homepage and the blog, so a visitor who
+         arrives on a blog article and ends up applying as a partner stays one
+         session in one report. The homepage snippet tracks its own two exits
+         (Start Free, store badges); this page's one exit is the Impact signup,
+         so that is what it adds. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NEXM0LNTK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() { dataLayer.push(arguments) }
+      gtag('js', new Date())
+      gtag('config', 'G-4NEXM0LNTK')
+
+      addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href]')
+        if (!a) return
+        var href = a.getAttribute('href') || ''
+        if (href.indexOf('app.impact.com') > -1) {
+          gtag('event', 'affiliate_signup_click', { link_location: a.className || 'unknown' })
+        } else if (href.indexOf('app.aihavit.com') > -1) {
+          gtag('event', 'start_free_click', { link_location: a.className || 'unknown' })
+        }
+      })
+    </script>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__inner">
+        <a href="/" class="nav__logo">
+          <img src="/havit-logo.svg" alt="HAVIT" width="264" height="163" />
+        </a>
+        <!-- Anchors are prefixed with "/" because #features and #blog live on
+             the homepage, not here. #faq is bare — this page has its own. -->
+        <nav class="nav__links">
+          <a href="/">HAVIT</a>
+          <a href="/#features">Features</a>
+          <a href="#faq">FAQ</a>
+          <a href="https://blog.aihavit.com/">Blog</a>
+          <a href="/affiliate/">Affiliate</a>
+        </nav>
+        <div class="nav__actions">
+          <!-- No language switcher: this page ships in English only (see the
+               canonical note above), so a switcher here would offer paths that
+               do not exist. src/main.js guards on the element being absent. -->
+          <a href="https://app.impact.com/campaign-promo-signup/AUTO-ASSIGNED-PREFIX-AI-Connect-Inc-171311221-1785289928062-1864324476180359112.brand" class="btn btn--primary btn--sm" target="_blank" rel="noopener">Apply now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="affiliate-hero">
+        <div class="container affiliate-hero__inner reveal">
+          <h1 class="hero__headline affiliate-hero__headline">
+            Become an<br />
+            Affiliate Program Partner
+          </h1>
+          <div class="affiliate-hero__cta">
+            <div class="affiliate-hero__glow"></div>
+            <!-- Bare signup URL, no query string. Impact runs this page on
+                 Spring Webflow and mints the `?execution=…` token itself: the
+                 bare URL 302s to a fresh token, while a hardcoded token is
+                 stripped by a 302 back to the bare URL. Pasting the token from
+                 someone's browser session buys an extra hop at best and a dead
+                 flow at worst. -->
+            <a href="https://app.impact.com/campaign-promo-signup/AUTO-ASSIGNED-PREFIX-AI-Connect-Inc-171311221-1785289928062-1864324476180359112.brand" class="btn btn--invert" target="_blank" rel="noopener">Join now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- HELP PEOPLE CHANGE THEIR HEALTH -->
+      <section class="hero hero--plain">
+        <div class="container hero__inner reveal">
+          <div class="hero__content">
+            <h2 class="hero__headline">
+              Help people change their health.<br />
+              Earn as they grow.
+            </h2>
+            <div class="hero__copy">
+              <p class="text-paragraph">
+                Partner with HAVIT, the AI metabolic coach built for
+                sustainable weight loss and GLP-1 support. Share a product
+                that helps people lose fat, protect muscle, understand their
+                body, and build habits that last.
+              </p>
+            </div>
+            <div class="hero__actions">
+              <a href="https://app.impact.com/campaign-promo-signup/AUTO-ASSIGNED-PREFIX-AI-Connect-Inc-171311221-1785289928062-1864324476180359112.brand" class="btn btn--primary" target="_blank" rel="noopener">
+                Apply to become a partner
+                <span class="btn__arrow btn__arrow--right" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="hero__phone-frame">
+              <img
+                fetchpriority="high"
+                decoding="async"
+                width="671"
+                height="1280"
+                class="hero__phone"
+                src="/src/assets/images/hero-phone.webp"
+                alt="HAVIT app preview"
+              />
+              <div class="floating-card floating-card--top">
+                <span class="floating-card__icon">💰</span>
+                <p class="floating-card__value">50%</p>
+                <p class="text-body-small">commission on first subscription</p>
+              </div>
+              <div class="floating-card floating-card--bottom">
+                <span class="floating-card__icon">🔁</span>
+                <p class="floating-card__value">20%</p>
+                <p class="text-body-small">on each renewal, up to 3 times</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHO SHOULD JOIN -->
+      <section class="who-joins" id="who-joins">
+        <div class="container who-joins__inner">
+          <div class="who-joins__text reveal">
+            <h2 class="text-heading-2">
+              Made for partners who care about healthier, lasting change
+            </h2>
+            <p class="text-paragraph">
+              We welcome partners who create trustworthy content and can
+              introduce HAVIT to people interested in weight management,
+              metabolic health, GLP-1 support, nutrition, fitness, and
+              sustainable habits.
+            </p>
+            <ul class="checklist">
+              <li>
+                <span class="check check--lime"><span class="check__icon"></span></span>
+                <span class="text-title-medium">Health, wellness, nutrition, and fitness creators</span>
+              </li>
+              <li>
+                <span class="check check--lime"><span class="check__icon"></span></span>
+                <span class="text-title-medium">GLP-1 educators, patient communities, and lifestyle voices</span>
+              </li>
+              <li>
+                <span class="check check--lime"><span class="check__icon"></span></span>
+                <span class="text-title-medium">Review sites, comparison platforms, and editorial publishers</span>
+              </li>
+              <li>
+                <span class="check check--lime"><span class="check__icon"></span></span>
+                <span class="text-title-medium">Coaches, newsletters, podcasts, and online communities</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- The V4 mockup put a named creator ("Health with Mia, 128K
+               followers") and a monthly earnings total in these two cards.
+               Both are invented, and an invented endorsement next to invented
+               partner earnings is exactly what the FTC endorsement guides and
+               most platform affiliate policies treat as deceptive — on the page
+               recruiting the partners who then have to follow those rules.
+               Same layout, but the card now shows how the link works and the
+               published commission rates, which are facts we can stand behind. -->
+          <div class="who-joins__visual reveal">
+            <div class="creator-card">
+              <div class="creator-card__header">
+                <span class="creator-card__avatar">🔗</span>
+                <div>
+                  <p class="text-title-medium">Your partner link</p>
+                  <p class="text-body-small">Unique tracking link · Impact platform</p>
+                </div>
+              </div>
+              <p class="creator-card__quote">
+                Share the weight-loss app that looks beyond the number on the
+                scale.
+              </p>
+              <div class="stats-card">
+                <p class="text-title-medium">Commission structure</p>
+                <div class="stats-card__row">
+                  <span class="text-body-medium">First subscription</span>
+                  <span class="stats-card__value">50%</span>
+                </div>
+                <div class="stats-card__row">
+                  <span class="text-body-medium">Next 3 renewals</span>
+                  <span class="stats-card__value">20%</span>
+                </div>
+                <div class="stats-card__row">
+                  <span class="text-body-medium">Attribution window</span>
+                  <span class="stats-card__value">30 days</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIMPLE, RECURRING REWARDS -->
+      <section class="rewards" id="rewards">
+        <div class="container rewards__inner">
+          <div class="rewards__card reveal">
+            <p class="eyebrow eyebrow--light">SIMPLE, RECURRING REWARDS</p>
+            <h2 class="text-heading-2 rewards__headline">
+              Earn more than a one-time commission.
+            </h2>
+            <p class="text-paragraph rewards__desc">
+              Receive a commission on each eligible new subscription, then
+              continue earning every time the customer renews—up to three
+              renewals.
+            </p>
+            <div class="rewards__stat">
+              <span class="rewards__stat-value">50%</span>
+              <span class="rewards__stat-label">on first subscription</span>
+            </div>
+            <p class="text-title-medium rewards__caption">
+              Plus 20% commission on each of the next 3 renewals.
+            </p>
+          </div>
+
+          <div class="rewards__list">
+            <div class="reward-item reveal">
+              <span class="number-chip">01</span>
+              <div>
+                <h4 class="text-heading-4">50% on every eligible first subscription</h4>
+                <p class="text-body-medium">
+                  Earn half the value of a customer's first subscription when
+                  they sign up through your unique tracking link.
+                </p>
+              </div>
+            </div>
+            <div class="reward-item reveal">
+              <span class="number-chip">02</span>
+              <div>
+                <h4 class="text-heading-4">20% on each of the next 3 renewals</h4>
+                <p class="text-body-medium">
+                  Keep earning as the customers you referred renew—up to three
+                  additional renewal cycles.
+                </p>
+              </div>
+            </div>
+            <div class="reward-item reveal">
+              <span class="number-chip">03</span>
+              <div>
+                <h4 class="text-heading-4">30-day attribution window</h4>
+                <p class="text-body-medium">
+                  Your referral can remain attributed for up to 30 days after
+                  the initial tracked click, subject to program terms.
+                </p>
+              </div>
+            </div>
+            <div class="reward-item reveal">
+              <span class="number-chip">04</span>
+              <div>
+                <h4 class="text-heading-4">Reliable performance tracking</h4>
+                <p class="text-body-medium">
+                  Track clicks, conversions, commissions, and payment status
+                  through the affiliate platform.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY PARTNERS PROMOTE HAVIT -->
+      <section class="value-grid">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2 class="text-heading-2">
+              A health product your audience can actually keep using
+            </h2>
+            <p class="text-paragraph section-heading__desc">
+              HAVIT goes beyond basic calorie counting. It combines body
+              composition insights, nutrition, workouts, habit building,
+              mindfulness, and daily AI coaching in one personalized
+              experience.
+            </p>
+          </div>
+
+          <div class="value-grid__cards">
+            <div class="value-card reveal">
+              <span class="value-card__icon">🧠</span>
+              <h3 class="text-title-large">A clear, differentiated story</h3>
+              <p class="text-body-medium">
+                Introduce an AI metabolic coach that focuses on sustainable fat
+                loss, muscle preservation, and daily behavior change—not
+                another generic tracker.
+              </p>
+            </div>
+            <div class="value-card reveal">
+              <span class="value-card__icon">💊</span>
+              <h3 class="text-title-large">Built for GLP-1 users</h3>
+              <p class="text-body-medium">
+                HAVIT supports users taking Wegovy®, Ozempic®, Mounjaro®,
+                Zepbound® and other GLP-1 medications with protein, nutrition,
+                weight, dose, and side-effect tracking.
+              </p>
+            </div>
+            <div class="value-card reveal">
+              <span class="value-card__icon">📷</span>
+              <h3 class="text-title-large">Easy to demonstrate</h3>
+              <p class="text-body-medium">
+                Show useful, visual features such as AI Food Scan, personalized
+                body composition estimates, daily missions, fasting, and
+                progress tracking.
+              </p>
+            </div>
+            <div class="value-card reveal">
+              <span class="value-card__icon">🌍</span>
+              <h3 class="text-title-large">Made for global audiences</h3>
+              <p class="text-body-medium">
+                Promote HAVIT internationally with multilingual support and
+                tracking that is based on the partner link and completed
+                conversion.
+              </p>
+            </div>
+            <div class="value-card reveal">
+              <span class="value-card__icon">🎮</span>
+              <h3 class="text-title-large">Designed for engagement</h3>
+              <p class="text-body-medium">
+                Streaks, badges, avatars, ranks, and team challenges help turn
+                healthy actions into routines users want to repeat.
+              </p>
+            </div>
+            <div class="value-card reveal">
+              <span class="value-card__icon">🤝</span>
+              <h3 class="text-title-large">Partner support included</h3>
+              <p class="text-body-medium">
+                Access campaign guidance, product information, brand assets,
+                approved messaging, and promotional resources to create with
+                confidence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2 class="text-heading-2">FAQ</h2>
+            <p class="text-body-medium section-heading__desc">
+              Still need help? Contact
+              <a class="link" href="mailto:help@aihavit.com">help@aihavit.com</a>.
+            </p>
+          </div>
+
+          <div class="faq__list">
+            <div class="faq__item reveal">
+              <button class="faq__trigger" aria-expanded="true">
+                <span class="text-title-medium">Is the HAVIT Affiliate Program free to join?</span>
+                <span class="faq__chevron">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq__panel is-open">
+                <div class="faq__panel-inner">
+                  <p class="text-body-medium">
+                    Yes. There is no fee to submit an application or
+                    participate as an approved partner.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item reveal">
+              <button class="faq__trigger" aria-expanded="false">
+                <span class="text-title-medium">Who can apply?</span>
+                <span class="faq__chevron">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq__panel">
+                <div class="faq__panel-inner">
+                  <p class="text-body-medium">
+                    Creators, influencers, publishers, editorial sites, health
+                    and wellness communities, coaches, newsletters, podcasts,
+                    and other relevant partners may apply. Every application is
+                    reviewed individually.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item reveal">
+              <button class="faq__trigger" aria-expanded="false">
+                <span class="text-title-medium">Can I promote HAVIT outside the United States?</span>
+                <span class="faq__chevron">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq__panel">
+                <div class="faq__panel-inner">
+                  <p class="text-body-medium">
+                    Yes. HAVIT is available internationally. Tracking is based
+                    on a user clicking your unique partner link and completing
+                    an eligible conversion, rather than being limited solely by
+                    the creator's or customer's country.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item reveal">
+              <button class="faq__trigger" aria-expanded="false">
+                <span class="text-title-medium">How are referrals tracked?</span>
+                <span class="faq__chevron">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq__panel">
+                <div class="faq__panel-inner">
+                  <p class="text-body-medium">
+                    You receive a unique tracking link through the affiliate
+                    platform. Eligible transactions are attributed when the
+                    tracked click and conversion are recorded successfully,
+                    subject to the program's attribution rules.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item reveal">
+              <button class="faq__trigger" aria-expanded="false">
+                <span class="text-title-medium">When and how will I be paid?</span>
+                <span class="faq__chevron">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq__panel">
+                <div class="faq__panel-inner">
+                  <p class="text-body-medium">
+                    Approved commissions are processed through the affiliate
+                    platform according to its payment schedule, validation
+                    period, minimum payment rules, and the HAVIT Affiliate
+                    Program Terms.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item reveal">
+              <button class="faq__trigger" aria-expanded="false">
+                <span class="text-title-medium">Can I use paid advertising?</span>
+                <span class="faq__chevron">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq__panel">
+                <div class="faq__panel-inner">
+                  <p class="text-body-medium">
+                    Only approved promotional methods may be used. Trademark
+                    bidding, misleading claims, unapproved discount messaging,
+                    and other restricted practices are prohibited unless HAVIT
+                    provides written authorization.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item reveal">
+              <button class="faq__trigger" aria-expanded="false">
+                <span class="text-title-medium">Do I need to disclose the affiliate relationship?</span>
+                <span class="faq__chevron">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq__panel">
+                <div class="faq__panel-inner">
+                  <p class="text-body-medium">
+                    Yes. Partners must clearly disclose their relationship with
+                    HAVIT in accordance with applicable advertising, consumer
+                    protection, platform, and local disclosure requirements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA — the V4 mockup ended on the FAQ, which leaves a page whose
+           whole job is one application with no way to apply at the bottom of
+           it. Reuses the homepage's .final-cta block with the signup link in
+           place of the store badges. -->
+      <section class="final-cta" id="apply">
+        <div class="container reveal">
+          <h2 class="text-heading-2">Ready to partner with HAVIT?</h2>
+          <p class="text-paragraph">
+            Applications are reviewed individually. Once approved you get your
+            tracking link, brand assets, and approved messaging.
+          </p>
+          <div class="final-cta__badges">
+            <a href="https://app.impact.com/campaign-promo-signup/AUTO-ASSIGNED-PREFIX-AI-Connect-Inc-171311221-1785289928062-1864324476180359112.brand" class="btn btn--invert" target="_blank" rel="noopener">
+              Apply to become a partner
+              <span class="btn__arrow btn__arrow--right" aria-hidden="true"></span>
+            </a>
+          </div>
+          <p class="text-body-small final-cta__disclaimer">
+            Commission rates, attribution and payment are governed by the HAVIT
+            Affiliate Program Terms shown during signup.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img class="footer__logo" src="/havit-logo-white.svg" alt="HAVIT" width="264" height="163" />
+        <p class="text-body-small">© 2026 Havit Inc. All Rights Reserved.</p>
+        <p class="text-body-small footer__notice">
+          HAVIT provides general wellness information and does not provide
+          medical advice, diagnosis, or treatment.
+        </p>
+
+        <div class="footer__columns">
+          <div class="footer__col">
+            <p class="eyebrow">PRODUCT</p>
+            <a href="/">HAVIT</a>
+            <a href="/#features">Features</a>
+            <a href="https://blog.aihavit.com/">Blog</a>
+            <a href="/#faq">FAQ</a>
+          </div>
+          <div class="footer__col">
+            <p class="eyebrow">PARTNERS</p>
+            <a href="/affiliate/">Affiliate Program</a>
+          </div>
+          <div class="footer__col">
+            <p class="eyebrow">LEGAL</p>
+            <a href="/privacy.html">Privacy</a>
+            <a href="/terms.html">Terms</a>
+            <a href="/eula.html">EULA</a>
+            <a href="/refund.html">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

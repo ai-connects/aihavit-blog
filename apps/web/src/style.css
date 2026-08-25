@@ -1207,6 +1207,10 @@ a {
   background: var(--color-white);
   border-radius: 24px;
   padding: 24px;
+  /* .stats-card below overlaps this card's bottom 60px on purpose. That reads
+     as depth only while the 60px lands on padding — with the default 24px it
+     ate the last line of the quote instead. 24 + 60 reserves it. */
+  padding-bottom: 84px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   max-width: 380px;
   margin: 0 auto;
